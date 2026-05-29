@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# uv
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Environment
+.env
+
+# Data volumes (docker compose mounts)
+data/postgres/
+data/qdrant/
+data/vllm-cache/
+data/cache/
+
+# Spike cache
+spike/_cache/
+
+# Eval runs (datasets are tracked; runs are local outputs)
+eval/runs/
+eval/correlation_study/
+
+# OS
+.DS_Store
+Thumbs.db
+/docs/
+/secret-run
+/data/edgar/

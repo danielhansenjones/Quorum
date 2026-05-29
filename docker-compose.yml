@@ -1,0 +1,105 @@
+name: quorum
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: quorum-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: quorum
+      POSTGRES_PASSWORD: quorum
+      POSTGRES_DB: quorum
+      # Reasonable defaults for fan-out workload; pool size is enforced app-side
+      # via settings.pg_pool_max. See docs/quorum_build_checklist.md Phase 1.
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8"
+    command:
+      - "postgres"
+      - "-c"
+      - "max_connections=200"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+      - ./postgres-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U quorum -d quorum"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: quorum-qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - ./data/qdrant:/qdrant/storage
+    # Recent qdrant images are distroless (no shell utilities), so no in-container
+    # healthcheck. Readiness is probed by tests/integration/test_compose_services.py
+    # and by /ready on the api service.
+
+  vllm:
+    image: vllm/vllm-openai:latest
+    container_name: quorum-vllm
+    profiles: ["gpu"]
+    restart: unless-stopped
+    runtime: nvidia
+    environment:
+      # HF cache reused on container rebuilds.
+      HUGGING_FACE_HUB_TOKEN: ${HUGGING_FACE_HUB_TOKEN:-}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./data/vllm-cache:/root/.cache/huggingface
+    command:
+      - "--model=Qwen/Qwen2.5-7B-Instruct-AWQ"
+      - "--quantization=awq"
+      - "--max-model-len=8192"
+      - "--gpu-memory-utilization=0.85"
+      - "--dtype=auto"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8000/v1/models || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 90s
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: quorum-api
+    profiles: ["api"]
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+    environment:
+      POSTGRES_URL: postgresql://quorum:quorum@postgres:5432/quorum
+      QDRANT_URL: http://qdrant:6333
+      VLLM_URL: ${VLLM_URL:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      EDGAR_USER_AGENT: ${EDGAR_USER_AGENT:-}
+    ports:
+      - "8080:8000"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8000/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+# Named profiles let Phase 1 boot only postgres + qdrant (the defaults) while
+# Phase 2 brings vllm up and Phase 9 brings api up.

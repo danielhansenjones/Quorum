@@ -1,0 +1,89 @@
+# Normalized concept dictionary (ARCHITECTURE 4.3). Keys are <axis>.<metric>;
+# values list raw XBRL concepts in fallback order. per_ticker entries take
+# precedence over default. The resolver returns the first non-null match per
+# (ticker, period).
+#
+# Hand-curated for the v1 corpus (decisions.md #2). Extend when adding tickers
+# from new sectors.
+
+profitability.revenue:
+  default:
+    - us-gaap:Revenues
+    - us-gaap:SalesRevenueNet
+    - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  per_ticker:
+    AAPL:
+      - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+    MSFT:
+      - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+    GOOGL:
+      - us-gaap:Revenues
+    META:
+      - us-gaap:Revenues
+
+profitability.net_income:
+  default:
+    - us-gaap:NetIncomeLoss
+    - us-gaap:ProfitLoss
+
+profitability.operating_income:
+  default:
+    - us-gaap:OperatingIncomeLoss
+
+profitability.gross_profit:
+  default:
+    - us-gaap:GrossProfit
+
+profitability.operating_expenses:
+  default:
+    - us-gaap:OperatingExpenses
+    - us-gaap:CostsAndExpenses
+
+profitability.cost_of_revenue:
+  default:
+    - us-gaap:CostOfRevenue
+    - us-gaap:CostOfGoodsAndServicesSold
+
+leverage.total_debt:
+  default:
+    - us-gaap:LongTermDebt
+    - us-gaap:LongTermDebtNoncurrent
+
+leverage.long_term_debt:
+  default:
+    - us-gaap:LongTermDebtNoncurrent
+    - us-gaap:LongTermDebt
+
+leverage.short_term_debt:
+  default:
+    - us-gaap:ShortTermBorrowings
+    - us-gaap:LongTermDebtCurrent
+
+leverage.total_equity:
+  default:
+    - us-gaap:StockholdersEquity
+    - us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+
+leverage.cash_and_equivalents:
+  default:
+    - us-gaap:CashAndCashEquivalentsAtCarryingValue
+
+leverage.total_assets:
+  default:
+    - us-gaap:Assets
+
+leverage.total_liabilities:
+  default:
+    - us-gaap:Liabilities
+
+growth.revenue:
+  # Same concept as profitability.revenue; year-over-year math handled by callers.
+  default:
+    - us-gaap:Revenues
+    - us-gaap:SalesRevenueNet
+    - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  per_ticker:
+    AAPL:
+      - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+    MSFT:
+      - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax

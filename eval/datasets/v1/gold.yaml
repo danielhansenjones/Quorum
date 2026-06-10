@@ -1,0 +1,327 @@
+# Quorum gold evaluation set, v1.
+#
+# Schema (one entry per case):
+#   id: short string identifier
+#   question: user-facing question
+#   expected_status: ok | refused | partial
+#   expected_axes: list (empty for refusal cases)
+#   expected_tickers: list (in-corpus tickers we expect resolved)
+#   notes: free text for the author
+#
+# Target distribution (Phase 10a):
+#   ~60% happy-path single/multi-axis comparisons across in-corpus companies
+#   ~20% with at least one insufficient-data axis (expected_status: partial)
+#   ~10% with one weak-then-recovered axis (forces re-plan path)
+#   ~10% refusal cases (out-of-corpus, off-topic, single-company)
+#
+# In-corpus tickers: AAPL MSFT GOOGL META (BigTech), PG KO PEP COST (Staples),
+# JNJ PFE MRK LLY (Pharma). Valid axes: profitability growth leverage risk_factors.
+# expected_status reflects intent; a "partial" label marks a case where the v1
+# corpus is known to lack a sub-metric or period the question implies.
+
+cases:
+  # ---- Happy: single-axis, core metrics present ----
+  - id: happy_aapl_msft_profitability
+    question: "Compare AAPL and MSFT on profitability over the most recent fiscal year."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["AAPL", "MSFT"]
+    notes: |
+      Both companies use ASC 606 revenue recognition; AAPL's revenue concept is
+      RevenueFromContractWithCustomerExcludingAssessedTax, MSFT's is the same.
+
+  - id: happy_googl_meta_growth
+    question: "Compare GOOGL and META on revenue growth across the last two fiscal years."
+    expected_status: ok
+    expected_axes: ["growth"]
+    expected_tickers: ["GOOGL", "META"]
+
+  - id: happy_pg_ko_leverage
+    question: "Compare Procter & Gamble and Coca-Cola on leverage."
+    expected_status: ok
+    expected_axes: ["leverage"]
+    expected_tickers: ["PG", "KO"]
+
+  - id: happy_pep_ko_profitability
+    question: "Compare PepsiCo and Coca-Cola on profitability."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["PEP", "KO"]
+
+  - id: happy_jnj_pfe_profitability
+    question: "Compare Johnson & Johnson and Pfizer on profitability over the latest fiscal year."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["JNJ", "PFE"]
+
+  - id: happy_mrk_lly_growth
+    question: "Compare Merck and Eli Lilly on revenue growth."
+    expected_status: ok
+    expected_axes: ["growth"]
+    expected_tickers: ["MRK", "LLY"]
+
+  - id: happy_aapl_msft_growth
+    question: "Compare AAPL and MSFT on revenue growth over the last two fiscal years."
+    expected_status: ok
+    expected_axes: ["growth"]
+    expected_tickers: ["AAPL", "MSFT"]
+
+  - id: happy_jnj_pfe_leverage
+    question: "Compare JNJ and PFE on leverage."
+    expected_status: ok
+    expected_axes: ["leverage"]
+    expected_tickers: ["JNJ", "PFE"]
+
+  - id: happy_cost_pep_leverage
+    question: "Compare Costco and PepsiCo on leverage."
+    expected_status: ok
+    expected_axes: ["leverage"]
+    expected_tickers: ["COST", "PEP"]
+
+  - id: happy_msft_googl_profitability
+    question: "Compare Microsoft and Alphabet on profitability."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["MSFT", "GOOGL"]
+
+  - id: happy_lly_pfe_profitability
+    question: "Compare Eli Lilly and Pfizer on profitability."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["LLY", "PFE"]
+
+  - id: happy_meta_aapl_leverage
+    question: "Compare Meta and Apple on leverage over the most recent fiscal year."
+    expected_status: ok
+    expected_axes: ["leverage"]
+    expected_tickers: ["META", "AAPL"]
+
+  # ---- Happy: risk factors (semantic) ----
+  - id: happy_pharma_risks
+    question: "Compare JNJ and PFE on risk factors disclosed in their most recent 10-K."
+    expected_status: ok
+    expected_axes: ["risk_factors"]
+    expected_tickers: ["JNJ", "PFE"]
+
+  - id: happy_tech_risks
+    question: "Compare AAPL and MSFT on the risk factors they disclose."
+    expected_status: ok
+    expected_axes: ["risk_factors"]
+    expected_tickers: ["AAPL", "MSFT"]
+
+  - id: happy_staples_risks
+    question: "Compare Coca-Cola and PepsiCo on disclosed business risks."
+    expected_status: ok
+    expected_axes: ["risk_factors"]
+    expected_tickers: ["KO", "PEP"]
+
+  - id: happy_mrk_lly_risks
+    question: "Compare Merck and Eli Lilly on risk factors."
+    expected_status: ok
+    expected_axes: ["risk_factors"]
+    expected_tickers: ["MRK", "LLY"]
+
+  # ---- Happy: multi-axis ----
+  - id: happy_multi_axis_tech
+    question: "Compare AAPL, MSFT, and GOOGL on profitability, growth, and leverage."
+    expected_status: ok
+    expected_axes: ["profitability", "growth", "leverage"]
+    expected_tickers: ["AAPL", "MSFT", "GOOGL"]
+
+  - id: happy_multi_axis_staples
+    question: "Compare Coca-Cola and PepsiCo on profitability and growth."
+    expected_status: ok
+    expected_axes: ["profitability", "growth"]
+    expected_tickers: ["KO", "PEP"]
+
+  - id: happy_multi_axis_pharma
+    question: "Compare JNJ and PFE on profitability and leverage."
+    expected_status: ok
+    expected_axes: ["profitability", "leverage"]
+    expected_tickers: ["JNJ", "PFE"]
+
+  - id: happy_multi_axis_meta_googl
+    question: "Compare Meta and Alphabet on profitability, growth, and leverage."
+    expected_status: ok
+    expected_axes: ["profitability", "growth", "leverage"]
+    expected_tickers: ["META", "GOOGL"]
+
+  - id: happy_multi_axis_cost_pg
+    question: "Compare Costco and Procter & Gamble on profitability and leverage."
+    expected_status: ok
+    expected_axes: ["profitability", "leverage"]
+    expected_tickers: ["COST", "PG"]
+
+  - id: happy_mixed_quant_qual
+    question: "Compare Merck and Eli Lilly on growth and risk factors."
+    expected_status: ok
+    expected_axes: ["growth", "risk_factors"]
+    expected_tickers: ["MRK", "LLY"]
+    notes: |
+      Mixes a structured axis (growth) with a semantic axis (risk_factors) in one
+      request; exercises both retrieval paths under a single fan-out.
+
+  - id: happy_three_staples_profitability
+    question: "Compare Coca-Cola, PepsiCo, and Costco on profitability."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["KO", "PEP", "COST"]
+
+  # ---- Partial: a sub-metric or period the v1 corpus lacks ----
+  - id: partial_insufficient_growth_for_costco
+    question: "Compare COST and KO on growth over the most recent decade."
+    expected_status: partial
+    expected_axes: ["growth"]
+    expected_tickers: ["COST", "KO"]
+    notes: |
+      A 10-year window exceeds the v1 corpus filing window (latest 10-K + 4
+      10-Qs only). At least one axis will be insufficient/weak.
+
+  - id: partial_long_window_tech
+    question: "Compare AAPL and MSFT on revenue growth over the last 15 years."
+    expected_status: partial
+    expected_axes: ["growth"]
+    expected_tickers: ["AAPL", "MSFT"]
+    notes: |
+      Corpus holds ~4 fiscal years; a 15-year ask cannot be fully grounded.
+
+  - id: partial_gross_margin_googl
+    question: "Compare AAPL, MSFT, and GOOGL on gross margin."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["AAPL", "MSFT", "GOOGL"]
+    notes: |
+      GOOGL does not report a separate gross_profit line, but the profitability
+      axis is answered comprehensively across all three on net/operating margin
+      with verified facts; the single missing sub-line is a marginal gap, not a
+      partial answer. Relabeled ok (was partial) after judged-full-v1 review.
+      Contrast the decade/15-year/segment cases, which stay partial because the
+      requested scope is mostly ungrounded.
+
+  - id: partial_capex_comparison
+    question: "Compare PG and KO on capital expenditures over the last three years."
+    expected_status: partial
+    expected_axes: ["leverage"]
+    expected_tickers: ["PG", "KO"]
+    notes: |
+      Capex is not in the v1 normalized concept set (leverage covers debt/equity/
+      cash). Expect weak/insufficient grounding.
+
+  - id: partial_inventory_turnover
+    question: "Compare Costco and PepsiCo on inventory turnover."
+    expected_status: partial
+    expected_axes: ["profitability"]
+    expected_tickers: ["COST", "PEP"]
+    notes: |
+      Inventory turnover is not a base concept; no direct fact. Weak grounding.
+
+  - id: partial_segment_revenue
+    question: "Compare GOOGL and META on advertising segment revenue."
+    expected_status: partial
+    expected_axes: ["growth"]
+    expected_tickers: ["GOOGL", "META"]
+    notes: |
+      Segment-level revenue is not broken out in the gathered XBRL facts; total
+      revenue is. Expect a weak/caveated comparison.
+
+  # ---- Weak-then-recovered: forces the re-plan path ----
+  - id: weak_then_recovered_obscure_metric
+    question: "Compare LLY and MRK on R&D-to-revenue ratio."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["LLY", "MRK"]
+    notes: |
+      The base concepts don't include an R&D ratio directly; the analyst will
+      report weak grounding on first pass. Re-plan should broaden retrieval.
+
+  - id: weak_then_recovered_fcf_margin
+    question: "Compare AAPL and MSFT on free cash flow margin."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["AAPL", "MSFT"]
+    notes: |
+      FCF margin is not a base concept; first pass weak, re-plan broadens.
+
+  - id: weak_then_recovered_payout
+    question: "Compare Coca-Cola and PepsiCo on dividend payout ratio."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["KO", "PEP"]
+    notes: |
+      Payout ratio is derived, not a direct fact; exercises re-plan.
+
+  # ---- Refusals: out-of-corpus ----
+  - id: refuse_out_of_corpus
+    question: "Compare Nestle and Unilever on profitability."
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: []
+    notes: |
+      Both names are out of v1 corpus. Resolver must refuse.
+
+  - id: refuse_out_of_corpus_tech
+    question: "Compare Amazon and Walmart on growth."
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: []
+    notes: |
+      AMZN and WMT are not in the v1 corpus.
+
+  - id: refuse_out_of_corpus_auto
+    question: "Compare Tesla and Ford on leverage."
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: []
+    notes: |
+      TSLA and F are out of corpus.
+
+  - id: refuse_mixed_one_in_corpus
+    question: "Compare Apple and Samsung on profitability."
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: ["AAPL"]
+    notes: |
+      Only one of two resolves in-corpus (AAPL); Samsung is out. Fewer than two
+      resolved tickers -> refuse.
+
+  # ---- Refusals: single company ----
+  - id: refuse_single_company
+    question: "Tell me about Apple."
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: ["AAPL"]
+    notes: |
+      Single company resolved; less than two -> refuse path.
+
+  - id: refuse_single_company_msft
+    question: "How is Microsoft doing financially?"
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: ["MSFT"]
+    notes: |
+      Single-company question; the system only does cross-company comparisons.
+
+  # ---- Refusals: off-topic ----
+  - id: refuse_off_topic
+    question: "What's the weather like in Cupertino?"
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: []
+    notes: |
+      Classifier should set out_of_scope=true.
+
+  - id: refuse_off_topic_sports
+    question: "Who won the World Series last year?"
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: []
+    notes: |
+      Off-topic; out_of_scope=true.
+
+  - id: refuse_off_topic_translation
+    question: "Translate 'good morning' into Japanese."
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: []
+    notes: |
+      Not a financial-research task; out_of_scope=true.

@@ -1,0 +1,21 @@
+{
+  "case_id": "refuse_single_company_msft",
+  "final_status": "refused",
+  "report": "Need at least two in-corpus companies. Resolved 1 from input mentions: ['Microsoft']\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null
+    },
+    "quality": {
+      "clarity": 2,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 4,
+      "notes": "This appears to be a system/error message rather than an actual report. It correctly identifies that a comparison requires at least two companies and honestly flags the insufficient data condition. However, it provides no analytical content, no prose, no evidence, and no meaningful comparison. Clarity is low because it reads as a raw debug/status message rather than a user-facing explanation. The honesty score is relatively high because it transparently communicates the limitation rather than fabricating a comparison."
+    }
+  },
+  "error": null
+}

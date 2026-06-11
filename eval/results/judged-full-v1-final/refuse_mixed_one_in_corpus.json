@@ -1,0 +1,21 @@
+{
+  "case_id": "refuse_mixed_one_in_corpus",
+  "final_status": "refused",
+  "report": "Need at least two in-corpus companies. Resolved 1 from input mentions: ['Apple', 'Samsung']\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null
+    },
+    "quality": {
+      "clarity": 2,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 3,
+      "notes": "This is not a proper report \u2014 it appears to be a raw system/error message rather than a written analysis. It mentions only one resolved company (Apple) from two input mentions (Apple, Samsung), indicating a data resolution failure. There is no actual comparison, no evidence, no narrative, and no analytical content. The only redeeming quality is that it implicitly signals insufficient data by noting the resolution failure, though this is incidental rather than an intentional honest disclosure. The output needs to be a fully written report with comparative analysis across the supported axes."
+    }
+  },
+  "error": null
+}

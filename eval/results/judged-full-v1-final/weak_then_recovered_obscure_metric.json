@@ -1,0 +1,110 @@
+{
+  "case_id": "weak_then_recovered_obscure_metric",
+  "final_status": "ok",
+  "report": "### R&D-to-Revenue Ratio\n\n*Note: The per-axis comparison data provided covers the Growth axis only. A direct R&D expenditure breakdown for both companies was not supplied in the source material, so the analysis below is grounded in the revenue figures available and the growth context they provide, rather than explicit R&D spending figures.*\n\nThe revenue trajectories of LLY and MRK are strikingly divergent, and this divergence has meaningful implications for how R&D investment scales relative to the top line. Eli Lilly expanded revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase \u2014 meaning that any given level of R&D spending now represents a materially smaller share of revenue than it did three years ago, all else equal. Merck, by contrast, grew from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a cumulative gain of only around 10%. With a far slower-growing denominator, Merck's R&D-to-revenue ratio is more sensitive to changes in absolute R&D spend, and sustaining or increasing investment in pipeline assets (including post-Keytruda diversification efforts) would push that ratio higher more readily than at Lilly. The two companies have converged to nearly identical top-line revenue in FY2025 [LLY:Q3][MRK:Q3], but they arrived there via entirely different paths \u2014 Lilly through explosive volume-driven growth in its GLP-1 franchise, Merck through incremental gains \u2014 which shapes the structural context for R&D intensity going forward.\n\n**LLY:** Lilly's rapid revenue expansion \u2014 with the FY2024-to-FY2025 step-up alone exceeding $20B [LLY:Q2][LLY:Q3] \u2014 acts as a natural dilutant of R&D intensity as a percentage of sales. Even if absolute R&D dollars are rising to support pipeline breadth, the surging revenue base tends to compress the ratio. Lilly's R&D-to-revenue ratio has likely trended downward in recent years purely as a function of denominator growth, though the company continues to invest heavily in absolute terms to sustain its GLP-1 leadership and expand into adjacent indications.\n\n**MRK:** Merck's modest cumulative revenue growth of roughly 10% over three years [MRK:Q0][MRK:Q3] means its R&D-to-revenue ratio is more exposed to upward pressure, particularly as the company invests in pipeline diversification ahead of Keytruda's eventual patent cliff. With a slower-growing top line, each incremental dollar of R&D spend has a more visible impact on the ratio, and Merck's need to replenish its portfolio through both internal R&D and business development likely keeps its R&D intensity relatively elevated compared to Lilly's rapidly expanding revenue base.\n\n*Caveat: Explicit R&D expenditure figures were not included in the underlying source data for this comparison. The assessments above are inferred from revenue dynamics and structural context rather than calculated directly from R&D line items.*\n\n---\n\n**Cross-axis takeaway:** The Growth axis makes clear that Lilly's denominator has expanded so dramatically that its R&D-to-revenue ratio faces structural compression even as absolute investment grows, while Merck's stagnant-by-comparison revenue base keeps R&D intensity more elevated and more sensitive to pipeline spending decisions. The two companies may report similar top-line revenues in FY2025 [LLY:Q3][MRK:Q3], but their R&D efficiency profiles \u2014 and the strategic pressures driving each \u2014 remain fundamentally different.",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly has delivered explosive revenue growth over the past three years, expanding from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase driven largely by its GLP-1 franchise (Mounjaro, Zepbound). The compound annual growth rate over that period is well above 30%. Merck, by contrast, has grown at a far more modest pace, moving from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3] \u2014 a cumulative gain of roughly 10% over the same span. Notably, the two companies have converged to nearly identical top-line revenue in FY2025 ($65.2B for LLY [LLY:Q3] vs. $65.0B for MRK [MRK:Q3]), despite Merck having been roughly twice Lilly's size just three years earlier. Merck's incremental gains from FY2022 to FY2025 reflect steady but unspectacular growth, with the largest single-year jump being FY2023 to FY2024 (+$4.1B) [MRK:Q1][MRK:Q2], while Lilly's FY2024-to-FY2025 step-up alone was over $20B [LLY:Q2][LLY:Q3].",
+      "ticker": "LLY",
+      "accession": "0000059478-25-000067",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "28541400000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly has delivered explosive revenue growth over the past three years, expanding from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase driven largely by its GLP-1 franchise (Mounjaro, Zepbound). The compound annual growth rate over that period is well above 30%. Merck, by contrast, has grown at a far more modest pace, moving from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3] \u2014 a cumulative gain of roughly 10% over the same span. Notably, the two companies have converged to nearly identical top-line revenue in FY2025 ($65.2B for LLY [LLY:Q3] vs. $65.0B for MRK [MRK:Q3]), despite Merck having been roughly twice Lilly's size just three years earlier. Merck's incremental gains from FY2022 to FY2025 reflect steady but unspectacular growth, with the largest single-year jump being FY2023 to FY2024 (+$4.1B) [MRK:Q1][MRK:Q2], while Lilly's FY2024-to-FY2025 step-up alone was over $20B [LLY:Q2][LLY:Q3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "34124000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly has delivered explosive revenue growth over the past three years, expanding from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase driven largely by its GLP-1 franchise (Mounjaro, Zepbound). The compound annual growth rate over that period is well above 30%. Merck, by contrast, has grown at a far more modest pace, moving from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3] \u2014 a cumulative gain of roughly 10% over the same span. Notably, the two companies have converged to nearly identical top-line revenue in FY2025 ($65.2B for LLY [LLY:Q3] vs. $65.0B for MRK [MRK:Q3]), despite Merck having been roughly twice Lilly's size just three years earlier. Merck's incremental gains from FY2022 to FY2025 reflect steady but unspectacular growth, with the largest single-year jump being FY2023 to FY2024 (+$4.1B) [MRK:Q1][MRK:Q2], while Lilly's FY2024-to-FY2025 step-up alone was over $20B [LLY:Q2][LLY:Q3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "45043000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly has delivered explosive revenue growth over the past three years, expanding from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase driven largely by its GLP-1 franchise (Mounjaro, Zepbound). The compound annual growth rate over that period is well above 30%. Merck, by contrast, has grown at a far more modest pace, moving from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3] \u2014 a cumulative gain of roughly 10% over the same span. Notably, the two companies have converged to nearly identical top-line revenue in FY2025 ($65.2B for LLY [LLY:Q3] vs. $65.0B for MRK [MRK:Q3]), despite Merck having been roughly twice Lilly's size just three years earlier. Merck's incremental gains from FY2022 to FY2025 reflect steady but unspectacular growth, with the largest single-year jump being FY2023 to FY2024 (+$4.1B) [MRK:Q1][MRK:Q2], while Lilly's FY2024-to-FY2025 step-up alone was over $20B [LLY:Q2][LLY:Q3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65179000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly has delivered explosive revenue growth over the past three years, expanding from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase driven largely by its GLP-1 franchise (Mounjaro, Zepbound). The compound annual growth rate over that period is well above 30%. Merck, by contrast, has grown at a far more modest pace, moving from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3] \u2014 a cumulative gain of roughly 10% over the same span. Notably, the two companies have converged to nearly identical top-line revenue in FY2025 ($65.2B for LLY [LLY:Q3] vs. $65.0B for MRK [MRK:Q3]), despite Merck having been roughly twice Lilly's size just three years earlier. Merck's incremental gains from FY2022 to FY2025 reflect steady but unspectacular growth, with the largest single-year jump being FY2023 to FY2024 (+$4.1B) [MRK:Q1][MRK:Q2], while Lilly's FY2024-to-FY2025 step-up alone was over $20B [LLY:Q2][LLY:Q3].",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "59283000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly has delivered explosive revenue growth over the past three years, expanding from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase driven largely by its GLP-1 franchise (Mounjaro, Zepbound). The compound annual growth rate over that period is well above 30%. Merck, by contrast, has grown at a far more modest pace, moving from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3] \u2014 a cumulative gain of roughly 10% over the same span. Notably, the two companies have converged to nearly identical top-line revenue in FY2025 ($65.2B for LLY [LLY:Q3] vs. $65.0B for MRK [MRK:Q3]), despite Merck having been roughly twice Lilly's size just three years earlier. Merck's incremental gains from FY2022 to FY2025 reflect steady but unspectacular growth, with the largest single-year jump being FY2023 to FY2024 (+$4.1B) [MRK:Q1][MRK:Q2], while Lilly's FY2024-to-FY2025 step-up alone was over $20B [LLY:Q2][LLY:Q3].",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "60115000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly has delivered explosive revenue growth over the past three years, expanding from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase driven largely by its GLP-1 franchise (Mounjaro, Zepbound). The compound annual growth rate over that period is well above 30%. Merck, by contrast, has grown at a far more modest pace, moving from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3] \u2014 a cumulative gain of roughly 10% over the same span. Notably, the two companies have converged to nearly identical top-line revenue in FY2025 ($65.2B for LLY [LLY:Q3] vs. $65.0B for MRK [MRK:Q3]), despite Merck having been roughly twice Lilly's size just three years earlier. Merck's incremental gains from FY2022 to FY2025 reflect steady but unspectacular growth, with the largest single-year jump being FY2023 to FY2024 (+$4.1B) [MRK:Q1][MRK:Q2], while Lilly's FY2024-to-FY2025 step-up alone was over $20B [LLY:Q2][LLY:Q3].",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "64168000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly has delivered explosive revenue growth over the past three years, expanding from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3] \u2014 a roughly 128% cumulative increase driven largely by its GLP-1 franchise (Mounjaro, Zepbound). The compound annual growth rate over that period is well above 30%. Merck, by contrast, has grown at a far more modest pace, moving from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3] \u2014 a cumulative gain of roughly 10% over the same span. Notably, the two companies have converged to nearly identical top-line revenue in FY2025 ($65.2B for LLY [LLY:Q3] vs. $65.0B for MRK [MRK:Q3]), despite Merck having been roughly twice Lilly's size just three years earlier. Merck's incremental gains from FY2022 to FY2025 reflect steady but unspectacular growth, with the largest single-year jump being FY2023 to FY2024 (+$4.1B) [MRK:Q1][MRK:Q2], while Lilly's FY2024-to-FY2025 step-up alone was over $20B [LLY:Q2][LLY:Q3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65011000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 8,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0
+    },
+    "quality": {
+      "clarity": 4,
+      "comparison_quality": 3,
+      "evidence_coverage": 2,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report is well-written and logically structured, with clear prose and a coherent narrative arc. The comparison quality is moderate: the author draws reasonable inferences about R&D intensity from revenue dynamics, but the core metric (R&D-to-revenue ratio) is never actually computed or approximated, making the comparison largely structural/inferential rather than substantive. Evidence coverage is the weakest dimension \u2014 the report explicitly lacks the R&D expenditure data needed to fulfill the section's stated purpose, and the revenue citations, while present, only support half the analytical framework. The report's strongest quality is its transparency: the opening note and closing caveat clearly and repeatedly flag the data gap, avoiding false precision and accurately characterizing what is inference versus calculation. This honesty prevents the report from being misleading despite its evidentiary limitations."
+    }
+  },
+  "error": null
+}

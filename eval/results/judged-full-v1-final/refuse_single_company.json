@@ -1,0 +1,21 @@
+{
+  "case_id": "refuse_single_company",
+  "final_status": "refused",
+  "report": "Out of scope for the Quorum corpus.\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null
+    },
+    "quality": {
+      "clarity": 3,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report honestly communicates that the query falls outside the supported scope, which is appropriate and transparent. However, it provides no substantive analysis, comparison, or evidence, scoring low on those dimensions. It does helpfully enumerate the supported axes, which adds minimal but useful clarity."
+    }
+  },
+  "error": null
+}

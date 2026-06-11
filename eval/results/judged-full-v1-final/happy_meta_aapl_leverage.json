@@ -1,0 +1,374 @@
+{
+  "case_id": "happy_meta_aapl_leverage",
+  "final_status": "ok",
+  "report": "## Leverage\n\nMETA and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.\n\n**META:** META has gone from a debt-free balance sheet in FY2022 [META:Q0] to ~$28.8B in long-term debt by FY2025 [META:Q3], a deliberate ramp-up likely tied to AI and infrastructure investment. However, with stockholders' equity of ~$125.7B [META:Q11] and cash of ~$41.9B [META:Q15] comfortably exceeding total debt, META's leverage remains low and its net debt position is negative, suggesting the company is still in a financially conservative posture despite the rapid pace of debt issuance.\n\n**AAPL:** AAPL carries a structurally elevated debt load that has been gradually declining \u2014 from ~$109.1B in noncurrent long-term debt in FY2022 [AAPL:Q0] to ~$85.8B in FY2025 [AAPL:Q7] \u2014 but its equity base has simultaneously eroded to just ~$50.7B [AAPL:Q11] due to aggressive buybacks, pushing its debt-to-equity ratio well above 1x. With cash of only ~$29.9B [AAPL:Q15] against gross debt of ~$96.7B [AAPL:Q3], AAPL carries meaningful net leverage, though its exceptional cash generation capacity makes this manageable.\n\n---\n\n**Cross-axis takeaway:** The two companies sit at opposite ends of the leverage spectrum. META is a net-cash business that has only recently begun issuing debt, keeping its balance sheet conservative even as obligations grow rapidly. AAPL is structurally net-leveraged, a deliberate consequence of returning capital aggressively to shareholders through buybacks that have compressed its equity base \u2014 a posture that is sustainable given AAPL's durable free cash flow, but that leaves it with meaningfully less financial flexibility than META on a balance-sheet basis.",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-23-000013",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "0.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-24-000012",
+      "concept": "us-gaap:LongTermDebt",
+      "normalized": null,
+      "value": "9923000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-25-000017",
+      "concept": "us-gaap:LongTermDebt",
+      "normalized": null,
+      "value": "18385000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:LongTermDebt",
+      "normalized": null,
+      "value": "28826000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-23-000013",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "0.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-24-000012",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "9923000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-25-000017",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "18385000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "28826000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-23-000013",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "101054000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-24-000012",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "128290000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-25-000017",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "124879000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "125713000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-23-000013",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "17576000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-24-000012",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "16601000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001326801-25-000017",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "14681000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "41862000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-22-000108",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "109106000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-23-000106",
+      "concept": "us-gaap:LongTermDebt",
+      "normalized": null,
+      "value": "110087000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:LongTermDebt",
+      "normalized": null,
+      "value": "105103000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:LongTermDebt",
+      "normalized": null,
+      "value": "96662000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-22-000108",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "109106000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-23-000106",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "98959000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "95281000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "85750000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-22-000108",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "90488000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-23-000106",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "65339000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "63090000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "50672000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-22-000108",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "34940000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-23-000106",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "23646000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "29965000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL represent starkly different leverage trajectories. META entered FY2022 with zero long-term debt [META:Q0] and has been rapidly building its balance sheet obligations, reaching ~$9.9B in FY2023 [META:Q1], ~$18.4B in FY2024 [META:Q2], and ~$28.8B in FY2025 [META:Q3] \u2014 yet its debt-to-equity ratio remains modest given stockholders' equity of ~$125.7B in FY2025 [META:Q11], and its cash position surged to ~$41.9B [META:Q15], meaning net debt is still negative. AAPL, by contrast, carries a structurally large and slowly declining debt load \u2014 long-term debt (total) stood at ~$110.1B in FY2023 [AAPL:Q1], declining to ~$96.7B in FY2025 [AAPL:Q3] \u2014 against a shrinking equity base of only ~$50.7B in FY2025 [AAPL:Q11], implying a debt-to-equity ratio well above 1x. AAPL's cash of ~$29.9B [AAPL:Q15] provides only partial offset to its gross debt, leaving it with meaningful net leverage, whereas META's rapidly growing cash pile more than covers its debt at this stage.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "29943000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 32,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "Exceptionally well-structured report with clear parallel treatment of both companies across multiple leverage dimensions (gross debt, equity, cash, net debt). Citation density is high and consistently applied. The cross-axis takeaway is concise and analytically sharp. Minor deduction on honesty/insufficient-data: the report confidently states AAPL's debt-to-equity is 'well above 1x' and characterizes AAPL's net leverage as 'meaningful' without explicitly computing or qualifying the ratio, and the phrase 'manageable given exceptional cash generation' is asserted rather than evidenced within the section. No hedging language appears where approximations or inferred ratios are used. These are small issues in an otherwise strong piece."
+    }
+  },
+  "error": null
+}

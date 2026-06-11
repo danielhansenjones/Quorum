@@ -1,0 +1,16 @@
+{
+  "run": "judged classification eval, gold v1, Haiku classifier (post resolver fix)",
+  "date": "2026-05-29",
+  "tolerance": 0.03,
+  "metrics": {
+    "axis.macro_f1": 0.918,
+    "axis.exact_set_match": 0.854,
+    "axis.per_axis.profitability.f1": 0.914,
+    "axis.per_axis.growth.f1": 0.87,
+    "axis.per_axis.leverage.f1": 0.889,
+    "axis.per_axis.risk_factors.f1": 1.0,
+    "refusal.precision": 1.0,
+    "refusal.recall": 1.0,
+    "refusal.accuracy": 1.0
+  }
+}

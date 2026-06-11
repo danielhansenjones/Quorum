@@ -1,0 +1,19 @@
+generated: '2026-05-29T05:05:36Z'
+subset: eval/runs/judged-full-v1-final
+local_judge: Qwen/Qwen2.5-7B-Instruct-AWQ
+canonical_judge: claude-sonnet-4-6
+local_quality_parse_failures: 0
+faithfulness:
+  n: 32
+  pearson: 0.9127241633783042
+  spearman: 0.9880425924256016
+quality:
+  n: 32
+  pearson: 0.6559035139493721
+  spearman: 0.10610886867766253
+decision:
+  use_local_for_iteration: false
+  rule: local judge for iteration if spearman(faithfulness) > 0.7 AND spearman(quality)
+    > 0.6; otherwise Sonnet for all judging
+  faithfulness_spearman: 0.9880425924256016
+  quality_spearman: 0.10610886867766253

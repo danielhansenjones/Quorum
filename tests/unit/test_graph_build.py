@@ -2,7 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from quorum.graph.build import build_graph, initial_state, route_after_critic
+from quorum.graph.build import build_graph, initial_state, replan_targets, route_after_critic
+from quorum.state.axis import AxisResult, AxisTask, CompanyAxisFinding
 from quorum.state.critique import Critique, FlaggedClaim
 
 
@@ -116,6 +117,37 @@ def test_route_after_critic_no_budget_routes_to_synthesize() -> None:
 def test_route_after_critic_no_flags_routes_to_synthesize() -> None:
     assert route_after_critic(_flags(0), 2) == "synthesize"
     assert route_after_critic(None, 2) == "synthesize"
+
+
+def _task(axis: str) -> AxisTask:
+    return AxisTask(axis=axis, mode="semantic", tickers=["AAPL", "MSFT"], query_or_concept="q")
+
+
+def _axis_result(axis: str, grounding: str) -> AxisResult:
+    return AxisResult(
+        axis=axis,
+        mode="semantic",
+        per_company={"AAPL": CompanyAxisFinding(ticker="AAPL")},
+        comparison="c",
+        citations=[],
+        grounding=grounding,  # type: ignore[arg-type]
+        attempts=1,
+    )
+
+
+def test_replan_targets_first_pass_sends_everything() -> None:
+    plan = [_task("profitability"), _task("growth")]
+    assert replan_targets(plan, []) == plan
+
+
+def test_replan_targets_resends_only_weak_axes() -> None:
+    plan = [_task("profitability"), _task("growth"), _task("leverage")]
+    results = [
+        _axis_result("profitability", "ok"),
+        _axis_result("growth", "weak"),
+        _axis_result("leverage", "insufficient"),
+    ]
+    assert [t.axis for t in replan_targets(plan, results)] == ["growth"]
 
 
 def test_rebuttal_enabled_adds_loop_edges() -> None:

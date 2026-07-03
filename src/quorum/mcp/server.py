@@ -149,7 +149,7 @@ def build_mcp_server(
             )
         from quorum.graph.build import initial_state
 
-        state = initial_state(question)
+        state = initial_state(question, max_replans=max_replans)
         final = compiled_graph.invoke(state)
         return {
             "report": getattr(final, "report", None) or final.get("report"),

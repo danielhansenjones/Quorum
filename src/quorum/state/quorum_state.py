@@ -35,6 +35,7 @@ class QuorumState(BaseModel):
     plan: Annotated[list[AxisTask], reduce_plan] = Field(default_factory=list)
     remaining_steps: int = 0
     replan_count: int = 0
+    max_replans: int = 2
 
     axis_results: Annotated[list[AxisResult], reduce_axis_results] = Field(default_factory=list)
 

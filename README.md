@@ -61,7 +61,7 @@ Representative output (colorized in a real terminal):
   plan         2 analyst task(s) -> fan-out: [profitability, growth]   budget=4
   analyze      profitability    done  grounding=ok  6 cites
   analyze      growth           done  grounding=ok  5 cites
-  assess       route -> critic
+  assess       2 axes  0 weak
   critic       agent loop  turns=2  status=ok  (4218 ms)
     [1] get_financial_concept(ticker=AAPL concept=NetIncomeLoss)  -> {"value":"93736000000","unit":"USD",...  [ok]
     [2] get_financial_concept(ticker=MSFT concept=NetIncomeLoss)  -> {"value":"88136000000","unit":"USD",...  [ok]

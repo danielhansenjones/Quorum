@@ -75,7 +75,14 @@ def _summarize_node(node_name: str, update: Any) -> dict[str, Any]:
                 )
         return {"results": results}
     if node_name == "assess":
-        return {"route": _state_value(last, "_route")}
+        # The route decision never survives into the update (LangGraph strips
+        # unknown keys); summarize grounding instead - the next node event
+        # shows the route taken.
+        results = _state_value(last, "axis_results", []) or []
+        return {
+            "axes": len(results),
+            "weak": sum(1 for r in results if getattr(r, "grounding", "") == "weak"),
+        }
     if node_name == "critic":
         c = _state_value(last, "critique")
         if c is None:
@@ -148,7 +155,7 @@ def create_app(
             raise HTTPException(status_code=503, detail="graph not configured")
 
         async def event_stream() -> AsyncIterator[dict[str, Any]]:
-            state = initial_state(req.question)
+            state = initial_state(req.question, max_replans=req.max_replans)
             # thread_id is required once a checkpointer is attached; reusing the
             # request_id makes the run resumable at /runs/{request_id}/resume.
             config = {"configurable": {"thread_id": state.request_id}}

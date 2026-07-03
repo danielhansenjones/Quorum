@@ -138,6 +138,21 @@ def test_assess_weak_no_budget_preserves_weak_and_routes_to_critic() -> None:
     assert results[0].grounding == "weak"
 
 
+def test_assess_replan_cap_spent_routes_to_critic() -> None:
+    # Weak axis and step budget remain, but the caller's replan cap is spent:
+    # no further plan round (remaining_steps alone allowed up to 2 * num_axes).
+    now, deadline = _now_and_deadline()
+    out = assess(
+        axis_results=[_result("p", "weak")],
+        remaining_steps=2,
+        request_deadline=deadline,
+        now=now,
+        replan_count=2,
+        max_replans=2,
+    )
+    assert out["_route"] == "critic"
+
+
 def test_assess_any_insufficient_routes_to_critic() -> None:
     now, deadline = _now_and_deadline()
     out = assess(

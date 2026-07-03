@@ -23,11 +23,23 @@ from quorum.graph.nodes.refuse import refuse
 from quorum.graph.nodes.resolve import resolve
 from quorum.graph.nodes.synthesize import synthesize
 from quorum.models.router import ChatClient
+from quorum.state.axis import AxisResult, AxisTask
 from quorum.state.critique import Critique
 from quorum.state.quorum_state import QuorumState
 from quorum.trace.writer import TraceCtx, TraceWriter
 
 DEFAULT_REQUEST_DEADLINE_S = 180.0
+DEFAULT_MAX_REPLANS = 2
+
+
+def replan_targets(plan: list[AxisTask], axis_results: list[AxisResult]) -> list[AxisTask]:
+    # Pure fan-out filter. An axis whose result is already grounded (or
+    # terminally insufficient) keeps that result; re-running it on a re-plan
+    # pass re-bills the analyst with no new information. Only weak axes - the
+    # ones revise_plan rebuilt - go back out. First pass has no results yet,
+    # so everything runs.
+    done = {r.axis for r in axis_results if r.grounding != "weak"}
+    return [t for t in plan if t.axis not in done]
 
 
 def route_after_critic(critique: Critique | None, remaining_steps: int) -> str:
@@ -166,7 +178,7 @@ def build_graph(
                 "analyze_axis",
                 {"task": task, "request_id": state.request_id, "trace_id": state.trace_id},
             )
-            for task in state.plan
+            for task in replan_targets(state.plan, state.axis_results)
         ]
 
     def assess_node(state: QuorumState) -> dict[str, Any]:
@@ -175,8 +187,10 @@ def build_graph(
             remaining_steps=state.remaining_steps,
             request_deadline=state.request_deadline,
             now=datetime.now(UTC),
+            replan_count=state.replan_count,
+            max_replans=state.max_replans,
         )
-        return {"axis_results": out["axis_results"], "_route": out["_route"]}
+        return {"axis_results": out["axis_results"]}
 
     def critic_node(state: QuorumState) -> dict[str, Any]:
         # Containment property: any failure -> critique=None and pass through.
@@ -266,10 +280,10 @@ def build_graph(
     builder.add_edge("analyze_axis", "assess")
 
     def after_assess(state: QuorumState) -> str:
-        # The assess node wrote `_route` into state via the return dict; LangGraph
-        # does not strip unknown keys, but it does not surface them on the
-        # Pydantic model either. We recompute the routing decision here against
-        # the latest state so the conditional edge stays a pure function of state.
+        # LangGraph strips keys unknown to the Pydantic schema from node
+        # returns, so a "_route" hint from assess_node never survives into
+        # state. The conditional edge recomputes the decision from the latest
+        # state instead, keeping routing a pure function of state.
         from quorum.graph.nodes.assess import assess as assess_pure
 
         out = assess_pure(
@@ -277,6 +291,8 @@ def build_graph(
             remaining_steps=state.remaining_steps,
             request_deadline=state.request_deadline,
             now=datetime.now(UTC),
+            replan_count=state.replan_count,
+            max_replans=state.max_replans,
         )
         return str(out["_route"])
 
@@ -310,7 +326,12 @@ def build_graph(
     return builder.compile(checkpointer=checkpointer)
 
 
-def initial_state(question: str, *, deadline_s: float = DEFAULT_REQUEST_DEADLINE_S) -> QuorumState:
+def initial_state(
+    question: str,
+    *,
+    deadline_s: float = DEFAULT_REQUEST_DEADLINE_S,
+    max_replans: int = DEFAULT_MAX_REPLANS,
+) -> QuorumState:
     now = datetime.now(UTC)
     return QuorumState(
         request_id=str(uuid4()),
@@ -318,4 +339,5 @@ def initial_state(question: str, *, deadline_s: float = DEFAULT_REQUEST_DEADLINE
         request_started_at=now,
         request_deadline=now + timedelta(seconds=deadline_s),
         question=question,
+        max_replans=max_replans,
     )

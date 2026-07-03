@@ -82,7 +82,9 @@ def render_node(pal: Palette, node: str, detail: dict[str, Any]) -> None:
                 f"{r['citations']} cites",
             )
     elif node == "assess":
-        _emit(pal, "assess", f"route -> {pal.BOLD}{detail.get('route')}{pal.R}")
+        weak = detail.get("weak") or 0
+        color = pal.YEL if weak else pal.GREEN
+        _emit(pal, "assess", f"{detail.get('axes')} axes  {color}{weak} weak{pal.R}")
     elif node == "critic":
         if detail.get("critique") is None:
             _emit(pal, "critic", f"{pal.DIM}unavailable (bypassed / timeout / failed){pal.R}")

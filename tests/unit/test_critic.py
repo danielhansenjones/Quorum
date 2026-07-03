@@ -63,6 +63,51 @@ def test_critic_end_turn_with_valid_json() -> None:
     assert c.turns_used == 1
 
 
+def test_critic_prose_wrapped_json_still_parses() -> None:
+    # Regression: whole-string json.loads returned None on prose-wrapped output,
+    # and the containment fallback then approved every axis with zero flags.
+    final = {
+        "per_axis": {"profitability": {"groundedness": "thin", "notes": "weak citation"}},
+        "cross_axis": [],
+        "flagged_claims": [
+            {
+                "source_axis": "profitability",
+                "claim": "margin doubled",
+                "flag": "unsupported",
+                "reason": "no supporting fact",
+            }
+        ],
+    }
+
+    class Cli:
+        backend = "anthropic"
+        model = "claude-sonnet-4-6"
+
+        def chat(self, **kwargs: Any) -> Any:
+            return _Resp(
+                content=[
+                    _Block(
+                        "text",
+                        text=f"Here is my verdict:\n```json\n{json.dumps(final)}\n```\nDone.",
+                    )
+                ],
+                stop_reason="end_turn",
+            )
+
+    c = critic(
+        [_result("profitability")],
+        sonnet_client=Cli(),
+        pool=None,  # type: ignore[arg-type]
+        qdrant=None,  # type: ignore[arg-type]
+        embed_query=lambda q: ([0.0], {}),
+    )
+    assert c is not None
+    assert c.status == "ok"
+    assert c.per_axis["profitability"].groundedness == "thin"
+    assert len(c.flagged_claims) == 1
+    assert c.flagged_claims[0].claim == "margin doubled"
+
+
 def test_critic_exception_returns_none() -> None:
     class Cli:
         backend = "anthropic"

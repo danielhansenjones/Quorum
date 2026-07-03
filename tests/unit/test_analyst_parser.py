@@ -2,10 +2,8 @@ from __future__ import annotations
 
 import pytest
 
-from quorum.graph.nodes.analyze_axis import (
-    _extract_first_json_object,
-    _parse_analyst_output,
-)
+from quorum.graph.json_parse import extract_first_json_object
+from quorum.graph.nodes.analyze_axis import _parse_analyst_output
 
 
 def test_bare_json_object() -> None:
@@ -70,7 +68,7 @@ def test_raises_when_no_object_present() -> None:
 
 
 def test_raises_on_truncated_object() -> None:
-    # Unbalanced braces -> _extract_first_json_object returns None -> ValueError.
+    # Unbalanced braces -> extract_first_json_object returns None -> ValueError.
     with pytest.raises(ValueError):
         _parse_analyst_output('{"grounding": "ok"')
 
@@ -87,7 +85,7 @@ def test_stray_close_brace_before_open_is_ignored() -> None:
 
 
 def test_extract_returns_none_for_no_object() -> None:
-    assert _extract_first_json_object("nothing to see") is None
+    assert extract_first_json_object("nothing to see") is None
 
 
 def test_extract_handles_unicode_inside_string() -> None:

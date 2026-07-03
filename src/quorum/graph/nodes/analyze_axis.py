@@ -12,6 +12,7 @@ from qdrant_client import QdrantClient
 
 from quorum.graph.agent_loop import run_agent_loop
 from quorum.graph.axis_config import AXIS_CONCEPTS, AXIS_SEMANTIC
+from quorum.graph.json_parse import extract_first_json_object
 
 # The agentic legwork loop reuses the critic's retrieval tool schemas (the single
 # source of truth for these three tools); only the dispatch differs. critic does
@@ -140,47 +141,12 @@ def _gather_semantic_evidence(
     return by_ticker
 
 
-def _extract_first_json_object(raw: str) -> str | None:
-    # Walk the string finding the first balanced {...} substring. Respects
-    # JSON string literals so a brace inside "..." does not count, and the
-    # backslash escape inside strings so an escaped quote does not break out.
-    in_string = False
-    escape = False
-    depth = 0
-    start = -1
-    for i, ch in enumerate(raw):
-        if escape:
-            escape = False
-            continue
-        if in_string:
-            if ch == "\\":
-                escape = True
-            elif ch == '"':
-                in_string = False
-            continue
-        if ch == '"':
-            in_string = True
-            continue
-        if ch == "{":
-            if depth == 0:
-                start = i
-            depth += 1
-            continue
-        if ch == "}":
-            if depth == 0:
-                continue
-            depth -= 1
-            if depth == 0 and start >= 0:
-                return raw[start : i + 1]
-    return None
-
-
 def _parse_analyst_output(raw: str) -> dict[str, Any]:
     # Smoke (2026-05-28) showed Sonnet frequently wraps the JSON object with
     # prose ("Here is the analysis:"), markdown fences, or trailing commentary.
     # Walk the response and pull the first balanced JSON object out instead of
     # assuming the response is exactly the JSON.
-    candidate = _extract_first_json_object(raw)
+    candidate = extract_first_json_object(raw)
     if candidate is None:
         raise ValueError("no JSON object found in analyst output")
     return dict(json.loads(candidate))

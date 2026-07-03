@@ -6,7 +6,8 @@ from typing import Any
 
 from diskcache import Cache
 
-from quorum.graph.nodes.analyze_axis import _extract_first_json_object, _extract_text
+from quorum.graph.json_parse import extract_first_json_object
+from quorum.graph.nodes.analyze_axis import _extract_text
 from quorum.models.cached_chat import chat_maybe_cached
 from quorum.models.router import ChatClient
 from quorum.state.axis import AxisResult
@@ -89,7 +90,7 @@ def _rebut_axis(
         trace_ctx.event(
             "llm:rebut", **llm_trace_fields(sonnet_client.model, resp), input_shape={"axis": axis}
         )
-    candidate = _extract_first_json_object(_extract_text(resp))
+    candidate = extract_first_json_object(_extract_text(resp))
     if candidate is None:
         return []
     parsed = json.loads(candidate)

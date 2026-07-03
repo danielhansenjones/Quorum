@@ -9,6 +9,7 @@ from diskcache import Cache
 from psycopg_pool import ConnectionPool
 from qdrant_client import QdrantClient
 
+from quorum.graph.json_parse import extract_first_json_object
 from quorum.models.cached_chat import chat_maybe_cached
 from quorum.models.router import ChatClient
 from quorum.state.axis import AxisResult
@@ -208,20 +209,18 @@ def _stop_reason(resp: Any) -> str:
 
 
 def _extract_final_json(resp: Any) -> dict[str, Any] | None:
+    # Balanced-brace extraction, same as the analyst parser: prose-wrapped or
+    # fenced JSON must not silently degrade the critic to the containment
+    # fallback, which reports every axis grounded with zero flags.
     text = ""
     for b in _content_blocks(resp):
         if getattr(b, "type", "") == "text":
             text += str(getattr(b, "text", ""))
-    s = text.strip()
-    if s.startswith("```"):
-        s = s.split("```", 2)[1]
-        if s.startswith("json"):
-            s = s[4:]
-    s = s.strip()
-    if not s:
+    candidate = extract_first_json_object(text)
+    if candidate is None:
         return None
     try:
-        return dict(json.loads(s))
+        return dict(json.loads(candidate))
     except json.JSONDecodeError:
         return None
 
@@ -349,7 +348,7 @@ def critic(
     if final is None:
         # Containment fallback (hit cap, parse failure, or timeout).
         return Critique(
-            status="timeout" if timed_out else ("failed" if not final else "partial"),
+            status="timeout" if timed_out else "failed",
             per_axis={
                 r.axis: AxisAssessment(axis=r.axis, groundedness="ok", notes="")
                 for r in axis_results

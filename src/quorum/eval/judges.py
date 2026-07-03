@@ -307,8 +307,9 @@ def _judge_chat(
     # first message. The judges must work with both for the 10c local-vs-canonical
     # correlation study.
     if judge_client.backend == "anthropic":
-        # On this branch `system` rides outside the cache key; prompt_version
-        # carries it - same contract as chat_maybe_cached in the graph nodes.
+        # `system` rides in chat_kwargs and is hashed into the cache key, so an
+        # edited rubric misses on its own - same contract as chat_maybe_cached
+        # in the graph nodes. prompt_version stays as an explicit lever.
         messages: list[dict[str, Any]] = [{"role": "user", "content": user}]
         chat_kwargs: dict[str, Any] | None = {"system": system}
     else:

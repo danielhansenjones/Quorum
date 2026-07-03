@@ -16,10 +16,14 @@ def build_llm_cache_key(
     messages: list[dict[str, Any]],
     temperature: float,
     max_tokens: int,
+    extras: dict[str, Any] | None = None,
 ) -> str:
     # The architecture's contract: sha256 over canonical-JSON of the full
     # multi-turn message list. The critic node's later turns include tool-result
     # payloads, so message-level (not single-prompt) hashing is required.
+    # extras carries everything else that shapes the response (system prompt,
+    # tool schemas), so editing a prompt or tool without bumping prompt_version
+    # misses instead of silently replaying responses produced under the old one.
     messages_hash = sha256_hex(canonical_json(messages))
     key_obj = {
         "model": model,
@@ -27,6 +31,7 @@ def build_llm_cache_key(
         "messages_hash": messages_hash,
         "temperature": temperature,
         "max_tokens": max_tokens,
+        "extras_hash": sha256_hex(canonical_json(extras)) if extras else None,
     }
     return sha256_hex(canonical_json(key_obj))
 

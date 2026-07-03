@@ -202,6 +202,20 @@ def test_quality_judge_cached_second_call_is_free(tmp_path: Any) -> None:
     assert judge.calls == 2
 
 
+def test_quality_judge_rubric_change_misses(tmp_path: Any, monkeypatch: Any) -> None:
+    # An edited rubric must miss without a prompt_version bump; a stale hit
+    # would silently score reports under the old rubric across runs.
+    judge = _CountingJudge(
+        '{"clarity":5,"comparison_quality":4,"evidence_coverage":5,'
+        '"honesty_on_insufficient_data":5,"notes":"ok"}'
+    )
+    cache = Cache(str(tmp_path))
+    score_report_quality("Report A", judge_client=judge, llm_cache=cache)
+    monkeypatch.setattr("quorum.eval.judges._QUALITY_SYSTEM", "edited rubric text")
+    score_report_quality("Report A", judge_client=judge, llm_cache=cache)
+    assert judge.calls == 2
+
+
 def test_qual_citation_judge_cached_second_call_is_free(tmp_path: Any, monkeypatch: Any) -> None:
     monkeypatch.setattr(
         "quorum.eval.judges.get_filing_section",

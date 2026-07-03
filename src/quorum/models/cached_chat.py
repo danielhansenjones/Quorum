@@ -19,7 +19,8 @@ def cached_chat(
     max_tokens: int,
     chat_kwargs: dict[str, Any] | None = None,
 ) -> Any:
-    # Cache key uses (client.model, prompt_version, messages, temperature, max_tokens).
+    # Cache key uses (client.model, prompt_version, messages, temperature,
+    # max_tokens) plus a hash of chat_kwargs (system prompt, tool schemas).
     # Two different roles that resolve to the same model share keys; that is the
     # Phase 2c "cache hit across role types using the same model" contract.
     key = build_llm_cache_key(
@@ -28,6 +29,7 @@ def cached_chat(
         messages=messages,
         temperature=temperature,
         max_tokens=max_tokens,
+        extras=chat_kwargs,
     )
 
     def call() -> Any:
@@ -55,10 +57,10 @@ def chat_maybe_cached(
     tools: Any | None = None,
 ) -> Any:
     # One branch point for every node's chat call: passthrough when no cache is
-    # configured, cached otherwise. `system` (and `tools`) ride in chat_kwargs so
-    # they reach client.chat but stay out of the cache key - the key is
-    # (model, prompt_version, messages, temperature, max_tokens), and
-    # prompt_version is what distinguishes a changed system prompt or tool set.
+    # configured, cached otherwise. `system` (and `tools`) ride in chat_kwargs
+    # and are hashed into the cache key, so a changed system prompt or tool set
+    # misses on its own; prompt_version remains as an explicit invalidation
+    # lever (e.g. force a re-run without editing the prompt).
     extra: dict[str, Any] = {"system": system}
     if tools is not None:
         extra["tools"] = tools

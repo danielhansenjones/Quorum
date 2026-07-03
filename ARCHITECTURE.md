@@ -71,7 +71,7 @@ State is a Pydantic v2 model. Two design points matter:
 
 `AsyncPostgresSaver` is wired at boot. LangGraph writes a checkpoint at every super-step; a single-axis run produces roughly ten checkpoints across entry / classify / resolve / plan / analyze_axis / assess / critic / synthesize.
 
-`GET /runs/{request_id}/resume` calls `ainvoke(None, config)` with the run's `thread_id`, which replays from the last completed node. At most the interrupted node re-runs. Because every LLM call routes through the canonical-JSON cache (key over model + messages + params), a re-run node's model calls hit the cache and fire zero new API calls when inputs are unchanged. State is a Pydantic model and `request_id` is idempotent, so re-entry does not double-count.
+`GET /runs/{request_id}/resume` calls `ainvoke(None, config)` with the run's `thread_id`, which replays from the last completed node. At most the interrupted node re-runs. Because every LLM call routes through the canonical-JSON cache (key over model + messages + system prompt + tool schemas + params), a re-run node's model calls hit the cache and fire zero new API calls when inputs are unchanged. State is a Pydantic model and `request_id` is idempotent, so re-entry does not double-count.
 
 The checkpointer serializer uses an explicit msgpack allowlist (`CHECKPOINT_MODELS`). `tests/unit/test_checkpoint_allowlist.py` enforces two things: every state model is registered (a missing one would silently break resume), and an unregistered type is blocked on deserialize (proving the allowlist does real work). This is the guard that keeps resume from rotting as state evolves.
 
@@ -158,7 +158,7 @@ Per-request: p50 ~$0.001 (refusals short-circuit), p95 ~$0.105 (full multi-axis)
 
 Two caches matter and they are separate:
 
-- **Local disk cache** - canonical-JSON key over model + messages + params. Reported 100% hit rate on a re-run of an unchanged eval set (20/20 calls on a two-pass measurement, `scripts/run_cache_hitrate.py`). This is what makes resume free when inputs are unchanged. The eval judges ride the same cache, so re-judging identical reports (a crashed or repeated arm) re-bills nothing.
+- **Local disk cache** - canonical-JSON key over model + messages + system prompt + tool schemas + params, so a prompt or tool edit misses on its own instead of replaying stale responses. Reported 100% hit rate on a re-run of an unchanged eval set (20/20 calls on a two-pass measurement, `scripts/run_cache_hitrate.py`). This is what makes resume free when inputs are unchanged. The eval judges ride the same cache, so re-judging identical reports (a crashed or repeated arm) re-bills nothing.
 - **Anthropic prompt cache** - separate, and reads ~0 at v1 prompt sizes (system prompts are below the cache minimum).
 
 ## Local model serving

@@ -75,3 +75,36 @@ def test_no_cache_calls_every_time() -> None:
     chat_maybe_cached(client, None, **_args())
 
     assert counter.n == 2
+
+
+def test_system_change_misses_without_version_bump(tmp_path: Path) -> None:
+    # An edited system prompt must miss on its own; relying on a hand-bumped
+    # prompt_version silently replays responses produced under the old prompt.
+    counter = _Counter()
+    client = fake_client("claude-sonnet-4-6", counter)
+    cache = Cache(str(tmp_path / "c"))
+
+    a = _args()
+    chat_maybe_cached(client, cache, **a)
+    b = dict(a)
+    b["system"] = [{"type": "text", "text": "sys, edited"}]
+    chat_maybe_cached(client, cache, **b)
+
+    assert counter.n == 2
+
+
+def test_tools_change_misses_without_version_bump(tmp_path: Path) -> None:
+    counter = _Counter()
+    client = fake_client("claude-sonnet-4-6", counter)
+    cache = Cache(str(tmp_path / "c"))
+
+    a = _args()
+    chat_maybe_cached(client, cache, tools=[{"name": "t", "input_schema": {"type": "object"}}], **a)
+    chat_maybe_cached(
+        client,
+        cache,
+        tools=[{"name": "t", "input_schema": {"type": "object", "properties": {}}}],
+        **a,
+    )
+
+    assert counter.n == 2

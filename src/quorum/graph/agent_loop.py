@@ -29,6 +29,7 @@ class AgentLoopResult:
     tool_calls: list[ToolCallRecord]
     turns_used: int
     stop: str  # "end_turn" | "cap" | "timeout" | "failed"
+    error: str | None = None
 
 
 def _blocks(resp: Any) -> list[Any]:
@@ -54,12 +55,26 @@ def run_agent_loop(
     prompt_version: str = "agent-v1",
     trace_ctx: TraceCtx | None = None,
 ) -> AgentLoopResult:
+    if client.backend != "anthropic":
+        # The loop builds Anthropic wire-format requests (top-level `system`,
+        # `input_schema` tools, tool_result blocks); an OpenAI-protocol client
+        # would raise on turn 1. Fail fast with a reason the caller can surface
+        # instead of a swallowed TypeError.
+        return AgentLoopResult(
+            final_text="",
+            tool_calls=[],
+            turns_used=0,
+            stop="failed",
+            error=f"agent loop requires an anthropic-protocol client, got {client.backend!r}",
+        )
+
     deadline = time.monotonic() + wall_clock_s
     messages: list[dict[str, Any]] = [{"role": "user", "content": initial_user}]
     tool_calls: list[ToolCallRecord] = []
     final_text = ""
     turns = 0
     stop = "cap"
+    error: str | None = None
     while turns < max_turns:
         if time.monotonic() >= deadline:
             stop = "timeout"
@@ -76,8 +91,9 @@ def run_agent_loop(
                 temperature=0.0,
                 max_tokens=max_tokens,
             )
-        except Exception:  # noqa: BLE001
+        except Exception as e:  # noqa: BLE001
             stop = "failed"
+            error = f"{type(e).__name__}: {e}"
             break
         if trace_ctx is not None:
             trace_ctx.event(
@@ -132,5 +148,5 @@ def run_agent_loop(
         messages.append({"role": "user", "content": "Call a tool or stop with your conclusion."})
 
     return AgentLoopResult(
-        final_text=final_text, tool_calls=tool_calls, turns_used=turns, stop=stop
+        final_text=final_text, tool_calls=tool_calls, turns_used=turns, stop=stop, error=error
     )

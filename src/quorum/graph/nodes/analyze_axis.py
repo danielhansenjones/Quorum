@@ -31,7 +31,10 @@ from quorum.tools.concept_resolver import ResolvedFact, get_financial_concept
 from quorum.tools.filing_section import get_filing_section
 from quorum.tools.search import SearchHit, hybrid_search
 from quorum.trace.cost import llm_trace_fields
+from quorum.trace.logger import get_logger
 from quorum.trace.writer import TraceCtx
+
+_log = get_logger("analyze_axis")
 
 DEFAULT_BRANCH_TIMEOUT_S = 60.0
 MAX_RETRIES = 2
@@ -569,7 +572,7 @@ def analyze_axis_agentic(
             f"focus: {task.query_or_concept}\n\n"
             "Gather evidence now."
         )
-        run_agent_loop(
+        loop = run_agent_loop(
             client=legwork_client,
             system=[
                 {
@@ -588,8 +591,29 @@ def analyze_axis_agentic(
             prompt_version=legwork_prompt_version,
             trace_ctx=trace_ctx,
         )
+        if loop.stop == "failed":
+            # The fallback keeps the run alive, but a failed legwork loop means
+            # the agentic arm silently measures as the single-shot baseline -
+            # that must be visible in logs and traces, not swallowed.
+            _log.warning("legwork_failed_falling_back", axis=task.axis, error=loop.error)
+            if trace_ctx is not None:
+                trace_ctx.event(
+                    "legwork:failed",
+                    error_kind="terminal",
+                    error_reason=loop.error,
+                    input_shape={"axis": task.axis},
+                )
+            return _fallback()
         quant_evidence, qual_evidence = dispatch.evidence(task)
         if not _has_any_evidence(quant_evidence, qual_evidence):
+            _log.warning("legwork_empty_falling_back", axis=task.axis, stop=loop.stop)
+            if trace_ctx is not None:
+                trace_ctx.event(
+                    "legwork:empty",
+                    error_kind="terminal",
+                    error_reason=f"no evidence gathered (stop={loop.stop})",
+                    input_shape={"axis": task.axis},
+                )
             return _fallback()
         return _write_axis_result(
             task,

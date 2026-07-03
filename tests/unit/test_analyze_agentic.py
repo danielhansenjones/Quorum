@@ -147,6 +147,33 @@ def test_agentic_falls_back_on_legwork_exception(monkeypatch: pytest.MonkeyPatch
     assert out is sentinel
 
 
+def test_agentic_falls_back_on_non_anthropic_legwork_backend(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    # run_agent_loop speaks the Anthropic wire format only. An OpenAI-protocol
+    # (vLLM) legwork client must fail fast into the single-shot fallback with a
+    # surfaced reason, not a swallowed TypeError.
+    sentinel = _sentinel()
+    monkeypatch.setattr(az, "analyze_axis", lambda task, **kw: sentinel)
+
+    class _Vllm:
+        backend = "vllm"
+        model = "Qwen/Qwen2.5-7B-Instruct-AWQ"
+
+        def chat(self, **kwargs: Any) -> Any:
+            raise AssertionError("must not be called: backend guard fails fast")
+
+    out = analyze_axis_agentic(
+        _task(),
+        legwork_client=_Vllm(),
+        sonnet_client=_FakeSonnet("{}"),
+        pool=None,  # type: ignore[arg-type]
+        qdrant=None,  # type: ignore[arg-type]
+        embed_query=lambda q: ([0.0], {}),
+    )
+    assert out is sentinel
+
+
 def test_write_axis_result_cites_only_gathered_evidence() -> None:
     # The agentic write phase: citations are code-built from the gathered facts,
     # so a ticker the legwork did not gather for cannot acquire a citation.

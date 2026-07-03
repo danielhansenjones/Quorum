@@ -259,10 +259,12 @@ def _write_axis_result(
         "Write the JSON object now."
     )
 
+    messages: list[dict[str, Any]] = [{"role": "user", "content": user}]
     last_err: Exception | None = None
     attempts = 0
     while attempts < MAX_RETRIES and time.monotonic() < deadline:
         attempts += 1
+        raw = ""
         try:
             resp = chat_maybe_cached(
                 sonnet_client,
@@ -275,7 +277,7 @@ def _write_axis_result(
                         "cache_control": {"type": "ephemeral"},
                     }
                 ],
-                messages=[{"role": "user", "content": user}],
+                messages=messages,
                 temperature=0.0,
                 max_tokens=2000,
             )
@@ -288,6 +290,24 @@ def _write_axis_result(
             raw = _extract_text(resp)
             parsed = _parse_analyst_output(raw)
             return _to_result(task, parsed, quant_evidence, qual_evidence, attempts)
+        except ValueError as e:
+            # Parse failure: feed the error back instead of re-sending an
+            # identical request. At temperature 0 - and through the disk cache -
+            # an identical retry replays the same malformed response; the
+            # feedback also changes the cache key, so a poisoned entry cannot
+            # satisfy the retry.
+            last_err = e
+            messages.append({"role": "assistant", "content": raw or "(empty response)"})
+            messages.append(
+                {
+                    "role": "user",
+                    "content": (
+                        f"That response could not be parsed ({e}). Emit ONLY the "
+                        "JSON object now, with no surrounding prose or fences."
+                    ),
+                }
+            )
+            continue
         except Exception as e:  # noqa: BLE001
             last_err = e
             time.sleep(0.5 * (2 ** (attempts - 1)))

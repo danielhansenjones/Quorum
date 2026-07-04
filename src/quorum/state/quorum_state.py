@@ -42,7 +42,10 @@ class QuorumState(BaseModel):
     critique: Critique | None = None
     # Phase 13a. Analyst responses to critic flags; single-writer (rebut node),
     # so last-write-wins. Empty unless rebuttal_enabled and the critic flagged.
+    # rebuttal_rounds caps the critic <-> rebut cycle at one exchange: a second
+    # rebut pass would overwrite this field and lose round-1 retractions.
     rebuttals: list[Rebuttal] = Field(default_factory=list)
+    rebuttal_rounds: int = 0
 
     report: str | None = None
     report_citations: list[Citation] = Field(default_factory=list)

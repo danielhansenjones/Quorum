@@ -119,6 +119,12 @@ def test_route_after_critic_no_flags_routes_to_synthesize() -> None:
     assert route_after_critic(None, 2) == "synthesize"
 
 
+def test_route_after_critic_one_round_only() -> None:
+    # A second rebut pass would overwrite round-1 rebuttals (last-write-wins
+    # state) and let a retracted claim escape the synthesizer's strip.
+    assert route_after_critic(_flags(), 2, rebuttal_rounds=1) == "synthesize"
+
+
 def _task(axis: str) -> AxisTask:
     return AxisTask(axis=axis, mode="semantic", tickers=["AAPL", "MSFT"], query_or_concept="q")
 

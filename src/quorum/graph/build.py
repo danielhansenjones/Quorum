@@ -42,11 +42,20 @@ def replan_targets(plan: list[AxisTask], axis_results: list[AxisResult]) -> list
     return [t for t in plan if t.axis not in done]
 
 
-def route_after_critic(critique: Critique | None, remaining_steps: int) -> str:
+def route_after_critic(
+    critique: Critique | None, remaining_steps: int, rebuttal_rounds: int = 0
+) -> str:
     # Phase 13a routing, pure so it is unit-testable and the orchestration stays
-    # deterministic. Unresolved flags + budget -> the rebuttal exchange; else
-    # synthesize. The remaining_steps==0 case is the loop's termination guard.
-    if critique is not None and critique.flagged_claims and remaining_steps > 0:
+    # deterministic. Unresolved flags + budget + no prior round -> the rebuttal
+    # exchange; else synthesize. One round only: `rebuttals` is last-write-wins
+    # state, so a second pass would overwrite round 1 and a claim retracted
+    # there would escape the synthesizer's strip.
+    if (
+        critique is not None
+        and critique.flagged_claims
+        and remaining_steps > 0
+        and rebuttal_rounds == 0
+    ):
         return "rebut"
     return "synthesize"
 
@@ -213,7 +222,7 @@ def build_graph(
 
     def rebut_node(state: QuorumState) -> dict[str, Any]:
         flags = state.critique.flagged_claims if state.critique else []
-        return rebut(
+        out = rebut(
             flagged_claims=flags,
             axis_results=state.axis_results,
             remaining_steps=state.remaining_steps,
@@ -221,6 +230,8 @@ def build_graph(
             llm_cache=llm_cache,
             trace_ctx=TraceCtx(trace, state.request_id, state.trace_id),
         )
+        out["rebuttal_rounds"] = state.rebuttal_rounds + 1
+        return out
 
     def synthesize_node(state: QuorumState) -> dict[str, Any]:
         return synthesize(
@@ -309,7 +320,7 @@ def build_graph(
     )
 
     def after_critic(state: QuorumState) -> str:
-        return route_after_critic(state.critique, state.remaining_steps)
+        return route_after_critic(state.critique, state.remaining_steps, state.rebuttal_rounds)
 
     if critic_enabled and rebuttal_enabled:
         builder.add_conditional_edges(

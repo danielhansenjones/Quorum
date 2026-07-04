@@ -242,6 +242,11 @@ def _aggregate_judging(results: list[CaseResult]) -> dict[str, Any]:
         for r in results
         if (s := r.extra.get("scores")) and s["faithfulness"]["mean_score"] is not None
     ]
+    faithfulness_judge_failures = sum(
+        int(s["faithfulness"].get("judge_failures") or 0)
+        for r in results
+        if (s := r.extra.get("scores")) and s.get("faithfulness")
+    )
     quality_means: list[float] = []
     quality_judge_failures = 0
     for r in results:
@@ -266,6 +271,7 @@ def _aggregate_judging(results: list[CaseResult]) -> dict[str, Any]:
         "faithfulness_mean": (sum(faith_means) / len(faith_means)) if faith_means else None,
         "quality_mean": (sum(quality_means) / len(quality_means)) if quality_means else None,
         "quality_judge_failures": quality_judge_failures,
+        "faithfulness_judge_failures": faithfulness_judge_failures,
         "critic": _aggregate_critic(results),
     }
 

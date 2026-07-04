@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 import re
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from typing import Any
 
 from diskcache import Cache
@@ -215,13 +215,24 @@ def reconstruct_citation(d: dict[str, Any]) -> QuantCitation | QualCitation | No
 
 def aggregate_faithfulness(verdicts: list[ClaimVerdict]) -> dict[str, Any]:
     # Pure aggregation over per-citation verdicts (no IO; unit-tested directly).
-    n = len(verdicts)
+    # Error verdicts (unparseable judge output) are excluded-and-counted, same
+    # as the quality rubric's judge_error path: folding them in as score=1
+    # would report a judging failure as a contradicted claim.
+    scored = [v for v in verdicts if v.judge != "error"]
+    judge_failures = len(verdicts) - len(scored)
+    n = len(scored)
     if n == 0:
-        return {"n": 0, "mean_score": None, "faithful_fraction": None}
+        return {
+            "n": 0,
+            "mean_score": None,
+            "faithful_fraction": None,
+            "judge_failures": judge_failures,
+        }
     return {
         "n": n,
-        "mean_score": sum(v.score for v in verdicts) / n,
-        "faithful_fraction": sum(1 for v in verdicts if v.faithful) / n,
+        "mean_score": sum(v.score for v in scored) / n,
+        "faithful_fraction": sum(1 for v in scored if v.faithful) / n,
+        "judge_failures": judge_failures,
     }
 
 
@@ -286,7 +297,13 @@ def score_case(
         if report.strip()
         else None
     )
-    out: dict[str, Any] = {"faithfulness": aggregate_faithfulness(verdicts), "quality": quality}
+    # Per-claim verdicts ride in the artifact next to the aggregate: an error
+    # verdict that is invisible in the per-case JSON cannot be audited.
+    out: dict[str, Any] = {
+        "faithfulness": aggregate_faithfulness(verdicts)
+        | {"claims": [asdict(v) for v in verdicts]},
+        "quality": quality,
+    }
     # Only when a critique was captured (flagged_claims may be an empty list:
     # a critique that flagged nothing still scores n=0, distinct from None).
     if flagged_claims is not None:

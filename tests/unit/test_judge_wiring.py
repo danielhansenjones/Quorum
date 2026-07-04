@@ -24,7 +24,7 @@ def _v(score: int, faithful: bool) -> ClaimVerdict:
 
 def test_aggregate_empty() -> None:
     out = aggregate_faithfulness([])
-    assert out == {"n": 0, "mean_score": None, "faithful_fraction": None}
+    assert out == {"n": 0, "mean_score": None, "faithful_fraction": None, "judge_failures": 0}
 
 
 def test_aggregate_mixed() -> None:
@@ -32,6 +32,21 @@ def test_aggregate_mixed() -> None:
     assert out["n"] == 4
     assert out["mean_score"] == (5 + 5 + 1 + 2) / 4
     assert out["faithful_fraction"] == 0.5
+    assert out["judge_failures"] == 0
+
+
+def test_aggregate_excludes_and_counts_error_verdicts() -> None:
+    # An unparseable judge response must not fold into the mean as a
+    # contradicted claim; it is excluded-and-counted, mirroring the quality
+    # rubric's judge_error handling.
+    err = ClaimVerdict(
+        claim="c", faithful=False, score=1, reason="judge response unparseable", judge="error"
+    )
+    out = aggregate_faithfulness([_v(5, True), err])
+    assert out["n"] == 1
+    assert out["mean_score"] == 5.0
+    assert out["faithful_fraction"] == 1.0
+    assert out["judge_failures"] == 1
 
 
 def test_reconstruct_quant() -> None:
@@ -146,6 +161,35 @@ def test_score_case_attaches_incorporation_when_flagged_claims_passed() -> None:
     )
     assert out["incorporation"]["n"] == 1
     assert out["incorporation"]["incorporated"] == 0
+
+
+def test_score_case_persists_per_claim_verdicts(monkeypatch: Any) -> None:
+    # Verdicts ride in the artifact next to the aggregate so error verdicts are
+    # auditable per case, not invisible behind a mean.
+    monkeypatch.setattr("quorum.eval.judges.verify_quant_citation", lambda pool, c: _v(5, True))
+    out = score_case(
+        report="Some report.",
+        citations=[
+            {
+                "kind": "quant",
+                "claim": "c",
+                "ticker": "AAPL",
+                "accession": "a",
+                "concept": "us-gaap:Revenues",
+                "value": "1",
+                "period": "FY2024",
+                "unit": "USD",
+            }
+        ],
+        pool=None,  # type: ignore[arg-type]
+        qdrant=None,  # type: ignore[arg-type]
+        judge_client=_Judge(),
+    )
+    claims = out["faithfulness"]["claims"]
+    assert len(claims) == 1
+    assert claims[0]["judge"] == "deterministic"
+    assert claims[0]["score"] == 5
+    assert out["faithfulness"]["judge_failures"] == 0
 
 
 def test_score_case_omits_incorporation_without_flagged_claims() -> None:

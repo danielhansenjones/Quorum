@@ -1,12 +1,34 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import time
 from dataclasses import dataclass, field
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
 import yaml
+
+_REPO_ROOT = Path(__file__).resolve().parents[3]
+
+
+def _git_provenance() -> dict[str, Any]:
+    # Ties a run dir to the code that produced it. A dirty tree is recorded, not
+    # rejected: subset and debug runs are legitimate, but a campaign artifact
+    # with git_dirty=true is visibly not canonical. None outside a git checkout.
+    def _git(*args: str) -> str | None:
+        try:
+            out = subprocess.run(
+                ["git", *args], cwd=_REPO_ROOT, capture_output=True, text=True, timeout=10
+            )
+        except (OSError, subprocess.TimeoutExpired):
+            return None
+        return out.stdout.strip() if out.returncode == 0 else None
+
+    sha = _git("rev-parse", "HEAD")
+    status = _git("status", "--porcelain")
+    return {"git_sha": sha, "git_dirty": bool(status) if status is not None else None}
 
 
 @dataclass(frozen=True, slots=True)
@@ -149,6 +171,7 @@ def run_all(
     # Judging is opt-in: pass pool + qdrant + judge_client to score each case's
     # faithfulness (deterministic quant + LLM qual) and report quality.
     judge = pool is not None and qdrant is not None and judge_client is not None
+    started_at = datetime.now(UTC)
     cases = load_gold(gold_path)
     out_dir.mkdir(parents=True, exist_ok=True)
     results: list[CaseResult] = []
@@ -202,6 +225,11 @@ def run_all(
         # Records the toggle combination this arm ran under so the A/B campaign
         # can identify an arm from its run dir, not just its name (Phase 12e/13b).
         summary["run_config"] = run_config
+    summary["provenance"] = {
+        **_git_provenance(),
+        "started_at": started_at.isoformat(),
+        "judge_model": judge_client.model if judge and judge_client is not None else None,
+    }
     if judge:
         summary["judging"] = _aggregate_judging(results)
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2))

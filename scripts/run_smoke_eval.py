@@ -188,6 +188,15 @@ def main() -> int:
             "llm_cache": bool(args.cache_dir),
             "trace": args.trace,
             "judge": args.judge,
+            "gold": str(args.gold),
+            "models": {
+                "classifier": f"{classifier_client.backend}:{classifier_client.model}",
+                "analyst": f"{sonnet_client.backend}:{sonnet_client.model}",
+                "legwork": (
+                    f"{legwork_client.backend}:{legwork_client.model}" if legwork_client else None
+                ),
+                "judge": (f"{sonnet_client.backend}:{sonnet_client.model}" if args.judge else None),
+            },
         }
         summary = run_all(
             gold_to_run,

@@ -136,6 +136,10 @@ def test_run_all_persists_trajectory_and_critique_to_json(tmp_path: Path) -> Non
     assert data["critique"]["turns_used"] == 2
     assert data["critique"]["flagged_claims"][0]["flag"] == "unsupported"
     assert data["request_id"]
+    summary = json.loads((out / "summary.json").read_text())
+    prov = summary["provenance"]
+    assert set(prov) == {"git_sha", "git_dirty", "started_at", "judge_model"}
+    assert prov["started_at"]
 
 
 def _scored_case(

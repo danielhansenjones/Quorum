@@ -89,7 +89,9 @@ def render_node(pal: Palette, node: str, detail: dict[str, Any]) -> None:
         color = pal.YEL if weak else pal.GREEN
         _emit(pal, "assess", f"{detail.get('axes')} axes  {color}{weak} weak{pal.R}")
     elif node == "critic":
-        if detail.get("critique") is None:
+        # The API only includes a "critique" key when it is None (bypassed /
+        # timeout / failed); a successful critique arrives as flat fields.
+        if "critique" in detail:
             _emit(pal, "critic", f"{pal.DIM}unavailable (bypassed / timeout / failed){pal.R}")
             return
         _emit(

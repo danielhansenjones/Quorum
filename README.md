@@ -33,57 +33,24 @@ Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum classifies 
 
 ## Demo
 
-> **Watch it run.** A terminal recording goes here. Until then, [`scripts/demo.py`](scripts/demo.py) renders the full agent trajectory live over the SSE stream; representative output is below.
+![Quorum demo](assets/demo.gif)
 
-<!--
-Drop the recording in here once captured:
-  asciinema:  [![demo](https://asciinema.org/a/<ID>.svg)](https://asciinema.org/a/<ID>)
-  or a GIF:   ![Quorum demo](assets/demo.gif)   # commit it under a tracked dir, not an ignored one
-Capture: warm the cache once (free, deterministic), then
-  uv run python scripts/demo.py "Compare AAPL and MSFT on profitability and growth" --step 0.5 --cost
--->
+The recording is a replay of a real run, committed at [`eval/fixtures/demo_replay.jsonl`](eval/fixtures/demo_replay.jsonl) (regenerate the GIF with [`assets/demo.tape`](assets/demo.tape)). Reproduce it with no API key, no server, no Docker:
+
+```
+uv run python scripts/demo.py --replay --step 0.45
+```
+
+What it shows: classify -> resolve -> two analysts fan out in parallel -> assess -> the critic re-derives the quant claims with 8 tool calls against Postgres and flags 3 of them (two narratives whose dollar figures check out but overstate the story, one citation-coverage gap) -> synthesize acts on every flag. The COST line shows the billed-vs-effective split: the run's notional cost is $0.19, actual spend $0.0004 - every model call except the never-cached classifier replayed from the local disk cache.
+
+To run it live (and record a new fixture with `--record`):
 
 ```
 # terminal 1 - start the API (Anthropic key is injected by ./secret-run, never printed)
 ./secret-run uv run uvicorn quorum.api.main:app --port 8000
 
 # terminal 2 - stream a comparison and watch the agent work
-uv run python scripts/demo.py "Compare AAPL and MSFT on profitability and growth" --step 0.5 --cost
-```
-
-Representative output (colorized in a real terminal):
-
-```
-  quorum > Compare AAPL and MSFT on profitability and growth
-
-  classify     in-scope  axes=[profitability, growth]  mentions=[AAPL, MSFT]
-  resolve      tickers=[AAPL, MSFT]
-  plan         2 analyst task(s) -> fan-out: [profitability, growth]   budget=4
-  analyze      profitability    done  grounding=ok  6 cites
-  analyze      growth           done  grounding=ok  5 cites
-  assess       2 axes  0 weak
-  critic       agent loop  turns=2  status=ok  (4218 ms)
-    [1] get_financial_concept(ticker=AAPL concept=NetIncomeLoss)  -> {"value":"93736000000","unit":"USD",...  [ok]
-    [2] get_financial_concept(ticker=MSFT concept=NetIncomeLoss)  -> {"value":"88136000000","unit":"USD",...  [ok]
-    [3] search_filings(query=cloud revenue growth drivers)        -> 4 hits across MSFT 10-Q/10-K           [ok]
-    FLAG [growth] unsupported: MSFT Intelligent Cloud grew 31% year over year
-         reason: filing states 'server products and cloud services revenue increased 21%', not 31%
-  synthesize   status=ok  11 citations
-  ------------------------------------------------------------------------
-  REPORT       status=ok  11 citations  request_id=8f3c1d2a
-
-    ## Profitability
-    Apple's FY2024 net income of $93.7B exceeds Microsoft's $88.1B [AAPL:Q0] [MSFT:Q1] ...
-
-    ## Growth
-    Microsoft's cloud revenue grew 21% year over year [MSFT:Q2] (the 31% figure
-    was dropped after the critic flagged it as unsupported) ...
-  ------------------------------------------------------------------------
-  COST         total $0.0972   cache_read=0%
-    llm:analyst              $0.0361   in=8421  out=1206
-    llm:critic               $0.0456   in=10220 out=804
-    llm:synthesizer          $0.0151   in=6004  out=988
-    llm:classifier           $0.0004   in=512   out=44
+uv run python scripts/demo.py "Compare Coca-Cola and PepsiCo on profitability and growth." --step 0.5 --cost
 ```
 
 ## How it works

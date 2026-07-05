@@ -28,6 +28,35 @@ _EVENTS: list[tuple[str, dict[str, object]]] = [
         },
     ),
     ("node", {"node": "assess", "detail": {"axes": 1, "weak": 0}}),
+    # A successful critique arrives as flat fields with NO "critique" key;
+    # the API only sends {"critique": None} for the bypassed path.
+    (
+        "node",
+        {
+            "node": "critic",
+            "detail": {
+                "status": "ok",
+                "turns_used": 2,
+                "duration_ms": 41,
+                "tool_calls": [
+                    {
+                        "tool": "get_financial_concept",
+                        "args": {"ticker": "AAPL"},
+                        "ok": True,
+                        "result": "value=93736000000",
+                    }
+                ],
+                "flags": [
+                    {
+                        "axis": "profitability",
+                        "flag": "unsupported",
+                        "claim": "MSFT margin grew 31%",
+                        "reason": "filing states 21%",
+                    }
+                ],
+            },
+        },
+    ),
     ("node", {"node": "synthesize", "detail": {"status": "answered", "citations": 4}}),
     (
         "final",
@@ -75,10 +104,26 @@ def test_replay_renders_fixture_without_server(tmp_path: Path) -> None:
     assert "tickers=[AAPL, MSFT]" in out
     assert "grounding=ok" in out
     assert "0 weak" in out
+    assert "agent loop  turns=2  status=ok" in out
+    assert "get_financial_concept(ticker=AAPL)" in out
+    assert "FLAG [profitability] unsupported: MSFT margin grew 31%" in out
+    assert "unavailable" not in out
     assert "status=answered  4 citations  request_id=req-123" in out
     assert "MSFT leads on growth." in out
     assert "total $0.0123" in out
     assert "cache_read=97%" in out
+
+
+def test_replay_renders_bypassed_critic_as_unavailable(tmp_path: Path) -> None:
+    fixture = tmp_path / "demo.jsonl"
+    lines = [
+        {"event": "meta", "data": {"question": "q"}},
+        {"event": "node", "data": {"node": "critic", "detail": {"critique": None}}},
+    ]
+    fixture.write_text("".join(json.dumps(ln) + "\n" for ln in lines), encoding="utf-8")
+    proc = _run("--replay", str(fixture), "--no-color")
+    assert proc.returncode == 0, proc.stderr
+    assert "unavailable (bypassed / timeout / failed)" in proc.stdout
 
 
 def test_replay_skips_entry_node(tmp_path: Path) -> None:

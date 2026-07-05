@@ -1,0 +1,876 @@
+{
+  "case_id": "happy_pep_ko_profitability",
+  "request_id": "2a5dffd3-46c7-4884-94cd-b8ba901be848",
+  "final_status": "ok",
+  "elapsed_s": 0.8376589809995494,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "rebut",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Profitability\n\nPepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing.\n\nAt the operating income level, KO reported $13.8B in FY2025 [KO:Q11], implying an operating margin of roughly 29% on its ~$47.9B revenue base. However, this figure warrants context: KO's FY2024 operating income was approximately $9.99B (~21% margin), meaning the FY2025 result reflects a sharp ~38% single-year surge that may include non-recurring items and should not necessarily be taken as representative of KO's normalized operating profitability. By comparison, PEP's operating income fell from $12.9B in FY2024 [PEP:Q10] to $11.5B in FY2025 [PEP:Q11]\u2014a ~10.8% decline\u2014on a revenue base nearly double KO's, implying an operating margin of roughly 12%. This deterioration extends well beyond the bottom line and is not solely attributable to below-the-line items, indicating a broader profitability headwind for PEP.\n\nNet income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. KO's net income surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], though this followed a slight year-over-year dip from FY2023's $10.7B, and the FY2025 jump may reflect non-recurring items given the ~38% rise in operating income over the same period. PEP's net income, meanwhile, declined from its FY2024 peak of $9.6B [PEP:Q6] to $8.2B in FY2025 [PEP:Q7], widening the gap in KO's favor. Both companies have grown revenues over the FY2022\u2013FY2025 period, though PEP's growth was essentially flat between FY2023 and FY2024 (~0.4%), making \"steady growth\" an overstatement for that interval.\n\n**PEP:** PepsiCo is a revenue powerhouse, growing from $86.4B in FY2022 [PEP:Q0] to $93.9B in FY2025 [PEP:Q3], but its diversified food-and-beverage model constrains margins relative to KO, with gross margins in the mid-50% range and operating margins around 12\u201314%. Both operating income and net income deteriorated in FY2025\u2014operating income fell ~10.8% to $11.5B [PEP:Q11] and net income declined to $8.2B [PEP:Q7] from a FY2024 peak of $9.6B [PEP:Q6]\u2014signaling meaningful near-term profitability pressure that extends across the income statement even as the top line continued to grow modestly.\n\n**KO:** Coca-Cola's asset-light, concentrate-focused model delivers structurally superior margins: gross profit reached $29.5B on $47.9B of revenue in FY2025 [KO:Q15][KO:Q3], implying ~62% gross margin. Operating income of $13.8B [KO:Q11] implies an operating margin near 29% for FY2025, though this represents a sharp jump from ~21% in FY2024 and may be elevated by non-recurring items, so the normalized margin likely sits somewhat below that level. Net income surged to $13.1B in FY2025 [KO:Q7] from $10.6B in FY2024 [KO:Q6]\u2014itself a slight dip from FY2023's $10.7B\u2014demonstrating strong recent profitability momentum, albeit with some uncertainty about sustainability, on a revenue base roughly half the size of PEP's.\n\n---",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "86392000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "91471000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "91854000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "93925000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8910000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "9074000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "9578000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8240000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11512000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11986000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "12887000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11498000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "45816000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "49590000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "50110000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "50859000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "43004000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "45754000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "47061000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "47941000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "9542000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "10714000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "10631000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "13107000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "10909000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11311000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "9992000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "13762000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "25004000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "27234000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "28737000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "29544000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "13107000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11498000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "91854000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "profitability": {
+        "axis": "profitability",
+        "groundedness": "ok",
+        "notes": "All quantitative claims verified against filed XBRL data. PEP FY2024 revenue ($91.854B), KO FY2024 revenue ($47.061B), KO FY2025 gross profit ($29.544B) and revenue ($47.941B) yielding ~61.6% gross margin, PEP FY2025 gross profit ($50.859B) and revenue ($93.925B) yielding ~54.1% gross margin, KO FY2025 operating income ($13.762B, ~28.7% margin), PEP FY2025 operating income ($11.498B, ~12.2% margin), KO net income ($10.631B FY2024 \u2192 $13.107B FY2025), and PEP net income ($9.578B FY2024 \u2192 $8.240B FY2025) all match stated figures within rounding. The prior rebuttals on PEP operating income deterioration, KO net income trajectory, and citation completeness were all adequately addressed. The revised narrative correctly characterizes PEP revenue growth as near-flat between FY2023 and FY2024.",
+        "missed_evidence": [
+          "KO FY2024 operating income was $9.992B (~21% margin), versus $13.762B in FY2025 (~29% margin)\u2014a +37.7% YoY surge. The narrative attributes a ~29% operating margin to KO without noting this was a sharp one-year jump from ~21%, which is material context for assessing whether FY2025 KO profitability is representative or elevated by non-recurring items. The prior rebuttal flagged this possibility but the revised narrative still does not surface the FY2024 KO operating income figure.",
+          "PEP FY2025 gross profit of $50.859B vs FY2024's $50.110B represents only ~1.5% growth despite revenue growing ~2.3%, implying slight gross margin compression for PEP (from 54.6% in FY2024 to 54.1% in FY2025). This mild deterioration in PEP's gross margin is not mentioned."
+        ]
+      }
+    },
+    "cross_axis": [
+      "KO's ~38% operating income surge (FY2024: $9.992B \u2192 FY2025: $13.762B) while gross profit grew only ~2.8% ($28.737B \u2192 $29.544B) implies a very large reduction in operating expenses below the gross profit line. This divergence between gross profit growth and operating income growth warrants scrutiny across any quality-of-earnings or segment axis, as it may reflect asset gains, restructuring reversals, or other non-recurring items rather than sustainable margin improvement."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "profitability",
+        "claim": "KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%",
+        "flag": "weakly_supported",
+        "reason": "The ~29% operating margin figure is arithmetically correct for FY2025, but presenting it without context is misleading: KO's FY2024 operating income was only $9.992B (~21% margin), meaning the ~29% figure reflects a single-year +37.7% surge. The narrative does not disclose this jump or caveat that FY2025 may be elevated by non-recurring items, leaving readers with an overstated impression of KO's normalized operating profitability. The prior rebuttal acknowledged this risk but the revised text did not incorporate it.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PEP",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 91854000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 93925000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:Revenues\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 47061000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 47941000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:Revenues\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PEP",
+          "key": "profitability.gross_profit",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 50110000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:GrossProfit\"}, {\"value\": 50859000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:GrossProfit\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "profitability.gross_profit",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 28737000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:GrossProfit\"}, {\"value\": 29544000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:GrossProfit\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PEP",
+          "key": "profitability.operating_income",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 12887000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 11498000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "profitability.operating_income",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 9992000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 13762000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PEP",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 9578000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 8240000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 10631000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 13107000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}]"
+      }
+    ],
+    "turns_used": 3,
+    "duration_ms": 27
+  },
+  "rebuttals": [
+    {
+      "source_axis": "profitability",
+      "claim": "KO's [net income] surged from $10.6B in FY2024 to $13.1B in FY2025, widening the gap further",
+      "disposition": "revised",
+      "reason": "The FY2024\u2192FY2025 net income figures are accurate (C22: $10.631B; C23: $13.107B), but the original analysis implied a sustained upward trend; in fact KO net income dipped from $10.714B in FY2023 (C21) to $10.631B in FY2024 (C22) before surging in FY2025. The corrected claim should read: 'KO's net income surged from $10.6B in FY2024 to $13.1B in FY2025, though this followed a slight year-over-year decline from FY2023's $10.7B, and the FY2025 jump may reflect non-recurring items given the ~38% rise in operating income over the same period.'",
+      "citation": {
+        "kind": "quant",
+        "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+        "ticker": "KO",
+        "accession": "0001628280-26-010047",
+        "concept": "us-gaap:NetIncomeLoss",
+        "normalized": null,
+        "value": "13107000000.0",
+        "period": "FY2025",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "profitability",
+      "claim": "PEP's FY2025 net income declined from its FY2024 peak of $9.6B",
+      "disposition": "revised",
+      "reason": "The net income decline is supported (C6: $9.578B in FY2024; C7: $8.240B in FY2025), but the original claim understates the breadth of deterioration: PEP operating income also fell sharply from $12.887B (C10) to $11.498B (C11), a ~10.8% drop, indicating the profitability weakness extends well beyond the bottom line and is not solely attributable to below-the-line items.",
+      "citation": {
+        "kind": "quant",
+        "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+        "ticker": "PEP",
+        "accession": "0000077476-26-000007",
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "normalized": null,
+        "value": "11498000000.0",
+        "period": "FY2025",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "profitability",
+      "claim": "Both companies have grown revenues steadily since FY2022",
+      "disposition": "revised",
+      "reason": "While revenues for both companies are higher in FY2025 than FY2022, PEP's revenue growth from FY2023 ($91.471B, C1) to FY2024 ($91.854B, C2) was only ~0.4%, which is more accurately described as stagnation than steady growth; the claim should be revised to 'Both companies have grown revenues over the FY2022\u2013FY2025 period, though PEP's growth was essentially flat between FY2023 and FY2024.'",
+      "citation": {
+        "kind": "quant",
+        "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+        "ticker": "PEP",
+        "accession": "0000077476-26-000007",
+        "concept": "us-gaap:Revenues",
+        "normalized": null,
+        "value": "91854000000.0",
+        "period": "FY2024",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "profitability",
+      "claim": "Citations block references only PEP:us-gaap:Revenues and PEP:us-gaap:NetIncomeLoss for all quantitative claims",
+      "disposition": "retracted",
+      "reason": "The critic is correct that the citation list was materially incomplete: KO revenue, net income, gross profit, and operating income figures (C16\u2013C31) as well as PEP gross profit and operating income figures (C8\u2013C15) were used in the analysis but absent from the formal citation trail, making those claims unverifiable from the citations alone.",
+      "citation": null
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 35,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "PepsiCo and Coca-Cola are both highly profitable beverage-and-snack giants, but their profitability profiles differ meaningfully in scale, margin structure, and recent trajectory. PEP is the larger business by revenue\u2014$91.9B in FY2024 [PEP:Q2] versus KO's $47.1B [KO:Q2]\u2014yet KO consistently converts a higher share of revenue into profit. KO's gross margin runs well above PEP's: in FY2025, KO generated $29.5B of gross profit on $47.9B of revenue [KO:Q15][KO:Q3], implying ~62% gross margin, while PEP produced $50.9B of gross profit on $93.9B of revenue [PEP:Q15][PEP:Q3], implying ~54% gross margin\u2014a gap that reflects PEP's heavier exposure to lower-margin food and snack manufacturing. At the operating income level, KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%, compared with PEP's $11.5B [PEP:Q11] on nearly double the revenue, implying ~12%. Net income tells a similar story: KO earned $13.1B in FY2025 [KO:Q7] versus PEP's $8.2B [PEP:Q7], a notable reversal given PEP's much larger top line. PEP's FY2025 net income also declined from its FY2024 peak of $9.6B [PEP:Q6], while KO's surged from $10.6B in FY2024 [KO:Q6] to $13.1B in FY2025 [KO:Q7], widening the gap further. Both companies have grown revenues steadily since FY2022, but KO's margin expansion has been more pronounced.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 5,
+      "notes": "Exemplary report. Margins are explicitly calculated and labeled as implied rather than stated. The repeated caveat about KO's ~38% operating income surge potentially reflecting non-recurring items is appropriately flagged without overclaiming. PEP's flat FY2023-FY2024 revenue growth is correctly called out rather than glossed over as 'steady.' Citation density is high and consistent. The structural explanation for the gross margin gap (food/snack manufacturing vs. asset-light concentrate model) adds genuine analytical value. The summary bullets at the end reinforce rather than repeat, tying trajectory to structure cleanly. No material omissions or unsupported assertions detected."
+    },
+    "incorporation": {
+      "n": 1,
+      "incorporated": 1,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "profitability",
+          "claim": "KO's FY2025 result of $13.8B [KO:Q11] on roughly half PEP's revenue base implies an operating margin of ~29%",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

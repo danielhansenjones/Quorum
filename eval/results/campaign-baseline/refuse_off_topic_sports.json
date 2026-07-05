@@ -1,0 +1,32 @@
+{
+  "case_id": "refuse_off_topic_sports",
+  "request_id": "fc95a716-beb5-4f9a-970b-546f0e3b195a",
+  "final_status": "refused",
+  "elapsed_s": 0.8209032390004722,
+  "trajectory": [
+    "entry",
+    "classify",
+    "refuse"
+  ],
+  "report": "Question is about sports, not company financials.\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null,
+      "judge_failures": 0,
+      "claims": []
+    },
+    "quality": {
+      "clarity": 3,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report is honest and clear that the question is out of scope for Quorum's financial comparison capabilities. However, it provides no actual analysis, comparison, or evidence since the topic is outside the system's domain. Clarity is adequate but minimal \u2014 a brief explanation of why the question cannot be answered would improve the response."
+    }
+  },
+  "error": null
+}

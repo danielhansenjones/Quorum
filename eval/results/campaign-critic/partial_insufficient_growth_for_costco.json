@@ -1,0 +1,301 @@
+{
+  "case_id": "partial_insufficient_growth_for_costco",
+  "request_id": "ef248a78-e450-4682-a561-c883f0dca606",
+  "final_status": "ok",
+  "elapsed_s": 0.9164276040028199,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Growth\n\nCostco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years. Year-over-year growth rates were generally strong \u2014 FY2023 at $242.29B [COST:Q1] (+6.8%), FY2024 at $254.45B [COST:Q2] (+5.0%), and FY2025 at $275.24B [COST:Q3] (+8.2%) \u2014 with a mid-period dip in FY2024 before re-accelerating meaningfully in FY2025, reflecting resilient membership-driven demand and ongoing store expansion. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%. Notably, KO's earlier growth (FY2022\u2013FY2023 at $45.75B [KO:Q1], +6.4%) was partly supported by pricing actions and favorable FX tailwinds rather than pure volume expansion, which helps explain \u2014 though does not fully offset \u2014 the subsequent deceleration to +2.9% in FY2024 [KO:Q2] and +1.9% in FY2025 [KO:Q3], with the most recent annual increment below $900M [KO:Q2][KO:Q3]. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.\n\n**COST:** Costco has delivered strong and recovering revenue growth, expanding from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], a ~21% cumulative increase. After a modest deceleration in FY2024 [COST:Q2], growth re-accelerated sharply in FY2025, adding over $20B in revenues versus the prior year, underpinned by membership-driven demand and continued store expansion.\n\n**KO:** Coca-Cola has grown revenues from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, but the pace has slowed materially. The stronger growth in FY2022\u2013FY2023 was partly attributable to pricing actions and FX tailwinds rather than organic volume gains, and as those tailwinds faded, top-line momentum has moderated \u2014 the FY2024-to-FY2025 increment was less than $900M [KO:Q2][KO:Q3], pointing to maturing growth dynamics in its core beverage markets.\n\n---\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "226954000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "242290000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "254453000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "275235000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "43004000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "45754000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "47061000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "47941000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "growth": {
+        "axis": "growth",
+        "groundedness": "ok",
+        "notes": "All eight revenue figures are precisely confirmed by XBRL data. Cumulative growth percentages (~21% for COST, ~11% for KO) are arithmetically correct. One minor claim \u2014 that Costco showed 'consistent acceleration each year' \u2014 is weakly supported: FY2024 YoY growth (+5.0%) actually decelerated from FY2023 (+6.8%) before re-accelerating in FY2025 (+8.2%). The claim about KO 'decelerating notably' is directionally correct (6.4% \u2192 2.9% \u2192 1.9%) but omits that KO's FY2022\u20132023 growth was partly driven by pricing power and FX tailwinds, making the deceleration partly structural rather than purely organic weakness. The qualitative framing of Costco as 'more robust in both pace and consistency' is broadly defensible given the data, despite the one-year dip in COST's growth rate.",
+        "missed_evidence": [
+          "COST YoY growth rates reveal a dip in FY2024 (+5.0%) vs FY2023 (+6.8%), contradicting 'consistent acceleration'; FY2025 re-accelerated to +8.2%.",
+          "KO's FY2022\u20132023 revenue growth (+6.4%) was materially aided by pricing actions and favorable FX, which inflates the apparent starting growth rate and makes subsequent deceleration look sharper than underlying volume trends suggest.",
+          "Costco's revenue base includes membership fee income (~$4\u20135B annually), which grows at a different rate than merchandise sales \u2014 this nuance is absent from the analysis.",
+          "No qualitative MD&A evidence was retrievable to corroborate the narrative drivers of growth for either company."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The analysis correctly flags the different business models (retail vs. beverages) but does not address how this affects revenue quality: Costco's revenues are largely low-margin merchandise sales, while KO's revenues reflect a higher-margin concentrate/syrup model \u2014 making raw revenue growth comparisons potentially misleading without a profitability axis.",
+      "Costco's FY2025 figure ($275.235B) appears to be a trailing-twelve-month or fiscal-year estimate that may include projected quarters depending on Costco's fiscal year end (August); analysts should confirm this is a completed fiscal year and not a partial-year extrapolation."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "growth",
+        "claim": "each year showing consistent acceleration \u2014 FY2023 at $242.29B, FY2024 at $254.45B, and FY2025 at $275.24B",
+        "flag": "weakly_supported",
+        "reason": "YoY growth rates show FY2023 +6.8%, FY2024 +5.0%, FY2025 +8.2%. FY2024 decelerated relative to FY2023 before re-accelerating in FY2025. 'Consistent acceleration' is factually inaccurate for the FY2023\u2192FY2024 step; 'generally strong and recovering' would be more precise.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "growth",
+        "claim": "Coca-Cola\u2026growth decelerating notably",
+        "flag": "weakly_supported",
+        "reason": "While deceleration is real (6.4% \u2192 2.9% \u2192 1.9%), the analysis omits that KO's elevated FY2022\u20132023 growth was partly driven by pricing actions and FX tailwinds rather than pure volume growth, which contextually explains \u2014 but does not fully excuse \u2014 the subsequent slowdown. Calling it 'notable' deceleration is fair but the framing implies organic weakness without citing the pricing/FX drivers.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 226954000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 242290000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 254453000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 43004000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000021344-25-000047\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 45754000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 47061000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Costco revenue growth drivers membership fees",
+          "tickers": [
+            "COST"
+          ],
+          "sections": [
+            "MD&A"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Coca-Cola revenue growth organic pricing volume",
+          "tickers": [
+            "KO"
+          ],
+          "sections": [
+            "MD&A"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[]"
+      }
+    ],
+    "turns_used": 3,
+    "duration_ms": 222
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 8,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco has demonstrated substantially stronger absolute and relative revenue growth than Coca-Cola over the FY2022\u2013FY2025 period. Costco grew revenues from $226.95B in FY2022 [COST:Q0] to $275.24B in FY2025 [COST:Q3], representing cumulative growth of roughly 21% over three years, with each year showing consistent acceleration \u2014 FY2023 at $242.29B [COST:Q1], FY2024 at $254.45B [COST:Q2], and FY2025 at $275.24B [COST:Q3]. Coca-Cola, by contrast, grew from $43.00B in FY2022 [KO:Q0] to $47.94B in FY2025 [KO:Q3], a cumulative gain of roughly 11%, with growth decelerating notably \u2014 FY2023 at $45.75B [KO:Q1], FY2024 at $47.06B [KO:Q2], and FY2025 at $47.94B [KO:Q3] showing only modest incremental gains. While the two companies operate in very different segments (retail vs. beverages), Costco's growth trajectory is clearly more robust in both pace and consistency.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "The report is well-structured, clearly written, and makes effective use of cited data points throughout. The comparison between Costco and Coca-Cola is handled thoughtfully, with appropriate caveats about sector differences and the drivers behind KO's earlier growth (pricing vs. volume). The dual-format structure (combined analysis + per-company summaries) aids readability. The slight deduction on honesty/insufficient data is because the report makes a moderately confident claim about KO's FX tailwinds and pricing actions as growth drivers without explicitly flagging that this is an inference rather than directly cited data \u2014 a minor but notable gap in epistemic transparency."
+    },
+    "incorporation": {
+      "n": 2,
+      "incorporated": 2,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "growth",
+          "claim": "each year showing consistent acceleration \u2014 FY2023 at $242.29B, FY2024 at $254.45B, and FY2025 at $275.24B",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "growth",
+          "claim": "Coca-Cola\u2026growth decelerating notably",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

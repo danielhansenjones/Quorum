@@ -1,0 +1,332 @@
+{
+  "case_id": "partial_segment_revenue",
+  "request_id": "c1477681-7707-4fcc-b972-5cbbecb6b371",
+  "final_status": "ok",
+  "elapsed_s": 1.6398630080002476,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "rebut",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Advertising Segment Revenue Comparison: GOOGL vs. META\n\n### Growth\n\nBoth GOOGL and META have demonstrated strong revenue growth over the multi-year period captured in the evidence, with both companies showing re-accelerating growth in the most recent fiscal year. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in three years [META:Q2][META:Q3]. It is worth noting, however, that FY2022 represented a cyclical trough for META, which flatters the three-year cumulative growth rate relative to a peak-to-peak or trend-based comparison. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and ongoing monetization improvements. In the most recent fiscal year, both companies show re-accelerating growth, with GOOGL's FY2025 year-over-year rate of ~15% improving on FY2024's ~14%, and META posting approximately 22% year-over-year growth [META:Q2][META:Q3].\n\n**GOOGL:** Alphabet has compounded revenues at a healthy pace, moving from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], a ~56% cumulative increase. The FY2024-to-FY2025 increment of roughly $52.8B [GOOGL:Q2][GOOGL:Q3] underscores continued large-scale absolute dollar growth, even as the percentage growth rate (~15% year-over-year) is more moderate given the company's massive base. Notably, this most recent growth rate represents a modest re-acceleration relative to FY2024.\n\n**META:** Meta has delivered exceptional growth, with revenues climbing from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in three years. The FY2024-to-FY2025 jump from $164.5B to $201.0B [META:Q2][META:Q3] represents approximately 22% year-over-year growth, reflecting strong advertising demand and ongoing monetization improvements across its family of apps. Investors should bear in mind that the base period of this comparison coincides with META's cyclical revenue trough, which amplifies the apparent magnitude of the cumulative gain.\n\n---\n\n### Cross-Axis Takeaway\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-22-000019",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "257637000000.0",
+      "period": "FY2021",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "307394000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "350018000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "402836000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "META",
+      "accession": "0001326801-25-000017",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "116609000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "134902000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "164501000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "200966000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "META",
+      "accession": "0001326801-25-000017",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "116609000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "402836000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "growth": {
+        "axis": "growth",
+        "groundedness": "ok",
+        "notes": "All key quantitative claims are verified against retrieved data. GOOGL FY2021 ($257.6B) and FY2025 ($402.8B) are confirmed; the ~56% cumulative gain and ~$52.8B FY2024\u2192FY2025 step-up are arithmetically correct. GOOGL re-acceleration (13.8% in FY2024 \u2192 15.1% in FY2025) is confirmed. META FY2022 ($116.6B) and FY2025 ($201.0B) are confirmed; the ~72% cumulative gain and ~22% FY2025 YoY are arithmetically correct. The prior rebuttals (FY2022 trough caveat and scoping deceleration claim to 'most recent fiscal year') were adequately incorporated. META's growth rate was also essentially stable between FY2024 (~21.9%) and FY2025 (~22.2%), which is consistent with 'no deceleration in the most recent fiscal year.' No new unsupported claims detected. One minor data gap: GOOGL FY2022 revenue is not returned by the data source, but the analyst's narrative does not rely on that figure, so no claim is undermined.",
+        "missed_evidence": [
+          "META FY2021 revenue was $117.9B \u2014 higher than FY2022's $116.6B \u2014 confirming FY2022 was indeed a trough year (YoY decline of ~1.1%), which further supports the prior rebuttal's caveat about the base effect flattering the 3-year cumulative growth rate. This figure was available but not cited.",
+          "META FY2023\u2192FY2024 YoY growth was ~21.9%, nearly identical to FY2024\u2192FY2025 (~22.2%), suggesting META's growth has plateaued at a high level rather than re-accelerating \u2014 a nuance the analyst does not surface.",
+          "GOOGL FY2022 revenue is absent from the retrieved dataset, creating a gap in the four-year trajectory narrative; analysts should note this or source FY2022 separately to fully substantiate the 'four-year' framing."
+        ]
+      }
+    },
+    "cross_axis": [
+      "META's FY2021 revenue ($117.9B) exceeded FY2022 ($116.6B), meaning the 3-year cumulative growth base is a trough \u2014 a point acknowledged in the prior rebuttal but worth flagging if other axes (e.g., profitability or efficiency) use FY2022 as a baseline, as it could systematically flatter META's multi-year improvement story across axes."
+    ],
+    "flagged_claims": [],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "GOOGL",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2021",
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 257637000000.0, \"unit\": \"USD\", \"period\": \"FY2021\", \"accession\": \"0001652044-22-000019\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 307394000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001652044-26-000018\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 350018000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001652044-26-000018\", \"resolved_concept\": \"us"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "META",
+          "key": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "periods": [
+            "FY2021",
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 117929000000.0, \"unit\": \"USD\", \"period\": \"FY2021\", \"accession\": \"0001326801-24-000012\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 116609000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001326801-25-000017\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 134902000000.0, \"unit\": \""
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "revenue growth acceleration FY2025 annual results",
+          "tickers": [
+            "GOOGL",
+            "META"
+          ],
+          "sections": [
+            "7"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[]"
+      }
+    ],
+    "turns_used": 3,
+    "duration_ms": 142
+  },
+  "rebuttals": [
+    {
+      "source_axis": "growth",
+      "claim": "META's revenues rose from $116.6B in FY2022 to $201.0B in FY2025, a ~72% cumulative gain in just three years",
+      "disposition": "revised",
+      "reason": "The arithmetic is correct and the FY2022 figure is supported by evidence, but the critic is right that FY2022 was META's revenue trough, which flatters the cumulative growth rate. A more balanced framing should acknowledge that FY2022 represented a cyclical low point, making the three-year gain appear more dramatic than a peak-to-peak or trend-based comparison would show.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+        "ticker": "META",
+        "accession": "0001326801-25-000017",
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "normalized": null,
+        "value": "116609000000.0",
+        "period": "FY2022",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "growth",
+      "claim": "Both companies show no signs of growth deceleration in the most recent fiscal year",
+      "disposition": "revised",
+      "reason": "The claim is defensible for the most recent fiscal year in isolation \u2014 GOOGL's FY2025 growth (~15.1% YoY from C2 to C3) accelerated relative to FY2024's ~13.8% YoY growth \u2014 but the original phrasing implied a clean multi-year trend with no deceleration, which is inaccurate given GOOGL's mid-period slowdown in FY2024. The claim should be scoped to 'in the most recent fiscal year, both companies show re-accelerating growth.'",
+      "citation": {
+        "kind": "quant",
+        "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+        "ticker": "GOOGL",
+        "accession": "0001652044-26-000018",
+        "concept": "us-gaap:Revenues",
+        "normalized": null,
+        "value": "402836000000.0",
+        "period": "FY2025",
+        "unit": "USD"
+      }
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 10,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both GOOGL and META have demonstrated strong and accelerating revenue growth over the multi-year period captured in the evidence. GOOGL grew revenues from $257.6B in FY2021 [GOOGL:Q0] to $402.8B in FY2025 [GOOGL:Q3], representing roughly 56% cumulative growth over four years, with the FY2024-to-FY2025 step-up alone adding ~$52.8B [GOOGL:Q2][GOOGL:Q3]. META's trajectory is even more striking on a percentage basis: revenues rose from $116.6B in FY2022 [META:Q0] to $201.0B in FY2025 [META:Q3], a ~72% cumulative gain in just three years, with FY2025 growth of roughly 22% year-over-year [META:Q2][META:Q3]. While GOOGL operates at a materially larger absolute revenue base, META's growth rate has outpaced GOOGL's in recent periods, reflecting a strong advertising recovery and monetization improvements. Both companies show no signs of growth deceleration in the most recent fiscal year.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 4,
+      "comparison_quality": 4,
+      "evidence_coverage": 4,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report is well-structured and clearly written, with appropriate caveats about META's trough base period and the distinction between absolute and percentage growth. Citation usage is consistent throughout. The comparison quality is strong for the Growth section, though the Cross-Axis Takeaway section appears to be cut off or missing, which limits the overall analytical completeness. The honesty dimension is a highlight: the report proactively flags that META's cumulative growth rate is flattered by the FY2022 trough, which is a meaningful methodological caveat that many reports omit. Evidence coverage is solid with specific figures tied to citations, though the truncated conclusion prevents a full assessment of how well the report synthesizes across dimensions."
+    },
+    "incorporation": {
+      "n": 0,
+      "incorporated": 0,
+      "rate": null,
+      "claims": []
+    }
+  },
+  "error": null
+}

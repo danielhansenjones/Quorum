@@ -1,0 +1,515 @@
+{
+  "case_id": "happy_mixed_quant_qual",
+  "request_id": "362d974c-6067-4c75-a5d3-744eb854384a",
+  "final_status": "ok",
+  "elapsed_s": 1.3863714759972936,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Growth\n\nEli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.\n\n**MRK:** Merck has grown steadily but modestly, with revenues rising from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a cumulative gain of roughly 10% over three years. The company showed its strongest single-year step-up between FY2023 ($60.1B [MRK:Q1]) and FY2024 ($64.2B [MRK:Q2]), but overall growth remains incremental rather than transformational.\n\n**LLY:** Eli Lilly has been one of the fastest-growing large-cap pharma companies in recent history, with revenues nearly tripling from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], driven by the rapid commercial uptake of its GLP-1 and diabetes portfolio. The acceleration has been consistent and steep, with revenues surging from $34.1B in FY2023 [LLY:Q1] to $45.0B in FY2024 [LLY:Q2] and then to $65.2B in FY2025 [LLY:Q3], reflecting extraordinary demand that has now brought LLY's top line to parity with the much larger MRK.\n\n---\n\n## Risk Factors\n\nBoth MRK and LLY face a broadly similar landscape of risk factors centered on patent and exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]. MRK additionally identifies climate-related physical risks\u2014such as increased frequency and severity of extreme weather events\u2014as an acute-to-chronic operational threat [MRK:S1], though the specific manifestations cited in its disclosures extend to a range of climate hazards. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2]. LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing and commercialization challenges associated with acquired or partnered programs [LLY:S3].\n\n**MRK:** MRK's risk profile is anchored by patent dependence and the well-documented revenue cliff when exclusivity lapses, with generic and biosimilar entrants able to undercut on price for products that may be equally safe and effective [MRK:S0][MRK:S2]. The company also carries distinctive exposure through its biologics and vaccines business, where supply of biological materials is constrained and the development pathway is unusually long and uncertain [MRK:S4], and it separately flags physical climate risks\u2014including increased frequency and severity of extreme weather events\u2014as an operational concern [MRK:S1].\n\n**LLY:** LLY faces intensifying biosimilar competition risk, with regulatory frameworks globally still evolving in ways that could lower barriers for competitors [LLY:S0], and has already experienced real-world supply-chain disruptions leading to product shortages and pauses in select markets [LLY:S1]. Its growing reliance on contract manufacturers, AI vendors, and other third parties introduces additional execution and data-security risks [LLY:S2], while an active business development strategy adds exposure to diligence failures, unsuccessful clinical trials, and the inherent uncertainties of manufacturing and commercializing new programs [LLY:S3].\n\n---\n\n## Cross-Axis Takeaway\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "59283000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "60115000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "64168000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65011000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "LLY",
+      "accession": "0000059478-25-000067",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "28541400000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "34124000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "45043000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65179000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0009",
+      "quote": "ed and sold than the Company\u2019s products. Alternatively, in the case of generic or biosimilar competition, including the generic or biosimilar availability of competitors\u2019 branded products, they may be equally safe and effective products tha"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0010",
+      "quote": "economy (such as additional legal or regulatory requirements, changes in technology, market risk and reputational risk) and social and human effects (such as population dislocations and harm to health and well-being) associated with climate"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0000",
+      "quote": "Item 1A.\nRisk Factors.\nSummary Risk Factors\nThe Company is subject to a number of risks that if realized could materially adversely affect its business, results of operations, cash flows, financial condition or prospects. The following is a"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0001",
+      "quote": "unexpected safety or efficacy concerns.\n\u2022\nReliance on third-party relationships and outsourcing arrangements could materially adversely affect the Company\u2019s business.\n\u2022\nNegative events in the animal health industry could have a material adv"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0015",
+      "quote": "successful development, testing, manufacturing and commercialization of biologics and vaccines, particularly human and animal health vaccines, is a long, complex, expensive and uncertain process. There are unique risks and uncertainties rel"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0003",
+      "quote": "aspects of our business, including by enabling additional participation in and breadth of drug discovery and new healthcare delivery models. Business practices or commercial capabilities that we deploy in light of these or other market dyna"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0015",
+      "quote": "related to supply chain activities have resulted and may in the future result in delays and disruptions in the manufacturing, distribution, and sale of our products and/or product shortages, leading to lost revenue, increased costs, reduced"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0017",
+      "quote": "with contract manufacturing organizations, entities supporting consumer directed access channels, artificial intelligence vendors, and other third parties in recent periods.\nOutsourcing involves many risks, including the risk that third par"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0002",
+      "quote": "s and may result in our incurrence of substantial asset impairment or restructuring charges. We also may fail to generate the expected revenue and pipeline enhancement from business development activities due to diligence that fails to iden"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0014",
+      "quote": "and regulations requires implementing costly new controls and processes, may restrict certain core activities, including impacting our ability to carry out research and clinical studies across multiple geographies, and creates the potential"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "growth": {
+        "axis": "growth",
+        "groundedness": "ok",
+        "notes": "All revenue figures are directly confirmed by the financial data retrieved. LLY FY2022: $28.54B (analyst says $28.5B \u2713), FY2023: $34.12B (analyst says $34.1B \u2713), FY2024: $45.04B (analyst says $45.0B \u2713), FY2025: $65.18B (analyst says $65.2B \u2713). MRK FY2022: $59.28B (analyst says $59.3B \u2713), FY2023: $60.12B (analyst says $60.1B \u2713), FY2024: $64.17B (analyst says $64.2B \u2713), FY2025: $65.01B (analyst says $65.0B \u2713). Cumulative growth calculations are accurate: LLY ~128% ($28.54B\u2192$65.18B), MRK ~10% ($59.28B\u2192$65.01B). The CAGR figures (~32% for LLY, ~3% for MRK over 3 years) are approximately correct. The claim that LLY revenues 'jumped ~45% from FY2024 to FY2025' is accurate ($45.04B\u2192$65.18B = ~44.7%). The GLP-1/tirzepatide attribution is corroborated by MDA filings showing strong Mounjaro revenue growth. The FY2025 figures appear to be trailing twelve-month or fiscal year figures from the most recent annual filing (accession 0000059478-26-000013 for LLY and 0000310158-26-000063 for MRK), which is consistent with the citations.",
+        "missed_evidence": [
+          "LLY MDA sections confirm tirzepatide (Mounjaro/Zepbound) as the primary growth driver, with Mounjaro U.S. revenue up 59% YoY in Q1 2026 and 37-51% in H1 2025 \u2014 further corroborating the GLP-1 attribution claim.",
+          "MRK FY2025 revenue of $65.01B is from accession 0000310158-26-000063, which appears to be a more recent filing than the FY2024 annual report, suggesting this may be a trailing figure or from a newer annual filing \u2014 analysts should clarify the fiscal year definition used."
+        ]
+      },
+      "risk_factors": {
+        "axis": "risk_factors",
+        "groundedness": "ok",
+        "notes": "All major claims are supported by retrieved evidence. (1) MRK's patent/exclusivity cliff risk and generic/biosimilar competition language is confirmed in chunks 0000310158-26-000063:item_1a_risk_factors:0009 and :0003. (2) MRK's biologics/vaccines unique risks including 'limited access to biological materials' and 'long, complex process' are confirmed in chunk :0015. (3) MRK's climate/extreme weather risk is confirmed in chunks :0010 and :0001. (4) LLY's biosimilar regulatory complexity claim is confirmed in chunk 0000059478-26-000013:item_1a_risk_factors:0003. (5) LLY's supply-chain disruption language (delays, shortages, lost revenue, market exits) is confirmed in chunk :0015. (6) LLY's outsourcing/third-party risks are confirmed in chunk :0017. (7) LLY's business development risks (failed diligence, unsuccessful clinical trials, manufacturing challenges) are confirmed in chunk :0002. One minor note: the analyst cites MRK:S3 for outsourcing risk but the retrieved MRK chunk :0001 only lists it as a header/bullet; the detailed MRK outsourcing risk text was not directly retrieved, though the heading in :0001 confirms it exists. LLY's outsourcing risk is well-supported. The claim that LLY 'additionally flags risks from business development activities such as...manufacturing challenges tied to new modalities' is supported by chunk :0002, though 'new modalities' is an analyst inference \u2014 the text mentions 'issues related to quality, integrity, or broad applicability of data' and regulatory/manufacturing issues but does not explicitly say 'new modalities'.",
+        "missed_evidence": [
+          "LLY chunk 0000059478-26-000013:item_1a_risk_factors:0008 reveals a concrete, current risk not mentioned by analysts: CVS Caremark stopped covering Zepbound as a preferred obesity medicine in July 2025, negatively impacting patient access \u2014 a material PBM/formulary risk specific to LLY's GLP-1 franchise.",
+          "LLY chunk :0016 shows LLY also flags climate-related risks (natural disasters, climate change) in its supply chain section, partially overlapping with the analyst's characterization of climate risk as unique to MRK.",
+          "MRK chunk :0002 confirms patent protection risk in detail, which the analyst summarizes under the broader 'patent/exclusivity cliffs' category but does not cite explicitly."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The growth axis establishes LLY's GLP-1 franchise (tirzepatide) as the primary revenue driver, but the risk_factors axis does not cross-reference the specific risks to that franchise (e.g., the CVS Caremark formulary exclusion of Zepbound found in LLY:item_1a_risk_factors:0008), which is a material omission given how concentrated LLY's growth is in a single product family.",
+      "MRK's FY2025 revenue figure ($65.01B) comes from accession 0000310158-26-000063, the same filing cited extensively in the risk_factors axis \u2014 this is consistent and suggests both axes are drawing from the same most-recent annual filing, which is appropriate.",
+      "The growth axis notes LLY has 'essentially caught up' to MRK in absolute revenue, but the risk_factors axis does not address the asymmetric concentration risk this implies: LLY's revenue is far more concentrated in GLP-1 products, making it more vulnerable to the supply-chain and formulary risks flagged in its own risk factors section."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "risk_factors",
+        "claim": "LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities",
+        "flag": "weakly_supported",
+        "reason": "The source text (chunk :0002) confirms failed diligence and unsuccessful clinical trials, but 'manufacturing challenges tied to new modalities' is an analyst inference. The actual text references 'manufacturing and commercialization challenges' generically and does not specifically say 'new modalities.' The characterization is plausible but goes slightly beyond what the cited text states.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "MRK explicitly flags...climate-related physical risks such as extreme weather and flooding",
+        "flag": "weakly_supported",
+        "reason": "The retrieved MRK chunk :0010 confirms climate change risks including 'increased frequency and severity' of events, but the word 'flooding' specifically was not confirmed in the retrieved text. The general climate/extreme weather claim is supported; 'flooding' as a specific example may be in the full text but was not verified in the retrieved excerpts.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "LLY",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 28541400000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000059478-25-000067\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 34124000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 45043000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MRK",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 59283000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 60115000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 64168000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "patent exclusivity loss generic biosimilar competition revenue risk",
+          "tickers": [
+            "MRK",
+            "LLY"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 6
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000310158-26-000063:item_1a_risk_factors:0003\", \"score\": 1.0, \"ticker\": \"MRK\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"of operations, financial position, and prospects may be adversely affected by the lost sales unless and until the Company has launched commercially successful products that replace the lost sales. In addition, if products that were measured at fair valu"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "supply chain disruption shortage outsourcing third party manufacturing risk",
+          "tickers": [
+            "MRK",
+            "LLY"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 6
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000059478-26-000013:item_1a_risk_factors:0015\", \"score\": 0.8333334, \"ticker\": \"LLY\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"related to supply chain activities have resulted and may in the future result in delays and disruptions in the manufacturing, distribution, and sale of our products and/or product shortages, leading to lost revenue, increased costs, reduced market"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "biologics vaccines biological materials climate weather flooding risk",
+          "tickers": [
+            "MRK"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000310158-26-000063:item_1a_risk_factors:0015\", \"score\": 1.0, \"ticker\": \"MRK\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"successful development, testing, manufacturing and commercialization of biologics and vaccines, particularly human and animal health vaccines, is a long, complex, expensive and uncertain process. There are unique risks and uncertainties related to biolo"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "business development diligence clinical trials manufacturing new modalities acquisition risk",
+          "tickers": [
+            "LLY"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000059478-26-000013:item_1a_risk_factors:0002\", \"score\": 1.0, \"ticker\": \"LLY\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"s and may result in our incurrence of substantial asset impairment or restructuring charges. We also may fail to generate the expected revenue and pipeline enhancement from business development activities due to diligence that fails to identify risks or"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "tirzepatide GLP-1 revenue growth Mounjaro Zepbound",
+          "tickers": [
+            "LLY"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000059478-26-000013:item_7_mda:0007\", \"score\": 1.0, \"ticker\": \"LLY\", \"section\": \"item_7_mda\", \"text_excerpt\": \"or regarding foreign jurisdictions, and fluctuations due to channel dynamics or demand for certain products. \\nSee Item 1, \\\"Business\\\" and Item 1A, \\\"Risk Factors,\\\" and Notes 4, 14, and 16 to the consolidated financial statements for additional information and risks and "
+      }
+    ],
+    "turns_used": 4,
+    "duration_ms": 565
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 18,
+      "mean_score": 4.166666666666667,
+      "faithful_fraction": 0.7222222222222222,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage strongly supports most elements of the claim. It confirms MRK's explicit flagging of: significant and rapid loss of sales as products lose market exclusivity, generic and biosimilar competition, third-party/outsourcing risks, biologics and vaccines unique risks, and climate-related risks. However, the passage is only MRK's summary risk factors list and does not contain any LLY-specific content (LLY:S0, LLY:S1, LLY:S2, LLY:S3 references in the claim). The LLY-specific details about biosimilar regulatory complexity, supply-chain disruptions causing delays/shortages/lost revenue, and business development risks cannot be verified from this passage alone. The MRK portions are well-supported, but the comparative claim about LLY is neither supported nor contradicted by this excerpt, making the overall support partial but strong for the MRK side.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage strongly supports most elements of the claim. It confirms MRK's explicit flagging of: significant and rapid loss of sales as products lose market exclusivity, generic and biosimilar competition, third-party/outsourcing risks, biologics and vaccines unique risks, and climate-related risks. However, the passage is only MRK's summary risk factors list and does not contain any LLY-specific content (LLY:S0, LLY:S1, LLY:S2, LLY:S3 references in the claim). The LLY-specific details about biosimilar regulatory complexity, supply-chain disruptions causing delays/shortages/lost revenue, and business development risks cannot be verified from this passage alone. The MRK portions are well-supported, but the comparative claim about LLY is neither supported nor contradicted by this excerpt, making the overall support partial but strong for the MRK side.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage strongly supports most elements of the claim. It confirms MRK's explicit flagging of: significant and rapid loss of sales as products lose market exclusivity, generic and biosimilar competition, third-party/outsourcing risks, biologics and vaccines unique risks, and climate-related risks. However, the passage is only MRK's summary risk factors list and does not contain any LLY-specific content (LLY:S0, LLY:S1, LLY:S2, LLY:S3 references in the claim). The LLY-specific details about biosimilar regulatory complexity, supply-chain disruptions causing delays/shortages/lost revenue, and business development risks cannot be verified from this passage alone. The MRK portions are well-supported, but the comparative claim about LLY is neither supported nor contradicted by this excerpt, making the overall support partial but strong for the MRK side.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage strongly supports most elements of the claim. It confirms MRK's explicit flagging of: significant and rapid loss of sales as products lose market exclusivity, generic and biosimilar competition, third-party/outsourcing risks, biologics and vaccines unique risks, and climate-related risks. However, the passage is only MRK's summary risk factors list and does not contain any LLY-specific content (LLY:S0, LLY:S1, LLY:S2, LLY:S3 references in the claim). The LLY-specific details about biosimilar regulatory complexity, supply-chain disruptions causing delays/shortages/lost revenue, and business development risks cannot be verified from this passage alone. The MRK portions are well-supported, but the comparative claim about LLY is neither supported nor contradicted by this excerpt, making the overall support partial but strong for the MRK side.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage strongly supports most elements of the claim. It confirms MRK's explicit flagging of: significant and rapid loss of sales as products lose market exclusivity, generic and biosimilar competition, third-party/outsourcing risks, biologics and vaccines unique risks, and climate-related risks. However, the passage is only MRK's summary risk factors list and does not contain any LLY-specific content (LLY:S0, LLY:S1, LLY:S2, LLY:S3 references in the claim). The LLY-specific details about biosimilar regulatory complexity, supply-chain disruptions causing delays/shortages/lost revenue, and business development risks cannot be verified from this passage alone. The MRK portions are well-supported, but the comparative claim about LLY is neither supported nor contradicted by this excerpt, making the overall support partial but strong for the MRK side.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's 10-K and partially supports the claim. It addresses R&D uncertainty, pipeline risks, business development failures, and regulatory hurdles (supporting LLY:S3 elements about failed diligence and clinical trials). However, the passage does not explicitly cover the specific cited elements: biosimilar regulatory complexity (LLY:S0), supply-chain disruptions causing delays/shortages/lost revenue (LLY:S1), outsourcing/third-party risks (LLY:S2), or any MRK-specific risks (patent cliffs, biologics/vaccines, climate risks). The passage only partially addresses the broader claim about LLY's risk landscape and does not address MRK's risks at all.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's 10-K and partially supports the claim. It addresses R&D uncertainty, pipeline risks, business development failures, and regulatory hurdles (supporting LLY:S3 elements about failed diligence and clinical trials). However, the passage does not explicitly cover the specific cited elements: biosimilar regulatory complexity (LLY:S0), supply-chain disruptions causing delays/shortages/lost revenue (LLY:S1), outsourcing/third-party risks (LLY:S2), or any MRK-specific risks (patent cliffs, biologics/vaccines, climate risks). The passage only partially addresses the broader claim about LLY's risk landscape and does not address MRK's risks at all.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's 10-K and partially supports the claim. It addresses R&D uncertainty, pipeline risks, business development failures, and regulatory hurdles (supporting LLY:S3 elements about failed diligence and clinical trials). However, the passage does not explicitly cover the specific cited elements: biosimilar regulatory complexity (LLY:S0), supply-chain disruptions causing delays/shortages/lost revenue (LLY:S1), outsourcing/third-party risks (LLY:S2), or any MRK-specific risks (patent cliffs, biologics/vaccines, climate risks). The passage only partially addresses the broader claim about LLY's risk landscape and does not address MRK's risks at all.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's 10-K and partially supports the claim. It addresses R&D uncertainty, pipeline risks, business development failures, and regulatory hurdles (supporting LLY:S3 elements about failed diligence and clinical trials). However, the passage does not explicitly cover the specific cited elements: biosimilar regulatory complexity (LLY:S0), supply-chain disruptions causing delays/shortages/lost revenue (LLY:S1), outsourcing/third-party risks (LLY:S2), or any MRK-specific risks (patent cliffs, biologics/vaccines, climate risks). The passage only partially addresses the broader claim about LLY's risk landscape and does not address MRK's risks at all.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both MRK and LLY face a broadly similar landscape of risk factors centered on patent/exclusivity cliffs, generic and biosimilar competition, third-party and outsourcing dependencies, and supply-chain vulnerabilities, though the evidence highlights some differences in emphasis. MRK explicitly flags the rapid and significant loss of sales as products lose market exclusivity and the threat that generic or biosimilar entrants may offer equally effective products at substantially lower prices [MRK:S2][MRK:S0], while also calling out unique risks tied to its biologics and vaccines portfolio\u2014including limited access to biological materials and the long, complex development process [MRK:S4]\u2014and climate-related physical risks such as extreme weather and flooding [MRK:S1]. LLY similarly highlights the complexity and evolving regulatory environment for biosimilars, noting that health authority guidelines could make it less burdensome for competitors to enter [LLY:S0], and places notable emphasis on supply-chain disruptions that have already resulted in delays, product shortages, lost revenue, and potential market exits in select geographies [LLY:S1]. Both companies cite outsourcing risks\u2014including third-party failure to meet standards, protect confidential information, or perform reliably\u2014as a material concern [MRK:S3][LLY:S2], and LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities [LLY:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's 10-K and partially supports the claim. It addresses R&D uncertainty, pipeline risks, business development failures, and regulatory hurdles (supporting LLY:S3 elements about failed diligence and clinical trials). However, the passage does not explicitly cover the specific cited elements: biosimilar regulatory complexity (LLY:S0), supply-chain disruptions causing delays/shortages/lost revenue (LLY:S1), outsourcing/third-party risks (LLY:S2), or any MRK-specific risks (patent cliffs, biologics/vaccines, climate risks). The passage only partially addresses the broader claim about LLY's risk landscape and does not address MRK's risks at all.",
+          "judge": "sonnet"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "The report is exceptionally well-structured and clearly written, with precise citation of data points and a logical flow from summary to company-specific breakdowns. The growth section is particularly strong, using concrete figures, CAGRs, and cumulative percentages to make the comparison vivid and quantitatively grounded. The risk factors section does a commendable job of identifying both shared and differentiated risks, with appropriate source citations throughout. The honesty score is slightly docked because the Cross-Axis Takeaway section appears to be missing or truncated, which leaves the report incomplete\u2014a reader cannot assess whether the synthesis conclusion is appropriately hedged or overreaching. Within the sections that are present, there is no obvious overstatement given the data cited, but the absence of the concluding section prevents a full assessment of intellectual honesty at the synthesis level."
+    },
+    "incorporation": {
+      "n": 2,
+      "incorporated": 2,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "risk_factors",
+          "claim": "LLY additionally flags risks from business development activities such as failed diligence, unsuccessful clinical trials, and manufacturing challenges tied to new modalities",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "MRK explicitly flags...climate-related physical risks such as extreme weather and flooding",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

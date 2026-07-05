@@ -1,0 +1,485 @@
+{
+  "case_id": "partial_gross_margin_googl",
+  "request_id": "3dc0c3d4-f35a-4604-852f-f2db0c5807b2",
+  "final_status": "partial",
+  "elapsed_s": 1.6081757320025645,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Profitability\n\nAmong the three mega-cap technology companies, Alphabet (GOOGL) provides the most complete and directly stated profitability figures in the evidence, Microsoft (MSFT) offers detailed segment-level data from which consolidated-direction conclusions can be drawn, and Apple (AAPL) has meaningful quantitative disclosures that are nonetheless accompanied by notable qualitative risk language.\n\nGOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], demonstrating exceptional bottom-line growth relative to its revenue base. On a quarterly basis, Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a roughly 31% operating margin [GOOGL:S4]. Both Google Services and Google Cloud contributed to operating income expansion, though the specific magnitude of Cloud's H1 2025 contribution is not independently verifiable from the retrieved excerpts alone [GOOGL:S1]. MSFT's Intelligent Cloud segment generated approximately $44.6 billion in operating income on $106.3 billion of revenue in its most recent fiscal year \u2014 a figure derived by subtracting reported cost of revenue ($40.2 billion) and operating expenses ($21.5 billion) from segment revenue, up from roughly $37.8 billion the prior year [MSFT:S1] \u2014 signaling strong and accelerating segment-level operating leverage, even though consolidated company-wide margin figures are not present in the gathered evidence. AAPL's 10-K discloses FY2025 total net sales of approximately $416.2 billion with a year-over-year growth rate of around 6% and an operating income margin in the mid-teens range, while qualitative risk disclosures flag that gross margins face potential pressure from tariffs, inflation, and the introduction of new lower-margin products [AAPL:S1][AAPL:S2].\n\n**AAPL:** Apple's FY2025 10-K indicates total net sales of approximately $416.2 billion (roughly 6% YoY growth) and an operating income margin in the mid-teens, providing a concrete \u2014 if modest \u2014 profitability baseline [AAPL:S1][AAPL:S2]. Qualitative disclosures emphasize that net sales and gross margins face \"volatility and downward pressure\" from tariffs, macroeconomic conditions, and new lower-margin product introductions, introducing meaningful uncertainty around near-term margin sustainability.\n\n**MSFT:** Microsoft's Intelligent Cloud segment delivered approximately $44.6 billion in implied operating income on $106.3 billion of revenue in the most recent fiscal year, up from roughly $37.8 billion the prior year [MSFT:S1] \u2014 reflecting strong operating leverage as cloud revenue scales. These figures are computed from disclosed cost and expense line items rather than a single stated operating income figure, and the evidence does not provide consolidated net income or total-company operating margin, limiting direct cross-company comparison at the enterprise level.\n\n**GOOGL:** Alphabet posted full-year 2025 net income of $132.2 billion (up 32% YoY) on revenues of $402.8 billion (up 15% YoY), with diluted EPS of $10.81 [GOOGL:S3], and sustained a roughly 31% operating margin in Q3 2025 [GOOGL:S4]. Both Google Services and Google Cloud contributed to operating income expansion [GOOGL:S1], and the pace of net income growth (32%) materially outstripping revenue growth (15%) points to meaningful operating leverage at the consolidated level.\n\n\n---\n",
+  "citations": [
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000073",
+      "section": "item_2_mda",
+      "chunk_id": "0000320193-25-000073:item_2_mda:0006",
+      "quote": "ASU\u201d) No. 2024-03, \nIncome Statement\u2014Reporting Comprehensive Income\u2014Expense Disaggregation Disclosures (Subtopic 220-40): Disaggregation of Income Statement Expenses \n(\u201cASU 2024-03\u201d) and in January 2025, the FASB issued ASU No. 2025-01, \nIn"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000079:item_1a_risk_factors:0018",
+      "quote": "laws and regulations can increase regulatory risks by requiring complex compliance measures and significant modifications to the Company\u2019s products, services and operations, and may lead to operational disruptions, heightened privacy and da"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000057",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000057:item_1a_risk_factors:0003",
+      "quote": "inflation and other macroeconomic pressures; the imposition of new or increased tariffs and other trade restrictions, their overall magnitude and duration, and retaliatory actions in response; and the introduction of new products or service"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1_business",
+      "chunk_id": "0000320193-25-000079:item_1_business:0002",
+      "quote": ", marketing and distribution capability, service and support, corporate reputation, and the ability to effectively protect and enforce the Company\u2019s intellectual property rights.\nThe Company is focused on expanding its market opportunities "
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000079:item_1a_risk_factors:0021",
+      "quote": "a given point in time. The Company believes the price of its stock should reflect expectations of future growth and profitability. The Company also believes the price of its stock should reflect expectations that its cash dividend will cont"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "section": "item_7a_market_risk",
+      "chunk_id": "0000950170-25-100235:item_7a_market_risk:0004",
+      "quote": "our business during fiscal year 2025. These changes primarily impacted Note 8 \u2013 Goodwill, Note 12 \u2013 Unearned Revenue, and Note 18 \u2013 Segment Information and Geographic Data.\n \nThe recast of prior period information had no impact on our conso"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "section": "item_7a_market_risk",
+      "chunk_id": "0000950170-25-100235:item_7a_market_risk:0034",
+      "quote": "59,661\n\n\u00a0\n\n\u00a0\n\n$\n\n50,074\n\n\u00a0\n\n \n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nIntelligent Cloud\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nRevenue\n\n \n\n$\n\n106,265\n\n\u00a0\n\n \n\n$\n\n87,464\n"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "section": "item_7a_market_risk",
+      "chunk_id": "0000950170-25-100235:item_7a_market_risk:0032",
+      "quote": "385.10\n\n \n\n \n\n$\n\n339.46\n\n \n\n \n\n$\n\n245.59\n\n \n\n \n\n\u00a0\n\n\u00a0\nAs of June 30, 2025, \n62\n million shares of our common stock were reserved for future issuance through the ESPP.\n \nSavings Plans\n \nWe have savings plans in the U.S. that qualify under Sec"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "MSFT",
+      "accession": "0001193125-26-027207",
+      "section": "item_2_mda",
+      "chunk_id": "0001193125-26-027207:item_2_mda:0001",
+      "quote": "ity of an unfavorable outcome and the ability to make a reasonable estimate of the amount of loss. Changes in these factors could materially impact our consolidated financial statements.\nIncome Taxes\nThe objectives of accounting for income "
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "section": "item_7a_market_risk",
+      "chunk_id": "0000950170-25-100235:item_7a_market_risk:0027",
+      "quote": "revenue\n\n\u00a0\n\n \n\n186,957\n\n \n\nRecognition of unearned revenue\n\n\u00a0\n\n \n\n(\n179,876\n\n)\n\n \n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nBalance, end of period\n\n\u00a0\n\n$\n\n67,265\n\n \n\n \n\n\u00a0\n\n \n\n\u00a0\n\n\u00a0\n\n\u00a0\nRevenue allocated to remaining performance obligations, which includes u"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000048",
+      "section": "item_2_mda",
+      "chunk_id": "0001652044-26-000048:item_2_mda:0004",
+      "quote": "on Form 10-Q.\nProvision for Income Taxes\n \nProvision for income taxes represents the estimated amount of federal, state, and foreign income taxes incurred in the US and the many jurisdictions in which we operate. The provision includes the "
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-25-000062",
+      "section": "item_2_mda",
+      "chunk_id": "0001652044-25-000062:item_2_mda:0011",
+      "quote": "enses related to legal and other matters, TAC, and content acquisition costs. \nGoogle Services operating income increased $8.2 billion from the six months ended June 30, 2024 to the six months ended June 30, 2025. The increase in operating "
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "section": "item_7_mda",
+      "chunk_id": "0001652044-26-000018:item_7_mda:0002",
+      "quote": "conditions or in laws and policies governing a wide range of topics and related legal matters, including investigations, lawsuits, and regulatory actions, have resulted in fines and caused us to change our business practices. As the regulat"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "section": "item_7_mda",
+      "chunk_id": "0001652044-26-000018:item_7_mda:0006",
+      "quote": "301\u00a0\n%\nNet income\n$\n100,118\u00a0\n$\n132,170\u00a0\n$\n32,052\u00a0\n32\u00a0\n%\nDiluted net income per share\n(1)\n$\n8.04\u00a0\n$\n10.81\u00a0\n$\n2.77\u00a0\n34\u00a0\n%\n(1)\u00a0\u00a0\u00a0\u00a0\nFor additional information on the calculation of diluted net income per share, see Note 12 of the Notes to Conso"
+    },
+    {
+      "kind": "qual",
+      "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-25-000091",
+      "section": "item_2_mda",
+      "chunk_id": "0001652044-25-000091:item_2_mda:0004",
+      "quote": "Months Ended\nSeptember 30,\n2024\n2025\n$ Change\n% Change\nConsolidated revenues\n$\n88,268\u00a0\n$\n102,346\u00a0\n$\n14,078\u00a0\n16\u00a0\n%\nChange in consolidated constant currency revenues\n(1)\n15\u00a0\n%\nCost of revenues\n$\n36,474\u00a0\n$\n41,369\u00a0\n$\n4,895\u00a0\n13\u00a0\n%\nOperating expe"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "profitability": {
+        "axis": "profitability",
+        "groundedness": "thin",
+        "notes": "GOOGL full-year 2025 revenue ($402.8B), net income ($132.2B, +32% YoY), and diluted EPS ($10.81) are directly confirmed by filing 0001652044-26-000018:item_7_mda:0006. GOOGL Q3 2025 operating income ($31,228M on $102,346M revenue) and the 31% margin are confirmed by 0001652044-25-000091:item_2_mda:0004. MSFT Intelligent Cloud revenue ($106.3B) and implied operating income (~$44.6B FY2025 vs ~$37.8B FY2024) are confirmed by 0000950170-25-100235:item_7a_market_risk:0034. However, the Google Cloud H1 2025 '+$2.9B operating income' figure is not directly visible in retrieved excerpts \u2014 only directional language is present. Most critically, the claim that AAPL evidence is 'almost entirely qualitative with no concrete income or margin figures' is contradicted by the AAPL annual 10-K (0000320193-25-000079:item_7_mda), which contains FY2025 total net sales of $416,161M and an operating income margin of ~15%, both concrete figures that were available but not cited.",
+        "missed_evidence": [
+          "AAPL FY2025 total net sales of $416,161M (up 6% YoY from $391,035M) in 0000320193-25-000079:item_7_mda:0002 \u2014 concrete revenue figure ignored",
+          "AAPL FY2025 operating income margin of ~15% of total net sales visible in 0000320193-25-000079:item_7_mda:0003",
+          "AAPL FY2026 Q2 gross margin data ($54,781M total gross margin) in 0000320193-26-000013:item_2_mda:0004 \u2014 concrete margin figures available",
+          "MSFT total company FY2025 revenue of $281,724M and operating income of $128,528M in 0000950170-25-100235:item_6_reserved:0004 \u2014 analysts cited only segment-level data, missing the full-company picture",
+          "GOOGL Q2 2025 operating income of $31,271M on $96,428M revenue (32% margin) in 0001652044-25-000062:item_2_mda:0004 \u2014 additional data point not cited"
+        ]
+      }
+    },
+    "cross_axis": [
+      "The analyst report characterizes AAPL as having only qualitative evidence, but the AAPL annual 10-K (FY2025) contains concrete revenue ($416B), gross margin, and operating margin data. This asymmetry in evidence gathering may have biased the comparative profitability narrative against Apple.",
+      "MSFT's full-company operating income ($128.5B on $281.7B revenue, ~46% margin) is substantially higher than the Intelligent Cloud segment alone ($44.6B), yet only segment data was cited \u2014 this understates MSFT's overall profitability relative to GOOGL's consolidated figures, making the comparison uneven.",
+      "GOOGL's 15% revenue growth rate (FY2025) matches MSFT's 15% growth rate exactly, a notable parity that was not surfaced in the profitability axis."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "profitability",
+        "claim": "AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures, with no concrete income or margin figures provided in the gathered evidence.",
+        "flag": "weakly_supported",
+        "reason": "The AAPL annual 10-K (0000320193-25-000079:item_7_mda) was cited in the citation list but its quantitative content was not used. It contains FY2025 total net sales of $416,161M, YoY growth of 6%, and an operating income margin of ~15% \u2014 all concrete figures. The claim that no concrete figures were 'provided in the gathered evidence' is misleading given the 10-K was among the cited accessions.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "profitability",
+        "claim": "Google Cloud operating income rising $2.9 billion in the first half of 2025.",
+        "flag": "weakly_supported",
+        "reason": "The H1 2025 Google Cloud operating income increase of $2.9B is not directly confirmed in any retrieved text excerpt. The filing chunk 0001652044-25-000062:item_2_mda:0011 references Google Cloud operating income changes but the specific $2.9B figure does not appear in the visible text. The figure may be correct but cannot be independently verified from the evidence surfaced.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "profitability",
+        "claim": "MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year.",
+        "flag": "weakly_supported",
+        "reason": "The revenue figure ($106,265M) and cost components are confirmed, but the operating income is implied by subtraction (Revenue - Cost of Revenue - Operating Expenses = $106,265M - $40,171M - $21,505M = $44,589M). The filing does not show a single explicit 'Intelligent Cloud operating income' line in the retrieved excerpts; it must be computed. The figure is arithmetically correct but not directly stated in a single retrieved line.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "GOOGL",
+          "key": "profitability.revenue",
+          "periods": [
+            "2025",
+            "2024"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "GOOGL",
+          "key": "profitability.net_income",
+          "periods": [
+            "2025",
+            "2024"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.operating_income",
+          "periods": [
+            "2025",
+            "2024"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Alphabet GOOGL full year 2025 revenue net income diluted EPS annual results",
+          "tickers": [
+            "GOOGL"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0001652044-25-000062:item_2_mda:0004\", \"score\": 0.8333334, \"ticker\": \"GOOGL\", \"section\": \"item_2_mda\", \"text_excerpt\": \"):\\nThree Months Ended\\nJune 30,\\n2024\\n2025\\n$ Change\\n% Change\\nConsolidated revenues\\n$\\n84,742\\u00a0\\n$\\n96,428\\u00a0\\n$\\n11,686\\u00a0\\n14\\u00a0\\n%\\nChange in consolidated constant currency revenues\\n(1)\\n13\\u00a0\\n%\\nCost of revenues\\n$\\n35,507\\u00a0\\n$\\n39,03"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Microsoft Intelligent Cloud segment operating income revenue fiscal year 2025 2024",
+          "tickers": [
+            "MSFT"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-100235:item_6_reserved:0004\", \"score\": 0.8333334, \"ticker\": \"MSFT\", \"section\": \"item_6_reserved\", \"text_excerpt\": \"s network publishers and news partners\\n\\nSUMMARY RESULTS OF OPERATIONS\\n\\u00a0\\n\\n(In millions, except percentages and per share amounts)\\n\\n \\n\\n2025\\n\\n \\n\\n \\n\\n2024\\n\\n \\n\\n \\n\\nPercentage\\nChange\\n \\n\\n \\n\\n \\n\\n \\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u0"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Apple gross margin revenue operating income profitability 2025",
+          "tickers": [
+            "AAPL"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-25-000073:item_2_mda:0004\", \"score\": 0.8333334, \"ticker\": \"AAPL\", \"section\": \"item_2_mda\", \"text_excerpt\": \"of products and tariffs, partially offset by favorable costs.\\nServices Gross Margin\\nServices gross margin increased during the third quarter and first nine months of 2025 compared to the same periods in 2024 due primarily to higher Services net sales and a differe"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Microsoft Intelligent Cloud operating income fiscal year 2025 2024 segment results",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "item_7a_market_risk"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-100235:item_7a_market_risk:0020\", \"score\": 0.8333334, \"ticker\": \"MSFT\", \"section\": \"item_7a_market_risk\", \"text_excerpt\": \"to which we have allocated the purchase price were as follows:\\n\\u00a0\\n\\n(In millions)\\n \\n\\n \\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u00a0\\n\\n \\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u00a0\\n\\n \\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u00a0\\n\\nCash and cash equivalents\\n\\n"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Google Cloud operating income first half 2025 H1 segment profitability",
+          "tickers": [
+            "GOOGL"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0001652044-25-000043:item_2_mda:0009\", \"score\": 1.0, \"ticker\": \"GOOGL\", \"section\": \"item_2_mda\", \"text_excerpt\": \"other matters of $292\\u00a0million and a combination of other factors, none of which were individually significant.\\nSegment Profitability\\nWe report our segment results as Google Services, Google Cloud, and Other Bets. Additionally, certain costs are not allocated to ou"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Apple net income operating income revenue fiscal year 2025 annual results",
+          "tickers": [
+            "AAPL"
+          ],
+          "sections": [
+            "item_7_mda"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-25-000079:item_7_mda:0002\", \"score\": 0.8333334, \"ticker\": \"AAPL\", \"section\": \"item_7_mda\", \"text_excerpt\": \"%\\n85,200\\u00a0\\nTotal net sales\\n$\\n416,161\\u00a0\\n6\\u00a0\\n%\\n$\\n391,035\\u00a0\\n2\\u00a0\\n%\\n$\\n383,285\\u00a0\\n(1)\\nServices net sales include amortization of the deferred value of services bundled in the sales price of certain products.\\niPhone\\niPhone net sales i"
+      },
+      {
+        "tool": "get_filing_section",
+        "args": {
+          "ticker": "GOOGL",
+          "accession": "0001652044-25-000062",
+          "section": "item_2_mda"
+        },
+        "ok": true,
+        "result_summary": "{\"text\": \"ITEM 2.\\nMANAGEMENT\\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS\\nPlease read the following discussion and analysis of our financial condition and results of operations together with \\\"Note About Forward-Looking Statements\\\" and our consolidated financial statements and related notes included under Item 1 of this Quarterly Report on Form 10-Q as well as"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 590
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 15,
+      "mean_score": 2.3333333333333335,
+      "faithful_fraction": 0.06666666666666667,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Apple's 10-Q and is largely qualitative/forward-looking in nature, with no concrete income or margin figures visible in the excerpt, which partially supports the claim that AAPL evidence is qualitative. However, the passage does not contain any information about GOOGL or MSFT figures, so the specific numerical claims about Alphabet's revenues, net income, EPS, operating margins, Cloud operating income, and Microsoft's Intelligent Cloud segment figures cannot be verified from this excerpt. The claim about AAPL being qualitative is supported by this passage, but the broader comparative claim and all the specific financial figures for GOOGL and MSFT are neither supported nor contradicted by this excerpt alone.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Apple's 10-K risk factors section and is indeed qualitative in nature, discussing macroeconomic risks, adverse conditions, and business interruptions without providing concrete income or margin figures. This supports the claim that AAPL evidence is largely qualitative with no concrete income or margin figures. However, the passage only partially supports the full claim, as it doesn't address the GOOGL or MSFT figures mentioned, and doesn't specifically mention tariffs or new lower-margin products (which are referenced in the claim as [AAPL:S1][AAPL:S2]). The passage confirms the qualitative nature of AAPL evidence but doesn't cover all the specific qualitative risks cited in the claim (tariffs, new lower-margin products).",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage is Apple's risk factor disclosure, which is entirely qualitative in nature\u2014discussing tariffs, trade restrictions, supply chain risks, macroeconomic pressures, and gross margin volatility risks without providing any concrete income or margin figures. This directly supports the claim's characterization of AAPL evidence as 'almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures.' The passage does not contain GOOGL or MSFT data, so it cannot confirm those portions of the claim, but it fully corroborates the AAPL-specific assertion. A small nuance is that the claim mentions 'new lower-margin products' as a risk factor, which is not explicitly present in this excerpt, preventing a perfect score of 5.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is a qualitative business description from Apple's 10-K, listing products and services with no financial figures (income, margins, EPS). It neither confirms nor contradicts the claim's specific financial figures for GOOGL or MSFT, and while it is indeed qualitative for AAPL, it doesn't mention tariffs, gross margin volatility, or macroeconomic pressures that the claim attributes to AAPL evidence. The passage only partially aligns with the claim that AAPL evidence is qualitative, but doesn't support the specific qualitative risk factors cited, nor any of the quantitative claims for GOOGL or MSFT.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Apple's 10-K risk factors section and is indeed qualitative in nature, discussing macroeconomic risks, adverse conditions, and business interruptions without providing concrete income or margin figures. This supports the claim that AAPL evidence is largely qualitative with no concrete income or margin figures. However, the passage only partially supports the full claim, as it doesn't address the GOOGL or MSFT figures mentioned, and doesn't specifically mention tariffs or new lower-margin products (which are referenced in the claim as [AAPL:S1][AAPL:S2]). The passage confirms the qualitative nature of AAPL evidence but doesn't cover all the specific qualitative risks cited in the claim (tariffs, new lower-margin products).",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage shows Microsoft's consolidated income statement (total operating income of $128.5B for FY2025), but does not contain the Intelligent Cloud segment-level figures ($44.6B operating income on $106.3B revenue) cited in the claim. The passage provides no information about GOOGL or AAPL, making the comparative claim about three companies largely unsupported by this excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage shows Microsoft's consolidated income statement (total operating income of $128.5B for FY2025), but does not contain the Intelligent Cloud segment-level figures ($44.6B operating income on $106.3B revenue) cited in the claim. The passage provides no information about GOOGL or AAPL, making the comparative claim about three companies largely unsupported by this excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage shows Microsoft's consolidated income statement (total operating income of $128.5B for FY2025), but does not contain the Intelligent Cloud segment-level figures ($44.6B operating income on $106.3B revenue) cited in the claim. The passage provides no information about GOOGL or AAPL, making the comparative claim about three companies largely unsupported by this excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Microsoft's accounting policies section discussing goodwill impairment testing, R&D costs, legal contingencies, and income taxes. It contains no concrete financial figures for any of the three companies (GOOGL, MSFT, AAPL) mentioned in the claim. There is no segment-level operating income data, no revenue figures, no net income figures, and no margin data. The passage does not support or contradict the specific financial figures cited in the claim; it is simply irrelevant to the claim's content.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage shows Microsoft's consolidated income statement (total operating income of $128.5B for FY2025), but does not contain the Intelligent Cloud segment-level figures ($44.6B operating income on $106.3B revenue) cited in the claim. The passage provides no information about GOOGL or AAPL, making the comparative claim about three companies largely unsupported by this excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Alphabet's MD&A section and describes business segments and revenue sources qualitatively. It does not contain any of the specific financial figures cited in the claim (e.g., $402.8B full-year revenues, $132.2B net income, $10.81 EPS, $31.2B Q3 operating income, $102.3B Q3 revenues, $2.9B Cloud operating income increase, MSFT's $44.6B segment operating income, or AAPL's qualitative risk factors). The passage is purely descriptive/structural and provides no concrete profitability data to support or contradict the specific numerical claims made.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Alphabet's MD&A section and only describes the structure of Alphabet's business segments and revenue sources qualitatively. It does not contain any of the specific financial figures cited in the claim (e.g., $402.8 billion full-year revenues, $132.2 billion net income, $10.81 diluted EPS, $31.2 billion Q3 operating income, $102.3 billion Q3 revenues, or Cloud operating income rising $2.9 billion). The passage also contains no information about Microsoft or Apple. The claim's specific numerical assertions cannot be verified from this excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Alphabet's MD&A but contains no concrete financial figures (revenues, net income, EPS, operating income, or margins) cited in the claim. It only confirms the two-segment structure (Google Services and Google Cloud) and discusses qualitative trends. The specific GOOGL figures ($402.8B revenue, $132.2B net income, $10.81 EPS, etc.), MSFT segment data, and AAPL qualitative risk factors are all absent from this excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Alphabet's MD&A but contains no concrete financial figures (revenues, net income, EPS, operating income, or margins) cited in the claim. It only confirms the two-segment structure (Google Services and Google Cloud) and discusses qualitative trends. The specific GOOGL figures ($402.8B revenue, $132.2B net income, $10.81 EPS, etc.), MSFT segment data, and AAPL qualitative risk factors are all absent from this excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Among the three mega-cap technology companies, Alphabet (GOOGL) provides the most concrete profitability figures in the evidence, while Microsoft (MSFT) offers segment-level operating income data, and Apple (AAPL) evidence is largely qualitative. GOOGL reported full-year 2025 revenues of $402.8 billion (up 15% YoY) with net income of $132.2 billion (up 32% YoY) and diluted EPS of $10.81 [GOOGL:S3], while its Q3 2025 operating income was $31.2 billion on revenues of $102.3 billion, implying a 31% operating margin [GOOGL:S4]. Google Services and Google Cloud both expanded operating income meaningfully, with Cloud operating income rising $2.9 billion in the first half of 2025 [GOOGL:S1]. MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year [MSFT:S1], signaling strong and accelerating segment profitability. AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures [AAPL:S1][AAPL:S2], with no concrete income or margin figures provided in the gathered evidence.",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Alphabet's MD&A section and only describes the structure of Alphabet's business segments and revenue sources qualitatively. It does not contain any of the specific financial figures cited in the claim (e.g., $402.8 billion full-year revenues, $132.2 billion net income, $10.81 diluted EPS, $31.2 billion Q3 operating income, $102.3 billion Q3 revenues, or Cloud operating income rising $2.9 billion). The passage also contains no information about Microsoft or Apple. The claim's specific numerical assertions cannot be verified from this excerpt.",
+          "judge": "sonnet"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 4,
+      "comparison_quality": 4,
+      "evidence_coverage": 4,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report is well-structured and readable, with a logical flow from summary to company-level breakdowns. Comparisons are meaningful where data permits, and the author is commendably transparent about limitations\u2014explicitly noting when MSFT figures are derived rather than stated, when GOOGL Cloud contributions are not independently verifiable, and when consolidated margins are absent. The mid-teens margin characterization for AAPL is slightly vague where a precise figure would strengthen the comparison. The repetition between the opening paragraph and the per-company sections adds some redundancy without adding new information, slightly reducing efficiency. Overall a strong analytical report that models appropriate epistemic humility."
+    },
+    "incorporation": {
+      "n": 3,
+      "incorporated": 3,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "profitability",
+          "claim": "AAPL's evidence is almost entirely qualitative, flagging gross margin volatility risks from tariffs, new lower-margin products, and macroeconomic pressures, with no concrete income or margin figures provided in the gathered evidence.",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "profitability",
+          "claim": "Google Cloud operating income rising $2.9 billion in the first half of 2025.",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "profitability",
+          "claim": "MSFT's Intelligent Cloud segment alone generated $44.6 billion in operating income on $106.3 billion of revenue for its most recent fiscal year, up from $37.8 billion the prior year.",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

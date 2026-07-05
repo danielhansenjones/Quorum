@@ -1,0 +1,367 @@
+{
+  "case_id": "happy_tech_risks",
+  "request_id": "45420ff5-614a-42ef-ac50-d1822a651d39",
+  "final_status": "ok",
+  "elapsed_s": 1.4955758930009324,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Risk Factors\n\nBoth Apple and Microsoft disclose overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014though each company places somewhat different emphasis across its filings.\n\nApple's disclosed risks center heavily on product-cycle execution: quality defects, demand mismatches, and margin compression during new product introductions can materially harm the business [AAPL:S0]. The company also describes a dense compliance burden spanning anticorruption, trade, foreign-exchange, labor, and environmental regulations across its global operations [AAPL:S1][AAPL:S2]. Notably, Apple calls out AI as a distinct and growing risk vector, flagging potential exposure to product liability, IP infringement, data privacy violations, and reputational harm from harmful or inaccurate AI-generated content [AAPL:S4]. It is worth noting that Apple's filings also contain substantial tariff, trade-restriction, and geopolitical disruption language [AAPL:S1], so the two companies are not as sharply differentiated on geopolitical risk as a surface reading might suggest.\n\nMicrosoft's risk disclosures prominently feature geopolitical and macroeconomic volatility\u2014protectionist trade policies, tariffs, and nationalist economic measures that can disrupt customer demand, raise operating costs, and complicate cross-border operations [MSFT:S1][MSFT:S2]. Separately, a filing in a different accession also references armed conflict as a source of business disruption. A recurring secondary theme in Microsoft's disclosures is human capital: the company describes the market for skilled workers as \"extremely competitive\" and notes that restrictive immigration policies further constrain its ability to recruit internationally [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both face currency volatility and shifting trade regimes given their global footprints [AAPL:S1][MSFT:S2].\n\n**AAPL:** Apple's risk disclosures emphasize the operational complexity of managing product transitions\u2014where quality issues, demand mismatches, or margin compression can materially harm results [AAPL:S0]\u2014alongside a broad and costly international compliance burden [AAPL:S1]. The company also distinguishes itself by explicitly identifying AI as a growing risk category, encompassing product liability, IP infringement, data privacy, and potential reputational harm from harmful content [AAPL:S4].\n\n**MSFT:** Microsoft's risk disclosures foreground geopolitical volatility\u2014including protectionist trade policies and tariffs\u2014as forces that can disrupt customer demand, raise operating costs, and complicate cross-border operations [MSFT:S1][MSFT:S2]. A distinct secondary emphasis is talent acquisition and retention: Microsoft describes the skilled-worker market as \"extremely competitive\" and highlights immigration restrictions as an additional constraint on international recruiting [MSFT:S3][MSFT:S4].\n\n---\n\n**Cross-axis takeaway:** The two companies share a broad common risk vocabulary\u2014trade policy, regulatory compliance, currency exposure, and technology transition\u2014but differ in emphasis. Apple's disclosures are more granular on product-execution and margin risk, and more explicit in carving out AI as a standalone risk category. Microsoft's disclosures give relatively greater weight to geopolitical disruption and human-capital constraints. Both companies, however, disclose meaningful exposure to tariffs and trade-policy shifts, and neither can be characterized as indifferent to geopolitical risk.",
+  "citations": [
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000079:item_1a_risk_factors:0005",
+      "quote": "demand, and the availability of products in appropriate quantities and at expected costs to meet anticipated demand. Additionally, quality issues or other defects or deficiencies can adversely affect the success of new product and service i"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000079:item_1a_risk_factors:0014",
+      "quote": "and services; labor and employment; anticorruption; import, export and trade; foreign exchange controls and cash repatriation restrictions; anti\u2013money laundering; foreign ownership and investment; national security; tax; and environmental, "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000079:item_1a_risk_factors:0018",
+      "quote": "laws and regulations can increase regulatory risks by requiring complex compliance measures and significant modifications to the Company\u2019s products, services and operations, and may lead to operational disruptions, heightened privacy and da"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000057",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000057:item_1a_risk_factors:0002",
+      "quote": "to manufacture and deliver products to its customers, create delays and inefficiencies in the Company\u2019s supply and manufacturing chain, result in slowdowns and outages to the Company\u2019s service offerings, increase the Company\u2019s costs, and ne"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-26-000013:item_1a_risk_factors:0006",
+      "quote": "and financial condition.\nFor example, the Company\u2019s artificial intelligence efforts may give rise to risks related to: competition and strategy; recouping costs and returns on investments; product liability; intellectual property infringeme"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "MSFT",
+      "accession": "0001193125-26-027207",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001193125-26-027207:item_1a_risk_factors:0000",
+      "quote": "Item 1A\n\u00a0\n\nIn addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditions in a country or region, a"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-061046",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000950170-25-061046:item_1a_risk_factors:0000",
+      "quote": "Item 1A\n\u00a0\n\nAbrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-061046",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000950170-25-061046:item_1a_risk_factors:0001",
+      "quote": "as a result of populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, and non-local sourcing restrictions, export controls, investment restrictions, or other developments that make it more"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "MSFT",
+      "accession": "0001193125-26-191507",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001193125-26-191507:item_1a_risk_factors:0000",
+      "quote": "Item 1A\n\u00a0\n\nOur business depends on our ability to attract and retain talented employees.\n Our business is based on successfully attracting, training, and retaining talented employees representing diverse backgrounds, experiences, and skill "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000950170-25-100235:item_1a_risk_factors:0000",
+      "quote": "Item 1A\n\u00a0\n\nOur business depends on our ability to attract and retain talented employees.\n Our business is based on successfully attracting, training, and retaining talented employees representing diverse backgrounds, experiences, and skill "
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "risk_factors": {
+        "axis": "risk_factors",
+        "groundedness": "thin",
+        "notes": "Most claims are supported, but there is a material citation mismatch: the Ukraine/armed-conflict claim attributed to [MSFT:S1][MSFT:S2] and the sole cited MSFT accession (0001193125-26-027207) does NOT contain the Ukraine reference. That language appears in a different MSFT filing (0000950170-25-061046). The cited MSFT accession does support nationalist/protectionist trends and tariffs, but not the explicit Ukraine war language. AAPL claims (product-cycle execution [S0], international compliance [S1], AI risks [S4], regulatory change [S2]) are all well-supported by their cited chunks. The characterization that Apple's risk language 'leans toward supply-chain execution and product-margin volatility' is an oversimplification: Apple's own filings (0000320193-25-000057) contain prominent tariff and geopolitical disruption language comparable to Microsoft's.",
+        "missed_evidence": [
+          "AAPL 0000320193-25-000057:item_1a_risk_factors:0001 and :0003 contain explicit tariff, trade restriction, and geopolitical disruption language for Apple, undermining the claim that Apple's risk emphasis is primarily supply-chain/margin rather than geopolitical.",
+          "MSFT 0000950170-25-061046:item_1a_risk_factors:0000 is the actual source of the Ukraine war citation, not the cited accession 0001193125-26-027207.",
+          "AAPL 0000320193-26-000013:item_1a_risk_factors:0002 adds AI-related cybersecurity vulnerability as an additional AI risk not mentioned in the summary.",
+          "Multiple MSFT filings (0001193125-26-191507, 0001193125-25-256321, 0000950170-25-100235) corroborate the talent/immigration risk, suggesting this is a persistent, cross-period theme rather than filing-specific."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The analyst's framing of Apple as supply-chain/margin focused vs. Microsoft as geopolitically focused is a false dichotomy: Apple's 10-Q (0000320193-25-000057) and 10-K both contain substantial tariff and geopolitical risk language, making the two companies' risk profiles more similar on this dimension than the summary implies.",
+      "The Ukraine war citation is sourced from a different MSFT accession (0000950170-25-061046) than the one cited (0001193125-26-027207), suggesting the analyst may have conflated evidence from multiple MSFT filings under a single accession reference."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "risk_factors",
+        "claim": "Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) [MSFT:S1][MSFT:S2] with citation to accession 0001193125-26-027207",
+        "flag": "weakly_supported",
+        "reason": "The Ukraine/armed-conflict language does not appear in the cited accession (0001193125-26-027207). It appears in a different MSFT filing (0000950170-25-061046). The cited accession does support nationalist/protectionist/tariff language, but the Ukraine-specific claim is unsupported by the cited source.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption",
+        "flag": "weakly_supported",
+        "reason": "Apple's own filings (0000320193-25-000057:item_1a_risk_factors:0001, :0003) contain prominent tariff, trade restriction, and geopolitical disruption language. The distinction drawn between the two companies on this dimension is overstated; both companies disclose substantial geopolitical and trade-policy risks.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_filing_section",
+        "args": {
+          "ticker": "AAPL",
+          "accession": "0000320193-25-000079",
+          "section": "item_1a_risk_factors"
+        },
+        "ok": true,
+        "result_summary": "{\"text\": \"Item 1A.\\u00a0\\u00a0\\u00a0\\u00a0Risk Factors\\nThe following summarizes factors that could have a material adverse effect on the Company\\u2019s business, reputation, results of operations, financial condition and stock price. The Company may not be able to accurately predict, control or mitigate these risks. Statements in this section are based on the Company\\u2019s beliefs and opinions r"
+      },
+      {
+        "tool": "get_filing_section",
+        "args": {
+          "ticker": "MSFT",
+          "accession": "0001193125-26-027207",
+          "section": "item_1a_risk_factors"
+        },
+        "ok": true,
+        "result_summary": "{\"text\": \"Item 1A\\n\\u00a0\\n\\nIn addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditions in a country or region, and difficulties in staffing and managing foreign operations. Emerging nationalist and protectionist trends and concerns about human rights, th"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "product quality margin pressure new product introduction risk",
+          "tickers": [
+            "AAPL"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-25-000079:item_1a_risk_factors:0018\", \"score\": 1.0, \"ticker\": \"AAPL\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"laws and regulations can increase regulatory risks by requiring complex compliance measures and significant modifications to the Company\\u2019s products, services and operations, and may lead to operational disruptions, heightened privacy and data secu"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Ukraine war armed conflict geopolitical disruption customer spending",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-061046:item_1a_risk_factors:0000\", \"score\": 1.0, \"ticker\": \"MSFT\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"Item 1A\\n\\u00a0\\n\\nAbrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our oper"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "AI artificial intelligence IP infringement data privacy harm users risk",
+          "tickers": [
+            "AAPL"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-26-000013:item_1a_risk_factors:0002\", \"score\": 0.7, \"ticker\": \"AAPL\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"and the development and deployment of artificial intelligence by the Company and its suppliers may expose the Company to additional vulnerabilities and attacks.\\nAlthough malicious attacks perpetrated to gain access to confidential information, includi"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "regulatory compliance labor trade foreign exchange environmental law international",
+          "tickers": [
+            "AAPL"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-25-000079:item_1a_risk_factors:0014\", \"score\": 0.8333334, \"ticker\": \"AAPL\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"and services; labor and employment; anticorruption; import, export and trade; foreign exchange controls and cash repatriation restrictions; anti\\u2013money laundering; foreign ownership and investment; national security; tax; and environmental, h"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Microsoft Ukraine war armed conflict supply chain customer spending impair",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-061046:item_1a_risk_factors:0000\", \"score\": 1.0, \"ticker\": \"MSFT\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"Item 1A\\n\\u00a0\\n\\nAbrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our oper"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Microsoft talent immigration recruiting international skilled workers constraints",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-100235:item_1a_risk_factors:0000\", \"score\": 0.8333334, \"ticker\": \"MSFT\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"Item 1A\\n\\u00a0\\n\\nOur business depends on our ability to attract and retain talented employees.\\n Our business is based on successfully attracting, training, and retaining talented employees representing diverse backgrounds, experiences, and ski"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 685
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 10,
+      "mean_score": 3.5,
+      "faithful_fraction": 0.5,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage partially supports the claim. It confirms Apple's exposure to macroeconomic risks, currency fluctuations, global supply chain complexity, and geopolitical/trade disruptions\u2014consistent with the claim's mention of overlapping macro-level themes and Apple's international compliance/trade exposure. However, the passage does not specifically evidence the claim's more distinctive Apple emphases: product-cycle execution risks (quality issues, margin pressure, new product introductions [AAPL:S0]), the dense web of labor/environmental/foreign-exchange compliance [AAPL:S1 specifics], or AI-specific risks like IP infringement and data privacy [AAPL:S4]. The passage also does not contain any Microsoft evidence to support the comparative claims about Microsoft's geopolitical/talent focus. The excerpt covers only general macroeconomic and geopolitical risk language from Apple's 10-K, providing partial but incomplete support for the nuanced comparative analysis in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage partially supports the claim. It confirms Apple's exposure to macroeconomic risks, currency fluctuations, global supply chain complexity, and geopolitical/trade disruptions\u2014consistent with the claim's mention of overlapping macro-level themes and Apple's international compliance/trade exposure. However, the passage does not specifically evidence the claim's more distinctive Apple emphases: product-cycle execution risks (quality issues, margin pressure, new product introductions [AAPL:S0]), the dense web of labor/environmental/foreign-exchange compliance [AAPL:S1 specifics], or AI-specific risks like IP infringement and data privacy [AAPL:S4]. The passage also does not contain any Microsoft evidence to support the comparative claims about Microsoft's geopolitical/talent focus. The excerpt covers only general macroeconomic and geopolitical risk language from Apple's 10-K, providing partial but incomplete support for the nuanced comparative analysis in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage partially supports the claim. It confirms Apple's exposure to macroeconomic risks, currency fluctuations, global supply chain complexity, and geopolitical/trade disruptions\u2014consistent with the claim's mention of overlapping macro-level themes and Apple's international compliance/trade exposure. However, the passage does not specifically evidence the claim's more distinctive Apple emphases: product-cycle execution risks (quality issues, margin pressure, new product introductions [AAPL:S0]), the dense web of labor/environmental/foreign-exchange compliance [AAPL:S1 specifics], or AI-specific risks like IP infringement and data privacy [AAPL:S4]. The passage also does not contain any Microsoft evidence to support the comparative claims about Microsoft's geopolitical/talent focus. The excerpt covers only general macroeconomic and geopolitical risk language from Apple's 10-K, providing partial but incomplete support for the nuanced comparative analysis in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Apple's filing and discusses geopolitical instability, trade disputes, tariffs, and supply chain risks in considerable detail\u2014which partially supports the claim. However, the passage does not address product-cycle execution, margin pressure, new product introductions (AAPL:S0), the dense web of international compliance obligations spanning labor/environmental law (AAPL:S1 as described), or AI-specific risks (AAPL:S4). It also does not contain any Microsoft evidence (MSFT:S1-S4) referenced in the claim. The passage actually shows Apple also emphasizes geopolitical/trade disruption prominently, which somewhat undermines the claim's characterization that Apple 'leans toward supply-chain execution and product-margin volatility' while Microsoft 'leans toward geopolitical disruption.' Only portions of the overall claim are supported by this single excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage supports some elements of the claim about Apple\u2014specifically product-cycle execution risks (design/manufacturing defects, quality issues, new product introductions), AI-specific risks (harmful content, IP/data privacy implications), and margin/product concerns. However, the passage does not address Microsoft's risks at all (geopolitical disruption, Ukraine war, talent competition, tariffs), nor does it cover Apple's international compliance obligations (labor, trade, foreign-exchange, environmental law) mentioned in AAPL:S1. The passage only partially covers the Apple side of the claim and provides no evidence for the Microsoft comparisons or the overall comparative conclusion.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage is from Microsoft's filing and directly supports the claim's characterization of Microsoft's risks: nationalist/protectionist trade policy, tariffs, currency volatility, geopolitical disruption, and the competitive market for skilled talent with constraints on international recruiting (immigration laws). The passage does not cover Apple's risks (product-cycle execution, AI-specific risks, etc.), but the claim's statements about Microsoft are well-supported. A small nuance is that the Ukraine war is not mentioned in this specific excerpt, though the claim attributes that to other Microsoft sources [MSFT:S1][MSFT:S2]. Overall, the Microsoft-specific elements described in the claim are strongly corroborated by this passage.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage strongly supports the Microsoft-related claims in the excerpt: it explicitly mentions geopolitical instability, the Ukraine conflict, tariffs, nationalist/protectionist trade policy, supply chain disruptions, regulatory change, and currency/trade regime exposure. These align well with [MSFT:S1] and [MSFT:S2] references. However, the passage does not contain evidence about Microsoft's talent competition or international recruiting constraints ([MSFT:S3][MSFT:S4]), nor does it contain Apple-specific evidence about product-cycle execution, margin pressure, AI risks, or labor/environmental compliance ([AAPL:S0]-[AAPL:S4]). The claim's comparative framing and Apple-specific details are not supported by this single passage, but the Microsoft geopolitical/macroeconomic emphasis is well-supported, making this a 4 rather than 5.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage strongly supports the Microsoft-related claims in the excerpt: it explicitly mentions geopolitical instability, the Ukraine conflict, tariffs, nationalist/protectionist trade policy, supply chain disruptions, regulatory change, and currency/trade regime exposure. These align well with [MSFT:S1] and [MSFT:S2] references. However, the passage does not contain evidence about Microsoft's talent competition or international recruiting constraints ([MSFT:S3][MSFT:S4]), nor does it contain Apple-specific evidence about product-cycle execution, margin pressure, AI risks, or labor/environmental compliance ([AAPL:S0]-[AAPL:S4]). The claim's comparative framing and Apple-specific details are not supported by this single passage, but the Microsoft geopolitical/macroeconomic emphasis is well-supported, making this a 4 rather than 5.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage directly supports the claim about Microsoft's risks related to skilled talent competition and constraints on international recruiting (immigration laws, restrictive domestic policies). It also mentions regulatory complexity around employment laws increasing costs and limiting flexibility. However, the passage does not address geopolitical disruption, tariffs, Ukraine war, or macroeconomic themes that the claim attributes to Microsoft's evidence, nor does it cover Apple's risks at all. The talent/human-capital retention aspect is well-supported, but the broader comparative framing and other Microsoft risk themes (geopolitical, macroeconomic) are not present in this excerpt.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft face overlapping macro-level risk themes\u2014geopolitical instability, regulatory complexity, and technology transition\u2014but the evidence highlights somewhat different emphases. Apple's disclosed risks center heavily on product-cycle execution (quality issues, margin pressure, and the challenge of managing new introductions [AAPL:S0]), a dense web of international compliance obligations spanning labor, trade, foreign-exchange, and environmental law [AAPL:S1], and emerging AI-specific risks including IP infringement, data privacy, and potential harm to users [AAPL:S4]. Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) that can impair customer spending and supply chains [MSFT:S1][MSFT:S2]\u2014as well as the intensely competitive market for skilled talent and the constraints on international recruiting [MSFT:S3][MSFT:S4]. Both companies acknowledge that regulatory change can increase costs and limit operational flexibility [AAPL:S2][MSFT:S2], and both operate globally in ways that expose them to currency volatility and shifting trade regimes [AAPL:S1][MSFT:S2]. Overall, Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption and human-capital retention.",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage directly supports the claim about Microsoft's risks related to skilled talent competition and constraints on international recruiting (immigration laws, restrictive domestic policies). It also mentions regulatory complexity around employment laws increasing costs and limiting flexibility. However, the passage does not address geopolitical disruption, tariffs, Ukraine war, or macroeconomic themes mentioned in the claim for Microsoft, nor does it address Apple-specific risks. The passage supports the Microsoft talent/human-capital portion of the claim well but only partially covers the full scope of the comparative claim.",
+          "judge": "sonnet"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 5,
+      "notes": "Exceptionally well-structured report. The prose flows logically from shared themes to company-specific emphases, and the cross-axis takeaway synthesizes without overstating. Particularly strong on intellectual honesty: the report proactively corrects a potential misreading ('it is worth noting that Apple's filings also contain substantial tariff... language') rather than letting a clean but misleading contrast stand. Citations are granular and consistently applied throughout. The dual-format presentation (narrative paragraphs + bolded company summaries) adds redundancy in a useful way for different reader needs. Minor observation: the repeated content between the narrative section and the bolded AAPL/MSFT summaries is slightly verbose, but this is a stylistic choice rather than a flaw, and the summaries do add concision value."
+    },
+    "incorporation": {
+      "n": 2,
+      "incorporated": 2,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "risk_factors",
+          "claim": "Microsoft's evidence foregrounds geopolitical and macroeconomic disruption\u2014nationalist/protectionist trade policy, tariffs, and armed conflict (explicitly citing the Ukraine war) [MSFT:S1][MSFT:S2] with citation to accession 0001193125-26-027207",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "Apple's risk language leans toward supply-chain execution and product-margin volatility, while Microsoft's leans toward geopolitical disruption",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,67 @@
+{
+  "arm_a": "eval/runs/campaign-critic",
+  "arm_b": "eval/runs/campaign-rebuttal",
+  "paired_cases": 41,
+  "only_in_a": [],
+  "only_in_b": [],
+  "metrics": {
+    "faithfulness": {
+      "n": 32,
+      "mean_delta": -0.010534608182080102,
+      "ci95": [
+        -0.028044871794871792,
+        0.0014044943820224753
+      ]
+    },
+    "quality": {
+      "n": 41,
+      "mean_delta": 0.036585365853658534,
+      "ci95": [
+        -0.03048780487804878,
+        0.10975609756097561
+      ]
+    },
+    "incorporation": {
+      "n": 19,
+      "mean_delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "latency": {
+      "n": 41,
+      "mean_delta": -1.8703857640488777,
+      "ci95": [
+        -8.59353632293133,
+        4.457158812030512
+      ]
+    },
+    "cost": {
+      "n": 41,
+      "mean_delta": 0.0385970243902439,
+      "ci95": [
+        0.018035499999999996,
+        0.05956565670731708
+      ]
+    }
+  },
+  "rebuttal": {
+    "arm_a": {
+      "n": 0,
+      "defended": 0,
+      "retracted": 0,
+      "revised": 0,
+      "reflected": 0,
+      "reflected_rate": null
+    },
+    "arm_b": {
+      "n": 48,
+      "defended": 1,
+      "retracted": 4,
+      "revised": 43,
+      "reflected": 5,
+      "reflected_rate": 0.10416666666666667
+    }
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "case_id": "happy_aapl_msft_growth",
+  "request_id": "e3904aae-be17-4e01-9271-17dd9ac8c972",
+  "final_status": "ok",
+  "elapsed_s": 1.3356704869984242,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "rebut",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Growth\n\nMicrosoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then continue its post-trough recovery to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of approximately 5.5% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's strong and accelerating growth\u2014reaching double-digit rates in each of the most recent two fiscal years\u2014driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 recovery.\n\n**AAPL:** Apple's revenue growth has been sluggish in aggregate, declining from $394.3B in FY2022 [AAPL:Q0] to a trough of $383.3B in FY2023 [AAPL:Q1] before recovering to $416.2B in FY2025 [AAPL:Q3]. The FY2025 result represents a continuation of the post-trough recovery (~6.4% year-over-year from $391.0B in FY2024 [AAPL:Q2]), but the three-year cumulative growth of approximately 5.5% still lags well behind peers with stronger secular tailwinds.\n\n**MSFT:** Microsoft has delivered strong and accelerating revenue growth, expanding from $198.3B in FY2022 [MSFT:Q0] to $245.1B in FY2024 [MSFT:Q2] and reaching $281.7B in FY2025 [MSFT:Q3], a ~15% year-over-year increase in the latest fiscal year. Growth reached double-digit rates in each of the two most recent fiscal years, and the cumulative three-year gain of approximately 42% reflects durable demand for Azure cloud services and the company's early monetization of AI offerings.\n\n---\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "394328000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "383285000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "391035000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "416161000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "198270000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "211915000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "245122000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "281724000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "198270000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "416161000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "growth": {
+        "axis": "growth",
+        "groundedness": "ok",
+        "notes": "All headline revenue figures are confirmed by XBRL data: MSFT FY2022 $198.27B, FY2025 $281.72B (~42.1% cumulative; analyst says ~42% \u2713); AAPL FY2022 $394.33B, FY2023 $383.29B, FY2024 $391.04B, FY2025 $416.16B. The FY2024\u2192FY2025 MSFT step-up of ~14.9% rounds to ~15% \u2713. The AAPL cumulative gain is ~5.5%, which the analyst rounds to ~6% \u2014 a minor overstatement but within rounding tolerance. The FY2024\u2192FY2025 AAPL growth of ~6.4% is confirmed by the filing (which states '6%'). The prior rebuttal on 'consistent double-digit' growth for MSFT was adequately addressed \u2014 the revised text no longer uses that phrase. The prior rebuttal on Apple's 'acceleration' was also addressed with the revised 'modest recovery' framing. Qualitative support for MSFT cloud/AI tailwinds is now confirmed by filing evidence (Azure, OpenAI partnership, Microsoft 365 cloud growth). Qualitative support for Apple's FY2025 drivers (iPhone Pro models, Mac laptops) is also confirmed by the 10-K MDA, which the prior rebuttal flagged as missing.",
+        "missed_evidence": [
+          "AAPL 10-K MDA (accession 0000320193-25-000079) explicitly states iPhone net sales increased in FY2025 due to higher net sales of Pro models, and Mac net sales increased due to higher laptop sales \u2014 this qualitative driver evidence was flagged as absent in the prior rebuttal but is in fact available in the filing.",
+          "MSFT filing (accession 0000950170-25-100235) confirms FY2024\u2192FY2025 revenue growth of exactly 15% and references cloud revenue growth metrics and the OpenAI strategic partnership as growth drivers, supporting the 'cloud and AI tailwinds' characterization.",
+          "AAPL cumulative FY2022\u2192FY2025 gain is ~5.5% (not ~6%) based on exact figures; the analyst's rounding is slightly generous but within acceptable tolerance."
+        ]
+      }
+    },
+    "cross_axis": [],
+    "flagged_claims": [
+      {
+        "source_axis": "growth",
+        "claim": "Apple...a cumulative gain of only ~6% over the full three-year span",
+        "flag": "weakly_supported",
+        "reason": "The exact cumulative gain from FY2022 ($394.328B) to FY2025 ($416.161B) is ~5.53%, not ~6%. While within loose rounding tolerance, the figure is consistently rounded upward and could mislead; '~5.5%' or 'approximately 6%' with a note would be more precise. This is a minor issue not previously flagged.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 198270000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001564590-22-026876\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 211915000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 245122000000.0, \"unit\": \""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "AAPL",
+          "key": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 394328000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000320193-24-000123\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 383285000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000320193-25-000079\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 391035000000.0, \"unit\": \""
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Microsoft cloud AI revenue growth drivers",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "7",
+            "7A"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Apple revenue growth FY2025 drivers recovery",
+          "tickers": [
+            "AAPL"
+          ],
+          "sections": [
+            "7",
+            "7A"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Microsoft cloud revenue growth Azure AI",
+          "tickers": [
+            "MSFT"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-100235:item_6_reserved:0004\", \"score\": 0.8333334, \"ticker\": \"MSFT\", \"section\": \"item_6_reserved\", \"text_excerpt\": \"s network publishers and news partners\\n\\nSUMMARY RESULTS OF OPERATIONS\\n\\u00a0\\n\\n(In millions, except percentages and per share amounts)\\n\\n \\n\\n2025\\n\\n \\n\\n \\n\\n2024\\n\\n \\n\\n \\n\\nPercentage\\nChange\\n \\n\\n \\n\\n \\n\\n \\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u00a0\\n\\n\\u0"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Apple revenue increase services iPhone FY2025",
+          "tickers": [
+            "AAPL"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-25-000079:item_7_mda:0002\", \"score\": 1.0, \"ticker\": \"AAPL\", \"section\": \"item_7_mda\", \"text_excerpt\": \"%\\n85,200\\u00a0\\nTotal net sales\\n$\\n416,161\\u00a0\\n6\\u00a0\\n%\\n$\\n391,035\\u00a0\\n2\\u00a0\\n%\\n$\\n383,285\\u00a0\\n(1)\\nServices net sales include amortization of the deferred value of services bundled in the sales price of certain products.\\niPhone\\niPhone net sales increas"
+      }
+    ],
+    "turns_used": 4,
+    "duration_ms": 416
+  },
+  "rebuttals": [
+    {
+      "source_axis": "growth",
+      "claim": "Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds",
+      "disposition": "revised",
+      "reason": "The data shows FY2022\u2192FY2023 growth was ~6.9% ($198.27B to $211.92B), which is below double-digit; only FY2023\u2192FY2024 (~15.7%) and FY2024\u2192FY2025 (~14.9%) qualify as double-digit. The characterization of 'consistent double-digit' overstates the pattern \u2014 a more accurate description is that Microsoft has delivered strong and accelerating growth, reaching double-digit rates in the most recent two fiscal years.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+        "ticker": "MSFT",
+        "accession": "0001564590-22-026876",
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "normalized": null,
+        "value": "198270000000.0",
+        "period": "FY2022",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "growth",
+      "claim": "Apple's FY2025 rebound...accelerate to $416.2B",
+      "disposition": "revised",
+      "reason": "The $416.161B figure is confirmed, and growth did improve from ~1.97% (FY2024) to ~6.4% (FY2025), but characterizing this as an 'acceleration' is marginally supportable at best and lacks qualitative filing evidence to explain the drivers; a more precise framing is that Apple's revenue recovered modestly to $416.2B in FY2025, continuing its post-FY2023 trough recovery.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+        "ticker": "AAPL",
+        "accession": "0000320193-25-000079",
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "normalized": null,
+        "value": "416161000000.0",
+        "period": "FY2025",
+        "unit": "USD"
+      }
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 10,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Microsoft has demonstrated substantially stronger revenue growth than Apple over the FY2022\u2013FY2025 period. MSFT grew from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], representing a cumulative gain of roughly 42% and a FY2024-to-FY2025 step-up of ~15%. Apple, by contrast, saw revenue dip from $394.3B in FY2022 [AAPL:Q0] to $383.3B in FY2023 [AAPL:Q1], recover modestly to $391.0B in FY2024 [AAPL:Q2], and then accelerate to $416.2B in FY2025 [AAPL:Q3]\u2014a cumulative gain of only ~6% over the full three-year span, though the most recent year showed a healthier ~6.4% year-over-year increase. Microsoft's consistent double-digit annual growth, driven in large part by cloud and AI tailwinds, contrasts with Apple's relatively flat trajectory through FY2023\u2013FY2024 before its FY2025 rebound.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "The report is well-structured, with a clear comparative summary followed by company-specific breakdowns. Numerical citations are consistently applied and the narrative flows logically. The comparison is direct and quantitatively grounded. One minor concern: the report attributes Microsoft's growth confidently to 'cloud and AI tailwinds' and 'early monetization of AI offerings' without citing specific segment data to substantiate these causal claims\u2014this is a mild overreach given the evidence shown. Apple's sluggishness is also characterized as lagging 'peers with stronger secular tailwinds,' which is interpretive framing not fully supported by the data presented. These are small issues in an otherwise strong piece."
+    },
+    "incorporation": {
+      "n": 1,
+      "incorporated": 1,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "growth",
+          "claim": "Apple...a cumulative gain of only ~6% over the full three-year span",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

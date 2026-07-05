@@ -1,0 +1,756 @@
+{
+  "case_id": "partial_inventory_turnover",
+  "request_id": "a2b4a486-d360-4cb5-a010-d05466e93263",
+  "final_status": "partial",
+  "elapsed_s": 0.8574808329976804,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "rebut",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Inventory Turnover\n\n*Insufficient data*\n\n---\n\n## Profitability\n\nCostco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014and notably, PepsiCo achieves that on FY2025 revenues of $93.9B [PEP:Q3] compared to Costco's $275.2B [COST:Q3] (roughly 34% of Costco's revenue base), underscoring its structurally superior margin profile even as it faces near-term headwinds.\n\n**COST:** Costco's profitability is defined by high-volume, low-margin warehouse retailing, yet its earnings power has compounded impressively: operating income grew from $7.8B in FY2022 [COST:Q8] to $10.4B in FY2025 [COST:Q11], and net income rose from $5.8B [COST:Q4] to $8.1B [COST:Q7] over the same span. Revenue growth of roughly 21% over four years [COST:Q0][COST:Q3] has translated into consistent bottom-line expansion, reflecting disciplined cost management and the leverage of its membership model.\n\n**PEP:** PepsiCo commands structurally superior margins\u2014gross profit of $50.9B on $93.9B of FY2025 revenues [PEP:Q15][PEP:Q3] implies a gross margin above 54%\u2014but its profitability momentum has stalled, with operating income declining to $11.5B [PEP:Q11] and net income falling to $8.2B [PEP:Q7] in FY2025 after peaking at $12.9B and $9.6B respectively in FY2024 [PEP:Q10][PEP:Q6]. The FY2025 pullback signals cost or volume pressures that are compressing earnings even as revenues edged higher.\n\n---\n\n### Cross-Axis Takeaway\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "226954000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "242290000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "254453000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "275235000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "5844000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "6292000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "7367000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8099000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "7793000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "8114000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "9285000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "10383000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "86392000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "91471000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "91854000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "93925000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8910000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "9074000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "9578000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8240000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11512000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11986000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "12887000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11498000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "45816000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "49590000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "50110000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "50859000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "5844000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11498000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "profitability": {
+        "axis": "profitability",
+        "groundedness": "ok",
+        "notes": "All major quantitative claims are confirmed by XBRL data. Costco FY2025 revenue $275.235B (\u2248$275.2B \u2713), operating income $10.383B (\u2248$10.4B \u2713), net income $8.099B (\u2248$8.1B \u2713). Implied operating margin 3.77% (\u22483.8% \u2713) and net margin 2.94% (\u22482.9% \u2713) are arithmetically correct. Costco FY2022 net income $5.844B (\u2248$5.8B \u2713) \u2014 already defended in prior rebuttal. PepsiCo FY2024 revenue $91.854B (\u2248$91.9B \u2713), gross profit $50.110B (\u2248$50.1B \u2713), operating income $12.887B (\u2248$12.9B \u2713). PepsiCo gross margin 54.55% (>54% \u2713) and operating margin 14.03% (\u224814% \u2713) are arithmetically correct. PepsiCo FY2025 operating income $11.498B (\u2248$11.5B \u2713), net income $8.240B (\u2248$8.2B \u2713), FY2024 net income $9.578B (\u2248$9.6B \u2713) \u2014 all confirmed and previously defended. The 'one-third of Costco's revenue base' characterization is accurate: $91.9B / $275.2B \u2248 33.4%. One minor note: the analyst describes PepsiCo FY2025 net income as $8.2B vs Costco $8.1B as a 'convergence' \u2014 this is directionally correct but PepsiCo FY2025 revenue is actually $93.925B (not $91.9B), meaning the revenue-base comparison should reference FY2025 figures for both companies if comparing FY2025 net income. The analyst correctly uses FY2024 PepsiCo revenue ($91.9B) when discussing FY2024 metrics, but the 'one-third' framing in the convergence sentence implicitly mixes FY2024 PEP revenue with FY2025 net income figures. This is a minor presentational imprecision, not a factual error.",
+        "missed_evidence": [
+          "PepsiCo FY2025 revenue is $93.925B (not $91.9B cited in the convergence context) \u2014 using the correct FY2025 figure still yields ~34% of Costco's revenue base, so the 'one-third' characterization holds, but the revenue figure cited ($91.9B) is FY2024, not FY2025.",
+          "Costco FY2023 net income $6.292B and FY2024 net income $7.367B are available and would further substantiate the 'strongly upward' earnings trajectory claim with intermediate data points.",
+          "Costco FY2025 gross profit data was not retrieved; the analyst does not cite a gross margin for Costco (appropriately, given warehouse retail norms), so no gap here."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The absolute net income convergence narrative ($8.1B COST vs $8.2B PEP in FY2025) is directionally accurate but subtly mixes fiscal year conventions: Costco's FY2025 ends in August/September while PepsiCo's FY2025 ends in December, meaning these are not strictly contemporaneous periods \u2014 a caveat the analysis does not surface."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "profitability",
+        "claim": "PepsiCo achieves [$8.2B net income] on roughly one-third of Costco's revenue base",
+        "flag": "weakly_supported",
+        "reason": "The 'one-third' framing is presented in the context of FY2025 net income convergence, but the $91.9B revenue figure cited for PepsiCo is FY2024, not FY2025. PepsiCo's actual FY2025 revenue is $93.925B. Using the correct FY2025 figure ($93.9B / $275.2B \u2248 34%) still supports 'roughly one-third,' so the conclusion is not wrong, but the revenue figure used in the comparison is from the wrong fiscal year, creating a minor citation inconsistency.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 226954000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 242290000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 254453000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:NetIncomeLoss",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 5844000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 6292000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 7367000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\":"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PEP",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 91471000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 91854000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 93925000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PEP",
+          "key": "us-gaap:GrossProfit",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 50110000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:GrossProfit\"}, {\"value\": 50859000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:GrossProfit\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:OperatingIncomeLoss",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 7793000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 9285000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 10383000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000909832-25-000101\", \"resol"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PEP",
+          "key": "us-gaap:OperatingIncomeLoss",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 12887000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 11498000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PEP",
+          "key": "us-gaap:NetIncomeLoss",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 9578000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 8240000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000077476-26-000007\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}]"
+      }
+    ],
+    "turns_used": 3,
+    "duration_ms": 24
+  },
+  "rebuttals": [
+    {
+      "source_axis": "profitability",
+      "claim": "net income rising from $5.8B in FY2022 [COST:Q4]",
+      "disposition": "revised",
+      "reason": "The figure $5.844B (\u2248$5.8B) is fully supported by available XBRL evidence (C4: COST us-gaap:NetIncomeLoss FY2022 = $5,844,000,000). The opaque retrieval tag [COST:Q4] is replaced with the explicit evidence reference C4 to ensure a transparent and verifiable citation trail.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+        "ticker": "COST",
+        "accession": "0000909832-24-000049",
+        "concept": "us-gaap:NetIncomeLoss",
+        "normalized": null,
+        "value": "5844000000.0",
+        "period": "FY2022",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "profitability",
+      "claim": "PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B and net income declining to $8.2B from a peak of $9.6B in FY2024",
+      "disposition": "revised",
+      "reason": "All three figures are confirmed by available XBRL evidence: FY2025 operating income $11.498B (C23), FY2025 net income $8.240B (C19), and FY2024 net income $9.578B (C18). The claim is factually accurate; the revision simply anchors it to explicit evidence references C18, C19, and C23 rather than leaving citations absent from the manifest.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+        "ticker": "PEP",
+        "accession": "0000077476-26-000007",
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "normalized": null,
+        "value": "11498000000.0",
+        "period": "FY2025",
+        "unit": "USD"
+      }
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 30,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different profitability profiles despite both showing multi-year revenue growth. Costco operates on razor-thin margins characteristic of warehouse retail: on FY2025 revenues of $275.2B [COST:Q3], it generated operating income of $10.4B [COST:Q11] and net income of $8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. Yet Costco's absolute earnings trajectory is strongly upward, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7]. PepsiCo, by contrast, benefits from a branded consumer-goods model with far richer margins: on FY2024 revenues of $91.9B [PEP:Q2] it posted gross profit of $50.1B [PEP:Q14] and operating income of $12.9B [PEP:Q10], implying a gross margin above 54% and an operating margin near 14%. However, PepsiCo's profitability deteriorated in FY2025, with operating income falling to $11.5B [PEP:Q11] and net income declining to $8.2B [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], while Costco continued to expand earnings. In absolute net income terms the two companies have converged\u2014Costco at $8.1B [COST:Q7] versus PepsiCo at $8.2B [PEP:Q7] in FY2025\u2014but PepsiCo achieves that on roughly one-third of Costco's revenue base, underscoring its structurally superior margin profile even as it faces near-term headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 4,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "The profitability section is well-structured and analytically strong. The side-by-side margin comparison is handled with precision, and the convergence of absolute net income between two structurally different businesses is a genuinely insightful observation. Citation density is high and appropriate. The per-company breakdowns reinforce rather than repeat the combined analysis. Minor issues: the Cross-Axis Takeaway section appears to be missing its content entirely, which is a structural gap. The Inventory Turnover section correctly flags insufficient data, which is honest, though it offers no explanation of what data would be needed or why it matters contextually. The implied margin calculations (e.g., 3.8% operating margin) are useful but presented as approximations without flagging rounding, which is a small transparency gap."
+    },
+    "incorporation": {
+      "n": 1,
+      "incorporated": 1,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "profitability",
+          "claim": "PepsiCo achieves [$8.2B net income] on roughly one-third of Costco's revenue base",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

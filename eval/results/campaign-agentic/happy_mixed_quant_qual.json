@@ -1,0 +1,659 @@
+{
+  "case_id": "happy_mixed_quant_qual",
+  "request_id": "52d55f4d-da34-4bfa-a3e2-bdff62cb1422",
+  "final_status": "ok",
+  "elapsed_s": 5.652504284000315,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "analyze_axis",
+    "assess",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Growth\n\nEli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.\n\n**MRK:** Merck has grown steadily but modestly, with revenues rising from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a cumulative gain of roughly 10% over three years. The company showed its strongest single-year step-up between FY2023 ($60.1B [MRK:Q1]) and FY2024 ($64.2B [MRK:Q2]), but overall growth remains incremental rather than transformational.\n\n**LLY:** Eli Lilly has been one of the fastest-growing large-cap pharma companies in recent history, with revenues nearly tripling from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], driven by the rapid commercial uptake of its GLP-1 and diabetes portfolio. The acceleration has been consistent and steep, with revenues surging from $34.1B in FY2023 [LLY:Q1] to $45.0B in FY2024 [LLY:Q2] and then to $65.2B in FY2025 [LLY:Q3], reflecting extraordinary demand that has now brought LLY's top line to parity with the much larger MRK.\n\n---\n\n## Risk Factors\n\nBoth Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though their disclosures differ in emphasis. MRK highlights patent-exclusivity risk as a central concern, noting that products losing market exclusivity are generally subject to a meaningful and rapid erosion of sales [MRK:S0] \u2014 though the precise language in the filing should be understood as characterizing the general concept rather than a verbatim quote. Generic and biosimilar competition is flagged as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks: MRK's disclosures address government-mandated price reductions in markets such as China [MRK:S3], while LLY warns that public and private actors are taking steps to control pharmaceutical expenditures [LLY:S2] \u2014 again, the spirit of this disclosure is well-supported even if the exact phrasing is paraphrased. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both \u2014 MRK's filings address information-technology and data-security exposures [MRK:S2], and LLY details risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks, including tariffs, trade tensions, and China exposure, are explicitly enumerated by LLY [LLY:S1][LLY:S4] and are present in MRK's discussion of government-driven pricing actions in international markets [MRK:S3].\n\n**MRK:** Merck's risk profile is anchored by patent-exclusivity exposure, with the company acknowledging that loss of market exclusivity typically triggers a meaningful revenue decline [MRK:S0], compounded by generic and biosimilar competition that can undercut pricing substantially [MRK:S1]. Regulatory hurdles, information-security risks [MRK:S2], and pricing and access pressures in international markets \u2014 including government-mandated price reductions in programs such as China's volume-based procurement \u2014 round out the key risk themes disclosed [MRK:S3].\n\n**LLY:** Lilly's disclosures place particular weight on supply-chain fragility, warning that disruptions may cause product shortages, lost revenue, and pauses in market availability [LLY:S3], alongside heavy reliance on third-party contract manufacturers and outsourcing partners whose performance failures could harm the business [LLY:S5]. Government price controls and reimbursement restrictions are flagged as a material ongoing threat [LLY:S2], and geopolitical tensions \u2014 especially around China operations \u2014 are called out as a distinct operational risk [LLY:S4].\n\n*Note: Several quoted phrases in the risk-factor disclosures above reflect the substantive content of the cited filings but could not be confirmed as verbatim language; they should be read as characterizations of the disclosed risks rather than direct quotations.*\n\n---\n\n## Cross-Axis Takeaway\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "59283000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "60115000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "64168000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65011000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "LLY",
+      "accession": "0000059478-25-000067",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "28541400000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "34124000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "45043000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65179000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0000",
+      "quote": "Item 1A.\nRisk Factors.\nSummary Risk Factors\nThe Company is subject to a number of risks that if realized could materially adversely affect its business, results of operations, cash flows, financial condition or prospects. The following is a"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0009",
+      "quote": "ed and sold than the Company\u2019s products. Alternatively, in the case of generic or biosimilar competition, including the generic or biosimilar availability of competitors\u2019 branded products, they may be equally safe and effective products tha"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0022",
+      "quote": "-attacks against the Company\u2019s IT systems or third-party providers\u2019 IT systems, such as cloud-based systems, could result in exposure of confidential information, the modification of critical data, and/or the failure of critical operations."
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1_business",
+      "chunk_id": "0000310158-26-000063:item_1_business:0019",
+      "quote": "on mature products moving forward.\nEmerging Markets\nThe Company\u2019s focus on emerging markets, in addition to China, has continued. Governments in many emerging markets are also focused on constraining health care costs and have enacted price"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1_business",
+      "chunk_id": "0000310158-26-000063:item_1_business:0024",
+      "quote": "unless otherwise noted.\u00a0Certain of the products listed may be the subject of patent litigation. See Item\u00a08. \u201cFinancial Statements and Supplementary Data,\u201d Note\u00a010. \u201cContingencies and Environmental Liabilities\u201d below.\nN/A:\u00a0\u00a0\u00a0\u00a0Currently no ma"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1_business",
+      "chunk_id": "0000310158-26-000063:item_1_business:0026",
+      "quote": "manufacture of the active ingredient(s), (ii)\u00a0use(s) of the product, and (iii)\u00a0novel compositions and formulations of the product. The effect of product patent expiration on pharmaceutical product sales may also depend upon many other facto"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_7_mda",
+      "chunk_id": "0000310158-26-000063:item_7_mda:0045",
+      "quote": "levels of inventory at each stage to optimize the shelf life of the inventory in relation to anticipated market demand in order to avoid product expiry issues. If future demand for the Company\u2019s products are less favorable than forecasted, "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000310158-26-000063:item_1a_risk_factors:0018",
+      "quote": "In some cases, the FDA requirements have increased the amount of time and resources necessary to develop new products and bring them to market in the U.S. Regulation outside the U.S. also is primarily focused on drug safety and effectivenes"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0000",
+      "quote": "Item 1A.\nRisk Factors\nIn addition to the other information contained in this Annual Report on Form 10-K, the following risk factors should be considered carefully in evaluating our company. It is possible that our business, financial condit"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0016",
+      "quote": "environmental factors include (i) tariffs, (ii) cost inflation and global transportation and logistics challenges; (iii) labor market dynamics; (iv) natural disasters (including increased instances or severity of natural disasters or other "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0004",
+      "quote": "compete effectively for talent could negatively affect our ability to discover, develop, manufacture, and sell our medicines, resulting in material financial, legal, commercial, or reputational harm to our business.\nOur business is subject "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0015",
+      "quote": "related to supply chain activities have resulted and may in the future result in delays and disruptions in the manufacturing, distribution, and sale of our products and/or product shortages, leading to lost revenue, increased costs, reduced"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1_business",
+      "chunk_id": "0000059478-26-000013:item_1_business:0023",
+      "quote": "geopolitical tensions were to increase and disrupt our operations in or related to China, such disruption could significantly impact our business and results of operations. See Item 1A, \"Risk Factors\u2014Risks Related to Our Operations\u2014Reliance"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0017",
+      "quote": "with contract manufacturing organizations, entities supporting consumer directed access channels, artificial intelligence vendors, and other third parties in recent periods.\nOutsourcing involves many risks, including the risk that third par"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000059478-26-000013:item_1a_risk_factors:0014",
+      "quote": "and regulations requires implementing costly new controls and processes, may restrict certain core activities, including impacting our ability to carry out research and clinical studies across multiple geographies, and creates the potential"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "section": "item_1_business",
+      "chunk_id": "0000059478-26-000013:item_1_business:0012",
+      "quote": "ed, our business will be adversely affected\" and Item 8, \"Financial Statements and Supplementary Data\u2014Note 16: Contingencies.\" \nGovernment Regulation of Our Operations and Products\nOur operations are regulated extensively by numerous govern"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "growth": {
+        "axis": "growth",
+        "groundedness": "ok",
+        "notes": "All revenue figures confirmed precisely by XBRL data. LLY: $28.541B (FY2022), $34.124B (FY2023), $45.043B (FY2024), $65.179B (FY2025). MRK: $59.283B (FY2022), $60.115B (FY2023), $64.168B (FY2024), $65.011B (FY2025). Cumulative growth rates (LLY ~128.4%, MRK ~9.7%), CAGRs (LLY ~31.7%, MRK ~3.1%), and YoY figures (LLY FY23\u2192FY24 ~32.0%, FY24\u2192FY25 ~44.7%) all check out arithmetically. The 'essentially caught up' claim is accurate ($65.179B vs $65.011B). The [Q3] citation labels are an unusual convention for full-year figures but the underlying numbers are correct.",
+        "missed_evidence": [
+          "MRK's FY2024\u2192FY2025 growth was only ~1.3% ($64.168B\u2192$65.011B), a sharp deceleration not highlighted by analysts that further widens the divergence narrative with LLY's ~45% jump in the same period.",
+          "LLY's FY2022\u2192FY2023 growth was already ~19.5% ($28.541B\u2192$34.124B), showing strong momentum even before the GLP-1 acceleration\u2014omitting this understates the consistency of LLY's growth trajectory."
+        ]
+      },
+      "risk_factors": {
+        "axis": "risk_factors",
+        "groundedness": "thin",
+        "notes": "Several specific quoted phrases and cited chunk IDs could not be confirmed verbatim. (1) The exact phrase 'significant and rapid loss of sales' attributed to MRK [MRK:S0] was not retrieved; retrieved MRK chunks reference 'lost sales' and patent protection but the precise wording is unverified. (2) The claim that MRK explicitly flags 'compulsory-license threats in emerging markets' [MRK:S3] is unsupported by retrieved evidence\u2014MRK's emerging-markets text discusses China's VBP pricing program, not compulsory licensing. (3) LLY's exact phrase 'public and private actors continue to take aggressive steps to control pharmaceutical expenditures' [LLY:S2] was not retrieved verbatim; the retrieved chunk references government price controls and public/private restrictions but the precise quote is unconfirmed. (4) MRK cybersecurity/IT-system attacks [MRK:S2] were not retrieved in any search, leaving that sub-claim unverified. Confirmed claims: LLY supply chain disruption language, LLY geopolitical/China/tariffs, LLY outsourcing/AI vendor risks, MRK generic/biosimilar competition, MRK pricing pressure.",
+        "missed_evidence": [
+          "MRK has entered a 'most-favored-nation' pricing agreement with the government covering existing and future product launches (chunk 0000310158-26-000063:item_1a_risk_factors:0007), a concrete and current pricing risk not mentioned by the analysts.",
+          "MRK's China VBP (Volume-Based Procurement) program causing approximately 60% price reductions (chunk 0000310158-26-000063:item_1a_risk_factors:0013) is a specific, quantified pricing risk omitted from the analysis.",
+          "LLY's product-concentration risk\u2014deriving >$3B revenue each from Mounjaro, Zepbound, Verzenio, Trulicity, Taltz, and Jardiance (chunk 0000059478-26-000013:item_1a_risk_factors:0007)\u2014is a material risk factor not discussed.",
+          "MRK's forward-looking risk factor list explicitly states 'Competition from generic and/or biosimilar products as the Company's products lose patent protection' (chunk 0000310158-26-000063:item_1a_risk_factors:0024), which is more precise textual support for the patent-cliff claim than the chunks actually cited by the analysts."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The growth axis establishes LLY's revenue concentration in its GLP-1 franchise (tirzepatide), which directly connects to the risk_factors axis: LLY's own filings flag product-concentration risk (>$3B from each of several products), meaning the same franchise driving explosive growth is also a key risk vector. This linkage is not drawn by the analysts.",
+      "MRK's near-stagnant FY2024\u2192FY2025 revenue growth (~1.3%) combined with its patent-cliff risk (Keytruda losing EU exclusivity in July 2026, per retrieved chunk :0004) suggests the growth deceleration may worsen materially\u2014a cross-axis insight the analysts did not surface.",
+      "The risk_factors axis notes LLY's supply-chain disruption risk; this is particularly material given the growth axis shows LLY's revenues nearly doubling in two years, implying massive manufacturing scale-up demands that amplify the very supply-chain risks flagged in its filings."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "risk_factors",
+        "claim": "MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]",
+        "flag": "weakly_supported",
+        "reason": "The exact phrase 'significant and rapid loss of sales' was not retrieved verbatim from the cited chunk. Retrieved MRK risk-factor text references 'lost sales' and patent protection generally, but the precise quoted language could not be confirmed. The underlying concept is supported, but the direct quote attribution is unverified.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "MRK noting compulsory-license threats in emerging markets [MRK:S3]",
+        "flag": "unsupported",
+        "reason": "No retrieved MRK filing text mentions compulsory licensing. The chunk cited as [MRK:S3] (0000310158-26-000063:item_1_business:0019) was not retrieved in risk-factor searches. MRK's emerging-markets pricing discussion found in searches relates to China's VBP program and government-mandated price reductions, not compulsory licensing. This is a materially different risk mechanism.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]",
+        "flag": "weakly_supported",
+        "reason": "The exact quoted phrase was not retrieved verbatim. Retrieved LLY chunk :0004 confirms LLY discusses government price controls and public/private restrictions on pricing, reimbursement, and access, supporting the general concept, but the precise wording attributed in the analyst report could not be verified.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "MRK highlighting IT-system attacks and data theft [MRK:S2]",
+        "flag": "weakly_supported",
+        "reason": "The cited chunk (MRK:S2 = 0000310158-26-000063:item_1a_risk_factors:0022) was not retrieved in any of the searches conducted. While cybersecurity risk is a common pharmaceutical industry disclosure, this specific claim could not be verified against the cited source.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "LLY",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 28541400000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000059478-25-000067\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 34124000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 45043000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MRK",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 59283000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 60115000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 64168000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "patent cliff loss of market exclusivity generic biosimilar competition",
+          "tickers": [
+            "MRK"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000310158-26-000063:item_1a_risk_factors:0003\", \"score\": 1.0, \"ticker\": \"MRK\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"of operations, financial position, and prospects may be adversely affected by the lost sales unless and until the Company has launched commercially successful products that replace the lost sales. In addition, if products that were measured at fair valu"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "supply chain disruption product shortages lost revenue increased costs",
+          "tickers": [
+            "LLY"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000059478-26-000013:item_1a_risk_factors:0015\", \"score\": 1.0, \"ticker\": \"LLY\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"related to supply chain activities have resulted and may in the future result in delays and disruptions in the manufacturing, distribution, and sale of our products and/or product shortages, leading to lost revenue, increased costs, reduced market oppor"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "significant and rapid loss of sales market exclusivity patent expiry",
+          "tickers": [
+            "MRK"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000310158-26-000063:item_1a_risk_factors:0003\", \"score\": 1.0, \"ticker\": \"MRK\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"of operations, financial position, and prospects may be adversely affected by the lost sales unless and until the Company has launched commercially successful products that replace the lost sales. In addition, if products that were measured at fair valu"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "geopolitical tariffs trade tensions China exposure macroeconomic risk",
+          "tickers": [
+            "LLY",
+            "MRK"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000059478-26-000013:item_1a_risk_factors:0017\", \"score\": 0.8333334, \"ticker\": \"LLY\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"with contract manufacturing organizations, entities supporting consumer directed access channels, artificial intelligence vendors, and other third parties in recent periods.\\nOutsourcing involves many risks, including the risk that third parties m"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "significant rapid loss of sales products lose market exclusivity generic competition",
+          "tickers": [
+            "MRK"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000310158-26-000063:item_1a_risk_factors:0003\", \"score\": 1.0, \"ticker\": \"MRK\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"of operations, financial position, and prospects may be adversely affected by the lost sales unless and until the Company has launched commercially successful products that replace the lost sales. In addition, if products that were measured at fair valu"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "pricing pressure government price controls pharmaceutical expenditures compulsory license emerging markets",
+          "tickers": [
+            "MRK",
+            "LLY"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000059478-26-000013:item_1a_risk_factors:0006\", \"score\": 0.64285713, \"ticker\": \"LLY\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"tion of, and responses to, international tension and conflicts.\\nIn addition, government price reporting and payment regulations are complex, and require ongoing assessment of the methods by which we calculate and report pricing. Calculation meth"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 703
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 24,
+      "mean_score": 3.5833333333333335,
+      "faithful_fraction": 0.5,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Eli Lilly (LLY) has delivered dramatically faster revenue growth than Merck (MRK) over the 2022\u20132025 period. LLY grew revenues from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], representing a roughly 128% cumulative increase and a ~32% CAGR, fueled primarily by its GLP-1 franchise (tirzepatide). MRK, by contrast, grew revenues from $59.3B in FY2022 [MRK:Q0] to $65.0B in FY2025 [MRK:Q3], a more modest ~10% cumulative gain and a ~3% CAGR. Notably, LLY's FY2025 revenues of $65.2B [LLY:Q3] have now essentially caught up to MRK's $65.0B [MRK:Q3], having started the period at less than half of MRK's base. MRK did show meaningful acceleration from FY2023 ($60.1B [MRK:Q1]) to FY2024 ($64.2B [MRK:Q2]), but the pace remains far below LLY's explosive trajectory, which saw revenues jump ~32% from FY2023 ($34.1B [LLY:Q1]) to FY2024 ($45.0B [LLY:Q2]) and another ~45% from FY2024 to FY2025.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage is MRK's risk factor summary and directly supports most MRK-specific claims: patent-cliff risk ('significant and rapid loss of sales'), generic/biosimilar competition, pricing pressure, global operations/emerging markets, third-party/outsourcing risk, and manufacturing difficulties. The passage also mentions China exposure explicitly (Gardasil sales decline), which the claim attributes mainly to LLY. Regulatory risk and cybersecurity/IT risks are not explicitly mentioned in this excerpt, though they are referenced in the claim as MRK:S7 and MRK:S2 respectively. The LLY-specific claims (supply chain, AI vendors, geopolitical risks) are not contradicted but simply not present in this MRK passage. Overall, the passage strongly supports the MRK portions of the claim with minor gaps (no explicit cybersecurity or FDA discretion language in this excerpt).",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage is MRK's risk factor summary and directly supports most MRK-specific claims: patent-cliff risk ('significant and rapid loss of sales'), generic/biosimilar competition, pricing pressure, global operations/emerging markets, third-party/outsourcing risk, and manufacturing difficulties. The passage also mentions China exposure explicitly (Gardasil sales decline), which the claim attributes mainly to LLY. Regulatory risk and cybersecurity/IT risks are not explicitly mentioned in this excerpt, though they are referenced in the claim as MRK:S7 and MRK:S2 respectively. The LLY-specific claims (supply chain, AI vendors, geopolitical risks) are not contradicted but simply not present in this MRK passage. Overall, the passage strongly supports the MRK portions of the claim with minor gaps (no explicit cybersecurity or FDA discretion language in this excerpt).",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage is MRK's risk factor summary and directly supports most MRK-specific claims: patent-cliff risk ('significant and rapid loss of sales'), generic/biosimilar competition, pricing pressure, global operations/emerging markets, third-party/outsourcing risk, and manufacturing difficulties. The passage also mentions China exposure explicitly (Gardasil sales decline), which the claim attributes mainly to LLY. Regulatory risk and cybersecurity/IT risks are not explicitly mentioned in this excerpt, though they are referenced in the claim as MRK:S7 and MRK:S2 respectively. The LLY-specific claims (supply chain, AI vendors, geopolitical risks) are not contradicted but simply not present in this MRK passage. Overall, the passage strongly supports the MRK portions of the claim with minor gaps (no explicit cybersecurity or FDA discretion language in this excerpt).",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from the Business section of Merck's annual report and describes the company's operations, segments, and product sales. It contains no information about the specific risk factors cited in the claim\u2014patent cliffs, generic/biosimilar competition, pricing pressure, regulatory risk, cybersecurity, supply chain, or geopolitical risks. The passage cannot support or contradict the detailed risk-factor comparisons between MRK and LLY described in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from the Business section of Merck's annual report and describes the company's operations, segments, and product sales. It contains no information about the specific risk factors cited in the claim\u2014patent cliffs, generic/biosimilar competition, pricing pressure, regulatory risk, cybersecurity, supply chain, or geopolitical risks. The passage cannot support or contradict the detailed risk-factor comparisons between MRK and LLY described in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from the Business section of Merck's annual report and describes the company's operations, segments, and product sales. It contains no information about the specific risk factors cited in the claim\u2014patent cliffs, generic/biosimilar competition, pricing pressure, regulatory risk, cybersecurity, supply chain, or geopolitical risks. The passage cannot support or contradict the detailed risk-factor comparisons between MRK and LLY described in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Merck's MD&A section describing business operations and financial highlights. It contains no information about patent-cliff risk, generic/biosimilar competition, supply-chain disruption, pricing pressure, regulatory risk, cybersecurity, or geopolitical risks that the claim references. The passage does not support or contradict the specific risk factor comparisons made in the claim\u2014it simply describes Merck's business segments and 2025 financial results.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage is MRK's risk factor summary and directly supports most MRK-specific claims: patent-cliff risk ('significant and rapid loss of sales'), generic/biosimilar competition, pricing pressure, global operations/emerging markets, third-party/outsourcing risk, and manufacturing difficulties. The passage also mentions China exposure explicitly (Gardasil sales decline), which the claim attributes mainly to LLY. Regulatory risk and cybersecurity/IT risks are not explicitly mentioned in this excerpt, though they are referenced in the claim as MRK:S7 and MRK:S2 respectively. The LLY-specific claims (supply chain, AI vendors, geopolitical risks) are not contradicted but simply not present in this MRK passage. Overall, the passage strongly supports the MRK portions of the claim with minor gaps (no explicit cybersecurity or FDA discretion language in this excerpt).",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's risk factors section and supports several LLY-specific claims in the overall assertion\u2014particularly regarding R&D costs/uncertainty (LLY:S7), regulatory hurdles, IP/competitive risks, and pricing controls. However, the passage does not cover the full breadth of the claim: it does not address supply-chain disruption (LLY:S3), geopolitical/tariff risks (LLY:S1/S4), cybersecurity/outsourcing risks (LLY:S5), or any MRK-specific claims (patent-cliff language, generic/biosimilar competition framing, compulsory licenses, IT attacks). The passage only partially substantiates the composite claim, covering some LLY elements but missing most of the comparative MRK discussion and several LLY sub-points cited in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's risk factors section and supports several LLY-specific claims in the overall assertion\u2014particularly regarding R&D costs/uncertainty (LLY:S7), regulatory hurdles, IP/competitive risks, and pricing controls. However, the passage does not cover the full breadth of the claim: it does not address supply-chain disruption (LLY:S3), geopolitical/tariff risks (LLY:S1/S4), cybersecurity/outsourcing risks (LLY:S5), or any MRK-specific claims (patent-cliff language, generic/biosimilar competition framing, compulsory licenses, IT attacks). The passage only partially substantiates the composite claim, covering some LLY elements but missing most of the comparative MRK discussion and several LLY sub-points cited in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's risk factors section and supports several LLY-specific claims in the overall assertion\u2014particularly regarding R&D costs/uncertainty (LLY:S7), regulatory hurdles, IP/competitive risks, and pricing controls. However, the passage does not cover the full breadth of the claim: it does not address supply-chain disruption (LLY:S3), geopolitical/tariff risks (LLY:S1/S4), cybersecurity/outsourcing risks (LLY:S5), or any MRK-specific claims (patent-cliff language, generic/biosimilar competition framing, compulsory licenses, IT attacks). The passage only partially substantiates the composite claim, covering some LLY elements but missing most of the comparative MRK discussion and several LLY sub-points cited in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's risk factors section and supports several LLY-specific claims in the overall assertion\u2014particularly regarding R&D costs/uncertainty (LLY:S7), regulatory hurdles, IP/competitive risks, and pricing controls. However, the passage does not cover the full breadth of the claim: it does not address supply-chain disruption (LLY:S3), geopolitical/tariff risks (LLY:S1/S4), cybersecurity/outsourcing risks (LLY:S5), or any MRK-specific claims (patent-cliff language, generic/biosimilar competition framing, compulsory licenses, IT attacks). The passage only partially substantiates the composite claim, covering some LLY elements but missing most of the comparative MRK discussion and several LLY sub-points cited in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Eli Lilly's Business section (Item 1) describing the company's history, products, and therapeutic areas. It contains no information about the risk factors discussed in the claim\u2014patent cliffs, generic/biosimilar competition, supply-chain disruption, pricing pressure, regulatory risk, cybersecurity, geopolitical risks, or any comparison with Merck. The passage does not support or contradict the specific risk-factor claims; it simply does not address them at all.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's risk factors section and supports several LLY-specific claims in the overall assertion\u2014particularly regarding R&D costs/uncertainty (LLY:S7), regulatory hurdles, IP/competitive risks, and pricing controls. However, the passage does not cover the full breadth of the claim: it does not address supply-chain disruption (LLY:S3), geopolitical/tariff risks (LLY:S1/S4), cybersecurity/outsourcing risks (LLY:S5), or any MRK-specific claims (patent-cliff language, generic/biosimilar competition framing, compulsory licenses, IT attacks). The passage only partially substantiates the composite claim, covering some LLY elements but missing most of the comparative MRK discussion and several LLY sub-points cited in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from LLY's risk factors section and supports several LLY-specific claims in the overall assertion\u2014particularly regarding R&D costs/uncertainty (LLY:S7), regulatory hurdles, IP/competitive risks, and pricing controls. However, the passage does not cover the full breadth of the claim: it does not address supply-chain disruption (LLY:S3), geopolitical/tariff risks (LLY:S1/S4), cybersecurity/outsourcing risks (LLY:S5), or any MRK-specific claims (patent-cliff language, generic/biosimilar competition framing, compulsory licenses, IT attacks). The passage only partially substantiates the composite claim, covering some LLY elements but missing most of the comparative MRK discussion and several LLY sub-points cited in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Merck (MRK) and Eli Lilly (LLY) face a broadly similar constellation of pharmaceutical-industry risk factors, though the evidence highlights some differences in emphasis. MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]\u2014and highlights generic/biosimilar competition as a direct threat to pricing and market position [MRK:S1]. LLY similarly acknowledges intellectual-property and competitive risks but places comparatively greater emphasis on supply-chain disruption, noting that challenges related to supply chain activities have resulted and may in the future result in delays, product shortages, lost revenue, and increased costs [LLY:S3]. Both companies cite pricing pressure and government price controls as material risks, with MRK noting compulsory-license threats in emerging markets [MRK:S3] and LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]. Regulatory risk is prominent for both: MRK notes that the FDA and foreign regulators have substantial discretion to delay or withhold marketing approval [MRK:S7], while LLY stresses the extremely costly and lengthy process of laboratory, clinical, and regulatory review [LLY:S7]. Cybersecurity and third-party/outsourcing risk also appear for both, with MRK highlighting IT-system attacks and data theft [MRK:S2] and LLY detailing risks from contract manufacturers, AI vendors, and other outsourcing partners [LLY:S5]. Geopolitical and macroeconomic risks\u2014including tariffs, trade tensions, and China exposure\u2014are explicitly enumerated by LLY [LLY:S1][LLY:S4] and implicitly present in MRK's emerging-markets discussion [MRK:S3].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Eli Lilly's Business section (Item 1) describing the company's history, products, and therapeutic areas. It contains no information about the risk factors discussed in the claim\u2014patent cliffs, generic/biosimilar competition, supply-chain disruption, pricing pressure, regulatory risk, cybersecurity, geopolitical risks, or any comparison with Merck. The passage does not support or contradict the specific risk-factor claims; it simply does not address them at all.",
+          "judge": "sonnet"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 4,
+      "honesty_on_insufficient_data": 5,
+      "notes": "Exceptionally well-structured report with clear parallel treatment of both companies across growth and risk dimensions. The introductory synthesis paragraphs effectively frame the comparison before drilling into company-specific detail. Citation tags are used consistently and appropriately. The growth section is particularly strong, with precise figures, calculated CAGRs, and a compelling narrative about LLY catching MRK in absolute revenue terms. The risk section covers the major pharmaceutical risk categories (patent cliff, generics/biosimilars, pricing pressure, regulatory, cyber, geopolitical) for both companies with good symmetry. The explicit disclaimer note at the end of the risk section\u2014acknowledging that some quoted language may be paraphrased rather than verbatim\u2014is a model of intellectual honesty and earns full marks on that dimension. Minor deductions on evidence coverage: the Cross-Axis Takeaway section appears to be missing or truncated, which leaves the report feeling incomplete; a synthesizing conclusion tying growth trajectory to risk profile would have elevated the analysis further. Additionally, the risk section could have benefited from quantitative data (e.g., revenue at risk from patent expirations, specific product concentrations) to match the rigor of the growth section."
+    },
+    "incorporation": {
+      "n": 4,
+      "incorporated": 4,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "risk_factors",
+          "claim": "MRK explicitly flags patent-cliff risk as a leading concern\u2014noting that as products lose market exclusivity the company generally experiences a significant and rapid loss of sales [MRK:S0]",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "MRK noting compulsory-license threats in emerging markets [MRK:S3]",
+          "flag": "unsupported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "LLY warning that public and private actors continue to take aggressive steps to control pharmaceutical expenditures [LLY:S2]",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "MRK highlighting IT-system attacks and data theft [MRK:S2]",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

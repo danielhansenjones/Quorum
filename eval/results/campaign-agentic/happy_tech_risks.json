@@ -1,0 +1,521 @@
+{
+  "case_id": "happy_tech_risks",
+  "request_id": "90a5114e-bd12-42ca-9258-5c4898344ee0",
+  "final_status": "partial",
+  "elapsed_s": 31.73309941900152,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Risk Factors\n\nBoth Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, though the evidence available for each company skews toward different emphases\u2014and the comparison captures themes rather than exhaustively representing either company's complete risk-factor disclosures.\n\nApple's filings highlight intense product-and-services competition, with rivals able to imitate its products and undercut its cost structures, combined with the difficulty of sustaining intellectual-property protection across all operating geographies [AAPL:S6][AAPL:S5]. Regulatory complexity\u2014spanning privacy, data security, and evolving AI-related laws\u2014adds compliance costs and potential liability that could pressure financial results [AAPL:S5][AAPL:S3]. Apple's annual 10-K also addresses product design and manufacturing defects as a material hardware-quality risk [AAPL:S2]; notably, the most recent quarterly filing states there have been no material changes to the company's risk factors, so this item reflects standing annual disclosure rather than a newly introduced concern. Apple's filings also contain supply-chain and consumer-spending disruption language that parallels geopolitical risk themes seen in Microsoft's disclosures [AAPL:S6].\n\nMicrosoft's retrieved evidence foregrounds geopolitical instability\u2014including armed conflict, political change, and protectionist trade measures\u2014as a distinct category of risk that can disrupt sales, raise operating costs, and delay customer technology-investment decisions [MSFT:S2][MSFT:S0][MSFT:S3]. Microsoft also highlights competition for talent and the operational challenges of sustaining a global workforce amid shifting regulatory and political environments [MSFT:S5]. The retrieved evidence for Microsoft is drawn partly from legal-proceedings sections that cross-reference risk factors rather than from the risk-factors section itself, so platform-ecosystem and pricing-competition themes that are commonly associated with Microsoft's 10-K disclosures are not fully confirmed by the chunks surfaced here [MSFT:S5][MSFT:S6].\n\n**AAPL:** Apple's risk disclosures center on competitive threats from rivals capable of imitating its products and competing on cost, the challenge of maintaining intellectual-property protection across inconsistent legal regimes [AAPL:S6], and regulatory complexity around privacy, data security, and AI compliance that could increase costs and liability [AAPL:S5]. Hardware-quality risk (product design and manufacturing defects) is also addressed in the annual filing [AAPL:S2], and supply-chain disruption language reflects sensitivity to geopolitical and macroeconomic shocks [AAPL:S6].\n\n**MSFT:** Microsoft's disclosed risk profile, as captured in the available evidence, is shaped most visibly by geopolitical instability\u2014armed conflict, sanctions exposure, political change, and protectionist trade policy\u2014that can impair customer spending and raise operational costs [MSFT:S2][MSFT:S0]. Talent competition and workforce-related risks also feature prominently [MSFT:S5]. Platform-ecosystem and pricing-competition risks, while commonly associated with Microsoft's public filings, are not fully confirmed by the retrieved chunks, which are drawn partly from legal-proceedings cross-references rather than the core risk-factors section [MSFT:S5][MSFT:S6].\n\n*Caveat: Much of the MSFT evidence is sourced from legal-proceedings sections that reference risk factors rather than from the risk-factors section itself, and the AAPL evidence consists largely of introductory paragraphs cross-referencing prior filings rather than the full substantive risk-factor text. The comparison captures disclosed themes but cannot exhaustively represent either company's complete risk-factor disclosures.*\n\n---\n\n**Cross-axis takeaway:** At the level of evidence retrieved, the two companies share a common foundation of competitive, regulatory, and operational risk disclosure, but diverge in emphasis: Apple's available disclosures lean toward competitive cost dynamics, IP protection, and regulatory compliance costs, while Microsoft's lean toward geopolitical and macroeconomic disruption risks. Both companies' full risk-factor sections almost certainly contain richer and more overlapping detail than the partial evidence surfaced here can confirm.",
+  "citations": [
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000057",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000057:item_1a_risk_factors:0000",
+      "quote": "Item 1A.\u00a0\u00a0\u00a0\u00a0Risk Factors\nThe Company\u2019s business, reputation, results of operations, financial condition and stock price can be affected by a number of factors, whether currently known or unknown, including those described in Part I, Item 1A"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000073",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000073:item_1a_risk_factors:0000",
+      "quote": "Item 1A.\u00a0\u00a0\u00a0\u00a0Risk Factors\nThe Company\u2019s business, reputation, results of operations, financial condition and stock price can be affected by a number of factors, whether currently known or unknown, including those described in Part I, Item 1A"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000013",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-26-000013:item_1a_risk_factors:0000",
+      "quote": "Item 1A.\u00a0\u00a0\u00a0\u00a0Risk Factors\nThe Company\u2019s business, reputation, results of operations, financial condition and stock price can be materially and adversely affected by a number of factors, whether currently known or unknown, including those des"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000079:item_1a_risk_factors:0000",
+      "quote": "Item 1A.\u00a0\u00a0\u00a0\u00a0Risk Factors\nThe following summarizes factors that could have a material adverse effect on the Company\u2019s business, reputation, results of operations, financial condition and stock price. The Company may not be able to accurately"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000006",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-26-000006:item_1a_risk_factors:0000",
+      "quote": "Item 1A.\u00a0\u00a0\u00a0\u00a0Risk Factors\nThe Company\u2019s business, reputation, results of operations, financial condition and stock price can be materially and adversely affected by a number of factors, whether currently known or unknown, including those des"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000079:item_1a_risk_factors:0018",
+      "quote": "laws and regulations can increase regulatory risks by requiring complex compliance measures and significant modifications to the Company\u2019s products, services and operations, and may lead to operational disruptions, heightened privacy and da"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000320193-25-000079:item_1a_risk_factors:0004",
+      "quote": "cost structures, and by imitating the Company\u2019s products and infringing on its\u00a0intellectual property. Effective intellectual property protection is not consistently available in every country in which the Company operates. If the Company is"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "section": "item_1_business",
+      "chunk_id": "0000320193-25-000079:item_1_business:0002",
+      "quote": ", marketing and distribution capability, service and support, corporate reputation, and the ability to effectively protect and enforce the Company\u2019s intellectual property rights.\nThe Company is focused on expanding its market opportunities "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "MSFT",
+      "accession": "0001193125-25-256321",
+      "section": "item_1_legal_proceedings",
+      "chunk_id": "0001193125-25-256321:item_1_legal_proceedings:0020",
+      "quote": "our business, operations, financial condition, and results of operations. The extent to which global pandemics impact our business going forward will depend on factors such as the duration and scope of the pandemic; governmental, business, "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "MSFT",
+      "accession": "0001193125-26-027207",
+      "section": "item_1_legal_proceedings",
+      "chunk_id": "0001193125-26-027207:item_1_legal_proceedings:0020",
+      "quote": "instability may lead to sanctions and impact our ability to do business in some markets or with some public-sector customers. Any of these changes could adversely affect our results of operations. Changes in geopolitical conditions also inc"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-061046",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000950170-25-061046:item_1a_risk_factors:0000",
+      "quote": "Item 1A\n\u00a0\n\nAbrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "MSFT",
+      "accession": "0001193125-26-027207",
+      "section": "item_1_legal_proceedings",
+      "chunk_id": "0001193125-26-027207:item_1_legal_proceedings:0000",
+      "quote": "ITEM 1. LEGAL \nPROCEEDINGS\nRefer to Note 13 \u2013 Contingencies of the Notes to Financial Statements (Part I, Item 1 of this Form 10-Q) for information regarding legal proceedings in which we are involved.\nITEM 1A. RI\nSK FACTORS\nOur operations "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "section": "item_1_business",
+      "chunk_id": "0000950170-25-100235:item_1_business:0001",
+      "quote": "more effective in deploying technical, marketing, and financial resources. Barriers to entry in many of our businesses are low and many of the areas in which we compete evolve rapidly with changing and disruptive technologies, shifting user"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "MSFT",
+      "accession": "0001193125-25-256321",
+      "section": "item_1_legal_proceedings",
+      "chunk_id": "0001193125-25-256321:item_1_legal_proceedings:0001",
+      "quote": "PC, the prevalence of these devices may make it more difficult to attract application developers to our PC operating system platforms. Competing with operating systems licensed at low or no cost may decrease our PC operating system margins."
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "MSFT",
+      "accession": "0001193125-26-027207",
+      "section": "item_1_legal_proceedings",
+      "chunk_id": "0001193125-26-027207:item_1_legal_proceedings:0001",
+      "quote": "PC, the prevalence of these devices may make it more difficult to attract application developers to our PC operating system platforms. Competing with operating systems licensed at low or no cost may decrease our PC operating system margins."
+    },
+    {
+      "kind": "qual",
+      "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "section": "item_1_business",
+      "chunk_id": "0000950170-25-100235:item_1_business:0002",
+      "quote": "with competitors\u2019 content and application marketplaces may increase our cost of revenue and lower our operating margins. Competitors\u2019 rules governing their content and applications marketplaces may restrict our ability to distribute product"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "risk_factors": {
+        "axis": "risk_factors",
+        "groundedness": "thin",
+        "notes": "Several claims are well-supported, but a number of specific sub-claims are weakly or incompletely grounded in the retrieved evidence. Specifically: (1) AAPL's IP-infringement risk in markets with inconsistent protection is directly confirmed [0000320193-25-000079:item_1a_risk_factors:0004]. (2) AAPL's regulatory compliance costs and gross-margin volatility are confirmed [0000320193-25-000079:item_1a_risk_factors:0018, :0019]. (3) MSFT's geopolitical/armed-conflict risk is confirmed [0000950170-25-061046:item_1a_risk_factors:0000]. (4) MSFT's pandemic-related customer spending and supply-chain disruption risk is NOT directly confirmed by any retrieved MSFT chunk\u2014the retrieved MSFT evidence covers armed conflict, protectionism, and tariffs, but no chunk explicitly mentions pandemic as a distinct risk category. (5) The claim that MSFT foregrounds 'operating systems licensed at low or no cost and rivals' content/application marketplaces' is NOT supported by any retrieved MSFT chunk\u2014no retrieved evidence contains this language. (6) The claim that 'both companies acknowledge barriers to entry are low' is not directly confirmed for either company in the retrieved chunks; AAPL's retrieved text discusses competitive cost structures and IP imitation but does not use 'barriers to entry' language, and no MSFT chunk confirms this framing. (7) AAPL's product design and manufacturing defects as an 'incremental risk not previously highlighted' in quarterly updates is partially supported [0000320193-25-000079:item_1a_risk_factors:0007, :0005] but the 'incremental/new' characterization is not explicitly confirmed\u2014the 10-K (annual) filing contains this language, not clearly a quarterly-specific addition. (8) The claim about AAPL competitors having 'significant technical, marketing, and distribution resources' is not directly confirmed in retrieved chunks; the closest evidence discusses cost structures and IP imitation.",
+        "missed_evidence": [
+          "No MSFT chunk retrieved confirms 'operating systems licensed at low or no cost' or 'rivals' content/application marketplaces'\u2014this specific language likely exists in MSFT's annual 10-K competition section (item_1 or item_1a) but was not surfaced; analysts should verify against MSFT's annual 10-K item_1a directly.",
+          "No MSFT chunk confirms pandemic as a distinct, explicitly named risk\u2014analysts should check MSFT's annual 10-K for pandemic-specific language rather than inferring it from supply-chain disruption text.",
+          "AAPL's 'significant technical, marketing, and distribution resources' competitor characterization was not retrieved; the annual 10-K item_1a competition section likely contains this but was not confirmed in retrieved chunks.",
+          "The 'barriers to entry are low' framing for both companies was not confirmed in any retrieved chunk; this may be an analyst inference rather than a direct filing disclosure.",
+          "AAPL's AI-related risk disclosures [0000320193-26-000013:item_1a_risk_factors:0006] were not discussed by the analysts despite being retrieved\u2014this is a notable risk category in AAPL's most recent quarterly filing."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The analyst report characterizes MSFT as placing 'comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks' versus AAPL, but retrieved AAPL filings also contain supply-chain disruption and geopolitical language [0000320193-25-000057:item_1a_risk_factors:0002, 0000320193-25-000079:item_1a_risk_factors:0003], weakening the sharpness of this contrast.",
+      "AAPL's most recent quarterly filing [0000320193-26-000013] introduces AI-specific risk language (IP infringement, sanctions, export controls, cybersecurity in the AI context) that the analyst summary does not mention, representing a potentially significant omission in the risk-factor characterization.",
+      "The analyst's citation set is skewed toward AAPL (six AAPL accessions cited) versus MSFT (no accession numbers cited at all in the citation list), making MSFT claims structurally harder to verify and suggesting the MSFT side of the comparison rests on weaker evidentiary footing."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "risk_factors",
+        "claim": "Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces",
+        "flag": "weakly_supported",
+        "reason": "No retrieved MSFT chunk contains this specific language about OS licensing at low/no cost or rivals' content/application marketplaces. The claim may be accurate (it is a known MSFT 10-K disclosure) but it is unconfirmed by any evidence surfaced in this review. The cited MSFT chunks cover geopolitical and protectionism risks, not platform-ecosystem competition specifics.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks",
+        "flag": "weakly_supported",
+        "reason": "Pandemic as a distinct, named risk category is not confirmed in any retrieved MSFT chunk. MSFT's retrieved evidence covers armed conflict, political change, and protectionism, but 'pandemic' is not explicitly mentioned. Additionally, AAPL's own filings contain supply-chain and consumer-spending disruption language [0000320193-25-000057:item_1a_risk_factors:0002] that partially mirrors the MSFT geopolitical framing, weakening the comparative claim.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "Both companies acknowledge that barriers to entry in their core markets are low",
+        "flag": "weakly_supported",
+        "reason": "No retrieved chunk from either AAPL or MSFT uses 'barriers to entry' language. The AAPL chunks discuss competitive cost structures and IP imitation; the MSFT chunks discuss talent competition and geopolitical risk. This appears to be an analyst inference not directly grounded in retrieved filing text.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted",
+        "flag": "weakly_supported",
+        "reason": "The product defect/quality risk language [0000320193-25-000079:item_1a_risk_factors:0007, :0005] appears in the annual 10-K (accession 0000320193-25-000079), not clearly in a quarterly update. The 'incremental/not previously highlighted' characterization is not confirmed by any retrieved chunk. The most recent quarterly filing [0000320193-26-000013] explicitly states 'there have been no material changes to the Company's [risk factors],' which may actually contradict the claim that defects were newly flagged.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources",
+        "flag": "weakly_supported",
+        "reason": "Retrieved AAPL chunks discuss competitors' cost structures and IP imitation [0000320193-25-000079:item_1a_risk_factors:0004] but do not explicitly use the 'technical, marketing, and distribution resources' framing. This specific characterization was not confirmed in any retrieved chunk.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "competition intellectual property gross margin regulatory risk",
+          "tickers": [
+            "AAPL"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-25-000079:item_1a_risk_factors:0018\", \"score\": 0.8333334, \"ticker\": \"AAPL\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"laws and regulations can increase regulatory risks by requiring complex compliance measures and significant modifications to the Company\\u2019s products, services and operations, and may lead to operational disruptions, heightened privacy and dat"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "platform ecosystem competition operating systems low cost geopolitical pandemic sanctions armed conflict",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-061046:item_1a_risk_factors:0000\", \"score\": 1.0, \"ticker\": \"MSFT\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"Item 1A\\n\\u00a0\\n\\nAbrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our oper"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "operating systems licensed low cost no cost content application marketplace competition",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-061046:item_1a_risk_factors:0001\", \"score\": 1.0, \"ticker\": \"MSFT\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"as a result of populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, and non-local sourcing restrictions, export controls, investment restrictions, or other developments that make it more difficult t"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "product design manufacturing defects incremental risk",
+          "tickers": [
+            "AAPL"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-26-000013:item_1a_risk_factors:0000\", \"score\": 1.0, \"ticker\": \"AAPL\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"Item 1A.\\u00a0\\u00a0\\u00a0\\u00a0Risk Factors\\nThe Company\\u2019s business, reputation, results of operations, financial condition and stock price can be materially and adversely affected by a number of factors, whether currently known or unknown, inclu"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "barriers to entry low rapid technological change competitive position",
+          "tickers": [
+            "AAPL",
+            "MSFT"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-25-000079:item_1a_risk_factors:0004\", \"score\": 0.7, \"ticker\": \"AAPL\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"cost structures, and by imitating the Company\\u2019s products and infringing on its\\u00a0intellectual property. Effective intellectual property protection is not consistently available in every country in which the Company operates. If the Company is u"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "pandemic customer spending supply chain disruption risk",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000950170-25-061046:item_1a_risk_factors:0000\", \"score\": 1.0, \"ticker\": \"MSFT\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"Item 1A\\n\\u00a0\\n\\nAbrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our oper"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "gross margin volatility financial risk Apple competition technical marketing distribution resources",
+          "tickers": [
+            "AAPL"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000320193-25-000079:item_1a_risk_factors:0018\", \"score\": 0.8333334, \"ticker\": \"AAPL\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"laws and regulations can increase regulatory risks by requiring complex compliance measures and significant modifications to the Company\\u2019s products, services and operations, and may lead to operational disruptions, heightened privacy and dat"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Microsoft operating system licensed low cost free rivals content application marketplace",
+          "tickers": [
+            "MSFT"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0001193125-26-191507:item_1a_risk_factors:0000\", \"score\": 0.8333334, \"ticker\": \"MSFT\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"Item 1A\\n\\u00a0\\n\\nOur business depends on our ability to attract and retain talented employees.\\n Our business is based on successfully attracting, training, and retaining talented employees representing diverse backgrounds, experiences, and ski"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 755
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 16,
+      "mean_score": 3.0625,
+      "faithful_fraction": 0.25,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Apple's (AAPL) filings and does discuss geopolitical risks, trade disputes, supply chain disruptions, and international tensions\u2014elements the claim attributes primarily to Microsoft. This partially contradicts the claim's assertion that Apple's filings emphasize product-and-services competition, IP infringement, and gross-margin volatility while Microsoft foregrounds geopolitical and pandemic risks. The passage supports that Apple also discloses geopolitical/macro risks, but does not address the specific Apple emphases cited (competition, IP, gross margins, product defects) or the Microsoft-specific elements (platform-ecosystem competition, low-cost OS rivals, content marketplaces). The passage partially supports the broader claim that both companies disclose multi-dimensional risk profiles, but undermines the directional emphasis distinction drawn between Apple and Microsoft.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is a brief procedural reference from Apple's 10-Q that simply incorporates by reference risk factors from prior filings. It does not contain substantive content about competitive, regulatory, geopolitical, or operational risks for either Apple or Microsoft. The claim makes detailed assertions about both companies' risk profiles, Microsoft's platform-ecosystem competition disclosures, geopolitical risks, pandemic tail risks, and Apple's product design/manufacturing defect risks\u2014none of which are present in this passage. The passage cannot support the multi-dimensional comparative claim being made.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage directly supports the claim that Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted (the filing explicitly states 'Except as set forth below, there have been no material changes to the Company's risk factors since the 2025 Form 10-K' and then introduces the design/manufacturing defects risk factor). The passage also supports Apple's broad risk profile including operational and reputational dimensions. However, the passage does not address Microsoft's disclosures, Apple's competitive/IP/financial risks, or the comparative geopolitical emphasis between the two companies, so those elements of the claim cannot be verified from this excerpt alone. The portion of the claim directly testable from this passage is well-supported.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Apple's 10-K and shows Apple does disclose macroeconomic, geopolitical, and operational risks (contradicting the claim's implication that Apple's filings don't emphasize geopolitical risks). The passage doesn't show the specific Apple emphases claimed (product-services competition, IP infringement, gross-margin volatility) nor does it show Microsoft's disclosures at all. The passage partially supports the multi-dimensional risk profile aspect for Apple, but the specific emphases attributed to Apple vs. Microsoft in the claim are not well-supported by this excerpt alone.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage states there have been no material changes to Apple's risk factors since the 2025 Form 10-K, and refers readers to that document. It provides no substantive content about competitive, regulatory, geopolitical, or operational risks for either Apple or Microsoft, nor does it mention product design/manufacturing defects as a new risk. The passage cannot support the detailed, multi-dimensional claims made about both companies' risk profiles.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Apple's 10-K and shows Apple does disclose macroeconomic, geopolitical, and operational risks (contradicting the claim's implication that Apple's filings don't emphasize geopolitical risks). The passage doesn't show the specific Apple emphases claimed (product-services competition, IP infringement, gross-margin volatility) nor does it show Microsoft's disclosures at all. The passage partially supports the multi-dimensional risk profile aspect for Apple, but the specific emphases attributed to Apple vs. Microsoft in the claim are not well-supported by this excerpt alone.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Apple's 10-K and shows Apple does disclose macroeconomic, geopolitical, and operational risks (contradicting the claim's implication that Apple's filings don't emphasize geopolitical risks). The passage doesn't show the specific Apple emphases claimed (product-services competition, IP infringement, gross-margin volatility) nor does it show Microsoft's disclosures at all. The passage partially supports the multi-dimensional risk profile aspect for Apple, but the specific emphases attributed to Apple vs. Microsoft in the claim are not well-supported by this excerpt alone.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from Apple's 10-K Business section describing products, services, and segments. It contains no information about risk profiles, competitive risks, IP infringement, gross-margin volatility, regulatory compliance, barriers to entry, geopolitical risks, or any of the specific risk dimensions mentioned in the claim. The passage cannot support the detailed risk-related assertions made in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage is from Microsoft's filings and strongly supports the Microsoft-specific claims: platform-ecosystem competition, operating systems licensed at low or no cost, rivals' content/application marketplaces, and low barriers to entry with rapid technological change. However, the passage does not contain content about Apple's filings (product-and-services competition, IP infringement, gross-margin volatility, product design defects) or Microsoft's geopolitical/pandemic risks (armed conflict, sanctions, pandemic disruptions), so those portions of the claim are unverifiable from this excerpt alone. The passage supports the Microsoft platform-competition and low-barriers claims well, but the full multi-dimensional claim spanning both companies is only partially evidenced here.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Microsoft's filing and supports several Microsoft-specific claims: platform-ecosystem competition, operating systems licensed at low or no cost, rivals' content/application marketplaces, and low barriers to entry with rapid technological change. However, the passage does not contain evidence for Apple-specific claims (AAPL references) about product-and-services competition from rivals with technical/marketing/distribution resources, IP infringement risks, gross-margin volatility, regulatory compliance costs, or product design/manufacturing defects. The geopolitical risks (armed conflict, sanctions, pandemic) mentioned in the claim for Microsoft are also not present in this excerpt. The passage only partially covers the full multi-dimensional claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage strongly supports the Microsoft-related claims about geopolitical risks (armed conflict, Ukraine, sanctions, pandemic disruptions to customer spending and supply chains), which are explicitly mentioned. However, the passage does not address the Apple-specific claims (product-and-services competition, IP infringement, gross-margin volatility, product design defects) or the Microsoft platform-ecosystem competition claims (low/no-cost OS licensing, content/application marketplaces). The passage also does not address the shared claim about low barriers to entry and rapid technological change. Since the passage is a single Microsoft excerpt, it fully supports the MSFT geopolitical/pandemic portion but cannot confirm the Apple-side or the comparative framing of the full claim, leaving a meaningful gap.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Microsoft's filing and supports several Microsoft-specific claims: platform-ecosystem competition, operating systems licensed at low or no cost, rivals' content/application marketplaces, and low barriers to entry with rapid technological change. However, the passage does not contain evidence for Apple-specific claims (AAPL references) about product-and-services competition from rivals with technical/marketing/distribution resources, IP infringement risks, gross-margin volatility, regulatory compliance costs, or product design/manufacturing defects. The geopolitical risks (armed conflict, sanctions, pandemic) mentioned in the claim for Microsoft are also not present in this excerpt. The passage only partially covers the full multi-dimensional claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage supports several elements of the claim: Microsoft's disclosure of intense competition from rivals with significant technical/marketing/financial resources, low barriers to entry, and rapid technological change eroding competitive position. However, the passage does not cover the geopolitical risks (armed conflict, sanctions, pandemic disruptions), platform-ecosystem competition specifics (operating systems at low/no cost, content/application marketplaces), or any Apple-related claims. The passage only partially supports the broader multi-dimensional claim, covering competitive dimensions but missing the geopolitical, regulatory, and operational dimensions described.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": true,
+          "score": 4,
+          "reason": "The passage is from Microsoft's filings and strongly supports the Microsoft-specific claims: platform-ecosystem competition, operating systems licensed at low or no cost, rivals' content/application marketplaces, and low barriers to entry with rapid technological change. However, the passage does not contain content about Apple's filings (product-and-services competition, IP infringement, gross-margin volatility, product design defects) or Microsoft's geopolitical/pandemic risks (armed conflict, sanctions, pandemic disruptions), so those portions of the claim are unverifiable from this excerpt alone. The passage supports the Microsoft platform-competition and low-barriers claims well, but the full multi-dimensional claim spanning both companies is only partially evidenced here.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from Microsoft's filing and supports several Microsoft-specific claims: platform-ecosystem competition, operating systems licensed at low or no cost, rivals' content/application marketplaces, and low barriers to entry with rapid technological change. However, the passage does not contain evidence for Apple-specific claims (AAPL references) about product-and-services competition from rivals with technical/marketing/distribution resources, IP infringement risks, gross-margin volatility, regulatory compliance costs, or product design/manufacturing defects. The geopolitical risks (armed conflict, sanctions, pandemic) mentioned in the claim for Microsoft are also not present in this excerpt. The passage only partially covers the full multi-dimensional claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both Apple and Microsoft disclose broad, multi-dimensional risk profiles spanning competitive, regulatory, geopolitical, and operational dimensions, but the evidence available for each skews toward different emphases. Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources, the risk of intellectual-property infringement in markets where protection is inconsistent, and financial risks tied to gross-margin volatility and regulatory compliance costs [AAPL:S6][AAPL:S5][AAPL:S3]. Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces\u2014alongside geopolitical risks such as armed conflict, sanctions, and pandemic-related disruptions to customer spending and supply chains [MSFT:S3][MSFT:S5][MSFT:S2][MSFT:S0]. Both companies acknowledge that barriers to entry in their core markets are low and that rapid technological change can erode competitive position [AAPL:S6][MSFT:S4], but Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks, while Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted [AAPL:S2].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage supports several elements of the claim: Microsoft's disclosure of intense competition from rivals with significant technical/marketing/financial resources, low barriers to entry, and rapid technological change eroding competitive position. However, the passage does not cover the geopolitical risks (armed conflict, sanctions, pandemic disruptions), platform-ecosystem competition specifics (operating systems at low/no cost, content/application marketplaces), or any Apple-related claims. The passage only partially supports the broader multi-dimensional claim, covering competitive dimensions but missing the geopolitical, regulatory, and operational dimensions described.",
+          "judge": "sonnet"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 4,
+      "evidence_coverage": 3,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report is exceptionally well-written and clearly structured, with clean parallel organization between the two companies. The cross-axis takeaway is concise and useful. Honesty about data limitations is exemplary\u2014the report repeatedly and explicitly flags that MSFT evidence comes partly from legal-proceedings cross-references rather than core risk-factor sections, and that AAPL evidence skews toward introductory/cross-referencing paragraphs. This transparency is handled gracefully without undermining the analysis. Comparison quality is solid given the constraints, though the divergence in emphasis (Apple on competitive/IP/regulatory vs. Microsoft on geopolitical) feels somewhat asserted rather than fully demonstrated, since the evidence gaps are acknowledged to be significant. Evidence coverage is the weakest dimension: the report itself concedes that neither company's risk-factor section is fully represented, and the MSFT evidence in particular appears thin and indirect. The repetition between the opening narrative paragraphs and the bolded AAPL/MSFT summary blocks is slightly redundant and could be tightened."
+    },
+    "incorporation": {
+      "n": 5,
+      "incorporated": 5,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "risk_factors",
+          "claim": "Microsoft's disclosures foreground platform-ecosystem competition\u2014including the challenge of competing with operating systems licensed at low or no cost and rivals' content/application marketplaces",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "Microsoft places comparatively greater explicit emphasis on macro-geopolitical and pandemic tail risks",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "Both companies acknowledge that barriers to entry in their core markets are low",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "Apple's recent quarterly updates flag product design and manufacturing defects as an incremental risk not previously highlighted",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "Apple's filings highlight intense product-and-services competition from rivals with significant technical, marketing, and distribution resources",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

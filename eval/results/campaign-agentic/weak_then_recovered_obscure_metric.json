@@ -1,0 +1,495 @@
+{
+  "case_id": "weak_then_recovered_obscure_metric",
+  "request_id": "35c882a1-0e03-4d5e-a500-36b0c81bd9a4",
+  "final_status": "partial",
+  "elapsed_s": 6.282804900001793,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Profitability\n\nBoth LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income rose from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], though this was not a smooth ascent: net income dipped to $5.2B in FY2023 [LLY:Q5] before accelerating sharply, implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] fell sharply to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting significant non-recurring charges associated with M&A activity, though the precise quantum of any IPR&D write-offs is not fully detailed in available filings\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is notable given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic top-line growth.\n\n**LLY:** Eli Lilly has delivered strong profitability improvement, with revenues nearly doubling from $34.1B in FY2023 [LLY:Q1] to $65.2B in FY2025 [LLY:Q3]. Net income followed a non-linear path\u2014dipping to $5.2B in FY2023 [LLY:Q5] before rebounding to $20.6B in FY2025 [LLY:Q7]\u2014but the ultimate trajectory underscores meaningful operating leverage embedded in its high-growth product portfolio, with a net margin of roughly 32% in FY2025.\n\n**MRK:** Merck's profitability is solid but uneven: after earning $14.5B in net income in FY2022 [MRK:Q4], net income fell sharply to $365M in FY2023 [MRK:Q5], likely due to significant non-recurring charges tied to M&A activity, before rebounding strongly to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7]. Revenue growth has been steady but modest, rising from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over four years, reflecting a mature large-cap profile with a net margin of approximately 28% in FY2025.\n\n---\n\n## R&D-to-Revenue Ratio\n\n*Insufficient data*\n\n---\n\n## Cross-Axis Takeaway\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "LLY",
+      "accession": "0000059478-25-000067",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "28541400000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "34124000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "45043000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65179000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "LLY",
+      "accession": "0000059478-25-000067",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "6244800000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "5240000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "10590000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "20640000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "59283000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "60115000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "64168000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "MRK",
+      "accession": "0000310158-26-000063",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65011000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "14519000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "365000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "MRK",
+      "accession": "0001628280-25-007732",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "17117000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+      "ticker": "MRK",
+      "accession": "0001193125-26-147704",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "18254000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "profitability": {
+        "axis": "profitability",
+        "groundedness": "ok",
+        "notes": "All core revenue and net income figures are confirmed by XBRL data. LLY FY2022 revenue: $28.54B \u2713 (claimed ~$28.5B). LLY FY2025 revenue: $65.18B \u2713 (claimed $65.2B). MRK FY2022 revenue: $59.28B \u2713 (claimed $59.3B). MRK FY2025 revenue: $65.01B \u2713 (claimed $65.0B). LLY FY2022 net income: $6.24B \u2713 (claimed $6.2B). LLY FY2025 net income: $20.64B \u2713 (claimed $20.6B). MRK FY2022 net income: $14.52B \u2713 (claimed $14.5B). MRK FY2023 net income: $365M \u2713 (claimed $365M). MRK FY2024 net income: $17.12B \u2713 (claimed $17.1B). MRK FY2025 net income: $18.25B \u2713 (claimed $18.3B). LLY revenue growth of ~128% is arithmetically correct ($28.54B \u2192 $65.18B = +128.4%). LLY FY2025 net margin ~32% is correct ($20.64B / $65.18B = 31.7%). MRK FY2025 net margin ~28% is correct ($18.25B / $65.01B = 28.1%). The attribution of MRK's FY2023 net income collapse to 'large acquired in-process R&D charges' is directionally supported by filing evidence (MRK's 2023 non-GAAP reconciliation references $792M in intangible asset impairment charges in 2023, and business development activity is cited as a major R&D expense driver), though the filings retrieved do not explicitly quantify the full IPR&D charge amount for FY2023 in the excerpts returned. The claim is plausible and consistent with known MRK acquisitions (e.g., Prometheus Biosciences ~$10.8B in 2023), but the specific dollar magnitude of the IPR&D charge driving the FY2023 net income collapse is not directly cited in the analyst's citations. The citation list also only references LLY XBRL concepts and omits MRK XBRL citations, even though MRK figures are central to the analysis.",
+        "missed_evidence": [
+          "MRK FY2023 acquired IPR&D charges (from Prometheus Biosciences and Imago BioSciences acquisitions) are not explicitly cited; the filing evidence retrieved references $792M in intangible impairments in 2023 but does not fully quantify the IPR&D write-offs that drove net income to $365M \u2014 analysts should cite MRK's FY2023 10-K R&D expense breakdown directly.",
+          "LLY FY2023 net income of $5.24B and FY2024 net income of $10.59B are not mentioned in the analysis, leaving a gap in LLY's net income trajectory between FY2022 ($6.2B) and FY2025 ($20.6B) that obscures the non-linear path (FY2023 was actually lower than FY2022).",
+          "MRK FY2023 revenue of $60.12B is not mentioned; noting it would strengthen the 'modest growth' characterization.",
+          "The analyst citations list only LLY XBRL sources (quant:LLY:us-gaap:Revenues, quant:LLY:us-gaap:NetIncomeLoss) despite making multiple specific MRK quantitative claims \u2014 MRK XBRL citations are entirely absent."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The analysis notes LLY's revenue surge was 'largely driven by GLP-1 and oncology franchises' \u2014 this qualitative driver claim is not grounded in any cited filing text; it is a well-known fact but should be supported by a filing citation for full rigor.",
+      "LLY's FY2023 net income ($5.24B) was actually lower than FY2022 ($6.24B), meaning LLY's bottom-line trajectory was also non-monotonic, similar to MRK's \u2014 the analysis implies LLY had a smooth upward trajectory which is misleading without acknowledging the FY2023 dip.",
+      "The claim that both companies 'converged to nearly identical revenue levels by FY2025' is well-supported ($65.18B vs $65.01B), but the framing that MRK is a 'larger and more mature base' is slightly inconsistent with the fact that by FY2025 both companies are at essentially the same revenue scale."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "profitability",
+        "claim": "LLY's net income expanded dramatically from $6.2B in FY2022 to $20.6B in FY2025",
+        "flag": "weakly_supported",
+        "reason": "The endpoints are correct, but the word 'dramatically' and the implied smooth expansion obscure that LLY net income actually fell to $5.24B in FY2023 before recovering. The intermediate data point contradicts the 'dramatic expansion' narrative without qualification.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "profitability",
+        "claim": "MRK's FY2023 net income collapse to $365M was 'likely reflecting large acquired in-process R&D charges'",
+        "flag": "weakly_supported",
+        "reason": "The direction is correct and consistent with known MRK M&A activity in 2023, but no specific IPR&D charge amount for FY2023 is cited in the analyst's sources. The retrieved filing evidence only references $792M in intangible impairments in 2023 (not the full IPR&D write-off quantum). The claim is plausible but not directly evidenced by the cited sources.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "profitability",
+        "claim": "All MRK quantitative figures (revenues and net income for FY2022\u2013FY2025) are presented without any MRK citations",
+        "flag": "weakly_supported",
+        "reason": "The analyst's citation list exclusively references quant:LLY XBRL concepts. MRK revenue and net income figures ($59.3B, $65.0B, $14.5B, $365M, $17.1B, $18.3B) are all numerically accurate per XBRL data but are uncited in the analysis, creating a traceability gap.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "LLY",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 28541400000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000059478-25-000067\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 34124000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 45043000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MRK",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 59283000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 60115000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 64168000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "LLY",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 6244800000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000059478-25-000067\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 5240000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 10590000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MRK",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 14519000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 365000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 17117000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-25-007732\", \"resolved_concept\""
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "acquired in-process research and development charges 2023",
+          "tickers": [
+            "MRK"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000310158-26-000063:item_7_mda:0032\", \"score\": 1.0, \"ticker\": \"MRK\", \"section\": \"item_7_mda\", \"text_excerpt\": \"had not yet reached technological feasibility. At December\\u00a031, 2025, the balance of in-process research and development (IPR&D) was $427 million, primarily consisting of MK-1026 (nemtabrutinib), $418 million, which is in Phase 3 clinical development.\\nThe IPR&D projec"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "GLP-1 oncology revenue growth drivers 2024 2025",
+          "tickers": [
+            "LLY"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000059478-26-000013:item_7_mda:0008\", \"score\": 0.75, \"ticker\": \"LLY\", \"section\": \"item_7_mda\", \"text_excerpt\": \"and administrative\\n11,094\\n\\u00a0\\n8,594\\u00a0\\n29\\nAcquired in-process research and development\\n2,910\\n\\u00a0\\n3,280\\u00a0\\n(11)\\nIncome taxes\\n5,091\\n\\u00a0\\n2,090\\u00a0\\n144\\nEffective tax rate\\n19.8\\n\\u00a0\\n%\\n16.5\\u00a0\\n%\\nGross margin as a percent of revenue in "
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "acquired in-process research and development charges Prometheus Imago 2023 net income impact",
+          "tickers": [
+            "MRK"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000310158-26-000063:item_7_mda:0032\", \"score\": 0.8333334, \"ticker\": \"MRK\", \"section\": \"item_7_mda\", \"text_excerpt\": \"had not yet reached technological feasibility. At December\\u00a031, 2025, the balance of in-process research and development (IPR&D) was $427 million, primarily consisting of MK-1026 (nemtabrutinib), $418 million, which is in Phase 3 clinical development.\\nThe IPR&D "
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 336
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 16,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both LLY and MRK converged to nearly identical revenue levels by FY2025, but their trajectories and profitability dynamics differ sharply. LLY's revenues surged from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]\u2014a roughly 128% increase driven largely by GLP-1 and oncology franchises\u2014while MRK's revenues grew more modestly from $59.3B [MRK:Q0] to $65.0B [MRK:Q3] over the same period. On the bottom line, LLY's net income expanded dramatically from $6.2B in FY2022 [LLY:Q4] to $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32% in FY2025. MRK's net income trajectory was more volatile: a strong $14.5B in FY2022 [MRK:Q4] collapsed to just $365M in FY2023 [MRK:Q5]\u2014likely reflecting large acquired in-process R&D charges\u2014before recovering to $17.1B in FY2024 [MRK:Q6] and $18.3B in FY2025 [MRK:Q7], a net margin of approximately 28%. LLY's margin expansion is more impressive given its much faster revenue ramp, whereas MRK's profitability, while solid in absolute terms, reflects a larger and more mature base with less dramatic growth.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 4,
+      "comparison_quality": 4,
+      "evidence_coverage": 3,
+      "honesty_on_insufficient_data": 4,
+      "notes": "Profitability section is well-structured with clear citation tags and explicit margin calculations. The parallel LLY/MRK sub-sections aid readability. Comparison quality is strong: trajectories are contrasted meaningfully rather than just listed side-by-side. Honesty is good\u2014the report flags uncertainty around MRK's FY2023 drop ('likely reflecting... though the precise quantum... is not fully detailed') and correctly marks R&D-to-Revenue as insufficient rather than fabricating figures. Evidence coverage is moderate: revenue and net income are well-supported, but gross margin, operating income, and EPS are absent, leaving the profitability picture somewhat incomplete. The Cross-Axis Takeaway section appears to be missing content entirely, which is a notable gap. Minor issue: LLY revenue is cited as both $28.5B (FY2022) and $34.1B (FY2023) in the same section without flagging the jump, which could confuse readers. Overall a competent, honest report with room to deepen the analytical layer."
+    },
+    "incorporation": {
+      "n": 3,
+      "incorporated": 3,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "profitability",
+          "claim": "LLY's net income expanded dramatically from $6.2B in FY2022 to $20.6B in FY2025",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "profitability",
+          "claim": "MRK's FY2023 net income collapse to $365M was 'likely reflecting large acquired in-process R&D charges'",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "profitability",
+          "claim": "All MRK quantitative figures (revenues and net income for FY2022\u2013FY2025) are presented without any MRK citations",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

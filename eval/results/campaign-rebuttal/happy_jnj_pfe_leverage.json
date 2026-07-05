@@ -1,0 +1,995 @@
+{
+  "case_id": "happy_jnj_pfe_leverage",
+  "request_id": "f49dcb7e-caf3-4c3b-a327-267a93b594d9",
+  "final_status": "ok",
+  "elapsed_s": 0.8016558090021135,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "rebut",
+    "critic",
+    "synthesize"
+  ],
+  "report": "### Leverage\n\nJohnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x.\n\nPfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen. Since then, debt has fluctuated in the $57\u201362B range, dipping to $57.4B in FY2024 before recovering to $61.6B [PFE:Q3] in FY2025, suggesting active debt management rather than static elevation. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, though the trajectory has been uneven, with the bulk of the increase concentrated in FY2024\u2013FY2025 following a dip to $25.9B in FY2023. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.\n\n**JNJ:** JNJ's leverage has risen over the past few years but remains manageable, with FY2025 total debt of roughly $49.9B (noncurrent $39.4B [JNJ:Q3], current maturities $2.0B [JNJ:Q7], short-term borrowings $8.5B [JNJ:Q11]) against equity of $81.5B [JNJ:Q15]. The increase in long-term debt has been uneven, with the bulk concentrated in FY2024\u2013FY2025 after a trough in FY2023. The company's substantial cash position of $19.7B [JNJ:Q19] meaningfully reduces net debt, supporting a relatively conservative balance sheet despite the recent uptick in borrowings.\n\n**PFE:** Pfizer's leverage profile deteriorated sharply in FY2023 when long-term noncurrent debt nearly doubled to $61.5B [PFE:Q1] from $32.9B [PFE:Q0] in FY2022, driven by acquisition financing. Since then, debt has fluctuated in the $57\u201362B range \u2014 falling to $57.4B in FY2024 before rising back to $61.6B [PFE:Q3] in FY2025 \u2014 indicating some active debt management, though the overall burden remains elevated. With only $1.1B in cash [PFE:Q19] and equity of $86.5B [PFE:Q15], Pfizer's net debt is substantial, making further debt reduction a key balance-sheet priority in the near term.\n\n---\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-24-000013",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "26886000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-25-000038",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "25881000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000016",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "30651000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000087",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "39438000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-24-000013",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "1551000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-25-000038",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "1469000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000016",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "1749000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000016",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "2000000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-24-000013",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "12756000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-25-000038",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "3451000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000016",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "5983000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000087",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "8495000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-23-000102",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "76804000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-24-000096",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "68774000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-25-000209",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "71490000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000087",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "81544000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-24-000013",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "12889000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-25-000038",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "21859000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000016",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "24105000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-26-000087",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "19709000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0001628280-23-017196",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "32884000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-25-000054",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "61538000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "57405000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000054",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "61641000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0001628280-23-017196",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "2560000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-25-000054",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "2254000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "3747000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000054",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "2997000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-24-000039",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "0.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-25-000054",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "7965000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "2453000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "0.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0001628280-23-017196",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "95661000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-25-000054",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "89014000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "88203000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000054",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "86476000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0001628280-23-017196",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "416000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-25-000054",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "2853000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "1043000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000054",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "1142000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "JNJ",
+      "accession": "0000200406-25-000038",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "25881000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "57405000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "leverage": {
+        "axis": "leverage",
+        "groundedness": "ok",
+        "notes": "All primary quantitative claims are confirmed by retrieved data. JNJ FY2025: LT noncurrent debt $39.4B \u2713, current maturities $2.0B \u2713, short-term borrowings $8.5B \u2713, equity $81.5B \u2713, cash $19.7B \u2713 \u2192 D/E ~0.61x \u2713. PFE FY2025: LT noncurrent debt $61.6B \u2713, current maturities $3.0B \u2713, equity $86.5B \u2713, cash $1.1B \u2713 \u2192 D/E ~0.75x \u2713. PFE FY2022 LT noncurrent debt $32.9B \u2713, FY2023 $61.5B \u2713. JNJ FY2022 LT noncurrent debt $26.9B \u2713, FY2025 $39.4B \u2713. The two prior rebuttals (JNJ trajectory 'gradual' \u2192 'uneven/back-loaded'; PFE 'remained elevated' \u2192 'fluctuated $57\u201362B') were accepted and are not re-flagged. The revised characterizations are consistent with the data: JNJ dipped to $25.9B in FY2023, rose to $30.7B in FY2024, then surged to $39.4B in FY2025; PFE fell to $57.4B in FY2024 before recovering to $61.6B in FY2025. PFE commercial paper of $0 is plausible but not directly verified here; however, it does not materially affect the D/E calculation. PFE equity trend (declining from $95.7B in FY2022 to $86.5B in FY2025) is a notable missed context item but does not contradict any stated claim.",
+        "missed_evidence": [
+          "PFE stockholders' equity has been declining steadily from $95.7B (FY2022) \u2192 $89.0B (FY2023) \u2192 $88.2B (FY2024) \u2192 $86.5B (FY2025), meaning PFE's leverage ratio is worsening from both sides (rising debt AND shrinking equity), which strengthens the leverage concern beyond what the analyst noted.",
+          "JNJ short-term borrowings surged from $3.5B (FY2023) to $6.0B (FY2024) to $8.5B (FY2025), a rapid build-up that is not discussed in the analysis and materially contributes to the FY2025 total debt figure.",
+          "JNJ cash of $19.7B in FY2025 is down from $24.1B in FY2024, reducing the net-debt offset compared to the prior year \u2014 a nuance not mentioned.",
+          "PFE cash of $1.1B in FY2025 is slightly up from $1.0B in FY2024, but both are dramatically lower than the $2.9B held in FY2023, indicating a sustained post-acquisition cash drawdown."
+        ]
+      }
+    },
+    "cross_axis": [
+      "PFE's dual pressure of rising gross debt and declining equity (from $95.7B to $86.5B over FY2022\u2013FY2025) suggests its leverage deterioration is more severe than the D/E ratio alone implies, which could be relevant to any profitability or liquidity axis analysis.",
+      "JNJ's rapid short-term borrowings build-up ($3.5B \u2192 $8.5B over FY2023\u2013FY2025) may signal refinancing risk or near-term liquidity considerations that could intersect with a liquidity or coverage axis."
+    ],
+    "flagged_claims": [],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "JNJ",
+          "key": "us-gaap:LongTermDebtCurrent",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 1551000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000200406-24-000013\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 1469000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000200406-25-000038\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 1749000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000200406-26-000016\", \"resolv"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "JNJ",
+          "key": "us-gaap:ShortTermBorrowings",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 12756000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000200406-24-000013\", \"resolved_concept\": \"us-gaap:ShortTermBorrowings\"}, {\"value\": 3451000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000200406-25-000038\", \"resolved_concept\": \"us-gaap:ShortTermBorrowings\"}, {\"value\": 5983000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000200406-26-000016\", \"resol"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "JNJ",
+          "key": "us-gaap:StockholdersEquity",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 76804000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000200406-23-000102\", \"resolved_concept\": \"us-gaap:StockholdersEquity\"}, {\"value\": 68774000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000200406-24-000096\", \"resolved_concept\": \"us-gaap:StockholdersEquity\"}, {\"value\": 71490000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000200406-25-000209\", \"resol"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PFE",
+          "key": "us-gaap:LongTermDebtCurrent",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 2560000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001628280-23-017196\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 2254000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000078003-25-000054\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 3747000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000078003-26-000026\", \"resolv"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PFE",
+          "key": "us-gaap:StockholdersEquity",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 95661000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001628280-23-017196\", \"resolved_concept\": \"us-gaap:StockholdersEquity\"}, {\"value\": 89014000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000078003-25-000054\", \"resolved_concept\": \"us-gaap:StockholdersEquity\"}, {\"value\": 88203000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000078003-26-000026\", \"resol"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "JNJ",
+          "key": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 21859000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000200406-25-000038\", \"resolved_concept\": \"us-gaap:CashAndCashEquivalentsAtCarryingValue\"}, {\"value\": 24105000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000200406-26-000016\", \"resolved_concept\": \"us-gaap:CashAndCashEquivalentsAtCarryingValue\"}, {\"value\": 19709000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"acce"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PFE",
+          "key": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 2853000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000078003-25-000054\", \"resolved_concept\": \"us-gaap:CashAndCashEquivalentsAtCarryingValue\"}, {\"value\": 1043000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000078003-26-000026\", \"resolved_concept\": \"us-gaap:CashAndCashEquivalentsAtCarryingValue\"}, {\"value\": 1142000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accessi"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PFE",
+          "key": "us-gaap:LongTermDebtNoncurrent",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 32884000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001628280-23-017196\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 61538000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000078003-25-000054\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 57405000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000078003-26-000026\""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "JNJ",
+          "key": "us-gaap:LongTermDebtNoncurrent",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 26886000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000200406-24-000013\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 25881000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000200406-25-000038\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 30651000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000200406-26-000016\""
+      }
+    ],
+    "turns_used": 3,
+    "duration_ms": 28
+  },
+  "rebuttals": [
+    {
+      "source_axis": "leverage",
+      "claim": "JNJ's long-term noncurrent debt rising from $26.9B in FY2022 to $39.4B in FY2025, but the increase is more gradual.",
+      "disposition": "revised",
+      "reason": "The endpoints are correct, but the trajectory is non-monotonic: debt dipped to $25.9B in FY2023, rose to $30.7B in FY2024, then surged to $39.4B in FY2025, making the increase back-loaded rather than gradual. The word 'gradual' should be replaced with 'uneven, with the bulk of the increase concentrated in FY2024\u2013FY2025.'",
+      "citation": {
+        "kind": "quant",
+        "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+        "ticker": "JNJ",
+        "accession": "0000200406-25-000038",
+        "concept": "us-gaap:LongTermDebtNoncurrent",
+        "normalized": null,
+        "value": "25881000000.0",
+        "period": "FY2023",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "leverage",
+      "claim": "PFE's long-term noncurrent debt nearly doubled from $32.9B to $61.5B in FY2023 and has remained elevated since.",
+      "disposition": "revised",
+      "reason": "The FY2023 spike is confirmed, but 'remained elevated since' overstates stability: debt fell to $57.4B in FY2024 before recovering to $61.6B in FY2025, indicating active debt management rather than static elevation. A more accurate characterization is that debt has fluctuated in the $57\u201362B range since the FY2023 acquisition-driven surge.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+        "ticker": "PFE",
+        "accession": "0000078003-26-000026",
+        "concept": "us-gaap:LongTermDebtNoncurrent",
+        "normalized": null,
+        "value": "57405000000.0",
+        "period": "FY2024",
+        "unit": "USD"
+      }
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 42,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "String comparison",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "String comparison",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Johnson & Johnson and Pfizer present meaningfully different leverage profiles, with Pfizer carrying substantially more gross debt relative to equity. For FY2025, JNJ's total debt sums to approximately $49.9B (long-term noncurrent $39.4B [JNJ:Q3] + current maturities $2.0B [JNJ:Q7] + short-term borrowings $8.5B [JNJ:Q11]) against stockholders' equity of $81.5B [JNJ:Q15], implying a debt-to-equity ratio of roughly 0.61x. PFE's FY2025 total debt stands at approximately $64.6B (long-term noncurrent $61.6B [PFE:Q3] + current maturities $3.0B [PFE:Q7] + commercial paper $0 [PFE:Q11]) against equity of $86.5B [PFE:Q15], a debt-to-equity ratio of roughly 0.75x. Pfizer's leverage surged dramatically after FY2022 \u2014 its long-term noncurrent debt nearly doubled from $32.9B [PFE:Q0] to $61.5B [PFE:Q1] in FY2023, reflecting the debt-financed acquisition of Seagen \u2014 and has remained elevated since. JNJ's debt load has also grown, with long-term noncurrent debt rising from $26.9B [JNJ:Q0] in FY2022 to $39.4B [JNJ:Q3] in FY2025, but the increase is more gradual. On a net-debt basis, JNJ's large cash balance ($19.7B [JNJ:Q19]) provides meaningful offset, whereas Pfizer holds far less cash ($1.1B [PFE:Q19]), leaving it with a much higher net debt burden.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "Exceptionally well-structured report with clear numerical grounding, explicit source citations, and a logical narrative arc. The comparison is genuinely analytical rather than merely descriptive, highlighting net-debt differences, trajectory divergence, and the Seagen acquisition catalyst. The summary bullets add value without redundancy. Minor deduction on honesty/insufficient-data: the report states Pfizer's commercial paper is $0 without flagging whether this is confirmed zero or simply absent from the data, and the phrase 'FY2025' is used throughout without clarifying whether these are projections, TTM, or partial-year figures \u2014 a small transparency gap. Otherwise, the report does not overreach its data."
+    },
+    "incorporation": {
+      "n": 0,
+      "incorporated": 0,
+      "rate": null,
+      "claims": []
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,460 @@
+{
+  "case_id": "happy_staples_risks",
+  "request_id": "344c9698-48d8-4f2e-a665-4216879f173a",
+  "final_status": "ok",
+  "elapsed_s": 3.261158274999616,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Risk Factors\n\nBoth KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal meaningful differences in emphasis and exposure. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures address demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2], though this risk is embedded within a broader competitive and demand section rather than standing as a singular focal point. PEP also calls out tariff-driven supply-chain cost increases, specifically referencing U.S. tariffs on China, the EU, Canada, and Mexico, as an active and ongoing cost driver [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs\u2014potatoes, corn, wheat, oats, oranges, and others\u2014tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4]. KO's expansion into adjacent categories such as alcohol introduces some incremental licensing and regulatory compliance considerations, though this appears as one element within a broader discussion of M&A and expansion risks rather than a standalone dedicated risk factor [KO:S5].\n\n**KO:** KO's risk profile is shaped heavily by its concentrate-and-franchise model, where 85% of unit case volume flows through concentrate operations [KO:S1], making it dependent on the financial health and operational continuity of its bottling partners [KO:S3]. The company explicitly warns that inflationary cost pressures are expected to persist into 2026 and that price increases used to offset them may reduce sales volumes [KO:S4]. Regulatory and compliance obligations\u2014spanning AI governance, data privacy, and sustainability\u2014round out a risk profile that is more operationally and structurally concentrated than PEP's [KO:S6][KO:S7].\n\n**PEP:** PEP faces meaningful demand-side risk from customer concentration, with Walmart and its affiliates representing a significant share of 2025 sales [PEP:S7], and the company acknowledges that losing or seeing reduced orders from key customers has already adversely affected its business [PEP:S2]. Its dual exposure to both beverages and snack foods creates broader agricultural commodity risk\u2014spanning potatoes, corn, wheat, and other inputs\u2014that is sensitive to climate and weather disruptions [PEP:S4]. Tariff escalation, particularly U.S. measures targeting China, the EU, Canada, and Mexico, is called out as an active and ongoing supply-chain cost driver [PEP:S3].\n\n---\n\n**Cross-axis takeaway:** The two companies share a common core of macro and regulatory risks, but diverge in their structural vulnerabilities. KO's most distinctive exposures stem from its deep reliance on third-party bottling partners and the potential for inflationary pressures to erode volume if passed through to consumers. PEP's risk profile is broader in commodity scope\u2014reflecting its snack-food footprint\u2014and more explicitly shaped by customer concentration and active tariff headwinds. Neither company's risk profile is clearly more severe, but they reflect fundamentally different business architectures: KO's franchise-model dependencies versus PEP's dual-category commodity and demand-side sensitivities.",
+  "citations": [
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001628280-26-010047:item_1a_risk_factors:0000",
+      "quote": "ITEM 1A. RISK FACTORS\nIn addition to the other information set forth in this report, you should carefully consider the following factors, which could materially affect our business, financial condition and results of operations in future pe"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "section": "item_7_mda",
+      "chunk_id": "0001628280-26-010047:item_7_mda:0002",
+      "quote": "of total worldwide unit case volume attributable to concentrate operations and finished product operations:\nYear Ended December\u00a031,\n2025\n2024\nConcentrate operations\n85\n%\n85\n%\nFinished product operations\n15\n15\u00a0\nTotal\n100\n%\n100\n%\nWe operate i"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "KO",
+      "accession": "0001628280-26-028802",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001628280-26-028802:item_1a_risk_factors:0000",
+      "quote": "Item\u00a01A. Risk Factors\nIn addition to the other information set forth in this report, you should carefully consider the factors discussed in Part I, \u201cItem 1A. Risk Factors\u201d in our Annual Report on Form 10-K for the year ended December\u00a031, 20"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001628280-26-010047:item_1a_risk_factors:0004",
+      "quote": "ling partners are dependent upon, among other things, various ingredients and other raw materials and packaging materials. For additional information on the raw materials and supplies we use in our business, refer to the heading \u201cRaw Materi"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001628280-26-010047:item_1a_risk_factors:0005",
+      "quote": "cybersecurity incidents or other disruptions; or fluctuations in foreign currency exchange rates. Many of our raw materials and supplies are purchased in the open market, and the prices for such items are subject to fluctuation. We expect t"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001628280-26-010047:item_1a_risk_factors:0012",
+      "quote": "rates of sales; distraction of management from existing operations; lower product, category or industry knowledge and expertise; slower than expected or inadequate return on investments; increased competitive pressures; stakeholder scrutiny"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001628280-26-010047:item_1a_risk_factors:0019",
+      "quote": "the past and could continue to result in increased compliance costs, capital expenditures and other financial obligations for us and our bottling partners, which could affect our profitability, or may impede the production, distribution, ma"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0001628280-26-010047:item_1a_risk_factors:0025",
+      "quote": "disclosure and retention practices, including self-regulation and industry standards, changes in existing laws and regulations, enactment of new laws and regulations, increased enforcement activity and changes in interpretation of laws, cou"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000077476-26-000007:item_1a_risk_factors:0000",
+      "quote": "Item\u00a01A. Risk Factors. \nThe following risks, some of which have occurred and any of which may occur in the future, can have a material adverse effect on our business or financial performance, which in turn can affect the price of our public"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000077476-26-000007:item_1a_risk_factors:0009",
+      "quote": "s take many forms including cyber extortion, denial of service, social engineering, deepfake attacks and disinformation campaigns, introduction of viruses or malware (such as ransomware), exploiting vulnerabilities in hardware, software or "
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000077476-26-000007:item_1a_risk_factors:0005",
+      "quote": "operate, which may in turn affect purchasing patterns of our products. Further, we must maintain mutually beneficial relationships with our key customers to compete effectively. A change in the business conditions (financial or otherwise) o"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000077476-26-000007:item_1a_risk_factors:0006",
+      "quote": "disruptions, loss or impairment of key manufacturing sites, political uncertainties, geopolitical events and tensions, wars and other military conflicts, acts of terrorism, governmental instability or currency exchange rates. In addition, t"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000077476-26-000007:item_1a_risk_factors:0012",
+      "quote": ", climate change or other weather-related disruptions to our supply chain may also have a negative effect on agricultural production resulting in decreased availability or less favorable pricing for certain commodities that are necessary fo"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000077476-26-000007:item_1a_risk_factors:0019",
+      "quote": "including as a result of executive orders), changes in the enforcement priorities of regulators, and differing or competing regulations and standards across the markets where our products or raw materials are made, manufactured, distributed"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "section": "item_1a_risk_factors",
+      "chunk_id": "0000077476-26-000007:item_1a_risk_factors:0017",
+      "quote": "create inconsistent or conflicting requirements. Our efforts to comply with these laws and regulations, including the California Consumer Privacy Act, as amended by the California Privacy Rights Act, as well as similar legislation enacted i"
+    },
+    {
+      "kind": "qual",
+      "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "section": "item_1_business",
+      "chunk_id": "0000077476-26-000007:item_1_business:0006",
+      "quote": "of programs vary annually.\nChanges to the retail landscape, including increased consolidation of retail ownership, the continued growth of sales through e-commerce websites and mobile commerce applications, including through subscription se"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "risk_factors": {
+        "axis": "risk_factors",
+        "groundedness": "ok",
+        "notes": "All major claims are directly supported by retrieved filing text. (1) KO's inflationary input-cost language ('We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026') is verbatim confirmed in chunk 0001628280-26-010047:item_1a_risk_factors:0005. (2) KO's sole/limited-source supplier risk is confirmed in item_1a_risk_factors:0004. (3) KO's bottling-partner cascade risk is confirmed in item_1a_risk_factors:0013. (4) KO's AI/new-technology regulatory risk is confirmed in item_1a_risk_factors:0019. (5) KO's alcohol-beverage licensing risk is confirmed in item_1a_risk_factors:0012. (6) PEP's key-customer concentration language ('a significant reduction in sales to any key customer, or the loss of any of our key customers has adversely affected\u2026') is confirmed in item_1a_risk_factors:0005. (7) PEP's tariff language (U.S. tariffs on China, EU, Canada, Mexico) is confirmed in item_1a_risk_factors:0006. (8) PEP's agricultural commodity list (potatoes, corn, wheat, oats, oranges) is confirmed in item_1a_risk_factors:0012. (9) Cybersecurity risks for both companies are confirmed. (10) Data-privacy and sustainability/environmental risks for KO are confirmed in chunks :0025 and :0026. One minor note: the analyst assigns PEP's key-customer claim to [PEP:S2] and tariff claim to [PEP:S3], but the retrieved chunks are :0005 and :0006 respectively \u2014 the section-index labels differ slightly from the chunk IDs, though the content is clearly present. This is a labeling convention issue, not a factual error. The PEP data-privacy citation [PEP:S6] is supported by chunk :0017 (CCPA, GDPR language). PEP sustainability/environmental [PEP:S5] is not directly retrieved but is a standard risk present in both filings; the absence of a direct retrieval hit is a minor gap rather than a contradiction.",
+        "missed_evidence": [
+          "PEP item_1a_risk_factors:0012 also lists 'sugar cane' and 'rice' as agricultural commodity inputs, which the analyst omitted from the commodity list \u2014 a minor incompleteness.",
+          "KO item_1a_risk_factors:0013 explicitly discusses equity-method bottling partners and financial condition risks, providing stronger grounding for the bottling-partner cascade claim than the cited [KO:S3] alone.",
+          "PEP item_1a_risk_factors:0019 discusses evolving regulatory/compliance costs (including executive orders) that further supports the sustainability/environmental risk claim for PEP beyond what was cited.",
+          "KO item_1a_risk_factors:0023 details third-party/bottling-partner cybersecurity risk management, adding nuance to the cybersecurity claim that was not surfaced in the analyst's citations."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The analyst correctly identifies that PEP's snack-food agricultural commodity exposure (potatoes, corn, wheat, oats, oranges) is a differentiating risk dimension absent from KO's disclosures; however, KO's filings do reference commodity price risk for its own inputs (open-market raw materials), so the distinction is one of degree and specificity rather than a complete absence of commodity risk at KO.",
+      "Both companies' AI/technology regulatory risk is flagged, but only KO's is cited explicitly. PEP's filing (item_1a_risk_factors:0004) also references AI and data analytics as a workforce/capability risk, which could have been noted as a parallel disclosure rather than treating AI risk as KO-unique."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "risk_factors",
+        "claim": "KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5]",
+        "flag": "weakly_supported",
+        "reason": "The retrieved chunk (item_1a_risk_factors:0012) mentions 'alcohol regulations related to licensing' in the context of a broader list of M&A and expansion risks, not as a standalone dedicated risk factor. The claim is directionally correct but overstates the prominence/specificity of this risk in KO's disclosures.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "risk_factors",
+        "claim": "PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration [PEP:S2]",
+        "flag": "weakly_supported",
+        "reason": "The retrieved evidence confirms the key-customer language but the chunk (item_1a_risk_factors:0005) also embeds this within a broader competitive/demand section. The analyst's framing of 'comparably strong emphasis' relative to KO is an interpretive judgment not directly verifiable from the retrieved text alone; no KO equivalent key-customer concentration language was retrieved to benchmark against.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "inflationary pressures input costs 2026",
+          "tickers": [
+            "KO"
+          ],
+          "sections": [
+            "item_1a_risk_factors",
+            "item_7_mda"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0001628280-26-010047:item_1a_risk_factors:0005\", \"score\": 1.0, \"ticker\": \"KO\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"cybersecurity incidents or other disruptions; or fluctuations in foreign currency exchange rates. Many of our raw materials and supplies are purchased in the open market, and the prices for such items are subject to fluctuation. We expect the inflationar"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "key customer concentration sales reduction adversely affected",
+          "tickers": [
+            "PEP"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000077476-26-000007:item_1a_risk_factors:0003\", \"score\": 0.75, \"ticker\": \"PEP\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"inability to compete effectively can adversely affect our business.\\nOur products compete against products of international beverage and convenient food companies that, like us, operate in multiple geographies, as well as regional, local and private la"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "tariffs United States China EU Canada Mexico supply chain costs",
+          "tickers": [
+            "PEP"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000077476-26-000007:item_1a_risk_factors:0006\", \"score\": 1.0, \"ticker\": \"PEP\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"disruptions, loss or impairment of key manufacturing sites, political uncertainties, geopolitical events and tensions, wars and other military conflicts, acts of terrorism, governmental instability or currency exchange rates. In addition, the imposition"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "sole source limited supplier bottling partner franchise operational disruption",
+          "tickers": [
+            "KO"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 5
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0001628280-26-010047:item_1a_risk_factors:0012\", \"score\": 0.8333334, \"ticker\": \"KO\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"rates of sales; distraction of management from existing operations; lower product, category or industry knowledge and expertise; slower than expected or inadequate return on investments; increased competitive pressures; stakeholder scrutiny; and re"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "artificial intelligence AI regulatory compliance technology risk",
+          "tickers": [
+            "KO"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0001628280-26-010047:item_1a_risk_factors:0019\", \"score\": 0.75, \"ticker\": \"KO\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"the past and could continue to result in increased compliance costs, capital expenditures and other financial obligations for us and our bottling partners, which could affect our profitability, or may impede the production, distribution, marketing and s"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "agricultural commodity potatoes corn wheat oats oranges snack food",
+          "tickers": [
+            "PEP"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 4
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000077476-26-000007:item_1a_risk_factors:0012\", \"score\": 1.0, \"ticker\": \"PEP\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \", climate change or other weather-related disruptions to our supply chain may also have a negative effect on agricultural production resulting in decreased availability or less favorable pricing for certain commodities that are necessary for our product"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "cybersecurity data privacy sustainability environmental regulation risk",
+          "tickers": [
+            "KO",
+            "PEP"
+          ],
+          "sections": [
+            "item_1a_risk_factors"
+          ],
+          "top_k": 6
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0001628280-26-010047:item_1a_risk_factors:0023\", \"score\": 0.8333334, \"ticker\": \"KO\", \"section\": \"item_1a_risk_factors\", \"text_excerpt\": \"and that have cybersecurity systems and environments that differ in scope and complexity from our overall cybersecurity systems and environments. While we have established a third-party risk management program designed to address security risks and"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 666
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 16,
+      "mean_score": 2.8125,
+      "faithful_fraction": 0.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from KO's filing and supports several elements of the claim: inflationary pressures continuing into 2026, cybersecurity threats, supply-chain disruptions, and tariff risks. However, the passage does not directly address all the specific claims made\u2014such as KO's sole-source supplier risks, AI/new technology regulatory risks, bottling-partner cascade risks, alcohol-beverage expansion risks, or PEP-specific elements (key-customer concentration quote, specific tariff countries, agricultural commodity inputs for snacks, sustainability/data-privacy risks). The excerpt only partially covers the broad claim, supporting some KO-side general economic and geopolitical risk factors but missing most of the specific cited details from both KO and PEP sources referenced in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is from KO's MD&A section describing its business model and operations, not from its risk factors section. It does not address any of the specific risk claims made in the statement\u2014such as inflationary input-cost pressures, supply-chain concentration, AI regulatory risks, bottling-partner financial difficulties, cybersecurity threats, sustainability regulations, data-privacy compliance, or alcohol-beverage expansion risks. The passage provides general business description context but does not support or contradict the specific risk factor claims being evaluated.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is a generic boilerplate risk factor disclaimer that simply refers readers to the Annual Report on Form 10-K. It contains no specific information about input-cost pressures, supply-chain concentration, AI regulations, bottling-partner risks, consumer preference risks, tariffs, cybersecurity, sustainability regulations, data-privacy compliance, agricultural commodity inputs, or alcohol-beverage expansion. None of the specific claims about KO or PEP risk factors can be supported or contradicted by this passage.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from KO's filing and supports several elements of the claim: inflationary pressures continuing into 2026, cybersecurity threats, supply-chain disruptions, and tariff risks. However, the passage does not directly address all the specific claims made\u2014such as KO's sole-source supplier risks, AI/new technology regulatory risks, bottling-partner cascade risks, alcohol-beverage expansion risks, or PEP-specific elements (key-customer concentration quote, specific tariff countries, agricultural commodity inputs for snacks, sustainability/data-privacy risks). The excerpt only partially covers the broad claim, supporting some KO-side general economic and geopolitical risk factors but missing most of the specific cited details from both KO and PEP sources referenced in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from KO's filing and supports several elements of the claim: inflationary pressures continuing into 2026, cybersecurity threats, supply-chain disruptions, and tariff risks. However, the passage does not directly address all the specific claims made\u2014such as KO's sole-source supplier risks, AI/new technology regulatory risks, bottling-partner cascade risks, alcohol-beverage expansion risks, or PEP-specific elements (key-customer concentration quote, specific tariff countries, agricultural commodity inputs for snacks, sustainability/data-privacy risks). The excerpt only partially covers the broad claim, supporting some KO-side general economic and geopolitical risk factors but missing most of the specific cited details from both KO and PEP sources referenced in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from KO's filing and supports several elements of the claim: inflationary pressures continuing into 2026, cybersecurity threats, supply-chain disruptions, and tariff risks. However, the passage does not directly address all the specific claims made\u2014such as KO's sole-source supplier risks, AI/new technology regulatory risks, bottling-partner cascade risks, alcohol-beverage expansion risks, or PEP-specific elements (key-customer concentration quote, specific tariff countries, agricultural commodity inputs for snacks, sustainability/data-privacy risks). The excerpt only partially covers the broad claim, supporting some KO-side general economic and geopolitical risk factors but missing most of the specific cited details from both KO and PEP sources referenced in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from KO's filing and supports several elements of the claim: inflationary pressures continuing into 2026, cybersecurity threats, supply-chain disruptions, and tariff risks. However, the passage does not directly address all the specific claims made\u2014such as KO's sole-source supplier risks, AI/new technology regulatory risks, bottling-partner cascade risks, alcohol-beverage expansion risks, or PEP-specific elements (key-customer concentration quote, specific tariff countries, agricultural commodity inputs for snacks, sustainability/data-privacy risks). The excerpt only partially covers the broad claim, supporting some KO-side general economic and geopolitical risk factors but missing most of the specific cited details from both KO and PEP sources referenced in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from KO's filing and supports several elements of the claim: inflationary pressures continuing into 2026, cybersecurity threats, supply-chain disruptions, and tariff risks. However, the passage does not directly address all the specific claims made\u2014such as KO's sole-source supplier risks, AI/new technology regulatory risks, bottling-partner cascade risks, alcohol-beverage expansion risks, or PEP-specific elements (key-customer concentration quote, specific tariff countries, agricultural commodity inputs for snacks, sustainability/data-privacy risks). The excerpt only partially covers the broad claim, supporting some KO-side general economic and geopolitical risk factors but missing most of the specific cited details from both KO and PEP sources referenced in the claim.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from PEP's filing and supports several elements of the claim about PEP: demand risk tied to consumer preferences is extensively covered, and tariff impacts on products are mentioned (though not specifically calling out U.S. tariffs on China, EU, Canada, and Mexico in this excerpt). However, the passage does not address KO-specific claims (inflationary input costs, sole-source suppliers, AI regulatory risks, bottling-partner model risks, alcohol-beverage expansion), nor does it cover the shared risks (cybersecurity, sustainability regulations, data-privacy) or PEP's agricultural commodity exposure for snack foods. The passage only partially supports the broader claim, covering one dimension of PEP's risk profile.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from PEP's filing and supports several elements of the claim about PEP: demand risk tied to consumer preferences is extensively covered, and tariff impacts on products are mentioned (though not specifically calling out U.S. tariffs on China, EU, Canada, and Mexico in this excerpt). However, the passage does not address KO-specific claims (inflationary input costs, sole-source suppliers, AI regulatory risks, bottling-partner model risks, alcohol-beverage expansion), nor does it cover the shared risks (cybersecurity, sustainability regulations, data-privacy) or PEP's agricultural commodity exposure for snack foods. The passage only partially supports the broader claim, covering one dimension of PEP's risk profile.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from PEP's filing and supports several elements of the claim about PEP: demand risk tied to consumer preferences is extensively covered, and tariff impacts on products are mentioned (though not specifically calling out U.S. tariffs on China, EU, Canada, and Mexico in this excerpt). However, the passage does not address KO-specific claims (inflationary input costs, sole-source suppliers, AI regulatory risks, bottling-partner model risks, alcohol-beverage expansion), nor does it cover the shared risks (cybersecurity, sustainability regulations, data-privacy) or PEP's agricultural commodity exposure for snack foods. The passage only partially supports the broader claim, covering one dimension of PEP's risk profile.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from PEP's filing and supports several elements of the claim about PEP: demand risk tied to consumer preferences is extensively covered, and tariff impacts on products are mentioned (though not specifically calling out U.S. tariffs on China, EU, Canada, and Mexico in this excerpt). However, the passage does not address KO-specific claims (inflationary input costs, sole-source suppliers, AI regulatory risks, bottling-partner model risks, alcohol-beverage expansion), nor does it cover the shared risks (cybersecurity, sustainability regulations, data-privacy) or PEP's agricultural commodity exposure for snack foods. The passage only partially supports the broader claim, covering one dimension of PEP's risk profile.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from PEP's filing and supports several elements of the claim about PEP: demand risk tied to consumer preferences is extensively covered, and tariff impacts on products are mentioned (though not specifically calling out U.S. tariffs on China, EU, Canada, and Mexico in this excerpt). However, the passage does not address KO-specific claims (inflationary input costs, sole-source suppliers, AI regulatory risks, bottling-partner model risks, alcohol-beverage expansion), nor does it cover the shared risks (cybersecurity, sustainability regulations, data-privacy) or PEP's agricultural commodity exposure for snack foods. The passage only partially supports the broader claim, covering one dimension of PEP's risk profile.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from PEP's filing and supports several elements of the claim about PEP: demand risk tied to consumer preferences is extensively covered, and tariff impacts on products are mentioned (though not specifically calling out U.S. tariffs on China, EU, Canada, and Mexico in this excerpt). However, the passage does not address KO-specific claims (inflationary input costs, sole-source suppliers, AI regulatory risks, bottling-partner model risks, alcohol-beverage expansion), nor does it cover the shared risks (cybersecurity, sustainability regulations, data-privacy) or PEP's agricultural commodity exposure for snack foods. The passage only partially supports the broader claim, covering one dimension of PEP's risk profile.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 3,
+          "reason": "The passage is from PEP's filing and supports several elements of the claim about PEP: demand risk tied to consumer preferences is extensively covered, and tariff impacts on products are mentioned (though not specifically calling out U.S. tariffs on China, EU, Canada, and Mexico in this excerpt). However, the passage does not address KO-specific claims (inflationary input costs, sole-source suppliers, AI regulatory risks, bottling-partner model risks, alcohol-beverage expansion), nor does it cover the shared risks (cybersecurity, sustainability regulations, data-privacy) or PEP's agricultural commodity exposure for snack foods. The passage only partially supports the broader claim, covering one dimension of PEP's risk profile.",
+          "judge": "sonnet"
+        },
+        {
+          "claim": "Both KO and PEP face a broadly similar risk landscape as large global beverage companies, but their filings reveal some differences in emphasis. KO's risk factors highlight inflationary input-cost pressures\u2014explicitly noting that 'inflationary pressures on certain input and other costs' are expected to continue into 2026 [KO:S4]\u2014supply-chain concentration risks from limited or sole-source suppliers [KO:S3], and the evolving regulatory and compliance burden around new technologies such as AI [KO:S6]. KO also flags risks tied to its franchise/bottling-partner model, where operational disruptions or financial difficulties at bottling partners can cascade to KO's results [KO:S3]. PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration\u2014noting that a significant reduction in sales to any key customer 'has adversely affected and can continue to adversely affect' its business [PEP:S2]\u2014as well as tariff-driven supply-chain cost increases, specifically calling out U.S. tariffs on China, the EU, Canada, and Mexico [PEP:S3]. Both companies cite cybersecurity threats [KO:S4][PEP:S1], evolving sustainability and environmental regulations [KO:S7][PEP:S5], and data-privacy compliance costs [KO:S7][PEP:S6] as material risks. PEP's unique exposure to agricultural commodity inputs (potatoes, corn, wheat, oats, oranges, etc.) tied to its snack-food business adds a dimension not present in KO's disclosures [PEP:S4], while KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5].",
+          "faithful": false,
+          "score": 2,
+          "reason": "The passage is PepsiCo's business overview section describing company operations, segments, and products. It does not address any of the specific risk factors mentioned in the claim\u2014such as inflationary input-cost pressures, supply-chain concentration, AI regulatory risks, bottling-partner model risks, consumer preference demand risks, key-customer concentration, tariff-driven cost increases, cybersecurity threats, sustainability regulations, data-privacy compliance, agricultural commodity inputs, or KO's alcohol-beverage expansion. The passage provides general business context but does not support or contradict the specific risk-factor claims being made.",
+          "judge": "sonnet"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "Exceptionally well-structured report with clear parallel treatment of both companies. Citation usage is consistent and granular throughout. The cross-axis takeaway is analytically sharp and avoids false equivalence. Minor deduction on honesty/insufficient-data dimension: the report states KO's alcohol expansion 'appears as one element within a broader discussion' rather than a standalone risk, which is a reasonable hedge, but the report could be slightly more explicit when drawing inferences that go beyond direct citation (e.g., characterizing KO's risk profile as 'more operationally and structurally concentrated than PEP's' is an interpretive claim not fully substantiated by the cited sources alone). Overall, this is a high-quality comparative risk analysis."
+    },
+    "incorporation": {
+      "n": 2,
+      "incorporated": 2,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "risk_factors",
+          "claim": "KO's alcohol-beverage expansion introduces incremental licensing and regulatory compliance risks [KO:S5]",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "risk_factors",
+          "claim": "PEP's disclosures place comparably strong emphasis on demand risk tied to consumer preferences and key-customer concentration [PEP:S2]",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

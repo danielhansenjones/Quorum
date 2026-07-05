@@ -1,0 +1,832 @@
+{
+  "case_id": "happy_aapl_msft_profitability",
+  "request_id": "05d52797-258b-47ea-8162-fac44e78b23c",
+  "final_status": "ok",
+  "elapsed_s": 0.8452223730018886,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "rebut",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Profitability\n\nBoth Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%).\n\nOn growth trajectory, Microsoft's revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase driven by cloud and AI tailwinds, with uninterrupted year-over-year gains across all four years. Apple's revenue path was more volatile over the same span: it declined from $394.3B [AAPL:Q0] to $383.3B in FY2023 before recovering to $416.2B in FY2025 [AAPL:Q3]\u2014a net gain of roughly 5.5% but with an intervening contraction rather than a smooth upward trend. On the earnings side, Apple's FY2025 net income of $112.0B [AAPL:Q7] rebounded strongly from a multi-year decline that ran from FY2022 through FY2024 ($99.8B \u2192 $97.0B \u2192 $93.7B [AAPL:Q6]). Microsoft's net income grew from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] over the period, though not without interruption\u2014earnings were essentially flat between FY2022 and FY2023 before accelerating sharply in FY2024 and FY2025, a pattern that mirrors rather than clearly contrasts with Apple's experience. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.\n\n**AAPL:** Apple is an exceptionally profitable business at scale, with FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], the latter recovering strongly from a multi-year earnings decline that ran from FY2022 through FY2024. However, its gross margin of roughly 47% (gross profit $195.2B [AAPL:Q15] on $416.2B revenue [AAPL:Q3]) and operating margin of ~32% reflect a hardware-heavy mix that structurally constrains margins relative to pure-software peers, and top-line growth has been uneven over the past three fiscal years.\n\n**MSFT:** Microsoft demonstrates superior margin quality and a faster overall growth trajectory, with FY2025 revenue expanding to $281.7B [MSFT:Q3] from $198.3B in FY2022 [MSFT:Q0] and net income reaching $101.8B [MSFT:Q7], implying a net margin of ~36%. Its gross profit of $193.9B [MSFT:Q15] on that revenue base reflects a gross margin of approximately 69%, and operating income of $128.5B [MSFT:Q11] yields an operating margin near 45.6%, both well above Apple's comparable figures. Net income growth was front-loaded toward FY2024\u2013FY2025 after a flat FY2022\u2013FY2023 period, but the cumulative expansion is substantial.\n\n---\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "394328000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "383285000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "391035000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "416161000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "99803000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "96995000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "93736000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "112010000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "119437000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "114301000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "123216000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "133050000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "170782000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "169148000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "180683000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "195201000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "198270000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "211915000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "245122000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "281724000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "72738000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "72361000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "88136000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "101832000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "83383000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "88523000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "109433000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "128528000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "135620000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "146052000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "171008000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "193893000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "72738000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "112010000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "profitability": {
+        "axis": "profitability",
+        "groundedness": "ok",
+        "notes": "All key absolute figures are confirmed by retrieved data: AAPL FY2025 revenue $416.2B, net income $112.0B, gross profit $195.2B, operating income $133.1B; MSFT FY2025 revenue $281.7B, net income $101.8B, gross profit $193.9B, operating income $128.5B. All derived margins (net, gross, operating) are arithmetically correct. MSFT FY2022 revenue $198.3B and AAPL FY2022 revenue $394.3B confirmed; growth percentages are accurate on an endpoint basis. The two previously flagged claims (MSFT 'more consistency' and AAPL 'FY2024 trough') were adequately addressed in prior rebuttals and are not re-flagged. One minor observation: the ~5.5% AAPL revenue growth figure is technically accurate endpoint-to-endpoint but masks an intermediate FY2023 dip to $383.3B \u2014 the text's framing of 'modest growth' is directionally fair but slightly flattering.",
+        "missed_evidence": [
+          "AAPL FY2023 revenue was $383.3B \u2014 a year-over-year decline from FY2022's $394.3B \u2014 meaning Apple's revenue path was not a smooth modest rise but included a contraction before recovering. The 5.5% endpoint growth figure is accurate but the narrative of 'grew more modestly' understates the volatility in Apple's top line relative to Microsoft's consistent year-over-year revenue increases every year (FY2022\u2192FY2023\u2192FY2024\u2192FY2025: $198.3B\u2192$211.9B\u2192$245.1B\u2192$281.7B)."
+        ]
+      }
+    },
+    "cross_axis": [
+      "Apple's revenue trajectory included an actual FY2023 contraction ($394.3B\u2192$383.3B) before recovering, which sharpens the contrast with Microsoft's unbroken year-over-year revenue growth across all four fiscal years. This pattern is consistent with the previously flagged (and rebutted) net income trajectory issue and reinforces that Apple's 'modest growth' framing understates the choppiness of its top-line path."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "profitability",
+        "claim": "Apple's revenue grew more modestly from $394.3B to $416.2B, roughly 5.5% over the same span.",
+        "flag": "weakly_supported",
+        "reason": "The endpoint figures and 5.5% growth rate are arithmetically correct, but the framing implies a smooth modest upward trajectory. The data show AAPL revenue actually declined in FY2023 to $383.3B before recovering \u2014 a pattern more volatile than 'modest growth' implies, and a meaningful contrast to Microsoft's uninterrupted year-over-year revenue increases across all four years.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "AAPL",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 394328000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000320193-24-000123\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 383285000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000320193-25-000079\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 391035000000.0, \"unit\": \""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 198270000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001564590-22-026876\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 211915000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 245122000000.0, \"unit\": \""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "AAPL",
+          "key": "profitability.gross_profit",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 195201000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000320193-25-000079\", \"resolved_concept\": \"us-gaap:GrossProfit\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.gross_profit",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 193893000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:GrossProfit\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "AAPL",
+          "key": "profitability.operating_income",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 133050000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000320193-25-000079\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.operating_income",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 128528000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "AAPL",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 112010000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000320193-25-000079\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2022",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 72738000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001564590-22-026876\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 101832000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}]"
+      }
+    ],
+    "turns_used": 4,
+    "duration_ms": 33
+  },
+  "rebuttals": [
+    {
+      "source_axis": "profitability",
+      "claim": "Microsoft's net income compounded from $72.7B to $101.8B with more consistency",
+      "disposition": "revised",
+      "reason": "The data confirm MSFT net income was essentially flat FY2022\u2192FY2023 ($72.738B\u2192$72.361B) before accelerating sharply in FY2024 and FY2025, mirroring rather than contrasting with Apple's pattern. The claim of 'more consistency' is not supportable; a corrected version would note that MSFT net income grew from $72.7B to $101.8B over the period, but with a flat intermediate year before a sharp acceleration in FY2024\u2013FY2025.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+        "ticker": "MSFT",
+        "accession": "0001564590-22-026876",
+        "concept": "us-gaap:NetIncomeLoss",
+        "normalized": null,
+        "value": "72738000000.0",
+        "period": "FY2022",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "profitability",
+      "claim": "Apple's FY2025 net income of $112.0B rebounded strongly from the FY2024 trough of $93.7B",
+      "disposition": "revised",
+      "reason": "The evidence shows AAPL net income declined across three consecutive years (FY2022: $99.8B, FY2023: $97.0B, FY2024: $93.7B) before rebounding to $112.0B in FY2025; framing FY2024 alone as the 'trough' is accurate in isolation but misleadingly omits the multi-year downtrend. A corrected version would state that Apple's FY2025 net income of $112.0B rebounded strongly from a multi-year decline that ran from FY2022 through FY2024.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+        "ticker": "AAPL",
+        "accession": "0000320193-25-000079",
+        "concept": "us-gaap:NetIncomeLoss",
+        "normalized": null,
+        "value": "112010000000.0",
+        "period": "FY2025",
+        "unit": "USD"
+      }
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 34,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Apple and Microsoft are highly profitable mega-cap franchises, but they differ in trajectory and margin structure. Apple generated FY2025 revenue of $416.2B [AAPL:Q3] and net income of $112.0B [AAPL:Q7], implying a net margin of roughly 26.9%, while Microsoft posted FY2025 revenue of $281.7B [MSFT:Q3] and net income of $101.8B [MSFT:Q7], implying a net margin of approximately 36.1%\u2014meaningfully higher than Apple's. On gross profit, Apple reached $195.2B [AAPL:Q15] versus Microsoft's $193.9B [MSFT:Q15], nearly identical in absolute dollars despite Apple's much larger revenue base, reflecting Apple's lower gross margin (~47%) compared to Microsoft's (~69%). Operating income tells a similar story: Apple's $133.1B [AAPL:Q11] versus Microsoft's $128.5B [MSFT:Q11] are close in absolute terms, but Microsoft's operating margin (~45.6%) far exceeds Apple's (~32.0%). Critically, Microsoft's growth trajectory is steeper\u2014revenue rose from $198.3B in FY2022 [MSFT:Q0] to $281.7B in FY2025 [MSFT:Q3], a ~42% increase, driven by cloud and AI tailwinds, while Apple's revenue grew more modestly from $394.3B [AAPL:Q0] to $416.2B [AAPL:Q3], roughly 5.5% over the same span. Apple's FY2025 net income of $112.0B [AAPL:Q7] did rebound strongly from the FY2024 trough of $93.7B [AAPL:Q6], but Microsoft's net income compounded from $72.7B [MSFT:Q4] to $101.8B [MSFT:Q7] with more consistency. Overall, Microsoft leads on margin quality and growth rate, while Apple leads on absolute revenue scale.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 5,
+      "notes": "Exemplary report. Margins are computed explicitly and correctly from cited figures, growth trajectories are traced year-by-year with appropriate nuance (e.g., noting Microsoft's FY22-23 earnings flatness rather than painting a uniformly rosy picture), and the hardware-vs-software structural explanation for margin differences is well-grounded. The report avoids overclaiming: it acknowledges Apple's earnings recovery without hiding the prior multi-year decline, and it correctly notes that Microsoft's earnings pattern 'mirrors rather than clearly contrasts' with Apple's\u2014an honest qualification that lesser reports would omit. Citation tags are consistently applied to every factual claim. The per-company summaries at the end add useful synthesis without redundancy. No material weaknesses identified."
+    },
+    "incorporation": {
+      "n": 1,
+      "incorporated": 1,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "profitability",
+          "claim": "Apple's revenue grew more modestly from $394.3B to $416.2B, roughly 5.5% over the same span.",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

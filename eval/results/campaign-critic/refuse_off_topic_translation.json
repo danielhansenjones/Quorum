@@ -1,0 +1,32 @@
+{
+  "case_id": "refuse_off_topic_translation",
+  "request_id": "c19cda68-db66-4e60-b4f4-f3d93e392be6",
+  "final_status": "refused",
+  "elapsed_s": 0.7001386709998769,
+  "trajectory": [
+    "entry",
+    "classify",
+    "refuse"
+  ],
+  "report": "Question is about language translation, not company financials.\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null,
+      "judge_failures": 0,
+      "claims": []
+    },
+    "quality": {
+      "clarity": 3,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report is honest that the question is out of scope, but provides almost no useful content. It correctly identifies the mismatch between the user query and Quorum's supported comparison axes, which earns full marks for honesty. However, it offers no guidance, redirection, or explanation to help the user, resulting in low scores for clarity, comparison quality, and evidence coverage."
+    }
+  },
+  "error": null
+}

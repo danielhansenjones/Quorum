@@ -1,0 +1,1412 @@
+{
+  "case_id": "happy_multi_axis_cost_pg",
+  "request_id": "4174dc53-83e2-4f26-a383-73e5da1e327c",
+  "final_status": "ok",
+  "elapsed_s": 1.2357294270004786,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Profitability\n\nCostco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms, PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window \u2014 COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative) \u2014 highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.\n\n**COST:** Costco's profitability is defined by high-volume, low-margin retailing: FY2025 revenues reached ~$275B [COST:Q3] while operating income was ~$10.4B [COST:Q11], yielding an operating margin of roughly 3.8%. Despite structurally thin margins, the company has delivered strong earnings momentum, with net income compounding from ~$5.8B in FY2022 [COST:Q4] to ~$8.1B in FY2025 [COST:Q7], a ~39% cumulative gain driven by membership fee leverage and volume growth.\n\n**PG:** Procter & Gamble demonstrates the pricing power of a branded consumer-goods portfolio, converting ~$84B in FY2025 revenues [PG:Q3] into ~$20.5B of operating income [PG:Q11] and ~$16.0B of net income [PG:Q7], for operating and net margins of roughly 24% and 19%, respectively. Earnings growth has been more modest in percentage terms \u2014 net income rose only ~8% cumulatively from FY2022 [PG:Q4] to FY2025 [PG:Q7] \u2014 reflecting a mature, already highly profitable business rather than any deterioration in quality.\n\n---\n\n## Leverage\n\nCostco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.\n\n**COST:** Costco operates with very modest leverage: FY2025 total debt of ~$5.79B ($5,713M long-term [COST:Q3] plus $75M current [COST:Q7]) is dwarfed by $14,161M in cash [COST:Q15], leaving the company in a comfortable net cash position relative to its $29,164M equity base [COST:Q11]. Debt levels have been broadly stable and declining since FY2022's $6,557M total, reflecting disciplined balance-sheet management.\n\n**PG:** Procter & Gamble carries a much larger absolute debt burden, with FY2025 total debt of ~$34.48B comprising $24,995M in long-term debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11]. While equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19] provide meaningful coverage, PG's reliance on commercial paper and elevated current maturities introduce refinancing considerations that Costco does not face.\n\n---\n\n## Cross-Axis Takeaway\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-23-000042",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "6484000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "5377000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "5794000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "5713000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-23-000042",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "73000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "1081000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "103000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "75000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-23-000042",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "20642000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000033",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "25058000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "23622000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "29164000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-23-000042",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "10203000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "13700000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "9906000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "14161000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-23-000073",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "22848000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "24378000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "25269000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "24995000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-23-000073",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "3647000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "3951000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "3838000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "5377000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-23-000073",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "4805000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "6236000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "3327000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "4108000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "normalized": null,
+      "value": "46854000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "normalized": null,
+      "value": "47065000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "normalized": null,
+      "value": "50559000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "normalized": null,
+      "value": "52284000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "normalized": null,
+      "value": "7214000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "normalized": null,
+      "value": "8246000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "normalized": null,
+      "value": "9482000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "normalized": null,
+      "value": "9556000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "226954000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "242290000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "254453000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "275235000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "5844000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "6292000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "7367000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8099000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "7793000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "8114000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "9285000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "10383000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "80187000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "82006000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "84039000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "84284000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "14742000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "14653000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "14879000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "15974000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "17813000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "18134000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "18545000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "20451000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "failed",
+    "per_axis": {
+      "leverage": {
+        "axis": "leverage",
+        "groundedness": "ok",
+        "notes": "",
+        "missed_evidence": []
+      },
+      "profitability": {
+        "axis": "profitability",
+        "groundedness": "ok",
+        "notes": "",
+        "missed_evidence": []
+      }
+    },
+    "cross_axis": [],
+    "flagged_claims": [],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:LongTermDebtNoncurrent",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 6484000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-23-000042\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 5377000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 5794000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000909832-25-000101\", \""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:LongTermDebtCurrent",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 73000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-23-000042\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 1081000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 103000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000909832-25-000101\", \"resolved_"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:LongTermDebtNoncurrent",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 22848000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000080424-23-000073\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 24378000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000080424-24-000083\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 25269000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000080424-25-000076\""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:LongTermDebtCurrent",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 3647000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000080424-23-000073\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 3951000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000080424-24-000083\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 3838000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000080424-25-000076\", \"resolv"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:StockholdersEquity",
+          "periods": [
+            "FY2025",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 20642000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-23-000042\", \"resolved_concept\": \"us-gaap:StockholdersEquity\"}, {\"value\": 29164000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000909832-26-000029\", \"resolved_concept\": \"us-gaap:StockholdersEquity\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 14161000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000909832-26-000029\", \"resolved_concept\": \"us-gaap:CashAndCashEquivalentsAtCarryingValue\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:StockholdersEquity",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:CommercialPaper",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 4108000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000080424-25-000076\", \"resolved_concept\": \"us-gaap:CommercialPaper\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2025",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 226954000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 275235000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us-gaap:Revenues\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:OperatingIncomeLoss",
+          "periods": [
+            "FY2025",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 7793000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 10383000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:NetIncomeLoss",
+          "periods": [
+            "FY2025",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 5844000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000909832-24-000049\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 8099000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000909832-25-000101\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:Revenues",
+          "periods": [
+            "FY2025",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 80187000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000080424-24-000083\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 84284000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000080424-25-000076\", \"resolved_concept\": \"us-gaap:Revenues\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:OperatingIncomeLoss",
+          "periods": [
+            "FY2025",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 17813000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000080424-24-000083\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 20451000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000080424-25-000076\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:NetIncomeLoss",
+          "periods": [
+            "FY2025",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 14742000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000080424-24-000083\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 15974000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000080424-25-000076\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:StockholdersEquity",
+          "periods": [
+            "FY2025",
+            "FY2024",
+            "FY2023",
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "PG Procter Gamble stockholders equity FY2025",
+          "tickers": [
+            "PG"
+          ],
+          "sections": [
+            "balance_sheet"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 52284000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000080424-26-000060\", \"resolved_concept\": \"us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest\"}]"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Procter Gamble total equity shareholders 2025 balance sheet",
+          "tickers": [
+            "PG"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000080424-25-000076:item_15_exhibits:0000\", \"score\": 0.5769231, \"ticker\": \"PG\", \"section\": \"item_15_exhibits\", \"text_excerpt\": \"Item\\u00a015. \\nExhibits and Financial Statement Schedules.\\n1.\\nFinancial Statements:\\nThe following Consolidated Financial Statements of The Procter\\u00a0& Gamble Company and subsidiaries, management's report and the reports of the independent registered"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "COST",
+          "key": "us-gaap:LongTermDebt",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 295
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 60,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco carries a meaningfully smaller and more conservatively structured debt load than Procter & Gamble. In FY2025, COST's total debt stood at roughly $5.79 billion, comprising $5,713M of long-term noncurrent debt [COST:Q3] and $75M of current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 implying COST is in a net cash position. PG's FY2025 total debt is substantially larger at approximately $34.48 billion, composed of $24,995M in long-term noncurrent debt [PG:Q3], $5,377M in current maturities [PG:Q7], and $4,108M in commercial paper [PG:Q11], set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19]. PG's gross debt-to-equity ratio is therefore roughly 0.66x versus COST's roughly 0.20x, and unlike COST, PG's cash does not fully cover its debt. Both companies have kept their long-term debt relatively stable over the FY2022\u2013FY2025 window, though PG's commercial paper usage adds a layer of short-term refinancing risk absent from COST's capital structure.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and Procter & Gamble represent two very different profitability profiles despite both showing consistent earnings growth. COST operates on razor-thin margins characteristic of warehouse retail: FY2025 revenues of ~$275B [COST:Q3] generated operating income of ~$10.4B [COST:Q11] and net income of ~$8.1B [COST:Q7], implying an operating margin of roughly 3.8% and a net margin of roughly 2.9%. PG, by contrast, earns premium consumer-brand margins: FY2025 revenues of ~$84B [PG:Q3] produced operating income of ~$20.5B [PG:Q11] and net income of ~$16.0B [PG:Q7], translating to an operating margin of roughly 24% and a net margin of roughly 19%. In absolute dollar terms PG generates nearly twice the operating income of COST on roughly one-third the revenue. Both companies have grown earnings steadily over the four-year window\u2014COST's net income rose from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] (~39% cumulative), while PG's net income moved from $14.7B [PG:Q4] to $16.0B [PG:Q7] (~8% cumulative)\u2014highlighting that COST is growing its earnings base faster in percentage terms, albeit from a much lower margin starting point.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "Exceptionally well-structured report with clean parallel organization across both the summary and per-company breakdowns. Margin calculations are explicitly derived from cited figures, making the arithmetic transparent and verifiable. The profitability section does an excellent job contextualizing COST's faster percentage growth against PG's higher absolute margin base \u2014 a nuanced point that lesser reports would miss. The leverage section correctly distinguishes gross debt, net cash position, and refinancing risk (commercial paper) rather than collapsing everything into a single ratio. Citation density is high and consistent throughout. The honesty score is docked one point because the Cross-Axis Takeaway section appears to be missing or truncated \u2014 the report ends mid-section with no concluding synthesis, which is a meaningful omission for a comparative report. There is also no explicit acknowledgment of data limitations or confidence intervals on the approximated figures, though the use of '~' notation partially mitigates this. Overall, the two completed sections are among the clearest and most rigorous comparative financial writing seen in this format."
+    },
+    "incorporation": {
+      "n": 0,
+      "incorporated": 0,
+      "rate": null,
+      "claims": []
+    }
+  },
+  "error": null
+}

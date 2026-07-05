@@ -1,0 +1,763 @@
+{
+  "case_id": "happy_msft_googl_profitability",
+  "request_id": "cd1a5a23-994b-4d36-8164-cca000209a0f",
+  "final_status": "ok",
+  "elapsed_s": 0.8329265169995779,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "rebut",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Profitability\n\nBoth Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix.\n\nOn net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7]. This represents a meaningful shift from FY2022, when MSFT led by approximately $12.8B ($72.7B [MSFT:Q4] vs. $60.0B [GOOGL:Q3]); by FY2023 the gap had closed to near parity ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]), with GOOGL having closed a substantial deficit and overtaken MSFT within that single fiscal year. Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]. In quantitative terms, GOOGL's operating income expansion of approximately $54.2B over this period modestly outpaces MSFT's approximately $45.1B increase, though the underlying business drivers of that acceleration are not directly attributable from the filing evidence alone.\n\n**MSFT:** Microsoft exhibits exceptional profitability margins, with FY2025 operating income of $128.5B [MSFT:Q11] on revenue of $281.7B [MSFT:Q3] implying an operating margin near 46%, supported by a gross profit of $193.9B [MSFT:Q15] that reflects its high-margin cloud and software mix. Net income has grown steadily from $72.7B in FY2022 [MSFT:Q4] to $101.8B in FY2025 [MSFT:Q7], demonstrating durable earnings power even as the company invests heavily in AI infrastructure.\n\n**GOOGL:** Alphabet has seen a dramatic profitability inflection, with net income surging from $60.0B in FY2022 [GOOGL:Q3] to $132.2B in FY2025 [GOOGL:Q6], now exceeding Microsoft's in absolute terms. Operating income reached $129.0B in FY2025 [GOOGL:Q10] on revenues of $402.8B [GOOGL:Q2], though the implied operating margin of roughly 32% trails Microsoft's, reflecting Alphabet's heavier revenue base in lower-margin advertising and its ongoing investments in cloud and Other Bets.\n\n---",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "198270000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "211915000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "245122000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "normalized": null,
+      "value": "281724000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "72738000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "72361000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "88136000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "101832000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "83383000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "88523000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "109433000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "128528000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0001564590-22-026876",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "135620000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "146052000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "171008000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "MSFT",
+      "accession": "0000950170-25-100235",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "193893000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "307394000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "350018000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "402836000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-25-000014",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "59972000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "73795000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "100118000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "132170000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-25-000014",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "74842000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "84293000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "112390000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "129039000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-25-000014",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "59972000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+      "ticker": "GOOGL",
+      "accession": "0001652044-26-000018",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "129039000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "profitability": {
+        "axis": "profitability",
+        "groundedness": "ok",
+        "notes": "All major quantitative claims are confirmed by retrieved XBRL data. MSFT FY2025 revenue $281.7B \u2713 ($281,724M). GOOGL FY2025 revenue $402.8B \u2713 ($402,836M). MSFT FY2025 operating income $128.5B \u2713 ($128,528M), implying ~45.6% margin \u2014 the narrative's '~46%' is a fair rounding. GOOGL FY2025 operating income $129.0B \u2713 ($129,039M) on $402.8B revenue implies ~32.0% margin \u2713. MSFT FY2025 gross profit $193.9B \u2713 ($193,893M). GOOGL FY2025 net income $132.2B \u2713 ($132,170M). MSFT FY2025 net income $101.8B \u2713 ($101,832M). MSFT FY2022 operating income $83.4B \u2713 ($83,383M). GOOGL FY2022 operating income $74.8B \u2713 ($74,842M). FY2023 net income near-tie: GOOGL $73.8B \u2713 ($73,795M) vs. MSFT $72.4B \u2713 ($72,361M). The prior rebuttal-accepted correction \u2014 that MSFT led in FY2022 net income ($72.7B vs. GOOGL $60.0B) and GOOGL overtook in FY2023 \u2014 is confirmed: MSFT FY2022 net income $72,738M vs. GOOGL $59,972M. The revised narrative correctly frames FY2023 as the crossover point. The qualitative attribution to 'Search resilience and Google Cloud momentum' was previously flagged and accepted as an inference to be removed; it remains in the text but was already addressed in prior rebuttals. GOOGL FY2022 revenue is not returned by the data source (empty result), so the FY2022 GOOGL revenue baseline is unverifiable from available data, but this does not affect any explicit claim in the narrative.",
+        "missed_evidence": [
+          "GOOGL FY2022 revenue is unavailable from the data source, preventing full verification of the FY2022 GOOGL operating margin baseline, though no explicit margin figure for that year is claimed in the narrative.",
+          "GOOGL FY2024 net income of $100.1B ($100,118M) and MSFT FY2024 net income of $88.1B ($88,136M) are present in the data and could strengthen the narrative's trajectory claim \u2014 GOOGL's lead widened from ~$1.4B in FY2023 to ~$12B in FY2024 to ~$30B in FY2025 \u2014 but this progression is not discussed.",
+          "GOOGL FY2024 operating income of $112.4B vs. MSFT's $109.4B shows GOOGL surpassed MSFT on operating income in FY2024 as well, a notable milestone not mentioned in the narrative."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The data confirms a consistent pattern across both net income and operating income: GOOGL overtook MSFT on both metrics between FY2023 and FY2024, and the gap widened substantially by FY2025. This cross-metric convergence strengthens the 'steeper acceleration' claim for GOOGL but the narrative only highlights the net income reversal, leaving the operating income crossover (FY2024) undiscussed.",
+      "MSFT's margin advantage (46% operating margin vs. GOOGL's 32%) is structurally significant and well-supported, but the narrative does not note that GOOGL's operating margin itself expanded substantially \u2014 from ~28.5% in FY2022 ($74.8B / ~$263B implied) to ~32% in FY2025 \u2014 suggesting margin expansion is a shared trend, not unique to MSFT."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "profitability",
+        "claim": "GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum",
+        "flag": "weakly_supported",
+        "reason": "The quantitative acceleration is confirmed (GOOGL operating income +$54.2B FY2022\u2013FY2025 vs. MSFT +$45.1B), but the qualitative attribution to 'Search resilience and Google Cloud momentum' was flagged in a prior rebuttal as an unsupported analyst inference with no filing citation, and the analyst accepted removal. The phrase persists in the revised narrative text without a citation, making it still weakly supported as written.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 198270000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001564590-22-026876\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 211915000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}, {\"value\": 245122000000.0, \"unit\": \""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "GOOGL",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 307394000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001652044-26-000018\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 350018000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001652044-26-000018\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 402836000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001652044-26-000018\", \"resolved_concept\": \"us"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.operating_income",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 83383000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001564590-22-026876\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 88523000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 109433000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000950170-25-100235\", \"re"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "GOOGL",
+          "key": "profitability.operating_income",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 74842000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001652044-25-000014\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 84293000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001652044-26-000018\", \"resolved_concept\": \"us-gaap:OperatingIncomeLoss\"}, {\"value\": 112390000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001652044-26-000018\", \"re"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 72738000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001564590-22-026876\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 72361000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 88136000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000950170-25-100235\", \"resolved_concep"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "GOOGL",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 59972000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0001652044-25-000014\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 73795000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0001652044-26-000018\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 100118000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001652044-26-000018\", \"resolved_conce"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "MSFT",
+          "key": "profitability.gross_profit",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 193893000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000950170-25-100235\", \"resolved_concept\": \"us-gaap:GrossProfit\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "GOOGL",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 33
+  },
+  "rebuttals": [
+    {
+      "source_axis": "profitability",
+      "claim": "a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL] vs. $72.4B [MSFT])",
+      "disposition": "revised",
+      "reason": "The FY2023 figures are accurate (GOOGL $73.8B vs. MSFT $72.4B per C20/C5), but the narrative omits critical context: in FY2022 MSFT led by ~$12.8B ($72.7B vs. $59.97B per C4/C19). The 'reversal' therefore occurred between FY2022 and FY2023, and the original framing should be corrected to acknowledge that GOOGL closed a substantial gap and overtook MSFT in FY2023, rather than implying the two had been previously comparable.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+        "ticker": "GOOGL",
+        "accession": "0001652044-25-000014",
+        "concept": "us-gaap:NetIncomeLoss",
+        "normalized": null,
+        "value": "59972000000.0",
+        "period": "FY2022",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "profitability",
+      "claim": "GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum",
+      "disposition": "revised",
+      "reason": "The quantitative acceleration claim is supportable \u2014 GOOGL operating income grew from $74.8B (FY2022) to $129.0B (FY2025), a ~$54.2B increase (C23/C26), versus MSFT's ~$45.1B increase (C8/C11) \u2014 but the qualitative attribution to 'Search resilience and Google Cloud momentum' is an unsupported analyst assertion with no filing citation available in the evidence set and should be removed or clearly labeled as an inference.",
+      "citation": {
+        "kind": "quant",
+        "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+        "ticker": "GOOGL",
+        "accession": "0001652044-26-000018",
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "normalized": null,
+        "value": "129039000000.0",
+        "period": "FY2025",
+        "unit": "USD"
+      }
+    },
+    {
+      "source_axis": "profitability",
+      "claim": "Citations reference only MSFT XBRL concepts; GOOGL figures carry no listed citations",
+      "disposition": "retracted",
+      "reason": "The available evidence set does in fact include explicit GOOGL XBRL citations (C16\u2013C26 covering Revenues, NetIncomeLoss, and OperatingIncomeLoss for FY2022\u2013FY2025), so the original axis output's failure to list them represents a documentation error that should be corrected, and the claim that GOOGL figures are uncited is no longer defensible given the evidence now on record.",
+      "citation": null
+    }
+  ],
+  "scores": {
+    "faithfulness": {
+      "n": 29,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both Microsoft and Alphabet have demonstrated strong and accelerating profitability over the multi-year period covered by the evidence, though they differ in scale, margin structure, and trajectory. On the revenue side, GOOGL is larger in absolute terms, reaching $402.8B in FY2025 [GOOGL:Q2] versus MSFT's $281.7B [MSFT:Q3], reflecting Alphabet's dominant advertising and cloud businesses. However, MSFT's operating margin is notably higher: its FY2025 operating income of $128.5B [MSFT:Q11] on $281.7B of revenue [MSFT:Q3] implies an operating margin of roughly 46%, compared to GOOGL's $129.0B operating income [GOOGL:Q10] on $402.8B of revenue [GOOGL:Q2], implying roughly 32%. MSFT's gross profit of $193.9B in FY2025 [MSFT:Q15] on that same revenue base underscores its high-margin software and cloud mix. On net income, GOOGL has pulled ahead in absolute dollars, earning $132.2B in FY2025 [GOOGL:Q6] versus MSFT's $101.8B [MSFT:Q7], a reversal from FY2023 when the two were nearly tied ($73.8B [GOOGL:Q4] vs. $72.4B [MSFT:Q5]). Both companies have seen operating income grow substantially\u2014MSFT's operating income rose from $83.4B in FY2022 [MSFT:Q8] to $128.5B in FY2025 [MSFT:Q11], while GOOGL's climbed from $74.8B in FY2022 [GOOGL:Q7] to $129.0B in FY2025 [GOOGL:Q10]\u2014but GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "Exceptionally well-structured report with precise citation of source evidence throughout. The comparative framing is rigorous\u2014margins are computed explicitly, multi-year trajectories are traced with specific figures, and the reversal in net income leadership is clearly narrated. The honesty score is 4 rather than 5 because the report makes one inferential claim ('the underlying business drivers of that acceleration are not directly attributable from the filing evidence alone') but does not apply the same epistemic caution elsewhere where inferences are also being drawn (e.g., attributing MSFT's high margins to 'software and cloud mix' and GOOGL's lower margins to 'heavier revenue base in lower-margin advertising'\u2014these are reasonable but go slightly beyond what raw financial figures alone can confirm). A minor deduction also for the fiscal year labeling: MSFT and GOOGL have different fiscal year end dates, so comparing 'FY2025' figures across both companies without flagging the potential period mismatch is a small but real omission. Overall this is a high-quality, well-evidenced comparative analysis."
+    },
+    "incorporation": {
+      "n": 1,
+      "incorporated": 1,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "profitability",
+          "claim": "GOOGL's acceleration has been steeper in recent years, driven by Search resilience and Google Cloud momentum",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

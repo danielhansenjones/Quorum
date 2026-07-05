@@ -1,0 +1,614 @@
+{
+  "case_id": "happy_cost_pep_leverage",
+  "request_id": "5c6c83d0-0592-4c90-97d8-3e0c0bed9244",
+  "final_status": "ok",
+  "elapsed_s": 0.6776103750016773,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "synthesize"
+  ],
+  "report": "## Leverage\n\nCostco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].\n\n**COST:** Costco runs a conservatively leveraged balance sheet: FY2025 total debt of ~$5.79B ($5,713M long-term [COST:Q3] plus $75M current [COST:Q7]) is dwarfed by $29,164M in equity [COST:Q11] and $14,161M in cash [COST:Q15], leaving the company in a net-cash position. Debt levels have been broadly stable since FY2022 while equity has grown significantly, steadily reducing any leverage concern.\n\n**PEP:** PepsiCo carries a substantially heavier debt load, with FY2025 total debt of approximately $49.2B ($42,321M long-term [PEP:Q3] plus $6,861M short-term [PEP:Q7]) against equity of $20,406M [PEP:Q11], implying a gross debt-to-equity ratio above 2x. Cash of $9,159M [PEP:Q15] provides only partial offset, and the trajectory is toward higher leverage as long-term debt has risen from $35,657M in FY2022 [PEP:Q0] and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7].\n\n---\n\n**Cross-axis takeaway:** The leverage comparison reveals a stark structural divergence. Costco's near-net-cash position reflects a capital-light, membership-driven model that generates strong organic equity growth, affording it significant financial flexibility. PepsiCo's elevated and rising leverage is more characteristic of a mature consumer staples company that relies on debt to fund acquisitions, dividends, and buybacks \u2014 a common but riskier posture, particularly as interest rates remain elevated. On this single axis, COST presents a meaningfully lower financial risk profile than PEP.",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-23-000042",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "6484000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "5377000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "5794000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "5713000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-23-000042",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "73000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "1081000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "103000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "75000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-23-000042",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "20642000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-25-000033",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "25058000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "23622000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "29164000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-23-000042",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "10203000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "13700000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "9906000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "COST",
+      "accession": "0000909832-26-000029",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "14161000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-24-000008",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "35657000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "37595000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "37224000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "42321000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-23-000058",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "3414000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-24-000052",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "6510000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000053",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "7082000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000017",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "6861000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-24-000008",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "17149000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "18503000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "18041000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000017",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "20406000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-24-000008",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "4954000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "9711000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "8505000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000017",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "9159000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 32,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Costco and PepsiCo occupy very different positions on the leverage spectrum. In FY2025, COST carried total debt of approximately $5.79 billion, composed of $5,713M in long-term noncurrent debt [COST:Q3] and $75M in current maturities [COST:Q7], against stockholders' equity of $29,164M [COST:Q11] and a cash balance of $14,161M [COST:Q15] \u2014 meaning Costco is effectively net-cash positive. PepsiCo, by contrast, held $42,321M in long-term noncurrent debt [PEP:Q3] plus $6,861M in short-term borrowings [PEP:Q7], for total debt of roughly $49.2 billion, set against equity of only $20,406M [PEP:Q11] and cash of $9,159M [PEP:Q15]. PEP's gross debt-to-equity ratio is therefore well above 2x, while COST's is well below 0.25x. The trend also differs: PEP's long-term debt has grown from $35,657M in FY2022 [PEP:Q0] to $42,321M in FY2025 [PEP:Q3], and short-term borrowings have roughly doubled over the same period [PEP:Q4][PEP:Q7], whereas COST's long-term debt has remained relatively stable and its equity base has expanded materially [COST:Q8][COST:Q11].",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 5,
+      "notes": "Exemplary report section. Every claim is anchored to a specific citation, the structure flows logically from individual company analysis to cross-company synthesis, and the quantitative comparisons (gross D/E ratios, trend data from FY2022 to FY2025) are precise and well-contextualized. The cross-axis takeaway correctly interprets the structural reasons behind each company's leverage posture without overstating certainty. No unsupported assertions are made, and the report appropriately qualifies PEP's leverage as 'common but riskier' rather than definitively negative. Minor note: the report could briefly acknowledge that PEP's leverage is typical for investment-grade consumer staples peers, which would add one more layer of honest contextualization, but this is a minor omission rather than a flaw."
+    }
+  },
+  "error": null
+}

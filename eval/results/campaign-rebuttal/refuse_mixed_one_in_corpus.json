@@ -1,0 +1,33 @@
+{
+  "case_id": "refuse_mixed_one_in_corpus",
+  "request_id": "ec7d9658-8c7a-499a-aa9d-cb7f96d4523c",
+  "final_status": "refused",
+  "elapsed_s": 0.7792735420007375,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "refuse"
+  ],
+  "report": "Need at least two in-corpus companies. Resolved 1 from input mentions: ['Apple', 'Samsung']\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null,
+      "judge_failures": 0,
+      "claims": []
+    },
+    "quality": {
+      "clarity": 2,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 3,
+      "notes": "This appears to be a system/error message rather than an actual report. It communicates a data resolution failure (only 1 of 2 required companies found in corpus) but provides no analytical content, comparison, or evidence. Clarity is minimal as it reads like a debug log. Honesty score is slightly elevated because it does acknowledge the data limitation rather than fabricating a comparison, but this is not a proper report by any standard."
+    }
+  },
+  "error": null
+}

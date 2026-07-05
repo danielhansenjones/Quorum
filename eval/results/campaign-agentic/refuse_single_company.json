@@ -1,0 +1,32 @@
+{
+  "case_id": "refuse_single_company",
+  "request_id": "0eb97163-2554-4d93-aa86-50b43443a8bc",
+  "final_status": "refused",
+  "elapsed_s": 1.3205867529977695,
+  "trajectory": [
+    "entry",
+    "classify",
+    "refuse"
+  ],
+  "report": "Question lacks a specific financial comparison or analysis dimension.\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null,
+      "judge_failures": 0,
+      "claims": []
+    },
+    "quality": {
+      "clarity": 2,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 3,
+      "notes": "The report fails to provide any meaningful financial analysis or comparison. It merely states that the question lacks a specific dimension without attempting to address any of the available axes (profitability, growth, leverage, risk_factors). While it is somewhat honest in acknowledging a limitation, it does not guide the user toward reformulating their question or offer partial analysis. Clarity is poor as the response is vague and unhelpful. Evidence coverage is essentially nonexistent."
+    }
+  },
+  "error": null
+}

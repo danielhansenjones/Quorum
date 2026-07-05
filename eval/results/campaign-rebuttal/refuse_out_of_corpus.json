@@ -1,0 +1,33 @@
+{
+  "case_id": "refuse_out_of_corpus",
+  "request_id": "373568f3-835c-4815-831a-c50a3cbc497b",
+  "final_status": "refused",
+  "elapsed_s": 0.6464747360005276,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "refuse"
+  ],
+  "report": "Need at least two in-corpus companies. Resolved 0 from input mentions: ['Nestle', 'Unilever']\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null,
+      "judge_failures": 0,
+      "claims": []
+    },
+    "quality": {
+      "clarity": 1,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 3,
+      "notes": "This is a system error message, not a report. It contains no analysis, comparison, or narrative content. The only redeeming quality is that it transparently communicates a data resolution failure, which partially satisfies honesty criteria. However, it does not constitute a written report in any meaningful sense and fails all writing quality dimensions."
+    }
+  },
+  "error": null
+}

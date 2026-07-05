@@ -1,0 +1,830 @@
+{
+  "case_id": "happy_three_staples_profitability",
+  "request_id": "0a7b0ed4-26c0-4e15-8974-0f655194544f",
+  "final_status": "ok",
+  "elapsed_s": 0.7278837419980846,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "synthesize"
+  ],
+  "report": "## Profitability\n\nAcross the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.\n\n**KO:** Coca-Cola demonstrates the strongest margin profile of the three, with gross profit reaching $29.5B on $47.9B in revenues in FY2025 [KO:Q15][KO:Q3], implying a gross margin above 60%. Net income surged to $13.1B in FY2025 [KO:Q7], up from $10.6B in FY2024 [KO:Q6], and operating income recovered strongly to $13.8B [KO:Q11] after a dip to $10.0B in FY2024 [KO:Q10], reflecting KO's durable pricing power and high-margin concentrate business.\n\n**PEP:** PepsiCo generates the largest absolute gross profit among the three ($50.9B in FY2025 [PEP:Q15]) on revenues of $93.9B [PEP:Q3], but profitability deteriorated in FY2025 as net income fell to $8.2B [PEP:Q7] from $9.6B in FY2024 [PEP:Q6] and operating income declined to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], suggesting cost pressures or one-time charges are weighing on the bottom line.\n\n**COST:** Costco's warehouse membership model produces structurally thin net margins (roughly 2.9% in FY2025 on $275.2B in revenues [COST:Q3][COST:Q7]), but the company has delivered consistent earnings growth, with net income rising to $8.1B in FY2025 [COST:Q7] from $5.8B in FY2022 [COST:Q4] and operating income expanding to $10.4B [COST:Q11] from $7.8B [COST:Q8], demonstrating strong operational leverage as membership and volume scale up.\n\n---\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "43004000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "45754000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "47061000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "47941000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "9542000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "10714000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "10631000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "13107000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "10909000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11311000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "9992000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "13762000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "25004000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "27234000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "28737000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "29544000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "86392000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "91471000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "91854000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "93925000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8910000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "9074000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "9578000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8240000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11512000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11986000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "12887000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "11498000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-25-000042",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "45816000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "49590000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "50110000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "PEP",
+      "accession": "0000077476-26-000007",
+      "concept": "us-gaap:GrossProfit",
+      "normalized": null,
+      "value": "50859000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "226954000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "242290000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "254453000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "275235000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "5844000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "6292000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "7367000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8099000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-24-000049",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "7793000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "8114000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "9285000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+      "ticker": "COST",
+      "accession": "0000909832-25-000101",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "normalized": null,
+      "value": "10383000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 44,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Across the three companies, KO stands out for its superior margin profile despite being the smallest by revenue, while PEP operates at a larger scale with moderately high margins, and COST runs a high-volume, razor-thin-margin warehouse model. KO grew revenues from $43.0B in FY2022 [KO:Q0] to $47.9B in FY2025 [KO:Q3], while delivering a net margin that expanded sharply to roughly 27% in FY2025 (net income $13.1B [KO:Q7] on revenues of $47.9B [KO:Q3]) and gross margins consistently above 60% (gross profit $29.5B in FY2025 [KO:Q15]). PEP operates at roughly double KO's revenue scale ($93.9B in FY2025 [PEP:Q3]) but saw net income decline to $8.2B in FY2025 [PEP:Q7] from a peak of $9.6B in FY2024 [PEP:Q6], and operating income slipped to $11.5B [PEP:Q11] from $12.9B [PEP:Q10], signaling margin pressure. COST dwarfs both in revenue ($275.2B in FY2025 [COST:Q3]) but its business model produces structurally thin margins; nonetheless, it has shown the strongest absolute earnings growth trajectory, with net income rising from $5.8B in FY2022 [COST:Q4] to $8.1B in FY2025 [COST:Q7] and operating income climbing from $7.8B [COST:Q8] to $10.4B [COST:Q11], reflecting consistent operational leverage. In summary, KO leads on margin quality, COST leads on earnings growth momentum, and PEP faces the most near-term profitability headwinds.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "The report is exceptionally well-structured, with a clear summary paragraph followed by per-company breakdowns. Comparisons are direct, specific, and grounded in cited figures. Evidence coverage is thorough\u2014revenues, gross profit, net income, and operating income are all cited with source tags for every company across multiple years. The one minor deduction on honesty/insufficient-data is that the report attributes PEP's net income decline confidently to 'cost pressures or one-time charges' without acknowledging uncertainty or noting that the underlying cause is not fully established from the data presented. Otherwise, the report avoids overreach and the margin characterizations (e.g., COST's ~2.9% net margin) are accurately derived from the cited figures."
+    }
+  },
+  "error": null
+}

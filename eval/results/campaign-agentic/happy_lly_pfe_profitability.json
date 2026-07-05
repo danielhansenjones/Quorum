@@ -1,0 +1,484 @@
+{
+  "case_id": "happy_lly_pfe_profitability",
+  "request_id": "8a1b85d1-fcde-4e69-82b0-b2fff83dffc0",
+  "final_status": "ok",
+  "elapsed_s": 0.9832042950001778,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Profitability\n\nLLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income\u2014after dipping to $5.2B in FY2023 [LLY:Q5] before rebounding sharply\u2014reached $20.6B in FY2025 [LLY:Q7], implying a net margin of roughly 32%, driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 to $59.6B in FY2023 [PFE:Q1] before edging back up to approximately $63.6B in FY2024 [PFE:Q2] and then contracting modestly to approximately $62.6B in FY2025 [PFE:Q3]\u2014a mild year-over-year decline rather than a plateau. Net income followed a similarly volatile path, cratering from $31.4B in FY2022 to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12%\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.\n\n*Note: PFE revenue and net income figures cited in the comparison are drawn from the analytical inputs but carry limited independent citation grounding in the underlying source record; the PFE figures should be treated with corresponding caution.*\n\n**LLY:** LLY has delivered exceptional profitability growth, with revenues more than doubling from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3]. Net income followed a non-linear path\u2014expanding from $6.2B in FY2022 [LLY:Q4], dipping to $5.2B in FY2023 [LLY:Q5], then rebounding sharply to $20.6B in FY2025 [LLY:Q7]\u2014reflecting a net margin of approximately 32% that underscores the high-value, high-demand nature of its GLP-1 and diabetes portfolio.\n\n**PFE:** PFE's profitability has been heavily distorted by the COVID-19 product cycle: the FY2022 net income of $31.4B was an anomaly driven by Paxlovid and vaccine revenues that have since normalized sharply. Net income collapsed to just $2.1B in FY2023 [PFE:Q5] as those revenues fell away, before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7]. With revenues edging down from roughly $63.6B in FY2024 [PFE:Q2] to $62.6B in FY2025 [PFE:Q3], PFE's current ~12% net margin reflects a business still working through the post-pandemic reset and the integration of the Seagen acquisition.\n\n---\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "LLY",
+      "accession": "0000059478-25-000067",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "28541400000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "34124000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "45043000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "65179000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "LLY",
+      "accession": "0000059478-25-000067",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "6244800000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "5240000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "10590000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "LLY",
+      "accession": "0000059478-26-000013",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "20640000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "PFE",
+      "accession": "0000078003-25-000054",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "101175000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "59553000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "63627000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:Revenues",
+      "normalized": null,
+      "value": "62579000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "PFE",
+      "accession": "0000078003-25-000054",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "31372000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "2119000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "8031000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+      "ticker": "PFE",
+      "accession": "0000078003-26-000026",
+      "concept": "us-gaap:NetIncomeLoss",
+      "normalized": null,
+      "value": "7771000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "ok",
+    "per_axis": {
+      "profitability": {
+        "axis": "profitability",
+        "groundedness": "ok",
+        "notes": "All headline revenue and net income figures for both LLY and PFE are confirmed by XBRL data within rounding tolerances. LLY FY2022 revenue $28.541B (\u2248$28.5B \u2705), FY2025 $65.179B (\u2248$65.2B \u2705). LLY net income FY2022 $6.245B (\u2248$6.2B \u2705), FY2025 $20.640B (\u2248$20.6B \u2705). Implied FY2025 LLY net margin 31.7% (\u224832% \u2705). PFE revenue FY2022 $101.175B (\u2248$101.2B \u2705), FY2023 $59.553B (\u2248$59.6B \u2705), FY2024 $63.627B (upper end of claimed '$62\u201363B' range \u2014 minor imprecision), FY2025 $62.579B (within '$62\u201363B' \u2705). PFE net income FY2022 $31.372B (\u2248$31.4B \u2705), FY2023 $2.119B (\u2248$2.1B \u2705), FY2024 $8.031B (\u2248$8.0B \u2705), FY2025 $7.771B (\u2248$7.8B \u2705). PFE FY2025 net margin 12.4% (\u224812% \u2705). GLP-1 growth driver confirmed by LLY 10-K (Mounjaro + Zepbound = 56% of FY2025 revenues). PFE normalization confirmed by filing citing Paxlovid and Comirnaty declines. Citation list is exclusively LLY-sourced; PFE figures are verified independently but absent from the analyst's citation list.",
+        "missed_evidence": [
+          "LLY FY2023 net income was $5.240B \u2014 a year-over-year DECLINE from FY2022's $6.245B \u2014 meaning LLY's net income trajectory was not monotonically upward; the analyst narrative of a 'steep growth curve' omits this intermediate trough, which is material context.",
+          "LLY FY2024 net income of $10.590B is unmentioned, obscuring the step-change acceleration that occurred specifically in FY2024\u2013FY2025 rather than across the full 2022\u20132025 span.",
+          "PFE FY2024 revenue of $63.627B slightly exceeds the upper bound of the analyst's stated '$62\u201363B' range; the more precise figure would be ~$63.6B.",
+          "PFE FY2025 revenue of $62.579B represents a mild DECLINE from FY2024 ($63.627B), contradicting the 'stabilized' characterization \u2014 it is a modest contraction, not stabilization.",
+          "Analyst citation list references only LLY XBRL sources; no PFE citations are listed despite PFE figures being central to the comparison \u2014 a material citation gap.",
+          "LLY 10-K confirms Mounjaro and Zepbound alone drove 56% of FY2025 revenues, providing stronger quantitative grounding for the GLP-1 driver claim than the analyst supplied."
+        ]
+      }
+    },
+    "cross_axis": [
+      "The profitability axis omits intermediate-year data points (LLY FY2023 net income dip to $5.24B, LLY FY2024 net income of $10.59B) that would materially affect interpretation of the growth trajectory's linearity and timing \u2014 relevant if other axes (e.g., R&D spend, capital allocation) reference the same period.",
+      "PFE's FY2025 revenue ($62.579B) is slightly below FY2024 ($63.627B), suggesting ongoing mild contraction rather than stabilization \u2014 this nuance could affect conclusions drawn in other axes such as capital allocation or pipeline investment capacity."
+    ],
+    "flagged_claims": [
+      {
+        "source_axis": "profitability",
+        "claim": "revenues have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3]",
+        "flag": "weakly_supported",
+        "reason": "PFE FY2024 revenue was $63.627B and FY2025 was $62.579B \u2014 a year-over-year decline of ~$1.05B (~1.6%). This is a mild contraction, not stabilization. The '$62\u201363B' range also understates FY2024 at $63.6B.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "profitability",
+        "claim": "net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7]",
+        "flag": "weakly_supported",
+        "reason": "While the endpoints are accurate, the narrative implies a continuous upward surge. In reality, LLY net income dipped to $5.240B in FY2023 before recovering strongly. Omitting the FY2023 trough makes the trajectory appear smoother and more linear than the data supports.",
+        "counter_citation": null
+      },
+      {
+        "source_axis": "profitability",
+        "claim": "Citations: quant:LLY:us-gaap:Revenues [\u00d74], quant:LLY:us-gaap:NetIncomeLoss [\u00d72] \u2014 no PFE citations listed",
+        "flag": "weakly_supported",
+        "reason": "All six citations reference LLY sources only. PFE figures ($101.2B, $59.6B, $62\u201363B revenues; $31.4B, $2.1B, $8.0B, $7.8B net income) are central to the comparative analysis but carry no citations, leaving the entire PFE half of the comparison ungrounded in the citation record.",
+        "counter_citation": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "LLY",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 28541400000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000059478-25-000067\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 34124000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 45043000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-ga"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PFE",
+          "key": "profitability.revenue",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 101175000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000078003-25-000054\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 59553000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000078003-26-000026\", \"resolved_concept\": \"us-gaap:Revenues\"}, {\"value\": 63627000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000078003-26-000026\", \"resolved_concept\": \"us-g"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "LLY",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 6244800000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000059478-25-000067\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 5240000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 10590000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000059478-26-000013\", \"resolved_concept\""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PFE",
+          "key": "profitability.net_income",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 31372000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000078003-25-000054\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 2119000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000078003-26-000026\", \"resolved_concept\": \"us-gaap:NetIncomeLoss\"}, {\"value\": 8031000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000078003-26-000026\", \"resolved_concept\""
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "GLP-1 diabetes revenue growth drivers profitability",
+          "tickers": [
+            "LLY"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000059478-25-000132:item_2_mda:0001\", \"score\": 0.5, \"ticker\": \"LLY\", \"section\": \"item_2_mda\", \"text_excerpt\": \":\\nCompound\\nDevelopment\\nTirzepatide\\nIn 2025, we withdrew our U.S. application for tirzepatide for heart failure with preserved ejection fraction. \\nOrforglipron\\nIn 2025, we announced positive results for oral GLP-1, orforglipron, in the Phase 3 ACHIEVE-1 trial for type"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "post-COVID revenue decline normalization Paxlovid Comirnaty",
+          "tickers": [
+            "PFE"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[{\"chunk_id\": \"0000078003-26-000026:item_7a_market_risk:0099\", \"score\": 0.5909091, \"ticker\": \"PFE\", \"section\": \"item_7a_market_risk\", \"text_excerpt\": \"of Paxlovid and Comirnaty deferred revenues as of December 31, 2024. The Paxlovid and Comirnaty deferred revenues as of December 31, 2025 will be recognized in \\nProduct revenues\\n proportionately as we transfer control of the products to our custom"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 239
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 16,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "LLY and PFE present starkly divergent profitability trajectories over the 2022\u20132025 period. LLY has been on a steep growth curve, with revenues rising from $28.5B in FY2022 [LLY:Q0] to $65.2B in FY2025 [LLY:Q3], while net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7], implying a net margin of roughly 32% in FY2025\u2014a dramatic improvement driven largely by the commercial success of its GLP-1 and diabetes franchises. PFE, by contrast, experienced a sharp post-COVID normalization: revenues collapsed from a pandemic-peak $101.2B in FY2022 [PFE:Q0] to $59.6B in FY2023 [PFE:Q1] and have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3], while net income cratered from $31.4B in FY2022 [PFE:Q4] to just $2.1B in FY2023 [PFE:Q5] before partially recovering to $8.0B in FY2024 [PFE:Q6] and $7.8B in FY2025 [PFE:Q7], yielding a net margin of roughly 12% in FY2025\u2014well below LLY's. The contrast is clear: LLY is in an accelerating growth phase with expanding margins, while PFE is in a post-peak normalization phase with structurally lower profitability relative to its 2022 highs.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 4,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report is exceptionally well-structured, with a clear narrative arc contrasting LLY's growth trajectory against PFE's post-COVID normalization. Citation tags are used consistently and the analytical framing (accelerating growth vs. post-peak reset) is precise and well-supported. The proactive caveat about PFE figures lacking strong independent citation grounding is a model example of intellectual honesty. Minor deduction on evidence_coverage because the PFE data is acknowledged as less robustly sourced, and some margin calculations are implied rather than directly cited. The repetition between the summary paragraph and the per-company breakdowns is slightly redundant but serves a legitimate structural purpose."
+    },
+    "incorporation": {
+      "n": 3,
+      "incorporated": 3,
+      "rate": 1.0,
+      "claims": [
+        {
+          "source_axis": "profitability",
+          "claim": "revenues have since stabilized around $62\u201363B [PFE:Q2][PFE:Q3]",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "profitability",
+          "claim": "net income surged from $6.2B [LLY:Q4] to $20.6B [LLY:Q7]",
+          "flag": "weakly_supported",
+          "incorporated": true
+        },
+        {
+          "source_axis": "profitability",
+          "claim": "Citations: quant:LLY:us-gaap:Revenues [\u00d74], quant:LLY:us-gaap:NetIncomeLoss [\u00d72] \u2014 no PFE citations listed",
+          "flag": "weakly_supported",
+          "incorporated": true
+        }
+      ]
+    }
+  },
+  "error": null
+}

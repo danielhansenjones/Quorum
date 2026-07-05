@@ -1,0 +1,32 @@
+{
+  "case_id": "refuse_off_topic",
+  "request_id": "388fa62d-b896-4f3c-b998-905ae3f3896e",
+  "final_status": "refused",
+  "elapsed_s": 0.9391147290007211,
+  "trajectory": [
+    "entry",
+    "classify",
+    "refuse"
+  ],
+  "report": "Question is about weather, not company financials.\n\nQuorum supports comparisons across these axes: profitability, growth, leverage, risk_factors.",
+  "citations": [],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 0,
+      "mean_score": null,
+      "faithful_fraction": null,
+      "judge_failures": 0,
+      "claims": []
+    },
+    "quality": {
+      "clarity": 3,
+      "comparison_quality": 1,
+      "evidence_coverage": 1,
+      "honesty_on_insufficient_data": 5,
+      "notes": "The report is honest and clear that the question is out of scope, but it provides no substantive analysis or comparison. It correctly redirects to supported axes, which is good transparency, but the response is minimal and lacks any elaboration or helpful guidance for the user."
+    }
+  },
+  "error": null
+}

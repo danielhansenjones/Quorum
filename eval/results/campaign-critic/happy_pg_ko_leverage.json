@@ -1,0 +1,1016 @@
+{
+  "case_id": "happy_pg_ko_leverage",
+  "request_id": "a7d4f82b-03bb-4935-a417-495998530f8f",
+  "final_status": "ok",
+  "elapsed_s": 1.1044468920008512,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "critic",
+    "synthesize"
+  ],
+  "report": "## Leverage\n\nBoth PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.1 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.\n\n**PG:** PG maintains a moderate leverage profile, with FY2025 gross debt of approximately $34.5 billion (noncurrent long-term debt $24,995M [PG:Q3], current maturities $5,377M [PG:Q7], and commercial paper $4,108M [PG:Q11]) against a solid equity cushion of $52,284M [PG:Q15]. Net debt of roughly $24.9 billion after deducting $9,556M in cash [PG:Q19] translates to a gross debt-to-equity ratio near 0.66x, a manageable level for a company of PG's cash-generative profile. The debt stack has grown modestly since FY2022 but equity has expanded in parallel, keeping leverage broadly stable.\n\n**KO:** KO operates with notably higher leverage than PG, with FY2025 gross debt of approximately $45.4 billion (noncurrent long-term debt and capital leases $42,119M [KO:Q3], current maturities $1,822M [KO:Q7], and commercial paper $1,495M [KO:Q11]) against equity of $32,169M [KO:Q15], implying a gross debt-to-equity ratio of roughly 1.41x. Cash of $10,270M [KO:Q19] partially offsets this, leaving net debt near $35.1 billion. While KO's equity improved meaningfully in FY2025 from $24,856M [KO:Q14] in FY2024, the absolute debt load has also grown since FY2022, keeping KO in a more leveraged position than its peer PG.\n\n---\n",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-23-000073",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "22848000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "24378000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "25269000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "24995000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-23-000073",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "3647000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "3951000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "3838000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "5377000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-23-000073",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "4805000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-24-000083",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "6236000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "3327000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "4108000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "normalized": null,
+      "value": "46854000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "normalized": null,
+      "value": "47065000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "normalized": null,
+      "value": "50559000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "normalized": null,
+      "value": "52284000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "normalized": null,
+      "value": "7214000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-25-000076",
+      "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "normalized": null,
+      "value": "8246000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "normalized": null,
+      "value": "9482000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "PG",
+      "accession": "0000080424-26-000060",
+      "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "normalized": null,
+      "value": "9556000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-24-000009",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "36377000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-24-000017",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "35547000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+      "normalized": null,
+      "value": "42375000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-028802",
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+      "normalized": null,
+      "value": "42119000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-24-000009",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "399000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-24-000017",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "1960000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "normalized": null,
+      "value": "648000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-028802",
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "normalized": null,
+      "value": "1822000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-23-000011",
+      "concept": "us-gaap:ShortTermBorrowings",
+      "normalized": null,
+      "value": "2373000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "4209000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "1139000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-028802",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "1495000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-24-000009",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "24105000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "25941000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "24856000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-028802",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "32169000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0000021344-25-000047",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "9519000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-010047",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "9366000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-028802",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "10828000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+      "ticker": "KO",
+      "accession": "0001628280-26-028802",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "10270000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": {
+    "status": "failed",
+    "per_axis": {
+      "leverage": {
+        "axis": "leverage",
+        "groundedness": "ok",
+        "notes": "",
+        "missed_evidence": []
+      }
+    },
+    "cross_axis": [],
+    "flagged_claims": [],
+    "tool_calls": [
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:LongTermDebtNoncurrent",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 22848000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000080424-23-000073\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 24378000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000080424-24-000083\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 25269000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000080424-25-000076\""
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:LongTermDebtNoncurrent",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 36377000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000021344-24-000009\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}, {\"value\": 35547000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000021344-24-000017\", \"resolved_concept\": \"us-gaap:LongTermDebtNoncurrent\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:LongTermDebtCurrent",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 3647000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000080424-23-000073\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 3951000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000080424-24-000083\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 3838000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0000080424-25-000076\", \"resolv"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:LongTermDebtCurrent",
+          "periods": [
+            "FY2022",
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 399000000.0, \"unit\": \"USD\", \"period\": \"FY2022\", \"accession\": \"0000021344-24-000009\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}, {\"value\": 1960000000.0, \"unit\": \"USD\", \"period\": \"FY2023\", \"accession\": \"0000021344-24-000017\", \"resolved_concept\": \"us-gaap:LongTermDebtCurrent\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 42375000000.0, \"unit\": \"USD\", \"period\": \"FY2024\", \"accession\": \"0001628280-26-010047\", \"resolved_concept\": \"us-gaap:LongTermDebtAndCapitalLeaseObligations\"}, {\"value\": 42119000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-028802\", \"resolved_concept\": \"us-gaap:LongTermDebtAndCapitalLeaseObligations\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:StockholdersEquity",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:StockholdersEquity",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 32169000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-028802\", \"resolved_concept\": \"us-gaap:StockholdersEquity\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 10270000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-028802\", \"resolved_concept\": \"us-gaap:CashAndCashEquivalentsAtCarryingValue\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 52284000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000080424-26-000060\", \"resolved_concept\": \"us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "profitability.equity",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:CommercialPaper",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 4108000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0000080424-25-000076\", \"resolved_concept\": \"us-gaap:CommercialPaper\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:CommercialPaper",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 1495000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-028802\", \"resolved_concept\": \"us-gaap:CommercialPaper\"}]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:LongTermDebtCurrentMaturities",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "PG",
+          "key": "us-gaap:Cash",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "get_financial_concept",
+        "args": {
+          "ticker": "KO",
+          "key": "us-gaap:LongTermDebtAndCapitalLeaseObligationsCurrent",
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "ok": true,
+        "result_summary": "[{\"value\": 1822000000.0, \"unit\": \"USD\", \"period\": \"FY2025\", \"accession\": \"0001628280-26-028802\", \"resolved_concept\": \"us-gaap:LongTermDebtAndCapitalLeaseObligationsCurrent\"}]"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "PG cash and cash equivalents balance sheet FY2025",
+          "tickers": [
+            "PG"
+          ],
+          "sections": [
+            "balance_sheet"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[]"
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "KO current maturities long-term debt 2025 balance sheet",
+          "tickers": [
+            "KO"
+          ],
+          "sections": [
+            "balance_sheet"
+          ],
+          "top_k": 3
+        },
+        "ok": true,
+        "result_summary": "[]"
+      }
+    ],
+    "turns_used": 5,
+    "duration_ms": 398
+  },
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 40,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "Both PG and KO carry substantial debt loads typical of large-cap consumer staples, but KO's absolute debt stack is meaningfully larger relative to its equity base. For PG in FY2025, total debt sums to roughly $34.5 billion (long-term noncurrent $24,995M [PG:Q3] + current maturities $5,377M [PG:Q7] + commercial paper $4,108M [PG:Q11]), set against equity of $52,284M [PG:Q15] and cash of $9,556M [PG:Q19], implying a gross debt-to-equity ratio of approximately 0.66x and net debt of roughly $24.9 billion. KO in FY2025 carries long-term debt and capital lease obligations of $42,119M [KO:Q3] plus current maturities of $1,822M [KO:Q7] and commercial paper of $1,495M [KO:Q11], totaling roughly $45.4 billion in gross debt against equity of only $32,169M [KO:Q15] and cash of $10,270M [KO:Q19], yielding a gross debt-to-equity ratio of approximately 1.41x and net debt of roughly $35.2 billion. KO's leverage ratio is therefore roughly twice that of PG on a gross debt-to-equity basis, though both companies have been managing their debt stacks in a relatively stable range over the FY2022\u2013FY2025 period. PG's long-term noncurrent debt has drifted modestly upward from $22,848M [PG:Q0] in FY2022 to $24,995M [PG:Q3] in FY2025, while KO's noncurrent long-term obligations rose more sharply from $36,377M [KO:Q0] in FY2022 to $42,119M [KO:Q3] by FY2025, partly reflecting the tag change to include capital lease obligations in later filings.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "The report is well-structured, with a clear summary section followed by company-specific breakdowns. Calculations are shown transparently with source citations, and the comparison is direct and quantified. The gross debt-to-equity ratios, net debt figures, and trend commentary are all well-supported. Minor deduction on honesty/insufficient-data: the report notes KO's tag change to include capital lease obligations affects comparability but does not explicitly flag that this makes the FY2022-to-FY2025 trend for KO potentially misleading without adjustment\u2014a caveat that would strengthen intellectual honesty. Otherwise, no unsupported claims are made and uncertainty is appropriately acknowledged."
+    },
+    "incorporation": {
+      "n": 0,
+      "incorporated": 0,
+      "rate": null,
+      "claims": []
+    }
+  },
+  "error": null
+}

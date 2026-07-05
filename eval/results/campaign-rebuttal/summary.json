@@ -1,0 +1,63 @@
+{
+  "n_cases": 41,
+  "ok": 23,
+  "refused": 9,
+  "partial": 9,
+  "errors": 0,
+  "total_elapsed_s": 191.97969750399352,
+  "status_match": 29,
+  "run_config": {
+    "critic_enabled": true,
+    "rebuttal_enabled": true,
+    "agentic_analyst": false,
+    "llm_cache": true,
+    "trace": true,
+    "judge": true,
+    "gold": "eval/datasets/v1/gold.yaml",
+    "models": {
+      "classifier": "anthropic:claude-haiku-4-5",
+      "analyst": "anthropic:claude-sonnet-4-6",
+      "legwork": null,
+      "judge": "anthropic:claude-sonnet-4-6"
+    }
+  },
+  "provenance": {
+    "git_sha": "c1e7acb244d6b29cc96330474a438f84e4786dc0",
+    "git_dirty": false,
+    "started_at": "2026-07-05T22:22:06.916328+00:00",
+    "judge_model": "claude-sonnet-4-6"
+  },
+  "judging": {
+    "cases_scored": 41,
+    "faithfulness_mean": 4.5495005041774705,
+    "quality_mean": 4.6640625,
+    "quality_judge_failures": 0,
+    "faithfulness_judge_failures": 0,
+    "critic": {
+      "cases_with_critique": 32,
+      "flagged_claims_total": 28,
+      "incorporation_rate": 1.0,
+      "turns_used_counts": {
+        "2": 2,
+        "3": 12,
+        "4": 6,
+        "5": 12
+      },
+      "timeout_rate": 0.0,
+      "tool_use": {
+        "n": 259,
+        "valid": 259,
+        "valid_fraction": 1.0
+      },
+      "rebuttal": {
+        "n": 48,
+        "defended": 1,
+        "retracted": 4,
+        "revised": 43,
+        "reflected": 5,
+        "cases": 22,
+        "reflected_rate": 0.10416666666666667
+      }
+    }
+  }
+}

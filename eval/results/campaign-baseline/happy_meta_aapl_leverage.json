@@ -1,0 +1,614 @@
+{
+  "case_id": "happy_meta_aapl_leverage",
+  "request_id": "6b7e7c64-7059-49c5-8648-667bd23514a2",
+  "final_status": "ok",
+  "elapsed_s": 0.7154719690006459,
+  "trajectory": [
+    "entry",
+    "classify",
+    "resolve",
+    "plan",
+    "analyze_axis",
+    "assess",
+    "synthesize"
+  ],
+  "report": "## Leverage\n\nMETA and AAPL present starkly different leverage profiles: AAPL carries a far larger absolute debt load and operates with meaningfully higher financial leverage relative to equity, while META has been rapidly expanding its borrowings from a much lower base yet remains conservatively capitalized.\n\nMETA's long-term noncurrent debt has surged nearly six-fold, from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3]. Despite this aggressive debt build-up, stockholders' equity has grown in parallel \u2014 rising to $217.2B [META:Q7] \u2014 keeping the gross debt-to-equity ratio modest at roughly 0.27x in FY2025. AAPL's debt stack is substantially larger: FY2025 total debt of approximately $98.7B comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11]. Crucially, this sits against a comparatively thin equity base of $73.7B [AAPL:Q15], producing a gross debt-to-equity ratio of roughly 1.34x \u2014 approximately five times META's ratio. It is worth noting that AAPL has been on a deleveraging path; total debt has declined from a peak of roughly $121B in FY2022 (noncurrent $99.0B [AAPL:Q0], current $11.1B [AAPL:Q4], commercial paper $10.0B [AAPL:Q8]), so the directional trend is improving even if the absolute level remains elevated. Both companies hold nearly identical cash balances \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its much smaller equity cushion.\n\n**META:** META has been aggressively adding debt, with long-term noncurrent borrowings jumping from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], yet its balance sheet remains conservatively leveraged because stockholders' equity has simultaneously grown to $217.2B [META:Q7], implying a gross debt-to-equity ratio of roughly 0.27x. With $35.9B in cash [META:Q11], META's net debt position is modest relative to its equity, suggesting the company retains significant financial flexibility despite the rapid debt build-up.\n\n**AAPL:** AAPL carries a heavier debt load in both absolute and relative terms: FY2025 total debt of approximately $98.7B (noncurrent $78.3B [AAPL:Q3], current maturities $12.4B [AAPL:Q7], commercial paper $8.0B [AAPL:Q11]) sits against a comparatively thin equity base of $73.7B [AAPL:Q15], yielding a gross debt-to-equity ratio of roughly 1.34x. On a constructive note, AAPL has been steadily reducing its overall debt from the ~$121B peak in FY2022, and its $35.9B cash position [AAPL:Q19] provides a meaningful offset \u2014 though net leverage remains elevated relative to META.\n\n---\n\n**Cross-axis takeaway:** The leverage comparison highlights a notable structural divergence: AAPL's high leverage is a deliberate, long-standing capital allocation choice \u2014 using cheap debt to fund buybacks against a thin equity base \u2014 and is trending in a more conservative direction. META, by contrast, is moving in the opposite direction, rapidly layering on debt, but from such a low starting point and against such a large equity base that its balance sheet risk remains limited for now. The key watch item for META is whether its debt expansion continues to outpace equity growth; for AAPL, the question is whether its deleveraging trajectory is sustained.",
+  "citations": [
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001326801-24-000012",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "9923000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001326801-25-000017",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "18385000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "28826000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-028526",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "58744000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "125713000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "153168000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-028526",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "182637000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-028526",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "217243000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001326801-25-000017",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "14681000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "41862000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-003942",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "43889000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "META",
+      "accession": "0001628280-26-028526",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "35873000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-23-000106",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "98959000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "95281000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "85750000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000013",
+      "concept": "us-gaap:LongTermDebtNoncurrent",
+      "normalized": null,
+      "value": "78328000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-23-000106",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "11128000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "9822000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "10912000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000013",
+      "concept": "us-gaap:LongTermDebtCurrent",
+      "normalized": null,
+      "value": "12350000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-23-000106",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "9982000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "5985000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "9967000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000013",
+      "concept": "us-gaap:CommercialPaper",
+      "normalized": null,
+      "value": "7979000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "50672000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "62146000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000013",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "56950000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000013",
+      "concept": "us-gaap:StockholdersEquity",
+      "normalized": null,
+      "value": "73733000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-23-000106",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "23646000000.0",
+      "period": "FY2022",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-24-000123",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "29965000000.0",
+      "period": "FY2023",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-25-000079",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "29943000000.0",
+      "period": "FY2024",
+      "unit": "USD"
+    },
+    {
+      "kind": "quant",
+      "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+      "ticker": "AAPL",
+      "accession": "0000320193-26-000013",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "normalized": null,
+      "value": "35934000000.0",
+      "period": "FY2025",
+      "unit": "USD"
+    }
+  ],
+  "critique": null,
+  "rebuttals": [],
+  "scores": {
+    "faithfulness": {
+      "n": 32,
+      "mean_score": 5.0,
+      "faithful_fraction": 1.0,
+      "judge_failures": 0,
+      "claims": [
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        },
+        {
+          "claim": "META and AAPL present starkly different leverage profiles, with AAPL carrying a far larger absolute debt load but META rapidly expanding its borrowings from a much lower base. META's long-term debt (noncurrent) has surged from $9.9B in FY2022 [META:Q0] to $58.7B in FY2025 [META:Q3], a nearly six-fold increase, while its stockholders' equity has grown steadily from $125.7B [META:Q4] to $217.2B [META:Q7], keeping its debt-to-equity ratio modest (roughly 0.27x in FY2025). AAPL's total debt is substantially larger: in FY2025 it comprises $78.3B in long-term noncurrent debt [AAPL:Q3], $12.4B in current maturities [AAPL:Q7], and $8.0B in commercial paper [AAPL:Q11], summing to approximately $98.7B \u2014 though this is actually down from a peak of roughly $121.1B in FY2022 (noncurrent $99.0B [AAPL:Q0] + current $11.1B [AAPL:Q4] + CP $10.0B [AAPL:Q8]). Against AAPL's relatively thin equity base of $73.7B [AAPL:Q15], its FY2025 debt-to-equity ratio is approximately 1.34x, far more leveraged than META. Both companies hold substantial cash \u2014 META at $35.9B [META:Q11] and AAPL at $35.9B [AAPL:Q19] \u2014 which meaningfully offsets gross debt on a net basis, but AAPL's net leverage position remains considerably more stretched given its smaller equity cushion.",
+          "faithful": true,
+          "score": 5,
+          "reason": "rel_err=0.00e+00, unit_match=True",
+          "judge": "deterministic"
+        }
+      ]
+    },
+    "quality": {
+      "clarity": 5,
+      "comparison_quality": 5,
+      "evidence_coverage": 5,
+      "honesty_on_insufficient_data": 4,
+      "notes": "Exceptionally well-structured report with clear narrative arc, precise citation of data points, and strong directional analysis. The cross-axis takeaway adds genuine analytical value beyond mere data recitation. Leverage ratios (0.27x, 1.34x) are computed and presented transparently. The 'five times' ratio comparison is a nice concrete anchor. Minor concern on honesty dimension: the report states both companies hold 'nearly identical cash balances' of $35.9B each \u2014 this coincidence is striking and could warrant a brief caveat that the figures may reflect different reporting dates or rounding, rather than presenting it as a clean fact. No explicit acknowledgment of data limitations or potential staleness of cited quarters. Otherwise, the report is honest about directional trends and avoids overclaiming causality."
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,152 @@
+{
+  "requests": 41,
+  "per_request": {
+    "cost_mean": 0.12440539024390229,
+    "cost_p50": 0.12456099999999999,
+    "cost_p95": 0.282215,
+    "tokens_in_mean": 20849.90243902439,
+    "tokens_out_mean": 4177.878048780488
+  },
+  "per_node": {
+    "llm:critic": {
+      "cost_total": 3.460199999999999,
+      "cost_mean": 0.027032812499999993,
+      "rows": 128,
+      "tokens_in": 695520,
+      "tokens_out": 91576
+    },
+    "llm:analyst": {
+      "cost_total": 0.954735,
+      "cost_mean": 0.017680277777777777,
+      "rows": 54,
+      "tokens_in": 107980,
+      "tokens_out": 42053
+    },
+    "llm:synthesizer": {
+      "cost_total": 0.6690300000000002,
+      "cost_mean": 0.020907187500000007,
+      "rows": 32,
+      "tokens_in": 45990,
+      "tokens_out": 35404
+    },
+    "llm:classifier": {
+      "cost_total": 0.016655999999999994,
+      "cost_mean": 0.00040624390243902426,
+      "rows": 41,
+      "tokens_in": 5356,
+      "tokens_out": 2260
+    },
+    "entry": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 41,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "tool:get_financial_concept": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 184,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "classify": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 41,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "analyze_axis:profitability": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 24,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "refuse": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 9,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "critic": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 32,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "resolve": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 37,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "assess": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 44,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "plan": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 44,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "synthesize": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 32,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "analyze_axis:growth": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 13,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "tool:search_filings": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 63,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "analyze_axis:leverage": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 8,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "tool:get_filing_section": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 10,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    "analyze_axis:risk_factors": {
+      "cost_total": 0.0,
+      "cost_mean": 0.0,
+      "rows": 9,
+      "tokens_in": 0,
+      "tokens_out": 0
+    }
+  },
+  "totals": {
+    "cost": 5.100620999999994,
+    "tokens_in": 854846,
+    "tokens_out": 171293,
+    "cache_read_tokens": 0,
+    "cache_read_fraction": 0.0
+  }
+}

@@ -106,5 +106,6 @@ markers = [
   "smoke: minimal end-to-end checks that gate every phase",
   "integration: requires docker compose services",
   "gpu: requires GPU and vLLM",
+  "kill_resume: subprocess SIGKILL/resume durability suite; needs postgres; run separately from the unit gate",
 ]
 asyncio_mode = "auto"

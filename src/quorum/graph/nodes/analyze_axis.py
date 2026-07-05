@@ -66,6 +66,9 @@ _ANALYST_SYSTEM = (
     "sentences.\n"
     "- Cover every ticker in per_company, even if the read is that evidence is thin for that company.\n"
     "- If evidence is thin or missing for one side, say so explicitly and grade `weak` or `insufficient`.\n"
+    "- For leverage, a company's total debt is the sum of its long-term (noncurrent), current-maturities, "
+    "and short-term/commercial-paper components in the evidence; report total debt as that sum and cite each "
+    "component present. Not every company reports all three.\n"
     "- Do not invent numbers, periods, or units."
 )
 

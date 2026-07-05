@@ -66,10 +66,45 @@ def test_classify_drops_quarterly_mislabeled_fy() -> None:
     assert _classify_period(dp, fy_end_month=9) == "Q4-2019"
 
 
-def test_classify_instant_uses_fp_fy() -> None:
-    # Balance sheet items have no start. The SEC fp/fy is reliable for these.
+def test_classify_instant_fallback_when_fye_unknown() -> None:
+    # Balance-sheet items have no start. Only when the fiscal year-end can't be
+    # inferred do we fall back to trusting fp/fy.
     dp = {"end": "2024-12-31", "fp": "FY", "fy": 2024, "val": 1, "accn": "x"}
     assert _classify_period(dp, fy_end_month=None) == "FY2024"
+
+
+def test_classify_instant_by_end_date_not_fp_fy() -> None:
+    # The balance-sheet off-by-one: the FY2025 10-K re-publishes the FY2024
+    # balance (end 2024-06-30) stamped fy=2025. Trusting fp/fy would mislabel it
+    # FY2025 and collide with the real FY2025 balance. End date is the truth.
+    prior = {"end": "2024-06-30", "fp": "FY", "fy": 2025, "val": 1, "accn": "x"}
+    current = {"end": "2025-06-30", "fp": "FY", "fy": 2025, "val": 2, "accn": "x"}
+    assert _classify_period(prior, fy_end_month=6) == "FY2024"
+    assert _classify_period(current, fy_end_month=6) == "FY2025"
+
+
+def test_classify_instant_quarter_by_end_date() -> None:
+    # PG (June FYE) balance at Sep 30 is the FY2025 Q1 snapshot.
+    dp = {"end": "2024-09-30", "fp": "Q1", "fy": 2025, "val": 1, "accn": "x"}
+    assert _classify_period(dp, fy_end_month=6) == "Q1-2025"
+
+
+def test_classify_instant_january_wrap() -> None:
+    # JNJ (Dec FYE, 52/53-week): FY2022 balance closes 2023-01-01, FY2023 closes
+    # 2023-12-31. end.year alone collides both on FY2023; the wrap keeps them apart.
+    jan = {"end": "2023-01-01", "fp": "FY", "fy": 2023, "val": 1, "accn": "x"}
+    dec = {"end": "2023-12-31", "fp": "FY", "fy": 2023, "val": 2, "accn": "x"}
+    assert _classify_period(jan, fy_end_month=12) == "FY2022"
+    assert _classify_period(dec, fy_end_month=12) == "FY2023"
+
+
+def test_classify_instant_53_week_drift() -> None:
+    # COST (Aug FYE) drifts into early September on 53-week years; both are the
+    # annual balance and label by end.year (no wrap for a non-December FYE).
+    aug = {"end": "2022-08-28", "fp": "FY", "fy": 2022, "val": 1, "accn": "x"}
+    sep = {"end": "2023-09-03", "fp": "FY", "fy": 2023, "val": 2, "accn": "x"}
+    assert _classify_period(aug, fy_end_month=8) == "FY2022"
+    assert _classify_period(sep, fy_end_month=8) == "FY2023"
 
 
 def test_classify_drops_off_cycle_durations() -> None:
@@ -175,6 +210,118 @@ def test_iter_facts_aapl_fy2019_regression() -> None:
     assert by_period["FY2018"].value == 265_595_000_000
     assert "Q4-2019" in by_period
     assert by_period["Q4-2019"].value == 64_040_000_000
+
+
+def test_iter_facts_instant_comparative_no_off_by_one() -> None:
+    # The balance-sheet off-by-one: PG's CommercialPaper 2024-06-30 balance is
+    # re-published in the FY2025 10-K stamped fy=2025 (comparative). Both the
+    # comparative and the real FY2025 balance must survive under their own years,
+    # not collapse onto FY2025 with dedup picking one arbitrarily.
+    cf = {
+        "facts": {
+            "us-gaap": {
+                "Revenues": {  # anchors the inferred June fiscal year-end
+                    "units": {
+                        "USD": [
+                            {
+                                "start": "2024-07-01",
+                                "end": "2025-06-30",
+                                "fp": "FY",
+                                "fy": 2025,
+                                "val": 84_000_000_000,
+                                "accn": "a25",
+                            }
+                        ]
+                    }
+                },
+                "CommercialPaper": {
+                    "units": {
+                        "USD": [
+                            {
+                                "end": "2024-06-30",
+                                "fp": "FY",
+                                "fy": 2024,
+                                "val": 3_327_000_000,
+                                "accn": "a24",
+                            },
+                            {
+                                "end": "2024-06-30",
+                                "fp": "FY",
+                                "fy": 2025,
+                                "val": 3_327_000_000,
+                                "accn": "a25",
+                            },
+                            {
+                                "end": "2025-06-30",
+                                "fp": "FY",
+                                "fy": 2025,
+                                "val": 4_108_000_000,
+                                "accn": "a25",
+                            },
+                        ]
+                    }
+                },
+            }
+        }
+    }
+    cp = {
+        r.period: r.value for r in iter_facts("80424", cf) if r.concept == "us-gaap:CommercialPaper"
+    }
+    assert cp["FY2024"] == 3_327_000_000
+    assert cp["FY2025"] == 4_108_000_000
+
+
+def test_iter_facts_duration_january_wrap() -> None:
+    # The Dec/Jan wrap applies to income-statement (duration) facts too, so a
+    # January-closing fiscal year lands on the same label as its balance sheet.
+    cf = {
+        "facts": {
+            "us-gaap": {
+                "NetIncomeLoss": {
+                    "units": {
+                        "USD": [
+                            {
+                                "start": "2022-01-03",
+                                "end": "2023-01-01",
+                                "fp": "FY",
+                                "fy": 2022,
+                                "val": 17_941_000_000,
+                                "accn": "a22",
+                            },
+                            {
+                                "start": "2023-01-02",
+                                "end": "2023-12-31",
+                                "fp": "FY",
+                                "fy": 2023,
+                                "val": 35_153_000_000,
+                                "accn": "a23",
+                            },
+                            {
+                                "start": "2024-01-01",
+                                "end": "2024-12-29",
+                                "fp": "FY",
+                                "fy": 2024,
+                                "val": 14_066_000_000,
+                                "accn": "a24",
+                            },
+                            {
+                                "start": "2024-12-30",
+                                "end": "2025-12-28",
+                                "fp": "FY",
+                                "fy": 2025,
+                                "val": 26_804_000_000,
+                                "accn": "a25",
+                            },
+                        ]
+                    }
+                }
+            }
+        }
+    }
+    ni = {r.period: r.value for r in iter_facts("200406", cf)}
+    assert ni["FY2022"] == 17_941_000_000
+    assert ni["FY2023"] == 35_153_000_000
+    assert ni["FY2024"] == 14_066_000_000
 
 
 def test_iter_facts_dedup_keeps_latest_accession() -> None:

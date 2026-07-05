@@ -175,7 +175,10 @@ def run_all(
     cases = load_gold(gold_path)
     out_dir.mkdir(parents=True, exist_ok=True)
     results: list[CaseResult] = []
-    for c in cases:
+    run_start = time.monotonic()
+    n_cases = len(cases)
+    for i, c in enumerate(cases, 1):
+        print(f"  [{i:>2}/{n_cases}] > {c.id}", flush=True)
         r = run_case(c, compiled_graph=compiled_graph)
         if judge:
             from quorum.eval.judges import score_case
@@ -209,6 +212,13 @@ def run_all(
                 },
                 indent=2,
             )
+        )
+        wall = time.monotonic() - run_start
+        eta = (wall / i) * (n_cases - i)
+        print(
+            f"  [{i:>2}/{n_cases}] {i * 100 // n_cases:>3}%  {r.final_status:8s} "
+            f"{r.elapsed_s:5.0f}s  elapsed {wall / 60:.1f}m  eta ~{eta / 60:.0f}m  {c.id}",
+            flush=True,
         )
     summary: dict[str, Any] = {
         "n_cases": len(cases),

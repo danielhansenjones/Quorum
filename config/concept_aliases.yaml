@@ -19,6 +19,7 @@ profitability.revenue:
     GOOGL:
       - us-gaap:Revenues
     META:
+      - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
       - us-gaap:Revenues
 
 profitability.net_income:
@@ -44,20 +45,31 @@ profitability.cost_of_revenue:
     - us-gaap:CostOfRevenue
     - us-gaap:CostOfGoodsAndServicesSold
 
-leverage.total_debt:
-  default:
-    - us-gaap:LongTermDebt
-    - us-gaap:LongTermDebtNoncurrent
+# Total debt is modeled from three disjoint components (noncurrent + current
+# maturities + short-term), summed by the analyst. Never a single bundled tag:
+# LongTermDebt (combined) and DebtCurrent overlap their components and would
+# double count. KO drops LongTermDebtNoncurrent for the capital-lease-inclusive
+# tag from FY2024; the fallbacks cover that without a per-ticker override.
 
 leverage.long_term_debt:
+  # Debt due after one year.
   default:
     - us-gaap:LongTermDebtNoncurrent
-    - us-gaap:LongTermDebt
+    - us-gaap:LongTermDebtAndCapitalLeaseObligations
+
+leverage.current_debt:
+  # Current maturities of long-term debt (due within one year).
+  default:
+    - us-gaap:LongTermDebtCurrent
+    - us-gaap:LongTermDebtAndCapitalLeaseObligationsCurrent
 
 leverage.short_term_debt:
+  # Commercial paper / short-term borrowings. ShortTermBorrowings (loans and
+  # notes payable) already bundles CP where tagged; filings that drop it fall
+  # through to CommercialPaper.
   default:
     - us-gaap:ShortTermBorrowings
-    - us-gaap:LongTermDebtCurrent
+    - us-gaap:CommercialPaper
 
 leverage.total_equity:
   default:
@@ -65,8 +77,12 @@ leverage.total_equity:
     - us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
 
 leverage.cash_and_equivalents:
+  # PG and other post-ASU-2016-18 filers tag the combined cash + restricted cash
+  # concept instead of the pure one; restricted cash is immaterial for these
+  # names, so it is an acceptable fallback when the pure concept is absent.
   default:
     - us-gaap:CashAndCashEquivalentsAtCarryingValue
+    - us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
 
 leverage.total_assets:
   default:

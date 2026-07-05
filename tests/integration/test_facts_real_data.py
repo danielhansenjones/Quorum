@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+import re
 import socket
 
 import pytest
 
+from quorum.config.companies import CIK_BY_TICKER
+from quorum.graph.axis_config import AXIS_CONCEPTS
 from quorum.tools.concept_resolver import get_financial_concept
 from quorum.trace.writer import open_pool
 
@@ -56,6 +59,60 @@ def test_cross_company_resolver_canary(pool) -> None:
     assert aapl[0].resolved_concept != ko[0].resolved_concept
     assert aapl[0].resolved_concept == "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     assert ko[0].resolved_concept == "us-gaap:Revenues"
+
+
+# (ticker, key) pairs with no recent-FY value because the company genuinely does
+# not tag that concept - not an alias bug. Verified against companyfacts 2026-07-05:
+# tech/pharma rarely tag GrossProfit; pharma structures its income statement
+# without OperatingIncomeLoss; minimal-debt names (META) and bundled-current-debt
+# filers (PEP/LLY report only DebtCurrent, which overlaps commercial paper and so
+# is excluded to avoid double counting) lack the current/short-term debt pieces.
+_KNOWN_EMPTY: frozenset[tuple[str, str]] = frozenset(
+    {
+        ("GOOGL", "profitability.gross_profit"),
+        ("META", "profitability.gross_profit"),
+        ("META", "leverage.current_debt"),
+        ("META", "leverage.short_term_debt"),
+        ("PG", "profitability.gross_profit"),
+        ("PEP", "leverage.current_debt"),
+        ("COST", "profitability.gross_profit"),
+        ("COST", "leverage.short_term_debt"),
+        ("JNJ", "profitability.operating_income"),
+        ("PFE", "profitability.operating_income"),
+        ("PFE", "profitability.gross_profit"),
+        ("MRK", "profitability.operating_income"),
+        ("MRK", "profitability.gross_profit"),
+        ("MRK", "leverage.short_term_debt"),
+        ("LLY", "profitability.operating_income"),
+        ("LLY", "profitability.gross_profit"),
+        ("LLY", "leverage.current_debt"),
+    }
+)
+
+_FY_RE = re.compile(r"^FY(\d{4})$")
+
+
+def test_systematic_resolver_canary(pool) -> None:
+    # Phase 12g: every (ticker x axis-concept the analyst pulls) resolves to a
+    # recent fiscal year except a documented set of genuine not-reported concepts.
+    # This turns an alias gap - which otherwise surfaces only as a low faithfulness
+    # score on one eval case - into a test failure. It also fails if a known gap
+    # silently closes, keeping the exception list honest.
+    keys = sorted({k for concepts in AXIS_CONCEPTS.values() for k in concepts})
+    actual_empty: set[tuple[str, str]] = set()
+    for ticker in CIK_BY_TICKER:
+        for key in keys:
+            rows = get_financial_concept(pool, ticker=ticker, key=key)
+            recent = [r for r in rows if (m := _FY_RE.match(r.period)) and int(m.group(1)) >= 2021]
+            if not recent:
+                actual_empty.add((ticker, key))
+    new_gaps = sorted(actual_empty - _KNOWN_EMPTY)
+    closed = sorted(_KNOWN_EMPTY - actual_empty)
+    assert not new_gaps and not closed, (
+        "resolver coverage drifted from the documented baseline.\n"
+        f"  new alias gaps (regression, fix the chain): {new_gaps}\n"
+        f"  gaps that now resolve (drop from _KNOWN_EMPTY): {closed}"
+    )
 
 
 def test_period_filter_narrows_results(pool) -> None:

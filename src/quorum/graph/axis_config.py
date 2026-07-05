@@ -27,8 +27,9 @@ AXIS_CONCEPTS: dict[str, tuple[str, ...]] = {
     ),
     "growth": ("profitability.revenue",),
     "leverage": (
-        "leverage.total_debt",
         "leverage.long_term_debt",
+        "leverage.current_debt",
+        "leverage.short_term_debt",
         "leverage.total_equity",
         "leverage.cash_and_equivalents",
     ),

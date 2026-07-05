@@ -74,6 +74,16 @@ def _fiscal_quarter(end: date, fy_end_month: int) -> str | None:
     return _QUARTER_BY_DELTA.get(delta)
 
 
+def _annual_fiscal_year(end: date, fy_end_month: int | None) -> int:
+    # A 52/53-week filer whose fiscal year ends the Sunday nearest Dec 31 can
+    # close in early January; that period is the prior calendar year's fiscal
+    # year (JNJ FY2022 ended 2023-01-01). Every v1 FYE month is >= 6, so only
+    # the December/January wrap needs correcting; otherwise end.year is the label.
+    if fy_end_month == 12 and end.month == 1:
+        return end.year - 1
+    return end.year
+
+
 def _classify_period(dp: dict[str, Any], fy_end_month: int | None) -> str | None:
     end = _parse_date(dp.get("end"))
     if end is None:
@@ -82,23 +92,39 @@ def _classify_period(dp: dict[str, Any], fy_end_month: int | None) -> str | None
     start = _parse_date(dp.get("start"))
 
     if start is None:
-        # Instant fact (balance sheet snapshot). Trust fp/fy; the SEC's
-        # labeling is reliable for instant facts because there's no
-        # duration ambiguity.
-        fp = dp.get("fp")
-        fy = dp.get("fy")
-        if fy is None:
+        # Instant fact (balance-sheet snapshot). The SEC re-publishes a prior
+        # year's balance as a comparative in the next filing and stamps it with
+        # THAT filing's fp/fy, so trusting fp/fy labels the comparative a full
+        # fiscal year too late; both balances then collide on one period key and
+        # dedup keeps whichever the JSON lists first (the off-by-one is silent).
+        # Classify by the snapshot's own end date relative to the fiscal
+        # year-end instead - the same convention the duration branch uses - so
+        # each balance keeps its own period. Fall back to fp/fy only when the
+        # fiscal year-end could not be inferred.
+        if fy_end_month is None:
+            fp = dp.get("fp")
+            fy = dp.get("fy")
+            if fy is None:
+                return None
+            if fp == "FY":
+                return f"FY{fy}"
+            if fp in ("Q1", "Q2", "Q3", "Q4"):
+                return f"{fp}-{fy}"
             return None
-        if fp == "FY":
-            return f"FY{fy}"
-        if fp in ("Q1", "Q2", "Q3", "Q4"):
-            return f"{fp}-{fy}"
-        return None
+        # Snap to the nearest fiscal-quarter offset, tolerant of the +/- one
+        # month drift from 52/53-week fiscal calendars. Annual (offset 0) uses
+        # end.year like the duration branch; quarter-ends fall in a different
+        # calendar year than the fiscal year, so those use _fiscal_year.
+        delta = (end.month - fy_end_month) % 12
+        offset = min((0, 3, 6, 9, 12), key=lambda q: abs(delta - q)) % 12
+        if offset == 0:
+            return f"FY{_annual_fiscal_year(end, fy_end_month)}"
+        return f"{_QUARTER_BY_DELTA[offset]}-{_fiscal_year(end, fy_end_month)}"
 
     duration = (end - start).days
 
     if _ANNUAL_MIN_DAYS <= duration <= _ANNUAL_MAX_DAYS:
-        return f"FY{end.year}"
+        return f"FY{_annual_fiscal_year(end, fy_end_month)}"
 
     if _QUARTERLY_MIN_DAYS <= duration <= _QUARTERLY_MAX_DAYS:
         if fy_end_month is None:

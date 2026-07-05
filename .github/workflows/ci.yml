@@ -39,6 +39,43 @@ jobs:
         run: uv run mypy src/quorum
 
       # Integration (docker services), gpu, and eval (needs ANTHROPIC_API_KEY,
-      # bills real tokens) suites are intentionally out of CI.
+      # bills real tokens) suites are intentionally out of CI. The kill-resume
+      # suite runs as its own job below against a Postgres service container.
       - name: Unit and smoke tests
         run: uv run pytest tests/unit tests/smoke -q
+
+  kill-resume:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: quorum
+          POSTGRES_PASSWORD: quorum
+          POSTGRES_DB: quorum
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U quorum"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+          python-version: "3.12"
+
+      - name: Sync dependencies
+        run: uv sync --extra eval --group dev
+
+      # SIGKILL + resume against a real checkpointer: proves the durability
+      # claim in ARCHITECTURE.md on every push, with scripted model fakes so
+      # no tokens are billed.
+      - name: Kill-resume suite
+        run: uv run pytest tests/kill_resume -q

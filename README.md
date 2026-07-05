@@ -2,8 +2,8 @@
 
 [![CI](https://github.com/danielhansenjones/Quorum/actions/workflows/ci.yml/badge.svg)](https://github.com/danielhansenjones/Quorum/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![status-match](https://img.shields.io/badge/status--match-35%2F41-success)](#results)
-[![faithfulness](https://img.shields.io/badge/faithfulness-4.5%2F5-success)](#results)
+[![status-match](https://img.shields.io/badge/status--match-29%2F41-success)](#results)
+[![faithfulness](https://img.shields.io/badge/faithfulness-4.6%2F5-success)](#results)
 [![quality](https://img.shields.io/badge/quality-4.6%2F5-success)](#results)
 
 [![Python](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)](pyproject.toml)
@@ -23,11 +23,11 @@ Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum classifies 
 - **A graph, not a chain.** Analysts fan out in parallel (LangGraph `Send`), an `assess` node re-plans only the weakly-grounded axes within a step budget, and an agentic critic verifies the draft before synthesis. Branching, re-planning, and a bounded agent loop in one graph.
 - **Agentic fact-checking.** The critic runs a bounded tool loop (5 turns / 90s) over the same XBRL facts and filing text the analysts used, flags unsupported claims, and the synthesizer acts on every flag.
 - **Grounded in real data.** 12 companies across Big Tech, Consumer Staples, and Pharma; the latest 10-K plus four 10-Qs each (~60 filings, ~6000 chunks). Quant -> XBRL facts in Postgres; qual -> hybrid search over Qdrant (BGE-M3 dense + learned sparse).
-- **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: status-match 35/41, faithfulness 4.51/5, quality 4.57/5 (0 judge failures). Classifier axis macro-F1 0.92; refusal precision and recall 1.0.
+- **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: faithfulness 4.56/5, quality 4.62/5, status-match 29/41 (0 judge failures). Classifier axis macro-F1 0.92; refusal precision and recall 1.0. Every number traces to a committed artifact under [`eval/results/`](eval/results/).
 - **Honest eval methodology.** A judge-correlation study tested a cheap local 7B judge against Sonnet and rejected it (quality Spearman 0.11). Sonnet judges everything; the decision and its gates are checked into [`eval/judge_config.yaml`](eval/judge_config.yaml).
-- **Does the critic earn its cost?** A paired A/B harness (critic on vs off) with bootstrap confidence intervals and an incorporation metric is wired to quantify the critic's effect on faithfulness, quality, and dollars. The same harness carries two further default-off arms: a critic-analyst rebuttal loop and a tiered agentic analyst (cheap legwork tool-loop, Sonnet write).
-- **Durable by construction.** A Postgres checkpointer writes state at every super-step; `/runs/{id}/resume` re-drives from the last checkpoint, and re-run nodes hit a canonical-JSON LLM cache, so they fire zero new API calls when inputs are unchanged.
-- **Real cost accounting.** Every LLM call writes a trace row with token counts and a dollar figure. A full multi-axis comparison runs about $0.10, and the critic is the measured cost driver.
+- **Does the critic earn its cost? Measured.** A four-arm paired A/B campaign (critic on/off, a critic-analyst rebuttal loop, a tiered agentic analyst) with bootstrap CIs: the critic adds +0.07 quality at +$0.086/case with faithfulness flat; the rebuttal loop posts the only statistically significant quality gain (+0.10) but nudges faithfulness down, so it ships off by the pre-registered rule; the agentic analyst loses on both and ships off. Numbers and the decision reasoning are in [ARCHITECTURE.md](ARCHITECTURE.md#ab-does-the-critic-earn-its-cost).
+- **Durable by construction, proven by SIGKILL.** A Postgres checkpointer writes state at every super-step; `/runs/{id}/resume` re-drives from the last checkpoint, and re-run nodes hit a canonical-JSON LLM cache. A kill-resume suite in CI SIGKILLs runs mid-LLM-call, mid-fan-out, and mid-critic-turn: every resume finishes with a byte-identical report and zero duplicate API calls.
+- **Real cost accounting.** Every LLM call writes a trace row with token counts and two dollar figures: billed (notional) and effective (zero on a cache replay), so A/B pairing stays fair while actual spend stays visible. A judged run averages $0.124/case, and the critic is the measured cost driver (68% of arm spend).
 - **Two surfaces.** FastAPI with an SSE stream of node events (watch the agent work), and an MCP server exposing the six tools plus a high-level `compare_companies` for Claude Desktop.
 - **Typed and gated.** Pydantic v2 state with a discriminated citation union and parallel-write-safe reducers; mypy strict on the typed core; ruff lint and format; CI on every push.
 
@@ -129,14 +129,14 @@ Anthropic Sonnet powers the analyst, synthesizer, critic, and canonical judge. H
 
 ## Results
 
-41-case gold set, judged by Sonnet ([`eval/judge_config.yaml`](eval/judge_config.yaml)):
+41-case gold set, judged by Sonnet ([`eval/judge_config.yaml`](eval/judge_config.yaml)), default configuration:
 
 | Metric | Value |
 |--------|-------|
-| Status match (ok / partial / refused) | 35 / 41 (0.85) |
-| Faithfulness mean (32 answered cases) | 4.51 / 5 |
-| Quality mean (32 answered reports)    | 4.57 / 5 |
-| Quality-judge failures                | 0 |
+| Status match (ok / partial / refused) | 29 / 41 (0.71) |
+| Faithfulness mean (32 answered cases) | 4.56 / 5 |
+| Quality mean (41 cases)               | 4.62 / 5 |
+| Faithfulness / quality judge failures | 0 / 0 |
 
 Classifier, deterministic scoring over the full gold set:
 
@@ -146,7 +146,7 @@ Classifier, deterministic scoring over the full gold set:
 | Axis exact-set-match                  | 0.85 |
 | Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
 
-Faithfulness is deterministic for quant citations (value + unit + period checked against Postgres) and LLM-judged for qual citations. The judge-correlation study rejected a cheap local 7B judge on quality (Spearman 0.11 against Sonnet) and kept Sonnet as the sole judge. The critic-on-vs-off A/B harness (paired bootstrap CIs, incorporation metric) is wired and ready to run. Per-case artifacts behind these numbers (reports, scores, citations) are committed under [`eval/results/judged-full-v1-final/`](eval/results/judged-full-v1-final/). Full tables, the cost breakdown, and the honest analysis behind each number are in [ARCHITECTURE.md](ARCHITECTURE.md#eval-harness).
+Faithfulness is deterministic for quant citations (value + unit + period checked against Postgres) and LLM-judged for qual citations. The judge-correlation study rejected a cheap local 7B judge on quality (Spearman 0.11 against Sonnet) and kept Sonnet as the sole judge. The critic-on-vs-off A/B ran as a four-arm campaign: the critic adds +0.067 quality (95% CI -0.037 to +0.183) at +$0.086/case with faithfulness flat, and synthesis acted on all 56 flagged claims (incorporation rate 1.0). Per-case artifacts behind every number (reports, scores, citations, paired compares) are committed under [`eval/results/campaign-critic/`](eval/results/campaign-critic/) and [`eval/results/campaign-compares/`](eval/results/campaign-compares/). Full tables, the cost breakdown, and the honest analysis behind each number are in [ARCHITECTURE.md](ARCHITECTURE.md#eval-harness).
 
 ## Quickstart
 
@@ -192,10 +192,10 @@ The same capability is exposed over MCP: the six low-level tools (`resolve_compa
 ./secret-run uv run python scripts/run_cost_report.py
 
 # paired A/B of two run dirs (e.g. baseline vs +critic) with bootstrap CIs
-uv run python scripts/run_ab_compare.py eval/runs/baseline eval/runs/+critic --cost
+uv run python scripts/run_ab_compare.py eval/runs/campaign-baseline eval/runs/campaign-critic --cost
 ```
 
-A full multi-axis comparison runs about $0.10; refusals short-circuit to ~$0.001. The critic is the cost driver (~$0.023/turn). See [ARCHITECTURE.md](ARCHITECTURE.md#cost) for the per-node breakdown and the caching story.
+A judged run averages $0.124/case (p50 $0.125, p95 $0.282); refusals short-circuit to ~$0.001. The critic is the cost driver (~$0.027/turn, 68% of arm spend). See [ARCHITECTURE.md](ARCHITECTURE.md#cost) for the per-node breakdown, the billed-vs-effective split, and the caching story.
 
 ## Engineering
 
@@ -208,8 +208,9 @@ A full multi-axis comparison runs about $0.10; refusals short-circuit to ~$0.001
 
 A few honest edges, with the full list in [ARCHITECTURE.md](ARCHITECTURE.md#limitations):
 
-- The corpus is fixed (latest 10-K + four 10-Qs per company). A question whose scope exceeds that window, or asks for a breakout the XBRL facts do not isolate, is answered on the available slice; flagging that under-scope and downgrading to `partial` is a v2 item.
-- The `assess` node over-flags a few well-grounded qualitative axes as weak; the grounding heuristic is tuned for quant-fact density and under-credits qual evidence.
+- The corpus is fixed (latest 10-K + four 10-Qs per company). A question whose scope exceeds that window, or asks for a breakout the XBRL facts do not isolate, is answered on the available slice; flagging that under-scope and downgrading to `partial` is a v2 item (4 of the 12 status mismatches).
+- The `assess` node over-flags well-grounded qualitative axes as weak (8 of the 12 status mismatches); the grounding heuristic is tuned for quant-fact density and under-credits qual evidence. This is the main reason status match reads 29/41.
+- Sonnet writes the reports and Sonnet judges them. Same-model self-preference is disclosed, not measured; what bounds it is that quant faithfulness and status match are deterministic code, not judge opinion.
 - The local Qwen classifier is a portfolio statement, not a v1 cost win: Haiku is cheaper than the GPU time at this scale. The honest framing is in the architecture doc.
 
 ## More

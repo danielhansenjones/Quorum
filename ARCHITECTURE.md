@@ -75,7 +75,12 @@ State is a Pydantic v2 model. Two design points matter:
 
 The checkpointer serializer uses an explicit msgpack allowlist (`CHECKPOINT_MODELS`). `tests/unit/test_checkpoint_allowlist.py` enforces two things: every state model is registered (a missing one would silently break resume), and an unregistered type is blocked on deserialize (proving the allowlist does real work). This is the guard that keeps resume from rotting as state evolves.
 
-Open items: full crash-recovery testing (subprocess SIGKILL across the fan-out, a re-plan, and the critic node) is a planned follow-up, not yet in CI. The empirical question it pins down is whether the fan-out checkpoints per branch or only at the join.
+The durability claim is proven, not asserted: a SIGKILL suite (`tests/kill_resume/`, its own CI job against a Postgres service container) kills a subprocess run at clean node boundaries, mid-LLM-call, mid-fan-out, mid-re-plan, and mid-critic-turn, then resumes. Resumed runs finish with byte-identical reports and zero duplicate API calls (scripted model fakes plus the disk cache make both assertable). The empirical answers worth recording:
+
+- LangGraph checkpoints once per superstep, so all fan-out branch writes land in the single join checkpoint. Partial fan-out recovery comes from task-level pending writes plus cache-hit re-runs, not per-branch checkpoints.
+- Node trace rows are written at node completion: a killed attempt leaves no row, and resume does not double-count. On a disk-cache replay the trace row keeps the notional billed cost and records zero effective spend, so cost pairing survives a resume.
+- The suite runs the checkpointer with `durability="sync"`. The production default is async, where a hard kill can lose the newest superstep's checkpoint; resume then re-runs that superstep and the cache absorbs the cost.
+- A state-schema widening smoke (resume an old checkpoint under a schema with a new optional field) loads cleanly: langgraph leaves the new channel absent in old checkpoint values and pydantic fills the default at construction time.
 
 ## Retrieval and data layer
 
@@ -92,16 +97,16 @@ The harness runs the gold set through the graph, writes one JSON per case plus a
 
 Faithfulness is deterministic for quant citations (value + unit + period checked against Postgres, which floors grounded quant axes near 5.0) and LLM-judged for qual citations. Quality is one Sonnet rubric pass over the whole report.
 
-Full 41-case judged run ([`eval/results/judged-full-v1-final/summary.json`](eval/results/judged-full-v1-final/summary.json), Sonnet judge):
+Full 41-case judged run ([`eval/results/campaign-critic/summary.json`](eval/results/campaign-critic/summary.json), Sonnet judge, the default configuration - critic on, rebuttal and agentic off):
 
 | Metric | Value |
 |--------|-------|
-| Status match (vs expected ok / partial / refused) | 35 / 41 (0.85) |
-| Faithfulness mean (32 answered cases) | 4.51 / 5 |
-| Quality mean (32 answered reports)    | 4.57 / 5 |
-| Quality-judge failures                | 0 |
+| Status match (vs expected ok / partial / refused) | 29 / 41 (0.71) |
+| Faithfulness mean (32 answered cases) | 4.56 / 5 |
+| Quality mean (41 cases)               | 4.62 / 5 |
+| Faithfulness / quality judge failures | 0 / 0 |
 
-The faithfulness mean is pulled down by the interpretive `risk_factors` axis (per-case ~3.4-3.8) and three weakly-cited cases (`pg_ko_leverage` 2.0, `googl_meta_growth` 2.3, `segment_revenue` 2.3); quant-grounded axes sit near 5.0. The six status mismatches are two known issues, not regressions: three qual axes the `assess` node over-flags as weak (reported `partial`, gold `ok`), and three questions whose temporal or segment scope exceeds the corpus (decade / 15-year / advertising-segment) answered on the available slice without flagging the shortfall (reported `ok`, gold `partial`). Both are in [Limitations](#limitations). Reported means cover the 32 answered cases; refusals carry no report and are excluded.
+The faithfulness mean is pulled down by the interpretive `risk_factors` axis (per-case 3.2-3.5) and two weakly-cited cases (`jnj_pfe_profitability` 2.3, `gross_margin_googl` 2.3); quant-grounded axes sit near 5.0. The twelve status mismatches split into the two known issues, not regressions: eight qualitative axes the `assess` node over-flags as weak (reported `partial`, gold `ok`), and four questions whose temporal or segment scope exceeds the corpus answered on the available slice without flagging the shortfall (reported `ok`, gold `partial`). Both are in [Limitations](#limitations). Faithfulness covers the 32 answered cases; refusals carry no report. The metric excludes-and-counts judge errors (`faithfulness_judge_failures`, 0 here), so means from before that change are not bit-comparable.
 
 ### Classification and refusal
 
@@ -135,7 +140,30 @@ The critic is the dominant cost. Whether it improves the output is a measurable 
 - `score_incorporation` (in `judges.py`) is a deterministic proxy for whether synthesis acted on a flag: a flagged claim is "incorporated" if it is not present verbatim in the final report (dropped, softened, or counter-cited all change the text). It distinguishes "no flags" (n=0) from "no critic" (None).
 - `eval/ab_compare.py` pairs two run dirs by `case_id` and reports per-metric mean deltas with a paired bootstrap 95% CI (fixed seed, deterministic), folding in per-request cost when the trace DB is available. Run it with `scripts/run_ab_compare.py`.
 
-The comparison is arm-agnostic: the campaign is a sequence of these pairings (baseline vs +critic, then the rebuttal and agentic arms against the winner), each one a `compare_runs` call over two run dirs. This is wired and unit-tested; the paired baseline-vs-+critic run is pending.
+The four-arm campaign ran on the full 41-case gold set, one arm per toggle combination, same commit, same judge, shared LLM cache. Per-arm artifacts are committed under `eval/results/campaign-*/`; the five paired compares under [`eval/results/campaign-compares/`](eval/results/campaign-compares/).
+
+| Arm | Faithfulness | Quality | Status match |
+|-----|--------------|---------|--------------|
+| baseline (no critic)  | 4.56 | 4.53 | 31 / 41 |
+| +critic (the default) | 4.56 | 4.62 | 29 / 41 |
+| +rebuttal             | 4.55 | 4.66 | 29 / 41 |
+| +agentic analyst      | 4.50 | 4.57 | 29 / 41 |
+
+Paired deltas vs baseline (mean, bootstrap 95% CI):
+
+| Arm | Faithfulness | Quality | Cost / case |
+|-----|--------------|---------|-------------|
+| +critic   | +0.004 [-0.006, +0.019] | +0.067 [-0.037, +0.183] | +$0.086 [+0.065, +0.108] |
+| +rebuttal | -0.007 [-0.016, -0.001] | +0.104 [+0.006, +0.213] | +$0.125 [+0.096, +0.152] |
+| +agentic  | -0.055 [-0.127, +0.015] | +0.012 [-0.098, +0.128] | +$0.138 [+0.103, +0.171] |
+
+Decisions from the data, stated with the numbers rather than hidden:
+
+- **Critic stays on.** Quality +0.067 with a CI that includes zero at n=41 - the judge-score case alone does not clear the bar. What the critic buys is the verification artifact: 56 flagged claims across 32 critiques, incorporation rate 1.0 (synthesis acted on every flag), 259/259 valid tool calls, zero timeouts. Faithfulness was already near its ceiling from the deterministic quant checks, leaving the judge little room to move. The honest summary: the critic is the product's verification story at +$0.086/case, not a measured judge-score win.
+- **Rebuttal loop stays off.** The pre-registered ship rule was faithfulness flat-or-up at acceptable cost. Measured: faithfulness -0.007 with a CI excluding zero - statistically down, if microscopically. It also produced the campaign's only significant quality gain (+0.104, CI excludes zero) and the disposition data is healthy (48 flagged claims across 22 cases: 43 revised, 4 retracted, 1 defended; post-rebuttal flags dropped 56 to 28). The revise-heavy behavior explains the tension: revised claims re-word the report, and re-worded prose judges slightly less faithful. It is the most promising follow-up, but the rule says off.
+- **Agentic analyst stays off.** Faithfulness -0.055 and quality below the critic arm, at the campaign's highest cost (+$0.138/case over baseline). The tiered loop itself ran clean (Haiku legwork, zero fallbacks, `run_config.models` confirms the routing), so the loss is evidence quality, not infrastructure - the cheap model gathers worse evidence than the code-driven single-shot path.
+
+One measurement honesty note: full-campaign cache replays are near-identical but not bit-identical (retrieval-order nondeterminism causes a handful of cache misses), which moves judge means by roughly +/-0.03 between replays. The committed artifacts are one self-consistent replay set: every arm on the same commit, same cache, same judge.
 
 ### Agent-level
 
@@ -143,22 +171,22 @@ The comparison is arm-agnostic: the campaign is a sequence of these pairings (ba
 
 ## Cost
 
-Every LLM call emits a `trace_events` row with real token counts and a computed dollar cost (Anthropic public rates; local Qwen is $0). `scripts/run_cost_report.py` aggregates per request and per node.
+Every LLM call emits a `trace_events` row with real token counts and two dollar figures: `cost_dollars_billed` (the notional price of the call) and `cost_dollars_effective` (actual spend - zero when the disk cache answered). Replays and resumes keep their notional cost so A/B pairing stays comparable across warm and cold arms, while the effective column reports what was actually paid. `scripts/run_cost_report.py` aggregates per request and per node. `attempt_number` in `trace_events` is always 1 by design; attempt ordering is derived at read time (`ROW_NUMBER` over `id` per request_id + node_name), not written.
 
-A full multi-axis comparison runs about **$0.10**:
+Campaign numbers (critic arm, 41 requests, `run_cost_report.py` scoped to the arm's request_ids):
 
 | Node | $/call | notes |
 |------|--------|-------|
-| llm:critic      | ~$0.023/turn | dominant cost - the agentic tool loop, up to 5 turns |
+| llm:critic      | ~$0.027/turn | dominant cost - 128 turns, 68% of arm spend |
+| llm:synthesizer | ~$0.021 | one Sonnet call per report |
 | llm:analyst     | ~$0.018 | one Sonnet call per axis |
-| llm:synthesizer | ~$0.015 | one Sonnet call per report |
 | llm:classifier  | ~$0.0004 | Haiku |
 
-Per-request: p50 ~$0.001 (refusals short-circuit), p95 ~$0.105 (full multi-axis). The critic being the cost driver is the direct input to the A/B measurement above.
+Per-request: mean $0.124 across the gold set (nine refusals short-circuit near $0), p50 $0.125, p95 $0.282 (multi-axis with a five-turn critic). The critic being the cost driver is the direct input to the A/B measurement above.
 
 Two caches matter and they are separate:
 
-- **Local disk cache** - canonical-JSON key over model + messages + system prompt + tool schemas + params, so a prompt or tool edit misses on its own instead of replaying stale responses. Reported 100% hit rate on a re-run of an unchanged eval set (20/20 calls on a two-pass measurement, `scripts/run_cache_hitrate.py`). This is what makes resume free when inputs are unchanged. The eval judges ride the same cache, so re-judging identical reports (a crashed or repeated arm) re-bills nothing.
+- **Local disk cache** - canonical-JSON key over model + messages + system prompt + tool schemas + params, so a prompt or tool edit misses on its own instead of replaying stale responses. Reported 100% hit rate on a re-run of an unchanged eval set (20/20 calls on a two-pass measurement, `scripts/run_cache_hitrate.py`). This is what makes resume free when inputs are unchanged. The eval judges ride the same cache, so re-judging identical reports (a crashed or repeated arm) re-bills nothing. One measured caveat: a full-campaign replay is near-free but not fully free - retrieval-order nondeterminism occasionally reorders evidence in a prompt, which misses the cache and cascades downstream; the billed-vs-effective split in the trace rows is how that residual spend is visible.
 - **Anthropic prompt cache** - separate, and reads ~0 at v1 prompt sizes (system prompts are below the cache minimum).
 
 ## Local model serving
@@ -169,8 +197,10 @@ Honest framing: the local classifier is a portfolio statement, not a v1 cost win
 
 ## Limitations
 
-- **Fixed corpus.** Latest 10-K plus four 10-Qs per company (~4 fiscal years). A question whose scope exceeds that window ("over the last 15 years") or asks for a breakout the XBRL facts do not isolate (advertising-segment revenue) is answered confidently on the available slice **without flagging the shortfall** - it reports `ok`, not `partial`. The judged set pins this down: `partial_long_window_tech`, `partial_insufficient_growth_for_costco`, and `partial_segment_revenue` are the three mismatches from this. Detecting "the ask exceeds what I grounded" and downgrading to `partial` is a v2 item. When an axis renders an explicit `*Insufficient data*` section, status does drop to `partial`; the gap is the silent under-scope case.
-- **`assess` over-flags qual axes.** It marks some well-grounded qualitative axes (`risk_factors`, one `leverage` case) as weak, downgrading an otherwise complete report to `partial` (3 of 41 gold cases: `pg_ko_leverage`, `pharma_risks`, `staples_risks`). The grounding heuristic is tuned for quant-fact density and under-credits qual evidence; retuning it is a known follow-up.
+- **Fixed corpus.** Latest 10-K plus four 10-Qs per company (~4 fiscal years). A question whose scope exceeds that window ("over the last 15 years") or asks for a breakout the XBRL facts do not isolate (advertising-segment revenue) is answered confidently on the available slice **without flagging the shortfall** - it reports `ok`, not `partial`. The campaign pins this down: `partial_long_window_tech`, `partial_insufficient_growth_for_costco`, `partial_segment_revenue`, and `partial_capex_comparison` are the four mismatches from this in the critic arm. Detecting "the ask exceeds what I grounded" and downgrading to `partial` is a v2 item. When an axis renders an explicit `*Insufficient data*` section, status does drop to `partial`; the gap is the silent under-scope case.
+- **`assess` over-flags qual axes.** It marks some well-grounded qualitative axes as weak, downgrading an otherwise complete report to `partial` (8 of 41 gold cases in the critic arm, concentrated in `risk_factors` and multi-axis cases such as `pharma_risks`, `staples_risks`, `multi_axis_tech`). The grounding heuristic is tuned for quant-fact density and under-credits qual evidence; retuning it is a known follow-up and the main reason status match reads 29/41.
+- **The judge shares a model with the system.** Sonnet writes the reports and Sonnet scores them, so same-model self-preference is a real risk. It is disclosed, not measured: there is no human-agreement number, by decision. What bounds it: quant faithfulness is deterministic code (value + unit + period against Postgres, no judge involved), status match is deterministic, and the one cheap alternative judge tested (local 7B) was rejected on measured grounds above. A cross-model judge re-correlation is the cheap next step if this ever needs tightening.
+- **Filing text is untrusted input.** A prompt injection embedded in a 10-K would reach the analyst and critic prompts. The blast radius is bounded to prose: citations are code-built (a model cannot mint one) and the synthesizer's uncited-number strip removes unbacked figures. An injection red-team harness is committed (`scripts/run_injection_eval.py`, 11 vectors + control) and runs post-campaign; measured leak/flag rates land here when it does.
 - **Hand-curated concept aliases.** `config/concept_aliases.yaml` is curated for the 12-company corpus. Adding tickers from new sectors means extending it and re-populating the Postgres table. At ~50+ companies, an automated XBRL-taxonomy resolver becomes worth building.
 - **ColBERT reranking is indexed-but-unused** at v1; v1 ships dense + sparse hybrid only (decision 9). Adding it requires collection recreation plus a re-ingest.
 - **Local classifier economics** - see [Local model serving](#local-model-serving). A capability demonstration, not a cost win at v1 scale.

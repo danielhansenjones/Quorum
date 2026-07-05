@@ -1,6 +1,11 @@
 from __future__ import annotations
 
-from quorum.eval.judges import _coerce_score, _safe_json, score_report_quality
+from quorum.eval.judges import (
+    _coerce_score,
+    _safe_json,
+    _salvage_truncated_score,
+    score_report_quality,
+)
 from quorum.eval.runner import CaseResult, _aggregate_judging
 
 
@@ -23,6 +28,16 @@ class _FakeJudge:
 
     def chat(self, **_: object) -> _Resp:
         return _Resp(self._text)
+
+
+def test_salvage_truncated_score_recovers_score_before_reason() -> None:
+    # The faithfulness judge emits {"score": N, "reason": ...}; a long reason can
+    # truncate the JSON past max_tokens, but the score is emitted first and survives.
+    assert _salvage_truncated_score('{"score": 2, "reason": "long text that never clo') == 2
+    assert _salvage_truncated_score('{"score": 5, "reason": "ok"}') == 5
+    # Prose preamble that runs out of tokens before any JSON has no score to recover.
+    assert _salvage_truncated_score("I need to evaluate how well this passage supports") is None
+    assert _salvage_truncated_score("") is None
 
 
 def test_coerce_score_clamps_and_rejects() -> None:

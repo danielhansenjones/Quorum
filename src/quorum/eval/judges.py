@@ -101,6 +101,15 @@ _FAITHFULNESS_SYSTEM = (
 )
 
 
+def _salvage_truncated_score(text: str) -> int | None:
+    # A verbose `reason` can push the response past max_tokens and truncate the
+    # JSON before its closing brace, so _safe_json yields nothing. `score` is
+    # emitted first and survives the cut - recover it rather than discarding the
+    # verdict as unparseable.
+    m = re.search(r'"score"\s*:\s*([1-5])', text)
+    return int(m.group(1)) if m else None
+
+
 def verify_qual_citation(
     qdrant: QdrantClient,
     citation: QualCitation,
@@ -133,13 +142,15 @@ def verify_qual_citation(
         judge_client,
         system=_FAITHFULNESS_SYSTEM,
         user=user,
-        max_tokens=384,
+        max_tokens=700,
         cache=llm_cache,
         prompt_version="judge-faithfulness-v1",
     )
     text = _extract_text(resp, judge_client.backend)
     parsed = _safe_json(text)
     raw_score = _coerce_score(parsed.get("score"))
+    if raw_score is None:
+        raw_score = _salvage_truncated_score(text)
     if raw_score is None:
         # Unparseable judge output must not masquerade as a contradicted claim;
         # surface it so the aggregate can be read with eyes open.

@@ -32,6 +32,13 @@ from tests.kill_resume.fakes import (
 
 DEFAULT_QUESTION = "Compare Apple and Microsoft on profitability, growth and risk factors."
 
+
+class KRMigratedState(QuorumState):
+    # T8 stand-in for "a deploy added an optional state field". Module-level so
+    # the checkpoint serde can resolve it by reference across processes.
+    kr_migration_probe: str = "default"
+
+
 # "plan" and "analyze_axis" nodes each dispatch to two module-level functions;
 # both must fire the same hook point so "before:plan" pauses whichever path the
 # node takes.
@@ -118,10 +125,19 @@ async def _amain() -> int:
     mode = os.environ["KR_MODE"]
     question = os.environ.get("KR_QUESTION", DEFAULT_QUESTION)
     dump = os.environ.get("KR_DUMP_CHECKPOINTS") == "1"
+    migrated_schema = os.environ.get("KR_EXTRA_STATE_FIELD") == "1"
+
+    allowed = list(CHECKPOINT_MODELS)
+    if migrated_schema:
+        # build_graph resolves QuorumState via its own module global (build.py
+        # does `from quorum.state.quorum_state import QuorumState`), so the
+        # patch must land on quorum.graph.build, not the state module.
+        build_mod.QuorumState = KRMigratedState
+        allowed.append(KRMigratedState)
 
     pool = open_pool(conninfo=db_url, min_size=2, max_size=8)
     try:
-        serde = JsonPlusSerializer(allowed_msgpack_modules=list(CHECKPOINT_MODELS))
+        serde = JsonPlusSerializer(allowed_msgpack_modules=allowed)
         async with AsyncPostgresSaver.from_conn_string(db_url, serde=serde) as saver:
             await saver.setup()
             graph = build_mod.build_graph(
@@ -167,6 +183,11 @@ async def _amain() -> int:
                 "rebuttal_rounds": values.get("rebuttal_rounds"),
                 "n_citations": len(values.get("report_citations", [])),
             }
+            if migrated_schema:
+                # "absent" is a sentinel: it lets the test distinguish a channel
+                # langgraph never materialized from one filled with the schema
+                # default.
+                out["kr_migration_probe"] = values.get("kr_migration_probe", "absent")
             if dump:
                 history = [s async for s in graph.aget_state_history(config)]
                 history.reverse()

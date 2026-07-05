@@ -32,6 +32,21 @@ class KRResponse:
         self.usage = KRUsage()
 
 
+class KRToolUseBlock:
+    def __init__(self, id: str, name: str, input: dict[str, Any]) -> None:
+        self.type = "tool_use"
+        self.id = id
+        self.name = name
+        self.input = input
+
+
+class KRToolUseResponse:
+    def __init__(self, block: KRToolUseBlock) -> None:
+        self.content = [block]
+        self.stop_reason = "tool_use"
+        self.usage = KRUsage()
+
+
 CLASSIFY_JSON = json.dumps(
     {
         "companies_raw": ["Apple", "Microsoft"],
@@ -63,7 +78,7 @@ SYNTH_TEXT = (
 )
 
 
-def analyst_json(axis: str) -> str:
+def analyst_json(axis: str, grounding: str = "ok") -> str:
     return json.dumps(
         {
             "comparison": f"AAPL and MSFT track each other on {axis}. [AAPL:Q0] [MSFT:Q0]",
@@ -71,10 +86,59 @@ def analyst_json(axis: str) -> str:
                 "AAPL": f"AAPL holds steady on {axis}. [AAPL:Q0]",
                 "MSFT": f"MSFT holds steady on {axis}. [MSFT:Q0]",
             },
-            "grounding": "ok",
-            "reason_if_not_ok": "",
+            "grounding": grounding,
+            "reason_if_not_ok": "" if grounding == "ok" else "evidence thin on one side",
         }
     )
+
+
+def _analyst_grounding(axis: str, messages: list[dict[str, Any]]) -> str:
+    # T4 script: the flagged axis grades weak on its first prompt variant, ok on
+    # the revised one. revise_plan flips a weak structured axis to semantic, so
+    # the prompt's "mode:" line identifies the variant by content; keying on
+    # call order would desync under disk-cache replays.
+    if os.environ.get("KR_WEAK_FIRST_AXIS") != axis:
+        return "ok"
+    content = messages[0].get("content", "")
+    return "weak" if "\nmode: structured\n" in content else "ok"
+
+
+def _tool_result_rounds(messages: list[dict[str, Any]]) -> int:
+    rounds = 0
+    for m in messages:
+        content = m.get("content")
+        if m.get("role") != "user" or not isinstance(content, list):
+            continue
+        if any(isinstance(b, dict) and b.get("type") == "tool_result" for b in content):
+            rounds += 1
+    return rounds
+
+
+def _critic_response(messages: list[dict[str, Any]]) -> KRResponse | KRToolUseResponse:
+    if os.environ.get("KR_CRITIC_TOOLS") != "1":
+        return KRResponse(CRITIC_JSON)
+    # T11 script: a 3-turn tool loop keyed on how many tool_result exchanges the
+    # history already carries, never on call order. Tool-use ids are constants,
+    # not uuids: the id feeds the next turn's message history, which feeds the
+    # cache key, so an unstable id would miss the cache across runs.
+    rounds = _tool_result_rounds(messages)
+    if rounds == 0:
+        return KRToolUseResponse(
+            KRToolUseBlock(
+                "kr-tool-1",
+                "get_financial_concept",
+                {"ticker": "AAPL", "key": "profitability.revenue"},
+            )
+        )
+    if rounds == 1:
+        return KRToolUseResponse(
+            KRToolUseBlock(
+                "kr-tool-2",
+                "search_filings",
+                {"query": "risk factors", "tickers": ["AAPL"]},
+            )
+        )
+    return KRResponse(CRITIC_JSON)
 
 
 def route_of(messages: list[dict[str, Any]]) -> str:
@@ -143,14 +207,15 @@ class FakeSonnet:
     backend = "anthropic"
     model = "claude-sonnet-4-6"
 
-    def chat(self, **kwargs: Any) -> KRResponse:
+    def chat(self, **kwargs: Any) -> KRResponse | KRToolUseResponse:
         route = route_of(kwargs["messages"])
         _log_call(route)
         _maybe_hook(f"in_chat:{route}")
         if route.startswith("analyst:"):
-            return KRResponse(analyst_json(route.split(":", 1)[1]))
+            axis = route.split(":", 1)[1]
+            return KRResponse(analyst_json(axis, _analyst_grounding(axis, kwargs["messages"])))
         if route == "critic":
-            return KRResponse(CRITIC_JSON)
+            return _critic_response(kwargs["messages"])
         if route == "synthesize":
             return KRResponse(SYNTH_TEXT)
         raise ValueError(f"unroutable sonnet call: {kwargs['messages'][0]!r}")

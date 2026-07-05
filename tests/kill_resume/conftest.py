@@ -91,7 +91,14 @@ class Harness:
         self.hook_dir = work_dir / "hooks"
         self.hook_dir.mkdir()
 
-    def _env(self, *, mode: str, hook: str | None, dump: bool) -> dict[str, str]:
+    def _env(
+        self,
+        *,
+        mode: str,
+        hook: str | None,
+        dump: bool,
+        extra_env: dict[str, str] | None = None,
+    ) -> dict[str, str]:
         env = dict(os.environ)
         env.update(
             {
@@ -105,14 +112,19 @@ class Harness:
                 "KR_CALLS_LOG": str(self.calls_log),
             }
         )
-        # Stale values inherited from the parent environment would arm hooks or
-        # dumps the test did not ask for.
+        # Stale values inherited from the parent environment would arm hooks,
+        # dumps, or fake scripts the test did not ask for.
         env.pop("KR_HOOK", None)
         env.pop("KR_DUMP_CHECKPOINTS", None)
+        env.pop("KR_WEAK_FIRST_AXIS", None)
+        env.pop("KR_EXTRA_STATE_FIELD", None)
+        env.pop("KR_CRITIC_TOOLS", None)
         if hook is not None:
             env["KR_HOOK"] = hook
         if dump:
             env["KR_DUMP_CHECKPOINTS"] = "1"
+        if extra_env:
+            env.update(extra_env)
         return env
 
     def run(
@@ -121,11 +133,12 @@ class Harness:
         hook: str | None = None,
         dump: bool = False,
         timeout: int = 120,
+        extra_env: dict[str, str] | None = None,
     ) -> dict[str, Any]:
         proc = subprocess.run(
             [sys.executable, "-m", "tests.kill_resume.runner"],
             cwd=_ROOT,
-            env=self._env(mode=mode, hook=hook, dump=dump),
+            env=self._env(mode=mode, hook=hook, dump=dump, extra_env=extra_env),
             capture_output=True,
             text=True,
             timeout=timeout,
@@ -133,11 +146,13 @@ class Harness:
         assert proc.returncode == 0, f"runner failed (mode={mode}):\n{proc.stderr}"
         return json.loads(self.out_path.read_text())
 
-    def start_until_hook(self, hook: str) -> subprocess.Popen[bytes]:
+    def start_until_hook(
+        self, hook: str, extra_env: dict[str, str] | None = None
+    ) -> subprocess.Popen[bytes]:
         proc = subprocess.Popen(
             [sys.executable, "-m", "tests.kill_resume.runner"],
             cwd=_ROOT,
-            env=self._env(mode="start", hook=hook, dump=False),
+            env=self._env(mode="start", hook=hook, dump=False, extra_env=extra_env),
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         )
@@ -173,8 +188,43 @@ class Harness:
             )
             return {name: int(n) for name, n in cur.fetchall()}
 
-    def resume(self, dump: bool = False) -> dict[str, Any]:
-        return self.run(mode="resume", dump=dump)
+    def trace_cost_rows(self) -> list[dict[str, Any]]:
+        # NUMERIC columns come back as Decimal; cast here so assertions compare
+        # plain floats.
+        with psycopg.connect(self.db_url) as conn, conn.cursor() as cur:
+            cur.execute(
+                "SELECT node_name, tokens_in, tokens_out, "
+                "cost_dollars_billed, cost_dollars_effective "
+                "FROM trace_events WHERE request_id = %s ORDER BY id",
+                (self.request_id,),
+            )
+            return [
+                {
+                    "node_name": name,
+                    "tokens_in": int(tokens_in),
+                    "tokens_out": int(tokens_out),
+                    "cost_dollars_billed": float(billed),
+                    "cost_dollars_effective": float(effective),
+                }
+                for name, tokens_in, tokens_out, billed, effective in cur.fetchall()
+            ]
+
+    def resume(self, dump: bool = False, extra_env: dict[str, str] | None = None) -> dict[str, Any]:
+        return self.run(mode="resume", dump=dump, extra_env=extra_env)
+
+    def resume_async(self, extra_env: dict[str, str] | None = None) -> subprocess.Popen[bytes]:
+        return subprocess.Popen(
+            [sys.executable, "-m", "tests.kill_resume.runner"],
+            cwd=_ROOT,
+            env=self._env(mode="resume", hook=None, dump=False, extra_env=extra_env),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+
+    def wait_ok(self, proc: subprocess.Popen[bytes], timeout: int = 120) -> dict[str, Any]:
+        _, err = proc.communicate(timeout=timeout)
+        assert proc.returncode == 0, f"resume failed:\n{err.decode()}"
+        return json.loads(self.out_path.read_text())
 
 
 class HarnessFactory:

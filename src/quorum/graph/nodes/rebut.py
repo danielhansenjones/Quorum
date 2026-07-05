@@ -77,7 +77,7 @@ def _rebut_axis(
         f"AVAILABLE EVIDENCE\n------------------\n{evidence_block}\n\n"
         "Emit the JSON object now."
     )
-    resp = chat_maybe_cached(
+    resp, cache_hit = chat_maybe_cached(
         sonnet_client,
         llm_cache,
         prompt_version=prompt_version,
@@ -88,7 +88,9 @@ def _rebut_axis(
     )
     if trace_ctx is not None:
         trace_ctx.event(
-            "llm:rebut", **llm_trace_fields(sonnet_client.model, resp), input_shape={"axis": axis}
+            "llm:rebut",
+            **llm_trace_fields(sonnet_client.model, resp, cache_hit=cache_hit),
+            input_shape={"axis": axis},
         )
     candidate = extract_first_json_object(_extract_text(resp))
     if candidate is None:

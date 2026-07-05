@@ -28,9 +28,9 @@ def test_cache_hits_once_then_replays(tmp_cache_dir: Path) -> None:
         calls.append(1)
         return "ok"
 
-    assert cached_call(cache, key, fn) == "ok"
-    assert cached_call(cache, key, fn) == "ok"
-    assert cached_call(cache, key, fn) == "ok"
+    assert cached_call(cache, key, fn) == ("ok", False)
+    assert cached_call(cache, key, fn) == ("ok", True)
+    assert cached_call(cache, key, fn) == ("ok", True)
     assert len(calls) == 1, "underlying function should be invoked exactly once"
 
 

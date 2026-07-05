@@ -350,7 +350,7 @@ def _judge_chat(
         return judge_client.chat(
             messages=messages, max_tokens=max_tokens, temperature=0.0, **(chat_kwargs or {})
         )
-    return cached_chat(
+    resp, _ = cached_chat(
         judge_client,
         cache,
         prompt_version=prompt_version,
@@ -359,6 +359,7 @@ def _judge_chat(
         max_tokens=max_tokens,
         chat_kwargs=chat_kwargs,
     )
+    return resp
 
 
 def _extract_text(resp: Any, backend: str) -> str:

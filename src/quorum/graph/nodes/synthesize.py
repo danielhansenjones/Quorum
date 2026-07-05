@@ -157,7 +157,7 @@ def synthesize(
         "Write the final report now."
     )
     try:
-        resp = chat_maybe_cached(
+        resp, cache_hit = chat_maybe_cached(
             sonnet_client,
             llm_cache,
             prompt_version=prompt_version,
@@ -173,7 +173,10 @@ def synthesize(
             max_tokens=2048,
         )
         if trace_ctx is not None:
-            trace_ctx.event("llm:synthesizer", **llm_trace_fields(sonnet_client.model, resp))
+            trace_ctx.event(
+                "llm:synthesizer",
+                **llm_trace_fields(sonnet_client.model, resp, cache_hit=cache_hit),
+            )
         text = _extract_text(resp)
     except Exception as e:  # noqa: BLE001
         return {

@@ -18,11 +18,13 @@ def cached_chat(
     temperature: float,
     max_tokens: int,
     chat_kwargs: dict[str, Any] | None = None,
-) -> Any:
+) -> tuple[Any, bool]:
     # Cache key uses (client.model, prompt_version, messages, temperature,
     # max_tokens) plus a hash of chat_kwargs (system prompt, tool schemas).
     # Two different roles that resolve to the same model share keys; that is the
     # Phase 2c "cache hit across role types using the same model" contract.
+    # Returns (response, cache_hit) so trace rows can split notional cost from
+    # real spend.
     key = build_llm_cache_key(
         model=client.model,
         prompt_version=prompt_version,
@@ -55,7 +57,7 @@ def chat_maybe_cached(
     temperature: float,
     max_tokens: int,
     tools: Any | None = None,
-) -> Any:
+) -> tuple[Any, bool]:
     # One branch point for every node's chat call: passthrough when no cache is
     # configured, cached otherwise. `system` (and `tools`) ride in chat_kwargs
     # and are hashed into the cache key, so a changed system prompt or tool set
@@ -65,8 +67,9 @@ def chat_maybe_cached(
     if tools is not None:
         extra["tools"] = tools
     if cache is None:
-        return client.chat(
-            messages=messages, temperature=temperature, max_tokens=max_tokens, **extra
+        return (
+            client.chat(messages=messages, temperature=temperature, max_tokens=max_tokens, **extra),
+            False,
         )
     return cached_chat(
         client,

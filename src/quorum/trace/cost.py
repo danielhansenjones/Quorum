@@ -58,10 +58,11 @@ def cost_dollars(model: str, usage: dict[str, int]) -> float:
     ) / _MILLION
 
 
-def llm_trace_fields(model: str, resp: Any) -> dict[str, Any]:
-    # Maps a chat response to TraceEvent token/cost fields. billed == effective
-    # per row; the billed/effective distinction (resumed attempts) is applied
-    # when 10j aggregates, not here.
+def llm_trace_fields(model: str, resp: Any, *, cache_hit: bool = False) -> dict[str, Any]:
+    # Maps a chat response to TraceEvent token/cost fields. billed carries the
+    # notional cost of the work even on a disk-cache replay so A/B pairing
+    # stays comparable across warm and cold arms; effective is the real API
+    # spend, which a replay does not incur.
     u = extract_usage(resp)
     c = cost_dollars(model, u)
     return {
@@ -69,5 +70,5 @@ def llm_trace_fields(model: str, resp: Any) -> dict[str, Any]:
         "tokens_out": u["output"],
         "cache_read_tokens": u["cache_read"],
         "cost_dollars_billed": c,
-        "cost_dollars_effective": c,
+        "cost_dollars_effective": 0.0 if cache_hit else c,
     }

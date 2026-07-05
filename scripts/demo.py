@@ -138,10 +138,13 @@ def render_cost(pal: Palette, report: dict[str, Any]) -> None:
     totals = report.get("totals", {})
     per_node = report.get("per_node", {})
     print(f"\n  {pal.DIM}{'-' * 72}{pal.R}")
+    spent = ""
+    if "cost_effective" in totals:
+        spent = f"   spent ${totals['cost_effective']:.4f}"
     _emit(
         pal,
         "COST",
-        f"total ${totals.get('cost', 0.0):.4f}   "
+        f"total ${totals.get('cost', 0.0):.4f}{spent}   "
         f"cache_read={totals.get('cache_read_fraction', 0.0):.0%}",
         color=pal.BOLD,
     )

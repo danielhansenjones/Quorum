@@ -24,6 +24,7 @@ def summarize_trace_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
     by_node: dict[str, dict[str, float]] = {}
     tot_in = tot_out = tot_cache = 0
     tot_cost = 0.0
+    tot_effective = 0.0
 
     for r in rows:
         rid = str(r["request_id"])
@@ -32,6 +33,9 @@ def summarize_trace_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
         t_out = int(r.get("tokens_out") or 0)
         t_cache = int(r.get("cache_read_tokens") or 0)
         cost = float(r.get("cost_dollars_billed") or 0.0)
+        # Rows written before the split carry effective == billed; disk-cache
+        # replays after it carry effective == 0.
+        effective = float(r.get("cost_dollars_effective", cost) or 0.0)
 
         req = by_request.setdefault(rid, {"cost": 0.0, "tokens_in": 0, "tokens_out": 0})
         req["cost"] += cost
@@ -48,6 +52,7 @@ def summarize_trace_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
         tot_out += t_out
         tot_cache += t_cache
         tot_cost += cost
+        tot_effective += effective
 
     req_costs = [v["cost"] for v in by_request.values()]
     n_req = len(by_request)
@@ -72,6 +77,7 @@ def summarize_trace_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
         },
         "totals": {
             "cost": tot_cost,
+            "cost_effective": tot_effective,
             "tokens_in": tot_in,
             "tokens_out": tot_out,
             "cache_read_tokens": tot_cache,
@@ -110,7 +116,7 @@ def cost_report_from_db(
 ) -> dict[str, Any]:
     sql = (
         "SELECT request_id, node_name, tokens_in, tokens_out, cache_read_tokens, "
-        "cost_dollars_billed FROM trace_events"
+        "cost_dollars_billed, cost_dollars_effective FROM trace_events"
     )
     params: list[Any] = []
     if request_ids:

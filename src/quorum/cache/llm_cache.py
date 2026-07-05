@@ -41,13 +41,16 @@ def open_llm_cache(cache_dir: Path) -> Cache:
     return Cache(str(cache_dir))
 
 
-def cached_call[T](cache: Cache, key: str, fn: Callable[[], T]) -> T:
+def cached_call[T](cache: Cache, key: str, fn: Callable[[], T]) -> tuple[T, bool]:
+    # The hit flag rides back to the trace layer: a replayed response carries
+    # its full notional cost (A/B pairing stays comparable across warm and cold
+    # arms) but zero effective cost (no API dollars were spent).
     hit = cache.get(key, default=_MISS)
     if hit is _MISS:
         result = fn()
         cache[key] = result
-        return result
-    return hit  # type: ignore[no-any-return]
+        return result, False
+    return hit, True
 
 
 class _MissSentinel:

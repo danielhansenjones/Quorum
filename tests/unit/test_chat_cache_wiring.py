@@ -32,11 +32,12 @@ def test_cache_hit_on_second_identical_call(tmp_path: Path) -> None:
     client = fake_client("claude-sonnet-4-6", counter)
     cache = Cache(str(tmp_path / "c"))
 
-    first = chat_maybe_cached(client, cache, **_args())
-    second = chat_maybe_cached(client, cache, **_args())
+    first, first_hit = chat_maybe_cached(client, cache, **_args())
+    second, second_hit = chat_maybe_cached(client, cache, **_args())
 
     assert counter.n == 1  # second served from cache
     assert first == second
+    assert (first_hit, second_hit) == (False, True)
 
 
 def test_distinct_messages_miss(tmp_path: Path) -> None:
@@ -71,10 +72,12 @@ def test_no_cache_calls_every_time() -> None:
     counter = _Counter()
     client = fake_client("claude-sonnet-4-6", counter)
 
-    chat_maybe_cached(client, None, **_args())
-    chat_maybe_cached(client, None, **_args())
+    _, hit_a = chat_maybe_cached(client, None, **_args())
+    _, hit_b = chat_maybe_cached(client, None, **_args())
 
     assert counter.n == 2
+    # No cache configured: never reported as a hit.
+    assert (hit_a, hit_b) == (False, False)
 
 
 def test_system_change_misses_without_version_bump(tmp_path: Path) -> None:

@@ -90,6 +90,16 @@ def test_llm_trace_fields_maps_buckets_and_cost() -> None:
     assert f["cost_dollars_billed"] == f["cost_dollars_effective"]
 
 
+def test_llm_trace_fields_cache_hit_zeroes_effective_keeps_billed() -> None:
+    # A disk-cache replay keeps the notional cost (A/B pairing across warm and
+    # cold arms) but spent no API dollars.
+    f = llm_trace_fields(
+        "claude-sonnet-4-6", _anthropic_resp(1_000_000, 0, cw=0, cr=0), cache_hit=True
+    )
+    assert abs(f["cost_dollars_billed"] - 3.0) < 1e-9
+    assert f["cost_dollars_effective"] == 0.0
+
+
 def test_pricing_has_session_models() -> None:
     assert "claude-sonnet-4-6" in PRICING
     assert "claude-haiku-4-5" in PRICING

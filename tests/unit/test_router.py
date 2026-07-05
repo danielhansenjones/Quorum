@@ -66,8 +66,12 @@ def test_cache_hits_across_roles_same_model(tmp_cache_dir: Path) -> None:
     c2 = fake_client(SONNET_MODEL, make_response)
 
     msgs: list[dict[str, Any]] = [{"role": "user", "content": "hi"}]
-    r1 = cached_chat(c1, cache, prompt_version="v1", messages=msgs, temperature=0.0, max_tokens=64)
-    r2 = cached_chat(c2, cache, prompt_version="v1", messages=msgs, temperature=0.0, max_tokens=64)
+    r1, _ = cached_chat(
+        c1, cache, prompt_version="v1", messages=msgs, temperature=0.0, max_tokens=64
+    )
+    r2, _ = cached_chat(
+        c2, cache, prompt_version="v1", messages=msgs, temperature=0.0, max_tokens=64
+    )
     assert r1 == r2
     assert call_count["n"] == 1, "second client with same model+args should hit cache"
 

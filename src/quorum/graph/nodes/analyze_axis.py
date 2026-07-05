@@ -272,7 +272,7 @@ def _write_axis_result(
         attempts += 1
         raw = ""
         try:
-            resp = chat_maybe_cached(
+            resp, cache_hit = chat_maybe_cached(
                 sonnet_client,
                 llm_cache,
                 prompt_version=prompt_version,
@@ -290,7 +290,7 @@ def _write_axis_result(
             if trace_ctx is not None:
                 trace_ctx.event(
                     "llm:analyst",
-                    **llm_trace_fields(sonnet_client.model, resp),
+                    **llm_trace_fields(sonnet_client.model, resp, cache_hit=cache_hit),
                     input_shape={"axis": task.axis, "attempt": attempts},
                 )
             raw = _extract_text(resp)

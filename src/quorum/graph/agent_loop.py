@@ -81,7 +81,7 @@ def run_agent_loop(
             break
         turns += 1
         try:
-            resp = chat_maybe_cached(
+            resp, cache_hit = chat_maybe_cached(
                 client,
                 llm_cache,
                 prompt_version=prompt_version,
@@ -97,7 +97,9 @@ def run_agent_loop(
             break
         if trace_ctx is not None:
             trace_ctx.event(
-                f"llm:{label}", **llm_trace_fields(client.model, resp), input_shape={"turn": turns}
+                f"llm:{label}",
+                **llm_trace_fields(client.model, resp, cache_hit=cache_hit),
+                input_shape={"turn": turns},
             )
         blocks = _blocks(resp)
         tool_uses = [b for b in blocks if getattr(b, "type", "") == "tool_use"]

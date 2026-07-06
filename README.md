@@ -56,32 +56,67 @@ uv run python scripts/demo.py "Compare Coca-Cola and PepsiCo on profitability an
 
 ## How it works
 
+Quorum is a single FastAPI service that drives a LangGraph agent graph. There
+is no queue or worker tier - a `/compare` request runs the graph inline and
+streams node events over SSE.
+
+```mermaid
+flowchart LR
+    C(["Client / MCP host"])
+    C -->|"POST /compare (SSE stream)"| API
+    C -->|"POST /runs/:id/resume"| API
+    C -->|"MCP protocol"| MCP
+
+    subgraph api_tier["API tier - FastAPI (stateless)"]
+        API["FastAPI<br/>SSE - ready checks"]
+        MCP["MCP server<br/>mirrors the tools"]
+    end
+
+    API -->|"invoke, stream node events"| GRAPH
+
+    subgraph runtime["LangGraph runtime"]
+        GRAPH["Agent graph<br/>classify - resolve - plan - analyze<br/>assess - critic - synthesize"]
+        TOOLS["Tools<br/>search_filings - get_financial_concept<br/>get_filing_section - resolve_company"]
+        GRAPH <-->|"tool calls"| TOOLS
+    end
+    MCP -.->|"same tools"| TOOLS
+
+    GRAPH -->|"route by role"| ROUTER{{"Model router"}}
+    ROUTER -.->|"analyst / synthesizer / critic / judge"| ANTH(["Claude Sonnet"])
+    ROUTER -.->|"classifier fallback"| HAIKU(["Claude Haiku"])
+    ROUTER -.->|"classifier / legwork (gpu profile)"| VLLM(["Qwen 2.5 7B AWQ<br/>local vLLM"])
+
+    GRAPH <-->|"checkpoints - trace_events"| PG[("Postgres 16")]
+    TOOLS <-->|"XBRL facts"| PG
+    TOOLS <-->|"embed + hybrid search"| QD[("Qdrant<br/>BGE-M3 dense + sparse")]
+    GRAPH <-->|"replay hits"| CACHE[("diskcache<br/>LLM cache")]
+
+    classDef store fill:#eef2ff,stroke:#6366f1,color:#1e1b4b;
+    classDef ext fill:#fff7ed,stroke:#fb923c,color:#7c2d12;
+    class QD,PG,CACHE store;
+    class ANTH,HAIKU,VLLM ext;
 ```
-question
-  |
-  v
-[classify] --out of scope / no axis--------> [refuse] --> END
-  |
-  v
-[resolve]  --fewer than 2 in-corpus tickers-> [refuse] --> END
-  |
-  v
-[plan] <-------------------------------------+
-  |  Send(axis) x N  (parallel fan-out)       |  re-plan only the
-  v                                           |  weak axes, within budget
-[analyze_axis]  ...  [analyze_axis]           |
-  \________________|________________/         |
-                   v                           |
-              [assess]  --any axis weak?-------+
-                   |  all grounded / budget spent
-                   v
-              [critic]   agentic: re-checks claims with the same tools (5-turn / 90s cap)
-                   |
-                   v
-              [synthesize]   drops / softens / counter-cites every flagged claim
-                   |
-                   v
-                  END
+
+The graph itself branches, re-plans only the weak axes, and fact-checks the
+draft before it writes:
+
+```mermaid
+flowchart TB
+    Q(["question"]) --> CLS["classify"]
+    CLS -->|"out of scope / no axis"| REF["refuse"]
+    CLS --> RES["resolve"]
+    RES -->|"fewer than 2 in-corpus tickers"| REF
+    RES --> PLAN["plan"]
+    PLAN -->|"Send(axis) x N - parallel fan-out"| AX["analyze_axis"]
+    AX --> ASSESS["assess"]
+    ASSESS -->|"any axis weak? re-plan weak axes only, within budget"| PLAN
+    ASSESS -->|"all grounded / budget spent"| CRIT["critic<br/>agentic tool loop, 5 turns / 90s"]
+    CRIT --> SYN["synthesize<br/>drops / softens / counter-cites every flagged claim"]
+    SYN --> DONE(["END"])
+    REF --> DONE
+
+    classDef terminal fill:#fef2f2,stroke:#ef4444,color:#7f1d1d;
+    class REF terminal;
 ```
 
 Four Docker Compose services back it:

@@ -44,6 +44,18 @@ dependencies = [
 # inline against numpy.
 eval = ["scipy"]
 
+# QLoRA judge-distillation deps. Local-only, never in the API or vLLM image.
+# torch is already resolved for the sm_120 card, so it stays out of this group
+# to avoid re-pinning the CUDA build.
+train = [
+  "transformers",
+  "peft",
+  "bitsandbytes",
+  "trl",
+  "accelerate",
+  "datasets",
+]
+
 [dependency-groups]
 dev = [
   "pytest",

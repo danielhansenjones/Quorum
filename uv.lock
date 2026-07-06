@@ -254,6 +254,22 @@ wheels = [
 ]
 
 [[package]]
+name = "bitsandbytes"
+version = "0.49.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "torch" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d8/7d/f1fe0992334b18cd8494f89aeec1dcc674635584fcd9f115784fea3a1d05/bitsandbytes-0.49.2-py3-none-macosx_14_0_arm64.whl", hash = "sha256:87be5975edeac5396d699ecbc39dfc47cf2c026daaf2d5852a94368611a6823f", size = 131940, upload-time = "2026-02-16T21:26:04.572Z" },
+    { url = "https://files.pythonhosted.org/packages/29/71/acff7af06c818664aa87ff73e17a52c7788ad746b72aea09d3cb8e424348/bitsandbytes-0.49.2-py3-none-manylinux_2_24_aarch64.whl", hash = "sha256:2fc0830c5f7169be36e60e11f2be067c8f812dfcb829801a8703735842450750", size = 31442815, upload-time = "2026-02-16T21:26:06.783Z" },
+    { url = "https://files.pythonhosted.org/packages/19/57/3443d6f183436fbdaf5000aac332c4d5ddb056665d459244a5608e98ae92/bitsandbytes-0.49.2-py3-none-manylinux_2_24_x86_64.whl", hash = "sha256:54b771f06e1a3c73af5c7f16ccf0fc23a846052813d4b008d10cb6e017dd1c8c", size = 60651714, upload-time = "2026-02-16T21:26:11.579Z" },
+    { url = "https://files.pythonhosted.org/packages/b6/d4/501655842ad6771fb077f576d78cbedb5445d15b1c3c91343ed58ca46f0e/bitsandbytes-0.49.2-py3-none-win_amd64.whl", hash = "sha256:2e0ddd09cd778155388023cbe81f00afbb7c000c214caef3ce83386e7144df7d", size = 55372289, upload-time = "2026-02-16T21:26:16.267Z" },
+]
+
+[[package]]
 name = "cbor"
 version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2950,6 +2966,14 @@ dependencies = [
 eval = [
     { name = "scipy" },
 ]
+train = [
+    { name = "accelerate" },
+    { name = "bitsandbytes" },
+    { name = "datasets" },
+    { name = "peft" },
+    { name = "transformers" },
+    { name = "trl" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -2965,8 +2989,11 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "accelerate", marker = "extra == 'train'" },
     { name = "anthropic" },
     { name = "beautifulsoup4" },
+    { name = "bitsandbytes", marker = "extra == 'train'" },
+    { name = "datasets", marker = "extra == 'train'" },
     { name = "diskcache" },
     { name = "fastapi" },
     { name = "flagembedding" },
@@ -2976,6 +3003,7 @@ requires-dist = [
     { name = "lxml" },
     { name = "mcp" },
     { name = "openai" },
+    { name = "peft", marker = "extra == 'train'" },
     { name = "psycopg", extras = ["binary", "pool"] },
     { name = "pydantic" },
     { name = "pydantic-settings" },
@@ -2984,9 +3012,11 @@ requires-dist = [
     { name = "qdrant-client" },
     { name = "scipy", marker = "extra == 'eval'" },
     { name = "structlog" },
+    { name = "transformers", marker = "extra == 'train'" },
+    { name = "trl", marker = "extra == 'train'" },
     { name = "uvicorn" },
 ]
-provides-extras = ["eval"]
+provides-extras = ["eval", "train"]
 
 [package.metadata.requires-dev]
 dev = [
@@ -3694,6 +3724,22 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/8f/af/9904ec6d3c93d9b24e5ec360445bbdf758b7f00bfbeedb89cb0eb64eb8bb/triton-3.7.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:b9b85e72968a9d8bba5ddb24e9b64aaabaf48affb042f2755cb7cfa92b7531ce", size = 201460637, upload-time = "2026-05-07T18:46:34.749Z" },
     { url = "https://files.pythonhosted.org/packages/a1/f9/4835a8ea746b88727d8899f4e3ccce4f9cacb38abfc3bb0a638266c53111/triton-3.7.0-cp314-cp314t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:18a160de426fd99f92b0baf509045360afbd3bfaa0b4a5171dde800ec9f09684", size = 188608706, upload-time = "2026-05-07T19:05:39.218Z" },
     { url = "https://files.pythonhosted.org/packages/c1/68/fa86e5a39608000f645535b2c124920126327ab731f8c4fafd5b07ff8d4b/triton-3.7.0-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:ce061073102714b725f3660ec6939d94a1da7984b3aa99c921417cae273672f5", size = 201546766, upload-time = "2026-05-07T18:46:42.088Z" },
+]
+
+[[package]]
+name = "trl"
+version = "1.7.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "accelerate" },
+    { name = "datasets" },
+    { name = "jinja2" },
+    { name = "packaging" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/39/74/34b50058ea7d8c2a1c0bec49dcb6dda4ac929589bace52522fe8d1487306/trl-1.7.1.tar.gz", hash = "sha256:36609abf76f61d305d4c8a8ad5c903b79f177b7e5c4ec1014c4ade4cb7ac4a43", size = 691318, upload-time = "2026-07-04T04:03:09.841Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/82/34/24d445a6156db4a9b976b1ab4aefc5e8ee8046da95524768fb78a0f705f0/trl-1.7.1-py3-none-any.whl", hash = "sha256:d5ef8ac38c64746eebf23005dccefc6488874643039d0b4a20f036e1124115b4", size = 842380, upload-time = "2026-07-04T04:03:08.223Z" },
 ]
 
 [[package]]

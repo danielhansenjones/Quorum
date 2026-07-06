@@ -36,7 +36,7 @@ Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum classifies 
 
 ![Quorum demo](assets/demo.gif)
 
-The recording is a replay of a real run, committed at [`eval/fixtures/demo_replay.jsonl`](eval/fixtures/demo_replay.jsonl) (regenerate the GIF with [`assets/demo.tape`](assets/demo.tape)). Reproduce it with no API key, no server, no Docker:
+The animation is rendered from a real recorded run, committed at [`eval/fixtures/demo_replay.jsonl`](eval/fixtures/demo_replay.jsonl) (regenerate the GIF with [`scripts/render_graph.py`](scripts/render_graph.py)). Replay the same run in your terminal with no API key, no server, no Docker:
 
 ```
 uv run python scripts/demo.py --replay --step 0.45
@@ -231,4 +231,5 @@ A few honest edges, with the full list in [ARCHITECTURE.md](ARCHITECTURE.md#limi
 ## More
 
 - [ARCHITECTURE.md](ARCHITECTURE.md) - node-by-node graph, state schema, retrieval, the full eval harness, cost, and limitations.
-- [`scripts/demo.py`](scripts/demo.py) - the live trajectory renderer used in the demo above.
+- [`scripts/demo.py`](scripts/demo.py) - the live trajectory renderer for the terminal replay above.
+- [`scripts/render_graph.py`](scripts/render_graph.py) - renders the demo GIF from the same fixture.

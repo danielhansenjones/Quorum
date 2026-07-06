@@ -103,3 +103,19 @@ def test_pharma_corpus_resolves() -> None:
         r = resolve_company(q)
         assert r is not None, q
         assert r.ticker == ticker, q
+
+
+def test_informal_aliases_resolve() -> None:
+    # Common short names the alias derivation can't reach: corpus names are
+    # "Alphabet"/"Meta"/"Coca-Cola"/"PepsiCo"/"Procter & Gamble".
+    for q, ticker in (
+        ("Google", "GOOGL"),
+        ("google", "GOOGL"),
+        ("Facebook", "META"),
+        ("Coke", "KO"),
+        ("Pepsi", "PEP"),
+        ("P&G", "PG"),
+    ):
+        r = resolve_company(q)
+        assert r is not None, q
+        assert r.ticker == ticker, q

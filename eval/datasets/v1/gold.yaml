@@ -325,3 +325,172 @@ cases:
     expected_tickers: []
     notes: |
       Not a financial-research task; out_of_scope=true.
+
+  # =====================================================================
+  # v2 hardening (2026-07-06). The v1 set above is all "Compare X and Y on
+  # Z" templates; these break that template with paraphrases, implied axes,
+  # distractor companies, and refusal near-misses. Refusals keep the v1
+  # convention of expected_axes: [] even when the question names an axis, so
+  # an axis-bearing refusal scores the extracted axis as a false positive.
+  # Regenerate eval/baselines/classification_v1.json after this set settles.
+  # =====================================================================
+
+  # ---- v2: paraphrases (non-template phrasings of grounded comparisons) ----
+  - id: para_stack_up_tech
+    question: "How do Apple and Microsoft stack up on profitability?"
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["AAPL", "MSFT"]
+    notes: |
+      Paraphrase of happy_aapl_msft_profitability; drops the template to test the
+      classifier is not overfit to it.
+
+  - id: para_between_pharma_profit
+    question: "Between Johnson & Johnson and Pfizer, which one is more profitable?"
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["JNJ", "PFE"]
+
+  - id: para_versus_growth_tech
+    question: "Alphabet versus Meta - which has grown revenue faster over the last two years?"
+    expected_status: ok
+    expected_axes: ["growth"]
+    expected_tickers: ["GOOGL", "META"]
+
+  - id: para_side_by_side_leverage
+    question: "Put Coca-Cola and PepsiCo side by side on leverage."
+    expected_status: ok
+    expected_axes: ["leverage"]
+    expected_tickers: ["KO", "PEP"]
+
+  - id: para_more_profitable_less_levered
+    question: "Which is more profitable and less levered, Costco or Procter & Gamble?"
+    expected_status: ok
+    expected_axes: ["profitability", "leverage"]
+    expected_tickers: ["COST", "PG"]
+
+  - id: para_measures_up_pharma
+    question: "I'd like to see how Merck measures up against Eli Lilly on revenue growth."
+    expected_status: ok
+    expected_axes: ["growth"]
+    expected_tickers: ["MRK", "LLY"]
+
+  # ---- v2: implied axes (axis named only obliquely) ----
+  - id: implied_debt_leverage
+    question: "Which of Coca-Cola and PepsiCo carries more debt relative to equity?"
+    expected_status: ok
+    expected_axes: ["leverage"]
+    expected_tickers: ["KO", "PEP"]
+    notes: |
+      "debt relative to equity" implies the leverage axis without naming it.
+
+  - id: implied_margins_profitability
+    question: "Compare Apple and Microsoft on their margins."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["AAPL", "MSFT"]
+    notes: |
+      "margins" -> profitability.
+
+  - id: implied_topline_growth
+    question: "Whose top line is expanding faster, Alphabet or Meta?"
+    expected_status: ok
+    expected_axes: ["growth"]
+    expected_tickers: ["GOOGL", "META"]
+    notes: |
+      "top line expanding" -> revenue growth.
+
+  - id: implied_revenue_to_profit
+    question: "Between Johnson & Johnson and Pfizer, who converts more revenue into profit?"
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["JNJ", "PFE"]
+
+  - id: implied_borrowing_vs_riskfactors
+    question: "How do Costco and PepsiCo differ in balance-sheet risk from borrowing?"
+    expected_status: ok
+    expected_axes: ["leverage"]
+    expected_tickers: ["COST", "PEP"]
+    notes: |
+      Deliberate bait: "risk" can pull the classifier toward risk_factors, but
+      "balance-sheet risk from borrowing" is the leverage axis.
+
+  # ---- v2: distractor companies (mentioned but not comparison subjects) ----
+  - id: distractor_in_corpus_alphabet
+    question: "Compare Apple and Microsoft on profitability; I'm not interested in Alphabet here."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["AAPL", "MSFT"]
+    notes: |
+      Alphabet is an in-corpus distractor named only to be excluded. Over-
+      extraction would wrongly add GOOGL; that shows up in the end-to-end runner's
+      ticker set, not the classification eval's axis/refuse metrics.
+
+  - id: distractor_out_corpus_amazon
+    question: "Unlike Amazon, do Costco and Coca-Cola manage leverage conservatively?"
+    expected_status: ok
+    expected_axes: ["leverage"]
+    expected_tickers: ["COST", "KO"]
+    notes: |
+      Amazon is an out-of-corpus distractor; it should not resolve or count.
+
+  - id: distractor_out_corpus_nvidia
+    question: "Analysts group Nvidia with them, but compare Apple and Microsoft on growth."
+    expected_status: ok
+    expected_axes: ["growth"]
+    expected_tickers: ["AAPL", "MSFT"]
+
+  # ---- v2: refusal near-misses ----
+  - id: refuse_one_in_one_out_pharma
+    question: "Compare Pfizer and AstraZeneca on growth."
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: ["PFE"]
+    notes: |
+      One in-corpus (PFE), one out (AstraZeneca) -> fewer than two resolved ->
+      refuse. The classifier still extracts growth, scored as an axis FP under the
+      refusal [] convention.
+
+  - id: refuse_single_company_self_compare
+    question: "How does Apple compare to its own performance a year ago?"
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: ["AAPL"]
+    notes: |
+      Comparative-sounding but a single company; the system only does cross-
+      company comparisons.
+
+  - id: refuse_single_company_internal
+    question: "Compare Microsoft's cloud growth against its overall growth."
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: ["MSFT"]
+    notes: |
+      Intra-company comparison; one resolved ticker -> refuse.
+
+  - id: refuse_company_vs_industry
+    question: "How does Coca-Cola stack up against the beverage industry overall?"
+    expected_status: refused
+    expected_axes: []
+    expected_tickers: ["KO"]
+    notes: |
+      "the beverage industry" is not a resolvable company; one ticker -> refuse.
+
+  # ---- v2: informal short names (resolver alias map, added 2026-07-06) ----
+  - id: informal_google_meta_growth
+    question: "Compare Google and Meta on revenue growth."
+    expected_status: ok
+    expected_axes: ["growth"]
+    expected_tickers: ["GOOGL", "META"]
+    notes: |
+      "Google" and "Meta" are informal names for Alphabet/Meta Platforms. The
+      resolver's _INFORMAL_ALIASES map resolves them; before that map this refused.
+
+  - id: informal_pepsi_coke_profitability
+    question: "Compare Pepsi and Coke on profitability."
+    expected_status: ok
+    expected_axes: ["profitability"]
+    expected_tickers: ["PEP", "KO"]
+    notes: |
+      "Pepsi"/"Coke" fall under the fuzzy cutoff for PepsiCo/Coca-Cola; resolved
+      via _INFORMAL_ALIASES.

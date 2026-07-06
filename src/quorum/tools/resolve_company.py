@@ -15,6 +15,18 @@ class ResolvedCompany:
 
 _NOT_FOUND_SENTINEL = "not_found"
 
+# Common informal names the alias derivation below cannot reach: the corpus name
+# is a different word ("Google" vs "Alphabet", "Facebook" vs "Meta") or the short
+# form falls under the 0.85 fuzzy cutoff ("Coke"/"Pepsi" vs "Coca-Cola"/"PepsiCo").
+# Real users type these, so a bare map beats a false refusal. Keys are _normalize'd.
+_INFORMAL_ALIASES: dict[str, str] = {
+    "google": "GOOGL",
+    "facebook": "META",
+    "coke": "KO",
+    "pepsi": "PEP",
+    "p&g": "PG",
+}
+
 
 def _normalize(s: str) -> str:
     return s.strip().lower().replace(",", "").replace(".", "")
@@ -84,6 +96,12 @@ def resolve_company(query: str) -> ResolvedCompany | None:
         return matches[0]
     if len(matches) > 1:
         return None  # ambiguous
+
+    ticker = _INFORMAL_ALIASES.get(q)
+    if ticker:
+        for c in COMPANIES:
+            if c.ticker == ticker:
+                return ResolvedCompany(c.ticker, c.cik, c.name)
 
     # Fuzzy: difflib close matches against full and aliased names. Single best
     # candidate above the cutoff wins; multiple candidates -> not_found.

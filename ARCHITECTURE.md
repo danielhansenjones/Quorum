@@ -146,14 +146,15 @@ Caveats: single small corpus (3,090 indexed chunks), pooled labeling only judges
 
 ### Judge correlation - the two-tier judge that did not survive contact
 
-The design proposed a cheap local 7B judge for fast iteration with Sonnet as the canonical judge. `scripts/run_judge_correlation.py` re-scores all 32 answered cases through the local Qwen-7B judge and correlates against the stored Sonnet scores. Verdict: **local judge rejected, Sonnet judges everything.** The decision and gates are in `eval/judge_config.yaml`.
+The design proposed a cheap local 7B judge for fast iteration with Sonnet as the canonical judge. `scripts/run_judge_correlation.py` re-scores the 32 answered cases from the committed [`eval/results/campaign-critic/`](eval/results/campaign-critic/) artifacts with the local Qwen-7B judge (quality rubric plus qual-citation checks, with Sonnet re-judging the qual citations as the reference) and correlates the two. Verdict: **local judge rejected, Sonnet judges everything.** The decision and gates are in `eval/judge_config.yaml`; the raw per-case pairs are in [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
 
 | Dimension | Spearman (local vs Sonnet) | Gate | Pass |
 |-----------|----------------------------|------|------|
-| Quality | 0.11 | > 0.6 | no |
-| Faithfulness | 0.99 (inflated) | > 0.7 | n/a |
+| Quality | 0.597 | > 0.6 | no |
+| Faithfulness, qual-only | 0.46 | > 0.7 | no |
+| Faithfulness, blended | 0.99 (inflated) | - | n/a |
 
-Quality is the decisive failure: the 7B floors almost every report near 4.25 (21 of 32 identical) while Sonnet uses the full 2.75-5.0 range, so rank agreement is near zero. The faithfulness 0.99 is inflated - 22 of 32 cases sit at 5.0/5.0 because quant faithfulness is identical deterministic code on both judges; on the 10 cases where qual judging actually moves the score it falls to 0.72, and the local judge runs too lenient on the unfaithful end (Sonnet 2.0-2.3 vs local 3.8-4.0, which would pass its `faithful>=4` bar). Zero parse failures on the 7B, so this is calibration, not malformed output. The cost-saving premise does not hold for a 7B; Sonnet handles all judging.
+The 7B is a near-constant scorer: 27 of 32 reports land on quality 4.0 or 4.25 while Sonnet uses 3.5-5.0, so the 0.597 hovers at the gate without carrying real signal. The blended 0.99 is inflated by construction - 23 of 32 cases sit at 5.0/5.0 because quant faithfulness is identical deterministic code on both judges; on the nine cases where qual judging actually decides the score, correlation falls to 0.46, and the local judge runs lenient on the unfaithful end (the four reports Sonnet scores 2.1-2.4, the 7B scores 3.0-3.9). Zero parse failures on the 7B, so this is calibration, not malformed output. Caveat: nine qual-only pairs is a small sample - an earlier same-day run against a stale pre-re-ingest run dir measured 0.17, so treat the correlation as indicative, not precise. Either way the gates fail and the cost-saving premise does not hold for a base 7B; Sonnet handles all judging.
 
 ### A/B: does the critic earn its cost?
 

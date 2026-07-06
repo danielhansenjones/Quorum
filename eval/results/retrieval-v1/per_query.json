@@ -27,14 +27,18 @@
       "id": "planner_risk_msft",
       "population": "planner",
       "ticker": "MSFT",
-      "n_relevant": 6,
+      "n_relevant": 10,
       "ranked": [
-        "0001193125-26-027207:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0001",
-        "0001193125-26-191507:item_1a_risk_factors:0000",
         "0000950170-25-100235:item_1a_risk_factors:0000",
-        "0001193125-25-256321:item_1a_risk_factors:0000"
+        "0001193125-26-191507:item_1a_risk_factors:0006",
+        "0001193125-25-256321:item_1a_risk_factors:0000",
+        "0000950170-25-100235:item_1a_risk_factors:0019",
+        "0001193125-26-027207:item_1a_risk_factors:0000",
+        "0001193125-26-191507:item_1a_risk_factors:0000",
+        "0000950170-25-100235:item_1a_risk_factors:0005",
+        "0000950170-25-061046:item_1a_risk_factors:0000",
+        "0001193125-25-256321:item_1a_risk_factors:0005",
+        "0000950170-25-061046:item_1a_risk_factors:0012"
       ],
       "judged_precision_at_k": {
         "precision": 1.0,
@@ -207,17 +211,21 @@
       "id": "planner_risk_pfe",
       "population": "planner",
       "ticker": "PFE",
-      "n_relevant": 0,
+      "n_relevant": 9,
       "ranked": [
         "0000078003-26-000026:item_1a_risk_factors:0000",
-        "0000078003-26-000054:item_1a_risk_factors:0000",
-        "0000078003-25-000138:item_1a_risk_factors:0000",
-        "0000078003-25-000114:item_1a_risk_factors:0000",
-        "0000078003-25-000150:item_1a_risk_factors:0000",
-        "0000078003-26-000026:item_1a_risk_factors:0001"
+        "0000078003-26-000026:item_1a_risk_factors:0010",
+        "0000078003-26-000026:item_1a_risk_factors:0008",
+        "0000078003-26-000026:item_1a_risk_factors:0009",
+        "0000078003-26-000026:item_1a_risk_factors:0024",
+        "0000078003-26-000026:item_1a_risk_factors:0001",
+        "0000078003-26-000026:item_1a_risk_factors:0025",
+        "0000078003-26-000026:item_1a_risk_factors:0020",
+        "0000078003-26-000026:item_1a_risk_factors:0007",
+        "0000078003-26-000026:item_1a_risk_factors:0022"
       ],
       "judged_precision_at_k": {
-        "precision": 0.0,
+        "precision": 1.0,
         "judged": 5,
         "unjudged": 0
       }
@@ -400,14 +408,18 @@
       "id": "ff_msft_trade_policy",
       "population": "freeform",
       "ticker": "MSFT",
-      "n_relevant": 3,
+      "n_relevant": 12,
       "ranked": [
-        "0001193125-26-027207:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0001",
-        "0000950170-25-061046:item_1a_risk_factors:0000",
-        "0000950170-25-100235:item_1a_risk_factors:0000",
-        "0001193125-26-191507:item_1a_risk_factors:0000",
-        "0001193125-25-256321:item_1a_risk_factors:0000"
+        "0000950170-25-061046:item_1a_risk_factors:0022",
+        "0001193125-26-191507:item_1a_risk_factors:0021",
+        "0000950170-25-100235:item_1a_risk_factors:0020",
+        "0001193125-25-256321:item_1a_risk_factors:0020",
+        "0001193125-26-191507:item_1a_risk_factors:0015",
+        "0000950170-25-100235:item_1a_risk_factors:0014",
+        "0001193125-26-027207:item_1a_risk_factors:0020",
+        "0001193125-25-256321:item_1a_risk_factors:0014",
+        "0001193125-26-027207:item_1a_risk_factors:0015",
+        "0001193125-26-027207:item_1a_risk_factors:0014"
       ],
       "success_at": {
         "1": 1.0,
@@ -416,10 +428,10 @@
         "10": 1.0
       },
       "recall_at": {
-        "1": 0.3333333333333333,
-        "3": 1.0,
-        "5": 1.0,
-        "10": 1.0
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.4166666666666667,
+        "10": 0.75
       },
       "mrr": 1.0,
       "first_relevant_rank": 1
@@ -430,16 +442,16 @@
       "ticker": "MSFT",
       "n_relevant": 5,
       "ranked": [
+        "0000950170-25-100235:item_9a_controls_and_procedures:0001",
         "0000950170-25-100235:item_9a_controls_and_procedures:0000",
-        "0000950170-25-100235:item_9_changes_in_accountants:0000",
-        "0000950170-25-100235:item_7a_market_risk:0035",
-        "0000950170-25-100235:item_7_mda:0000",
+        "0000950170-25-100235:item_7_mda:0015",
         "0001193125-25-256321:item_4_controls_and_procedures:0000",
         "0001193125-26-027207:item_4_controls_and_procedures:0000",
-        "0000950170-25-100235:item_7a_market_risk:0036",
         "0000950170-25-061046:item_4_controls_and_procedures:0000",
-        "0000950170-25-100235:item_9a_controls_and_procedures:0001",
-        "0001193125-26-191507:item_4_controls_and_procedures:0000"
+        "0001193125-26-191507:item_4_controls_and_procedures:0000",
+        "0001193125-25-256321:item_1a_risk_factors:0017",
+        "0000950170-25-100235:item_15_exhibits:0000",
+        "0001193125-26-191507:item_2_mda:0000"
       ],
       "success_at": {
         "1": 1.0,
@@ -449,9 +461,9 @@
       },
       "recall_at": {
         "1": 0.2,
-        "3": 0.6,
-        "5": 0.8,
-        "10": 1.0
+        "3": 0.4,
+        "5": 0.4,
+        "10": 0.4
       },
       "mrr": 1.0,
       "first_relevant_rank": 1
@@ -1294,31 +1306,31 @@
       "ticker": "PFE",
       "n_relevant": 9,
       "ranked": [
+        "0000078003-26-000026:item_1_business:0012",
+        "0000078003-26-000026:item_1a_risk_factors:0003",
         "0000078003-25-000114:item_2_mda:0002",
         "0000078003-26-000026:item_7_mda:0004",
         "0000078003-25-000150:item_2_mda:0004",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0046",
         "0000078003-25-000138:item_2_mda:0003",
         "0000078003-26-000054:item_2_mda:0001",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0024",
         "0000078003-25-000150:item_2_mda:0015",
-        "0000078003-25-000114:item_2_mda:0010",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0045"
+        "0000078003-26-000026:item_1a_risk_factors:0002",
+        "0000078003-25-000114:item_2_mda:0010"
       ],
       "success_at": {
-        "1": 1.0,
+        "1": 0.0,
         "3": 1.0,
         "5": 1.0,
         "10": 1.0
       },
       "recall_at": {
-        "1": 0.1111111111111111,
-        "3": 0.3333333333333333,
-        "5": 0.5555555555555556,
-        "10": 0.8888888888888888
+        "1": 0.0,
+        "3": 0.1111111111111111,
+        "5": 0.3333333333333333,
+        "10": 0.5555555555555556
       },
-      "mrr": 1.0,
-      "first_relevant_rank": 1
+      "mrr": 0.3333333333333333,
+      "first_relevant_rank": 3
     },
     {
       "id": "ff_pfe_part_d",
@@ -1329,13 +1341,13 @@
         "0000078003-25-000150:item_2_mda:0010",
         "0000078003-26-000026:item_7_mda:0006",
         "0000078003-25-000138:item_2_mda:0009",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0033",
         "0000078003-25-000150:item_2_mda:0014",
-        "0000078003-25-000138:item_2_mda:0013",
         "0000078003-25-000150:item_2_mda:0012",
         "0000078003-25-000114:item_2_mda:0007",
+        "0000078003-25-000138:item_2_mda:0013",
         "0000078003-25-000114:item_2_mda:0008",
-        "0000078003-25-000150:item_2_mda:0005"
+        "0000078003-25-000150:item_2_mda:0005",
+        "0000078003-25-000138:item_2_mda:0002"
       ],
       "success_at": {
         "1": 1.0,
@@ -1364,10 +1376,10 @@
         "0000078003-26-000026:item_7_mda:0019",
         "0000078003-25-000138:item_2_mda:0013",
         "0000078003-25-000138:item_2_mda:0014",
-        "0000078003-25-000138:item_2_mda:0002",
         "0000078003-26-000026:item_7_mda:0017",
-        "0000078003-26-000026:item_7a_market_risk:0013",
-        "0000078003-26-000054:item_2_mda:0007"
+        "0000078003-25-000138:item_2_mda:0002",
+        "0000078003-26-000054:item_2_mda:0007",
+        "0000078003-26-000026:item_7_mda:0008"
       ],
       "success_at": {
         "1": 0.0,
@@ -1379,7 +1391,7 @@
         "1": 0.0,
         "3": 0.16666666666666666,
         "5": 0.16666666666666666,
-        "10": 0.3333333333333333
+        "10": 0.5
       },
       "mrr": 0.3333333333333333,
       "first_relevant_rank": 3
@@ -1669,14 +1681,18 @@
       "id": "planner_risk_msft",
       "population": "planner",
       "ticker": "MSFT",
-      "n_relevant": 6,
+      "n_relevant": 10,
       "ranked": [
-        "0001193125-26-027207:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0001",
-        "0001193125-25-256321:item_1a_risk_factors:0000",
         "0000950170-25-100235:item_1a_risk_factors:0000",
-        "0001193125-26-191507:item_1a_risk_factors:0000"
+        "0001193125-25-256321:item_1a_risk_factors:0000",
+        "0001193125-26-027207:item_1a_risk_factors:0000",
+        "0001193125-26-191507:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0000",
+        "0001193125-26-027207:item_1a_risk_factors:0013",
+        "0001193125-25-256321:item_1a_risk_factors:0013",
+        "0000950170-25-100235:item_1a_risk_factors:0020",
+        "0001193125-26-027207:item_1a_risk_factors:0015",
+        "0001193125-25-256321:item_1a_risk_factors:0016"
       ],
       "judged_precision_at_k": {
         "precision": 1.0,
@@ -1849,17 +1865,21 @@
       "id": "planner_risk_pfe",
       "population": "planner",
       "ticker": "PFE",
-      "n_relevant": 0,
+      "n_relevant": 9,
       "ranked": [
         "0000078003-26-000026:item_1a_risk_factors:0000",
-        "0000078003-26-000054:item_1a_risk_factors:0000",
-        "0000078003-25-000114:item_1a_risk_factors:0000",
-        "0000078003-25-000138:item_1a_risk_factors:0000",
-        "0000078003-25-000150:item_1a_risk_factors:0000",
-        "0000078003-26-000026:item_1a_risk_factors:0001"
+        "0000078003-26-000026:item_1a_risk_factors:0008",
+        "0000078003-26-000026:item_1a_risk_factors:0001",
+        "0000078003-26-000026:item_1a_risk_factors:0020",
+        "0000078003-26-000026:item_1a_risk_factors:0007",
+        "0000078003-26-000026:item_1a_risk_factors:0005",
+        "0000078003-26-000026:item_1a_risk_factors:0002",
+        "0000078003-26-000026:item_1a_risk_factors:0026",
+        "0000078003-26-000026:item_1a_risk_factors:0024",
+        "0000078003-26-000026:item_1a_risk_factors:0025"
       ],
       "judged_precision_at_k": {
-        "precision": 0.0,
+        "precision": 1.0,
         "judged": 5,
         "unjudged": 0
       }
@@ -2042,14 +2062,18 @@
       "id": "ff_msft_trade_policy",
       "population": "freeform",
       "ticker": "MSFT",
-      "n_relevant": 3,
+      "n_relevant": 12,
       "ranked": [
-        "0001193125-26-027207:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0001",
-        "0000950170-25-061046:item_1a_risk_factors:0000",
-        "0000950170-25-100235:item_1a_risk_factors:0000",
-        "0001193125-26-191507:item_1a_risk_factors:0000",
-        "0001193125-25-256321:item_1a_risk_factors:0000"
+        "0000950170-25-061046:item_1a_risk_factors:0022",
+        "0000950170-25-100235:item_1a_risk_factors:0020",
+        "0001193125-26-191507:item_1a_risk_factors:0021",
+        "0001193125-26-191507:item_1a_risk_factors:0015",
+        "0000950170-25-100235:item_1a_risk_factors:0014",
+        "0001193125-25-256321:item_1a_risk_factors:0020",
+        "0001193125-26-027207:item_1a_risk_factors:0021",
+        "0001193125-26-191507:item_1a_risk_factors:0020",
+        "0001193125-25-256321:item_1a_risk_factors:0014",
+        "0001193125-26-027207:item_1a_risk_factors:0020"
       ],
       "success_at": {
         "1": 1.0,
@@ -2058,10 +2082,10 @@
         "10": 1.0
       },
       "recall_at": {
-        "1": 0.3333333333333333,
-        "3": 1.0,
-        "5": 1.0,
-        "10": 1.0
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.4166666666666667,
+        "10": 0.75
       },
       "mrr": 1.0,
       "first_relevant_rank": 1
@@ -2072,16 +2096,16 @@
       "ticker": "MSFT",
       "n_relevant": 5,
       "ranked": [
-        "0000950170-25-100235:item_9_changes_in_accountants:0000",
         "0000950170-25-100235:item_9a_controls_and_procedures:0000",
+        "0000950170-25-100235:item_9a_controls_and_procedures:0001",
         "0001193125-25-256321:item_4_controls_and_procedures:0000",
         "0001193125-26-027207:item_4_controls_and_procedures:0000",
         "0000950170-25-061046:item_4_controls_and_procedures:0000",
+        "0000950170-25-100235:item_7_mda:0015",
         "0001193125-26-191507:item_4_controls_and_procedures:0000",
-        "0000950170-25-100235:item_7_mda:0000",
-        "0000950170-25-100235:item_9a_controls_and_procedures:0001",
-        "0000950170-25-100235:item_7a_market_risk:0035",
-        "0000950170-25-100235:item_7a_market_risk:0036"
+        "0001193125-25-256321:item_2_mda:0000",
+        "0001193125-26-027207:item_2_mda:0000",
+        "0001193125-26-191507:item_2_mda:0000"
       ],
       "success_at": {
         "1": 1.0,
@@ -2093,7 +2117,7 @@
         "1": 0.2,
         "3": 0.4,
         "5": 0.4,
-        "10": 1.0
+        "10": 0.4
       },
       "mrr": 1.0,
       "first_relevant_rank": 1
@@ -2145,7 +2169,7 @@
         "0001652044-26-000018:item_1a_risk_factors:0018",
         "0001652044-26-000018:item_1a_risk_factors:0001",
         "0001652044-26-000018:item_1a_risk_factors:0004",
-        "0001652044-25-000091:item_1a_risk_factors:0000"
+        "0001652044-25-000043:item_1a_risk_factors:0000"
       ],
       "success_at": {
         "1": 1.0,
@@ -2936,31 +2960,31 @@
       "ticker": "PFE",
       "n_relevant": 9,
       "ranked": [
+        "0000078003-26-000026:item_1_business:0012",
         "0000078003-25-000114:item_2_mda:0002",
         "0000078003-25-000150:item_2_mda:0004",
+        "0000078003-26-000026:item_1a_risk_factors:0003",
         "0000078003-25-000138:item_2_mda:0003",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0046",
         "0000078003-26-000026:item_7_mda:0004",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0024",
         "0000078003-26-000054:item_2_mda:0001",
         "0000078003-25-000150:item_2_mda:0003",
         "0000078003-25-000150:item_2_mda:0015",
         "0000078003-25-000114:item_2_mda:0010"
       ],
       "success_at": {
-        "1": 1.0,
+        "1": 0.0,
         "3": 1.0,
         "5": 1.0,
         "10": 1.0
       },
       "recall_at": {
-        "1": 0.1111111111111111,
-        "3": 0.3333333333333333,
-        "5": 0.5555555555555556,
-        "10": 0.8888888888888888
+        "1": 0.0,
+        "3": 0.2222222222222222,
+        "5": 0.3333333333333333,
+        "10": 0.6666666666666666
       },
-      "mrr": 1.0,
-      "first_relevant_rank": 1
+      "mrr": 0.5,
+      "first_relevant_rank": 2
     },
     {
       "id": "ff_pfe_part_d",
@@ -2972,12 +2996,12 @@
         "0000078003-25-000150:item_2_mda:0014",
         "0000078003-25-000150:item_2_mda:0010",
         "0000078003-25-000138:item_2_mda:0013",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0033",
         "0000078003-25-000138:item_2_mda:0009",
         "0000078003-25-000114:item_2_mda:0008",
         "0000078003-25-000114:item_2_mda:0007",
         "0000078003-25-000150:item_2_mda:0011",
-        "0000078003-26-000054:item_2_mda:0002"
+        "0000078003-26-000054:item_2_mda:0002",
+        "0000078003-25-000150:item_2_mda:0005"
       ],
       "success_at": {
         "1": 1.0,
@@ -3007,9 +3031,9 @@
         "0000078003-25-000114:item_2_mda:0010",
         "0000078003-26-000026:item_7_mda:0003",
         "0000078003-26-000026:item_7_mda:0019",
+        "0000078003-26-000026:item_1a_risk_factors:0024",
         "0000078003-25-000138:item_2_mda:0002",
-        "0000078003-25-000150:item_2_mda:0013",
-        "0000078003-25-000150:item_2_mda:0014"
+        "0000078003-25-000150:item_2_mda:0013"
       ],
       "success_at": {
         "1": 1.0,
@@ -3311,14 +3335,18 @@
       "id": "planner_risk_msft",
       "population": "planner",
       "ticker": "MSFT",
-      "n_relevant": 6,
+      "n_relevant": 10,
       "ranked": [
-        "0001193125-26-027207:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0000",
-        "0001193125-26-191507:item_1a_risk_factors:0000",
-        "0000950170-25-100235:item_1a_risk_factors:0000",
-        "0001193125-25-256321:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0001"
+        "0001193125-26-191507:item_1a_risk_factors:0006",
+        "0000950170-25-100235:item_1a_risk_factors:0019",
+        "0000950170-25-100235:item_1a_risk_factors:0005",
+        "0001193125-25-256321:item_1a_risk_factors:0005",
+        "0000950170-25-061046:item_1a_risk_factors:0012",
+        "0001193125-25-256321:item_1a_risk_factors:0019",
+        "0001193125-26-191507:item_1a_risk_factors:0020",
+        "0000950170-25-061046:item_1a_risk_factors:0005",
+        "0001193125-26-027207:item_1a_risk_factors:0005",
+        "0001193125-25-256321:item_1a_risk_factors:0000"
       ],
       "judged_precision_at_k": {
         "precision": 1.0,
@@ -3491,16 +3519,22 @@
       "id": "planner_risk_pfe",
       "population": "planner",
       "ticker": "PFE",
-      "n_relevant": 0,
+      "n_relevant": 9,
       "ranked": [
+        "0000078003-26-000026:item_1a_risk_factors:0010",
+        "0000078003-26-000026:item_1a_risk_factors:0009",
+        "0000078003-26-000026:item_1a_risk_factors:0024",
+        "0000078003-26-000026:item_1a_risk_factors:0025",
         "0000078003-26-000026:item_1a_risk_factors:0000",
-        "0000078003-26-000054:item_1a_risk_factors:0000",
-        "0000078003-25-000114:item_1a_risk_factors:0000",
-        "0000078003-25-000138:item_1a_risk_factors:0000"
+        "0000078003-26-000026:item_1a_risk_factors:0022",
+        "0000078003-26-000026:item_1a_risk_factors:0023",
+        "0000078003-26-000026:item_1a_risk_factors:0017",
+        "0000078003-26-000026:item_1a_risk_factors:0011",
+        "0000078003-26-000026:item_1a_risk_factors:0012"
       ],
       "judged_precision_at_k": {
-        "precision": 0.0,
-        "judged": 4,
+        "precision": 1.0,
+        "judged": 5,
         "unjudged": 0
       }
     },
@@ -3682,14 +3716,18 @@
       "id": "ff_msft_trade_policy",
       "population": "freeform",
       "ticker": "MSFT",
-      "n_relevant": 3,
+      "n_relevant": 12,
       "ranked": [
-        "0001193125-26-027207:item_1a_risk_factors:0000",
-        "0000950170-25-061046:item_1a_risk_factors:0001",
-        "0000950170-25-061046:item_1a_risk_factors:0000",
-        "0000950170-25-100235:item_1a_risk_factors:0000",
-        "0001193125-26-191507:item_1a_risk_factors:0000",
-        "0001193125-25-256321:item_1a_risk_factors:0000"
+        "0000950170-25-061046:item_1a_risk_factors:0022",
+        "0001193125-26-191507:item_1a_risk_factors:0021",
+        "0001193125-25-256321:item_1a_risk_factors:0020",
+        "0000950170-25-100235:item_1a_risk_factors:0020",
+        "0001193125-26-191507:item_1a_risk_factors:0015",
+        "0000950170-25-100235:item_1a_risk_factors:0014",
+        "0001193125-26-027207:item_1a_risk_factors:0015",
+        "0001193125-26-027207:item_1a_risk_factors:0020",
+        "0001193125-25-256321:item_1a_risk_factors:0014",
+        "0001193125-26-027207:item_1a_risk_factors:0014"
       ],
       "success_at": {
         "1": 1.0,
@@ -3698,10 +3736,10 @@
         "10": 1.0
       },
       "recall_at": {
-        "1": 0.3333333333333333,
-        "3": 1.0,
-        "5": 1.0,
-        "10": 1.0
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.4166666666666667,
+        "10": 0.75
       },
       "mrr": 1.0,
       "first_relevant_rank": 1
@@ -3712,16 +3750,16 @@
       "ticker": "MSFT",
       "n_relevant": 5,
       "ranked": [
-        "0000950170-25-100235:item_7a_market_risk:0035",
-        "0000950170-25-100235:item_9a_controls_and_procedures:0000",
-        "0000950170-25-100235:item_7_mda:0000",
-        "0000950170-25-100235:item_7a_market_risk:0036",
         "0000950170-25-100235:item_9a_controls_and_procedures:0001",
-        "0000950170-25-100235:item_9_changes_in_accountants:0000",
+        "0000950170-25-100235:item_7_mda:0015",
+        "0000950170-25-100235:item_9a_controls_and_procedures:0000",
+        "0001193125-25-256321:item_1a_risk_factors:0017",
+        "0001193125-25-256321:item_4_controls_and_procedures:0000",
         "0001193125-26-027207:item_4_controls_and_procedures:0000",
         "0000950170-25-061046:item_4_controls_and_procedures:0000",
-        "0001193125-25-256321:item_4_controls_and_procedures:0000",
-        "0001193125-26-191507:item_4_controls_and_procedures:0000"
+        "0001193125-26-191507:item_4_controls_and_procedures:0000",
+        "0001193125-26-027207:item_2_mda:0012",
+        "0000950170-25-100235:item_15_exhibits:0000"
       ],
       "success_at": {
         "1": 1.0,
@@ -3731,9 +3769,9 @@
       },
       "recall_at": {
         "1": 0.2,
-        "3": 0.6,
-        "5": 0.8,
-        "10": 1.0
+        "3": 0.4,
+        "5": 0.4,
+        "10": 0.4
       },
       "mrr": 1.0,
       "first_relevant_rank": 1
@@ -4137,7 +4175,7 @@
         "0001628280-26-010047:item_1a_risk_factors:0025",
         "0001628280-26-010047:item_1a_risk_factors:0011",
         "0001628280-26-028802:item_1a_risk_factors:0000",
-        "0000021344-25-000061:item_1a_risk_factors:0000"
+        "0000021344-25-000029:item_1a_risk_factors:0000"
       ],
       "success_at": {
         "1": 1.0,
@@ -4576,31 +4614,31 @@
       "ticker": "PFE",
       "n_relevant": 9,
       "ranked": [
+        "0000078003-26-000026:item_1a_risk_factors:0003",
         "0000078003-26-000026:item_7_mda:0004",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0046",
+        "0000078003-26-000026:item_1_business:0012",
         "0000078003-25-000150:item_2_mda:0004",
         "0000078003-26-000054:item_2_mda:0001",
         "0000078003-25-000114:item_2_mda:0002",
         "0000078003-25-000138:item_2_mda:0003",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0024",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0045",
+        "0000078003-26-000026:item_1a_risk_factors:0002",
         "0000078003-25-000150:item_2_mda:0015",
         "0000078003-25-000114:item_2_mda:0010"
       ],
       "success_at": {
-        "1": 1.0,
+        "1": 0.0,
         "3": 1.0,
         "5": 1.0,
         "10": 1.0
       },
       "recall_at": {
-        "1": 0.1111111111111111,
-        "3": 0.3333333333333333,
-        "5": 0.5555555555555556,
-        "10": 0.8888888888888888
+        "1": 0.0,
+        "3": 0.1111111111111111,
+        "5": 0.3333333333333333,
+        "10": 0.5555555555555556
       },
-      "mrr": 1.0,
-      "first_relevant_rank": 1
+      "mrr": 0.5,
+      "first_relevant_rank": 2
     },
     {
       "id": "ff_pfe_part_d",
@@ -4610,14 +4648,14 @@
       "ranked": [
         "0000078003-25-000150:item_2_mda:0010",
         "0000078003-25-000138:item_2_mda:0009",
-        "0000078003-26-000026:item_9c_foreign_jurisdictions:0033",
         "0000078003-25-000150:item_2_mda:0012",
         "0000078003-26-000026:item_7_mda:0006",
         "0000078003-25-000114:item_2_mda:0007",
         "0000078003-25-000114:item_2_mda:0008",
         "0000078003-25-000150:item_2_mda:0005",
         "0000078003-25-000138:item_2_mda:0002",
-        "0000078003-25-000114:item_2_mda:0003"
+        "0000078003-25-000114:item_2_mda:0003",
+        "0000078003-25-000138:item_2_mda:0013"
       ],
       "success_at": {
         "1": 1.0,
@@ -4643,13 +4681,13 @@
         "0000078003-25-000114:item_2_mda:0010",
         "0000078003-26-000026:item_7_mda:0019",
         "0000078003-25-000150:item_2_mda:0016",
-        "0000078003-26-000026:item_7a_market_risk:0013",
         "0000078003-25-000138:item_2_mda:0014",
         "0000078003-26-000054:item_2_mda:0007",
-        "0000078003-26-000026:item_7a_market_risk:0093",
         "0000078003-26-000026:item_7_mda:0008",
         "0000078003-25-000150:item_2_mda:0015",
-        "0000078003-25-000138:item_2_mda:0002"
+        "0000078003-25-000138:item_2_mda:0002",
+        "0000078003-25-000138:item_2_mda:0009",
+        "0000078003-25-000150:item_2_mda:0010"
       ],
       "success_at": {
         "1": 0.0,
@@ -4663,8 +4701,8 @@
         "5": 0.0,
         "10": 0.16666666666666666
       },
-      "mrr": 0.125,
-      "first_relevant_rank": 8
+      "mrr": 0.16666666666666666,
+      "first_relevant_rank": 6
     },
     {
       "id": "ff_mrk_keytruda_concentration",

@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -76,15 +77,16 @@ def main() -> int:
     per_case: list[dict] = []
     local_quality_failures = 0
 
-    for p in sorted(args.run_dir.glob("*.json")):
-        if p.name == "summary.json":
-            continue
+    case_files = [p for p in sorted(args.run_dir.glob("*.json")) if p.name != "summary.json"]
+    for i, p in enumerate(case_files, start=1):
         d = json.loads(p.read_text())
         if d.get("final_status") not in ("ok", "partial"):
             continue
         report = d.get("report") or ""
         if not report.strip():
             continue
+        # Progress to stderr; stdout stays parseable JSON.
+        print(f"[{i}/{len(case_files)}] {d['case_id']}", file=sys.stderr)
 
         recon = [reconstruct_citation(x) for x in (d.get("citations") or [])]
         quant = [verify_quant_citation(pool, c) for c in recon if isinstance(c, QuantCitation)]

@@ -23,6 +23,7 @@ from quorum.trace.writer import open_pool
 
 DEFAULT_RUN = Path("eval/runs/judged-full-v1-final")
 DEFAULT_OUT = Path("eval/judge_config.yaml")
+DEFAULT_PAIRS = Path("eval/results/judge_correlation/study.json")
 DEFAULT_VLLM = "http://localhost:8001/v1"
 
 
@@ -44,6 +45,12 @@ def main() -> int:
     parser.add_argument("--run-dir", type=Path, default=DEFAULT_RUN)
     parser.add_argument("--vllm-url", type=str, default=DEFAULT_VLLM)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    parser.add_argument(
+        "--pairs-out",
+        type=Path,
+        default=DEFAULT_PAIRS,
+        help="Tracked path for the raw per-case score pairs behind the correlations.",
+    )
     args = parser.parse_args()
 
     if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -136,7 +143,11 @@ def main() -> int:
         "decision": decision,
     }
     args.out.write_text(yaml.safe_dump(config, sort_keys=False))
-    print(json.dumps({"config": config, "per_case": per_case}, indent=2))
+    study = {"config": config, "per_case": per_case}
+    args.pairs_out.parent.mkdir(parents=True, exist_ok=True)
+    args.pairs_out.write_text(json.dumps(study, indent=2))
+    print(json.dumps(study, indent=2))
+    print(f"wrote {args.pairs_out}")
     pool.close()
     return 0
 

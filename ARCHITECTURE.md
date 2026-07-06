@@ -99,12 +99,12 @@ Faithfulness is deterministic for quant citations (value + unit + period checked
 
 Full 41-case judged run ([`eval/results/campaign-critic/summary.json`](eval/results/campaign-critic/summary.json), Sonnet judge, the default configuration - critic on, rebuttal and agentic off):
 
-| Metric | Value |
-|--------|-------|
+| Metric                                            | Value          |
+|---------------------------------------------------|----------------|
 | Status match (vs expected ok / partial / refused) | 29 / 41 (0.71) |
-| Faithfulness mean (32 answered cases) | 4.56 / 5 |
-| Quality mean (41 cases)               | 4.62 / 5 |
-| Faithfulness / quality judge failures | 0 / 0 |
+| Faithfulness mean (32 answered cases)             | 4.56 / 5       |
+| Quality mean (41 cases)                           | 4.62 / 5       |
+| Faithfulness / quality judge failures             | 0 / 0          |
 
 The faithfulness mean is pulled down by the interpretive `risk_factors` axis (per-case 3.2-3.5) and two weakly-cited cases (`jnj_pfe_profitability` 2.3, `gross_margin_googl` 2.3); quant-grounded axes sit near 5.0. The twelve status mismatches split into the two known issues, not regressions: eight qualitative axes the `assess` node over-flags as weak (reported `partial`, gold `ok`), and four questions whose temporal or segment scope exceeds the corpus answered on the available slice without flagging the shortfall (reported `ok`, gold `partial`). Both are in [Limitations](#limitations). Faithfulness covers the 32 answered cases; refusals carry no report. The metric excludes-and-counts judge errors (`faithfulness_judge_failures`, 0 here), so means from before that change are not bit-comparable.
 
@@ -112,12 +112,12 @@ The faithfulness mean is pulled down by the interpretive `risk_factors` axis (pe
 
 Deterministic scoring over the full 61-case gold set, local Qwen 7B classifier with constrained decoding (`scripts/run_classification_eval.py`, baseline in `eval/baselines/classification_v1.json`; v2 hardening adds paraphrases, distractor tickers, and refusal near-misses):
 
-| Metric | Value |
-|--------|-------|
-| Axis macro-F1 | 0.88 |
-| Axis exact-set-match | 0.84 |
+| Metric                                                | Value                     |
+|-------------------------------------------------------|---------------------------|
+| Axis macro-F1                                         | 0.88                      |
+| Axis exact-set-match                                  | 0.84                      |
 | F1 - risk_factors / leverage / profitability / growth | 0.91 / 0.90 / 0.90 / 0.82 |
-| Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
+| Refusal recall / precision / accuracy                 | 1.00 / 1.00 / 1.00        |
 
 The classifier and resolver separate refuse-vs-answer perfectly on the gold set (13 true refusals caught, 0 false refusals). Axis macro-F1 fell from v1's 0.92 to 0.88 on the v2 set by design: the added axis-bearing refusals (`"compare Apple's profitability"` - single company, refused) name an axis the classifier still extracts, scored as a false positive, so `growth` precision drops to 0.74 and `profitability` to 0.82 while recall stays 1.0. This is the free local Qwen 7B, which matches the Haiku tier (0.88 vs 0.89) only once constrained decoding pins the JSON shape: without it the 7B intermittently emits list fields as bare strings, fails schema validation, and the error is swallowed as a refusal, collapsing macro-F1 to ~0.20 and making the score non-reproducible run to run. An earlier 0.69 refusal precision was a resolver alias bug (`"Eli Lilly"` not matching `"Eli Lilly and Company"`), since fixed.
 
@@ -127,13 +127,13 @@ Measures the Qdrant index directly: hybrid (dense + sparse RRF, the production c
 
 Freeform (43 queries; success@k = any positive in top k, the operative metric since positives repeat across 10-K/10-Q filings):
 
-| Metric | hybrid | dense | sparse |
-|--------|--------|-------|--------|
-| success@1  | 0.81 | 0.91 | 0.79 |
-| success@5  | 0.98 | 0.98 | 0.91 |
-| success@10 | 1.00 | 1.00 | 1.00 |
-| recall@5   | 0.67 | 0.66 | 0.65 |
-| MRR        | 0.89 | 0.95 | 0.85 |
+| Metric     | hybrid | dense | sparse |
+|------------|--------|-------|--------|
+| success@1  | 0.81   | 0.91  | 0.79   |
+| success@5  | 0.98   | 0.98  | 0.91   |
+| success@10 | 1.00   | 1.00  | 1.00   |
+| recall@5   | 0.67   | 0.66  | 0.65   |
+| MRR        | 0.89   | 0.95  | 0.85   |
 
 Planner (12 queries, judged precision@5 of substantive risk content): 1.00 for all three arms - identical because the section filter, not ranking, dominates. This was 0.92 until the segmentation fix: PFE scored 0.00 because last-occurrence-wins anchored its 10-K `item_1a` to cross-reference stubs while the real risk text was buried under mislabeled items (mine-safety, market-risk). The eval turned that into a number, which root-caused to a parser defect rather than a retrieval failure, got fixed (TOC-strip plus ordered boundary selection, replacing last-occurrence-wins), and re-measured to 1.00.
 
@@ -144,17 +144,27 @@ Decisions:
 
 Caveats: single small corpus (2,895 indexed chunks), pooled labeling only judges what some arm surfaced (author-known positives no arm retrieved are kept as recall misses), and queries plus labels were authored with LLM assistance against chunk text with hand adjudication of disagreements.
 
-### Judge correlation - the two-tier judge that did not survive contact
+### Judge correlation - the base judge rejected, then recovered by fine-tuning
 
-The design proposed a cheap local 7B judge for fast iteration with Sonnet as the canonical judge. `scripts/run_judge_correlation.py` re-scores the 32 answered cases from the committed [`eval/results/campaign-critic/`](eval/results/campaign-critic/) artifacts with the local Qwen-7B judge (quality rubric plus qual-citation checks, with Sonnet re-judging the qual citations as the reference) and correlates the two. Verdict: **local judge rejected, Sonnet judges everything.** The decision and gates are in `eval/judge_config.yaml`; the raw per-case pairs are in [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
+The design proposed a cheap local 7B judge for fast iteration with Sonnet as the canonical judge. `scripts/run_judge_correlation.py` re-scores the 32 answered cases from the committed [`eval/results/campaign-critic/`](eval/results/campaign-critic/) artifacts with the local Qwen-7B judge (quality rubric plus qual-citation checks, with Sonnet re-judging the qual citations as the reference) and correlates the two. Verdict: **the base 7B was rejected; a QLoRA distillation of Sonnet's verdicts then moved it above the iteration gate** (fine-tune below). The base decision and gates are in `eval/judge_config.yaml`; the raw per-case pairs are in [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
 
-| Dimension | Spearman (local vs Sonnet) | Gate | Pass |
-|-----------|----------------------------|------|------|
-| Quality | 0.597 | > 0.6 | no |
-| Faithfulness, qual-only | 0.46 | > 0.7 | no |
-| Faithfulness, blended | 0.99 (inflated) | - | n/a |
+| Dimension               | Spearman (local vs Sonnet) | Gate  | Pass |
+|-------------------------|----------------------------|-------|------|
+| Quality                 | 0.597                      | > 0.6 | no   |
+| Faithfulness, qual-only | 0.46                       | > 0.7 | no   |
+| Faithfulness, blended   | 0.99 (inflated)            | -     | n/a  |
 
-The 7B is a near-constant scorer: 27 of 32 reports land on quality 4.0 or 4.25 while Sonnet uses 3.5-5.0, so the 0.597 hovers at the gate without carrying real signal. The blended 0.99 is inflated by construction - 23 of 32 cases sit at 5.0/5.0 because quant faithfulness is identical deterministic code on both judges; on the nine cases where qual judging actually decides the score, correlation falls to 0.46, and the local judge runs lenient on the unfaithful end (the four reports Sonnet scores 2.1-2.4, the 7B scores 3.0-3.9). Zero parse failures on the 7B, so this is calibration, not malformed output. Caveat: nine qual-only pairs is a small sample - an earlier same-day run against a stale pre-re-ingest run dir measured 0.17, so treat the correlation as indicative, not precise. Either way the gates fail and the cost-saving premise does not hold for a base 7B; Sonnet handles all judging.
+The 7B is a near-constant scorer: 27 of 32 reports land on quality 4.0 or 4.25 while Sonnet uses 3.5-5.0, so the 0.597 hovers at the gate without carrying real signal. The blended 0.99 is inflated by construction - 23 of 32 cases sit at 5.0/5.0 because quant faithfulness is identical deterministic code on both judges; on the nine cases where qual judging actually decides the score, correlation falls to 0.46, and the local judge runs lenient on the unfaithful end (the four reports Sonnet scores 2.1-2.4, the 7B scores 3.0-3.9). Zero parse failures on the 7B, so this is calibration, not malformed output. Caveat: nine qual-only pairs is a small sample - an earlier same-day run against a stale pre-re-ingest run dir measured 0.17, so treat the correlation as indicative, not precise. Either way the gates fail for the base 7B.
+
+**Fine-tune (QLoRA distillation).** The calibration gap is exactly what fine-tuning fixes. `scripts/build_judge_sft.py` distills the committed campaign artifacts into 583 `(judge-prompt -> Sonnet-verdict)` pairs - Sonnet's stored per-claim faithfulness verdicts and per-report quality dims, prompts byte-identical to inference (faithfulness pulls section text from Qdrant, quality uses the stored report) - split by base `case_id` so no question leaks across train/val. `scripts/train_judge_qlora.py` trains a rank-16 LoRA adapter (bf16 Qwen2.5-7B, bitsandbytes 4-bit NF4, trl SFT) in ~23 min. Served on the AWQ base via vLLM `--enable-lora` and re-scored on the 7 held-out `case_id`s the adapter never trained on (`scripts/gate_judge_qlora.sh`):
+
+| Dimension (held-out)                  | base  | adapter | gate  | pass |
+|---------------------------------------|-------|---------|-------|------|
+| Quality, spearman (n=7)               | 0.45  | 0.66    | > 0.6 | yes  |
+| Faithfulness qual-only, pearson (n=3) | 0.59  | 0.99    | -     | -    |
+| `use_local_for_iteration`             | false | true    | -     | -    |
+
+The adapter learns the calibration the base lacked: on quality the base under-scores systematically (4.0 where Sonnet says 5.0), the adapter matches (repeated exact 4.75/4.75, 5.0/5.0). Faithfulness spearman is 1.0 for both, but that is three ranked points with no signal; the real move is absolute agreement, pearson 0.59 -> 0.99. This flips the iteration decision: distillation makes the free local judge usable for fast iteration. Sonnet stays the canonical reference - it is the proxy-gold since no human labels exist, not because it outranks the adapter, which cannot be measured when Sonnet is the yardstick. Loud caveat: 7 held-out quality pairs, 3 faithfulness pairs. The pass is directional, confirmable with more held-out data, not a large-sample proof. Held-out configs: [`qlora_heldout_config.yaml`](eval/results/judge_correlation/qlora_heldout_config.yaml) and [`base_heldout_config.yaml`](eval/results/judge_correlation/base_heldout_config.yaml).
 
 ### A/B: does the critic earn its cost?
 
@@ -166,17 +176,17 @@ The critic is the dominant cost. Whether it improves the output is a measurable 
 
 The four-arm campaign ran on the full 41-case gold set, one arm per toggle combination, same commit, same judge, shared LLM cache. Per-arm artifacts are committed under `eval/results/campaign-*/`; the five paired compares under [`eval/results/campaign-compares/`](eval/results/campaign-compares/).
 
-| Arm | Faithfulness | Quality | Status match |
-|-----|--------------|---------|--------------|
-| baseline (no critic)  | 4.56 | 4.53 | 31 / 41 |
-| +critic (the default) | 4.56 | 4.62 | 29 / 41 |
-| +rebuttal             | 4.55 | 4.66 | 29 / 41 |
-| +agentic analyst      | 4.50 | 4.57 | 29 / 41 |
+| Arm                   | Faithfulness | Quality | Status match |
+|-----------------------|--------------|---------|--------------|
+| baseline (no critic)  | 4.56         | 4.53    | 31 / 41      |
+| +critic (the default) | 4.56         | 4.62    | 29 / 41      |
+| +rebuttal             | 4.55         | 4.66    | 29 / 41      |
+| +agentic analyst      | 4.50         | 4.57    | 29 / 41      |
 
 Paired deltas vs baseline (mean, bootstrap 95% CI):
 
-| Arm | Faithfulness | Quality | Cost / case |
-|-----|--------------|---------|-------------|
+| Arm       | Faithfulness            | Quality                 | Cost / case              |
+|-----------|-------------------------|-------------------------|--------------------------|
 | +critic   | +0.004 [-0.006, +0.019] | +0.067 [-0.037, +0.183] | +$0.086 [+0.065, +0.108] |
 | +rebuttal | -0.007 [-0.016, -0.001] | +0.104 [+0.006, +0.213] | +$0.125 [+0.096, +0.152] |
 | +agentic  | -0.055 [-0.127, +0.015] | +0.012 [-0.098, +0.128] | +$0.138 [+0.103, +0.171] |
@@ -199,12 +209,12 @@ Every LLM call emits a `trace_events` row with real token counts and two dollar 
 
 Campaign numbers (critic arm, 41 requests, `run_cost_report.py` scoped to the arm's request_ids):
 
-| Node | $/call | notes |
-|------|--------|-------|
+| Node            | $/call       | notes                                       |
+|-----------------|--------------|---------------------------------------------|
 | llm:critic      | ~$0.027/turn | dominant cost - 128 turns, 68% of arm spend |
-| llm:synthesizer | ~$0.021 | one Sonnet call per report |
-| llm:analyst     | ~$0.018 | one Sonnet call per axis |
-| llm:classifier  | ~$0.0004 | Haiku |
+| llm:synthesizer | ~$0.021      | one Sonnet call per report                  |
+| llm:analyst     | ~$0.018      | one Sonnet call per axis                    |
+| llm:classifier  | ~$0.0004     | Haiku                                       |
 
 Per-request: mean $0.124 across the gold set (nine refusals short-circuit near $0), p50 $0.125, p95 $0.282 (multi-axis with a five-turn critic). The critic being the cost driver is the direct input to the A/B measurement above.
 

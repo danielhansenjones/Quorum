@@ -1,0 +1,23 @@
+generated: '2026-07-06T23:32:44Z'
+subset: eval/results/campaign-critic
+local_judge: Qwen/Qwen2.5-7B-Instruct-AWQ
+canonical_judge: claude-sonnet-4-6
+local_quality_parse_failures: 0
+faithfulness_qual_only:
+  n: 3
+  pearson: 0.5891704802816983
+  spearman: 1.0
+faithfulness_blended:
+  n: 7
+  pearson: 0.8962795375352867
+  spearman: 0.9999999999999999
+quality:
+  n: 7
+  pearson: 0.4116934847963091
+  spearman: 0.4547940268270977
+decision:
+  use_local_for_iteration: false
+  rule: local judge for iteration if spearman(faithfulness) > 0.7 AND spearman(quality)
+    > 0.6; otherwise Sonnet for all judging
+  faithfulness_spearman: 1.0
+  quality_spearman: 0.4547940268270977

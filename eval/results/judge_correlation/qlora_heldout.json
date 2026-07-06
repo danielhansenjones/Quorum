@@ -1,0 +1,102 @@
+{
+  "config": {
+    "generated": "2026-07-06T23:30:16Z",
+    "subset": "eval/results/campaign-critic",
+    "local_judge": "judge-qlora",
+    "canonical_judge": "claude-sonnet-4-6",
+    "local_quality_parse_failures": 0,
+    "faithfulness_qual_only": {
+      "n": 3,
+      "pearson": 0.9954509824219402,
+      "spearman": 1.0
+    },
+    "faithfulness_blended": {
+      "n": 7,
+      "pearson": 0.9730162267893929,
+      "spearman": 0.9999999999999999
+    },
+    "quality": {
+      "n": 7,
+      "pearson": 0.6510697245149106,
+      "spearman": 0.6602252917735247
+    },
+    "decision": {
+      "use_local_for_iteration": true,
+      "rule": "local judge for iteration if spearman(faithfulness) > 0.7 AND spearman(quality) > 0.6; otherwise Sonnet for all judging",
+      "faithfulness_spearman": 1.0,
+      "quality_spearman": 0.6602252917735247
+    }
+  },
+  "per_case": [
+    {
+      "case": "happy_aapl_msft_growth",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 4.5,
+      "local_quality": 5.0
+    },
+    {
+      "case": "happy_jnj_pfe_profitability",
+      "n_qual_citations": 10,
+      "sonnet_faith_blended": 2.3,
+      "local_faith_blended": 1.8,
+      "sonnet_faith_qual_only": 2.0,
+      "local_faith_qual_only": 1.8,
+      "sonnet_quality": 4.25,
+      "local_quality": 3.5
+    },
+    {
+      "case": "happy_mrk_lly_risks",
+      "n_qual_citations": 10,
+      "sonnet_faith_blended": 3.5,
+      "local_faith_blended": 4.0,
+      "sonnet_faith_qual_only": 3.5,
+      "local_faith_qual_only": 4.0,
+      "sonnet_quality": 4.75,
+      "local_quality": 4.75
+    },
+    {
+      "case": "happy_multi_axis_staples",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 5.0,
+      "local_quality": 5.0
+    },
+    {
+      "case": "happy_staples_risks",
+      "n_qual_citations": 10,
+      "sonnet_faith_blended": 3.4,
+      "local_faith_blended": 3.5,
+      "sonnet_faith_qual_only": 3.3,
+      "local_faith_qual_only": 3.5,
+      "sonnet_quality": 4.75,
+      "local_quality": 4.75
+    },
+    {
+      "case": "partial_insufficient_growth_for_costco",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 4.75,
+      "local_quality": 5.0
+    },
+    {
+      "case": "weak_then_recovered_obscure_metric",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 3.75,
+      "local_quality": 4.25
+    }
+  ]
+}

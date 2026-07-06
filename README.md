@@ -25,7 +25,7 @@ Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum classifies 
 - **Agentic fact-checking.** The critic runs a bounded tool loop (5 turns / 90s) over the same XBRL facts and filing text the analysts used, flags unsupported claims, and the synthesizer acts on every flag.
 - **Grounded in real data.** 12 companies across Big Tech, Consumer Staples, and Pharma; the latest 10-K plus four 10-Qs each (~60 filings, 2,895 indexed chunks). Quant -> XBRL facts in Postgres; qual -> hybrid search over Qdrant (BGE-M3 dense + learned sparse).
 - **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: faithfulness 4.56/5, quality 4.62/5, refusal decisions 9/9 exact, and status-match 29/41 where every miss is a one-notch ok/partial completeness call (0 judge failures, 0 errors). The local Qwen 7B classifier scores axis macro-F1 0.88 on a 61-case set hardened with paraphrases and adversarial refusals, matching the Haiku tier at zero API cost; refusal precision and recall 1.0. Every number traces to a committed artifact under [`eval/results/`](eval/results/).
-- **Honest eval methodology.** A judge-correlation study tested a cheap local 7B judge against Sonnet and rejected it (qual-only faithfulness Spearman 0.46 against a 0.7 gate; quality 0.597 against 0.6). Sonnet judges everything; the decision, gates, and raw per-case pairs are checked into [`eval/judge_config.yaml`](eval/judge_config.yaml) and [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
+- **Honest eval methodology.** A judge-correlation study rejected a cheap base 7B judge against Sonnet (qual-only faithfulness Spearman 0.46 against a 0.7 gate; quality 0.597 against 0.6), then a QLoRA distillation of Sonnet's verdicts moved it above the gate on held-out cases (quality 0.46 -> 0.66, faithfulness absolute agreement 0.59 -> 0.99 pearson; small held-out n, reported as directional). Sonnet stays the canonical reference; the decision, gates, and per-case pairs are checked into [`eval/judge_config.yaml`](eval/judge_config.yaml) and [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
 - **Does the critic earn its cost? Measured.** A four-arm paired A/B campaign (critic on/off, a critic-analyst rebuttal loop, a tiered agentic analyst) with bootstrap CIs: the critic adds +0.07 quality at +$0.086/case with faithfulness flat; the rebuttal loop posts the only statistically significant quality gain (+0.10) but nudges faithfulness down, so it ships off by the pre-registered rule; the agentic analyst loses on both and ships off. Numbers and the decision reasoning are in [ARCHITECTURE.md](ARCHITECTURE.md#ab-does-the-critic-earn-its-cost).
 - **Durable by construction, proven by SIGKILL.** A Postgres checkpointer writes state at every super-step; `/runs/{id}/resume` re-drives from the last checkpoint, and re-run nodes hit a canonical-JSON LLM cache. A kill-resume suite in CI SIGKILLs runs mid-LLM-call, mid-fan-out, and mid-critic-turn: every resume finishes with a byte-identical report and zero duplicate API calls.
 - **Real cost accounting.** Every LLM call writes a trace row with token counts and two dollar figures: billed (notional) and effective (zero on a cache replay), so A/B pairing stays fair while actual spend stays visible. A judged run averages $0.124/case, and the critic is the measured cost driver (68% of arm spend).
@@ -121,12 +121,12 @@ flowchart TB
 
 Four Docker Compose services back it:
 
-| Service    | Role |
-|------------|------|
-| `postgres` (16)      | XBRL facts, LangGraph checkpointer, `trace_events` |
-| `qdrant`             | hybrid vector index (BGE-M3 dense + learned sparse) |
+| Service              | Role                                                           |
+|----------------------|----------------------------------------------------------------|
+| `postgres` (16)      | XBRL facts, LangGraph checkpointer, `trace_events`             |
+| `qdrant`             | hybrid vector index (BGE-M3 dense + learned sparse)            |
 | `vllm` (gpu profile) | Qwen 2.5 7B Instruct AWQ-4bit, the local classifier (optional) |
-| `api` (api profile)  | FastAPI with the SSE stream of node events |
+| `api` (api profile)  | FastAPI with the SSE stream of node events                     |
 
 Anthropic Sonnet powers the analyst, synthesizer, critic, and canonical judge. Haiku is the classifier fallback when `VLLM_URL` is unset, so the system runs with no GPU. Full node-by-node behavior, the state schema, and the retrieval design are in [ARCHITECTURE.md](ARCHITECTURE.md).
 
@@ -134,14 +134,14 @@ Anthropic Sonnet powers the analyst, synthesizer, critic, and canonical judge. H
 
 41-case gold set, judged by Sonnet ([`eval/judge_config.yaml`](eval/judge_config.yaml)), default configuration:
 
-| Metric | Value |
-|--------|-------|
-| Refusal decisions (answer vs refuse)            | 9 / 9 exact    |
-| Completeness match, answered cases (ok / partial) | 20 / 32      |
-| Overall status match                            | 29 / 41 (0.71) |
-| Faithfulness mean (32 answered cases)           | 4.56 / 5       |
-| Quality mean (41 cases)                         | 4.62 / 5       |
-| Faithfulness / quality judge failures           | 0 / 0          |
+| Metric                                            | Value          |
+|---------------------------------------------------|----------------|
+| Refusal decisions (answer vs refuse)              | 9 / 9 exact    |
+| Completeness match, answered cases (ok / partial) | 20 / 32        |
+| Overall status match                              | 29 / 41 (0.71) |
+| Faithfulness mean (32 answered cases)             | 4.56 / 5       |
+| Quality mean (41 cases)                           | 4.62 / 5       |
+| Faithfulness / quality judge failures             | 0 / 0          |
 
 All 12 status misses are one-notch `ok`/`partial` completeness calls (8 where the
 system was more conservative than the gold label, 4 less); no wrong refusals, no
@@ -150,10 +150,10 @@ separately above because they fail for different reasons - see [Limitations](#li
 
 Classifier (local Qwen 7B, constrained decoding), deterministic scoring over the full 61-case gold set (v2 hardening adds paraphrases, distractor tickers, and refusal near-misses):
 
-| Metric | Value |
-|--------|-------|
-| Axis macro-F1                         | 0.88 |
-| Axis exact-set-match                  | 0.84 |
+| Metric                                | Value              |
+|---------------------------------------|--------------------|
+| Axis macro-F1                         | 0.88               |
+| Axis exact-set-match                  | 0.84               |
 | Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
 
 Axis F1 is down from v1's 0.92 by design: the v2 axis-bearing refusals name an axis the classifier still extracts, scored as a false positive; refuse-vs-answer stays perfect at 1.0. This is the free local model matching the Haiku tier (0.88 vs 0.89), reached only once constrained decoding pins the JSON shape.
@@ -162,7 +162,7 @@ A prompt-injection red team (11 attack vectors plus a benign control) plants adv
 
 Retrieval is measured, not assumed: a 55-query labeled set (372 positives, pooled and hand-adjudicated) scores the production hybrid index against dense-only and sparse-only. Hybrid keeps its place on recall@5 (0.67) with success@5 at 0.98, every arm hits success@10 = 1.00 - which is also the measured reason ColBERT reranking stays unbuilt - and the same run caught a real defect and drove the fix (PFE risk factors read precision@5 = 0.00 from a section-segmentation bug; after the fix, 1.00 for all 12 tickers). Dataset and artifact: [`eval/datasets/retrieval_v1.yaml`](eval/datasets/retrieval_v1.yaml), [`eval/results/retrieval-v1/`](eval/results/retrieval-v1/).
 
-Faithfulness is deterministic for quant citations (value + unit + period checked against Postgres) and LLM-judged for qual citations. The judge-correlation study rejected a cheap local 7B judge (qual-only faithfulness Spearman 0.46, quality 0.597, both under their gates) and kept Sonnet as the sole judge. The critic-on-vs-off A/B ran as a four-arm campaign: the critic adds +0.067 quality (95% CI -0.037 to +0.183) at +$0.086/case with faithfulness flat, and synthesis acted on all 56 flagged claims (incorporation rate 1.0). Per-case artifacts behind every number (reports, scores, citations, paired compares) are committed under [`eval/results/campaign-critic/`](eval/results/campaign-critic/) and [`eval/results/campaign-compares/`](eval/results/campaign-compares/). Full tables, the cost breakdown, and the honest analysis behind each number are in [ARCHITECTURE.md](ARCHITECTURE.md#eval-harness).
+Faithfulness is deterministic for quant citations (value + unit + period checked against Postgres) and LLM-judged for qual citations. The judge-correlation study rejected a cheap base 7B judge (qual-only faithfulness Spearman 0.46, quality 0.597, both under their gates); a QLoRA distillation of Sonnet's verdicts then crossed the gate on held-out cases (quality 0.66, faithfulness 0.99 pearson, small n), making the fine-tuned local judge usable for iteration with Sonnet as the canonical reference. The critic-on-vs-off A/B ran as a four-arm campaign: the critic adds +0.067 quality (95% CI -0.037 to +0.183) at +$0.086/case with faithfulness flat, and synthesis acted on all 56 flagged claims (incorporation rate 1.0). Per-case artifacts behind every number (reports, scores, citations, paired compares) are committed under [`eval/results/campaign-critic/`](eval/results/campaign-critic/) and [`eval/results/campaign-compares/`](eval/results/campaign-compares/). Full tables, the cost breakdown, and the honest analysis behind each number are in [ARCHITECTURE.md](ARCHITECTURE.md#eval-harness).
 
 ## Quickstart
 
@@ -186,12 +186,12 @@ curl -s localhost:8000/ready
 
 ## API and MCP surface
 
-| Endpoint | Behavior |
-|----------|----------|
-| `POST /compare`               | streams node events over SSE, then a final cited report |
+| Endpoint                        | Behavior                                                       |
+|---------------------------------|----------------------------------------------------------------|
+| `POST /compare`                 | streams node events over SSE, then a final cited report        |
 | `GET /runs/{request_id}/resume` | re-drives an interrupted run from the last Postgres checkpoint |
-| `GET /ready`                  | backing-service health (`postgres`, `qdrant`) |
-| `GET /health`                 | liveness |
+| `GET /ready`                    | backing-service health (`postgres`, `qdrant`)                  |
+| `GET /health`                   | liveness                                                       |
 
 The same capability is exposed over MCP: the six low-level tools (`resolve_company`, `get_financial_concept`, `search_filings`, `get_filing_section`, `list_corpus`, `list_filings`) plus the high-level `compare_companies`, usable from Claude Desktop or the MCP inspector.
 

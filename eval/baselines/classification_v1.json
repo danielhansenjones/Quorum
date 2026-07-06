@@ -1,14 +1,14 @@
 {
-  "run": "judged classification eval, gold v1, Haiku classifier (post resolver fix)",
-  "date": "2026-05-29",
+  "run": "classification eval, gold v2 (61 cases), Haiku classifier; axis F1 down from v1 because the v2 axis-bearing refusals score the extracted axis as a false positive",
+  "date": "2026-07-06",
   "tolerance": 0.03,
   "metrics": {
-    "axis.macro_f1": 0.918,
-    "axis.exact_set_match": 0.854,
-    "axis.per_axis.profitability.f1": 0.914,
-    "axis.per_axis.growth.f1": 0.87,
-    "axis.per_axis.leverage.f1": 0.889,
-    "axis.per_axis.risk_factors.f1": 1.0,
+    "axis.macro_f1": 0.888,
+    "axis.exact_set_match": 0.820,
+    "axis.per_axis.profitability.f1": 0.902,
+    "axis.per_axis.growth.f1": 0.811,
+    "axis.per_axis.leverage.f1": 0.929,
+    "axis.per_axis.risk_factors.f1": 0.909,
     "refusal.precision": 1.0,
     "refusal.recall": 1.0,
     "refusal.accuracy": 1.0

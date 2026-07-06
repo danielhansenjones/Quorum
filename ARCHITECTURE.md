@@ -110,16 +110,16 @@ The faithfulness mean is pulled down by the interpretive `risk_factors` axis (pe
 
 ### Classification and refusal
 
-Deterministic scoring over the full gold set (`scripts/run_classification_eval.py`, baseline in `eval/baselines/classification_v1.json`):
+Deterministic scoring over the full 61-case gold set (`scripts/run_classification_eval.py`, baseline in `eval/baselines/classification_v1.json`; v2 hardening adds paraphrases, distractor tickers, and refusal near-misses):
 
 | Metric | Value |
 |--------|-------|
-| Axis macro-F1 | 0.92 |
-| Axis exact-set-match | 0.85 |
-| F1 - risk_factors / leverage / profitability / growth | 1.00 / 0.89 / 0.91 / 0.87 |
+| Axis macro-F1 | 0.89 |
+| Axis exact-set-match | 0.82 |
+| F1 - risk_factors / leverage / profitability / growth | 0.91 / 0.93 / 0.90 / 0.81 |
 | Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
 
-The classifier and resolver separate refuse-vs-answer perfectly on the gold set (9 true refusals caught, 0 false refusals). The remaining axis error is `growth` over-prediction (recall 1.0, precision 0.77). An earlier 0.69 refusal precision was a resolver alias bug (`"Eli Lilly"` not matching `"Eli Lilly and Company"`), since fixed.
+The classifier and resolver separate refuse-vs-answer perfectly on the gold set (13 true refusals caught, 0 false refusals). Axis macro-F1 fell from v1's 0.92 to 0.89 on the v2 set by design: the added axis-bearing refusals (`"compare Apple's profitability"` - single company, refused) name an axis the classifier still extracts, scored as a false positive, so `growth` precision drops to 0.68 and `profitability` to 0.82 while recall stays 1.0. An earlier 0.69 refusal precision was a resolver alias bug (`"Eli Lilly"` not matching `"Eli Lilly and Company"`), since fixed.
 
 ### Retrieval
 

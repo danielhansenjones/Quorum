@@ -24,7 +24,7 @@ Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum classifies 
 - **A graph, not a chain.** Analysts fan out in parallel (LangGraph `Send`), an `assess` node re-plans only the weakly-grounded axes within a step budget, and an agentic critic verifies the draft before synthesis. Branching, re-planning, and a bounded agent loop in one graph.
 - **Agentic fact-checking.** The critic runs a bounded tool loop (5 turns / 90s) over the same XBRL facts and filing text the analysts used, flags unsupported claims, and the synthesizer acts on every flag.
 - **Grounded in real data.** 12 companies across Big Tech, Consumer Staples, and Pharma; the latest 10-K plus four 10-Qs each (~60 filings, 2,895 indexed chunks). Quant -> XBRL facts in Postgres; qual -> hybrid search over Qdrant (BGE-M3 dense + learned sparse).
-- **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: faithfulness 4.56/5, quality 4.62/5, refusal decisions 9/9 exact, and status-match 29/41 where every miss is a one-notch ok/partial completeness call (0 judge failures, 0 errors). Classifier axis macro-F1 0.92; refusal precision and recall 1.0. Every number traces to a committed artifact under [`eval/results/`](eval/results/).
+- **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: faithfulness 4.56/5, quality 4.62/5, refusal decisions 9/9 exact, and status-match 29/41 where every miss is a one-notch ok/partial completeness call (0 judge failures, 0 errors). Classifier axis macro-F1 0.89 on a 61-case set hardened with paraphrases and adversarial refusals; refusal precision and recall 1.0. Every number traces to a committed artifact under [`eval/results/`](eval/results/).
 - **Honest eval methodology.** A judge-correlation study tested a cheap local 7B judge against Sonnet and rejected it (qual-only faithfulness Spearman 0.46 against a 0.7 gate; quality 0.597 against 0.6). Sonnet judges everything; the decision, gates, and raw per-case pairs are checked into [`eval/judge_config.yaml`](eval/judge_config.yaml) and [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
 - **Does the critic earn its cost? Measured.** A four-arm paired A/B campaign (critic on/off, a critic-analyst rebuttal loop, a tiered agentic analyst) with bootstrap CIs: the critic adds +0.07 quality at +$0.086/case with faithfulness flat; the rebuttal loop posts the only statistically significant quality gain (+0.10) but nudges faithfulness down, so it ships off by the pre-registered rule; the agentic analyst loses on both and ships off. Numbers and the decision reasoning are in [ARCHITECTURE.md](ARCHITECTURE.md#ab-does-the-critic-earn-its-cost).
 - **Durable by construction, proven by SIGKILL.** A Postgres checkpointer writes state at every super-step; `/runs/{id}/resume` re-drives from the last checkpoint, and re-run nodes hit a canonical-JSON LLM cache. A kill-resume suite in CI SIGKILLs runs mid-LLM-call, mid-fan-out, and mid-critic-turn: every resume finishes with a byte-identical report and zero duplicate API calls.
@@ -148,13 +148,15 @@ system was more conservative than the gold label, 4 less); no wrong refusals, no
 errors, no crashes. The refusal boundary and the completeness boundary are scored
 separately above because they fail for different reasons - see [Limitations](#limitations).
 
-Classifier, deterministic scoring over the full gold set:
+Classifier, deterministic scoring over the full 61-case gold set (v2 hardening adds paraphrases, distractor tickers, and refusal near-misses):
 
 | Metric | Value |
 |--------|-------|
-| Axis macro-F1                         | 0.92 |
-| Axis exact-set-match                  | 0.85 |
+| Axis macro-F1                         | 0.89 |
+| Axis exact-set-match                  | 0.82 |
 | Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
+
+Axis F1 is down from v1's 0.92 by design: the v2 axis-bearing refusals name an axis the classifier still extracts, scored as a false positive; refuse-vs-answer stays perfect at 1.0.
 
 A prompt-injection red team (11 attack vectors plus a benign control) plants adversarial text into the retrieval corpus under a matching ticker and section, then drives each probe through the full graph: **0 leaks over 9 measured vectors** (2 unmeasured, control clean), with the critic engaging on nearly every case. Harness and cases are in [`scripts/run_injection_eval.py`](scripts/run_injection_eval.py) and [`eval/datasets/injection_v1.yaml`](eval/datasets/injection_v1.yaml).
 

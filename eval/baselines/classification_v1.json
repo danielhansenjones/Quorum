@@ -1,13 +1,13 @@
 {
-  "run": "classification eval, gold v2 (61 cases), Haiku classifier; axis F1 down from v1 because the v2 axis-bearing refusals score the extracted axis as a false positive",
+  "run": "classification eval, gold v2 (61 cases), local Qwen2.5-7B-Instruct-AWQ classifier with constrained JSON decoding (response_format json_schema). Matches the Haiku tier (macro-F1 0.883 vs 0.888, refusal 1.0/1.0/1.0) at zero API cost; deterministic across runs once the output shape is schema-pinned.",
   "date": "2026-07-06",
   "tolerance": 0.03,
   "metrics": {
-    "axis.macro_f1": 0.888,
-    "axis.exact_set_match": 0.820,
+    "axis.macro_f1": 0.883,
+    "axis.exact_set_match": 0.836,
     "axis.per_axis.profitability.f1": 0.902,
-    "axis.per_axis.growth.f1": 0.811,
-    "axis.per_axis.leverage.f1": 0.929,
+    "axis.per_axis.growth.f1": 0.824,
+    "axis.per_axis.leverage.f1": 0.897,
     "axis.per_axis.risk_factors.f1": 0.909,
     "refusal.precision": 1.0,
     "refusal.recall": 1.0,

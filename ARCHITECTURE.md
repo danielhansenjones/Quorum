@@ -110,16 +110,16 @@ The faithfulness mean is pulled down by the interpretive `risk_factors` axis (pe
 
 ### Classification and refusal
 
-Deterministic scoring over the full 61-case gold set (`scripts/run_classification_eval.py`, baseline in `eval/baselines/classification_v1.json`; v2 hardening adds paraphrases, distractor tickers, and refusal near-misses):
+Deterministic scoring over the full 61-case gold set, local Qwen 7B classifier with constrained decoding (`scripts/run_classification_eval.py`, baseline in `eval/baselines/classification_v1.json`; v2 hardening adds paraphrases, distractor tickers, and refusal near-misses):
 
 | Metric | Value |
 |--------|-------|
-| Axis macro-F1 | 0.89 |
-| Axis exact-set-match | 0.82 |
-| F1 - risk_factors / leverage / profitability / growth | 0.91 / 0.93 / 0.90 / 0.81 |
+| Axis macro-F1 | 0.88 |
+| Axis exact-set-match | 0.84 |
+| F1 - risk_factors / leverage / profitability / growth | 0.91 / 0.90 / 0.90 / 0.82 |
 | Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
 
-The classifier and resolver separate refuse-vs-answer perfectly on the gold set (13 true refusals caught, 0 false refusals). Axis macro-F1 fell from v1's 0.92 to 0.89 on the v2 set by design: the added axis-bearing refusals (`"compare Apple's profitability"` - single company, refused) name an axis the classifier still extracts, scored as a false positive, so `growth` precision drops to 0.68 and `profitability` to 0.82 while recall stays 1.0. An earlier 0.69 refusal precision was a resolver alias bug (`"Eli Lilly"` not matching `"Eli Lilly and Company"`), since fixed.
+The classifier and resolver separate refuse-vs-answer perfectly on the gold set (13 true refusals caught, 0 false refusals). Axis macro-F1 fell from v1's 0.92 to 0.88 on the v2 set by design: the added axis-bearing refusals (`"compare Apple's profitability"` - single company, refused) name an axis the classifier still extracts, scored as a false positive, so `growth` precision drops to 0.74 and `profitability` to 0.82 while recall stays 1.0. This is the free local Qwen 7B, which matches the Haiku tier (0.88 vs 0.89) only once constrained decoding pins the JSON shape: without it the 7B intermittently emits list fields as bare strings, fails schema validation, and the error is swallowed as a refusal, collapsing macro-F1 to ~0.20 and making the score non-reproducible run to run. An earlier 0.69 refusal precision was a resolver alias bug (`"Eli Lilly"` not matching `"Eli Lilly and Company"`), since fixed.
 
 ### Retrieval
 
@@ -215,9 +215,9 @@ Two caches matter and they are separate:
 
 ## Local model serving
 
-Qwen 2.5 7B Instruct (AWQ-4bit) served by vLLM, used as the classifier. AWQ-4bit fits the 16GB VRAM budget with room for the KV cache and is vLLM-native (continuous batching preserved). It is optional: with `VLLM_URL` unset, Haiku is the classifier and no GPU is required.
+Qwen 2.5 7B Instruct (AWQ-4bit) served by vLLM, used as the classifier with constrained JSON decoding (`response_format` json_schema) that pins the output to the axis/company schema. AWQ-4bit fits the 16GB VRAM budget with room for the KV cache and is vLLM-native (continuous batching preserved). It is optional: with `VLLM_URL` unset, Haiku is the classifier and no GPU is required.
 
-Honest framing: the local classifier is a portfolio statement, not a v1 cost win. Haiku costs roughly $0.0005 per classification, below the GPU-time cost of a local serve at this scale. The value is the self-hosted-inference capability, not the dollars.
+Honest framing: the local classifier matches the Haiku tier on the gold set (macro-F1 0.88 vs 0.89, refusal 1.0/1.0/1.0) at zero API cost, once constrained decoding pins the JSON shape. On a GPU you already own, the marginal cost per classification is negligible and below Haiku's ~$0.0005 per call, so local is the cheaper route when the hardware is there. Haiku is the fallback for GPU-less deployment, and the local route also drops the third-party API dependency.
 
 ## Limitations
 
@@ -227,7 +227,7 @@ Honest framing: the local classifier is a portfolio statement, not a v1 cost win
 - **Filing text is untrusted input.** A prompt injection embedded in a 10-K would reach the analyst and critic prompts. The blast radius is bounded to prose: citations are code-built (a model cannot mint one) and the synthesizer's uncited-number strip removes unbacked figures. The red-team harness (`scripts/run_injection_eval.py`, 11 vectors + a benign control) plants adversarial text into the retrieval corpus under a matching ticker and section and drives each probe through the full graph. Measured result: **0 leaks over 9 measured vectors**, control clean, critic engaging on nearly every case; 2 vectors are unmeasured (`inj_cross_company` needs per-ticker figure attribution, `inj_grounding_flag` needs a no-injection counterfactual since a genuinely-evidenced axis also grounds `ok`). This is a single small-N run with no explicit data/instruction delimiting layer yet - delimiting plus the two counterfactuals are the v2 items. The current read is that grounded-by-construction citations plus the critic resist every measurable vector.
 - **Hand-curated concept aliases.** `config/concept_aliases.yaml` is curated for the 12-company corpus. Adding tickers from new sectors means extending it and re-populating the Postgres table. At ~50+ companies, an automated XBRL-taxonomy resolver becomes worth building.
 - **ColBERT reranking is not built and measured unnecessary** - all arms hit success@10 = 1.00 on the labeled retrieval set (see [Retrieval](#retrieval)). Revisit only if the corpus grows past the point where the labeled numbers stop holding.
-- **Local classifier economics** - see [Local model serving](#local-model-serving). A capability demonstration, not a cost win at v1 scale.
+- **Local classifier economics** - see [Local model serving](#local-model-serving). Matches the Haiku tier at zero API cost via constrained decoding; on owned hardware its marginal cost undercuts Haiku's per-call charge.
 
 ## Repo layout
 

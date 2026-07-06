@@ -26,6 +26,15 @@ _SYSTEM = (
     "Respond with ONLY a JSON object matching the schema. No prose, no markdown."
 )
 
+# The local 7B intermittently emits list fields as bare strings ("growth" instead
+# of ["growth"]), which fails schema validation and gets swallowed into a refusal.
+# Constrained decoding pins the output to the exact shape. Only the vLLM path uses
+# it; Anthropic models are reliably compliant and their API rejects this param.
+_RESPONSE_FORMAT = {
+    "type": "json_schema",
+    "json_schema": {"name": "ClassifyOutput", "schema": ClassifyOutput.model_json_schema()},
+}
+
 
 def _parse_output(raw_text: str) -> ClassifyOutput:
     # The local 7B is usually compliant; Sonnet/Haiku are reliable. We strip a
@@ -59,6 +68,7 @@ def classify(
             {"role": "system", "content": _SYSTEM},
             {"role": "user", "content": question},
         ]
+        chat_kwargs["response_format"] = _RESPONSE_FORMAT
 
     try:
         resp = client.chat(**chat_kwargs)

@@ -63,9 +63,11 @@ services:
       - ./data/vllm-cache:/root/.cache/huggingface
     command:
       - "--model=Qwen/Qwen2.5-7B-Instruct-AWQ"
-      - "--quantization=awq"
+      - "--quantization=awq_marlin"
       - "--max-model-len=8192"
-      - "--gpu-memory-utilization=0.85"
+      # 0.85 assumed a headless GPU; the desktop compositor holds ~2GB, so
+      # 0.85x16GB does not fit and the engine crash-loops at startup.
+      - "--gpu-memory-utilization=0.75"
       - "--dtype=auto"
     healthcheck:
       test: ["CMD-SHELL", "curl -fsS http://localhost:8000/v1/models || exit 1"]

@@ -1,0 +1,4926 @@
+{
+  "hybrid": [
+    {
+      "id": "planner_risk_aapl",
+      "population": "planner",
+      "ticker": "AAPL",
+      "n_relevant": 16,
+      "ranked": [
+        "0000320193-25-000079:item_1a_risk_factors:0005",
+        "0000320193-25-000079:item_1a_risk_factors:0014",
+        "0000320193-25-000079:item_1a_risk_factors:0018",
+        "0000320193-25-000057:item_1a_risk_factors:0002",
+        "0000320193-26-000013:item_1a_risk_factors:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0012",
+        "0000320193-25-000079:item_1a_risk_factors:0000",
+        "0000320193-25-000057:item_1a_risk_factors:0000",
+        "0000320193-26-000013:item_1a_risk_factors:0002",
+        "0000320193-26-000013:item_1a_risk_factors:0000"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_msft",
+      "population": "planner",
+      "ticker": "MSFT",
+      "n_relevant": 6,
+      "ranked": [
+        "0001193125-26-027207:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0001",
+        "0001193125-26-191507:item_1a_risk_factors:0000",
+        "0000950170-25-100235:item_1a_risk_factors:0000",
+        "0001193125-25-256321:item_1a_risk_factors:0000"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_googl",
+      "population": "planner",
+      "ticker": "GOOGL",
+      "n_relevant": 16,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0012",
+        "0001652044-26-000018:item_1a_risk_factors:0015",
+        "0001652044-26-000018:item_1a_risk_factors:0002",
+        "0001652044-26-000018:item_1a_risk_factors:0007",
+        "0001652044-26-000018:item_1a_risk_factors:0000",
+        "0001652044-26-000048:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0005",
+        "0001652044-26-000018:item_1a_risk_factors:0008",
+        "0001652044-26-000018:item_1a_risk_factors:0019",
+        "0001652044-26-000018:item_1a_risk_factors:0006"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_meta",
+      "population": "planner",
+      "ticker": "META",
+      "n_relevant": 16,
+      "ranked": [
+        "0001628280-25-047240:item_1a_risk_factors:0030",
+        "0001628280-26-028526:item_1a_risk_factors:0054",
+        "0001326801-25-000054:item_1a_risk_factors:0029",
+        "0001628280-26-003942:item_1a_risk_factors:0030",
+        "0001628280-26-028526:item_1a_risk_factors:0053",
+        "0001628280-26-028526:item_1a_risk_factors:0031",
+        "0001326801-25-000054:item_1a_risk_factors:0030",
+        "0001628280-25-036791:item_1a_risk_factors:0030",
+        "0001628280-26-028526:item_1a_risk_factors:0030",
+        "0001628280-26-003942:item_1a_risk_factors:0031"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pg",
+      "population": "planner",
+      "ticker": "PG",
+      "n_relevant": 10,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0006",
+        "0000080424-25-000076:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0008",
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000076:item_1a_risk_factors:0002",
+        "0000080424-25-000076:item_1a_risk_factors:0007",
+        "0000080424-26-000060:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0001"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_ko",
+      "population": "planner",
+      "ticker": "KO",
+      "n_relevant": 13,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0011",
+        "0001628280-26-010047:item_1a_risk_factors:0018",
+        "0001628280-26-010047:item_1a_risk_factors:0005",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0000",
+        "0001628280-26-010047:item_1a_risk_factors:0012",
+        "0001628280-26-010047:item_1a_risk_factors:0025",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0006",
+        "0001628280-26-010047:item_1a_risk_factors:0004"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pep",
+      "population": "planner",
+      "ticker": "PEP",
+      "n_relevant": 15,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0005",
+        "0000077476-26-000007:item_1a_risk_factors:0019",
+        "0000077476-26-000007:item_1a_risk_factors:0000",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0002",
+        "0000077476-26-000007:item_1a_risk_factors:0009",
+        "0000077476-26-000007:item_1a_risk_factors:0020",
+        "0000077476-26-000007:item_1a_risk_factors:0004",
+        "0000077476-26-000007:item_1a_risk_factors:0007",
+        "0000077476-26-000007:item_1a_risk_factors:0013"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_cost",
+      "population": "planner",
+      "ticker": "COST",
+      "n_relevant": 13,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0003",
+        "0000909832-25-000101:item_1a_risk_factors:0006",
+        "0000909832-25-000101:item_1a_risk_factors:0000",
+        "0000909832-25-000101:item_1a_risk_factors:0008",
+        "0000909832-25-000101:item_1a_risk_factors:0011",
+        "0000909832-25-000101:item_1a_risk_factors:0005",
+        "0000909832-25-000101:item_1a_risk_factors:0012",
+        "0000909832-25-000101:item_1a_risk_factors:0001",
+        "0000909832-25-000101:item_1a_risk_factors:0004"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_jnj",
+      "population": "planner",
+      "ticker": "JNJ",
+      "n_relevant": 13,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0012",
+        "0000200406-26-000016:item_1a_risk_factors:0000",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0001",
+        "0000200406-26-000016:item_1a_risk_factors:0006",
+        "0000200406-26-000016:item_1a_risk_factors:0013",
+        "0000200406-26-000016:item_1a_risk_factors:0011",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0010"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pfe",
+      "population": "planner",
+      "ticker": "PFE",
+      "n_relevant": 0,
+      "ranked": [
+        "0000078003-26-000026:item_1a_risk_factors:0000",
+        "0000078003-26-000054:item_1a_risk_factors:0000",
+        "0000078003-25-000138:item_1a_risk_factors:0000",
+        "0000078003-25-000114:item_1a_risk_factors:0000",
+        "0000078003-25-000150:item_1a_risk_factors:0000",
+        "0000078003-26-000026:item_1a_risk_factors:0001"
+      ],
+      "judged_precision_at_k": {
+        "precision": 0.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_mrk",
+      "population": "planner",
+      "ticker": "MRK",
+      "n_relevant": 14,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0009",
+        "0000310158-26-000063:item_1a_risk_factors:0010",
+        "0000310158-26-000063:item_1a_risk_factors:0000",
+        "0000310158-26-000063:item_1a_risk_factors:0001",
+        "0000310158-26-000063:item_1a_risk_factors:0015",
+        "0000310158-26-000063:item_1a_risk_factors:0024",
+        "0000310158-26-000063:item_1a_risk_factors:0005",
+        "0000310158-26-000063:item_1a_risk_factors:0023",
+        "0000310158-26-000063:item_1a_risk_factors:0019",
+        "0000310158-26-000063:item_1a_risk_factors:0014"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_lly",
+      "population": "planner",
+      "ticker": "LLY",
+      "n_relevant": 14,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0003",
+        "0000059478-26-000013:item_1a_risk_factors:0015",
+        "0000059478-26-000013:item_1a_risk_factors:0017",
+        "0000059478-26-000013:item_1a_risk_factors:0002",
+        "0000059478-26-000013:item_1a_risk_factors:0014",
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0024",
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000013:item_1a_risk_factors:0019",
+        "0000059478-26-000013:item_1a_risk_factors:0016"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "ff_aapl_tariffs",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 4,
+      "ranked": [
+        "0000320193-25-000057:item_1a_risk_factors:0001",
+        "0000320193-25-000079:item_1a_risk_factors:0002",
+        "0000320193-25-000079:item_1a_risk_factors:0005",
+        "0000320193-25-000079:item_1a_risk_factors:0001",
+        "0000320193-25-000079:item_1a_risk_factors:0020",
+        "0000320193-25-000079:item_1a_risk_factors:0007",
+        "0000320193-25-000079:item_1a_risk_factors:0014",
+        "0000320193-25-000057:item_1a_risk_factors:0002",
+        "0000320193-25-000057:item_1a_risk_factors:0003",
+        "0000320193-25-000079:item_1a_risk_factors:0006"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.75,
+        "10": 0.75
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_sole_supplier",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 5,
+      "ranked": [
+        "0000320193-25-000079:item_1a_risk_factors:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0005",
+        "0000320193-26-000013:item_1a_risk_factors:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0007",
+        "0000320193-25-000057:item_1a_risk_factors:0002",
+        "0000320193-26-000013:item_1a_risk_factors:0000",
+        "0000320193-25-000057:item_1a_risk_factors:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0018",
+        "0000320193-25-000079:item_1a_risk_factors:0002"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.2,
+        "3": 0.6,
+        "5": 0.8,
+        "10": 0.8
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_app_store_antitrust",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 4,
+      "ranked": [
+        "0000320193-26-000013:item_1a_risk_factors:0003",
+        "0000320193-25-000079:item_1a_risk_factors:0015",
+        "0000320193-25-000079:item_1a_risk_factors:0009",
+        "0000320193-25-000079:item_1a_risk_factors:0016",
+        "0000320193-25-000079:item_1a_risk_factors:0004",
+        "0000320193-26-000013:item_1a_risk_factors:0004",
+        "0000320193-25-000079:item_1a_risk_factors:0008",
+        "0000320193-25-000079:item_1a_risk_factors:0013",
+        "0000320193-26-000013:item_1a_risk_factors:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.75,
+        "10": 0.75
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_buyback",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 8,
+      "ranked": [
+        "0000320193-25-000057:item_2_mda:0006",
+        "0000320193-25-000057:item_2_unregistered_sales:0000",
+        "0000320193-25-000079:item_7_mda:0004",
+        "0000320193-26-000013:item_2_mda:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0021",
+        "0000320193-25-000073:item_2_unregistered_sales:0000",
+        "0000320193-25-000079:item_5_market_for_common_equity:0000",
+        "0000320193-26-000006:item_2_unregistered_sales:0000",
+        "0000320193-26-000013:item_2_unregistered_sales:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0014"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.125,
+        "3": 0.375,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_msft_trade_policy",
+      "population": "freeform",
+      "ticker": "MSFT",
+      "n_relevant": 3,
+      "ranked": [
+        "0001193125-26-027207:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0001",
+        "0000950170-25-061046:item_1a_risk_factors:0000",
+        "0000950170-25-100235:item_1a_risk_factors:0000",
+        "0001193125-26-191507:item_1a_risk_factors:0000",
+        "0001193125-25-256321:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_msft_auditor",
+      "population": "freeform",
+      "ticker": "MSFT",
+      "n_relevant": 5,
+      "ranked": [
+        "0000950170-25-100235:item_9a_controls_and_procedures:0000",
+        "0000950170-25-100235:item_9_changes_in_accountants:0000",
+        "0000950170-25-100235:item_7a_market_risk:0035",
+        "0000950170-25-100235:item_7_mda:0000",
+        "0001193125-25-256321:item_4_controls_and_procedures:0000",
+        "0001193125-26-027207:item_4_controls_and_procedures:0000",
+        "0000950170-25-100235:item_7a_market_risk:0036",
+        "0000950170-25-061046:item_4_controls_and_procedures:0000",
+        "0000950170-25-100235:item_9a_controls_and_procedures:0001",
+        "0001193125-26-191507:item_4_controls_and_procedures:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.2,
+        "3": 0.6,
+        "5": 0.8,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_antitrust_suits",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 2,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0018",
+        "0001652044-26-000018:item_1a_risk_factors:0015",
+        "0001652044-26-000018:item_1a_risk_factors:0021",
+        "0001652044-26-000018:item_1a_risk_factors:0017",
+        "0001652044-26-000018:item_1a_risk_factors:0016",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0019",
+        "0001652044-26-000018:item_1a_risk_factors:0002",
+        "0001652044-26-000018:item_1a_risk_factors:0011",
+        "0001652044-26-000018:item_1a_risk_factors:0014"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_dual_class",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 2,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0024",
+        "0001652044-26-000018:item_1a_risk_factors:0023",
+        "0001652044-26-000018:item_1a_risk_factors:0026",
+        "0001652044-26-000018:item_1a_risk_factors:0013",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0016",
+        "0001652044-26-000018:item_1a_risk_factors:0018",
+        "0001652044-26-000018:item_1a_risk_factors:0006",
+        "0001652044-26-000048:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0025"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_compute_constraints",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 1,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0006",
+        "0001652044-26-000048:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0008",
+        "0001652044-26-000018:item_1a_risk_factors:0024",
+        "0001652044-26-000018:item_1a_risk_factors:0026",
+        "0001652044-26-000018:item_1a_risk_factors:0012",
+        "0001652044-26-000018:item_1a_risk_factors:0007",
+        "0001652044-26-000018:item_1a_risk_factors:0002"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_ec_fines",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 8,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0017",
+        "0001652044-25-000043:item_2_mda:0014",
+        "0001652044-26-000018:item_1a_risk_factors:0019",
+        "0001652044-26-000018:item_7_mda:0002",
+        "0001652044-25-000062:item_2_mda:0016",
+        "0001652044-25-000062:item_2_mda:0011",
+        "0001652044-26-000048:item_2_mda:0004",
+        "0001652044-25-000091:item_2_mda:0010",
+        "0001652044-25-000091:item_2_mda:0016",
+        "0001652044-26-000048:item_2_mda:0013"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.125,
+        "5": 0.25,
+        "10": 0.625
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "ff_meta_eu_ad_free",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 12,
+      "ranked": [
+        "0001628280-26-003942:item_1a_risk_factors:0043",
+        "0001628280-25-047240:item_1a_risk_factors:0043",
+        "0001628280-26-028526:item_1a_risk_factors:0007",
+        "0001628280-25-047240:item_1a_risk_factors:0007",
+        "0001326801-25-000054:item_1a_risk_factors:0042",
+        "0001326801-25-000054:item_1a_risk_factors:0007",
+        "0001628280-25-036791:item_1a_risk_factors:0007",
+        "0001628280-26-028526:item_1a_risk_factors:0005",
+        "0001628280-26-003942:item_1a_risk_factors:0007",
+        "0001628280-26-003942:item_1a_risk_factors:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.4166666666666667,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_meta_reality_labs_losses",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 6,
+      "ranked": [
+        "0001326801-25-000054:item_1a_risk_factors:0013",
+        "0001628280-25-047240:item_1a_risk_factors:0022",
+        "0001628280-25-036791:item_1a_risk_factors:0013",
+        "0001628280-26-003942:item_1a_risk_factors:0013",
+        "0001326801-25-000054:item_1a_risk_factors:0021",
+        "0001628280-26-028526:item_1a_risk_factors:0013",
+        "0001628280-25-047240:item_1a_risk_factors:0013",
+        "0001628280-25-036791:item_1a_risk_factors:0021",
+        "0001628280-25-036791:item_1a_risk_factors:0016",
+        "0001326801-25-000054:item_1a_risk_factors:0016"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.16666666666666666,
+        "5": 0.3333333333333333,
+        "10": 0.5
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "ff_meta_fake_accounts",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 9,
+      "ranked": [
+        "0001628280-26-028526:item_1a_risk_factors:0027",
+        "0001326801-25-000054:item_1a_risk_factors:0026",
+        "0001628280-25-036791:item_1a_risk_factors:0026",
+        "0001628280-26-003942:item_1a_risk_factors:0027",
+        "0001628280-25-047240:item_1a_risk_factors:0026",
+        "0001628280-26-028526:item_1a_risk_factors:0025",
+        "0001628280-26-003942:item_1a_risk_factors:0001",
+        "0001628280-25-047240:item_1a_risk_factors:0027",
+        "0001628280-25-036791:item_1a_risk_factors:0044",
+        "0001628280-26-028526:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.1111111111111111,
+        "3": 0.3333333333333333,
+        "5": 0.5555555555555556,
+        "10": 0.5555555555555556
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_meta_capex_2026",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 2,
+      "ranked": [
+        "0001628280-26-028526:item_2_mda:0014",
+        "0001628280-26-028526:item_2_mda:0004",
+        "0001628280-26-003942:item_1_business:0002",
+        "0001628280-26-028526:item_2_mda:0010",
+        "0001628280-25-047240:item_1_legal_proceedings:0012",
+        "0001628280-26-003942:item_3_legal_proceedings:0012",
+        "0001628280-25-047240:item_2_mda:0011",
+        "0001628280-25-036791:item_1_legal_proceedings:0011",
+        "0001628280-26-003942:item_1a_risk_factors:0022",
+        "0001628280-25-047240:item_2_mda:0015"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.5
+      },
+      "mrr": 0.1,
+      "first_relevant_rank": 10
+    },
+    {
+      "id": "ff_pg_tariffs",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 2,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0002",
+        "0000080424-25-000076:item_1a_risk_factors:0001",
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0008",
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0011",
+        "0000080424-25-000076:item_1a_risk_factors:0009",
+        "0000080424-25-000076:item_1a_risk_factors:0007"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pg_commodity_pricing",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 2,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0001",
+        "0000080424-25-000076:item_1a_risk_factors:0009",
+        "0000080424-25-000076:item_1a_risk_factors:0002",
+        "0000080424-25-000076:item_1a_risk_factors:0008",
+        "0000080424-25-000076:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0007",
+        "0000080424-25-000076:item_1a_risk_factors:0011"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pg_gillette_impairment",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 4,
+      "ranked": [
+        "0000080424-25-000076:item_7_mda:0025",
+        "0000080424-25-000076:item_7_mda:0026",
+        "0000080424-25-000037:item_2_mda:0005",
+        "0000080424-25-000076:item_7_mda:0030",
+        "0000080424-25-000076:item_7_mda:0012",
+        "0000080424-25-000037:item_2_mda:0011",
+        "0000080424-25-000076:item_7_mda:0007",
+        "0000080424-25-000076:item_7_mda:0027",
+        "0000080424-25-000076:item_7_mda:0009",
+        "0000080424-25-000037:item_2_mda:0010"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_glp1_demand",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 1,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0027",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0004",
+        "0001628280-26-010047:item_1a_risk_factors:0008",
+        "0001628280-26-010047:item_1a_risk_factors:0011",
+        "0001628280-26-010047:item_1a_risk_factors:0016",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0026",
+        "0001628280-26-010047:item_1a_risk_factors:0002"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_sugar_tax",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 3,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0016",
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0019",
+        "0001628280-26-010047:item_1a_risk_factors:0012",
+        "0001628280-26-010047:item_1a_risk_factors:0021",
+        "0001628280-26-010047:item_1a_risk_factors:0000",
+        "0001628280-26-010047:item_1a_risk_factors:0025",
+        "0001628280-26-010047:item_1a_risk_factors:0023",
+        "0001628280-26-010047:item_1a_risk_factors:0028"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 0.6666666666666666,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_plastic_waste",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 3,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0026",
+        "0001628280-26-010047:item_1a_risk_factors:0027",
+        "0001628280-26-010047:item_1a_risk_factors:0016",
+        "0001628280-26-010047:item_1a_risk_factors:0008",
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0028",
+        "0001628280-26-010047:item_1a_risk_factors:0012",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0023",
+        "0001628280-26-010047:item_1a_risk_factors:0009"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_irs_dispute",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 13,
+      "ranked": [
+        "0000021344-25-000061:item_1_legal_proceedings:0003",
+        "0001628280-26-028802:item_1_legal_proceedings:0001",
+        "0000021344-25-000029:item_1_legal_proceedings:0001",
+        "0001628280-25-046054:item_1_legal_proceedings:0001",
+        "0000021344-25-000061:item_1_legal_proceedings:0000",
+        "0000021344-25-000061:item_1_legal_proceedings:0001",
+        "0001628280-25-046054:item_1_legal_proceedings:0000",
+        "0001628280-25-046054:item_1_legal_proceedings:0004",
+        "0001628280-26-028802:item_1_legal_proceedings:0000",
+        "0000021344-25-000029:item_1_legal_proceedings:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.07692307692307693,
+        "3": 0.07692307692307693,
+        "5": 0.15384615384615385,
+        "10": 0.46153846153846156
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_excise_taxes",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 2,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0015",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0019",
+        "0000077476-26-000007:item_1a_risk_factors:0014",
+        "0000077476-26-000007:item_1a_risk_factors:0020",
+        "0000077476-26-000007:item_1a_risk_factors:0011",
+        "0000077476-26-000007:item_1a_risk_factors:0017",
+        "0000077476-26-000007:item_1a_risk_factors:0001",
+        "0000077476-26-000007:item_1a_risk_factors:0016",
+        "0000077476-26-000007:item_1a_risk_factors:0007"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_glp1_demand",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 1,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0000",
+        "0000077476-26-000007:item_1a_risk_factors:0001",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0016",
+        "0000077476-26-000007:item_1a_risk_factors:0005",
+        "0000077476-26-000007:item_1a_risk_factors:0002",
+        "0000077476-26-000007:item_1a_risk_factors:0007",
+        "0000077476-26-000007:item_1a_risk_factors:0019",
+        "0000077476-26-000007:item_1a_risk_factors:0013",
+        "0000077476-26-000007:item_1a_risk_factors:0008"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_cyber",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 3,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0009",
+        "0000077476-26-000007:item_1a_risk_factors:0008",
+        "0000077476-26-000007:item_1a_risk_factors:0010",
+        "0000077476-26-000007:item_1a_risk_factors:0011",
+        "0000077476-26-000007:item_1a_risk_factors:0004",
+        "0000077476-26-000007:item_1a_risk_factors:0016",
+        "0000077476-26-000007:item_1a_risk_factors:0017",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0018",
+        "0000077476-26-000007:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_quaker_recall",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 12,
+      "ranked": [
+        "0000077476-26-000007:item_7_mda:0020",
+        "0000077476-26-000007:item_7_mda:0013",
+        "0000077476-25-000053:item_2_mda:0019",
+        "0000077476-26-000007:item_7_mda:0031",
+        "0000077476-26-000007:item_7_mda:0039",
+        "0000077476-25-000044:item_2_mda:0010",
+        "0000077476-25-000053:item_2_mda:0011",
+        "0000077476-25-000044:item_1_legal_proceedings:0000",
+        "0000077476-25-000044:item_2_mda:0018",
+        "0000077476-25-000019:item_2_mda:0014"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.4166666666666667,
+        "10": 0.75
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_cost_geo_concentration",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 2,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0000",
+        "0000909832-25-000101:item_1a_risk_factors:0009",
+        "0000909832-25-000101:item_1a_risk_factors:0008",
+        "0000909832-25-000101:item_1a_risk_factors:0001",
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0007",
+        "0000909832-25-000101:item_1a_risk_factors:0004",
+        "0000909832-25-000101:item_1a_risk_factors:0013",
+        "0000909832-25-000101:item_1a_risk_factors:0011",
+        "0000909832-25-000101:item_1a_risk_factors:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_cost_kirkland",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 1,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0005",
+        "0000909832-25-000101:item_1a_risk_factors:0001",
+        "0000909832-25-000101:item_1a_risk_factors:0008",
+        "0000909832-25-000101:item_1a_risk_factors:0004",
+        "0000909832-25-000101:item_1a_risk_factors:0012",
+        "0000909832-25-000101:item_1a_risk_factors:0011",
+        "0000909832-25-000101:item_1a_risk_factors:0006",
+        "0000909832-25-000101:item_1a_risk_factors:0003",
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "ff_cost_membership_fees",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 6,
+      "ranked": [
+        "0000909832-26-000029:item_2_mda:0006",
+        "0000909832-25-000033:item_2_mda:0006",
+        "0000909832-25-000101:item_7_mda:0002",
+        "0000909832-25-000033:item_2_mda:0003",
+        "0000909832-25-000101:item_7_mda:0004",
+        "0000909832-25-000015:item_2_mda:0006",
+        "0000909832-25-000015:item_2_mda:0003",
+        "0000909832-25-000169:item_2_mda:0003",
+        "0000909832-26-000029:item_2_mda:0003",
+        "0000909832-25-000169:item_2_mda:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.16666666666666666,
+        "3": 0.3333333333333333,
+        "5": 0.5,
+        "10": 0.8333333333333334
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_talc",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 1,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0013",
+        "0000200406-26-000016:item_1a_risk_factors:0006",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0008",
+        "0000200406-26-000016:item_1a_risk_factors:0003",
+        "0000200406-26-000016:item_1a_risk_factors:0001",
+        "0000200406-26-000016:item_1a_risk_factors:0012"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_biosimilar_patents",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 2,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0006",
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0003",
+        "0000200406-26-000016:item_1a_risk_factors:0010",
+        "0000200406-26-000016:item_1a_risk_factors:0007",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0013",
+        "0000200406-26-000016:item_1a_risk_factors:0012"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 0.5
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_medicare_pricing",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 2,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0003",
+        "0000200406-26-000016:item_1a_risk_factors:0008",
+        "0000200406-26-000016:item_1a_risk_factors:0000",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0011",
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0010",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_stelara",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 11,
+      "ranked": [
+        "0000200406-25-000178:item_2_mda:0001",
+        "0000200406-25-000178:item_2_mda:0000",
+        "0000200406-25-000209:item_2_mda:0005",
+        "0000200406-25-000119:item_2_mda:0001",
+        "0000200406-25-000178:item_2_mda:0005",
+        "0000200406-25-000119:item_2_mda:0000",
+        "0000200406-26-000016:item_7_mda:0004",
+        "0000200406-26-000016:item_1_business:0004",
+        "0000200406-25-000209:item_2_mda:0001",
+        "0000200406-25-000209:item_2_mda:0018"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.09090909090909091,
+        "3": 0.18181818181818182,
+        "5": 0.2727272727272727,
+        "10": 0.5454545454545454
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_patent_cliff",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 9,
+      "ranked": [
+        "0000078003-25-000114:item_2_mda:0002",
+        "0000078003-26-000026:item_7_mda:0004",
+        "0000078003-25-000150:item_2_mda:0004",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0046",
+        "0000078003-25-000138:item_2_mda:0003",
+        "0000078003-26-000054:item_2_mda:0001",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0024",
+        "0000078003-25-000150:item_2_mda:0015",
+        "0000078003-25-000114:item_2_mda:0010",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0045"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.1111111111111111,
+        "3": 0.3333333333333333,
+        "5": 0.5555555555555556,
+        "10": 0.8888888888888888
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_part_d",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 15,
+      "ranked": [
+        "0000078003-25-000150:item_2_mda:0010",
+        "0000078003-26-000026:item_7_mda:0006",
+        "0000078003-25-000138:item_2_mda:0009",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0033",
+        "0000078003-25-000150:item_2_mda:0014",
+        "0000078003-25-000138:item_2_mda:0013",
+        "0000078003-25-000150:item_2_mda:0012",
+        "0000078003-25-000114:item_2_mda:0007",
+        "0000078003-25-000114:item_2_mda:0008",
+        "0000078003-25-000150:item_2_mda:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.06666666666666667,
+        "3": 0.2,
+        "5": 0.3333333333333333,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_covid_decline",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 6,
+      "ranked": [
+        "0000078003-25-000114:item_2_mda:0010",
+        "0000078003-25-000150:item_2_mda:0016",
+        "0000078003-25-000150:item_2_mda:0012",
+        "0000078003-26-000026:item_7_mda:0019",
+        "0000078003-25-000138:item_2_mda:0013",
+        "0000078003-25-000138:item_2_mda:0014",
+        "0000078003-25-000138:item_2_mda:0002",
+        "0000078003-26-000026:item_7_mda:0017",
+        "0000078003-26-000026:item_7a_market_risk:0013",
+        "0000078003-26-000054:item_2_mda:0007"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.16666666666666666,
+        "5": 0.16666666666666666,
+        "10": 0.3333333333333333
+      },
+      "mrr": 0.3333333333333333,
+      "first_relevant_rank": 3
+    },
+    {
+      "id": "ff_mrk_keytruda_concentration",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 2,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0004",
+        "0000310158-26-000063:item_1a_risk_factors:0003",
+        "0000310158-26-000063:item_1a_risk_factors:0009",
+        "0000310158-26-000063:item_1a_risk_factors:0008",
+        "0000310158-26-000063:item_1a_risk_factors:0024",
+        "0000310158-26-000063:item_1a_risk_factors:0001",
+        "0000310158-26-000063:item_1a_risk_factors:0002",
+        "0000310158-26-000063:item_1a_risk_factors:0023",
+        "0000310158-26-000063:item_1a_risk_factors:0021"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "ff_mrk_gardasil_china",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 1,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0012",
+        "0000310158-26-000063:item_1a_risk_factors:0018",
+        "0000310158-26-000063:item_1a_risk_factors:0013",
+        "0000310158-26-000063:item_1a_risk_factors:0007",
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0019",
+        "0000310158-26-000063:item_1a_risk_factors:0014",
+        "0000310158-26-000063:item_1a_risk_factors:0004",
+        "0000310158-26-000063:item_1a_risk_factors:0015",
+        "0000310158-26-000063:item_1a_risk_factors:0008"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_mrk_ira_selections",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 2,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0006",
+        "0000310158-26-000063:item_1a_risk_factors:0007",
+        "0000310158-26-000063:item_1a_risk_factors:0016",
+        "0000310158-26-000063:item_1a_risk_factors:0008",
+        "0000310158-26-000063:item_1a_risk_factors:0013",
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0024",
+        "0000310158-26-000063:item_1a_risk_factors:0003",
+        "0000310158-26-000063:item_1a_risk_factors:0019",
+        "0000310158-26-000063:item_1a_risk_factors:0009"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_mrk_winrevair",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 6,
+      "ranked": [
+        "0000310158-25-000059:item_2_mda:0014",
+        "0000310158-26-000063:item_7_mda:0020",
+        "0001628280-26-029802:item_2_mda:0011",
+        "0000310158-25-000014:item_2_mda:0012",
+        "0001628280-25-021834:item_2_mda:0008",
+        "0000310158-25-000014:item_2_mda:0004",
+        "0001628280-26-029802:item_2_mda:0003",
+        "0001628280-25-021834:item_2_mda:0003",
+        "0000310158-26-000063:item_7_mda:0021",
+        "0000310158-25-000059:item_2_mda:0015"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.16666666666666666,
+        "3": 0.5,
+        "5": 0.6666666666666666,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_concentration",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 2,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000013:item_1a_risk_factors:0001",
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0005",
+        "0000059478-26-000013:item_1a_risk_factors:0008",
+        "0000059478-26-000013:item_1a_risk_factors:0002",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0023",
+        "0000059478-26-000013:item_1a_risk_factors:0015",
+        "0000059478-26-000013:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_price_controls",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 3,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0005",
+        "0000059478-26-000013:item_1a_risk_factors:0020",
+        "0000059478-26-000013:item_1a_risk_factors:0024",
+        "0000059478-26-000013:item_1a_risk_factors:0023",
+        "0000059478-26-000013:item_1a_risk_factors:0021",
+        "0000059478-26-000013:item_1a_risk_factors:0008",
+        "0000059478-26-000013:item_1a_risk_factors:0003",
+        "0000059478-26-000013:item_1a_risk_factors:0019"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_counterfeit_glp1",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 1,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0003",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0024",
+        "0000059478-26-000013:item_1a_risk_factors:0001",
+        "0000059478-26-000013:item_1a_risk_factors:0023",
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000013:item_1a_risk_factors:0011",
+        "0000059478-26-000013:item_1a_risk_factors:0008",
+        "0000059478-26-000013:item_1a_risk_factors:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_growth_drivers",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 15,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-25-000204:item_2_mda:0006",
+        "0000059478-26-000045:item_2_mda:0005",
+        "0000059478-25-000132:item_2_mda:0005",
+        "0000059478-26-000013:item_7_mda:0012",
+        "0000059478-25-000204:item_2_mda:0007",
+        "0000059478-26-000013:item_7_mda:0005",
+        "0000059478-26-000013:item_7_mda:0007",
+        "0000059478-25-000254:item_2_mda:0000",
+        "0000059478-25-000132:item_2_mda:0000"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.13333333333333333,
+        "5": 0.2,
+        "10": 0.5333333333333333
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    }
+  ],
+  "dense": [
+    {
+      "id": "planner_risk_aapl",
+      "population": "planner",
+      "ticker": "AAPL",
+      "n_relevant": 16,
+      "ranked": [
+        "0000320193-25-000079:item_1a_risk_factors:0014",
+        "0000320193-25-000079:item_1a_risk_factors:0018",
+        "0000320193-25-000079:item_1a_risk_factors:0012",
+        "0000320193-25-000079:item_1a_risk_factors:0000",
+        "0000320193-26-000013:item_1a_risk_factors:0000",
+        "0000320193-25-000057:item_1a_risk_factors:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0007",
+        "0000320193-25-000057:item_1a_risk_factors:0001",
+        "0000320193-26-000013:item_1a_risk_factors:0006",
+        "0000320193-25-000057:item_1a_risk_factors:0002"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_msft",
+      "population": "planner",
+      "ticker": "MSFT",
+      "n_relevant": 6,
+      "ranked": [
+        "0001193125-26-027207:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0001",
+        "0001193125-25-256321:item_1a_risk_factors:0000",
+        "0000950170-25-100235:item_1a_risk_factors:0000",
+        "0001193125-26-191507:item_1a_risk_factors:0000"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_googl",
+      "population": "planner",
+      "ticker": "GOOGL",
+      "n_relevant": 16,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0015",
+        "0001652044-26-000018:item_1a_risk_factors:0002",
+        "0001652044-26-000018:item_1a_risk_factors:0000",
+        "0001652044-26-000018:item_1a_risk_factors:0007",
+        "0001652044-26-000018:item_1a_risk_factors:0019",
+        "0001652044-26-000018:item_1a_risk_factors:0008",
+        "0001652044-26-000018:item_1a_risk_factors:0005",
+        "0001652044-26-000018:item_1a_risk_factors:0011",
+        "0001652044-26-000018:item_1a_risk_factors:0017",
+        "0001652044-26-000048:item_1a_risk_factors:0000"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_meta",
+      "population": "planner",
+      "ticker": "META",
+      "n_relevant": 16,
+      "ranked": [
+        "0001628280-25-047240:item_1a_risk_factors:0030",
+        "0001326801-25-000054:item_1a_risk_factors:0029",
+        "0001628280-26-028526:item_1a_risk_factors:0031",
+        "0001628280-25-036791:item_1a_risk_factors:0030",
+        "0001628280-26-028526:item_1a_risk_factors:0030",
+        "0001628280-26-003942:item_1a_risk_factors:0030",
+        "0001326801-25-000054:item_1a_risk_factors:0030",
+        "0001628280-26-003942:item_1a_risk_factors:0031",
+        "0001628280-25-036791:item_1a_risk_factors:0029",
+        "0001628280-25-036791:item_1a_risk_factors:0051"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pg",
+      "population": "planner",
+      "ticker": "PG",
+      "n_relevant": 10,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0008",
+        "0000080424-25-000076:item_1a_risk_factors:0002",
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000076:item_1a_risk_factors:0001",
+        "0000080424-25-000076:item_1a_risk_factors:0006",
+        "0000080424-25-000076:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0005",
+        "0000080424-25-000076:item_1a_risk_factors:0007"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_ko",
+      "population": "planner",
+      "ticker": "KO",
+      "n_relevant": 13,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0018",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0000",
+        "0001628280-26-010047:item_1a_risk_factors:0025",
+        "0001628280-26-010047:item_1a_risk_factors:0006",
+        "0001628280-26-010047:item_1a_risk_factors:0012",
+        "0001628280-26-010047:item_1a_risk_factors:0023",
+        "0001628280-26-010047:item_1a_risk_factors:0005",
+        "0001628280-26-010047:item_1a_risk_factors:0008",
+        "0001628280-26-010047:item_1a_risk_factors:0017"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pep",
+      "population": "planner",
+      "ticker": "PEP",
+      "n_relevant": 15,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0019",
+        "0000077476-26-000007:item_1a_risk_factors:0000",
+        "0000077476-26-000007:item_1a_risk_factors:0005",
+        "0000077476-26-000007:item_1a_risk_factors:0020",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0013",
+        "0000077476-26-000007:item_1a_risk_factors:0007",
+        "0000077476-26-000007:item_1a_risk_factors:0018",
+        "0000077476-26-000007:item_1a_risk_factors:0002",
+        "0000077476-26-000007:item_1a_risk_factors:0011"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_cost",
+      "population": "planner",
+      "ticker": "COST",
+      "n_relevant": 13,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0006",
+        "0000909832-25-000101:item_1a_risk_factors:0000",
+        "0000909832-25-000101:item_1a_risk_factors:0011",
+        "0000909832-25-000101:item_1a_risk_factors:0005",
+        "0000909832-25-000101:item_1a_risk_factors:0013",
+        "0000909832-25-000101:item_1a_risk_factors:0012",
+        "0000909832-25-000101:item_1a_risk_factors:0007",
+        "0000909832-25-000101:item_1a_risk_factors:0004",
+        "0000909832-25-000101:item_1a_risk_factors:0003"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_jnj",
+      "population": "planner",
+      "ticker": "JNJ",
+      "n_relevant": 13,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0012",
+        "0000200406-26-000016:item_1a_risk_factors:0000",
+        "0000200406-26-000016:item_1a_risk_factors:0006",
+        "0000200406-26-000016:item_1a_risk_factors:0001",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0013",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0003"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pfe",
+      "population": "planner",
+      "ticker": "PFE",
+      "n_relevant": 0,
+      "ranked": [
+        "0000078003-26-000026:item_1a_risk_factors:0000",
+        "0000078003-26-000054:item_1a_risk_factors:0000",
+        "0000078003-25-000114:item_1a_risk_factors:0000",
+        "0000078003-25-000138:item_1a_risk_factors:0000",
+        "0000078003-25-000150:item_1a_risk_factors:0000",
+        "0000078003-26-000026:item_1a_risk_factors:0001"
+      ],
+      "judged_precision_at_k": {
+        "precision": 0.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_mrk",
+      "population": "planner",
+      "ticker": "MRK",
+      "n_relevant": 14,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0000",
+        "0000310158-26-000063:item_1a_risk_factors:0010",
+        "0000310158-26-000063:item_1a_risk_factors:0024",
+        "0000310158-26-000063:item_1a_risk_factors:0001",
+        "0000310158-26-000063:item_1a_risk_factors:0009",
+        "0000310158-26-000063:item_1a_risk_factors:0019",
+        "0000310158-26-000063:item_1a_risk_factors:0014",
+        "0000310158-26-000063:item_1a_risk_factors:0005",
+        "0000310158-26-000063:item_1a_risk_factors:0011",
+        "0000310158-26-000063:item_1a_risk_factors:0002"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_lly",
+      "population": "planner",
+      "ticker": "LLY",
+      "n_relevant": 14,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0015",
+        "0000059478-26-000013:item_1a_risk_factors:0003",
+        "0000059478-26-000013:item_1a_risk_factors:0017",
+        "0000059478-26-000013:item_1a_risk_factors:0002",
+        "0000059478-26-000013:item_1a_risk_factors:0014",
+        "0000059478-26-000013:item_1a_risk_factors:0024",
+        "0000059478-26-000013:item_1a_risk_factors:0016",
+        "0000059478-26-000013:item_1a_risk_factors:0023",
+        "0000059478-26-000013:item_1a_risk_factors:0011",
+        "0000059478-26-000013:item_1a_risk_factors:0020"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "ff_aapl_tariffs",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 4,
+      "ranked": [
+        "0000320193-25-000057:item_1a_risk_factors:0001",
+        "0000320193-25-000079:item_1a_risk_factors:0002",
+        "0000320193-25-000079:item_1a_risk_factors:0007",
+        "0000320193-25-000079:item_1a_risk_factors:0020",
+        "0000320193-25-000079:item_1a_risk_factors:0005",
+        "0000320193-25-000079:item_1a_risk_factors:0014",
+        "0000320193-25-000079:item_1a_risk_factors:0012",
+        "0000320193-25-000079:item_1a_risk_factors:0001",
+        "0000320193-25-000057:item_1a_risk_factors:0003",
+        "0000320193-25-000079:item_1a_risk_factors:0006"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 0.75
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_sole_supplier",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 5,
+      "ranked": [
+        "0000320193-25-000079:item_1a_risk_factors:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0005",
+        "0000320193-26-000013:item_1a_risk_factors:0000",
+        "0000320193-25-000057:item_1a_risk_factors:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0000",
+        "0000320193-25-000057:item_1a_risk_factors:0002",
+        "0000320193-25-000079:item_1a_risk_factors:0007",
+        "0000320193-25-000079:item_1a_risk_factors:0003",
+        "0000320193-25-000057:item_1a_risk_factors:0001",
+        "0000320193-25-000079:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.2,
+        "3": 0.4,
+        "5": 0.4,
+        "10": 0.8
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_app_store_antitrust",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 4,
+      "ranked": [
+        "0000320193-26-000013:item_1a_risk_factors:0003",
+        "0000320193-25-000079:item_1a_risk_factors:0016",
+        "0000320193-25-000079:item_1a_risk_factors:0015",
+        "0000320193-25-000079:item_1a_risk_factors:0004",
+        "0000320193-25-000079:item_1a_risk_factors:0008",
+        "0000320193-25-000079:item_1a_risk_factors:0013",
+        "0000320193-25-000079:item_1a_risk_factors:0009",
+        "0000320193-26-000013:item_1a_risk_factors:0004",
+        "0000320193-25-000079:item_1a_risk_factors:0014",
+        "0000320193-25-000079:item_1a_risk_factors:0006"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.75,
+        "5": 0.75,
+        "10": 0.75
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_buyback",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 8,
+      "ranked": [
+        "0000320193-25-000057:item_2_mda:0006",
+        "0000320193-25-000057:item_2_unregistered_sales:0000",
+        "0000320193-25-000073:item_2_unregistered_sales:0000",
+        "0000320193-26-000006:item_2_unregistered_sales:0000",
+        "0000320193-26-000013:item_2_mda:0006",
+        "0000320193-25-000079:item_5_market_for_common_equity:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0021",
+        "0000320193-26-000013:item_2_unregistered_sales:0000",
+        "0000320193-25-000079:item_7_mda:0004",
+        "0000320193-25-000079:item_15_exhibits:0004"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.125,
+        "3": 0.375,
+        "5": 0.625,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_msft_trade_policy",
+      "population": "freeform",
+      "ticker": "MSFT",
+      "n_relevant": 3,
+      "ranked": [
+        "0001193125-26-027207:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0001",
+        "0000950170-25-061046:item_1a_risk_factors:0000",
+        "0000950170-25-100235:item_1a_risk_factors:0000",
+        "0001193125-26-191507:item_1a_risk_factors:0000",
+        "0001193125-25-256321:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_msft_auditor",
+      "population": "freeform",
+      "ticker": "MSFT",
+      "n_relevant": 5,
+      "ranked": [
+        "0000950170-25-100235:item_9_changes_in_accountants:0000",
+        "0000950170-25-100235:item_9a_controls_and_procedures:0000",
+        "0001193125-25-256321:item_4_controls_and_procedures:0000",
+        "0001193125-26-027207:item_4_controls_and_procedures:0000",
+        "0000950170-25-061046:item_4_controls_and_procedures:0000",
+        "0001193125-26-191507:item_4_controls_and_procedures:0000",
+        "0000950170-25-100235:item_7_mda:0000",
+        "0000950170-25-100235:item_9a_controls_and_procedures:0001",
+        "0000950170-25-100235:item_7a_market_risk:0035",
+        "0000950170-25-100235:item_7a_market_risk:0036"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.2,
+        "3": 0.4,
+        "5": 0.4,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_antitrust_suits",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 2,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0018",
+        "0001652044-26-000018:item_1a_risk_factors:0015",
+        "0001652044-26-000018:item_1a_risk_factors:0016",
+        "0001652044-26-000018:item_1a_risk_factors:0021",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0019",
+        "0001652044-26-000018:item_1a_risk_factors:0017",
+        "0001652044-26-000018:item_1a_risk_factors:0004",
+        "0001652044-26-000018:item_1a_risk_factors:0014",
+        "0001652044-26-000018:item_1a_risk_factors:0007"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_dual_class",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 2,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0024",
+        "0001652044-26-000018:item_1a_risk_factors:0023",
+        "0001652044-26-000018:item_1a_risk_factors:0026",
+        "0001652044-26-000018:item_1a_risk_factors:0016",
+        "0001652044-26-000018:item_1a_risk_factors:0025",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0018",
+        "0001652044-26-000018:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0004",
+        "0001652044-25-000091:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_compute_constraints",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 1,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0006",
+        "0001652044-26-000048:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0026",
+        "0001652044-26-000018:item_1a_risk_factors:0007",
+        "0001652044-26-000018:item_1a_risk_factors:0025",
+        "0001652044-26-000018:item_1a_risk_factors:0012",
+        "0001652044-26-000018:item_1a_risk_factors:0010",
+        "0001652044-26-000018:item_1a_risk_factors:0008"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_ec_fines",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 8,
+      "ranked": [
+        "0001652044-25-000043:item_2_mda:0014",
+        "0001652044-26-000018:item_7_mda:0002",
+        "0001652044-25-000062:item_2_mda:0016",
+        "0001652044-25-000091:item_2_mda:0016",
+        "0001652044-26-000048:item_2_mda:0013",
+        "0001652044-26-000018:item_1a_risk_factors:0022",
+        "0001652044-25-000091:item_2_mda:0010",
+        "0001652044-26-000018:item_7_mda:0009",
+        "0001652044-25-000091:item_2_mda:0004",
+        "0001652044-26-000018:item_1a_risk_factors:0019"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.125,
+        "3": 0.25,
+        "5": 0.5,
+        "10": 0.875
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_meta_eu_ad_free",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 12,
+      "ranked": [
+        "0001628280-25-047240:item_1a_risk_factors:0043",
+        "0001628280-26-003942:item_1a_risk_factors:0043",
+        "0001326801-25-000054:item_1a_risk_factors:0042",
+        "0001326801-25-000054:item_1a_risk_factors:0007",
+        "0001628280-25-036791:item_1a_risk_factors:0007",
+        "0001628280-26-003942:item_1a_risk_factors:0006",
+        "0001628280-25-047240:item_1a_risk_factors:0007",
+        "0001628280-26-028526:item_1a_risk_factors:0007",
+        "0001628280-26-003942:item_1a_risk_factors:0007",
+        "0001628280-25-036791:item_1a_risk_factors:0049"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.4166666666666667,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_meta_reality_labs_losses",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 6,
+      "ranked": [
+        "0001628280-25-047240:item_1a_risk_factors:0022",
+        "0001326801-25-000054:item_1a_risk_factors:0013",
+        "0001326801-25-000054:item_1a_risk_factors:0021",
+        "0001628280-26-003942:item_1a_risk_factors:0013",
+        "0001628280-25-036791:item_1a_risk_factors:0013",
+        "0001628280-25-036791:item_1a_risk_factors:0021",
+        "0001628280-25-047240:item_1a_risk_factors:0013",
+        "0001628280-26-028526:item_1a_risk_factors:0013",
+        "0001628280-26-028526:item_1a_risk_factors:0022",
+        "0001628280-26-003942:item_1a_risk_factors:0022"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.16666666666666666,
+        "3": 0.3333333333333333,
+        "5": 0.3333333333333333,
+        "10": 0.8333333333333334
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_meta_fake_accounts",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 9,
+      "ranked": [
+        "0001628280-26-028526:item_1a_risk_factors:0027",
+        "0001326801-25-000054:item_1a_risk_factors:0026",
+        "0001628280-25-036791:item_1a_risk_factors:0026",
+        "0001628280-26-003942:item_1a_risk_factors:0027",
+        "0001628280-25-047240:item_1a_risk_factors:0026",
+        "0001628280-26-028526:item_1a_risk_factors:0032",
+        "0001628280-25-047240:item_1a_risk_factors:0015",
+        "0001628280-25-036791:item_1a_risk_factors:0031",
+        "0001628280-26-003942:item_1a_risk_factors:0001",
+        "0001628280-25-036791:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.1111111111111111,
+        "3": 0.3333333333333333,
+        "5": 0.5555555555555556,
+        "10": 0.5555555555555556
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_meta_capex_2026",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 2,
+      "ranked": [
+        "0001628280-26-028526:item_2_mda:0014",
+        "0001628280-26-028526:item_2_mda:0010",
+        "0001628280-25-047240:item_2_mda:0011",
+        "0001628280-25-036791:item_1_legal_proceedings:0011",
+        "0001628280-26-003942:item_3_legal_proceedings:0012",
+        "0001628280-26-003942:item_1_business:0002",
+        "0001326801-25-000054:item_1_legal_proceedings:0010",
+        "0001628280-25-047240:item_2_mda:0015",
+        "0001628280-26-003942:item_1a_risk_factors:0022",
+        "0001326801-25-000054:item_2_mda:0013"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.5
+      },
+      "mrr": 0.125,
+      "first_relevant_rank": 8
+    },
+    {
+      "id": "ff_pg_tariffs",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 2,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0002",
+        "0000080424-25-000076:item_1a_risk_factors:0001",
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000076:item_1a_risk_factors:0011",
+        "0000080424-25-000076:item_1a_risk_factors:0008",
+        "0000080424-25-000076:item_1a_risk_factors:0009",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0007"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pg_commodity_pricing",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 2,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0001",
+        "0000080424-25-000076:item_1a_risk_factors:0002",
+        "0000080424-25-000076:item_1a_risk_factors:0009",
+        "0000080424-25-000076:item_1a_risk_factors:0008",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0011",
+        "0000080424-25-000076:item_1a_risk_factors:0006",
+        "0000080424-25-000076:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pg_gillette_impairment",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 4,
+      "ranked": [
+        "0000080424-25-000076:item_7_mda:0026",
+        "0000080424-25-000076:item_7_mda:0025",
+        "0000080424-25-000037:item_2_mda:0005",
+        "0000080424-25-000076:item_7_mda:0030",
+        "0000080424-25-000076:item_7_mda:0027",
+        "0000080424-25-000076:item_7_mda:0012",
+        "0000080424-25-000076:item_7_mda:0009",
+        "0000080424-25-000037:item_2_mda:0011",
+        "0000080424-25-000076:item_7_mda:0018",
+        "0000080424-25-000037:item_2_mda:0023"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.75,
+        "10": 0.75
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_glp1_demand",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 1,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0008",
+        "0001628280-26-010047:item_1a_risk_factors:0027",
+        "0001628280-26-010047:item_1a_risk_factors:0016",
+        "0001628280-26-010047:item_1a_risk_factors:0017",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0026",
+        "0001628280-26-010047:item_1a_risk_factors:0004",
+        "0001628280-26-010047:item_1a_risk_factors:0028"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_sugar_tax",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 3,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0016",
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0019",
+        "0001628280-26-010047:item_1a_risk_factors:0012",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0028",
+        "0001628280-26-010047:item_1a_risk_factors:0013",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0018",
+        "0001628280-26-010047:item_1a_risk_factors:0025"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 0.6666666666666666,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_plastic_waste",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 3,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0026",
+        "0001628280-26-010047:item_1a_risk_factors:0027",
+        "0001628280-26-010047:item_1a_risk_factors:0008",
+        "0001628280-26-010047:item_1a_risk_factors:0016",
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0012",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0028",
+        "0001628280-26-010047:item_1a_risk_factors:0025"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_irs_dispute",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 13,
+      "ranked": [
+        "0000021344-25-000061:item_1_legal_proceedings:0003",
+        "0000021344-25-000061:item_1_legal_proceedings:0000",
+        "0001628280-25-046054:item_1_legal_proceedings:0001",
+        "0001628280-25-046054:item_1_legal_proceedings:0000",
+        "0000021344-25-000029:item_1_legal_proceedings:0001",
+        "0001628280-26-028802:item_1_legal_proceedings:0000",
+        "0000021344-25-000029:item_1_legal_proceedings:0000",
+        "0001628280-25-046054:item_1_legal_proceedings:0004",
+        "0000021344-25-000061:item_1_legal_proceedings:0001",
+        "0001628280-26-028802:item_1_legal_proceedings:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.07692307692307693,
+        "3": 0.15384615384615385,
+        "5": 0.23076923076923078,
+        "10": 0.46153846153846156
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_excise_taxes",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 2,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0015",
+        "0000077476-26-000007:item_1a_risk_factors:0019",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0020",
+        "0000077476-26-000007:item_1a_risk_factors:0016",
+        "0000077476-26-000007:item_1a_risk_factors:0017",
+        "0000077476-26-000007:item_1a_risk_factors:0018",
+        "0000077476-26-000007:item_1a_risk_factors:0002",
+        "0000077476-26-000007:item_1a_risk_factors:0007",
+        "0000077476-26-000007:item_1a_risk_factors:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 0.5
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_glp1_demand",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 1,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0000",
+        "0000077476-26-000007:item_1a_risk_factors:0016",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0019",
+        "0000077476-26-000007:item_1a_risk_factors:0007",
+        "0000077476-26-000007:item_1a_risk_factors:0001",
+        "0000077476-26-000007:item_1a_risk_factors:0002",
+        "0000077476-26-000007:item_1a_risk_factors:0013",
+        "0000077476-26-000007:item_1a_risk_factors:0020",
+        "0000077476-26-000007:item_1a_risk_factors:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_cyber",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 3,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0009",
+        "0000077476-26-000007:item_1a_risk_factors:0010",
+        "0000077476-26-000007:item_1a_risk_factors:0008",
+        "0000077476-26-000007:item_1a_risk_factors:0011",
+        "0000077476-26-000007:item_1a_risk_factors:0004",
+        "0000077476-26-000007:item_1a_risk_factors:0018",
+        "0000077476-26-000007:item_1a_risk_factors:0020",
+        "0000077476-26-000007:item_1a_risk_factors:0002",
+        "0000077476-26-000007:item_1a_risk_factors:0019",
+        "0000077476-26-000007:item_1a_risk_factors:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_quaker_recall",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 12,
+      "ranked": [
+        "0000077476-26-000007:item_7_mda:0020",
+        "0000077476-26-000007:item_7_mda:0039",
+        "0000077476-26-000007:item_7_mda:0031",
+        "0000077476-25-000044:item_1_legal_proceedings:0000",
+        "0000077476-25-000044:item_2_mda:0010",
+        "0000077476-25-000019:item_1_legal_proceedings:0000",
+        "0000077476-25-000053:item_2_mda:0019",
+        "0000077476-26-000007:item_7_mda:0040",
+        "0000077476-26-000007:item_7_mda:0011",
+        "0000077476-25-000053:item_2_mda:0011"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.3333333333333333,
+        "10": 0.5
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_cost_geo_concentration",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 2,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0000",
+        "0000909832-25-000101:item_1a_risk_factors:0008",
+        "0000909832-25-000101:item_1a_risk_factors:0009",
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0012",
+        "0000909832-25-000101:item_1a_risk_factors:0001",
+        "0000909832-25-000101:item_1a_risk_factors:0011",
+        "0000909832-25-000101:item_1a_risk_factors:0007",
+        "0000909832-25-000101:item_1a_risk_factors:0013",
+        "0000909832-25-000101:item_1a_risk_factors:0004"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_cost_kirkland",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 1,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0005",
+        "0000909832-25-000101:item_1a_risk_factors:0001",
+        "0000909832-25-000101:item_1a_risk_factors:0012",
+        "0000909832-25-000101:item_1a_risk_factors:0008",
+        "0000909832-25-000101:item_1a_risk_factors:0011",
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0006",
+        "0000909832-25-000101:item_1a_risk_factors:0000",
+        "0000909832-25-000101:item_1a_risk_factors:0004",
+        "0000909832-25-000101:item_1a_risk_factors:0002"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "ff_cost_membership_fees",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 6,
+      "ranked": [
+        "0000909832-26-000029:item_2_mda:0006",
+        "0000909832-25-000033:item_2_mda:0006",
+        "0000909832-25-000101:item_7_mda:0002",
+        "0000909832-25-000101:item_7_mda:0004",
+        "0000909832-25-000015:item_2_mda:0006",
+        "0000909832-25-000033:item_2_mda:0003",
+        "0000909832-25-000169:item_2_mda:0003",
+        "0000909832-26-000029:item_2_mda:0003",
+        "0000909832-25-000015:item_2_mda:0003",
+        "0000909832-25-000169:item_2_mda:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.16666666666666666,
+        "3": 0.3333333333333333,
+        "5": 0.6666666666666666,
+        "10": 0.8333333333333334
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_talc",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 1,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0006",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0013",
+        "0000200406-26-000016:item_1a_risk_factors:0001",
+        "0000200406-26-000016:item_1a_risk_factors:0003",
+        "0000200406-26-000016:item_1a_risk_factors:0010",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0012"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_biosimilar_patents",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 2,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0006",
+        "0000200406-26-000016:item_1a_risk_factors:0003",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0007",
+        "0000200406-26-000016:item_1a_risk_factors:0010",
+        "0000200406-26-000016:item_1a_risk_factors:0008",
+        "0000200406-26-000016:item_1a_risk_factors:0013"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 0.5
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_medicare_pricing",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 2,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0003",
+        "0000200406-26-000016:item_1a_risk_factors:0008",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0010",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0006",
+        "0000200406-26-000016:item_1a_risk_factors:0011",
+        "0000200406-26-000016:item_1a_risk_factors:0007"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_stelara",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 11,
+      "ranked": [
+        "0000200406-25-000178:item_2_mda:0001",
+        "0000200406-25-000209:item_2_mda:0005",
+        "0000200406-25-000178:item_2_mda:0005",
+        "0000200406-26-000016:item_7_mda:0004",
+        "0000200406-25-000178:item_2_mda:0000",
+        "0000200406-25-000209:item_2_mda:0001",
+        "0000200406-25-000119:item_2_mda:0000",
+        "0000200406-25-000119:item_2_mda:0001",
+        "0000200406-25-000209:item_2_mda:0000",
+        "0000200406-26-000087:item_2_mda:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.09090909090909091,
+        "3": 0.09090909090909091,
+        "5": 0.2727272727272727,
+        "10": 0.7272727272727273
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_patent_cliff",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 9,
+      "ranked": [
+        "0000078003-25-000114:item_2_mda:0002",
+        "0000078003-25-000150:item_2_mda:0004",
+        "0000078003-25-000138:item_2_mda:0003",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0046",
+        "0000078003-26-000026:item_7_mda:0004",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0024",
+        "0000078003-26-000054:item_2_mda:0001",
+        "0000078003-25-000150:item_2_mda:0003",
+        "0000078003-25-000150:item_2_mda:0015",
+        "0000078003-25-000114:item_2_mda:0010"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.1111111111111111,
+        "3": 0.3333333333333333,
+        "5": 0.5555555555555556,
+        "10": 0.8888888888888888
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_part_d",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 15,
+      "ranked": [
+        "0000078003-26-000026:item_7_mda:0006",
+        "0000078003-25-000150:item_2_mda:0014",
+        "0000078003-25-000150:item_2_mda:0010",
+        "0000078003-25-000138:item_2_mda:0013",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0033",
+        "0000078003-25-000138:item_2_mda:0009",
+        "0000078003-25-000114:item_2_mda:0008",
+        "0000078003-25-000114:item_2_mda:0007",
+        "0000078003-25-000150:item_2_mda:0011",
+        "0000078003-26-000054:item_2_mda:0002"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.06666666666666667,
+        "3": 0.2,
+        "5": 0.3333333333333333,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_covid_decline",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 6,
+      "ranked": [
+        "0000078003-25-000150:item_2_mda:0012",
+        "0000078003-25-000150:item_2_mda:0016",
+        "0000078003-25-000138:item_2_mda:0013",
+        "0000078003-26-000026:item_7_mda:0017",
+        "0000078003-25-000114:item_2_mda:0010",
+        "0000078003-26-000026:item_7_mda:0003",
+        "0000078003-26-000026:item_7_mda:0019",
+        "0000078003-25-000138:item_2_mda:0002",
+        "0000078003-25-000150:item_2_mda:0013",
+        "0000078003-25-000150:item_2_mda:0014"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.16666666666666666,
+        "3": 0.16666666666666666,
+        "5": 0.3333333333333333,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_mrk_keytruda_concentration",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 2,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0004",
+        "0000310158-26-000063:item_1a_risk_factors:0003",
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0008",
+        "0000310158-26-000063:item_1a_risk_factors:0001",
+        "0000310158-26-000063:item_1a_risk_factors:0024",
+        "0000310158-26-000063:item_1a_risk_factors:0009",
+        "0000310158-26-000063:item_1a_risk_factors:0021",
+        "0000310158-26-000063:item_1a_risk_factors:0002",
+        "0000310158-26-000063:item_1a_risk_factors:0019"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_mrk_gardasil_china",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 1,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0012",
+        "0000310158-26-000063:item_1a_risk_factors:0013",
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0014",
+        "0000310158-26-000063:item_1a_risk_factors:0008",
+        "0000310158-26-000063:item_1a_risk_factors:0018",
+        "0000310158-26-000063:item_1a_risk_factors:0011",
+        "0000310158-26-000063:item_1a_risk_factors:0004",
+        "0000310158-26-000063:item_1a_risk_factors:0007",
+        "0000310158-26-000063:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_mrk_ira_selections",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 2,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0006",
+        "0000310158-26-000063:item_1a_risk_factors:0016",
+        "0000310158-26-000063:item_1a_risk_factors:0007",
+        "0000310158-26-000063:item_1a_risk_factors:0008",
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0013",
+        "0000310158-26-000063:item_1a_risk_factors:0024",
+        "0000310158-26-000063:item_1a_risk_factors:0019",
+        "0000310158-26-000063:item_1a_risk_factors:0014",
+        "0000310158-26-000063:item_1a_risk_factors:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_mrk_winrevair",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 6,
+      "ranked": [
+        "0000310158-25-000059:item_2_mda:0014",
+        "0001628280-26-029802:item_2_mda:0011",
+        "0000310158-26-000063:item_7_mda:0020",
+        "0000310158-25-000014:item_2_mda:0012",
+        "0001628280-25-021834:item_2_mda:0008",
+        "0000310158-26-000063:item_7_mda:0021",
+        "0001628280-26-029802:item_2_mda:0003",
+        "0000310158-25-000059:item_2_mda:0015",
+        "0001628280-26-029802:item_2_mda:0010",
+        "0000310158-25-000059:item_2_mda:0004"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.16666666666666666,
+        "3": 0.5,
+        "5": 0.6666666666666666,
+        "10": 0.8333333333333334
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_concentration",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 2,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000013:item_1a_risk_factors:0005",
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0008",
+        "0000059478-26-000013:item_1a_risk_factors:0002",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0023",
+        "0000059478-26-000013:item_1a_risk_factors:0001",
+        "0000059478-26-000013:item_1a_risk_factors:0003",
+        "0000059478-26-000013:item_1a_risk_factors:0020"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_price_controls",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 3,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0020",
+        "0000059478-26-000013:item_1a_risk_factors:0005",
+        "0000059478-26-000013:item_1a_risk_factors:0023",
+        "0000059478-26-000013:item_1a_risk_factors:0008",
+        "0000059478-26-000013:item_1a_risk_factors:0010",
+        "0000059478-26-000013:item_1a_risk_factors:0024",
+        "0000059478-26-000013:item_1a_risk_factors:0017",
+        "0000059478-26-000013:item_1a_risk_factors:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_counterfeit_glp1",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 1,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0003",
+        "0000059478-26-000013:item_1a_risk_factors:0024",
+        "0000059478-26-000013:item_1a_risk_factors:0023",
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000013:item_1a_risk_factors:0001",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0005",
+        "0000059478-26-000013:item_1a_risk_factors:0008",
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0002"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_growth_drivers",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 15,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000045:item_2_mda:0005",
+        "0000059478-26-000013:item_7_mda:0012",
+        "0000059478-25-000254:item_2_mda:0000",
+        "0000059478-25-000204:item_2_mda:0000",
+        "0000059478-25-000132:item_2_mda:0000",
+        "0000059478-25-000132:item_2_mda:0006",
+        "0000059478-25-000204:item_2_mda:0005",
+        "0000059478-26-000045:item_2_mda:0000",
+        "0000059478-25-000132:item_2_mda:0004"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.06666666666666667,
+        "5": 0.2,
+        "10": 0.4
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    }
+  ],
+  "sparse": [
+    {
+      "id": "planner_risk_aapl",
+      "population": "planner",
+      "ticker": "AAPL",
+      "n_relevant": 16,
+      "ranked": [
+        "0000320193-25-000079:item_1a_risk_factors:0005",
+        "0000320193-25-000057:item_1a_risk_factors:0002",
+        "0000320193-26-000013:item_1a_risk_factors:0006",
+        "0000320193-26-000013:item_1a_risk_factors:0002",
+        "0000320193-25-000079:item_1a_risk_factors:0002",
+        "0000320193-25-000079:item_1a_risk_factors:0006",
+        "0000320193-25-000057:item_1a_risk_factors:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0003",
+        "0000320193-25-000079:item_1a_risk_factors:0018",
+        "0000320193-25-000079:item_1a_risk_factors:0017"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_msft",
+      "population": "planner",
+      "ticker": "MSFT",
+      "n_relevant": 6,
+      "ranked": [
+        "0001193125-26-027207:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0000",
+        "0001193125-26-191507:item_1a_risk_factors:0000",
+        "0000950170-25-100235:item_1a_risk_factors:0000",
+        "0001193125-25-256321:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0001"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_googl",
+      "population": "planner",
+      "ticker": "GOOGL",
+      "n_relevant": 16,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0012",
+        "0001652044-26-000018:item_1a_risk_factors:0007",
+        "0001652044-26-000048:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0002",
+        "0001652044-26-000018:item_1a_risk_factors:0005",
+        "0001652044-26-000018:item_1a_risk_factors:0000",
+        "0001652044-26-000018:item_1a_risk_factors:0006",
+        "0001652044-26-000018:item_1a_risk_factors:0020",
+        "0001652044-26-000018:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0025"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_meta",
+      "population": "planner",
+      "ticker": "META",
+      "n_relevant": 16,
+      "ranked": [
+        "0001628280-26-028526:item_1a_risk_factors:0054",
+        "0001628280-26-028526:item_1a_risk_factors:0053",
+        "0001628280-26-003942:item_1a_risk_factors:0030",
+        "0001326801-25-000054:item_1a_risk_factors:0030",
+        "0001628280-26-003942:item_1a_risk_factors:0021",
+        "0001628280-26-028526:item_1a_risk_factors:0021",
+        "0001326801-25-000054:item_1a_risk_factors:0029",
+        "0001628280-25-047240:item_1a_risk_factors:0023",
+        "0001628280-25-036791:item_1a_risk_factors:0030",
+        "0001628280-25-047240:item_1a_risk_factors:0053"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pg",
+      "population": "planner",
+      "ticker": "PG",
+      "n_relevant": 10,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0006",
+        "0000080424-25-000076:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0007",
+        "0000080424-26-000060:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000037:item_1a_risk_factors:0000",
+        "0000080424-25-000245:item_1a_risk_factors:0000",
+        "0000080424-26-000011:item_1a_risk_factors:0000"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_ko",
+      "population": "planner",
+      "ticker": "KO",
+      "n_relevant": 13,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0011",
+        "0001628280-26-010047:item_1a_risk_factors:0005",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0012",
+        "0001628280-26-010047:item_1a_risk_factors:0004",
+        "0001628280-26-010047:item_1a_risk_factors:0025",
+        "0001628280-26-010047:item_1a_risk_factors:0000",
+        "0001628280-26-010047:item_1a_risk_factors:0006",
+        "0001628280-26-010047:item_1a_risk_factors:0023",
+        "0001628280-26-010047:item_1a_risk_factors:0001"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pep",
+      "population": "planner",
+      "ticker": "PEP",
+      "n_relevant": 15,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0005",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0002",
+        "0000077476-26-000007:item_1a_risk_factors:0009",
+        "0000077476-26-000007:item_1a_risk_factors:0000",
+        "0000077476-26-000007:item_1a_risk_factors:0004",
+        "0000077476-26-000007:item_1a_risk_factors:0003",
+        "0000077476-26-000007:item_1a_risk_factors:0001",
+        "0000077476-26-000007:item_1a_risk_factors:0012",
+        "0000077476-26-000007:item_1a_risk_factors:0011"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_cost",
+      "population": "planner",
+      "ticker": "COST",
+      "n_relevant": 13,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0003",
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0008",
+        "0000909832-25-000101:item_1a_risk_factors:0006",
+        "0000909832-25-000101:item_1a_risk_factors:0000",
+        "0000909832-25-000101:item_1a_risk_factors:0001",
+        "0000909832-25-000101:item_1a_risk_factors:0004",
+        "0000909832-25-000101:item_1a_risk_factors:0012",
+        "0000909832-25-000101:item_1a_risk_factors:0009",
+        "0000909832-25-000101:item_1a_risk_factors:0011"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_jnj",
+      "population": "planner",
+      "ticker": "JNJ",
+      "n_relevant": 13,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0012",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0001",
+        "0000200406-26-000016:item_1a_risk_factors:0011",
+        "0000200406-26-000016:item_1a_risk_factors:0000",
+        "0000200406-26-000016:item_1a_risk_factors:0013",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0008",
+        "0000200406-26-000016:item_1a_risk_factors:0010"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_pfe",
+      "population": "planner",
+      "ticker": "PFE",
+      "n_relevant": 0,
+      "ranked": [
+        "0000078003-26-000026:item_1a_risk_factors:0000",
+        "0000078003-26-000054:item_1a_risk_factors:0000",
+        "0000078003-25-000114:item_1a_risk_factors:0000",
+        "0000078003-25-000138:item_1a_risk_factors:0000"
+      ],
+      "judged_precision_at_k": {
+        "precision": 0.0,
+        "judged": 4,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_mrk",
+      "population": "planner",
+      "ticker": "MRK",
+      "n_relevant": 14,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0009",
+        "0000310158-26-000063:item_1a_risk_factors:0010",
+        "0000310158-26-000063:item_1a_risk_factors:0015",
+        "0000310158-26-000063:item_1a_risk_factors:0023",
+        "0000310158-26-000063:item_1a_risk_factors:0005",
+        "0000310158-26-000063:item_1a_risk_factors:0001",
+        "0000310158-26-000063:item_1a_risk_factors:0022",
+        "0000310158-26-000063:item_1a_risk_factors:0000",
+        "0000310158-26-000063:item_1a_risk_factors:0016",
+        "0000310158-26-000063:item_1a_risk_factors:0014"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "planner_risk_lly",
+      "population": "planner",
+      "ticker": "LLY",
+      "n_relevant": 14,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0003",
+        "0000059478-26-000013:item_1a_risk_factors:0015",
+        "0000059478-26-000013:item_1a_risk_factors:0017",
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000013:item_1a_risk_factors:0002",
+        "0000059478-26-000013:item_1a_risk_factors:0014",
+        "0000059478-26-000013:item_1a_risk_factors:0019",
+        "0000059478-26-000013:item_1a_risk_factors:0005",
+        "0000059478-26-000013:item_1a_risk_factors:0024"
+      ],
+      "judged_precision_at_k": {
+        "precision": 1.0,
+        "judged": 5,
+        "unjudged": 0
+      }
+    },
+    {
+      "id": "ff_aapl_tariffs",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 4,
+      "ranked": [
+        "0000320193-25-000079:item_1a_risk_factors:0002",
+        "0000320193-25-000057:item_1a_risk_factors:0001",
+        "0000320193-25-000079:item_1a_risk_factors:0001",
+        "0000320193-25-000079:item_1a_risk_factors:0005",
+        "0000320193-25-000057:item_1a_risk_factors:0002",
+        "0000320193-25-000079:item_1a_risk_factors:0014",
+        "0000320193-25-000057:item_1a_risk_factors:0003",
+        "0000320193-25-000079:item_1a_risk_factors:0020",
+        "0000320193-25-000079:item_1a_risk_factors:0018",
+        "0000320193-25-000079:item_1a_risk_factors:0006"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.75,
+        "5": 0.75,
+        "10": 0.75
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_sole_supplier",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 5,
+      "ranked": [
+        "0000320193-25-000079:item_1a_risk_factors:0006",
+        "0000320193-26-000013:item_1a_risk_factors:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0007",
+        "0000320193-25-000057:item_1a_risk_factors:0002",
+        "0000320193-25-000079:item_1a_risk_factors:0005",
+        "0000320193-25-000079:item_1a_risk_factors:0018",
+        "0000320193-26-000013:item_1a_risk_factors:0002",
+        "0000320193-25-000079:item_1a_risk_factors:0002",
+        "0000320193-25-000057:item_1a_risk_factors:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0012"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.2,
+        "3": 0.4,
+        "5": 0.8,
+        "10": 0.8
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_app_store_antitrust",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 4,
+      "ranked": [
+        "0000320193-26-000013:item_1a_risk_factors:0003",
+        "0000320193-25-000079:item_1a_risk_factors:0009",
+        "0000320193-25-000079:item_1a_risk_factors:0015",
+        "0000320193-26-000013:item_1a_risk_factors:0004",
+        "0000320193-26-000013:item_1a_risk_factors:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0003",
+        "0000320193-25-000079:item_1a_risk_factors:0004",
+        "0000320193-25-000079:item_1a_risk_factors:0012",
+        "0000320193-25-000079:item_1a_risk_factors:0013",
+        "0000320193-25-000079:item_1a_risk_factors:0018"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 0.5
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_aapl_buyback",
+      "population": "freeform",
+      "ticker": "AAPL",
+      "n_relevant": 8,
+      "ranked": [
+        "0000320193-25-000057:item_2_mda:0006",
+        "0000320193-25-000079:item_7_mda:0004",
+        "0000320193-26-000013:item_2_mda:0006",
+        "0000320193-25-000079:item_1a_risk_factors:0021",
+        "0000320193-25-000079:item_1a_risk_factors:0014",
+        "0000320193-25-000079:item_5_market_for_common_equity:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0018",
+        "0000320193-25-000057:item_2_unregistered_sales:0000",
+        "0000320193-25-000079:item_1a_risk_factors:0012",
+        "0000320193-26-000013:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.125,
+        "3": 0.375,
+        "5": 0.375,
+        "10": 0.625
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_msft_trade_policy",
+      "population": "freeform",
+      "ticker": "MSFT",
+      "n_relevant": 3,
+      "ranked": [
+        "0001193125-26-027207:item_1a_risk_factors:0000",
+        "0000950170-25-061046:item_1a_risk_factors:0001",
+        "0000950170-25-061046:item_1a_risk_factors:0000",
+        "0000950170-25-100235:item_1a_risk_factors:0000",
+        "0001193125-26-191507:item_1a_risk_factors:0000",
+        "0001193125-25-256321:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_msft_auditor",
+      "population": "freeform",
+      "ticker": "MSFT",
+      "n_relevant": 5,
+      "ranked": [
+        "0000950170-25-100235:item_7a_market_risk:0035",
+        "0000950170-25-100235:item_9a_controls_and_procedures:0000",
+        "0000950170-25-100235:item_7_mda:0000",
+        "0000950170-25-100235:item_7a_market_risk:0036",
+        "0000950170-25-100235:item_9a_controls_and_procedures:0001",
+        "0000950170-25-100235:item_9_changes_in_accountants:0000",
+        "0001193125-26-027207:item_4_controls_and_procedures:0000",
+        "0000950170-25-061046:item_4_controls_and_procedures:0000",
+        "0001193125-25-256321:item_4_controls_and_procedures:0000",
+        "0001193125-26-191507:item_4_controls_and_procedures:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.2,
+        "3": 0.6,
+        "5": 0.8,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_antitrust_suits",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 2,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0018",
+        "0001652044-26-000018:item_1a_risk_factors:0015",
+        "0001652044-26-000018:item_1a_risk_factors:0017",
+        "0001652044-26-000018:item_1a_risk_factors:0021",
+        "0001652044-26-000018:item_1a_risk_factors:0002",
+        "0001652044-26-000018:item_1a_risk_factors:0011",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0019",
+        "0001652044-26-000048:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0008"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_dual_class",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 2,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0024",
+        "0001652044-26-000018:item_1a_risk_factors:0023",
+        "0001652044-26-000018:item_1a_risk_factors:0013",
+        "0001652044-26-000018:item_1a_risk_factors:0006",
+        "0001652044-26-000048:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0022",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0018",
+        "0001652044-26-000018:item_1a_risk_factors:0002",
+        "0001652044-26-000018:item_1a_risk_factors:0007"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_compute_constraints",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 1,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0006",
+        "0001652044-26-000048:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0001",
+        "0001652044-26-000018:item_1a_risk_factors:0024",
+        "0001652044-26-000018:item_1a_risk_factors:0008",
+        "0001652044-26-000018:item_1a_risk_factors:0003",
+        "0001652044-26-000018:item_1a_risk_factors:0023",
+        "0001652044-26-000018:item_1a_risk_factors:0021",
+        "0001652044-26-000018:item_1a_risk_factors:0002",
+        "0001652044-26-000018:item_1a_risk_factors:0016"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_googl_ec_fines",
+      "population": "freeform",
+      "ticker": "GOOGL",
+      "n_relevant": 8,
+      "ranked": [
+        "0001652044-26-000018:item_1a_risk_factors:0017",
+        "0001652044-26-000018:item_1a_risk_factors:0019",
+        "0001652044-25-000062:item_2_mda:0011",
+        "0001652044-26-000048:item_2_mda:0004",
+        "0001652044-26-000018:item_1a_risk_factors:0014",
+        "0001652044-25-000091:item_2_mda:0010",
+        "0001652044-26-000018:item_1a_risk_factors:0011",
+        "0001652044-26-000018:item_7_mda:0010",
+        "0001652044-26-000018:item_7_mda:0009",
+        "0001652044-25-000043:item_2_mda:0008"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.25
+      },
+      "mrr": 0.16666666666666666,
+      "first_relevant_rank": 6
+    },
+    {
+      "id": "ff_meta_eu_ad_free",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 12,
+      "ranked": [
+        "0001628280-26-003942:item_1a_risk_factors:0043",
+        "0001628280-26-028526:item_1a_risk_factors:0007",
+        "0001628280-25-047240:item_1a_risk_factors:0007",
+        "0001628280-25-047240:item_1a_risk_factors:0043",
+        "0001628280-26-028526:item_1a_risk_factors:0005",
+        "0001628280-26-003942:item_1a_risk_factors:0005",
+        "0001628280-26-003942:item_1a_risk_factors:0007",
+        "0001628280-25-036791:item_1a_risk_factors:0007",
+        "0001326801-25-000054:item_1a_risk_factors:0042",
+        "0001326801-25-000054:item_1a_risk_factors:0007"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.3333333333333333,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_meta_reality_labs_losses",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 6,
+      "ranked": [
+        "0001326801-25-000054:item_1a_risk_factors:0013",
+        "0001628280-25-036791:item_1a_risk_factors:0013",
+        "0001628280-26-003942:item_1a_risk_factors:0013",
+        "0001628280-26-028526:item_1a_risk_factors:0013",
+        "0001628280-25-047240:item_1a_risk_factors:0013",
+        "0001326801-25-000054:item_1a_risk_factors:0016",
+        "0001628280-25-036791:item_1a_risk_factors:0016",
+        "0001628280-25-047240:item_1a_risk_factors:0022",
+        "0001326801-25-000054:item_1a_risk_factors:0021",
+        "0001628280-25-047240:item_1a_risk_factors:0016"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.3333333333333333
+      },
+      "mrr": 0.125,
+      "first_relevant_rank": 8
+    },
+    {
+      "id": "ff_meta_fake_accounts",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 9,
+      "ranked": [
+        "0001628280-26-028526:item_1a_risk_factors:0027",
+        "0001326801-25-000054:item_1a_risk_factors:0026",
+        "0001628280-25-036791:item_1a_risk_factors:0026",
+        "0001628280-26-003942:item_1a_risk_factors:0027",
+        "0001628280-25-047240:item_1a_risk_factors:0026",
+        "0001628280-26-028526:item_1a_risk_factors:0025",
+        "0001628280-25-047240:item_1a_risk_factors:0027",
+        "0001628280-26-028526:item_1a_risk_factors:0045",
+        "0001628280-25-036791:item_1a_risk_factors:0044",
+        "0001628280-26-028526:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.1111111111111111,
+        "3": 0.3333333333333333,
+        "5": 0.5555555555555556,
+        "10": 0.5555555555555556
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_meta_capex_2026",
+      "population": "freeform",
+      "ticker": "META",
+      "n_relevant": 2,
+      "ranked": [
+        "0001628280-26-028526:item_2_mda:0004",
+        "0001628280-26-003942:item_1_business:0002",
+        "0001628280-25-047240:item_1_legal_proceedings:0012",
+        "0001628280-26-028526:item_1a_risk_factors:0059",
+        "0001628280-26-003942:item_1_business:0000",
+        "0001628280-26-003942:item_3_legal_proceedings:0012",
+        "0001628280-26-003942:item_1a_risk_factors:0022",
+        "0001628280-25-047240:item_2_mda:0015",
+        "0001326801-25-000054:item_1a_risk_factors:0019",
+        "0001628280-26-003942:item_3_legal_proceedings:0010"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.5
+      },
+      "mrr": 0.125,
+      "first_relevant_rank": 8
+    },
+    {
+      "id": "ff_pg_tariffs",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 2,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0002",
+        "0000080424-25-000076:item_1a_risk_factors:0001",
+        "0000080424-25-000076:item_1a_risk_factors:0008",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0011",
+        "0000080424-25-000076:item_1a_risk_factors:0009",
+        "0000080424-25-000076:item_1a_risk_factors:0007",
+        "0000080424-25-000076:item_1a_risk_factors:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pg_commodity_pricing",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 2,
+      "ranked": [
+        "0000080424-25-000076:item_1a_risk_factors:0004",
+        "0000080424-25-000076:item_1a_risk_factors:0003",
+        "0000080424-25-000076:item_1a_risk_factors:0009",
+        "0000080424-25-000076:item_1a_risk_factors:0002",
+        "0000080424-25-000076:item_1a_risk_factors:0001",
+        "0000080424-25-000076:item_1a_risk_factors:0000",
+        "0000080424-25-000076:item_1a_risk_factors:0007",
+        "0000080424-25-000076:item_1a_risk_factors:0008",
+        "0000080424-25-000076:item_1a_risk_factors:0010",
+        "0000080424-25-000076:item_1a_risk_factors:0006"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pg_gillette_impairment",
+      "population": "freeform",
+      "ticker": "PG",
+      "n_relevant": 4,
+      "ranked": [
+        "0000080424-25-000076:item_7_mda:0025",
+        "0000080424-25-000076:item_7_mda:0026",
+        "0000080424-25-000037:item_2_mda:0005",
+        "0000080424-25-000076:item_7_mda:0030",
+        "0000080424-25-000076:item_7_mda:0007",
+        "0000080424-25-000037:item_2_mda:0011",
+        "0000080424-25-000076:item_7_mda:0012",
+        "0000080424-25-000037:item_2_mda:0010",
+        "0000080424-25-000076:item_7_mda:0009",
+        "0000080424-25-000076:item_7_mda:0018"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.25,
+        "3": 0.5,
+        "5": 0.75,
+        "10": 0.75
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_glp1_demand",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 1,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0027",
+        "0001628280-26-010047:item_1a_risk_factors:0011",
+        "0001628280-26-010047:item_1a_risk_factors:0004",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0010",
+        "0001628280-26-010047:item_1a_risk_factors:0002",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0026",
+        "0001628280-26-010047:item_1a_risk_factors:0016"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_sugar_tax",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 3,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0016",
+        "0001628280-26-010047:item_1a_risk_factors:0009",
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0021",
+        "0001628280-26-010047:item_1a_risk_factors:0000",
+        "0001628280-26-010047:item_1a_risk_factors:0023",
+        "0001628280-26-010047:item_1a_risk_factors:0025",
+        "0001628280-26-010047:item_1a_risk_factors:0011",
+        "0001628280-26-028802:item_1a_risk_factors:0000",
+        "0000021344-25-000061:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 0.6666666666666666,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_plastic_waste",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 3,
+      "ranked": [
+        "0001628280-26-010047:item_1a_risk_factors:0026",
+        "0001628280-26-010047:item_1a_risk_factors:0027",
+        "0001628280-26-010047:item_1a_risk_factors:0016",
+        "0001628280-26-010047:item_1a_risk_factors:0028",
+        "0001628280-26-010047:item_1a_risk_factors:0023",
+        "0001628280-26-010047:item_1a_risk_factors:0007",
+        "0001628280-26-010047:item_1a_risk_factors:0012",
+        "0001628280-26-010047:item_1a_risk_factors:0001",
+        "0001628280-26-010047:item_1a_risk_factors:0002",
+        "0001628280-26-010047:item_1a_risk_factors:0019"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_ko_irs_dispute",
+      "population": "freeform",
+      "ticker": "KO",
+      "n_relevant": 13,
+      "ranked": [
+        "0001628280-26-028802:item_1_legal_proceedings:0001",
+        "0000021344-25-000029:item_1_legal_proceedings:0001",
+        "0000021344-25-000061:item_1_legal_proceedings:0001",
+        "0001628280-25-046054:item_1_legal_proceedings:0001",
+        "0000021344-25-000061:item_1_legal_proceedings:0003",
+        "0001628280-26-010047:item_3_legal_proceedings:0005",
+        "0001628280-25-046054:item_1_legal_proceedings:0004",
+        "0001628280-26-028802:item_2_mda:0016",
+        "0000021344-25-000029:item_1_legal_proceedings:0002",
+        "0001628280-26-010047:item_1a_risk_factors:0015"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.07692307692307693,
+        "10": 0.46153846153846156
+      },
+      "mrr": 0.2,
+      "first_relevant_rank": 5
+    },
+    {
+      "id": "ff_pep_excise_taxes",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 2,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0015",
+        "0000077476-26-000007:item_1a_risk_factors:0014",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0011",
+        "0000077476-26-000007:item_1a_risk_factors:0001",
+        "0000077476-26-000007:item_1a_risk_factors:0008",
+        "0000077476-26-000007:item_1a_risk_factors:0007",
+        "0000077476-26-000007:item_1a_risk_factors:0019",
+        "0000077476-26-000007:item_1a_risk_factors:0017",
+        "0000077476-26-000007:item_1a_risk_factors:0010"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_glp1_demand",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 1,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0000",
+        "0000077476-26-000007:item_1a_risk_factors:0001",
+        "0000077476-26-000007:item_1a_risk_factors:0005",
+        "0000077476-26-000007:item_1a_risk_factors:0002",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0007",
+        "0000077476-26-000007:item_1a_risk_factors:0008",
+        "0000077476-26-000007:item_1a_risk_factors:0014",
+        "0000077476-26-000007:item_1a_risk_factors:0013",
+        "0000077476-26-000007:item_1a_risk_factors:0019"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_cyber",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 3,
+      "ranked": [
+        "0000077476-26-000007:item_1a_risk_factors:0009",
+        "0000077476-26-000007:item_1a_risk_factors:0008",
+        "0000077476-26-000007:item_1a_risk_factors:0010",
+        "0000077476-26-000007:item_1a_risk_factors:0011",
+        "0000077476-26-000007:item_1a_risk_factors:0016",
+        "0000077476-26-000007:item_1a_risk_factors:0006",
+        "0000077476-26-000007:item_1a_risk_factors:0017",
+        "0000077476-26-000007:item_1a_risk_factors:0000",
+        "0000077476-26-000007:item_1a_risk_factors:0007",
+        "0000077476-26-000007:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pep_quaker_recall",
+      "population": "freeform",
+      "ticker": "PEP",
+      "n_relevant": 12,
+      "ranked": [
+        "0000077476-26-000007:item_7_mda:0013",
+        "0000077476-26-000007:item_7_mda:0020",
+        "0000077476-25-000053:item_2_mda:0019",
+        "0000077476-25-000044:item_2_mda:0018",
+        "0000077476-25-000053:item_2_mda:0011",
+        "0000077476-25-000019:item_2_mda:0014",
+        "0000077476-25-000044:item_2_mda:0017",
+        "0000077476-26-000007:item_7_mda:0031",
+        "0000077476-25-000044:item_2_mda:0010",
+        "0000077476-25-000053:item_2_mda:0017"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.08333333333333333,
+        "3": 0.25,
+        "5": 0.4166666666666667,
+        "10": 0.8333333333333334
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_cost_geo_concentration",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 2,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0000",
+        "0000909832-25-000101:item_1a_risk_factors:0009",
+        "0000909832-25-000101:item_1a_risk_factors:0001",
+        "0000909832-25-000101:item_1a_risk_factors:0007",
+        "0000909832-25-000101:item_1a_risk_factors:0008",
+        "0000909832-25-000101:item_1a_risk_factors:0004",
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0003",
+        "0000909832-25-000101:item_1a_risk_factors:0013",
+        "0000909832-25-000101:item_1a_risk_factors:0002"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_cost_kirkland",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 1,
+      "ranked": [
+        "0000909832-25-000101:item_1a_risk_factors:0005",
+        "0000909832-25-000101:item_1a_risk_factors:0001",
+        "0000909832-25-000101:item_1a_risk_factors:0004",
+        "0000909832-25-000101:item_1a_risk_factors:0008",
+        "0000909832-25-000101:item_1a_risk_factors:0003",
+        "0000909832-25-000101:item_1a_risk_factors:0006",
+        "0000909832-25-000101:item_1a_risk_factors:0011",
+        "0000909832-25-000101:item_1a_risk_factors:0007",
+        "0000909832-25-000101:item_1a_risk_factors:0010",
+        "0000909832-25-000101:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "ff_cost_membership_fees",
+      "population": "freeform",
+      "ticker": "COST",
+      "n_relevant": 6,
+      "ranked": [
+        "0000909832-26-000029:item_2_mda:0006",
+        "0000909832-25-000101:item_7_mda:0002",
+        "0000909832-25-000033:item_2_mda:0006",
+        "0000909832-25-000033:item_2_mda:0003",
+        "0000909832-25-000015:item_2_mda:0003",
+        "0000909832-25-000101:item_7_mda:0004",
+        "0000909832-25-000015:item_2_mda:0006",
+        "0000909832-25-000169:item_2_mda:0003",
+        "0000909832-26-000029:item_2_mda:0003",
+        "0000909832-25-000169:item_2_mda:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.16666666666666666,
+        "3": 0.3333333333333333,
+        "5": 0.3333333333333333,
+        "10": 0.8333333333333334
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_talc",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 1,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0008",
+        "0000200406-26-000016:item_1a_risk_factors:0013",
+        "0000200406-26-000016:item_1a_risk_factors:0012",
+        "0000200406-26-000016:item_1a_risk_factors:0003",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0001",
+        "0000200406-26-000016:item_1a_risk_factors:0007"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_biosimilar_patents",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 2,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0006",
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0010",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0013",
+        "0000200406-26-000016:item_1a_risk_factors:0007",
+        "0000200406-26-000016:item_1a_risk_factors:0009",
+        "0000200406-26-000016:item_1a_risk_factors:0012",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 0.5
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_medicare_pricing",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 2,
+      "ranked": [
+        "0000200406-26-000016:item_1a_risk_factors:0003",
+        "0000200406-26-000016:item_1a_risk_factors:0008",
+        "0000200406-26-000016:item_1a_risk_factors:0000",
+        "0000200406-26-000016:item_1a_risk_factors:0011",
+        "0000200406-26-000016:item_1a_risk_factors:0004",
+        "0000200406-26-000016:item_1a_risk_factors:0001",
+        "0000200406-26-000016:item_1a_risk_factors:0005",
+        "0000200406-26-000016:item_1a_risk_factors:0007",
+        "0000200406-26-000016:item_1a_risk_factors:0002",
+        "0000200406-26-000016:item_1a_risk_factors:0013"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_jnj_stelara",
+      "population": "freeform",
+      "ticker": "JNJ",
+      "n_relevant": 11,
+      "ranked": [
+        "0000200406-25-000178:item_2_mda:0001",
+        "0000200406-25-000178:item_2_mda:0000",
+        "0000200406-25-000119:item_2_mda:0001",
+        "0000200406-25-000119:item_2_mda:0000",
+        "0000200406-26-000016:item_1_business:0004",
+        "0000200406-25-000209:item_2_mda:0018",
+        "0000200406-26-000016:item_7_mda:0004",
+        "0000200406-25-000119:item_2_mda:0012",
+        "0000200406-26-000087:item_2_mda:0011",
+        "0000200406-25-000178:item_2_mda:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.09090909090909091,
+        "3": 0.2727272727272727,
+        "5": 0.36363636363636365,
+        "10": 0.45454545454545453
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_patent_cliff",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 9,
+      "ranked": [
+        "0000078003-26-000026:item_7_mda:0004",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0046",
+        "0000078003-25-000150:item_2_mda:0004",
+        "0000078003-26-000054:item_2_mda:0001",
+        "0000078003-25-000114:item_2_mda:0002",
+        "0000078003-25-000138:item_2_mda:0003",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0024",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0045",
+        "0000078003-25-000150:item_2_mda:0015",
+        "0000078003-25-000114:item_2_mda:0010"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.1111111111111111,
+        "3": 0.3333333333333333,
+        "5": 0.5555555555555556,
+        "10": 0.8888888888888888
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_part_d",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 15,
+      "ranked": [
+        "0000078003-25-000150:item_2_mda:0010",
+        "0000078003-25-000138:item_2_mda:0009",
+        "0000078003-26-000026:item_9c_foreign_jurisdictions:0033",
+        "0000078003-25-000150:item_2_mda:0012",
+        "0000078003-26-000026:item_7_mda:0006",
+        "0000078003-25-000114:item_2_mda:0007",
+        "0000078003-25-000114:item_2_mda:0008",
+        "0000078003-25-000150:item_2_mda:0005",
+        "0000078003-25-000138:item_2_mda:0002",
+        "0000078003-25-000114:item_2_mda:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.06666666666666667,
+        "3": 0.2,
+        "5": 0.3333333333333333,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_pfe_covid_decline",
+      "population": "freeform",
+      "ticker": "PFE",
+      "n_relevant": 6,
+      "ranked": [
+        "0000078003-25-000114:item_2_mda:0010",
+        "0000078003-26-000026:item_7_mda:0019",
+        "0000078003-25-000150:item_2_mda:0016",
+        "0000078003-26-000026:item_7a_market_risk:0013",
+        "0000078003-25-000138:item_2_mda:0014",
+        "0000078003-26-000054:item_2_mda:0007",
+        "0000078003-26-000026:item_7a_market_risk:0093",
+        "0000078003-26-000026:item_7_mda:0008",
+        "0000078003-25-000150:item_2_mda:0015",
+        "0000078003-25-000138:item_2_mda:0002"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.16666666666666666
+      },
+      "mrr": 0.125,
+      "first_relevant_rank": 8
+    },
+    {
+      "id": "ff_mrk_keytruda_concentration",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 2,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0009",
+        "0000310158-26-000063:item_1a_risk_factors:0003",
+        "0000310158-26-000063:item_1a_risk_factors:0004",
+        "0000310158-26-000063:item_1a_risk_factors:0008",
+        "0000310158-26-000063:item_1a_risk_factors:0023",
+        "0000310158-26-000063:item_1a_risk_factors:0024",
+        "0000310158-26-000063:item_1a_risk_factors:0007",
+        "0000310158-26-000063:item_1a_risk_factors:0002",
+        "0000310158-26-000063:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 0.3333333333333333,
+      "first_relevant_rank": 3
+    },
+    {
+      "id": "ff_mrk_gardasil_china",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 1,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0012",
+        "0000310158-26-000063:item_1a_risk_factors:0018",
+        "0000310158-26-000063:item_1a_risk_factors:0007",
+        "0000310158-26-000063:item_1a_risk_factors:0019",
+        "0000310158-26-000063:item_1a_risk_factors:0015",
+        "0000310158-26-000063:item_1a_risk_factors:0004",
+        "0000310158-26-000063:item_1a_risk_factors:0013",
+        "0000310158-26-000063:item_1a_risk_factors:0016",
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0001"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_mrk_ira_selections",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 2,
+      "ranked": [
+        "0000310158-26-000063:item_1a_risk_factors:0006",
+        "0000310158-26-000063:item_1a_risk_factors:0007",
+        "0000310158-26-000063:item_1a_risk_factors:0016",
+        "0000310158-26-000063:item_1a_risk_factors:0013",
+        "0000310158-26-000063:item_1a_risk_factors:0017",
+        "0000310158-26-000063:item_1a_risk_factors:0008",
+        "0000310158-26-000063:item_1a_risk_factors:0009",
+        "0000310158-26-000063:item_1a_risk_factors:0003",
+        "0000310158-26-000063:item_1a_risk_factors:0024",
+        "0000310158-26-000063:item_1a_risk_factors:0019"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_mrk_winrevair",
+      "population": "freeform",
+      "ticker": "MRK",
+      "n_relevant": 6,
+      "ranked": [
+        "0000310158-25-000059:item_2_mda:0014",
+        "0000310158-26-000063:item_7_mda:0020",
+        "0000310158-25-000014:item_2_mda:0012",
+        "0001628280-25-021834:item_2_mda:0008",
+        "0001628280-26-029802:item_2_mda:0011",
+        "0000310158-25-000014:item_2_mda:0004",
+        "0001628280-25-021834:item_2_mda:0003",
+        "0000310158-26-000063:item_7_mda:0002",
+        "0000310158-26-000063:item_1_business:0032",
+        "0000310158-25-000059:item_2_mda:0005"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.16666666666666666,
+        "3": 0.3333333333333333,
+        "5": 0.6666666666666666,
+        "10": 0.6666666666666666
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_concentration",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 2,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0001",
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0008",
+        "0000059478-26-000013:item_1a_risk_factors:0002",
+        "0000059478-26-000013:item_1a_risk_factors:0005",
+        "0000059478-26-000013:item_1a_risk_factors:0015",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0000",
+        "0000059478-26-000013:item_1a_risk_factors:0019"
+      ],
+      "success_at": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.0,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "mrr": 0.5,
+      "first_relevant_rank": 2
+    },
+    {
+      "id": "ff_lly_price_controls",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 3,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0005",
+        "0000059478-26-000013:item_1a_risk_factors:0020",
+        "0000059478-26-000013:item_1a_risk_factors:0021",
+        "0000059478-26-000013:item_1a_risk_factors:0024",
+        "0000059478-26-000013:item_1a_risk_factors:0019",
+        "0000059478-26-000013:item_1a_risk_factors:0014",
+        "0000059478-26-000013:item_1a_risk_factors:0007",
+        "0000059478-26-000013:item_1a_risk_factors:0003"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_counterfeit_glp1",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 1,
+      "ranked": [
+        "0000059478-26-000013:item_1a_risk_factors:0003",
+        "0000059478-26-000013:item_1a_risk_factors:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0001",
+        "0000059478-26-000013:item_1a_risk_factors:0011",
+        "0000059478-26-000013:item_1a_risk_factors:0004",
+        "0000059478-26-000013:item_1a_risk_factors:0024",
+        "0000059478-26-000013:item_1a_risk_factors:0008",
+        "0000059478-26-000013:item_1a_risk_factors:0019",
+        "0000059478-26-000045:item_1a_risk_factors:0000",
+        "0000059478-25-000132:item_1a_risk_factors:0000"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "id": "ff_lly_growth_drivers",
+      "population": "freeform",
+      "ticker": "LLY",
+      "n_relevant": 15,
+      "ranked": [
+        "0000059478-25-000204:item_2_mda:0006",
+        "0000059478-25-000132:item_2_mda:0005",
+        "0000059478-25-000204:item_2_mda:0007",
+        "0000059478-26-000013:item_7_mda:0005",
+        "0000059478-26-000013:item_7_mda:0007",
+        "0000059478-25-000254:item_2_mda:0007",
+        "0000059478-26-000013:item_1_business:0017",
+        "0000059478-25-000254:item_2_mda:0006",
+        "0000059478-26-000013:item_1a_risk_factors:0001",
+        "0000059478-26-000045:item_2_mda:0006"
+      ],
+      "success_at": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "recall_at": {
+        "1": 0.06666666666666667,
+        "3": 0.2,
+        "5": 0.3333333333333333,
+        "10": 0.5333333333333333
+      },
+      "mrr": 1.0,
+      "first_relevant_rank": 1
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "dataset": "eval/datasets/retrieval_v1.yaml",
+  "n_queries": 55,
+  "n_labeled_pairs": 350,
+  "arms": {
+    "hybrid": {
+      "n_queries": 55,
+      "n_freeform": 43,
+      "n_planner": 12,
+      "freeform": {
+        "success_at": {
+          "1": 0.8372093023255814,
+          "3": 0.9767441860465116,
+          "5": 0.9767441860465116,
+          "10": 1.0
+        },
+        "recall_at": {
+          "1": 0.34647413310204006,
+          "3": 0.6036916571800293,
+          "5": 0.6997135938996404,
+          "10": 0.8370489329791656
+        },
+        "mrr": 0.9054263565891472
+      },
+      "planner": {
+        "judged_precision_at_k": 0.9166666666666666,
+        "planner_k": 5,
+        "unjudged_total": 0
+      }
+    },
+    "dense": {
+      "n_queries": 55,
+      "n_freeform": 43,
+      "n_planner": 12,
+      "freeform": {
+        "success_at": {
+          "1": 0.9302325581395349,
+          "3": 0.9767441860465116,
+          "5": 0.9767441860465116,
+          "10": 1.0
+        },
+        "recall_at": {
+          "1": 0.36876095480746646,
+          "3": 0.5973586491028351,
+          "5": 0.6741769212699446,
+          "10": 0.8401144720912161
+        },
+        "mrr": 0.9563953488372093
+      },
+      "planner": {
+        "judged_precision_at_k": 0.9166666666666666,
+        "planner_k": 5,
+        "unjudged_total": 0
+      }
+    },
+    "sparse": {
+      "n_queries": 55,
+      "n_freeform": 43,
+      "n_planner": 12,
+      "freeform": {
+        "success_at": {
+          "1": 0.813953488372093,
+          "3": 0.8837209302325582,
+          "5": 0.9069767441860465,
+          "10": 1.0
+        },
+        "recall_at": {
+          "1": 0.33460770495654213,
+          "3": 0.5921952078928823,
+          "5": 0.676976834534974,
+          "10": 0.8000510471440704
+        },
+        "mrr": 0.8622093023255815
+      },
+      "planner": {
+        "judged_precision_at_k": 0.9166666666666666,
+        "planner_k": 5,
+        "unjudged_total": 0
+      }
+    }
+  },
+  "run_config": {
+    "embed_model": "BAAI/bge-m3",
+    "top_k": 10,
+    "arms": [
+      "hybrid",
+      "dense",
+      "sparse"
+    ]
+  },
+  "provenance": {
+    "git_sha": "1bbe983ce85650cd943f2bfac979bf6435b03f06",
+    "git_dirty": true,
+    "started_at": "2026-07-06T02:55:12.575647+00:00"
+  }
+}

@@ -1,0 +1,1604 @@
+# Retrieval eval set v1 (2026-07-05). Labeled query-chunk pairs measuring the
+# Qdrant hybrid (dense+sparse RRF) index against dense-only and sparse-only,
+# per the Phase 16 checklist item: recall@k + MRR + the ColBERT decision.
+#
+# Two query populations, mirroring how the system actually searches:
+# - planner: the fixed axis query the analyst path issues for risk_factors
+#   (axis_config.AXIS_SEMANTIC), one per in-corpus ticker, section-filtered to
+#   item_1a_risk_factors at top_k=5. Generic by construction, so labels mark
+#   pooled candidates substantive-vs-boilerplate and the metric is judged
+#   precision@5, not recall.
+# - freeform: critic/MCP-style topic probes authored against the corpus, each
+#   anchored to the chunks that substantively answer it. Metrics: success@k,
+#   recall@k, MRR.
+#
+# Labeling protocol: candidates were pooled from the union of hybrid, dense,
+# and sparse top-10 (TREC-style pooling), then each pooled chunk was labeled
+# against the query. Freeform positive = the chunk substantively answers the
+# query (near-duplicate repeats across 10-K/10-Q filings are all labeled
+# positive). Planner positive = substantive risk-factor content for the ticker
+# (vs TOC/cross-reference stubs/boilerplate). judged_chunk_ids records every
+# pooled candidate seen during labeling so future index changes surface as
+# "unjudged" rather than silently counting as negatives.
+#
+# Authoring rule for freeform
+
+queries:
+  - id: planner_risk_aapl
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: AAPL
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0000320193-25-000057:item_1a_risk_factors:0000
+      - 0000320193-25-000057:item_1a_risk_factors:0001
+      - 0000320193-25-000057:item_1a_risk_factors:0002
+      - 0000320193-25-000079:item_1a_risk_factors:0000
+      - 0000320193-25-000079:item_1a_risk_factors:0002
+      - 0000320193-25-000079:item_1a_risk_factors:0003
+      - 0000320193-25-000079:item_1a_risk_factors:0005
+      - 0000320193-25-000079:item_1a_risk_factors:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0007
+      - 0000320193-25-000079:item_1a_risk_factors:0012
+      - 0000320193-25-000079:item_1a_risk_factors:0014
+      - 0000320193-25-000079:item_1a_risk_factors:0017
+      - 0000320193-25-000079:item_1a_risk_factors:0018
+      - 0000320193-26-000013:item_1a_risk_factors:0000
+      - 0000320193-26-000013:item_1a_risk_factors:0002
+      - 0000320193-26-000013:item_1a_risk_factors:0006
+    judged_chunk_ids:
+      - 0000320193-25-000079:item_1a_risk_factors:0005
+      - 0000320193-25-000079:item_1a_risk_factors:0014
+      - 0000320193-25-000079:item_1a_risk_factors:0018
+      - 0000320193-25-000057:item_1a_risk_factors:0002
+      - 0000320193-26-000013:item_1a_risk_factors:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0012
+      - 0000320193-25-000079:item_1a_risk_factors:0000
+      - 0000320193-25-000057:item_1a_risk_factors:0000
+      - 0000320193-26-000013:item_1a_risk_factors:0002
+      - 0000320193-26-000013:item_1a_risk_factors:0000
+      - 0000320193-25-000079:item_1a_risk_factors:0007
+      - 0000320193-25-000057:item_1a_risk_factors:0001
+      - 0000320193-25-000079:item_1a_risk_factors:0002
+      - 0000320193-25-000079:item_1a_risk_factors:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0003
+      - 0000320193-25-000079:item_1a_risk_factors:0017
+
+  - id: planner_risk_msft
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: MSFT
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0000950170-25-061046:item_1a_risk_factors:0000
+      - 0000950170-25-061046:item_1a_risk_factors:0001
+      - 0000950170-25-100235:item_1a_risk_factors:0000
+      - 0001193125-25-256321:item_1a_risk_factors:0000
+      - 0001193125-26-027207:item_1a_risk_factors:0000
+      - 0001193125-26-191507:item_1a_risk_factors:0000
+    judged_chunk_ids:
+      - 0001193125-26-027207:item_1a_risk_factors:0000
+      - 0000950170-25-061046:item_1a_risk_factors:0000
+      - 0000950170-25-061046:item_1a_risk_factors:0001
+      - 0001193125-26-191507:item_1a_risk_factors:0000
+      - 0000950170-25-100235:item_1a_risk_factors:0000
+      - 0001193125-25-256321:item_1a_risk_factors:0000
+
+  - id: planner_risk_googl
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: GOOGL
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0000
+      - 0001652044-26-000018:item_1a_risk_factors:0001
+      - 0001652044-26-000018:item_1a_risk_factors:0002
+      - 0001652044-26-000018:item_1a_risk_factors:0005
+      - 0001652044-26-000018:item_1a_risk_factors:0006
+      - 0001652044-26-000018:item_1a_risk_factors:0007
+      - 0001652044-26-000018:item_1a_risk_factors:0008
+      - 0001652044-26-000018:item_1a_risk_factors:0011
+      - 0001652044-26-000018:item_1a_risk_factors:0012
+      - 0001652044-26-000018:item_1a_risk_factors:0015
+      - 0001652044-26-000018:item_1a_risk_factors:0017
+      - 0001652044-26-000018:item_1a_risk_factors:0019
+      - 0001652044-26-000018:item_1a_risk_factors:0020
+      - 0001652044-26-000018:item_1a_risk_factors:0025
+      - 0001652044-26-000048:item_1a_risk_factors:0000
+      - 0001652044-26-000048:item_1a_risk_factors:0001
+    judged_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0012
+      - 0001652044-26-000018:item_1a_risk_factors:0015
+      - 0001652044-26-000018:item_1a_risk_factors:0002
+      - 0001652044-26-000018:item_1a_risk_factors:0007
+      - 0001652044-26-000018:item_1a_risk_factors:0000
+      - 0001652044-26-000048:item_1a_risk_factors:0001
+      - 0001652044-26-000018:item_1a_risk_factors:0005
+      - 0001652044-26-000018:item_1a_risk_factors:0008
+      - 0001652044-26-000018:item_1a_risk_factors:0019
+      - 0001652044-26-000018:item_1a_risk_factors:0006
+      - 0001652044-26-000018:item_1a_risk_factors:0011
+      - 0001652044-26-000018:item_1a_risk_factors:0017
+      - 0001652044-26-000048:item_1a_risk_factors:0000
+      - 0001652044-26-000018:item_1a_risk_factors:0020
+      - 0001652044-26-000018:item_1a_risk_factors:0001
+      - 0001652044-26-000018:item_1a_risk_factors:0025
+
+  - id: planner_risk_meta
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: META
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0001326801-25-000054:item_1a_risk_factors:0029
+      - 0001326801-25-000054:item_1a_risk_factors:0030
+      - 0001628280-25-036791:item_1a_risk_factors:0029
+      - 0001628280-25-036791:item_1a_risk_factors:0030
+      - 0001628280-25-036791:item_1a_risk_factors:0051
+      - 0001628280-25-047240:item_1a_risk_factors:0023
+      - 0001628280-25-047240:item_1a_risk_factors:0030
+      - 0001628280-25-047240:item_1a_risk_factors:0053
+      - 0001628280-26-003942:item_1a_risk_factors:0021
+      - 0001628280-26-003942:item_1a_risk_factors:0030
+      - 0001628280-26-003942:item_1a_risk_factors:0031
+      - 0001628280-26-028526:item_1a_risk_factors:0021
+      - 0001628280-26-028526:item_1a_risk_factors:0030
+      - 0001628280-26-028526:item_1a_risk_factors:0031
+      - 0001628280-26-028526:item_1a_risk_factors:0053
+      - 0001628280-26-028526:item_1a_risk_factors:0054
+    judged_chunk_ids:
+      - 0001628280-25-047240:item_1a_risk_factors:0030
+      - 0001628280-26-028526:item_1a_risk_factors:0054
+      - 0001326801-25-000054:item_1a_risk_factors:0029
+      - 0001628280-26-003942:item_1a_risk_factors:0030
+      - 0001628280-26-028526:item_1a_risk_factors:0053
+      - 0001628280-26-028526:item_1a_risk_factors:0031
+      - 0001326801-25-000054:item_1a_risk_factors:0030
+      - 0001628280-25-036791:item_1a_risk_factors:0030
+      - 0001628280-26-028526:item_1a_risk_factors:0030
+      - 0001628280-26-003942:item_1a_risk_factors:0031
+      - 0001628280-25-036791:item_1a_risk_factors:0029
+      - 0001628280-25-036791:item_1a_risk_factors:0051
+      - 0001628280-26-003942:item_1a_risk_factors:0021
+      - 0001628280-26-028526:item_1a_risk_factors:0021
+      - 0001628280-25-047240:item_1a_risk_factors:0023
+      - 0001628280-25-047240:item_1a_risk_factors:0053
+
+  - id: planner_risk_pg
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: PG
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0000080424-25-000076:item_1a_risk_factors:0000
+      - 0000080424-25-000076:item_1a_risk_factors:0001
+      - 0000080424-25-000076:item_1a_risk_factors:0002
+      - 0000080424-25-000076:item_1a_risk_factors:0003
+      - 0000080424-25-000076:item_1a_risk_factors:0004
+      - 0000080424-25-000076:item_1a_risk_factors:0005
+      - 0000080424-25-000076:item_1a_risk_factors:0006
+      - 0000080424-25-000076:item_1a_risk_factors:0007
+      - 0000080424-25-000076:item_1a_risk_factors:0008
+      - 0000080424-25-000076:item_1a_risk_factors:0010
+    judged_chunk_ids:
+      - 0000080424-25-000076:item_1a_risk_factors:0003
+      - 0000080424-25-000076:item_1a_risk_factors:0010
+      - 0000080424-25-000076:item_1a_risk_factors:0006
+      - 0000080424-25-000076:item_1a_risk_factors:0000
+      - 0000080424-25-000076:item_1a_risk_factors:0008
+      - 0000080424-25-000076:item_1a_risk_factors:0004
+      - 0000080424-25-000076:item_1a_risk_factors:0002
+      - 0000080424-25-000076:item_1a_risk_factors:0007
+      - 0000080424-26-000060:item_1a_risk_factors:0000
+      - 0000080424-25-000076:item_1a_risk_factors:0001
+      - 0000080424-25-000076:item_1a_risk_factors:0005
+      - 0000080424-25-000037:item_1a_risk_factors:0000
+      - 0000080424-25-000245:item_1a_risk_factors:0000
+      - 0000080424-26-000011:item_1a_risk_factors:0000
+
+  - id: planner_risk_ko
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: KO
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0001628280-26-010047:item_1a_risk_factors:0000
+      - 0001628280-26-010047:item_1a_risk_factors:0001
+      - 0001628280-26-010047:item_1a_risk_factors:0004
+      - 0001628280-26-010047:item_1a_risk_factors:0005
+      - 0001628280-26-010047:item_1a_risk_factors:0006
+      - 0001628280-26-010047:item_1a_risk_factors:0008
+      - 0001628280-26-010047:item_1a_risk_factors:0009
+      - 0001628280-26-010047:item_1a_risk_factors:0011
+      - 0001628280-26-010047:item_1a_risk_factors:0012
+      - 0001628280-26-010047:item_1a_risk_factors:0017
+      - 0001628280-26-010047:item_1a_risk_factors:0018
+      - 0001628280-26-010047:item_1a_risk_factors:0023
+      - 0001628280-26-010047:item_1a_risk_factors:0025
+    judged_chunk_ids:
+      - 0001628280-26-010047:item_1a_risk_factors:0011
+      - 0001628280-26-010047:item_1a_risk_factors:0018
+      - 0001628280-26-010047:item_1a_risk_factors:0005
+      - 0001628280-26-010047:item_1a_risk_factors:0001
+      - 0001628280-26-010047:item_1a_risk_factors:0000
+      - 0001628280-26-010047:item_1a_risk_factors:0012
+      - 0001628280-26-010047:item_1a_risk_factors:0025
+      - 0001628280-26-010047:item_1a_risk_factors:0009
+      - 0001628280-26-010047:item_1a_risk_factors:0006
+      - 0001628280-26-010047:item_1a_risk_factors:0004
+      - 0001628280-26-010047:item_1a_risk_factors:0023
+      - 0001628280-26-010047:item_1a_risk_factors:0008
+      - 0001628280-26-010047:item_1a_risk_factors:0017
+    gold_case: happy_staples_risks
+
+  - id: planner_risk_pep
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: PEP
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0000077476-26-000007:item_1a_risk_factors:0000
+      - 0000077476-26-000007:item_1a_risk_factors:0001
+      - 0000077476-26-000007:item_1a_risk_factors:0002
+      - 0000077476-26-000007:item_1a_risk_factors:0003
+      - 0000077476-26-000007:item_1a_risk_factors:0004
+      - 0000077476-26-000007:item_1a_risk_factors:0005
+      - 0000077476-26-000007:item_1a_risk_factors:0006
+      - 0000077476-26-000007:item_1a_risk_factors:0007
+      - 0000077476-26-000007:item_1a_risk_factors:0009
+      - 0000077476-26-000007:item_1a_risk_factors:0011
+      - 0000077476-26-000007:item_1a_risk_factors:0012
+      - 0000077476-26-000007:item_1a_risk_factors:0013
+      - 0000077476-26-000007:item_1a_risk_factors:0018
+      - 0000077476-26-000007:item_1a_risk_factors:0019
+      - 0000077476-26-000007:item_1a_risk_factors:0020
+    judged_chunk_ids:
+      - 0000077476-26-000007:item_1a_risk_factors:0005
+      - 0000077476-26-000007:item_1a_risk_factors:0019
+      - 0000077476-26-000007:item_1a_risk_factors:0000
+      - 0000077476-26-000007:item_1a_risk_factors:0006
+      - 0000077476-26-000007:item_1a_risk_factors:0002
+      - 0000077476-26-000007:item_1a_risk_factors:0009
+      - 0000077476-26-000007:item_1a_risk_factors:0020
+      - 0000077476-26-000007:item_1a_risk_factors:0004
+      - 0000077476-26-000007:item_1a_risk_factors:0007
+      - 0000077476-26-000007:item_1a_risk_factors:0013
+      - 0000077476-26-000007:item_1a_risk_factors:0018
+      - 0000077476-26-000007:item_1a_risk_factors:0011
+      - 0000077476-26-000007:item_1a_risk_factors:0003
+      - 0000077476-26-000007:item_1a_risk_factors:0001
+      - 0000077476-26-000007:item_1a_risk_factors:0012
+    gold_case: happy_staples_risks
+
+  - id: planner_risk_cost
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: COST
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0000909832-25-000101:item_1a_risk_factors:0000
+      - 0000909832-25-000101:item_1a_risk_factors:0001
+      - 0000909832-25-000101:item_1a_risk_factors:0003
+      - 0000909832-25-000101:item_1a_risk_factors:0004
+      - 0000909832-25-000101:item_1a_risk_factors:0005
+      - 0000909832-25-000101:item_1a_risk_factors:0006
+      - 0000909832-25-000101:item_1a_risk_factors:0007
+      - 0000909832-25-000101:item_1a_risk_factors:0008
+      - 0000909832-25-000101:item_1a_risk_factors:0009
+      - 0000909832-25-000101:item_1a_risk_factors:0010
+      - 0000909832-25-000101:item_1a_risk_factors:0011
+      - 0000909832-25-000101:item_1a_risk_factors:0012
+      - 0000909832-25-000101:item_1a_risk_factors:0013
+    judged_chunk_ids:
+      - 0000909832-25-000101:item_1a_risk_factors:0010
+      - 0000909832-25-000101:item_1a_risk_factors:0003
+      - 0000909832-25-000101:item_1a_risk_factors:0006
+      - 0000909832-25-000101:item_1a_risk_factors:0000
+      - 0000909832-25-000101:item_1a_risk_factors:0008
+      - 0000909832-25-000101:item_1a_risk_factors:0011
+      - 0000909832-25-000101:item_1a_risk_factors:0005
+      - 0000909832-25-000101:item_1a_risk_factors:0012
+      - 0000909832-25-000101:item_1a_risk_factors:0001
+      - 0000909832-25-000101:item_1a_risk_factors:0004
+      - 0000909832-25-000101:item_1a_risk_factors:0013
+      - 0000909832-25-000101:item_1a_risk_factors:0007
+      - 0000909832-25-000101:item_1a_risk_factors:0009
+
+  - id: planner_risk_jnj
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: JNJ
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0000200406-26-000016:item_1a_risk_factors:0000
+      - 0000200406-26-000016:item_1a_risk_factors:0001
+      - 0000200406-26-000016:item_1a_risk_factors:0002
+      - 0000200406-26-000016:item_1a_risk_factors:0003
+      - 0000200406-26-000016:item_1a_risk_factors:0004
+      - 0000200406-26-000016:item_1a_risk_factors:0005
+      - 0000200406-26-000016:item_1a_risk_factors:0006
+      - 0000200406-26-000016:item_1a_risk_factors:0008
+      - 0000200406-26-000016:item_1a_risk_factors:0009
+      - 0000200406-26-000016:item_1a_risk_factors:0010
+      - 0000200406-26-000016:item_1a_risk_factors:0011
+      - 0000200406-26-000016:item_1a_risk_factors:0012
+      - 0000200406-26-000016:item_1a_risk_factors:0013
+    judged_chunk_ids:
+      - 0000200406-26-000016:item_1a_risk_factors:0012
+      - 0000200406-26-000016:item_1a_risk_factors:0000
+      - 0000200406-26-000016:item_1a_risk_factors:0002
+      - 0000200406-26-000016:item_1a_risk_factors:0009
+      - 0000200406-26-000016:item_1a_risk_factors:0001
+      - 0000200406-26-000016:item_1a_risk_factors:0006
+      - 0000200406-26-000016:item_1a_risk_factors:0013
+      - 0000200406-26-000016:item_1a_risk_factors:0011
+      - 0000200406-26-000016:item_1a_risk_factors:0005
+      - 0000200406-26-000016:item_1a_risk_factors:0010
+      - 0000200406-26-000016:item_1a_risk_factors:0004
+      - 0000200406-26-000016:item_1a_risk_factors:0003
+      - 0000200406-26-000016:item_1a_risk_factors:0008
+    gold_case: happy_jnj_pfe_risks
+
+  - id: planner_risk_pfe
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: PFE
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+    judged_chunk_ids:
+      - 0000078003-26-000026:item_1a_risk_factors:0000
+      - 0000078003-26-000054:item_1a_risk_factors:0000
+      - 0000078003-25-000138:item_1a_risk_factors:0000
+      - 0000078003-25-000114:item_1a_risk_factors:0000
+      - 0000078003-25-000150:item_1a_risk_factors:0000
+      - 0000078003-26-000026:item_1a_risk_factors:0001
+    gold_case: happy_jnj_pfe_risks
+    notes: "Known-thin section: the PFE 10-K item_1a parsed to 2 chunks (cross-reference stubs). This query measures what the planner path actually gets for PFE, which is the parked pharma_risks defect."
+
+  - id: planner_risk_mrk
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: MRK
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0000310158-26-000063:item_1a_risk_factors:0000
+      - 0000310158-26-000063:item_1a_risk_factors:0001
+      - 0000310158-26-000063:item_1a_risk_factors:0002
+      - 0000310158-26-000063:item_1a_risk_factors:0005
+      - 0000310158-26-000063:item_1a_risk_factors:0009
+      - 0000310158-26-000063:item_1a_risk_factors:0010
+      - 0000310158-26-000063:item_1a_risk_factors:0011
+      - 0000310158-26-000063:item_1a_risk_factors:0014
+      - 0000310158-26-000063:item_1a_risk_factors:0015
+      - 0000310158-26-000063:item_1a_risk_factors:0016
+      - 0000310158-26-000063:item_1a_risk_factors:0019
+      - 0000310158-26-000063:item_1a_risk_factors:0022
+      - 0000310158-26-000063:item_1a_risk_factors:0023
+      - 0000310158-26-000063:item_1a_risk_factors:0024
+    judged_chunk_ids:
+      - 0000310158-26-000063:item_1a_risk_factors:0009
+      - 0000310158-26-000063:item_1a_risk_factors:0010
+      - 0000310158-26-000063:item_1a_risk_factors:0000
+      - 0000310158-26-000063:item_1a_risk_factors:0001
+      - 0000310158-26-000063:item_1a_risk_factors:0015
+      - 0000310158-26-000063:item_1a_risk_factors:0024
+      - 0000310158-26-000063:item_1a_risk_factors:0005
+      - 0000310158-26-000063:item_1a_risk_factors:0023
+      - 0000310158-26-000063:item_1a_risk_factors:0019
+      - 0000310158-26-000063:item_1a_risk_factors:0014
+      - 0000310158-26-000063:item_1a_risk_factors:0011
+      - 0000310158-26-000063:item_1a_risk_factors:0002
+      - 0000310158-26-000063:item_1a_risk_factors:0022
+      - 0000310158-26-000063:item_1a_risk_factors:0016
+    gold_case: happy_mrk_lly_risks
+
+  - id: planner_risk_lly
+    query: "primary business risks competitive threats supply chain regulation"
+    ticker: LLY
+    sections: [item_1a_risk_factors]
+    population: planner
+    relevant_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0002
+      - 0000059478-26-000013:item_1a_risk_factors:0003
+      - 0000059478-26-000013:item_1a_risk_factors:0004
+      - 0000059478-26-000013:item_1a_risk_factors:0005
+      - 0000059478-26-000013:item_1a_risk_factors:0007
+      - 0000059478-26-000013:item_1a_risk_factors:0011
+      - 0000059478-26-000013:item_1a_risk_factors:0014
+      - 0000059478-26-000013:item_1a_risk_factors:0015
+      - 0000059478-26-000013:item_1a_risk_factors:0016
+      - 0000059478-26-000013:item_1a_risk_factors:0017
+      - 0000059478-26-000013:item_1a_risk_factors:0019
+      - 0000059478-26-000013:item_1a_risk_factors:0020
+      - 0000059478-26-000013:item_1a_risk_factors:0023
+      - 0000059478-26-000013:item_1a_risk_factors:0024
+    judged_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0003
+      - 0000059478-26-000013:item_1a_risk_factors:0015
+      - 0000059478-26-000013:item_1a_risk_factors:0017
+      - 0000059478-26-000013:item_1a_risk_factors:0002
+      - 0000059478-26-000013:item_1a_risk_factors:0014
+      - 0000059478-26-000013:item_1a_risk_factors:0004
+      - 0000059478-26-000013:item_1a_risk_factors:0024
+      - 0000059478-26-000013:item_1a_risk_factors:0007
+      - 0000059478-26-000013:item_1a_risk_factors:0019
+      - 0000059478-26-000013:item_1a_risk_factors:0016
+      - 0000059478-26-000013:item_1a_risk_factors:0023
+      - 0000059478-26-000013:item_1a_risk_factors:0011
+      - 0000059478-26-000013:item_1a_risk_factors:0020
+      - 0000059478-26-000013:item_1a_risk_factors:0005
+    gold_case: happy_mrk_lly_risks
+
+  - id: ff_aapl_tariffs
+    query: "supply chain exposure to new import duties and retaliatory measures"
+    ticker: AAPL
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000320193-25-000057:item_1a_risk_factors:0000
+      - 0000320193-25-000057:item_1a_risk_factors:0001
+      - 0000320193-25-000079:item_1a_risk_factors:0001
+      - 0000320193-25-000079:item_1a_risk_factors:0002
+    judged_chunk_ids:
+      - 0000320193-25-000057:item_1a_risk_factors:0001
+      - 0000320193-25-000079:item_1a_risk_factors:0002
+      - 0000320193-25-000079:item_1a_risk_factors:0005
+      - 0000320193-25-000079:item_1a_risk_factors:0001
+      - 0000320193-25-000079:item_1a_risk_factors:0020
+      - 0000320193-25-000079:item_1a_risk_factors:0007
+      - 0000320193-25-000079:item_1a_risk_factors:0014
+      - 0000320193-25-000057:item_1a_risk_factors:0002
+      - 0000320193-25-000057:item_1a_risk_factors:0003
+      - 0000320193-25-000079:item_1a_risk_factors:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0012
+      - 0000320193-25-000079:item_1a_risk_factors:0018
+    gold_case: happy_tech_risks
+    notes: "US tariffs from Q2 2025, Section 232 semiconductor probe, reciprocal tariffs; duplicated across Q2-2025 10-Q and FY2025 10-K"
+
+  - id: ff_aapl_sole_supplier
+    query: "risk from sole-supplier components and industry-wide part shortages"
+    ticker: AAPL
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000320193-25-000057:item_1a_risk_factors:0002
+      - 0000320193-25-000079:item_1a_risk_factors:0003
+      - 0000320193-25-000079:item_1a_risk_factors:0005
+      - 0000320193-25-000079:item_1a_risk_factors:0006
+      - 0000320193-26-000013:item_1a_risk_factors:0006
+    judged_chunk_ids:
+      - 0000320193-25-000079:item_1a_risk_factors:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0005
+      - 0000320193-26-000013:item_1a_risk_factors:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0007
+      - 0000320193-25-000057:item_1a_risk_factors:0002
+      - 0000320193-26-000013:item_1a_risk_factors:0000
+      - 0000320193-25-000057:item_1a_risk_factors:0000
+      - 0000320193-25-000079:item_1a_risk_factors:0000
+      - 0000320193-25-000079:item_1a_risk_factors:0018
+      - 0000320193-25-000079:item_1a_risk_factors:0002
+      - 0000320193-25-000079:item_1a_risk_factors:0003
+      - 0000320193-25-000057:item_1a_risk_factors:0001
+      - 0000320193-25-000079:item_1a_risk_factors:0001
+      - 0000320193-26-000013:item_1a_risk_factors:0002
+      - 0000320193-25-000079:item_1a_risk_factors:0012
+    gold_case: happy_tech_risks
+    notes: "Single-source outsourcing partners and custom components, semiconductor shortage history (10-K only)"
+
+  - id: ff_aapl_app_store_antitrust
+    query: "competition law challenges to app distribution terms and commissions"
+    ticker: AAPL
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000320193-25-000079:item_1a_risk_factors:0015
+      - 0000320193-25-000079:item_1a_risk_factors:0016
+      - 0000320193-26-000013:item_1a_risk_factors:0002
+      - 0000320193-26-000013:item_1a_risk_factors:0003
+    judged_chunk_ids:
+      - 0000320193-26-000013:item_1a_risk_factors:0003
+      - 0000320193-25-000079:item_1a_risk_factors:0015
+      - 0000320193-25-000079:item_1a_risk_factors:0009
+      - 0000320193-25-000079:item_1a_risk_factors:0016
+      - 0000320193-25-000079:item_1a_risk_factors:0004
+      - 0000320193-26-000013:item_1a_risk_factors:0004
+      - 0000320193-25-000079:item_1a_risk_factors:0008
+      - 0000320193-25-000079:item_1a_risk_factors:0013
+      - 0000320193-26-000013:item_1a_risk_factors:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0003
+      - 0000320193-25-000079:item_1a_risk_factors:0014
+      - 0000320193-25-000079:item_1a_risk_factors:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0012
+      - 0000320193-25-000079:item_1a_risk_factors:0018
+    gold_case: happy_tech_risks
+    notes: "DMA compliance changes in the EU, US commission injunction, smartphone monopolization suits; repeated 10-K vs Q2-2026 10-Q"
+
+  - id: ff_aapl_buyback
+    query: "size of new stock buyback authorization and dividend increase"
+    ticker: AAPL
+    population: freeform
+    relevant_chunk_ids:
+      - 0000320193-25-000057:item_2_mda:0006
+      - 0000320193-25-000057:item_2_unregistered_sales:0000
+      - 0000320193-25-000073:item_2_unregistered_sales:0000
+      - 0000320193-25-000079:item_5_market_for_common_equity:0000
+      - 0000320193-25-000079:item_7_mda:0004
+      - 0000320193-26-000006:item_2_unregistered_sales:0000
+      - 0000320193-26-000013:item_2_mda:0006
+      - 0000320193-26-000013:item_2_unregistered_sales:0000
+    judged_chunk_ids:
+      - 0000320193-25-000057:item_2_mda:0006
+      - 0000320193-25-000057:item_2_unregistered_sales:0000
+      - 0000320193-25-000079:item_7_mda:0004
+      - 0000320193-26-000013:item_2_mda:0006
+      - 0000320193-25-000079:item_1a_risk_factors:0021
+      - 0000320193-25-000073:item_2_unregistered_sales:0000
+      - 0000320193-25-000079:item_5_market_for_common_equity:0000
+      - 0000320193-26-000006:item_2_unregistered_sales:0000
+      - 0000320193-26-000013:item_2_unregistered_sales:0000
+      - 0000320193-25-000079:item_1a_risk_factors:0014
+      - 0000320193-25-000079:item_15_exhibits:0004
+      - 0000320193-25-000079:item_1a_risk_factors:0018
+      - 0000320193-25-000079:item_1a_risk_factors:0012
+      - 0000320193-26-000013:item_1a_risk_factors:0001
+    notes: "MD&A capital return: $100B repurchase program May 2025, dividend to $0.26, $89.3B repurchased in FY2025"
+
+  - id: ff_msft_trade_policy
+    query: "how protectionist trade policy and tariff shifts threaten overseas operations"
+    ticker: MSFT
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000950170-25-061046:item_1a_risk_factors:0000
+      - 0000950170-25-061046:item_1a_risk_factors:0001
+      - 0001193125-26-027207:item_1a_risk_factors:0000
+    judged_chunk_ids:
+      - 0001193125-26-027207:item_1a_risk_factors:0000
+      - 0000950170-25-061046:item_1a_risk_factors:0001
+      - 0000950170-25-061046:item_1a_risk_factors:0000
+      - 0000950170-25-100235:item_1a_risk_factors:0000
+      - 0001193125-26-191507:item_1a_risk_factors:0000
+      - 0001193125-25-256321:item_1a_risk_factors:0000
+    gold_case: happy_tech_risks
+    notes: "Nationalist/protectionist trends, tariffs, local sourcing rules, export controls; near-duplicate across two 10-Qs"
+
+  - id: ff_msft_auditor
+    query: "who audits the financial statements and internal control effectiveness"
+    ticker: MSFT
+    population: freeform
+    relevant_chunk_ids:
+      - 0000950170-25-100235:item_7_mda:0000
+      - 0000950170-25-100235:item_7a_market_risk:0035
+      - 0000950170-25-100235:item_9_changes_in_accountants:0000
+      - 0000950170-25-100235:item_9a_controls_and_procedures:0000
+      - 0000950170-25-100235:item_9a_controls_and_procedures:0001
+    judged_chunk_ids:
+      - 0000950170-25-100235:item_9a_controls_and_procedures:0000
+      - 0000950170-25-100235:item_9_changes_in_accountants:0000
+      - 0000950170-25-100235:item_7a_market_risk:0035
+      - 0000950170-25-100235:item_7_mda:0000
+      - 0001193125-25-256321:item_4_controls_and_procedures:0000
+      - 0001193125-26-027207:item_4_controls_and_procedures:0000
+      - 0000950170-25-100235:item_7a_market_risk:0036
+      - 0000950170-25-061046:item_4_controls_and_procedures:0000
+      - 0000950170-25-100235:item_9a_controls_and_procedures:0001
+      - 0001193125-26-191507:item_4_controls_and_procedures:0000
+    notes: "Management responsibility statement naming Deloitte & Touche as auditor, internal control and Audit Committee oversight"
+
+  - id: ff_googl_antitrust_suits
+    query: "government monopolization lawsuits over search distribution and ad technology"
+    ticker: GOOGL
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0017
+      - 0001652044-26-000018:item_1a_risk_factors:0018
+    judged_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0018
+      - 0001652044-26-000018:item_1a_risk_factors:0015
+      - 0001652044-26-000018:item_1a_risk_factors:0021
+      - 0001652044-26-000018:item_1a_risk_factors:0017
+      - 0001652044-26-000018:item_1a_risk_factors:0016
+      - 0001652044-26-000018:item_1a_risk_factors:0003
+      - 0001652044-26-000018:item_1a_risk_factors:0019
+      - 0001652044-26-000018:item_1a_risk_factors:0002
+      - 0001652044-26-000018:item_1a_risk_factors:0011
+      - 0001652044-26-000018:item_1a_risk_factors:0014
+      - 0001652044-26-000018:item_1a_risk_factors:0004
+      - 0001652044-26-000018:item_1a_risk_factors:0007
+      - 0001652044-26-000048:item_1a_risk_factors:0001
+      - 0001652044-26-000018:item_1a_risk_factors:0008
+    notes: "DOJ Search case final judgment and appeals, ad tech remedies trial, Texas AG case (FY2025 10-K only)"
+
+  - id: ff_googl_dual_class
+    query: "dual class share structure concentrating founder voting power"
+    ticker: GOOGL
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0023
+      - 0001652044-26-000018:item_1a_risk_factors:0024
+    judged_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0024
+      - 0001652044-26-000018:item_1a_risk_factors:0023
+      - 0001652044-26-000018:item_1a_risk_factors:0026
+      - 0001652044-26-000018:item_1a_risk_factors:0013
+      - 0001652044-26-000018:item_1a_risk_factors:0003
+      - 0001652044-26-000018:item_1a_risk_factors:0016
+      - 0001652044-26-000018:item_1a_risk_factors:0018
+      - 0001652044-26-000018:item_1a_risk_factors:0006
+      - 0001652044-26-000048:item_1a_risk_factors:0001
+      - 0001652044-26-000018:item_1a_risk_factors:0025
+      - 0001652044-26-000018:item_1a_risk_factors:0001
+      - 0001652044-26-000018:item_1a_risk_factors:0004
+      - 0001652044-25-000091:item_1a_risk_factors:0000
+      - 0001652044-26-000018:item_1a_risk_factors:0022
+      - 0001652044-26-000018:item_1a_risk_factors:0002
+      - 0001652044-26-000018:item_1a_risk_factors:0007
+    notes: "Class B 10-votes-per-share, founders hold ~52.7% voting power"
+
+  - id: ff_googl_compute_constraints
+    query: "energy and specialized chip shortages limiting compute capacity buildout"
+    ticker: GOOGL
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0006
+    judged_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0006
+      - 0001652044-26-000048:item_1a_risk_factors:0001
+      - 0001652044-26-000018:item_1a_risk_factors:0001
+      - 0001652044-26-000018:item_1a_risk_factors:0003
+      - 0001652044-26-000018:item_1a_risk_factors:0008
+      - 0001652044-26-000018:item_1a_risk_factors:0024
+      - 0001652044-26-000018:item_1a_risk_factors:0026
+      - 0001652044-26-000018:item_1a_risk_factors:0012
+      - 0001652044-26-000018:item_1a_risk_factors:0007
+      - 0001652044-26-000018:item_1a_risk_factors:0002
+      - 0001652044-26-000018:item_1a_risk_factors:0025
+      - 0001652044-26-000018:item_1a_risk_factors:0010
+      - 0001652044-26-000018:item_1a_risk_factors:0023
+      - 0001652044-26-000018:item_1a_risk_factors:0021
+      - 0001652044-26-000018:item_1a_risk_factors:0016
+    notes: "Infrastructure scaling constrained by power, water, land; AI accelerator supply from few qualified suppliers"
+
+  - id: ff_googl_ec_fines
+    query: "impact of European Commission penalties on expense growth and legal accruals"
+    ticker: GOOGL
+    population: freeform
+    relevant_chunk_ids:
+      - 0001652044-25-000043:item_2_mda:0014
+      - 0001652044-25-000062:item_2_mda:0016
+      - 0001652044-25-000091:item_2_mda:0004
+      - 0001652044-25-000091:item_2_mda:0010
+      - 0001652044-25-000091:item_2_mda:0016
+      - 0001652044-26-000018:item_7_mda:0009
+      - 0001652044-26-000018:item_7_mda:0015
+      - 0001652044-26-000048:item_2_mda:0013
+    judged_chunk_ids:
+      - 0001652044-26-000018:item_1a_risk_factors:0017
+      - 0001652044-25-000043:item_2_mda:0014
+      - 0001652044-26-000018:item_1a_risk_factors:0019
+      - 0001652044-26-000018:item_7_mda:0002
+      - 0001652044-25-000062:item_2_mda:0016
+      - 0001652044-25-000062:item_2_mda:0011
+      - 0001652044-26-000048:item_2_mda:0004
+      - 0001652044-25-000091:item_2_mda:0010
+      - 0001652044-25-000091:item_2_mda:0016
+      - 0001652044-26-000048:item_2_mda:0013
+      - 0001652044-26-000018:item_1a_risk_factors:0022
+      - 0001652044-26-000018:item_7_mda:0009
+      - 0001652044-25-000091:item_2_mda:0004
+      - 0001652044-26-000018:item_1a_risk_factors:0014
+      - 0001652044-26-000018:item_1a_risk_factors:0011
+      - 0001652044-26-000018:item_7_mda:0010
+      - 0001652044-25-000043:item_2_mda:0008
+    notes: "MD&A: $3.5B EC fine accrual driving G&A increase, $15.6B short-term accrued legal fines and settlements"
+
+  - id: ff_meta_eu_ad_free
+    query: "EU pushback on the paid ad-free tier for European users"
+    ticker: META
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001326801-25-000054:item_1a_risk_factors:0007
+      - 0001326801-25-000054:item_1a_risk_factors:0042
+      - 0001628280-25-036791:item_1a_risk_factors:0007
+      - 0001628280-25-036791:item_1a_risk_factors:0042
+      - 0001628280-25-047240:item_1a_risk_factors:0007
+      - 0001628280-25-047240:item_1a_risk_factors:0042
+      - 0001628280-25-047240:item_1a_risk_factors:0043
+      - 0001628280-26-003942:item_1a_risk_factors:0007
+      - 0001628280-26-003942:item_1a_risk_factors:0042
+      - 0001628280-26-003942:item_1a_risk_factors:0043
+      - 0001628280-26-028526:item_1a_risk_factors:0007
+      - 0001628280-26-028526:item_1a_risk_factors:0043
+    judged_chunk_ids:
+      - 0001628280-26-003942:item_1a_risk_factors:0043
+      - 0001628280-25-047240:item_1a_risk_factors:0043
+      - 0001628280-26-028526:item_1a_risk_factors:0007
+      - 0001628280-25-047240:item_1a_risk_factors:0007
+      - 0001326801-25-000054:item_1a_risk_factors:0042
+      - 0001326801-25-000054:item_1a_risk_factors:0007
+      - 0001628280-25-036791:item_1a_risk_factors:0007
+      - 0001628280-26-028526:item_1a_risk_factors:0005
+      - 0001628280-26-003942:item_1a_risk_factors:0007
+      - 0001628280-26-003942:item_1a_risk_factors:0005
+      - 0001628280-26-003942:item_1a_risk_factors:0006
+      - 0001628280-25-036791:item_1a_risk_factors:0049
+    notes: "No-ads subscription consent model in the EU: DMA proceedings, April 2025 adverse decision; passage appears twice per filing across 4 10-Qs and the 10-K"
+
+  - id: ff_meta_reality_labs_losses
+    query: "mounting operating losses from metaverse and virtual reality bets"
+    ticker: META
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001326801-25-000054:item_1a_risk_factors:0021
+      - 0001628280-25-036791:item_1a_risk_factors:0021
+      - 0001628280-25-047240:item_1a_risk_factors:0021
+      - 0001628280-25-047240:item_1a_risk_factors:0022
+      - 0001628280-26-003942:item_1a_risk_factors:0022
+      - 0001628280-26-028526:item_1a_risk_factors:0022
+    judged_chunk_ids:
+      - 0001326801-25-000054:item_1a_risk_factors:0013
+      - 0001628280-25-047240:item_1a_risk_factors:0022
+      - 0001628280-25-036791:item_1a_risk_factors:0013
+      - 0001628280-26-003942:item_1a_risk_factors:0013
+      - 0001326801-25-000054:item_1a_risk_factors:0021
+      - 0001628280-26-028526:item_1a_risk_factors:0013
+      - 0001628280-25-047240:item_1a_risk_factors:0013
+      - 0001628280-25-036791:item_1a_risk_factors:0021
+      - 0001628280-25-036791:item_1a_risk_factors:0016
+      - 0001326801-25-000054:item_1a_risk_factors:0016
+      - 0001628280-26-028526:item_1a_risk_factors:0022
+      - 0001628280-26-003942:item_1a_risk_factors:0022
+      - 0001628280-25-047240:item_1a_risk_factors:0016
+    notes: "Reality Labs strategy risk plus operating-loss passages ($17.73B 2024 / $19.19B 2025); chunk boundaries shift by filing, heading-only slivers excluded"
+
+  - id: ff_meta_fake_accounts
+    query: "how many daily active users are fake bot accounts"
+    ticker: META
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001326801-25-000054:item_1a_risk_factors:0025
+      - 0001326801-25-000054:item_1a_risk_factors:0026
+      - 0001628280-25-036791:item_1a_risk_factors:0025
+      - 0001628280-25-036791:item_1a_risk_factors:0026
+      - 0001628280-25-047240:item_1a_risk_factors:0026
+      - 0001628280-26-003942:item_1a_risk_factors:0026
+      - 0001628280-26-003942:item_1a_risk_factors:0027
+      - 0001628280-26-028526:item_1a_risk_factors:0026
+      - 0001628280-26-028526:item_1a_risk_factors:0027
+    judged_chunk_ids:
+      - 0001628280-26-028526:item_1a_risk_factors:0027
+      - 0001326801-25-000054:item_1a_risk_factors:0026
+      - 0001628280-25-036791:item_1a_risk_factors:0026
+      - 0001628280-26-003942:item_1a_risk_factors:0027
+      - 0001628280-25-047240:item_1a_risk_factors:0026
+      - 0001628280-26-028526:item_1a_risk_factors:0025
+      - 0001628280-26-003942:item_1a_risk_factors:0001
+      - 0001628280-25-047240:item_1a_risk_factors:0027
+      - 0001628280-25-036791:item_1a_risk_factors:0044
+      - 0001628280-26-028526:item_1a_risk_factors:0001
+      - 0001628280-26-028526:item_1a_risk_factors:0032
+      - 0001628280-25-047240:item_1a_risk_factors:0015
+      - 0001628280-25-036791:item_1a_risk_factors:0031
+      - 0001628280-25-036791:item_1a_risk_factors:0001
+      - 0001628280-26-028526:item_1a_risk_factors:0045
+    notes: "Violating-accounts estimation: bots/spam under 3% of DAP (Q4 2024) rising to under 5% (Q4 2025) after methodology update"
+
+  - id: ff_meta_capex_2026
+    query: "capex guidance for AI data center buildout in 2026"
+    ticker: META
+    population: freeform
+    relevant_chunk_ids:
+      - 0001628280-25-047240:item_2_mda:0015
+      - 0001628280-26-003942:item_7_mda:0017
+    judged_chunk_ids:
+      - 0001628280-26-028526:item_2_mda:0014
+      - 0001628280-26-028526:item_2_mda:0004
+      - 0001628280-26-003942:item_1_business:0002
+      - 0001628280-26-028526:item_2_mda:0010
+      - 0001628280-25-047240:item_1_legal_proceedings:0012
+      - 0001628280-26-003942:item_3_legal_proceedings:0012
+      - 0001628280-25-047240:item_2_mda:0011
+      - 0001628280-25-036791:item_1_legal_proceedings:0011
+      - 0001628280-26-003942:item_1a_risk_factors:0022
+      - 0001628280-25-047240:item_2_mda:0015
+      - 0001326801-25-000054:item_1_legal_proceedings:0010
+      - 0001326801-25-000054:item_2_mda:0013
+      - 0001628280-26-028526:item_1a_risk_factors:0059
+      - 0001628280-26-003942:item_1_business:0000
+      - 0001326801-25-000054:item_1a_risk_factors:0019
+      - 0001628280-26-003942:item_3_legal_proceedings:0010
+    notes: "MD&A liquidity: anticipated 2026 capex of ~$115B-$135B for AI and core business"
+
+  - id: ff_pg_tariffs
+    query: "exposure to new tariffs and trade policy shifts"
+    ticker: PG
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000080424-25-000076:item_1a_risk_factors:0001
+      - 0000080424-25-000076:item_1a_risk_factors:0002
+    judged_chunk_ids:
+      - 0000080424-25-000076:item_1a_risk_factors:0002
+      - 0000080424-25-000076:item_1a_risk_factors:0001
+      - 0000080424-25-000076:item_1a_risk_factors:0003
+      - 0000080424-25-000076:item_1a_risk_factors:0008
+      - 0000080424-25-000076:item_1a_risk_factors:0004
+      - 0000080424-25-000076:item_1a_risk_factors:0010
+      - 0000080424-25-000076:item_1a_risk_factors:0000
+      - 0000080424-25-000076:item_1a_risk_factors:0011
+      - 0000080424-25-000076:item_1a_risk_factors:0009
+      - 0000080424-25-000076:item_1a_risk_factors:0007
+      - 0000080424-25-000076:item_1a_risk_factors:0005
+    notes: "International-operations risk: new or increased tariffs, quotas, retaliatory tariffs; 10-Q chunks only cross-reference the 10-K"
+
+  - id: ff_pg_commodity_pricing
+    query: "ability to offset commodity cost swings with pricing"
+    ticker: PG
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000080424-25-000076:item_1a_risk_factors:0003
+      - 0000080424-25-000076:item_1a_risk_factors:0004
+    judged_chunk_ids:
+      - 0000080424-25-000076:item_1a_risk_factors:0004
+      - 0000080424-25-000076:item_1a_risk_factors:0003
+      - 0000080424-25-000076:item_1a_risk_factors:0001
+      - 0000080424-25-000076:item_1a_risk_factors:0009
+      - 0000080424-25-000076:item_1a_risk_factors:0002
+      - 0000080424-25-000076:item_1a_risk_factors:0008
+      - 0000080424-25-000076:item_1a_risk_factors:0000
+      - 0000080424-25-000076:item_1a_risk_factors:0010
+      - 0000080424-25-000076:item_1a_risk_factors:0007
+      - 0000080424-25-000076:item_1a_risk_factors:0011
+      - 0000080424-25-000076:item_1a_risk_factors:0006
+    notes: "Cost fluctuations: petroleum-derived resins and pulp, managing through pricing and cost savings; passage overlaps both chunks"
+
+  - id: ff_pg_gillette_impairment
+    query: "Gillette intangible impairment drivers and valuation sensitivity"
+    ticker: PG
+    population: freeform
+    relevant_chunk_ids:
+      - 0000080424-25-000076:item_7_mda:0007
+      - 0000080424-25-000076:item_7_mda:0025
+      - 0000080424-25-000076:item_7_mda:0026
+      - 0000080424-25-000076:item_7_mda:0027
+    judged_chunk_ids:
+      - 0000080424-25-000076:item_7_mda:0025
+      - 0000080424-25-000076:item_7_mda:0026
+      - 0000080424-25-000037:item_2_mda:0005
+      - 0000080424-25-000076:item_7_mda:0030
+      - 0000080424-25-000076:item_7_mda:0012
+      - 0000080424-25-000037:item_2_mda:0011
+      - 0000080424-25-000076:item_7_mda:0007
+      - 0000080424-25-000076:item_7_mda:0027
+      - 0000080424-25-000076:item_7_mda:0009
+      - 0000080424-25-000037:item_2_mda:0010
+      - 0000080424-25-000076:item_7_mda:0018
+      - 0000080424-25-000037:item_2_mda:0023
+    notes: "FY2024 $1.3B non-cash charge, $12.8B carrying value, assumptions and sensitivity table; one-line references in earnings walk-downs excluded"
+
+  - id: ff_ko_glp1_demand
+    query: "obesity worries and weight loss medications reducing demand"
+    ticker: KO
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001628280-26-010047:item_1a_risk_factors:0007
+    judged_chunk_ids:
+      - 0001628280-26-010047:item_1a_risk_factors:0007
+      - 0001628280-26-010047:item_1a_risk_factors:0027
+      - 0001628280-26-010047:item_1a_risk_factors:0009
+      - 0001628280-26-010047:item_1a_risk_factors:0004
+      - 0001628280-26-010047:item_1a_risk_factors:0008
+      - 0001628280-26-010047:item_1a_risk_factors:0011
+      - 0001628280-26-010047:item_1a_risk_factors:0016
+      - 0001628280-26-010047:item_1a_risk_factors:0001
+      - 0001628280-26-010047:item_1a_risk_factors:0026
+      - 0001628280-26-010047:item_1a_risk_factors:0002
+      - 0001628280-26-010047:item_1a_risk_factors:0017
+      - 0001628280-26-010047:item_1a_risk_factors:0028
+      - 0001628280-26-010047:item_1a_risk_factors:0010
+    gold_case: happy_staples_risks
+    notes: "Obesity/health risk: weight-loss drug effects on consumption plus preference and ingredient-health continuations; only the 10-K carries full risk factors"
+
+  - id: ff_ko_sugar_tax
+    query: "risk of new taxes on sugar sweetened drinks"
+    ticker: KO
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001628280-26-010047:item_1a_risk_factors:0007
+      - 0001628280-26-010047:item_1a_risk_factors:0015
+      - 0001628280-26-010047:item_1a_risk_factors:0016
+    judged_chunk_ids:
+      - 0001628280-26-010047:item_1a_risk_factors:0016
+      - 0001628280-26-010047:item_1a_risk_factors:0007
+      - 0001628280-26-010047:item_1a_risk_factors:0009
+      - 0001628280-26-010047:item_1a_risk_factors:0019
+      - 0001628280-26-010047:item_1a_risk_factors:0012
+      - 0001628280-26-010047:item_1a_risk_factors:0021
+      - 0001628280-26-010047:item_1a_risk_factors:0000
+      - 0001628280-26-010047:item_1a_risk_factors:0025
+      - 0001628280-26-010047:item_1a_risk_factors:0023
+      - 0001628280-26-010047:item_1a_risk_factors:0028
+      - 0001628280-26-010047:item_1a_risk_factors:0013
+      - 0001628280-26-010047:item_1a_risk_factors:0001
+      - 0001628280-26-010047:item_1a_risk_factors:0018
+      - 0001628280-26-010047:item_1a_risk_factors:0011
+      - 0001628280-26-028802:item_1a_risk_factors:0000
+      - 0000021344-25-000061:item_1a_risk_factors:0000
+    gold_case: happy_staples_risks
+    notes: "Indirect taxes risk: taxes on sweetened beverages, past US federal excise proposals"
+
+  - id: ff_ko_plastic_waste
+    query: "regulatory and consumer backlash over plastic bottle waste"
+    ticker: KO
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0001628280-26-010047:item_1a_risk_factors:0016
+      - 0001628280-26-010047:item_1a_risk_factors:0026
+      - 0001628280-26-010047:item_1a_risk_factors:0027
+    judged_chunk_ids:
+      - 0001628280-26-010047:item_1a_risk_factors:0026
+      - 0001628280-26-010047:item_1a_risk_factors:0027
+      - 0001628280-26-010047:item_1a_risk_factors:0016
+      - 0001628280-26-010047:item_1a_risk_factors:0008
+      - 0001628280-26-010047:item_1a_risk_factors:0007
+      - 0001628280-26-010047:item_1a_risk_factors:0028
+      - 0001628280-26-010047:item_1a_risk_factors:0012
+      - 0001628280-26-010047:item_1a_risk_factors:0001
+      - 0001628280-26-010047:item_1a_risk_factors:0023
+      - 0001628280-26-010047:item_1a_risk_factors:0009
+      - 0001628280-26-010047:item_1a_risk_factors:0025
+      - 0001628280-26-010047:item_1a_risk_factors:0002
+      - 0001628280-26-010047:item_1a_risk_factors:0019
+    gold_case: happy_staples_risks
+    notes: "Plastic packaging risk (recycling mandates, recycled-content minimums) plus container legislation in :0016 (deposits, tethered caps, EPR)"
+
+  - id: ff_ko_irs_dispute
+    query: "potential liability from the IRS transfer pricing court fight"
+    ticker: KO
+    population: freeform
+    relevant_chunk_ids:
+      - 0000021344-25-000029:item_1_legal_proceedings:0000
+      - 0000021344-25-000029:item_1_legal_proceedings:0002
+      - 0000021344-25-000061:item_1_legal_proceedings:0000
+      - 0000021344-25-000061:item_1_legal_proceedings:0003
+      - 0001628280-25-046054:item_1_legal_proceedings:0000
+      - 0001628280-25-046054:item_1_legal_proceedings:0004
+      - 0001628280-26-010047:item_1a_risk_factors:0015
+      - 0001628280-26-010047:item_3_legal_proceedings:0005
+      - 0001628280-26-010047:item_7_mda:0026
+      - 0001628280-26-010047:item_7_mda:0027
+      - 0001628280-26-010047:item_7_mda:0028
+      - 0001628280-26-028802:item_1_legal_proceedings:0000
+      - 0001628280-26-028802:item_2_mda:0016
+    judged_chunk_ids:
+      - 0000021344-25-000061:item_1_legal_proceedings:0003
+      - 0001628280-26-028802:item_1_legal_proceedings:0001
+      - 0000021344-25-000029:item_1_legal_proceedings:0001
+      - 0001628280-25-046054:item_1_legal_proceedings:0001
+      - 0000021344-25-000061:item_1_legal_proceedings:0000
+      - 0000021344-25-000061:item_1_legal_proceedings:0001
+      - 0001628280-25-046054:item_1_legal_proceedings:0000
+      - 0001628280-25-046054:item_1_legal_proceedings:0004
+      - 0001628280-26-028802:item_1_legal_proceedings:0000
+      - 0000021344-25-000029:item_1_legal_proceedings:0000
+      - 0001628280-26-010047:item_3_legal_proceedings:0005
+      - 0001628280-26-028802:item_2_mda:0016
+      - 0000021344-25-000029:item_1_legal_proceedings:0002
+      - 0001628280-26-010047:item_1a_risk_factors:0015
+    notes: "IRS 2007-2009 dispute: ~$3.3B claim, Tax Court opinions, $6.0B deposit, Eleventh Circuit appeal; unfiltered so risk-factor and MD&A chunks compete"
+
+  - id: ff_pep_excise_taxes
+    query: "impact of new levies targeting sugary drinks and salty snacks"
+    ticker: PEP
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000077476-26-000007:item_1a_risk_factors:0014
+      - 0000077476-26-000007:item_1a_risk_factors:0015
+    judged_chunk_ids:
+      - 0000077476-26-000007:item_1a_risk_factors:0015
+      - 0000077476-26-000007:item_1a_risk_factors:0006
+      - 0000077476-26-000007:item_1a_risk_factors:0019
+      - 0000077476-26-000007:item_1a_risk_factors:0014
+      - 0000077476-26-000007:item_1a_risk_factors:0020
+      - 0000077476-26-000007:item_1a_risk_factors:0011
+      - 0000077476-26-000007:item_1a_risk_factors:0017
+      - 0000077476-26-000007:item_1a_risk_factors:0001
+      - 0000077476-26-000007:item_1a_risk_factors:0016
+      - 0000077476-26-000007:item_1a_risk_factors:0007
+      - 0000077476-26-000007:item_1a_risk_factors:0018
+      - 0000077476-26-000007:item_1a_risk_factors:0002
+      - 0000077476-26-000007:item_1a_risk_factors:0003
+      - 0000077476-26-000007:item_1a_risk_factors:0008
+      - 0000077476-26-000007:item_1a_risk_factors:0010
+    gold_case: happy_staples_risks
+    notes: "Excise taxes on beverages/snacks by ingredient, incl. Mexico's 2026 sweetened-beverage tax hike"
+
+  - id: ff_pep_glp1_demand
+    query: "impact of weight loss medications on future product demand"
+    ticker: PEP
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000077476-26-000007:item_1a_risk_factors:0000
+    judged_chunk_ids:
+      - 0000077476-26-000007:item_1a_risk_factors:0000
+      - 0000077476-26-000007:item_1a_risk_factors:0001
+      - 0000077476-26-000007:item_1a_risk_factors:0006
+      - 0000077476-26-000007:item_1a_risk_factors:0016
+      - 0000077476-26-000007:item_1a_risk_factors:0005
+      - 0000077476-26-000007:item_1a_risk_factors:0002
+      - 0000077476-26-000007:item_1a_risk_factors:0007
+      - 0000077476-26-000007:item_1a_risk_factors:0019
+      - 0000077476-26-000007:item_1a_risk_factors:0013
+      - 0000077476-26-000007:item_1a_risk_factors:0008
+      - 0000077476-26-000007:item_1a_risk_factors:0020
+      - 0000077476-26-000007:item_1a_risk_factors:0003
+      - 0000077476-26-000007:item_1a_risk_factors:0014
+    gold_case: happy_staples_risks
+    notes: "Demand-reduction risk from dietary shifts incl. GLP-1 adoption, SNAP changes; only the lead risk chunk covers it"
+
+  - id: ff_pep_cyber
+    query: "vulnerability of IT systems to ransomware and hacking incidents"
+    ticker: PEP
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000077476-26-000007:item_1a_risk_factors:0008
+      - 0000077476-26-000007:item_1a_risk_factors:0009
+      - 0000077476-26-000007:item_1a_risk_factors:0010
+    judged_chunk_ids:
+      - 0000077476-26-000007:item_1a_risk_factors:0009
+      - 0000077476-26-000007:item_1a_risk_factors:0008
+      - 0000077476-26-000007:item_1a_risk_factors:0010
+      - 0000077476-26-000007:item_1a_risk_factors:0011
+      - 0000077476-26-000007:item_1a_risk_factors:0004
+      - 0000077476-26-000007:item_1a_risk_factors:0016
+      - 0000077476-26-000007:item_1a_risk_factors:0017
+      - 0000077476-26-000007:item_1a_risk_factors:0006
+      - 0000077476-26-000007:item_1a_risk_factors:0018
+      - 0000077476-26-000007:item_1a_risk_factors:0000
+      - 0000077476-26-000007:item_1a_risk_factors:0020
+      - 0000077476-26-000007:item_1a_risk_factors:0002
+      - 0000077476-26-000007:item_1a_risk_factors:0019
+      - 0000077476-26-000007:item_1a_risk_factors:0005
+      - 0000077476-26-000007:item_1a_risk_factors:0007
+      - 0000077476-26-000007:item_1a_risk_factors:0001
+    gold_case: happy_staples_risks
+    notes: "Cyber risk spans three consecutive chunks: attack types, third-party exposure, insurance caveats"
+
+  - id: ff_pep_quaker_recall
+    query: "charges booked for the granola bar and cereal recall"
+    ticker: PEP
+    population: freeform
+    relevant_chunk_ids:
+      - 0000077476-25-000019:item_2_mda:0014
+      - 0000077476-25-000044:item_2_mda:0010
+      - 0000077476-25-000044:item_2_mda:0017
+      - 0000077476-25-000044:item_2_mda:0018
+      - 0000077476-25-000053:item_2_mda:0011
+      - 0000077476-25-000053:item_2_mda:0017
+      - 0000077476-25-000053:item_2_mda:0019
+      - 0000077476-26-000007:item_7_mda:0013
+      - 0000077476-26-000007:item_7_mda:0020
+      - 0000077476-26-000007:item_7_mda:0031
+      - 0000077476-26-000007:item_7_mda:0038
+      - 0000077476-26-000007:item_7_mda:0039
+    judged_chunk_ids:
+      - 0000077476-26-000007:item_7_mda:0020
+      - 0000077476-26-000007:item_7_mda:0013
+      - 0000077476-25-000053:item_2_mda:0019
+      - 0000077476-26-000007:item_7_mda:0031
+      - 0000077476-26-000007:item_7_mda:0039
+      - 0000077476-25-000044:item_2_mda:0010
+      - 0000077476-25-000053:item_2_mda:0011
+      - 0000077476-25-000044:item_1_legal_proceedings:0000
+      - 0000077476-25-000044:item_2_mda:0018
+      - 0000077476-25-000019:item_2_mda:0014
+      - 0000077476-25-000019:item_1_legal_proceedings:0000
+      - 0000077476-26-000007:item_7_mda:0040
+      - 0000077476-26-000007:item_7_mda:0011
+      - 0000077476-25-000044:item_2_mda:0017
+      - 0000077476-25-000053:item_2_mda:0017
+    notes: "Quaker recall impact: PFNA profit driver lap and the $187M/$136M charge footnotes; bare cash-flow line item excluded"
+
+  - id: ff_cost_geo_concentration
+    query: "geographic concentration of profits in California and Canada"
+    ticker: COST
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000909832-25-000101:item_1a_risk_factors:0000
+      - 0000909832-25-000101:item_1a_risk_factors:0008
+    judged_chunk_ids:
+      - 0000909832-25-000101:item_1a_risk_factors:0000
+      - 0000909832-25-000101:item_1a_risk_factors:0009
+      - 0000909832-25-000101:item_1a_risk_factors:0008
+      - 0000909832-25-000101:item_1a_risk_factors:0001
+      - 0000909832-25-000101:item_1a_risk_factors:0010
+      - 0000909832-25-000101:item_1a_risk_factors:0007
+      - 0000909832-25-000101:item_1a_risk_factors:0004
+      - 0000909832-25-000101:item_1a_risk_factors:0013
+      - 0000909832-25-000101:item_1a_risk_factors:0011
+      - 0000909832-25-000101:item_1a_risk_factors:0003
+      - 0000909832-25-000101:item_1a_risk_factors:0012
+      - 0000909832-25-000101:item_1a_risk_factors:0002
+    notes: "US/Canada 86%/84% of sales and operating income, California 26% of US sales; 10-Q risk chunks are no-material-change stubs"
+
+  - id: ff_cost_kirkland
+    query: "risk of members losing confidence in the house label brand"
+    ticker: COST
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000909832-25-000101:item_1a_risk_factors:0001
+    judged_chunk_ids:
+      - 0000909832-25-000101:item_1a_risk_factors:0005
+      - 0000909832-25-000101:item_1a_risk_factors:0001
+      - 0000909832-25-000101:item_1a_risk_factors:0008
+      - 0000909832-25-000101:item_1a_risk_factors:0004
+      - 0000909832-25-000101:item_1a_risk_factors:0012
+      - 0000909832-25-000101:item_1a_risk_factors:0011
+      - 0000909832-25-000101:item_1a_risk_factors:0006
+      - 0000909832-25-000101:item_1a_risk_factors:0003
+      - 0000909832-25-000101:item_1a_risk_factors:0010
+      - 0000909832-25-000101:item_1a_risk_factors:0000
+      - 0000909832-25-000101:item_1a_risk_factors:0002
+      - 0000909832-25-000101:item_1a_risk_factors:0007
+    notes: "Kirkland Signature acceptance and membership loyalty/renewal risk in a single 10-K chunk"
+
+  - id: ff_cost_membership_fees
+    query: "what drove membership fee income growth and renewal rates"
+    ticker: COST
+    population: freeform
+    relevant_chunk_ids:
+      - 0000909832-25-000015:item_2_mda:0006
+      - 0000909832-25-000033:item_2_mda:0006
+      - 0000909832-25-000101:item_7_mda:0003
+      - 0000909832-25-000101:item_7_mda:0004
+      - 0000909832-25-000169:item_2_mda:0005
+      - 0000909832-26-000029:item_2_mda:0006
+    judged_chunk_ids:
+      - 0000909832-26-000029:item_2_mda:0006
+      - 0000909832-25-000033:item_2_mda:0006
+      - 0000909832-25-000101:item_7_mda:0002
+      - 0000909832-25-000033:item_2_mda:0003
+      - 0000909832-25-000101:item_7_mda:0004
+      - 0000909832-25-000015:item_2_mda:0006
+      - 0000909832-25-000015:item_2_mda:0003
+      - 0000909832-25-000169:item_2_mda:0003
+      - 0000909832-26-000029:item_2_mda:0003
+      - 0000909832-25-000169:item_2_mda:0005
+    notes: "Fees +10% on sign-ups and the Sept 2024 fee increase, renewal rates 92.3%/89.8%"
+
+  - id: ff_jnj_talc
+    query: "exposure to baby powder talc injury lawsuits"
+    ticker: JNJ
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000200406-26-000016:item_1a_risk_factors:0004
+    judged_chunk_ids:
+      - 0000200406-26-000016:item_1a_risk_factors:0004
+      - 0000200406-26-000016:item_1a_risk_factors:0005
+      - 0000200406-26-000016:item_1a_risk_factors:0009
+      - 0000200406-26-000016:item_1a_risk_factors:0013
+      - 0000200406-26-000016:item_1a_risk_factors:0006
+      - 0000200406-26-000016:item_1a_risk_factors:0002
+      - 0000200406-26-000016:item_1a_risk_factors:0008
+      - 0000200406-26-000016:item_1a_risk_factors:0003
+      - 0000200406-26-000016:item_1a_risk_factors:0001
+      - 0000200406-26-000016:item_1a_risk_factors:0012
+      - 0000200406-26-000016:item_1a_risk_factors:0010
+      - 0000200406-26-000016:item_1a_risk_factors:0007
+    gold_case: happy_jnj_pfe_risks
+    notes: "Talc body-powder litigation, no third-party product liability insurance, captive insurer"
+
+  - id: ff_jnj_biosimilar_patents
+    query: "generic and biosimilar challengers eroding drug patent protection"
+    ticker: JNJ
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000200406-26-000016:item_1a_risk_factors:0000
+      - 0000200406-26-000016:item_1a_risk_factors:0006
+    judged_chunk_ids:
+      - 0000200406-26-000016:item_1a_risk_factors:0006
+      - 0000200406-26-000016:item_1a_risk_factors:0004
+      - 0000200406-26-000016:item_1a_risk_factors:0002
+      - 0000200406-26-000016:item_1a_risk_factors:0003
+      - 0000200406-26-000016:item_1a_risk_factors:0010
+      - 0000200406-26-000016:item_1a_risk_factors:0007
+      - 0000200406-26-000016:item_1a_risk_factors:0009
+      - 0000200406-26-000016:item_1a_risk_factors:0005
+      - 0000200406-26-000016:item_1a_risk_factors:0013
+      - 0000200406-26-000016:item_1a_risk_factors:0012
+      - 0000200406-26-000016:item_1a_risk_factors:0008
+    gold_case: happy_jnj_pfe_risks
+    notes: "Loss-of-exclusivity sales cliff and IPR/at-risk-launch patent challenges"
+
+  - id: ff_jnj_medicare_pricing
+    query: "Medicare price setting and payer reimbursement pressure on drug sales"
+    ticker: JNJ
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000200406-26-000016:item_1a_risk_factors:0002
+      - 0000200406-26-000016:item_1a_risk_factors:0003
+    judged_chunk_ids:
+      - 0000200406-26-000016:item_1a_risk_factors:0003
+      - 0000200406-26-000016:item_1a_risk_factors:0008
+      - 0000200406-26-000016:item_1a_risk_factors:0000
+      - 0000200406-26-000016:item_1a_risk_factors:0005
+      - 0000200406-26-000016:item_1a_risk_factors:0009
+      - 0000200406-26-000016:item_1a_risk_factors:0011
+      - 0000200406-26-000016:item_1a_risk_factors:0004
+      - 0000200406-26-000016:item_1a_risk_factors:0010
+      - 0000200406-26-000016:item_1a_risk_factors:0002
+      - 0000200406-26-000016:item_1a_risk_factors:0001
+      - 0000200406-26-000016:item_1a_risk_factors:0006
+      - 0000200406-26-000016:item_1a_risk_factors:0007
+      - 0000200406-26-000016:item_1a_risk_factors:0013
+    gold_case: happy_jnj_pfe_risks
+    notes: "IRA-mandated government pricing from 2026, Part D redesign, 340B expansion"
+
+  - id: ff_jnj_stelara
+    query: "how badly are biosimilar rivals eroding Stelara revenue"
+    ticker: JNJ
+    population: freeform
+    relevant_chunk_ids:
+      - 0000200406-25-000119:item_2_mda:0000
+      - 0000200406-25-000119:item_2_mda:0001
+      - 0000200406-25-000178:item_2_mda:0000
+      - 0000200406-25-000178:item_2_mda:0001
+      - 0000200406-25-000209:item_2_mda:0000
+      - 0000200406-25-000209:item_2_mda:0001
+      - 0000200406-26-000016:item_7_mda:0001
+      - 0000200406-26-000016:item_7_mda:0002
+      - 0000200406-26-000016:item_7_mda:0003
+      - 0000200406-26-000016:item_7_mda:0004
+      - 0000200406-26-000087:item_2_mda:0000
+    judged_chunk_ids:
+      - 0000200406-25-000178:item_2_mda:0001
+      - 0000200406-25-000178:item_2_mda:0000
+      - 0000200406-25-000209:item_2_mda:0005
+      - 0000200406-25-000119:item_2_mda:0001
+      - 0000200406-25-000178:item_2_mda:0005
+      - 0000200406-25-000119:item_2_mda:0000
+      - 0000200406-26-000016:item_7_mda:0004
+      - 0000200406-26-000016:item_1_business:0004
+      - 0000200406-25-000209:item_2_mda:0001
+      - 0000200406-25-000209:item_2_mda:0018
+      - 0000200406-25-000209:item_2_mda:0000
+      - 0000200406-26-000087:item_2_mda:0000
+      - 0000200406-25-000119:item_2_mda:0012
+      - 0000200406-26-000087:item_2_mda:0011
+    notes: "STELARA -41.3% on biosimilar competition: worldwide and segment drag, sales table, immunology discussion"
+
+  - id: ff_pfe_patent_cliff
+    query: "revenue exposure from upcoming patent and exclusivity expirations"
+    ticker: PFE
+    population: freeform
+    relevant_chunk_ids:
+      - 0000078003-25-000114:item_2_mda:0002
+      - 0000078003-25-000138:item_2_mda:0003
+      - 0000078003-25-000150:item_2_mda:0003
+      - 0000078003-25-000150:item_2_mda:0004
+      - 0000078003-26-000026:item_7_mda:0004
+      - 0000078003-26-000026:item_9c_foreign_jurisdictions:0024
+      - 0000078003-26-000026:item_9c_foreign_jurisdictions:0045
+      - 0000078003-26-000026:item_9c_foreign_jurisdictions:0046
+      - 0000078003-26-000054:item_2_mda:0001
+    judged_chunk_ids:
+      - 0000078003-25-000114:item_2_mda:0002
+      - 0000078003-26-000026:item_7_mda:0004
+      - 0000078003-25-000150:item_2_mda:0004
+      - 0000078003-26-000026:item_9c_foreign_jurisdictions:0046
+      - 0000078003-25-000138:item_2_mda:0003
+      - 0000078003-26-000054:item_2_mda:0001
+      - 0000078003-26-000026:item_9c_foreign_jurisdictions:0024
+      - 0000078003-25-000150:item_2_mda:0015
+      - 0000078003-25-000114:item_2_mda:0010
+      - 0000078003-26-000026:item_9c_foreign_jurisdictions:0045
+      - 0000078003-25-000150:item_2_mda:0003
+    gold_case: happy_jnj_pfe_risks
+    notes: "Patent/exclusivity losses 2026-2030, ~$1.5B hit in 2026; PFE item_1a is non-substantive so all PFE queries run unfiltered"
+
+  - id: ff_pfe_part_d
+    query: "Medicare Part D redesign effect on product revenue"
+    ticker: PFE
+    population: freeform
+    relevant_chunk_ids:
+      - 0000078003-25-000114:item_2_mda:0003
+      - 0000078003-25-000114:item_2_mda:0007
+      - 0000078003-25-000114:item_2_mda:0008
+      - 0000078003-25-000138:item_2_mda:0002
+      - 0000078003-25-000138:item_2_mda:0009
+      - 0000078003-25-000138:item_2_mda:0013
+      - 0000078003-25-000150:item_2_mda:0005
+      - 0000078003-25-000150:item_2_mda:0010
+      - 0000078003-25-000150:item_2_mda:0011
+      - 0000078003-25-000150:item_2_mda:0012
+      - 0000078003-25-000150:item_2_mda:0014
+      - 0000078003-26-000026:item_7_mda:0005
+      - 0000078003-26-000026:item_7_mda:0006
+      - 0000078003-26-000026:item_9c_foreign_jurisdictions:0033
+      - 0000078003-26-000054:item_2_mda:0002
+    judged_chunk_ids:
+      - 0000078003-25-000150:item_2_mda:0010
+      - 0000078003-26-000026:item_7_mda:0006
+      - 0000078003-25-000138:item_2_mda:0009
+      - 0000078003-26-000026:item_9c_foreign_jurisdictions:0033
+      - 0000078003-25-000150:item_2_mda:0014
+      - 0000078003-25-000138:item_2_mda:0013
+      - 0000078003-25-000150:item_2_mda:0012
+      - 0000078003-25-000114:item_2_mda:0007
+      - 0000078003-25-000114:item_2_mda:0008
+      - 0000078003-25-000150:item_2_mda:0005
+      - 0000078003-25-000150:item_2_mda:0011
+      - 0000078003-26-000054:item_2_mda:0002
+      - 0000078003-25-000138:item_2_mda:0002
+      - 0000078003-25-000114:item_2_mda:0003
+    gold_case: happy_jnj_pfe_risks
+    notes: "IRA Part D benefit redesign cut 2025 revenue by ~$1B"
+
+  - id: ff_pfe_covid_decline
+    query: "why are covid vaccine and antiviral sales declining"
+    ticker: PFE
+    population: freeform
+    relevant_chunk_ids:
+      - 0000078003-25-000150:item_2_mda:0012
+      - 0000078003-25-000150:item_2_mda:0013
+      - 0000078003-26-000026:item_7_mda:0003
+      - 0000078003-26-000026:item_7_mda:0008
+      - 0000078003-26-000026:item_7_mda:0016
+      - 0000078003-26-000026:item_7_mda:0017
+    judged_chunk_ids:
+      - 0000078003-25-000114:item_2_mda:0010
+      - 0000078003-25-000150:item_2_mda:0016
+      - 0000078003-25-000150:item_2_mda:0012
+      - 0000078003-26-000026:item_7_mda:0019
+      - 0000078003-25-000138:item_2_mda:0013
+      - 0000078003-25-000138:item_2_mda:0014
+      - 0000078003-25-000138:item_2_mda:0002
+      - 0000078003-26-000026:item_7_mda:0017
+      - 0000078003-26-000026:item_7a_market_risk:0013
+      - 0000078003-26-000054:item_2_mda:0007
+      - 0000078003-26-000026:item_7_mda:0003
+      - 0000078003-25-000150:item_2_mda:0013
+      - 0000078003-25-000150:item_2_mda:0014
+      - 0000078003-26-000026:item_7a_market_risk:0093
+      - 0000078003-26-000026:item_7_mda:0008
+      - 0000078003-25-000150:item_2_mda:0015
+    notes: "Comirnaty (-20%) and Paxlovid (-59%) decline drivers"
+
+  - id: ff_mrk_keytruda_concentration
+    query: "dependence on lead cancer immunotherapy facing biosimilar entry"
+    ticker: MRK
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000310158-26-000063:item_1a_risk_factors:0003
+      - 0000310158-26-000063:item_1a_risk_factors:0004
+    judged_chunk_ids:
+      - 0000310158-26-000063:item_1a_risk_factors:0017
+      - 0000310158-26-000063:item_1a_risk_factors:0004
+      - 0000310158-26-000063:item_1a_risk_factors:0003
+      - 0000310158-26-000063:item_1a_risk_factors:0009
+      - 0000310158-26-000063:item_1a_risk_factors:0008
+      - 0000310158-26-000063:item_1a_risk_factors:0024
+      - 0000310158-26-000063:item_1a_risk_factors:0001
+      - 0000310158-26-000063:item_1a_risk_factors:0002
+      - 0000310158-26-000063:item_1a_risk_factors:0023
+      - 0000310158-26-000063:item_1a_risk_factors:0021
+      - 0000310158-26-000063:item_1a_risk_factors:0019
+      - 0000310158-26-000063:item_1a_risk_factors:0007
+      - 0000310158-26-000063:item_1a_risk_factors:0000
+    gold_case: happy_mixed_quant_qual
+    notes: "Keytruda 49% of sales; biosimilar competition expected 2028-2029 US, 2031 Europe"
+
+  - id: ff_mrk_gardasil_china
+    query: "HPV vaccine shipment pause and weak demand in China"
+    ticker: MRK
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000310158-26-000063:item_1a_risk_factors:0012
+    judged_chunk_ids:
+      - 0000310158-26-000063:item_1a_risk_factors:0012
+      - 0000310158-26-000063:item_1a_risk_factors:0018
+      - 0000310158-26-000063:item_1a_risk_factors:0013
+      - 0000310158-26-000063:item_1a_risk_factors:0007
+      - 0000310158-26-000063:item_1a_risk_factors:0017
+      - 0000310158-26-000063:item_1a_risk_factors:0019
+      - 0000310158-26-000063:item_1a_risk_factors:0014
+      - 0000310158-26-000063:item_1a_risk_factors:0004
+      - 0000310158-26-000063:item_1a_risk_factors:0015
+      - 0000310158-26-000063:item_1a_risk_factors:0008
+      - 0000310158-26-000063:item_1a_risk_factors:0011
+      - 0000310158-26-000063:item_1a_risk_factors:0001
+      - 0000310158-26-000063:item_1a_risk_factors:0016
+    gold_case: happy_mrk_lly_risks
+    notes: "Gardasil China: shipments paused since Feb 2025, channel inventory, local nine-valent competitor"
+
+  - id: ff_mrk_ira_selections
+    query: "products chosen for Medicare government price setting"
+    ticker: MRK
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000310158-26-000063:item_1a_risk_factors:0006
+      - 0000310158-26-000063:item_1a_risk_factors:0016
+    judged_chunk_ids:
+      - 0000310158-26-000063:item_1a_risk_factors:0006
+      - 0000310158-26-000063:item_1a_risk_factors:0007
+      - 0000310158-26-000063:item_1a_risk_factors:0016
+      - 0000310158-26-000063:item_1a_risk_factors:0008
+      - 0000310158-26-000063:item_1a_risk_factors:0013
+      - 0000310158-26-000063:item_1a_risk_factors:0017
+      - 0000310158-26-000063:item_1a_risk_factors:0024
+      - 0000310158-26-000063:item_1a_risk_factors:0003
+      - 0000310158-26-000063:item_1a_risk_factors:0019
+      - 0000310158-26-000063:item_1a_risk_factors:0009
+      - 0000310158-26-000063:item_1a_risk_factors:0014
+    gold_case: happy_mrk_lly_risks
+    notes: "IRA price-setting selections: Januvia 2026, Janumet 2027, Lenvima 2028, Keytruda expected 2029; near-duplicate coverage in two risk factors"
+
+  - id: ff_mrk_winrevair
+    query: "pulmonary arterial hypertension therapy launch sales trajectory"
+    ticker: MRK
+    population: freeform
+    relevant_chunk_ids:
+      - 0000310158-25-000059:item_2_mda:0014
+      - 0000310158-26-000063:item_7_mda:0019
+      - 0000310158-26-000063:item_7_mda:0020
+      - 0001628280-25-021834:item_2_mda:0008
+      - 0001628280-26-029802:item_2_mda:0010
+      - 0001628280-26-029802:item_2_mda:0011
+    judged_chunk_ids:
+      - 0000310158-25-000059:item_2_mda:0014
+      - 0000310158-26-000063:item_7_mda:0020
+      - 0001628280-26-029802:item_2_mda:0011
+      - 0000310158-25-000014:item_2_mda:0012
+      - 0001628280-25-021834:item_2_mda:0008
+      - 0000310158-25-000014:item_2_mda:0004
+      - 0001628280-26-029802:item_2_mda:0003
+      - 0001628280-25-021834:item_2_mda:0003
+      - 0000310158-26-000063:item_7_mda:0021
+      - 0000310158-25-000059:item_2_mda:0015
+      - 0001628280-26-029802:item_2_mda:0010
+      - 0000310158-25-000059:item_2_mda:0004
+      - 0000310158-26-000063:item_7_mda:0002
+      - 0000310158-26-000063:item_1_business:0032
+      - 0000310158-25-000059:item_2_mda:0005
+    notes: "Winrevair PAH launch ramp to $1.4B in 2025, ZENITH label expansion, 22% BMS royalty"
+
+  - id: ff_lly_concentration
+    query: "revenue concentration in leading obesity and diabetes therapies"
+    ticker: LLY
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0006
+      - 0000059478-26-000013:item_1a_risk_factors:0007
+    judged_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0007
+      - 0000059478-26-000013:item_1a_risk_factors:0001
+      - 0000059478-26-000013:item_1a_risk_factors:0004
+      - 0000059478-26-000013:item_1a_risk_factors:0005
+      - 0000059478-26-000013:item_1a_risk_factors:0008
+      - 0000059478-26-000013:item_1a_risk_factors:0002
+      - 0000059478-26-000013:item_1a_risk_factors:0006
+      - 0000059478-26-000013:item_1a_risk_factors:0023
+      - 0000059478-26-000013:item_1a_risk_factors:0015
+      - 0000059478-26-000013:item_1a_risk_factors:0000
+      - 0000059478-26-000013:item_1a_risk_factors:0003
+      - 0000059478-26-000013:item_1a_risk_factors:0020
+      - 0000059478-26-000013:item_1a_risk_factors:0019
+    gold_case: happy_mixed_quant_qual
+    notes: "Six products 82% of revenue; Mounjaro + Zepbound 56%; CVS Caremark dropping Zepbound coverage"
+
+  - id: ff_lly_price_controls
+    query: "government price controls and negotiated pricing agreements on drugs"
+    ticker: LLY
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0004
+      - 0000059478-26-000013:item_1a_risk_factors:0005
+      - 0000059478-26-000013:item_1a_risk_factors:0020
+    judged_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0004
+      - 0000059478-26-000013:item_1a_risk_factors:0006
+      - 0000059478-26-000013:item_1a_risk_factors:0005
+      - 0000059478-26-000013:item_1a_risk_factors:0020
+      - 0000059478-26-000013:item_1a_risk_factors:0024
+      - 0000059478-26-000013:item_1a_risk_factors:0023
+      - 0000059478-26-000013:item_1a_risk_factors:0021
+      - 0000059478-26-000013:item_1a_risk_factors:0008
+      - 0000059478-26-000013:item_1a_risk_factors:0003
+      - 0000059478-26-000013:item_1a_risk_factors:0019
+      - 0000059478-26-000013:item_1a_risk_factors:0010
+      - 0000059478-26-000013:item_1a_risk_factors:0017
+      - 0000059478-26-000013:item_1a_risk_factors:0014
+      - 0000059478-26-000013:item_1a_risk_factors:0007
+    gold_case: happy_mrk_lly_risks
+    notes: "Nov 2025 MFN agreement, obesity-access cash-pay risk, IRA selections Jardiance 2026, Trulicity/Verzenio 2028"
+
+  - id: ff_lly_counterfeit_glp1
+    query: "counterfeit and compounded weight-loss drug proliferation"
+    ticker: LLY
+    sections: [item_1a_risk_factors]
+    population: freeform
+    relevant_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0003
+    judged_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0003
+      - 0000059478-26-000013:item_1a_risk_factors:0006
+      - 0000059478-26-000013:item_1a_risk_factors:0024
+      - 0000059478-26-000013:item_1a_risk_factors:0001
+      - 0000059478-26-000013:item_1a_risk_factors:0023
+      - 0000059478-26-000013:item_1a_risk_factors:0004
+      - 0000059478-26-000013:item_1a_risk_factors:0007
+      - 0000059478-26-000013:item_1a_risk_factors:0011
+      - 0000059478-26-000013:item_1a_risk_factors:0008
+      - 0000059478-26-000013:item_1a_risk_factors:0005
+      - 0000059478-26-000013:item_1a_risk_factors:0002
+      - 0000059478-26-000013:item_1a_risk_factors:0019
+      - 0000059478-26-000045:item_1a_risk_factors:0000
+      - 0000059478-25-000132:item_1a_risk_factors:0000
+    gold_case: happy_mrk_lly_risks
+    notes: "Counterfeit, misbranded, mass-compounded incretins undermining brand and patient safety"
+
+  - id: ff_lly_growth_drivers
+    query: "main drivers of sharp annual revenue growth"
+    ticker: LLY
+    population: freeform
+    relevant_chunk_ids:
+      - 0000059478-25-000132:item_2_mda:0000
+      - 0000059478-25-000132:item_2_mda:0004
+      - 0000059478-25-000132:item_2_mda:0005
+      - 0000059478-25-000204:item_2_mda:0000
+      - 0000059478-25-000204:item_2_mda:0006
+      - 0000059478-25-000204:item_2_mda:0007
+      - 0000059478-25-000254:item_2_mda:0000
+      - 0000059478-25-000254:item_2_mda:0006
+      - 0000059478-25-000254:item_2_mda:0007
+      - 0000059478-26-000013:item_7_mda:0000
+      - 0000059478-26-000013:item_7_mda:0005
+      - 0000059478-26-000013:item_7_mda:0007
+      - 0000059478-26-000045:item_2_mda:0000
+      - 0000059478-26-000045:item_2_mda:0005
+      - 0000059478-26-000045:item_2_mda:0006
+    judged_chunk_ids:
+      - 0000059478-26-000013:item_1a_risk_factors:0007
+      - 0000059478-25-000204:item_2_mda:0006
+      - 0000059478-26-000045:item_2_mda:0005
+      - 0000059478-25-000132:item_2_mda:0005
+      - 0000059478-26-000013:item_7_mda:0012
+      - 0000059478-25-000204:item_2_mda:0007
+      - 0000059478-26-000013:item_7_mda:0005
+      - 0000059478-26-000013:item_7_mda:0007
+      - 0000059478-25-000254:item_2_mda:0000
+      - 0000059478-25-000132:item_2_mda:0000
+      - 0000059478-25-000204:item_2_mda:0000
+      - 0000059478-25-000132:item_2_mda:0006
+      - 0000059478-25-000204:item_2_mda:0005
+      - 0000059478-26-000045:item_2_mda:0000
+      - 0000059478-25-000132:item_2_mda:0004
+      - 0000059478-25-000254:item_2_mda:0007
+      - 0000059478-26-000013:item_1_business:0017
+      - 0000059478-25-000254:item_2_mda:0006
+      - 0000059478-26-000013:item_1a_risk_factors:0001
+      - 0000059478-26-000045:item_2_mda:0006
+    notes: "Revenue +45% to $65.2B driven by Mounjaro ($23.0B, +99%) and Zepbound ($13.5B, +175%)"

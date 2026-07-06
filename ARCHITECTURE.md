@@ -84,7 +84,7 @@ The durability claim is proven, not asserted: a SIGKILL suite (`tests/kill_resum
 
 ## Retrieval and data layer
 
-- **Qdrant, hybrid.** BGE-M3 dense vectors plus a learned sparse vector, fused at query time. BGE-M3 embeds on CPU. ColBERT multi-vector reranking is indexed-but-unused at v1 (decision 9); adding it requires collection recreation and a re-ingest.
+- **Qdrant, hybrid.** BGE-M3 dense vectors plus a learned sparse vector, fused with RRF at query time. BGE-M3 embeds on CPU. ColBERT multi-vector output is neither computed nor stored (the embedder passes `return_colbert_vecs=False`; the collection has no multivector field); the measured case for keeping it that way is in [Retrieval](#retrieval) below.
 - **Postgres, facts and traces.** XBRL company facts, the LangGraph checkpointer, and the `trace_events` table that drives both the eval harness and cost accounting.
 - **Concept normalization.** Cross-company comparison needs the same metric across different XBRL tags - PG's `us-gaap:Revenues` vs AAPL's `us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax`. `config/concept_aliases.yaml` holds curated fallback chains per concept, with per-ticker overrides. It is hand-curated for the 12-company corpus.
 - **Ingest** is offline and separate from the graph: EDGAR fetcher -> HTML parser with Item segmentation (BeautifulSoup + lxml) -> chunker -> Qdrant writer and Postgres facts.
@@ -120,6 +120,29 @@ Deterministic scoring over the full gold set (`scripts/run_classification_eval.p
 | Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
 
 The classifier and resolver separate refuse-vs-answer perfectly on the gold set (9 true refusals caught, 0 false refusals). The remaining axis error is `growth` over-prediction (recall 1.0, precision 0.77). An earlier 0.69 refusal precision was a resolver alias bug (`"Eli Lilly"` not matching `"Eli Lilly and Company"`), since fixed.
+
+### Retrieval
+
+Measures the Qdrant index directly: hybrid (dense + sparse RRF, the production configuration) against dense-only and sparse-only, on a labeled set built for the two query populations the system actually issues ([`eval/datasets/retrieval_v1.yaml`](eval/datasets/retrieval_v1.yaml), 55 queries, 350 labeled positives). The 12 `planner` queries are the fixed `risk_factors` axis query per ticker; the 43 `freeform` queries are critic/MCP-style topic probes authored against chunk text and paraphrased to avoid verbatim lexical matches. Candidates were pooled from the union of all three arms' top-10 (732 judged pairs); labeling criteria and protocol are in the dataset header. Runner: `scripts/run_retrieval_eval.py` (deterministic, no LLM calls; artifact in [`eval/results/retrieval-v1/`](eval/results/retrieval-v1/)).
+
+Freeform (43 queries; success@k = any positive in top k, the operative metric since positives repeat across 10-K/10-Q filings):
+
+| Metric | hybrid | dense | sparse |
+|--------|--------|-------|--------|
+| success@1  | 0.84 | 0.93 | 0.81 |
+| success@5  | 0.98 | 0.98 | 0.91 |
+| success@10 | 1.00 | 1.00 | 1.00 |
+| recall@5   | 0.70 | 0.67 | 0.68 |
+| MRR        | 0.91 | 0.96 | 0.86 |
+
+Planner (12 queries, judged precision@5 of substantive risk content): 0.92 for all three arms - identical because the section filter, not ranking, dominates. The single miss is PFE at 0.00: its 10-K `item_1a` chunks are mislabeled Item 7A market-risk and accounting-standards text, and its 10-Q chunks are cross-reference stubs, so the production `risk_factors` path retrieves no usable risk content for PFE. That is a parser defect measured end to end, not a retrieval failure; the fix belongs in section segmentation.
+
+Decisions:
+
+- **Hybrid stays**, narrowly. It ties dense on success@5 and leads recall@5; the analyst consumes the whole top-5, so the first-hit metrics where dense wins (success@1 0.93 vs 0.84 - four queries where RRF promotes a sparse-favored near-miss to rank 1) do not change evidence sets. Dense-only is a defensible simplification; the data does not show hybrid dominance.
+- **ColBERT stays out.** Every arm reaches success@10 = 1.00 on the labeled set, so a reranking stage has no headroom to buy. Adding it would cost multivector storage, per-upsert compute, collection recreation, and a re-ingest. Earlier revisions of this document called ColBERT "indexed-but-unused"; that was wrong - it was never computed or stored.
+
+Caveats: single small corpus (3,090 indexed chunks), pooled labeling only judges what some arm surfaced (author-known positives no arm retrieved are kept as recall misses), and queries plus labels were authored with LLM assistance against chunk text with hand adjudication of disagreements.
 
 ### Judge correlation - the two-tier judge that did not survive contact
 
@@ -202,7 +225,8 @@ Honest framing: the local classifier is a portfolio statement, not a v1 cost win
 - **The judge shares a model with the system.** Sonnet writes the reports and Sonnet scores them, so same-model self-preference is a real risk. It is disclosed, not measured: there is no human-agreement number, by decision. What bounds it: quant faithfulness is deterministic code (value + unit + period against Postgres, no judge involved), status match is deterministic, and the one cheap alternative judge tested (local 7B) was rejected on measured grounds above. A cross-model judge re-correlation is the cheap next step if this ever needs tightening.
 - **Filing text is untrusted input.** A prompt injection embedded in a 10-K would reach the analyst and critic prompts. The blast radius is bounded to prose: citations are code-built (a model cannot mint one) and the synthesizer's uncited-number strip removes unbacked figures. The red-team harness (`scripts/run_injection_eval.py`, 11 vectors + a benign control) plants adversarial text into the retrieval corpus under a matching ticker and section and drives each probe through the full graph. Measured result: **0 leaks over 9 measured vectors**, control clean, critic engaging on nearly every case; 2 vectors are unmeasured (`inj_cross_company` needs per-ticker figure attribution, `inj_grounding_flag` needs a no-injection counterfactual since a genuinely-evidenced axis also grounds `ok`). This is a single small-N run with no explicit data/instruction delimiting layer yet - delimiting plus the two counterfactuals are the v2 items. The current read is that grounded-by-construction citations plus the critic resist every measurable vector.
 - **Hand-curated concept aliases.** `config/concept_aliases.yaml` is curated for the 12-company corpus. Adding tickers from new sectors means extending it and re-populating the Postgres table. At ~50+ companies, an automated XBRL-taxonomy resolver becomes worth building.
-- **ColBERT reranking is indexed-but-unused** at v1; v1 ships dense + sparse hybrid only (decision 9). Adding it requires collection recreation plus a re-ingest.
+- **PFE risk factors are unretrievable.** The PFE 10-K `item_1a` parse captured mislabeled Item 7A market-risk text and its 10-Q sections are cross-reference stubs, so the `risk_factors` axis has no usable PFE text to retrieve (planner precision@5 = 0.00 in the retrieval eval, vs 1.00 for the other 11 tickers). Section-segmentation fix, known and unshipped. The same eval surfaced smaller variants: MSFT's 10-K `item_1a` parsed to a single chunk, and some PFE MD&A-adjacent content landed under `item_9c`.
+- **ColBERT reranking is not built and measured unnecessary** - all arms hit success@10 = 1.00 on the labeled retrieval set (see [Retrieval](#retrieval)). Revisit only if the corpus grows past the point where the labeled numbers stop holding.
 - **Local classifier economics** - see [Local model serving](#local-model-serving). A capability demonstration, not a cost win at v1 scale.
 
 ## Repo layout

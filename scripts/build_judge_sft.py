@@ -128,6 +128,7 @@ def main() -> int:
     for name, rows in (("train", train), ("val", val)):
         path = args.out / f"{name}.jsonl"
         path.write_text("".join(json.dumps(r) + "\n" for r in rows))
+    (args.out / "val_case_ids.txt").write_text("".join(cid + "\n" for cid in sorted(val_ids)))
 
     def _counts(rows: list[dict]) -> str:
         f = sum(1 for r in rows if r["task"] == "faithfulness")

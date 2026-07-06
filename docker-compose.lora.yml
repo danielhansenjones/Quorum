@@ -1,0 +1,20 @@
+# LoRA overlay: serves the QLoRA judge adapter on the AWQ base for the
+# correlation gate. Layer it over the base file only when scoring the fine-tune:
+#   docker compose -f docker-compose.yml -f docker-compose.lora.yml --profile gpu up -d vllm
+# The base vLLM service (classifier) stays adapter-free so it never fails to start
+# when eval/models/judge-qlora is absent.
+services:
+  vllm:
+    volumes:
+      - ./data/vllm-cache:/root/.cache/huggingface
+      - ./eval/models:/adapters:ro
+    command:
+      - "--model=Qwen/Qwen2.5-7B-Instruct-AWQ"
+      - "--quantization=awq_marlin"
+      - "--max-model-len=8192"
+      - "--gpu-memory-utilization=0.75"
+      - "--dtype=auto"
+      - "--enable-lora"
+      - "--max-lora-rank=16"
+      - "--lora-modules"
+      - "judge-qlora=/adapters/judge-qlora"

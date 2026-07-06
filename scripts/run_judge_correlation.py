@@ -18,7 +18,7 @@ from quorum.eval.judges import (
     verify_qual_citation,
     verify_quant_citation,
 )
-from quorum.models.router import get_client
+from quorum.models.router import DEFAULT_VLLM_MODEL, get_client
 from quorum.state.citation import QualCitation, QuantCitation
 from quorum.trace.writer import open_pool
 
@@ -45,6 +45,18 @@ def main() -> int:
     )
     parser.add_argument("--run-dir", type=Path, default=DEFAULT_RUN)
     parser.add_argument("--vllm-url", type=str, default=DEFAULT_VLLM)
+    parser.add_argument(
+        "--vllm-model",
+        type=str,
+        default=DEFAULT_VLLM_MODEL,
+        help="Served model for the local judge. Set to the LoRA adapter (e.g. judge-qlora) to gate the fine-tune.",
+    )
+    parser.add_argument(
+        "--only-cases",
+        type=Path,
+        default=None,
+        help="File of case_ids (one per line) to restrict scoring to; point at the SFT val split for a held-out gate.",
+    )
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
     parser.add_argument(
         "--pairs-out",
@@ -61,7 +73,7 @@ def main() -> int:
     settings = get_settings()
     pool = open_pool(conninfo=settings.postgres_url, min_size=1, max_size=settings.pg_pool_max)
     qdrant = QdrantClient(url=settings.qdrant_url)
-    local_judge = get_client("judge_dev", vllm_url=args.vllm_url)
+    local_judge = get_client("judge_dev", vllm_url=args.vllm_url, vllm_model=args.vllm_model)
     if local_judge.backend != "vllm":
         print(f"local judge resolved to {local_judge.backend}, not vllm; pass --vllm-url")
         return 2
@@ -78,8 +90,13 @@ def main() -> int:
     local_quality_failures = 0
 
     case_files = [p for p in sorted(args.run_dir.glob("*.json")) if p.name != "summary.json"]
+    allowed = None
+    if args.only_cases:
+        allowed = {ln.strip() for ln in args.only_cases.read_text().splitlines() if ln.strip()}
     for i, p in enumerate(case_files, start=1):
         d = json.loads(p.read_text())
+        if allowed is not None and d.get("case_id") not in allowed:
+            continue
         if d.get("final_status") not in ("ok", "partial"):
             continue
         report = d.get("report") or ""

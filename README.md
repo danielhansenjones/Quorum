@@ -23,7 +23,7 @@ Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum classifies 
 
 - **A graph, not a chain.** Analysts fan out in parallel (LangGraph `Send`), an `assess` node re-plans only the weakly-grounded axes within a step budget, and an agentic critic verifies the draft before synthesis. Branching, re-planning, and a bounded agent loop in one graph.
 - **Agentic fact-checking.** The critic runs a bounded tool loop (5 turns / 90s) over the same XBRL facts and filing text the analysts used, flags unsupported claims, and the synthesizer acts on every flag.
-- **Grounded in real data.** 12 companies across Big Tech, Consumer Staples, and Pharma; the latest 10-K plus four 10-Qs each (~60 filings, ~6000 chunks). Quant -> XBRL facts in Postgres; qual -> hybrid search over Qdrant (BGE-M3 dense + learned sparse).
+- **Grounded in real data.** 12 companies across Big Tech, Consumer Staples, and Pharma; the latest 10-K plus four 10-Qs each (~60 filings, 3,090 indexed chunks). Quant -> XBRL facts in Postgres; qual -> hybrid search over Qdrant (BGE-M3 dense + learned sparse).
 - **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: faithfulness 4.56/5, quality 4.62/5, refusal decisions 9/9 exact, and status-match 29/41 where every miss is a one-notch ok/partial completeness call (0 judge failures, 0 errors). Classifier axis macro-F1 0.92; refusal precision and recall 1.0. Every number traces to a committed artifact under [`eval/results/`](eval/results/).
 - **Honest eval methodology.** A judge-correlation study tested a cheap local 7B judge against Sonnet and rejected it (qual-only faithfulness Spearman 0.46 against a 0.7 gate; quality 0.597 against 0.6). Sonnet judges everything; the decision, gates, and raw per-case pairs are checked into [`eval/judge_config.yaml`](eval/judge_config.yaml) and [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
 - **Does the critic earn its cost? Measured.** A four-arm paired A/B campaign (critic on/off, a critic-analyst rebuttal loop, a tiered agentic analyst) with bootstrap CIs: the critic adds +0.07 quality at +$0.086/case with faithfulness flat; the rebuttal loop posts the only statistically significant quality gain (+0.10) but nudges faithfulness down, so it ships off by the pre-registered rule; the agentic analyst loses on both and ships off. Numbers and the decision reasoning are in [ARCHITECTURE.md](ARCHITECTURE.md#ab-does-the-critic-earn-its-cost).
@@ -171,7 +171,7 @@ uv sync --extra eval --group dev
 uv run python -m quorum.ingest.run
 ```
 
-Ingest pulls 12 companyfacts JSONs plus ~60 filings and embeds ~6000 chunks on CPU. Budget about an hour on a 9950X3D.
+Ingest pulls 12 companyfacts JSONs plus ~60 filings and embeds 3,090 chunks on CPU (financial-statement sections are excluded from the vector index and surfaced as XBRL facts instead). Budget about an hour on a 9950X3D.
 
 LLM calls need `ANTHROPIC_API_KEY` in the environment. `./secret-run` in the commands on this page is a local keyring wrapper (libsecret exec) that injects the key without echoing it anywhere; it is not part of the repo. `export ANTHROPIC_API_KEY=...` (or the commented line in `.env`) works in its place.
 

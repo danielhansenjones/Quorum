@@ -127,7 +127,9 @@ def _rescore(results_path: Path, dataset_path: Path) -> int:
     # without re-driving the graph. The observations in results.json are the
     # ground truth of what the model did; only the verdicts change.
     prior = json.loads(results_path.read_text())
-    detect_by_id = {c["id"]: c for c in (yaml.safe_load(dataset_path.read_text()) or {}).get("cases", [])}
+    detect_by_id = {
+        c["id"]: c for c in (yaml.safe_load(dataset_path.read_text()) or {}).get("cases", [])
+    }
     changed = 0
     for r in prior["cases"]:
         case = detect_by_id.get(r["id"])

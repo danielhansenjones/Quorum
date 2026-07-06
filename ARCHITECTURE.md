@@ -142,7 +142,7 @@ Decisions:
 - **Hybrid stays**, narrowly. It ties dense on success@5 and leads recall@5; the analyst consumes the whole top-5, so the first-hit metrics where dense wins (success@1 0.93 vs 0.84 - four queries where RRF promotes a sparse-favored near-miss to rank 1) do not change evidence sets. Dense-only is a defensible simplification; the data does not show hybrid dominance.
 - **ColBERT stays out.** Every arm reaches success@10 = 1.00 on the labeled set, so a reranking stage has no headroom to buy. Adding it would cost multivector storage, per-upsert compute, collection recreation, and a re-ingest. Earlier revisions of this document called ColBERT "indexed-but-unused"; that was wrong - it was never computed or stored.
 
-Caveats: single small corpus (3,090 indexed chunks), pooled labeling only judges what some arm surfaced (author-known positives no arm retrieved are kept as recall misses), and queries plus labels were authored with LLM assistance against chunk text with hand adjudication of disagreements.
+Caveats: single small corpus (2,895 indexed chunks), pooled labeling only judges what some arm surfaced (author-known positives no arm retrieved are kept as recall misses), and queries plus labels were authored with LLM assistance against chunk text with hand adjudication of disagreements.
 
 ### Judge correlation - the two-tier judge that did not survive contact
 

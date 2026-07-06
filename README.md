@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/danielhansenjones/Quorum/actions/workflows/ci.yml/badge.svg)](https://github.com/danielhansenjones/Quorum/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![refusal-accuracy](https://img.shields.io/badge/refusal--accuracy-9%2F9-success)](#results)
 [![status-match](https://img.shields.io/badge/status--match-29%2F41-success)](#results)
 [![faithfulness](https://img.shields.io/badge/faithfulness-4.6%2F5-success)](#results)
 [![quality](https://img.shields.io/badge/quality-4.6%2F5-success)](#results)
@@ -23,7 +24,7 @@ Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum classifies 
 - **A graph, not a chain.** Analysts fan out in parallel (LangGraph `Send`), an `assess` node re-plans only the weakly-grounded axes within a step budget, and an agentic critic verifies the draft before synthesis. Branching, re-planning, and a bounded agent loop in one graph.
 - **Agentic fact-checking.** The critic runs a bounded tool loop (5 turns / 90s) over the same XBRL facts and filing text the analysts used, flags unsupported claims, and the synthesizer acts on every flag.
 - **Grounded in real data.** 12 companies across Big Tech, Consumer Staples, and Pharma; the latest 10-K plus four 10-Qs each (~60 filings, ~6000 chunks). Quant -> XBRL facts in Postgres; qual -> hybrid search over Qdrant (BGE-M3 dense + learned sparse).
-- **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: faithfulness 4.56/5, quality 4.62/5, status-match 29/41 (0 judge failures). Classifier axis macro-F1 0.92; refusal precision and recall 1.0. Every number traces to a committed artifact under [`eval/results/`](eval/results/).
+- **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: faithfulness 4.56/5, quality 4.62/5, refusal decisions 9/9 exact, and status-match 29/41 where every miss is a one-notch ok/partial completeness call (0 judge failures, 0 errors). Classifier axis macro-F1 0.92; refusal precision and recall 1.0. Every number traces to a committed artifact under [`eval/results/`](eval/results/).
 - **Honest eval methodology.** A judge-correlation study tested a cheap local 7B judge against Sonnet and rejected it (quality Spearman 0.11). Sonnet judges everything; the decision and its gates are checked into [`eval/judge_config.yaml`](eval/judge_config.yaml).
 - **Does the critic earn its cost? Measured.** A four-arm paired A/B campaign (critic on/off, a critic-analyst rebuttal loop, a tiered agentic analyst) with bootstrap CIs: the critic adds +0.07 quality at +$0.086/case with faithfulness flat; the rebuttal loop posts the only statistically significant quality gain (+0.10) but nudges faithfulness down, so it ships off by the pre-registered rule; the agentic analyst loses on both and ships off. Numbers and the decision reasoning are in [ARCHITECTURE.md](ARCHITECTURE.md#ab-does-the-critic-earn-its-cost).
 - **Durable by construction, proven by SIGKILL.** A Postgres checkpointer writes state at every super-step; `/runs/{id}/resume` re-drives from the last checkpoint, and re-run nodes hit a canonical-JSON LLM cache. A kill-resume suite in CI SIGKILLs runs mid-LLM-call, mid-fan-out, and mid-critic-turn: every resume finishes with a byte-identical report and zero duplicate API calls.
@@ -100,10 +101,17 @@ Anthropic Sonnet powers the analyst, synthesizer, critic, and canonical judge. H
 
 | Metric | Value |
 |--------|-------|
-| Status match (ok / partial / refused) | 29 / 41 (0.71) |
-| Faithfulness mean (32 answered cases) | 4.56 / 5 |
-| Quality mean (41 cases)               | 4.62 / 5 |
-| Faithfulness / quality judge failures | 0 / 0 |
+| Refusal decisions (answer vs refuse)            | 9 / 9 exact    |
+| Completeness match, answered cases (ok / partial) | 20 / 32      |
+| Overall status match                            | 29 / 41 (0.71) |
+| Faithfulness mean (32 answered cases)           | 4.56 / 5       |
+| Quality mean (41 cases)                         | 4.62 / 5       |
+| Faithfulness / quality judge failures           | 0 / 0          |
+
+All 12 status misses are one-notch `ok`/`partial` completeness calls (8 where the
+system was more conservative than the gold label, 4 less); no wrong refusals, no
+errors, no crashes. The refusal boundary and the completeness boundary are scored
+separately above because they fail for different reasons - see [Limitations](#limitations).
 
 Classifier, deterministic scoring over the full gold set:
 
@@ -112,6 +120,8 @@ Classifier, deterministic scoring over the full gold set:
 | Axis macro-F1                         | 0.92 |
 | Axis exact-set-match                  | 0.85 |
 | Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
+
+A prompt-injection red team (11 attack vectors plus a benign control) plants adversarial text into the retrieval corpus under a matching ticker and section, then drives each probe through the full graph: **0 leaks over 9 measured vectors** (2 unmeasured, control clean), with the critic engaging on nearly every case. Harness and cases are in [`scripts/run_injection_eval.py`](scripts/run_injection_eval.py) and [`eval/datasets/injection_v1.yaml`](eval/datasets/injection_v1.yaml).
 
 Faithfulness is deterministic for quant citations (value + unit + period checked against Postgres) and LLM-judged for qual citations. The judge-correlation study rejected a cheap local 7B judge on quality (Spearman 0.11 against Sonnet) and kept Sonnet as the sole judge. The critic-on-vs-off A/B ran as a four-arm campaign: the critic adds +0.067 quality (95% CI -0.037 to +0.183) at +$0.086/case with faithfulness flat, and synthesis acted on all 56 flagged claims (incorporation rate 1.0). Per-case artifacts behind every number (reports, scores, citations, paired compares) are committed under [`eval/results/campaign-critic/`](eval/results/campaign-critic/) and [`eval/results/campaign-compares/`](eval/results/campaign-compares/). Full tables, the cost breakdown, and the honest analysis behind each number are in [ARCHITECTURE.md](ARCHITECTURE.md#eval-harness).
 
@@ -179,6 +189,7 @@ A few honest edges, with the full list in [ARCHITECTURE.md](ARCHITECTURE.md#limi
 - The `assess` node over-flags well-grounded qualitative axes as weak (8 of the 12 status mismatches); the grounding heuristic is tuned for quant-fact density and under-credits qual evidence. This is the main reason status match reads 29/41.
 - Sonnet writes the reports and Sonnet judges them. Same-model self-preference is disclosed, not measured; what bounds it is that quant faithfulness and status match are deterministic code, not judge opinion.
 - The local Qwen classifier is a portfolio statement, not a v1 cost win: Haiku is cheaper than the GPU time at this scale. The honest framing is in the architecture doc.
+- The prompt-injection result (0 leaks over 9 measured vectors) is a single-run red team: 2 vectors are unmeasured, N is small, and there is no explicit data/instruction delimiting layer yet. Delimiting plus a no-injection counterfactual for the grounding vector are v2 items; the current result is that the grounded-by-construction design and the critic already resist every measurable vector.
 
 ## More
 

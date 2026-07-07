@@ -38,6 +38,8 @@ uv run uvicorn quorum.api.main:app --port 8000
 uv run python scripts/demo.py "Compare Coca-Cola and PepsiCo on profitability and growth." --step 0.5 --cost
 ```
 
+No live endpoint by design: anonymous traffic burns API credits and an auth wall defeats the point, so the hosted demo is a committed replay. Browse real outputs without cloning in the [report gallery](https://danielhansenjones.github.io/Quorum/) - each page shows the question, final report, critic flags, and judge scores, generated from the committed critic arm by [`scripts/build_gallery.py`](scripts/build_gallery.py).
+
 ## What it produces
 
 From a committed campaign case ([`happy_aapl_msft_profitability`](eval/results/campaign-critic/happy_aapl_msft_profitability.json)). The analyst writes with every figure cited:
@@ -151,6 +153,7 @@ Each graph feature is a `build_graph` flag and an eval arm. The four-arm campaig
 | ColBERT reranking? | Every retrieval arm already hits success@10 = 1.00 | Not built. There is no headroom for it to buy |
 | Hybrid or dense-only retrieval? | Hybrid ties dense on success@5, leads recall@5 | Hybrid stays, narrowly. Dense-only is a defensible simplification |
 | Local Qwen or Haiku classifier? | Macro-F1 0.88 vs 0.89, refusal perfect on both | Local when a GPU is present (near-zero marginal cost), Haiku fallback |
+| Why AWQ-4bit, not bf16? | bf16 7B (~15GB) leaves no room for the KV cache in 16GB after the desktop compositor's ~2GB; AWQ-4bit fits with continuous batching intact, at ~1 macro-F1 point (0.88 vs 0.89). Serves 2,545 / 2,052 tok/s (classifier / judge) at 32-way concurrency | AWQ-4bit. The constraint that makes local serving fit, not a tuning knob |
 
 The judge is worth expanding as a measurement problem. The plan called for a cheap local judge for fast iteration with Sonnet as the canonical reference, but the base Qwen 7B turned out to be a near-constant scorer and failed both gates. The fix was distillation: [`scripts/build_judge_sft.py`](scripts/build_judge_sft.py) turns the committed campaign artifacts into 583 judge-prompt-to-Sonnet-verdict pairs (split by case so no question leaks across train/val), and a rank-16 QLoRA adapter trains in ~23 minutes. On a single 7-question held-out split the adapter looked strong (quality spearman 0.66), but 0.66 on 7 questions can be luck, so the gate does not trust it: it decides on the lower bound of a question-clustered confidence interval, which on 7 points runs from -0.32 to 1.0. Cross-validating over all 32 questions ([`scripts/kfold_gate.sh`](scripts/kfold_gate.sh), each case scored by an adapter that never trained on it) puts the honest number at quality spearman **0.50** (95% CI [0.17, 0.75]) - real agreement, but below the 0.6 gate, so `use_local_for_iteration` stays false and Sonnet remains canonical. The distillation still clearly worked: on the same 32 questions a frontier GPT-5.1 judge agrees with Sonnet at only 0.28, so the local 7B tracks Sonnet's quality better than a cross-vendor model does - it just does not clear the bar for autonomous use. That [cross-vendor audit](eval/results/crossvendor/audit.json) also catches Sonnet favoring its own prose faithfulness by ~0.7 points. Study, gates, and cross-validation pairs under [`eval/results/`](eval/results).
 
@@ -196,7 +199,7 @@ The full list with case-level receipts is in [ARCHITECTURE.md](ARCHITECTURE.md#l
 
 - The corpus is fixed at the latest 10-K plus four 10-Qs per company. A question that exceeds that window is answered on the available slice without flagging the shortfall; detecting the under-scope and downgrading to `partial` is a v2 item (4 of the 12 status misses).
 - The `assess` node over-flags well-grounded qualitative axes as weak because its grounding heuristic is tuned for quant-fact density (8 of the 12 status misses, and the main reason status match reads 29/41).
-- Sonnet writes the reports and Sonnet judges them. Self-preference is disclosed, not measured; what bounds it is that quant faithfulness and status match are deterministic code, not judge opinion.
+- Sonnet writes the reports and Sonnet judges them, so same-family self-preference is a real risk. A GPT-5.1 cross-vendor audit measures it: no detectable quality preference (delta -0.09, CI crosses zero), and the one real effect (Sonnet +0.73 more lenient on qualitative faithfulness) stays off the headline number, which is quant-dominated and code-verified.
 - The injection result is a single small-N run with no explicit data/instruction delimiting layer yet; 2 of the 11 vectors need counterfactual harness work before they can be scored at all.
 
 ## More

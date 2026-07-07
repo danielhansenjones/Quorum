@@ -1,0 +1,347 @@
+{
+  "config": {
+    "vllm_url": "http://localhost:8001/v1",
+    "vllm_model": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+    "lora_model": "judge-qlora",
+    "served_models": [
+      "Qwen/Qwen2.5-7B-Instruct-AWQ",
+      "judge-qlora"
+    ],
+    "levels": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "requests_per_level": 32,
+    "fixed_concurrency": 8,
+    "n_classifier_prompts": 61,
+    "n_judge_prompts": 41,
+    "report_truncation_chars": 6000
+  },
+  "provenance": {
+    "git_sha": "914b44751a650065a5ca7c2b6b005c11d378dafc",
+    "git_dirty": true,
+    "started_at": "2026-07-07T14:54:50.191924+00:00"
+  },
+  "experiments": {
+    "concurrency": {
+      "classifier": [
+        {
+          "concurrency": 1,
+          "n_requests": 32,
+          "wall_s": 8.8118,
+          "ttft_s": {
+            "p50": 0.016,
+            "p95": 0.017
+          },
+          "latency_s": {
+            "p50": 0.271,
+            "p95": 0.31
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 150.092,
+            "p95": 151.462
+          },
+          "system_tokens_per_s": 141.515,
+          "total_output_tokens": 1247
+        },
+        {
+          "concurrency": 2,
+          "n_requests": 32,
+          "wall_s": 4.5878,
+          "ttft_s": {
+            "p50": 0.022,
+            "p95": 0.025
+          },
+          "latency_s": {
+            "p50": 0.28,
+            "p95": 0.323
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 150.834,
+            "p95": 152.682
+          },
+          "system_tokens_per_s": 271.808,
+          "total_output_tokens": 1247
+        },
+        {
+          "concurrency": 4,
+          "n_requests": 32,
+          "wall_s": 2.3234,
+          "ttft_s": {
+            "p50": 0.023,
+            "p95": 0.028
+          },
+          "latency_s": {
+            "p50": 0.278,
+            "p95": 0.318
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 149.836,
+            "p95": 152.469
+          },
+          "system_tokens_per_s": 536.721,
+          "total_output_tokens": 1247
+        },
+        {
+          "concurrency": 8,
+          "n_requests": 32,
+          "wall_s": 1.2204,
+          "ttft_s": {
+            "p50": 0.025,
+            "p95": 0.034
+          },
+          "latency_s": {
+            "p50": 0.289,
+            "p95": 0.329
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 146.728,
+            "p95": 149.4
+          },
+          "system_tokens_per_s": 1021.825,
+          "total_output_tokens": 1247
+        },
+        {
+          "concurrency": 16,
+          "n_requests": 32,
+          "wall_s": 0.7107,
+          "ttft_s": {
+            "p50": 0.034,
+            "p95": 0.077
+          },
+          "latency_s": {
+            "p50": 0.335,
+            "p95": 0.378
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 137.848,
+            "p95": 144.462
+          },
+          "system_tokens_per_s": 1754.516,
+          "total_output_tokens": 1247
+        },
+        {
+          "concurrency": 32,
+          "n_requests": 32,
+          "wall_s": 0.49,
+          "ttft_s": {
+            "p50": 0.07,
+            "p95": 0.089
+          },
+          "latency_s": {
+            "p50": 0.403,
+            "p95": 0.447
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 115.908,
+            "p95": 122.529
+          },
+          "system_tokens_per_s": 2545.157,
+          "total_output_tokens": 1247
+        }
+      ],
+      "judge": [
+        {
+          "concurrency": 1,
+          "n_requests": 32,
+          "wall_s": 21.5878,
+          "ttft_s": {
+            "p50": 0.132,
+            "p95": 0.238
+          },
+          "latency_s": {
+            "p50": 0.661,
+            "p95": 0.831
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 148.195,
+            "p95": 149.252
+          },
+          "system_tokens_per_s": 119.373,
+          "total_output_tokens": 2577
+        },
+        {
+          "concurrency": 2,
+          "n_requests": 32,
+          "wall_s": 9.4074,
+          "ttft_s": {
+            "p50": 0.023,
+            "p95": 0.025
+          },
+          "latency_s": {
+            "p50": 0.562,
+            "p95": 0.769
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 145.238,
+            "p95": 147.685
+          },
+          "system_tokens_per_s": 273.722,
+          "total_output_tokens": 2575
+        },
+        {
+          "concurrency": 4,
+          "n_requests": 32,
+          "wall_s": 5.1795,
+          "ttft_s": {
+            "p50": 0.025,
+            "p95": 0.029
+          },
+          "latency_s": {
+            "p50": 0.583,
+            "p95": 0.771
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 138.823,
+            "p95": 146.616
+          },
+          "system_tokens_per_s": 496.955,
+          "total_output_tokens": 2574
+        },
+        {
+          "concurrency": 8,
+          "n_requests": 32,
+          "wall_s": 2.9819,
+          "ttft_s": {
+            "p50": 0.03,
+            "p95": 0.044
+          },
+          "latency_s": {
+            "p50": 0.624,
+            "p95": 0.804
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 131.241,
+            "p95": 143.136
+          },
+          "system_tokens_per_s": 862.865,
+          "total_output_tokens": 2573
+        },
+        {
+          "concurrency": 16,
+          "n_requests": 32,
+          "wall_s": 1.9194,
+          "ttft_s": {
+            "p50": 0.044,
+            "p95": 0.07
+          },
+          "latency_s": {
+            "p50": 0.725,
+            "p95": 0.912
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 113.005,
+            "p95": 124.406
+          },
+          "system_tokens_per_s": 1340.503,
+          "total_output_tokens": 2573
+        },
+        {
+          "concurrency": 32,
+          "n_requests": 32,
+          "wall_s": 1.2537,
+          "ttft_s": {
+            "p50": 0.084,
+            "p95": 0.12
+          },
+          "latency_s": {
+            "p50": 0.959,
+            "p95": 1.18
+          },
+          "output_tokens_per_s_per_req": {
+            "p50": 91.348,
+            "p95": 99.635
+          },
+          "system_tokens_per_s": 2052.406,
+          "total_output_tokens": 2573
+        }
+      ]
+    },
+    "guided_decoding": {
+      "constrained": {
+        "concurrency": 8,
+        "n_requests": 32,
+        "wall_s": 1.2198,
+        "ttft_s": {
+          "p50": 0.025,
+          "p95": 0.033
+        },
+        "latency_s": {
+          "p50": 0.289,
+          "p95": 0.331
+        },
+        "output_tokens_per_s_per_req": {
+          "p50": 146.403,
+          "p95": 149.902
+        },
+        "system_tokens_per_s": 1022.295,
+        "total_output_tokens": 1247,
+        "schema_valid_fraction": 1.0
+      },
+      "free": {
+        "concurrency": 8,
+        "n_requests": 32,
+        "wall_s": 1.1929,
+        "ttft_s": {
+          "p50": 0.024,
+          "p95": 0.036
+        },
+        "latency_s": {
+          "p50": 0.28,
+          "p95": 0.328
+        },
+        "output_tokens_per_s_per_req": {
+          "p50": 147.729,
+          "p95": 150.923
+        },
+        "system_tokens_per_s": 1032.748,
+        "total_output_tokens": 1232,
+        "schema_valid_fraction": 0.75
+      }
+    },
+    "lora": {
+      "base": {
+        "concurrency": 8,
+        "n_requests": 32,
+        "wall_s": 2.9813,
+        "ttft_s": {
+          "p50": 0.029,
+          "p95": 0.046
+        },
+        "latency_s": {
+          "p50": 0.623,
+          "p95": 0.809
+        },
+        "output_tokens_per_s_per_req": {
+          "p50": 130.528,
+          "p95": 143.098
+        },
+        "system_tokens_per_s": 863.043,
+        "total_output_tokens": 2573
+      },
+      "adapter": {
+        "concurrency": 8,
+        "n_requests": 32,
+        "wall_s": 10.1864,
+        "ttft_s": {
+          "p50": 0.219,
+          "p95": 0.501
+        },
+        "latency_s": {
+          "p50": 2.385,
+          "p95": 3.701
+        },
+        "output_tokens_per_s_per_req": {
+          "p50": 68.852,
+          "p95": 119.913
+        },
+        "system_tokens_per_s": 493.602,
+        "total_output_tokens": 5028
+      }
+    }
+  }
+}

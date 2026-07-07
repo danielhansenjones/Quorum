@@ -22,6 +22,11 @@ class Settings(BaseSettings):
     anthropic_api_key: str | None = None
     edgar_user_agent: str = ""
 
+    # Cross-family audit judge. Unset means the judge_audit role is unavailable
+    # and no OpenAI client is ever constructed. Set to a pinned dated snapshot
+    # (not the floating alias) so the audit is reproducible.
+    audit_judge_model: str | None = None
+
     # Concurrency. The pool formula matches the Phase 1 gate:
     # min connections must be (max_concurrent_requests * 4) + 5 to survive
     # parallel axis analysts + checkpointer writes + trace writes per node.

@@ -22,7 +22,16 @@ from quorum.models.router import DEFAULT_VLLM_MODEL, get_client
 from quorum.state.citation import QualCitation, QuantCitation
 from quorum.trace.writer import open_pool
 
-DEFAULT_RUN = Path("eval/runs/judged-full-v1-final")
+# All four campaign arms of the held-out questions. Same base case_ids, but each
+# arm is a different report, so quality n grows without touching the leakage
+# split (the split is by base case_id, so every arm of a val question is held
+# out). Restrict to the val ids with --only-cases for the honest gate.
+DEFAULT_RUN_DIRS = [
+    Path("eval/results/campaign-baseline"),
+    Path("eval/results/campaign-agentic"),
+    Path("eval/results/campaign-critic"),
+    Path("eval/results/campaign-rebuttal"),
+]
 DEFAULT_OUT = Path("eval/judge_config.yaml")
 DEFAULT_PAIRS = Path("eval/results/judge_correlation/study.json")
 DEFAULT_VLLM = "http://localhost:8001/v1"
@@ -43,7 +52,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Phase 10c: local 7B vs canonical Sonnet judge correlation"
     )
-    parser.add_argument("--run-dir", type=Path, default=DEFAULT_RUN)
+    parser.add_argument(
+        "--run-dirs",
+        type=Path,
+        nargs="+",
+        default=DEFAULT_RUN_DIRS,
+        help="Run dirs to pull reports from. Default is all four held-out arms so quality n "
+        "counts every distinct report, not one per question.",
+    )
     parser.add_argument("--vllm-url", type=str, default=DEFAULT_VLLM)
     parser.add_argument(
         "--vllm-model",
@@ -79,23 +95,39 @@ def main() -> int:
         return 2
     sonnet_judge = get_client("judge_canonical")
 
-    # Faithfulness is correlated two ways. Blended = mean over all citations, but
-    # quant citations are scored by identical deterministic code on both judges,
-    # so that shared floor inflates the rank correlation toward 1. Qual-only
-    # isolates the part the LLM judge actually decides, and is the honest gate.
+    # Faithfulness is correlated three ways. Blended = mean over all citations,
+    # but quant citations are scored by identical deterministic code on both
+    # judges, so that shared floor inflates the rank correlation toward 1.
+    # Qual-only isolates the part the LLM judge actually decides. Within qual-
+    # only, the per-case mean collapses every question to a single point (n=3);
+    # the per-claim view keeps each claim the judge scored (n in the hundreds).
+    # Each pair carries its base case_id so the CI can resample by question and
+    # not overstate independence. The claim-level lower bound is the gate.
     blended_pairs: list[tuple[float, float]] = []
-    qual_pairs: list[tuple[float, float]] = []
+    blended_labels: list[str] = []
+    qual_case_pairs: list[tuple[float, float]] = []
+    qual_case_labels: list[str] = []
+    qual_claim_pairs: list[tuple[float, float]] = []
+    qual_claim_labels: list[str] = []
     quality_pairs: list[tuple[float, float]] = []
+    quality_labels: list[str] = []
     per_case: list[dict] = []
     local_quality_failures = 0
 
-    case_files = [p for p in sorted(args.run_dir.glob("*.json")) if p.name != "summary.json"]
+    case_files = [
+        p
+        for rd in args.run_dirs
+        for p in sorted(rd.glob("*.json"))
+        if p.name not in ("summary.json", "cost_report.json")
+    ]
     allowed = None
     if args.only_cases:
         allowed = {ln.strip() for ln in args.only_cases.read_text().splitlines() if ln.strip()}
     for i, p in enumerate(case_files, start=1):
         d = json.loads(p.read_text())
-        if allowed is not None and d.get("case_id") not in allowed:
+        cid = d.get("case_id") or p.stem
+        arm = p.parent.name
+        if allowed is not None and cid not in allowed:
             continue
         if d.get("final_status") not in ("ok", "partial"):
             continue
@@ -103,7 +135,7 @@ def main() -> int:
         if not report.strip():
             continue
         # Progress to stderr; stdout stays parseable JSON.
-        print(f"[{i}/{len(case_files)}] {d['case_id']}", file=sys.stderr)
+        print(f"[{i}/{len(case_files)}] {arm}/{cid}", file=sys.stderr)
 
         recon = [reconstruct_citation(x) for x in (d.get("citations") or [])]
         quant = [verify_quant_citation(pool, c) for c in recon if isinstance(c, QuantCitation)]
@@ -126,14 +158,21 @@ def main() -> int:
 
         if son_blended is not None and loc_blended is not None:
             blended_pairs.append((son_blended, loc_blended))
+            blended_labels.append(cid)
         if son_qual_faith is not None and loc_qual_faith is not None:
-            qual_pairs.append((son_qual_faith, loc_qual_faith))
+            qual_case_pairs.append((son_qual_faith, loc_qual_faith))
+            qual_case_labels.append(cid)
+        for sv, lv in zip(son_q, loc_q, strict=True):
+            qual_claim_pairs.append((sv.score, lv.score))
+            qual_claim_labels.append(cid)
         if son_qual is not None and loc_qual is not None:
             quality_pairs.append((son_qual, loc_qual))
+            quality_labels.append(cid)
 
         per_case.append(
             {
-                "case": d["case_id"],
+                "case": cid,
+                "arm": arm,
                 "n_qual_citations": len(quals),
                 "sonnet_faith_blended": son_blended,
                 "local_faith_blended": loc_blended,
@@ -144,19 +183,25 @@ def main() -> int:
             }
         )
 
-    blended_corr = correlate([a for a, _ in blended_pairs], [b for _, b in blended_pairs])
-    qual_corr = correlate([a for a, _ in qual_pairs], [b for _, b in qual_pairs])
-    quality_corr = correlate([a for a, _ in quality_pairs], [b for _, b in quality_pairs])
-    # Gate on the honest signal: qual-only faithfulness, not the inflated blend.
-    decision = judge_decision(qual_corr, quality_corr)
+    def _split(pairs: list[tuple[float, float]]) -> tuple[list[float], list[float]]:
+        return [a for a, _ in pairs], [b for _, b in pairs]
+
+    blended_corr = correlate(*_split(blended_pairs), labels=blended_labels)
+    qual_case_corr = correlate(*_split(qual_case_pairs), labels=qual_case_labels)
+    qual_claim_corr = correlate(*_split(qual_claim_pairs), labels=qual_claim_labels)
+    quality_corr = correlate(*_split(quality_pairs), labels=quality_labels)
+    # Gate on the honest signal: qual-only faithfulness at the claim level, with a
+    # CI clustered by question, not the inflated blend or the collapsed per-case mean.
+    decision = judge_decision(qual_claim_corr, quality_corr)
 
     config = {
         "generated": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "subset": str(args.run_dir),
+        "run_dirs": [str(rd) for rd in args.run_dirs],
         "local_judge": local_judge.model,
         "canonical_judge": sonnet_judge.model,
         "local_quality_parse_failures": local_quality_failures,
-        "faithfulness_qual_only": qual_corr,
+        "faithfulness_qual_only_per_claim": qual_claim_corr,
+        "faithfulness_qual_only_per_case": qual_case_corr,
         "faithfulness_blended": blended_corr,
         "quality": quality_corr,
         "decision": decision,

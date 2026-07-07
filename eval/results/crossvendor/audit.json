@@ -1,0 +1,285 @@
+{
+  "summary": {
+    "generated": "2026-07-07T05:57:29Z",
+    "audit_judge": "gpt-5.1-2025-11-13",
+    "reasoning_effort": "none",
+    "baseline": "claude-sonnet-4-6 (read from committed gold-set artifacts)",
+    "run_dir": "eval/results/campaign-critic",
+    "n_cases": 32,
+    "quality_parse_failures": 0,
+    "faithfulness_parse_failures": 0,
+    "quality": {
+      "correlation": {
+        "n": 32,
+        "n_clusters": 32,
+        "pearson": 0.16104941473139692,
+        "spearman": 0.28392698957029167,
+        "spearman_lower_95": -0.04267848693438211,
+        "spearman_upper_95": 0.5648567500453945
+      },
+      "self_preference": {
+        "n": 32,
+        "sonnet_mean": 4.6172,
+        "gpt_mean": 4.7031,
+        "mean_delta_sonnet_minus_gpt": -0.0859,
+        "ci95": [
+          -0.2226,
+          0.0508
+        ]
+      }
+    },
+    "faithfulness_qual_only": {
+      "correlation": {
+        "n": 9,
+        "n_clusters": 9,
+        "pearson": 0.8915280295395505,
+        "spearman": 0.7532538113729171,
+        "spearman_lower_95": -0.026337685849243696,
+        "spearman_upper_95": 0.9869842607835662
+      },
+      "self_preference": {
+        "n": 9,
+        "sonnet_mean": 2.9074,
+        "gpt_mean": 2.1778,
+        "mean_delta_sonnet_minus_gpt": 0.7296,
+        "ci95": [
+          0.5184,
+          0.9409
+        ]
+      }
+    },
+    "usage": {
+      "prompt": 88026,
+      "completion": 13844,
+      "reasoning": 0,
+      "calls": 86
+    },
+    "actual_cost_usd": 0.2485
+  },
+  "per_case": [
+    {
+      "case": "happy_aapl_msft_growth",
+      "sonnet_quality": 4.5,
+      "gpt_quality": 5.0,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_aapl_msft_profitability",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_cost_pep_leverage",
+      "sonnet_quality": 5.0,
+      "gpt_quality": 5.0,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_googl_meta_growth",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.5,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_jnj_pfe_leverage",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 5.0,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_jnj_pfe_profitability",
+      "sonnet_quality": 4.25,
+      "gpt_quality": 4.5,
+      "sonnet_faith_qual_only": 2.3,
+      "gpt_faith_qual_only": 1.8
+    },
+    {
+      "case": "happy_lly_pfe_profitability",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_meta_aapl_leverage",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_mixed_quant_qual",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.25,
+      "sonnet_faith_qual_only": 3.5,
+      "gpt_faith_qual_only": 2.5
+    },
+    {
+      "case": "happy_mrk_lly_growth",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_mrk_lly_risks",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": 3.5,
+      "gpt_faith_qual_only": 2.5
+    },
+    {
+      "case": "happy_msft_googl_profitability",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_multi_axis_cost_pg",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_multi_axis_meta_googl",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.25,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_multi_axis_pharma",
+      "sonnet_quality": 4.5,
+      "gpt_quality": 4.25,
+      "sonnet_faith_qual_only": 2.1,
+      "gpt_faith_qual_only": 1.6
+    },
+    {
+      "case": "happy_multi_axis_staples",
+      "sonnet_quality": 5.0,
+      "gpt_quality": 4.5,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_multi_axis_tech",
+      "sonnet_quality": 4.5,
+      "gpt_quality": 4.25,
+      "sonnet_faith_qual_only": 2.3333333333333335,
+      "gpt_faith_qual_only": 1.9333333333333333
+    },
+    {
+      "case": "happy_pep_ko_profitability",
+      "sonnet_quality": 5.0,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_pg_ko_leverage",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 5.0,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "happy_pharma_risks",
+      "sonnet_quality": 4.0,
+      "gpt_quality": 4.5,
+      "sonnet_faith_qual_only": 3.2,
+      "gpt_faith_qual_only": 2.7
+    },
+    {
+      "case": "happy_staples_risks",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 5.0,
+      "sonnet_faith_qual_only": 3.4,
+      "gpt_faith_qual_only": 2.5
+    },
+    {
+      "case": "happy_tech_risks",
+      "sonnet_quality": 5.0,
+      "gpt_quality": 5.0,
+      "sonnet_faith_qual_only": 3.5,
+      "gpt_faith_qual_only": 2.2
+    },
+    {
+      "case": "happy_three_staples_profitability",
+      "sonnet_quality": 5.0,
+      "gpt_quality": 5.0,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "partial_capex_comparison",
+      "sonnet_quality": 3.5,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "partial_gross_margin_googl",
+      "sonnet_quality": 4.25,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": 2.3333333333333335,
+      "gpt_faith_qual_only": 1.8666666666666667
+    },
+    {
+      "case": "partial_insufficient_growth_for_costco",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.5,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "partial_inventory_turnover",
+      "sonnet_quality": 4.25,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "partial_long_window_tech",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "partial_segment_revenue",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 4.5,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "weak_then_recovered_fcf_margin",
+      "sonnet_quality": 4.75,
+      "gpt_quality": 5.0,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "weak_then_recovered_obscure_metric",
+      "sonnet_quality": 3.75,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    },
+    {
+      "case": "weak_then_recovered_payout",
+      "sonnet_quality": 4.5,
+      "gpt_quality": 4.75,
+      "sonnet_faith_qual_only": null,
+      "gpt_faith_qual_only": null
+    }
+  ]
+}

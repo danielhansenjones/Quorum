@@ -25,13 +25,22 @@ def cached_chat(
     # Phase 2c "cache hit across role types using the same model" contract.
     # Returns (response, cache_hit) so trace rows can split notional cost from
     # real spend.
+    #
+    # reasoning_effort lives on the client (set inside its chat()), downstream of
+    # this key, so two audit runs at different efforts would collide on one key
+    # and serve each other's verdicts. Fold it in here. Absent on non-reasoning
+    # clients, so their keys are unchanged.
+    extras = dict(chat_kwargs) if chat_kwargs else {}
+    effort = getattr(client, "reasoning_effort", None)
+    if effort is not None:
+        extras["reasoning_effort"] = effort
     key = build_llm_cache_key(
         model=client.model,
         prompt_version=prompt_version,
         messages=messages,
         temperature=temperature,
         max_tokens=max_tokens,
-        extras=chat_kwargs,
+        extras=extras or None,
     )
 
     def call() -> Any:

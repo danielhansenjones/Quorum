@@ -147,9 +147,9 @@ Decisions:
 
 Caveats: single small corpus (2,895 indexed chunks), pooled labeling only judges what some arm surfaced (author-known positives no arm retrieved are kept as recall misses), and queries plus labels were authored with LLM assistance against chunk text with hand adjudication of disagreements.
 
-### Judge correlation: the base judge rejected, then recovered by fine-tuning
+### Judge correlation: the base judge rejected, the fine-tune not yet certified
 
-The design called for a cheap local 7B judge for fast iteration, with Sonnet as the canonical judge. `scripts/run_judge_correlation.py` re-scores the 32 answered cases from the committed [`eval/results/campaign-critic/`](eval/results/campaign-critic) artifacts with the local Qwen-7B judge (quality rubric plus qual-citation checks, Sonnet re-judging the qual citations as the reference) and correlates the two. The base 7B failed both gates; a QLoRA distillation of Sonnet's verdicts then moved it above the iteration gate. The base decision and gates are in `eval/judge_config.yaml`; the raw per-case pairs are in [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
+The design called for a cheap local 7B judge for fast iteration, with Sonnet as the canonical judge. `scripts/run_judge_correlation.py` re-scores the 32 answered cases from the committed [`eval/results/campaign-critic/`](eval/results/campaign-critic) artifacts with the local Qwen-7B judge (quality rubric plus qual-citation checks, Sonnet re-judging the qual citations as the reference) and correlates the two. The base 7B failed both gates; a QLoRA distillation of Sonnet's verdicts lifts every correlation but a 7-question held-out set cannot certify it (below). The base decision and gates are in `eval/judge_config.yaml`; the raw per-case pairs are in [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
 
 | Dimension               | Spearman (local vs Sonnet) | Gate  | Pass |
 |-------------------------|----------------------------|-------|------|
@@ -161,13 +161,25 @@ The base 7B is a near-constant scorer: 27 of 32 reports land on quality 4.0 or 4
 
 The calibration gap is what fine-tuning fixes. `scripts/build_judge_sft.py` distills the committed campaign artifacts into 583 (judge-prompt -> Sonnet-verdict) pairs: Sonnet's stored per-claim faithfulness verdicts and per-report quality dims, with prompts byte-identical to inference (faithfulness pulls section text from Qdrant, quality uses the stored report), split by base `case_id` so no question leaks across train/val. `scripts/train_judge_qlora.py` trains a rank-16 LoRA adapter (bf16 Qwen2.5-7B, bitsandbytes 4-bit NF4, trl SFT) in about 23 minutes. The adapter serves on the AWQ base via vLLM `--enable-lora` and re-scores the 7 held-out `case_id`s it never trained on (`scripts/gate_judge_qlora.sh`):
 
-| Dimension (held-out)                  | base  | adapter | gate  | pass |
-|---------------------------------------|-------|---------|-------|------|
-| Quality, spearman (n=7)               | 0.45  | 0.66    | > 0.6 | yes  |
-| Faithfulness qual-only, pearson (n=3) | 0.59  | 0.99    | -     | -    |
-| `use_local_for_iteration`             | false | true    | -     | -    |
+| Dimension (held-out)                       | base  | adapter | gate  | pass |
+|--------------------------------------------|-------|---------|-------|------|
+| Quality, spearman point estimate (n=7)     | 0.45  | 0.66    | -     | -    |
+| Quality, clustered 95% lower bound         | -     | -0.32   | > 0.6 | no   |
+| Faithfulness qual-only, pearson (n=3)      | 0.59  | 0.99    | -     | -    |
+| `use_local_for_iteration`                  | false | false   | -     | -    |
 
-The adapter learns the calibration the base lacked. On quality the base under-scores systematically (4.0 where Sonnet says 5.0); the adapter matches (repeated exact 4.75/4.75, 5.0/5.0). Faithfulness spearman is 1.0 for both, but that is three ranked points with no signal; the real move is absolute agreement, pearson 0.59 to 0.99. This flips the iteration decision: distillation makes the free local judge usable for fast iteration. Sonnet stays the canonical reference because it is the proxy-gold in the absence of human labels, not because it measurably outranks the adapter - that cannot be tested while Sonnet is the yardstick. The held-out sample is small (7 quality pairs, 3 faithfulness pairs), so the pass is directional and confirmable with more held-out data. Held-out configs: [`qlora_heldout_config.yaml`](eval/results/judge_correlation/qlora_heldout_config.yaml) and [`base_heldout_config.yaml`](eval/results/judge_correlation/base_heldout_config.yaml).
+The adapter learns the calibration the base lacked: on quality the base under-scores systematically (4.0 where Sonnet says 5.0) and the adapter matches (repeated exact 4.75/4.75, 5.0/5.0); faithfulness absolute agreement moves from 0.59 to 0.99 pearson. But the gate does not decide on the point estimate. It resamples whole questions - the unit of independence - and decides on the lower bound of the bootstrap CI, and on 7 held-out questions the quality point estimate of 0.66 carries a 95% interval of [-0.32, 1.0]. That lower bound is far below 0.6, so `use_local_for_iteration` stays false and Sonnet remains the canonical scorer - not because it measurably outranks the adapter (untestable while Sonnet is the yardstick) but because a 7-question held-out set cannot certify a fine-tune. The distillation moved every number the right way; certifying it needs more held-out questions - k-fold over the 32-question corpus, or new cases - not a better point estimate. Held-out configs: [`qlora_heldout_config.yaml`](eval/results/judge_correlation/qlora_heldout_config.yaml) and [`base_heldout_config.yaml`](eval/results/judge_correlation/base_heldout_config.yaml).
+
+### Cross-vendor audit: does the canonical judge favor itself?
+
+Sonnet writes the reports and Sonnet judges them, so the canonical scores could be inflated by same-family preference. [`scripts/run_crossvendor_audit.py`](scripts/run_crossvendor_audit.py) re-judges the 32 default-config reports with a pinned GPT-5.1 snapshot (`reasoning_effort=none`, so it is a plain non-reasoning judge comparable to the non-reasoning Sonnet judge), reading Sonnet's side from the committed artifacts - GPT spend only, ~$0.25 for the pass. Numbers are excluded by construction: quant citations are code-verified and identical on both judges.
+
+| Metric (Sonnet vs GPT-5.1)   | Sonnet | GPT  | delta (Sonnet - GPT) | 95% CI        |
+|------------------------------|--------|------|----------------------|---------------|
+| Quality (n=32)               | 4.62   | 4.70 | -0.09                | [-0.22, 0.05] |
+| Faithfulness qual-only (n=9) | 2.91   | 2.18 | +0.73                | [0.52, 0.94]  |
+
+No detectable quality self-preference - the delta straddles zero, and the two judges only rank quality at spearman 0.28 anyway (quality clusters near the 4.6-5.0 ceiling, so rank is noisy for everyone). On prose faithfulness they rank claims similarly (spearman 0.75) but Sonnet runs +0.73 more lenient and the interval excludes zero: the canonical judge's qual-faithfulness scores are an upper bound. The blended headline faithfulness is quant-dominated and unaffected; the leniency is confined to the qualitative slice, which both judges score only 2-3 of 5. Artifact: [`eval/results/crossvendor/audit.json`](eval/results/crossvendor/audit.json).
 
 ### A/B: does the critic earn its cost?
 

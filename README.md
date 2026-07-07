@@ -1,64 +1,58 @@
 # Quorum
 
 [![CI](https://github.com/danielhansenjones/Quorum/actions/workflows/ci.yml/badge.svg)](https://github.com/danielhansenjones/Quorum/actions/workflows/ci.yml)
-[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![refusal-accuracy](https://img.shields.io/badge/refusal--accuracy-9%2F9-success)](#results)
-[![status-match](https://img.shields.io/badge/status--match-29%2F41-success)](#results)
 [![faithfulness](https://img.shields.io/badge/faithfulness-4.6%2F5-success)](#results)
-[![quality](https://img.shields.io/badge/quality-4.6%2F5-success)](#results)
 
+[![fine-tune](https://img.shields.io/badge/fine--tune-QLoRA%20judge%20adapter-8A2BE2)](eval/results/judge_correlation)
+[![local model](https://img.shields.io/badge/local%20model-Qwen%202.5%207B%20AWQ%20on%20vLLM-informational)](ARCHITECTURE.md#local-model-serving)
+[![Anthropic](https://img.shields.io/badge/Anthropic-Sonnet%20%2B%20Haiku-D97757?logo=anthropic&logoColor=white)](#how-it-works)
 [![Python](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)](pyproject.toml)
-[![LangGraph](https://img.shields.io/badge/LangGraph-orchestration-1C3C3C?logo=langchain&logoColor=white)](https://github.com/langchain-ai/langgraph)
-[![FastAPI](https://img.shields.io/badge/FastAPI-SSE-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Qdrant](https://img.shields.io/badge/Qdrant-hybrid%20search-DC244C?logo=qdrant&logoColor=white)](https://qdrant.tech/)
-[![Postgres](https://img.shields.io/badge/Postgres-16-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Anthropic](https://img.shields.io/badge/Anthropic-Sonnet%20%2B%20Haiku-D97757?logo=anthropic&logoColor=white)](https://www.anthropic.com/)
-[![Docker](https://img.shields.io/badge/Docker-compose-2496ED?logo=docker&logoColor=white)](docker-compose.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-**Multi-agent financial research over SEC filings.** A quorum of per-axis analysts compares public companies on profitability, growth, leverage, and risk; a synthesizer reconciles them; an agentic critic fact-checks every claim against the source data before the report is written.
+A **multi-agent** system for financial research over SEC filings. Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum fans one analyst agent out per axis in parallel, grounds every claim with **hybrid RAG** over the source data (XBRL facts in Postgres, 10-K and 10-Q passages in Qdrant), fact-checks the draft with a **tool-using critic agent**, and streams back a cited markdown report. A claim the critic cannot verify is dropped, softened, or counter-cited before the report ships.
 
-Ask `"Compare AAPL and MSFT on profitability and growth"` and Quorum classifies the request, resolves the tickers, fans out one analyst per axis in parallel, fact-checks the draft with a tool-using critic, and returns a cited markdown report. Quant claims resolve to XBRL facts; qualitative claims resolve to passages from the actual 10-K and 10-Q filings. Every claim the critic flags is dropped, softened, or counter-cited.
+The agent graph is the smaller half of the project. The larger half is **LLM evaluation**: a 41-case judged gold set, a labeled retrieval benchmark, a prompt-injection red team, a four-arm A/B campaign with bootstrap confidence intervals that decided which graph features ship enabled, and a **QLoRA fine-tune** that turned a rejected local eval judge into a usable one by distilling Sonnet's verdicts. Two features that improved some metrics still ship off because they failed their pre-registered rule. Every number in this README traces to a committed artifact under [`eval/results/`](eval/results).
 
-## Highlights
-
-- **A graph, not a chain.** Analysts fan out in parallel (LangGraph `Send`), an `assess` node re-plans only the weakly-grounded axes within a step budget, and an agentic critic verifies the draft before synthesis. Branching, re-planning, and a bounded agent loop in one graph.
-- **Agentic fact-checking.** The critic runs a bounded tool loop (5 turns / 90s) over the same XBRL facts and filing text the analysts used, flags unsupported claims, and the synthesizer acts on every flag.
-- **Grounded in real data.** 12 companies across Big Tech, Consumer Staples, and Pharma; the latest 10-K plus four 10-Qs each (~60 filings, 2,895 indexed chunks). Quant -> XBRL facts in Postgres; qual -> hybrid search over Qdrant (BGE-M3 dense + learned sparse).
-- **Measured, not asserted.** A 41-case gold set scored by an LLM-as-judge harness: faithfulness 4.56/5, quality 4.62/5, refusal decisions 9/9 exact, and status-match 29/41 where every miss is a one-notch ok/partial completeness call (0 judge failures, 0 errors). The local Qwen 7B classifier scores axis macro-F1 0.88 on a 61-case set hardened with paraphrases and adversarial refusals, matching the Haiku tier at zero API cost; refusal precision and recall 1.0. Every number traces to a committed artifact under [`eval/results/`](eval/results/).
-- **Honest eval methodology.** A judge-correlation study rejected a cheap base 7B judge against Sonnet (qual-only faithfulness Spearman 0.46 against a 0.7 gate; quality 0.597 against 0.6), then a QLoRA distillation of Sonnet's verdicts moved it above the gate on held-out cases (quality 0.46 -> 0.66, faithfulness absolute agreement 0.59 -> 0.99 pearson; small held-out n, reported as directional). Sonnet stays the canonical reference; the decision, gates, and per-case pairs are checked into [`eval/judge_config.yaml`](eval/judge_config.yaml) and [`eval/results/judge_correlation/study.json`](eval/results/judge_correlation/study.json).
-- **Does the critic earn its cost? Measured.** A four-arm paired A/B campaign (critic on/off, a critic-analyst rebuttal loop, a tiered agentic analyst) with bootstrap CIs: the critic adds +0.07 quality at +$0.086/case with faithfulness flat; the rebuttal loop posts the only statistically significant quality gain (+0.10) but nudges faithfulness down, so it ships off by the pre-registered rule; the agentic analyst loses on both and ships off. Numbers and the decision reasoning are in [ARCHITECTURE.md](ARCHITECTURE.md#ab-does-the-critic-earn-its-cost).
-- **Durable by construction, proven by SIGKILL.** A Postgres checkpointer writes state at every super-step; `/runs/{id}/resume` re-drives from the last checkpoint, and re-run nodes hit a canonical-JSON LLM cache. A kill-resume suite in CI SIGKILLs runs mid-LLM-call, mid-fan-out, and mid-critic-turn: every resume finishes with a byte-identical report and zero duplicate API calls.
-- **Real cost accounting.** Every LLM call writes a trace row with token counts and two dollar figures: billed (notional) and effective (zero on a cache replay), so A/B pairing stays fair while actual spend stays visible. A judged run averages $0.124/case, and the critic is the measured cost driver (68% of arm spend).
-- **Two surfaces.** FastAPI with an SSE stream of node events (watch the agent work), and an MCP server exposing the six tools plus a high-level `compare_companies` for Claude Desktop.
-- **Typed and gated.** Pydantic v2 state with a discriminated citation union and parallel-write-safe reducers; mypy strict on the typed core; ruff lint and format; CI on every push.
+Stack: LangGraph, FastAPI (SSE), Postgres 16, Qdrant (BGE-M3 hybrid), Claude Sonnet and Haiku, a local Qwen 2.5 7B on vLLM (constrained-decoding classifier plus the QLoRA judge adapter), Docker Compose.
 
 ## Demo
 
 ![Quorum demo](assets/demo.gif)
 
-The animation is rendered from a real recorded run, committed at [`eval/fixtures/demo_replay.jsonl`](eval/fixtures/demo_replay.jsonl) (regenerate the GIF with [`scripts/render_graph.py`](scripts/render_graph.py)). Replay the same run in your terminal with no API key, no server, no Docker:
+Rendered from a real recorded run, committed at [`eval/fixtures/demo_replay.jsonl`](eval/fixtures/demo_replay.jsonl). Replay it in your terminal with no API key, no server, no Docker:
 
 ```
 uv run python scripts/demo.py --replay --step 0.45
 ```
 
-What it shows: classify -> resolve -> two analysts fan out in parallel -> assess -> the critic re-derives the quant claims with 8 tool calls against Postgres and flags 3 of them (two narratives whose dollar figures check out but overstate the story, one citation-coverage gap) -> synthesize acts on every flag. The COST line shows the billed-vs-effective split: the run's notional cost is $0.19, actual spend $0.0004 - every model call except the never-cached classifier replayed from the local disk cache.
+Two analysts fan out in parallel, the critic re-derives the quant claims with 8 tool calls against Postgres and flags 3 of them, and synthesis acts on every flag. The COST line shows the run's notional price (\$0.19) against actual spend (\$0.0004): every model call except the never-cached classifier replayed from the local disk cache.
 
-To run it live (and record a new fixture with `--record`):
+To run it live (`--record` writes a new fixture):
 
 ```
-# terminal 1 - start the API (Anthropic key is injected by ./secret-run, never printed)
-./secret-run uv run uvicorn quorum.api.main:app --port 8000
+# terminal 1 - start the API (needs ANTHROPIC_API_KEY in the environment)
+uv run uvicorn quorum.api.main:app --port 8000
 
 # terminal 2 - stream a comparison and watch the agent work
 uv run python scripts/demo.py "Compare Coca-Cola and PepsiCo on profitability and growth." --step 0.5 --cost
 ```
 
+## What it produces
+
+From a committed campaign case ([`happy_aapl_msft_profitability`](eval/results/campaign-critic/happy_aapl_msft_profitability.json)). The analyst writes with every figure cited:
+
+> On gross profit, Apple reached \$195.2B [AAPL:Q15] versus Microsoft's \$193.9B [MSFT:Q15], nearly identical in absolute dollars, yet the underlying gross margins diverge sharply: Apple's ~47% reflects its hardware-heavy mix, while Microsoft's ~69% reflects its software and cloud composition.
+
+The critic re-derived every number against Postgres, found all of them correct to rounding, and flagged the narrative anyway:
+
+> MSFT net income "compounded with more consistency" is overstated. MSFT net income was flat FY2022 to FY2023 (\$72.738B to \$72.361B) before accelerating.
+
+The shipped report incorporates the flag: it frames both companies as having "a weak intermediate period before accelerating into FY2025" and walks Apple's three-year decline. Citations are code-built from retrieved evidence, so the model cannot mint one, and every bracketed quant citation is checked deterministically against the facts table (value, unit, period).
+
 ## How it works
 
-Quorum is a single FastAPI service that drives a LangGraph agent graph. There
-is no queue or worker tier - a `/compare` request runs the graph inline and
-streams node events over SSE.
+One FastAPI service drives a LangGraph agent graph. No queue, no worker tier: a `/compare` request runs the graph inline and streams node events over SSE.
 
 ```mermaid
 flowchart LR
@@ -97,8 +91,7 @@ flowchart LR
     class ANTH,HAIKU,VLLM ext;
 ```
 
-The graph itself branches, re-plans only the weak axes, and fact-checks the
-draft before it writes:
+The graph branches, re-plans only the weak axes within a step budget, and fact-checks the draft before it writes:
 
 ```mermaid
 flowchart TB
@@ -119,50 +112,49 @@ flowchart TB
     class REF terminal;
 ```
 
-Four Docker Compose services back it:
+Four Compose services back it: `postgres` (XBRL facts, checkpointer, trace events), `qdrant` (hybrid index, BGE-M3 dense plus learned sparse), `vllm` (optional local classifier), and `api`. The corpus is 12 companies across Big Tech, Consumer Staples, and Pharma: the latest 10-K plus four 10-Qs each, ~60 filings, 2,895 indexed chunks. With no GPU, Haiku takes the classifier role and everything else runs unchanged.
 
-| Service              | Role                                                           |
-|----------------------|----------------------------------------------------------------|
-| `postgres` (16)      | XBRL facts, LangGraph checkpointer, `trace_events`             |
-| `qdrant`             | hybrid vector index (BGE-M3 dense + learned sparse)            |
-| `vllm` (gpu profile) | Qwen 2.5 7B Instruct AWQ-4bit, the local classifier (optional) |
-| `api` (api profile)  | FastAPI with the SSE stream of node events                     |
+Runs are durable. A Postgres checkpointer writes state at every super-step and `/runs/{id}/resume` re-drives an interrupted run from the last checkpoint. A CI suite SIGKILLs runs mid-LLM-call, mid-fan-out, and mid-critic-turn; every resume finishes with a byte-identical report and zero duplicate API calls, because re-run nodes hit a canonical-JSON LLM cache keyed over model, messages, system prompt, tool schemas, and params. State is Pydantic v2 with a discriminated citation union and reducers that are safe under the parallel fan-out; mypy strict gates the typed core and CI runs lint, types, and the unit and smoke suites on every push.
 
-Anthropic Sonnet powers the analyst, synthesizer, critic, and canonical judge. Haiku is the classifier fallback when `VLLM_URL` is unset, so the system runs with no GPU. Full node-by-node behavior, the state schema, and the retrieval design are in [ARCHITECTURE.md](ARCHITECTURE.md).
+Node-by-node behavior, the state schema, and the retrieval design are in [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Results
 
 41-case gold set, judged by Sonnet ([`eval/judge_config.yaml`](eval/judge_config.yaml)), default configuration:
 
-| Metric                                            | Value          |
-|---------------------------------------------------|----------------|
-| Refusal decisions (answer vs refuse)              | 9 / 9 exact    |
-| Completeness match, answered cases (ok / partial) | 20 / 32        |
-| Overall status match                              | 29 / 41 (0.71) |
-| Faithfulness mean (32 answered cases)             | 4.56 / 5       |
-| Quality mean (41 cases)                           | 4.62 / 5       |
-| Faithfulness / quality judge failures             | 0 / 0          |
+| Metric                                | Value          |
+|---------------------------------------|----------------|
+| Refusal decisions (answer vs refuse)  | 9 / 9 exact    |
+| Faithfulness mean (32 answered cases) | 4.56 / 5       |
+| Quality mean (41 cases)               | 4.62 / 5       |
+| Overall status match                  | 29 / 41 (0.71) |
+| Judge failures / errors / crashes     | 0 / 0 / 0      |
 
-All 12 status misses are one-notch `ok`/`partial` completeness calls (8 where the
-system was more conservative than the gold label, 4 less); no wrong refusals, no
-errors, no crashes. The refusal boundary and the completeness boundary are scored
-separately above because they fail for different reasons - see [Limitations](#limitations).
+All 12 status misses are one-notch ok/partial completeness calls with known causes, split 8/4 between the two limitations described [below](#limitations). No wrong refusals.
 
-Classifier (local Qwen 7B, constrained decoding), deterministic scoring over the full 61-case gold set (v2 hardening adds paraphrases, distractor tickers, and refusal near-misses):
+The classifier (local Qwen 7B, constrained decoding) scores axis macro-F1 0.88 with perfect refusal precision and recall on a 61-case gold set hardened with paraphrases, distractor tickers, and refusal near-misses. That matches the Haiku tier (0.89). Constrained decoding is what makes the number real: without it the 7B intermittently emits malformed JSON that gets swallowed as a refusal, collapsing macro-F1 to ~0.20 and making the score non-reproducible.
 
-| Metric                                | Value              |
-|---------------------------------------|--------------------|
-| Axis macro-F1                         | 0.88               |
-| Axis exact-set-match                  | 0.84               |
-| Refusal recall / precision / accuracy | 1.00 / 1.00 / 1.00 |
+Retrieval is benchmarked, not assumed: a 55-query labeled set (372 pooled, hand-adjudicated positives) scores the production hybrid index against dense-only and sparse-only arms. Hybrid holds success@5 0.98 and leads recall@5 at 0.67. The same eval caught a real bug: PFE risk-factor queries read precision@5 = 0.00, which root-caused to a section-segmentation defect in the filing parser, got fixed, and re-measured to 1.00 for all 12 tickers ([`eval/results/retrieval-v1/`](eval/results/retrieval-v1)).
 
-Axis F1 is down from v1's 0.92 by design: the v2 axis-bearing refusals name an axis the classifier still extracts, scored as a false positive; refuse-vs-answer stays perfect at 1.0. This is the free local model matching the Haiku tier (0.88 vs 0.89), reached only once constrained decoding pins the JSON shape.
+A prompt-injection red team plants adversarial text in the retrieval corpus under a matching ticker and section, then drives 11 attack vectors plus a benign control through the full graph: 0 leaks over the 9 measurable vectors, control clean ([`eval/datasets/injection_v1.yaml`](eval/datasets/injection_v1.yaml)).
 
-A prompt-injection red team (11 attack vectors plus a benign control) plants adversarial text into the retrieval corpus under a matching ticker and section, then drives each probe through the full graph: **0 leaks over 9 measured vectors** (2 unmeasured, control clean), with the critic engaging on nearly every case. Harness and cases are in [`scripts/run_injection_eval.py`](scripts/run_injection_eval.py) and [`eval/datasets/injection_v1.yaml`](eval/datasets/injection_v1.yaml).
+## Decisions made by experiment
 
-Retrieval is measured, not assumed: a 55-query labeled set (372 positives, pooled and hand-adjudicated) scores the production hybrid index against dense-only and sparse-only. Hybrid keeps its place on recall@5 (0.67) with success@5 at 0.98, every arm hits success@10 = 1.00 - which is also the measured reason ColBERT reranking stays unbuilt - and the same run caught a real defect and drove the fix (PFE risk factors read precision@5 = 0.00 from a section-segmentation bug; after the fix, 1.00 for all 12 tickers). Dataset and artifact: [`eval/datasets/retrieval_v1.yaml`](eval/datasets/retrieval_v1.yaml), [`eval/results/retrieval-v1/`](eval/results/retrieval-v1/).
+Each graph feature is a `build_graph` flag and an eval arm. The four-arm campaign ran the full gold set per arm, same commit, same judge; deltas are paired bootstrap 95% CIs from [`scripts/run_ab_compare.py`](scripts/run_ab_compare.py).
 
-Faithfulness is deterministic for quant citations (value + unit + period checked against Postgres) and LLM-judged for qual citations. The judge-correlation study rejected a cheap base 7B judge (qual-only faithfulness Spearman 0.46, quality 0.597, both under their gates); a QLoRA distillation of Sonnet's verdicts then crossed the gate on held-out cases (quality 0.66, faithfulness 0.99 pearson, small n), making the fine-tuned local judge usable for iteration with Sonnet as the canonical reference. The critic-on-vs-off A/B ran as a four-arm campaign: the critic adds +0.067 quality (95% CI -0.037 to +0.183) at +$0.086/case with faithfulness flat, and synthesis acted on all 56 flagged claims (incorporation rate 1.0). Per-case artifacts behind every number (reports, scores, citations, paired compares) are committed under [`eval/results/campaign-critic/`](eval/results/campaign-critic/) and [`eval/results/campaign-compares/`](eval/results/campaign-compares/). Full tables, the cost breakdown, and the honest analysis behind each number are in [ARCHITECTURE.md](ARCHITECTURE.md#eval-harness).
+| Question | Measured | Decision |
+|---|---|---|
+| Does the critic earn its cost? | Quality +0.067 (CI includes zero) at +\$0.086/case; 56/56 flagged claims acted on by synthesis | On. It is the verification layer, and its cost is now a known number |
+| Critic-analyst rebuttal loop? | The campaign's only significant quality gain (+0.104) but faithfulness statistically down (-0.007) | Off. It failed the pre-registered faithfulness-flat-or-up rule |
+| Tiered agentic analyst? | Faithfulness -0.055, quality flat, the most expensive arm (+\$0.138/case) | Off |
+| Local 7B as the eval judge? | Base model failed both correlation gates (quality 0.597 vs 0.6, qual faithfulness 0.46 vs 0.7) | Rejected, then recovered by fine-tuning (below) |
+| ColBERT reranking? | Every retrieval arm already hits success@10 = 1.00 | Not built. There is no headroom for it to buy |
+| Hybrid or dense-only retrieval? | Hybrid ties dense on success@5, leads recall@5 | Hybrid stays, narrowly. Dense-only is a defensible simplification |
+| Local Qwen or Haiku classifier? | Macro-F1 0.88 vs 0.89, refusal perfect on both | Local when a GPU is present (near-zero marginal cost), Haiku fallback |
+
+The judge recovery is the piece worth expanding. The plan called for a cheap local judge for fast iteration with Sonnet as the canonical reference, but the base Qwen 7B turned out to be a near-constant scorer and failed both gates. Instead of shipping a bad judge or paying Sonnet for every iteration loop, the fix was distillation: [`scripts/build_judge_sft.py`](scripts/build_judge_sft.py) turns the committed campaign artifacts into 583 judge-prompt-to-Sonnet-verdict pairs (split by case so no question leaks across train/val), and a rank-16 QLoRA adapter trains in ~23 minutes. On held-out cases the adapter moves quality correlation from 0.45 to 0.66 (past the 0.6 gate) and faithfulness agreement from 0.59 to 0.99 pearson. The held-out n is small (7 quality pairs), so the pass is directional, and Sonnet stays canonical; the study, gates, and per-case pairs are committed under [`eval/results/judge_correlation/`](eval/results/judge_correlation).
+
+Cost is accounted at the same grain as the metrics. Every LLM call writes a trace row with token counts and two dollar figures, billed and effective (zero on a cache replay), so A/B pairing stays fair while actual spend stays visible. A judged run averages \$0.124/case (p95 \$0.282); the critic is the cost driver at 68% of arm spend. Per-node breakdown in [ARCHITECTURE.md](ARCHITECTURE.md#cost).
 
 ## Quickstart
 
@@ -173,15 +165,19 @@ uv sync --extra eval --group dev
 uv run python -m quorum.ingest.run
 ```
 
-Ingest pulls 12 companyfacts JSONs plus ~60 filings and embeds 2,895 chunks on CPU (financial-statement sections are excluded from the vector index and surfaced as XBRL facts instead). Budget about an hour on a 9950X3D.
+Ingest pulls 12 companyfacts JSONs plus ~60 filings and embeds 2,895 chunks on CPU; budget about an hour. LLM calls need `ANTHROPIC_API_KEY` exported or set in `.env`. Then run the API and demo from [Demo](#demo). `GET /ready` reports backing-service health.
 
-LLM calls need `ANTHROPIC_API_KEY` in the environment. `./secret-run` in the commands on this page is a local keyring wrapper (libsecret exec) that injects the key without echoing it anywhere; it is not part of the repo. `export ANTHROPIC_API_KEY=...` (or the commented line in `.env`) works in its place.
-
-Then run the API and the demo from [Demo](#demo) above. `GET /ready` reports backing-service health:
+Reproduce the numbers:
 
 ```
-curl -s localhost:8000/ready
-{"ok":true,"checks":{"postgres":true,"qdrant":true}}
+# run the 41-case gold set through the graph, write per-case JSON + summary
+uv run python scripts/run_smoke_eval.py --judge
+
+# per-request and per-node dollar cost from the trace rows
+uv run python scripts/run_cost_report.py
+
+# paired A/B of two run dirs with bootstrap CIs
+uv run python scripts/run_ab_compare.py eval/runs/campaign-baseline eval/runs/campaign-critic --cost
 ```
 
 ## API and MCP surface
@@ -190,45 +186,18 @@ curl -s localhost:8000/ready
 |---------------------------------|----------------------------------------------------------------|
 | `POST /compare`                 | streams node events over SSE, then a final cited report        |
 | `GET /runs/{request_id}/resume` | re-drives an interrupted run from the last Postgres checkpoint |
-| `GET /ready`                    | backing-service health (`postgres`, `qdrant`)                  |
-| `GET /health`                   | liveness                                                       |
+| `GET /ready` / `GET /health`    | backing-service health / liveness                              |
 
-The same capability is exposed over MCP: the six low-level tools (`resolve_company`, `get_financial_concept`, `search_filings`, `get_filing_section`, `list_corpus`, `list_filings`) plus the high-level `compare_companies`, usable from Claude Desktop or the MCP inspector.
-
-## Eval and cost
-
-```
-# run the 41-case gold set through the graph, write per-case JSON + summary
-./secret-run uv run python scripts/run_smoke_eval.py
-
-# add LLM-as-judge scoring (quant faithfulness + qual faithfulness + quality rubric)
-./secret-run uv run python scripts/run_smoke_eval.py --judge
-
-# per-request and per-node dollar cost from the trace rows
-./secret-run uv run python scripts/run_cost_report.py
-
-# paired A/B of two run dirs (e.g. baseline vs +critic) with bootstrap CIs
-uv run python scripts/run_ab_compare.py eval/runs/campaign-baseline eval/runs/campaign-critic --cost
-```
-
-A judged run averages $0.124/case (p50 $0.125, p95 $0.282); refusals short-circuit to ~$0.001. The critic is the cost driver (~$0.027/turn, 68% of arm spend). See [ARCHITECTURE.md](ARCHITECTURE.md#cost) for the per-node breakdown, the billed-vs-effective split, and the caching story.
-
-## Engineering
-
-- **Types as a gate.** Pydantic v2 state with a discriminated `Citation` union and reducers that are safe under the parallel fan-out. mypy strict on the typed core (`state`, `graph`, `tools`, `models`, `cache`).
-- **CI on every push.** ruff lint, ruff format check, mypy, and the unit + smoke suites ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)). Integration, GPU, and token-billing eval suites are deliberately out of CI.
-- **Resume that cannot silently rot.** The checkpointer uses an explicit msgpack allowlist; a completeness test fails the build if a state model is added without registering it, and another proves the allowlist blocks stray types on deserialize.
-- **pre-commit** mirrors the CI lint and format gates.
+The same capability is exposed over MCP: six low-level tools plus a high-level `compare_companies`, usable from Claude Desktop or the MCP inspector.
 
 ## Limitations
 
-A few honest edges, with the full list in [ARCHITECTURE.md](ARCHITECTURE.md#limitations):
+The full list with case-level receipts is in [ARCHITECTURE.md](ARCHITECTURE.md#limitations). The ones that matter:
 
-- The corpus is fixed (latest 10-K + four 10-Qs per company). A question whose scope exceeds that window, or asks for a breakout the XBRL facts do not isolate, is answered on the available slice; flagging that under-scope and downgrading to `partial` is a v2 item (4 of the 12 status mismatches).
-- The `assess` node over-flags well-grounded qualitative axes as weak (8 of the 12 status mismatches); the grounding heuristic is tuned for quant-fact density and under-credits qual evidence. This is the main reason status match reads 29/41.
-- Sonnet writes the reports and Sonnet judges them. Same-model self-preference is disclosed, not measured; what bounds it is that quant faithfulness and status match are deterministic code, not judge opinion.
-- The local Qwen classifier matches the Haiku tier on the gold set (macro-F1 0.88 vs 0.89) at zero API cost, via constrained decoding. On a GPU you already own, its marginal cost is negligible and undercuts Haiku's per-call charge; Haiku is the fallback for GPU-less deployment, not the cheaper option. Full framing in the architecture doc.
-- The prompt-injection result (0 leaks over 9 measured vectors) is a single-run red team: 2 vectors are unmeasured, N is small, and there is no explicit data/instruction delimiting layer yet. Delimiting plus a no-injection counterfactual for the grounding vector are v2 items; the current result is that the grounded-by-construction design and the critic already resist every measurable vector.
+- The corpus is fixed at the latest 10-K plus four 10-Qs per company. A question that exceeds that window is answered on the available slice without flagging the shortfall; detecting the under-scope and downgrading to `partial` is a v2 item (4 of the 12 status misses).
+- The `assess` node over-flags well-grounded qualitative axes as weak because its grounding heuristic is tuned for quant-fact density (8 of the 12 status misses, and the main reason status match reads 29/41).
+- Sonnet writes the reports and Sonnet judges them. Self-preference is disclosed, not measured; what bounds it is that quant faithfulness and status match are deterministic code, not judge opinion.
+- The injection result is a single small-N run with no explicit data/instruction delimiting layer yet; 2 of the 11 vectors need counterfactual harness work before they can be scored at all.
 
 ## More
 

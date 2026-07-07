@@ -7,6 +7,7 @@
 [![fine-tune](https://img.shields.io/badge/fine--tune-QLoRA%20judge%20adapter-8A2BE2)](eval/results/judge_correlation)
 [![local model](https://img.shields.io/badge/local%20model-Qwen%202.5%207B%20AWQ%20on%20vLLM-informational)](ARCHITECTURE.md#local-model-serving)
 [![Anthropic](https://img.shields.io/badge/Anthropic-Sonnet%20%2B%20Haiku-D97757?logo=anthropic&logoColor=white)](#how-it-works)
+[![OpenAPI](https://img.shields.io/badge/OpenAPI-3.1-6BA539?logo=openapiinitiative&logoColor=white)](openapi.json)
 [![Python](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 

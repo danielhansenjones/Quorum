@@ -1,0 +1,132 @@
+{
+  "config": {
+    "generated": "2026-07-07T14:27:03Z",
+    "run_dirs": [
+      "eval/results/campaign-critic"
+    ],
+    "local_judge": "judge-fold-0",
+    "canonical_judge": "claude-sonnet-4-6",
+    "local_quality_parse_failures": 0,
+    "faithfulness_qual_only_per_claim": {
+      "n": 30,
+      "n_clusters": 3,
+      "pearson": 0.7398741738319079,
+      "spearman": 0.7485093747599247,
+      "spearman_lower_95": 0.48507125007266594,
+      "spearman_upper_95": 0.8088412049082916
+    },
+    "faithfulness_qual_only_per_case": {
+      "n": 3,
+      "n_clusters": 3,
+      "pearson": 0.9991677917019076,
+      "spearman": 1.0,
+      "spearman_lower_95": 1.0,
+      "spearman_upper_95": 1.0
+    },
+    "faithfulness_blended": {
+      "n": 7,
+      "n_clusters": 7,
+      "pearson": 0.9625670386555852,
+      "spearman": 0.9999999999999999,
+      "spearman_lower_95": 0.9999999999999998,
+      "spearman_upper_95": 1.0
+    },
+    "quality": {
+      "n": 7,
+      "n_clusters": 7,
+      "pearson": 0.2668078722188797,
+      "spearman": 0.23112508176051214,
+      "spearman_lower_95": -0.5291502622129182,
+      "spearman_upper_95": 0.8999999999999999
+    },
+    "decision": {
+      "use_local_for_iteration": false,
+      "rule": "local judge for iteration if spearman_lower_95(faithfulness) > 0.7 AND spearman_lower_95(quality) > 0.6; otherwise Sonnet for all judging",
+      "faithfulness_spearman": 0.7485093747599247,
+      "faithfulness_spearman_lower_95": 0.48507125007266594,
+      "faithfulness_n_clusters": 3,
+      "quality_spearman": 0.23112508176051214,
+      "quality_spearman_lower_95": -0.5291502622129182,
+      "quality_n_clusters": 7
+    }
+  },
+  "per_case": [
+    {
+      "case": "happy_aapl_msft_growth",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 4.5,
+      "local_quality": 5.0
+    },
+    {
+      "case": "happy_jnj_pfe_profitability",
+      "arm": "campaign-critic",
+      "n_qual_citations": 10,
+      "sonnet_faith_blended": 2.3,
+      "local_faith_blended": 1.8,
+      "sonnet_faith_qual_only": 2.0,
+      "local_faith_qual_only": 1.8,
+      "sonnet_quality": 4.25,
+      "local_quality": 3.5
+    },
+    {
+      "case": "happy_mrk_lly_risks",
+      "arm": "campaign-critic",
+      "n_qual_citations": 10,
+      "sonnet_faith_blended": 3.5,
+      "local_faith_blended": 4.0,
+      "sonnet_faith_qual_only": 3.5,
+      "local_faith_qual_only": 4.0,
+      "sonnet_quality": 4.75,
+      "local_quality": 5.0
+    },
+    {
+      "case": "happy_multi_axis_staples",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 5.0,
+      "local_quality": 5.0
+    },
+    {
+      "case": "happy_staples_risks",
+      "arm": "campaign-critic",
+      "n_qual_citations": 10,
+      "sonnet_faith_blended": 3.4,
+      "local_faith_blended": 3.8,
+      "sonnet_faith_qual_only": 3.3,
+      "local_faith_qual_only": 3.8,
+      "sonnet_quality": 4.75,
+      "local_quality": 4.75
+    },
+    {
+      "case": "partial_insufficient_growth_for_costco",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 4.75,
+      "local_quality": 5.0
+    },
+    {
+      "case": "weak_then_recovered_obscure_metric",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 3.75,
+      "local_quality": 5.0
+    }
+  ]
+}

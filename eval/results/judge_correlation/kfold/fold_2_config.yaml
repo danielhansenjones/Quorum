@@ -1,0 +1,47 @@
+generated: '2026-07-07T14:30:26Z'
+run_dirs:
+- eval/results/campaign-critic
+local_judge: judge-fold-2
+canonical_judge: claude-sonnet-4-6
+local_quality_parse_failures: 0
+faithfulness_qual_only_per_claim:
+  n: 0
+  n_clusters: null
+  pearson: null
+  spearman: null
+  spearman_lower_95: null
+  spearman_upper_95: null
+  note: n<3
+faithfulness_qual_only_per_case:
+  n: 0
+  n_clusters: null
+  pearson: null
+  spearman: null
+  spearman_lower_95: null
+  spearman_upper_95: null
+  note: n<3
+faithfulness_blended:
+  n: 6
+  n_clusters: null
+  pearson: null
+  spearman: null
+  spearman_lower_95: null
+  spearman_upper_95: null
+  note: constant input
+quality:
+  n: 6
+  n_clusters: 6
+  pearson: 0.21821789023599242
+  spearman: 0.11547005383792515
+  spearman_lower_95: -0.7071067811865475
+  spearman_upper_95: 0.9486832980505139
+decision:
+  use_local_for_iteration: false
+  rule: local judge for iteration if spearman_lower_95(faithfulness) > 0.7 AND spearman_lower_95(quality)
+    > 0.6; otherwise Sonnet for all judging
+  faithfulness_spearman: null
+  faithfulness_spearman_lower_95: null
+  faithfulness_n_clusters: null
+  quality_spearman: 0.11547005383792515
+  quality_spearman_lower_95: -0.7071067811865475
+  quality_n_clusters: 6

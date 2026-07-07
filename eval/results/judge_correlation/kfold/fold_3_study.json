@@ -1,0 +1,123 @@
+{
+  "config": {
+    "generated": "2026-07-07T14:31:41Z",
+    "run_dirs": [
+      "eval/results/campaign-critic"
+    ],
+    "local_judge": "judge-fold-3",
+    "canonical_judge": "claude-sonnet-4-6",
+    "local_quality_parse_failures": 0,
+    "faithfulness_qual_only_per_claim": {
+      "n": 10,
+      "n_clusters": null,
+      "pearson": null,
+      "spearman": null,
+      "spearman_lower_95": null,
+      "spearman_upper_95": null,
+      "note": "constant input"
+    },
+    "faithfulness_qual_only_per_case": {
+      "n": 1,
+      "n_clusters": null,
+      "pearson": null,
+      "spearman": null,
+      "spearman_lower_95": null,
+      "spearman_upper_95": null,
+      "note": "n<3"
+    },
+    "faithfulness_blended": {
+      "n": 6,
+      "n_clusters": 6,
+      "pearson": 1.0,
+      "spearman": 1.0,
+      "spearman_lower_95": 1.0,
+      "spearman_upper_95": 1.0
+    },
+    "quality": {
+      "n": 6,
+      "n_clusters": 6,
+      "pearson": 0.9486832980505137,
+      "spearman": 0.7071067811865477,
+      "spearman_lower_95": 0.7071067811865477,
+      "spearman_upper_95": 1.0
+    },
+    "decision": {
+      "use_local_for_iteration": false,
+      "rule": "local judge for iteration if spearman_lower_95(faithfulness) > 0.7 AND spearman_lower_95(quality) > 0.6; otherwise Sonnet for all judging",
+      "faithfulness_spearman": null,
+      "faithfulness_spearman_lower_95": null,
+      "faithfulness_n_clusters": null,
+      "quality_spearman": 0.7071067811865477,
+      "quality_spearman_lower_95": 0.7071067811865477,
+      "quality_n_clusters": 6
+    }
+  },
+  "per_case": [
+    {
+      "case": "happy_googl_meta_growth",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 4.75,
+      "local_quality": 4.75
+    },
+    {
+      "case": "happy_mixed_quant_qual",
+      "arm": "campaign-critic",
+      "n_qual_citations": 10,
+      "sonnet_faith_blended": 4.166666666666667,
+      "local_faith_blended": 4.444444444444445,
+      "sonnet_faith_qual_only": 3.5,
+      "local_faith_qual_only": 4.0,
+      "sonnet_quality": 4.75,
+      "local_quality": 5.0
+    },
+    {
+      "case": "happy_multi_axis_meta_googl",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 4.75,
+      "local_quality": 5.0
+    },
+    {
+      "case": "happy_pg_ko_leverage",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 4.75,
+      "local_quality": 4.75
+    },
+    {
+      "case": "partial_capex_comparison",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 3.5,
+      "local_quality": 4.0
+    },
+    {
+      "case": "partial_segment_revenue",
+      "arm": "campaign-critic",
+      "n_qual_citations": 0,
+      "sonnet_faith_blended": 5.0,
+      "local_faith_blended": 5.0,
+      "sonnet_faith_qual_only": null,
+      "local_faith_qual_only": null,
+      "sonnet_quality": 4.75,
+      "local_quality": 5.0
+    }
+  ]
+}

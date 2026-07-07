@@ -1,0 +1,24 @@
+# k-fold overlay: serves all five cross-validation adapters at once for
+# kfold_gate.sh. Layer over the base file for the cross-validated gate:
+#   docker compose -f docker-compose.yml -f docker-compose.kfold.yml --profile gpu up -d vllm
+# Separate from docker-compose.lora.yml so the single-adapter gate config stays put.
+services:
+  vllm:
+    volumes:
+      - ./data/vllm-cache:/root/.cache/huggingface
+      - ./eval/models:/adapters:ro
+    command:
+      - "--model=Qwen/Qwen2.5-7B-Instruct-AWQ"
+      - "--quantization=awq_marlin"
+      - "--max-model-len=8192"
+      - "--gpu-memory-utilization=0.75"
+      - "--dtype=auto"
+      - "--enable-lora"
+      - "--max-lora-rank=16"
+      - "--max-loras=5"
+      - "--lora-modules"
+      - "judge-fold-0=/adapters/judge-fold-0"
+      - "judge-fold-1=/adapters/judge-fold-1"
+      - "judge-fold-2=/adapters/judge-fold-2"
+      - "judge-fold-3=/adapters/judge-fold-3"
+      - "judge-fold-4=/adapters/judge-fold-4"

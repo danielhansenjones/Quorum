@@ -82,6 +82,7 @@ flowchart LR
     ROUTER -.->|"analyst / synthesizer / critic / judge"| ANTH(["Claude Sonnet"])
     ROUTER -.->|"classifier fallback"| HAIKU(["Claude Haiku"])
     ROUTER -.->|"classifier / legwork (gpu profile)"| VLLM(["Qwen 2.5 7B AWQ<br/>local vLLM"])
+    ROUTER -.->|"judge_audit (eval: audit only)"| GPT(["GPT-5.1<br/>cross-vendor audit judge"])
 
     GRAPH <-->|"checkpoints - trace_events"| PG[("Postgres 16")]
     TOOLS <-->|"XBRL facts"| PG
@@ -91,7 +92,7 @@ flowchart LR
     classDef store fill:#eef2ff,stroke:#6366f1,color:#1e1b4b;
     classDef ext fill:#fff7ed,stroke:#fb923c,color:#7c2d12;
     class QD,PG,CACHE store;
-    class ANTH,HAIKU,VLLM ext;
+    class ANTH,HAIKU,VLLM,GPT ext;
 ```
 
 The graph branches, re-plans only the weak axes within a step budget, and fact-checks the draft before it writes:

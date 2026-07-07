@@ -17,9 +17,6 @@ COMPANYFACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik_padded}.j
 FILING_DOC_URL = (
     "https://www.sec.gov/Archives/edgar/data/{cik_int}/{accession_nodashes}/{primary_doc}"
 )
-ACCESSION_HEADER_URL = (
-    "https://www.sec.gov/Archives/edgar/data/{cik_int}/{accession_nodashes}/{accession}-index.json"
-)
 
 
 @dataclass(frozen=True, slots=True)
@@ -150,12 +147,3 @@ class EdgarFetcher:
             primary_doc=filing.primary_doc,
         )
         return self._get(url)
-
-    def fetch_accession_header(self, filing: FilingRef) -> dict[str, Any]:
-        url = ACCESSION_HEADER_URL.format(
-            cik_int=int(filing.cik),
-            accession_nodashes=filing.accession.replace("-", ""),
-            accession=filing.accession,
-        )
-        result: dict[str, Any] = json.loads(self._get(url))
-        return result

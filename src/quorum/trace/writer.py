@@ -7,7 +7,6 @@ from datetime import UTC, datetime
 from typing import Any, Literal
 from uuid import UUID
 
-import psycopg
 from psycopg_pool import ConnectionPool
 
 ErrorKind = Literal["none", "transient", "terminal"]
@@ -142,10 +141,3 @@ def open_pool(
     )
     pool.open(wait=True, timeout=10.0)
     return pool
-
-
-def ensure_connectable(conninfo: str) -> None:
-    # Sync probe for /ready endpoint and CI smoke. One-shot connection, no pool.
-    with psycopg.connect(conninfo, connect_timeout=5) as conn, conn.cursor() as cur:
-        cur.execute("SELECT 1")
-        cur.fetchone()

@@ -203,10 +203,3 @@ def upsert_facts(pool: ConnectionPool, facts: list[Fact]) -> int:
         )
         conn.commit()
     return len(facts)
-
-
-def count_facts_for_cik(pool: ConnectionPool, cik: str) -> int:
-    with pool.connection() as conn, conn.cursor() as cur:
-        cur.execute("SELECT count(*) FROM facts WHERE cik = %s", (cik,))
-        row = cur.fetchone()
-    return int(row[0]) if row else 0

@@ -80,6 +80,14 @@ def main() -> int:
     parser.add_argument("--glob", default=DEFAULT_GLOB)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--val-every", type=int, default=5, help="1-in-N case_ids held out for val.")
+    parser.add_argument(
+        "--kfold",
+        type=int,
+        default=None,
+        help="Write K fold_i/ dirs (round-robin split by case_id) instead of one val split. "
+        "Gated together (kfold_gate.sh), every case_id is held out exactly once, so the "
+        "cross-validated correlation covers the whole corpus instead of one small val slice.",
+    )
     args = parser.parse_args()
 
     settings = get_settings()
@@ -119,36 +127,50 @@ def main() -> int:
             case_ids.append(case_id)
 
     unique_ids = sorted(set(case_ids))
-    val_ids = {cid for idx, cid in enumerate(unique_ids) if idx % args.val_every == 0}
-
-    train = [e for e in examples if e["case_id"] not in val_ids]
-    val = [e for e in examples if e["case_id"] in val_ids]
-
-    args.out.mkdir(parents=True, exist_ok=True)
-    for name, rows in (("train", train), ("val", val)):
-        path = args.out / f"{name}.jsonl"
-        path.write_text("".join(json.dumps(r) + "\n" for r in rows))
-    (args.out / "val_case_ids.txt").write_text("".join(cid + "\n" for cid in sorted(val_ids)))
 
     def _counts(rows: list[dict]) -> str:
         f = sum(1 for r in rows if r["task"] == "faithfulness")
         qn = sum(1 for r in rows if r["task"] == "quality")
         return f"{len(rows)} ({f} faith, {qn} quality)"
 
-    print(
-        json.dumps(
-            {
-                "case_files": len(case_files),
-                "unique_case_ids": len(unique_ids),
-                "val_case_ids": len(val_ids),
-                "section_lookups_missing": n_missing,
-                "train": _counts(train),
-                "val": _counts(val),
-                "out": str(args.out),
-            },
-            indent=2,
-        )
-    )
+    def _write_split(out_dir: Path, val_ids: set[str]) -> tuple[list[dict], list[dict]]:
+        tr = [e for e in examples if e["case_id"] not in val_ids]
+        va = [e for e in examples if e["case_id"] in val_ids]
+        out_dir.mkdir(parents=True, exist_ok=True)
+        for name, rows in (("train", tr), ("val", va)):
+            (out_dir / f"{name}.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
+        (out_dir / "val_case_ids.txt").write_text("".join(cid + "\n" for cid in sorted(val_ids)))
+        return tr, va
+
+    if args.kfold:
+        folds = []
+        for i in range(args.kfold):
+            val_ids = {cid for idx, cid in enumerate(unique_ids) if idx % args.kfold == i}
+            tr, va = _write_split(args.out / f"fold_{i}", val_ids)
+            folds.append(
+                {"fold": i, "val_case_ids": len(val_ids), "train": _counts(tr), "val": _counts(va)}
+            )
+        summary: dict[str, object] = {
+            "case_files": len(case_files),
+            "unique_case_ids": len(unique_ids),
+            "kfold": args.kfold,
+            "section_lookups_missing": n_missing,
+            "folds": folds,
+            "out": str(args.out),
+        }
+    else:
+        val_ids = {cid for idx, cid in enumerate(unique_ids) if idx % args.val_every == 0}
+        train, val = _write_split(args.out, val_ids)
+        summary = {
+            "case_files": len(case_files),
+            "unique_case_ids": len(unique_ids),
+            "val_case_ids": len(val_ids),
+            "section_lookups_missing": n_missing,
+            "train": _counts(train),
+            "val": _counts(val),
+            "out": str(args.out),
+        }
+    print(json.dumps(summary, indent=2))
     return 0
 
 

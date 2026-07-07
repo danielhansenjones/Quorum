@@ -4,32 +4,24 @@ The technical companion to the [README](README.md): the graph node by node, the 
 
 ## The graph
 
-```
-question
-  |
-  v
-[classify] --out_of_scope OR no axis--> [refuse] --> END
-  | axes + companies_raw
-  v
-[resolve] --fewer than 2 in-corpus companies--> [refuse] --> END
-  | tickers
-  v
-[plan] <----------------------------------+
-  | Send(axis) x N (parallel fan-out)      | re-plan only the
-  v                                        | under-grounded axes
-[analyze_axis]  [analyze_axis]  ...        | (while budget remains)
-  \________________|________________/      |
-                   v                        |
-              [assess] --any axis weak?-----+
-                   | all grounded OR budget exhausted
-                   v
-              [critic] --timeout / failure----+
-                   | critique complete        |
-                   v                          |
-              [synthesize] <------------------+
-                   |
-                   v
-                  END
+```mermaid
+flowchart TB
+    Q(["question"]) --> CLS["classify"]
+    CLS -->|"out_of_scope OR no axis"| REF["refuse"]
+    CLS -->|"axes + companies_raw"| RES["resolve"]
+    RES -->|"fewer than 2 in-corpus companies"| REF
+    RES -->|"tickers"| PLAN["plan"]
+    PLAN -->|"Send(axis) x N - parallel fan-out"| AX["analyze_axis x N"]
+    AX --> ASSESS["assess"]
+    ASSESS -->|"any axis weak?<br/>re-plan only the under-grounded axes<br/>(while budget remains)"| PLAN
+    ASSESS -->|"all grounded OR budget exhausted"| CRIT["critic"]
+    CRIT -->|"critique complete"| SYN["synthesize"]
+    CRIT -->|"timeout / failure"| SYN
+    SYN --> DONE(["END"])
+    REF --> DONE
+
+    classDef terminal fill:#fef2f2,stroke:#ef4444,color:#7f1d1d;
+    class REF terminal;
 ```
 
 ### Nodes

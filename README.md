@@ -7,7 +7,7 @@
 [![fine-tune](https://img.shields.io/badge/fine--tune-QLoRA%20judge%20adapter-8A2BE2)](eval/results/judge_correlation)
 [![local model](https://img.shields.io/badge/local%20model-Qwen%202.5%207B%20AWQ%20on%20vLLM-informational)](ARCHITECTURE.md#local-model-serving)
 [![Anthropic](https://img.shields.io/badge/Anthropic-Sonnet%20%2B%20Haiku-D97757?logo=anthropic&logoColor=white)](#how-it-works)
-[![OpenAPI](https://img.shields.io/badge/OpenAPI-3.1-6BA539?logo=openapiinitiative&logoColor=white)](openapi.json)
+[![OpenAPI](https://img.shields.io/badge/OpenAPI-3.1-6BA539?logo=openapiinitiative&logoColor=white)](#how-it-works)
 [![Python](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
@@ -61,11 +61,11 @@ One FastAPI service drives a LangGraph agent graph. No queue, no worker tier: a 
 flowchart LR
     C(["Client / MCP host"])
     C -->|"POST /compare (SSE stream)"| API
-    C -->|"POST /runs/:id/resume"| API
+    C -->|"GET /runs/:id/resume"| API
     C -->|"MCP protocol"| MCP
 
     subgraph api_tier["API tier - FastAPI (stateless)"]
-        API["FastAPI<br/>SSE - ready checks"]
+        API["FastAPI<br/>SSE - OpenAPI 3.1 - ready checks"]
         MCP["MCP server<br/>mirrors the tools"]
     end
 
@@ -145,16 +145,16 @@ A prompt-injection red team plants adversarial text in the retrieval corpus unde
 
 Each graph feature is a `build_graph` flag and an eval arm. The four-arm campaign ran the full gold set per arm, same commit, same judge; deltas are paired bootstrap 95% CIs from [`scripts/run_ab_compare.py`](scripts/run_ab_compare.py).
 
-| Question | Measured | Decision |
-|---|---|---|
-| Does the critic earn its cost? | Quality +0.067 (CI includes zero) at +\$0.086/case; 56/56 flagged claims acted on by synthesis | On. It is the verification layer, and its cost is now a known number |
-| Critic-analyst rebuttal loop? | The campaign's only significant quality gain (+0.104) but faithfulness statistically down (-0.007) | Off. It failed the pre-registered faithfulness-flat-or-up rule |
-| Tiered agentic analyst? | Faithfulness -0.055, quality flat, the most expensive arm (+\$0.138/case) | Off |
-| Local 7B as the eval judge? | Base model failed both correlation gates (quality 0.597 vs 0.6, qual faithfulness 0.46 vs 0.7) | Rejected; fine-tuning lifts every correlation but 7 held-out questions can't certify it, so Sonnet stays canonical (below) |
-| ColBERT reranking? | Every retrieval arm already hits success@10 = 1.00 | Not built. There is no headroom for it to buy |
-| Hybrid or dense-only retrieval? | Hybrid ties dense on success@5, leads recall@5 | Hybrid stays, narrowly. Dense-only is a defensible simplification |
-| Local Qwen or Haiku classifier? | Macro-F1 0.88 vs 0.89, refusal perfect on both | Local when a GPU is present (near-zero marginal cost), Haiku fallback |
-| Why AWQ-4bit, not bf16? | bf16 7B (~15GB) leaves no room for the KV cache in 16GB after the desktop compositor's ~2GB; AWQ-4bit fits with continuous batching intact, at ~1 macro-F1 point (0.88 vs 0.89). Serves 2,545 / 2,052 tok/s (classifier / judge) at 32-way concurrency | AWQ-4bit. The constraint that makes local serving fit, not a tuning knob |
+| Question                        | Measured                                                                                                                                                                                                                                               | Decision                                                                                                                   |
+|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Does the critic earn its cost?  | Quality +0.067 (CI includes zero) at +\$0.086/case; 56/56 flagged claims acted on by synthesis                                                                                                                                                         | On. It is the verification layer, and its cost is now a known number                                                       |
+| Critic-analyst rebuttal loop?   | The campaign's only significant quality gain (+0.104) but faithfulness statistically down (-0.007)                                                                                                                                                     | Off. It failed the pre-registered faithfulness-flat-or-up rule                                                             |
+| Tiered agentic analyst?         | Faithfulness -0.055, quality flat, the most expensive arm (+\$0.138/case)                                                                                                                                                                              | Off                                                                                                                        |
+| Local 7B as the eval judge?     | Base model failed both correlation gates (quality 0.597 vs 0.6, qual faithfulness 0.46 vs 0.7)                                                                                                                                                         | Rejected; fine-tuning lifts every correlation but 7 held-out questions can't certify it, so Sonnet stays canonical (below) |
+| ColBERT reranking?              | Every retrieval arm already hits success@10 = 1.00                                                                                                                                                                                                     | Not built. There is no headroom for it to buy                                                                              |
+| Hybrid or dense-only retrieval? | Hybrid ties dense on success@5, leads recall@5                                                                                                                                                                                                         | Hybrid stays, narrowly. Dense-only is a defensible simplification                                                          |
+| Local Qwen or Haiku classifier? | Macro-F1 0.88 vs 0.89, refusal perfect on both                                                                                                                                                                                                         | Local when a GPU is present (near-zero marginal cost), Haiku fallback                                                      |
+| Why AWQ-4bit, not bf16?         | bf16 7B (~15GB) leaves no room for the KV cache in 16GB after the desktop compositor's ~2GB; AWQ-4bit fits with continuous batching intact, at ~1 macro-F1 point (0.88 vs 0.89). Serves 2,545 / 2,052 tok/s (classifier / judge) at 32-way concurrency | AWQ-4bit. The constraint that makes local serving fit, not a tuning knob                                                   |
 
 The judge is worth expanding as a measurement problem. The plan called for a cheap local judge for fast iteration with Sonnet as the canonical reference, but the base Qwen 7B turned out to be a near-constant scorer and failed both gates. The fix was distillation: [`scripts/build_judge_sft.py`](scripts/build_judge_sft.py) turns the committed campaign artifacts into 583 judge-prompt-to-Sonnet-verdict pairs (split by case so no question leaks across train/val), and a rank-16 QLoRA adapter trains in ~23 minutes. On a single 7-question held-out split the adapter looked strong (quality spearman 0.66), but 0.66 on 7 questions can be luck, so the gate does not trust it: it decides on the lower bound of a question-clustered confidence interval, which on 7 points runs from -0.32 to 1.0. Cross-validating over all 32 questions ([`scripts/kfold_gate.sh`](scripts/kfold_gate.sh), each case scored by an adapter that never trained on it) puts the honest number at quality spearman **0.50** (95% CI [0.17, 0.75]) - real agreement, but below the 0.6 gate, so `use_local_for_iteration` stays false and Sonnet remains canonical. The distillation still clearly worked: on the same 32 questions a frontier GPT-5.1 judge agrees with Sonnet at only 0.28, so the local 7B tracks Sonnet's quality better than a cross-vendor model does - it just does not clear the bar for autonomous use. That [cross-vendor audit](eval/results/crossvendor/audit.json) also catches Sonnet favoring its own prose faithfulness by ~0.7 points. Study, gates, and cross-validation pairs under [`eval/results/`](eval/results).
 

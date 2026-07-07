@@ -34,6 +34,50 @@ def _counter_summary(counter: Any) -> str | None:
     return None
 
 
+def _fmt_amount(value: Any, unit: Any) -> str:
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return str(value) if value else ""
+    if unit == "USD":
+        a = abs(v)
+        if a >= 1e9:
+            return f"${v / 1e9:.2f}B"
+        if a >= 1e6:
+            return f"${v / 1e6:.2f}M"
+        if a >= 1e3:
+            return f"${v / 1e3:.1f}K"
+        return f"${v:,.0f}"
+    return f"{v:,.4g}" + (f" {unit}" if unit else "")
+
+
+def _citation(c: dict[str, Any]) -> dict[str, Any]:
+    # Quant citations are code-built XBRL facts (concept/value/period, no quote);
+    # qual citations carry a filing excerpt. The `claim` field is the whole axis
+    # paragraph, identical across every citation, so it is not shown per-row - it
+    # is the report text already rendered above.
+    kind = c.get("kind", "")
+    if kind == "quant":
+        return {
+            "kind": "quant",
+            "ticker": c.get("ticker", ""),
+            "concept": c.get("concept", ""),
+            "amount": _fmt_amount(c.get("value"), c.get("unit")),
+            "period": c.get("period", ""),
+            "section": "",
+            "quote": "",
+        }
+    return {
+        "kind": kind,
+        "ticker": c.get("ticker", ""),
+        "concept": "",
+        "amount": "",
+        "period": "",
+        "section": c.get("section", ""),
+        "quote": c.get("quote", ""),
+    }
+
+
 def _load_questions(gold: Path) -> dict[str, str]:
     cases = yaml.safe_load(gold.read_text())["cases"]
     return {c["id"]: c["question"] for c in cases if c.get("id")}
@@ -56,16 +100,7 @@ def _build_record(path: Path, questions: dict[str, str]) -> dict[str, Any]:
         }
         for fc in (critique.get("flagged_claims") or [])
     ]
-    citations = [
-        {
-            "kind": c.get("kind", ""),
-            "ticker": c.get("ticker", ""),
-            "section": c.get("section", ""),
-            "quote": c.get("quote", ""),
-            "claim": c.get("claim", ""),
-        }
-        for c in (d.get("citations") or [])
-    ]
+    citations = [_citation(c) for c in (d.get("citations") or [])]
     per_axis = [
         {
             "axis": v.get("axis", k),
@@ -193,6 +228,8 @@ section > h2 { font-size: 1.05rem; border-bottom: 1px solid var(--border); paddi
 .flag-item .reason, .cite .claim { color: var(--muted); font-size: .9rem; margin-top: .35rem; }
 .cite .head, .flag-item .head, .axis .head { display: flex; flex-wrap: wrap; gap: .5rem;
   align-items: center; font-size: .82rem; color: var(--muted); margin-bottom: .4rem; }
+.cite .fact { font-size: .9rem; }
+.cite .fact .mono { color: var(--text); }
 .mono { font-family: var(--mono); }
 .notes { color: var(--muted); font-size: .9rem; }
 .empty { color: var(--muted); font-style: italic; }
@@ -274,10 +311,12 @@ _CASE = """<div class="wrap">
   <div class="cite">
     <div class="head">
       <span class="badge {{ c.kind }}">{{ c.kind }}</span>
-      <span class="mono">{{ c.ticker }}</span>{% if c.section %}<span class="mono">{{ c.section }}</span>{% endif %}
+      <span class="mono">{{ c.ticker }}</span>
+      {% if c.period %}<span class="mono">{{ c.period }}</span>{% endif %}
+      {% if c.section %}<span class="mono">{{ c.section }}</span>{% endif %}
     </div>
+    {% if c.concept %}<div class="fact"><span class="mono">{{ c.concept }}</span> = <b>{{ c.amount }}</b></div>{% endif %}
     {% if c.quote %}<div class="quote">"{{ c.quote }}"</div>{% endif %}
-    <div class="claim">{{ c.claim }}</div>
   </div>
   {% else %}
   <p class="empty">No citations.</p>

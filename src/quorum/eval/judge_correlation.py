@@ -110,7 +110,9 @@ def judge_decision(
     # reshuffle of seven questions should not be able to pass the fine-tune.
     fl = faithfulness.get("spearman_lower_95")
     ql = quality.get("spearman_lower_95")
-    use_local = fl is not None and ql is not None and fl > faith_threshold and ql > quality_threshold
+    use_local = (
+        fl is not None and ql is not None and fl > faith_threshold and ql > quality_threshold
+    )
     return {
         "use_local_for_iteration": use_local,
         "rule": (

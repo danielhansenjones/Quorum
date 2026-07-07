@@ -79,7 +79,9 @@ def main() -> int:
     )
     parser.add_argument("--glob", default=DEFAULT_GLOB)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    parser.add_argument("--val-every", type=int, default=5, help="1-in-N case_ids held out for val.")
+    parser.add_argument(
+        "--val-every", type=int, default=5, help="1-in-N case_ids held out for val."
+    )
     parser.add_argument(
         "--kfold",
         type=int,

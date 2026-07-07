@@ -28,7 +28,9 @@ def main() -> int:
     ap.add_argument("--lr", type=float, default=2e-4)
     ap.add_argument("--seq-len", type=int, default=2560)
     ap.add_argument("--rank", type=int, default=16)
-    ap.add_argument("--smoke", action="store_true", help="2 steps on a tiny subset to validate wiring.")
+    ap.add_argument(
+        "--smoke", action="store_true", help="2 steps on a tiny subset to validate wiring."
+    )
     args = ap.parse_args()
 
     bnb = BitsAndBytesConfig(

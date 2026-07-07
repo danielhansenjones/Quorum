@@ -156,9 +156,7 @@ def main() -> int:
         default=DEFAULT_MAX_USD,
         help="Hard cap. If the one-pass estimate exceeds it, stop before spending.",
     )
-    ap.add_argument(
-        "--limit", type=int, default=None, help="First N eligible cases (cheap probe)."
-    )
+    ap.add_argument("--limit", type=int, default=None, help="First N eligible cases (cheap probe).")
     ap.add_argument("--yes", action="store_true", help="Actually spend. Without it, estimate only.")
     args = ap.parse_args()
 

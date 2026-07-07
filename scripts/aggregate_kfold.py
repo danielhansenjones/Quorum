@@ -41,9 +41,7 @@ def main() -> int:
     out = {
         "kfold": args.kfold,
         "note": "cross-validated: every case scored by an adapter that never trained on it",
-        "quality": correlate(
-            [s for s, _ in q_pairs], [x for _, x in q_pairs], labels=q_labels
-        ),
+        "quality": correlate([s for s, _ in q_pairs], [x for _, x in q_pairs], labels=q_labels),
         "faithfulness_qual_only": correlate(
             [s for s, _ in f_pairs], [x for _, x in f_pairs], labels=f_labels
         ),

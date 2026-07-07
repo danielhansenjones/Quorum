@@ -118,7 +118,9 @@ def test_openai_chat_reasoning_param_translation(monkeypatch: pytest.MonkeyPatch
     assert "temperature" not in captured
     assert "max_tokens" not in captured
     assert captured["max_completion_tokens"] == 3700  # 700 visible + 3000 reasoning headroom
-    assert captured["reasoning_effort"] == "none"  # audit default: comparable to non-reasoning Sonnet
+    assert (
+        captured["reasoning_effort"] == "none"
+    )  # audit default: comparable to non-reasoning Sonnet
     assert captured["model"] == "gpt-5.1"
     assert c.usage == {"prompt": 1200, "completion": 800, "reasoning": 600, "calls": 1}
 

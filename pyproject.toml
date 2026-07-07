@@ -36,6 +36,7 @@ dependencies = [
   # Concept-aliases YAML (config/concept_aliases.yaml) is the natural format
   # for nested per-ticker overrides; tomllib would force flat tables.
   "pyyaml",
+  "psycopg-pool>=3.3.1",
 ]
 
 [project.optional-dependencies]

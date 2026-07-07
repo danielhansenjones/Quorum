@@ -24,7 +24,7 @@ def embedder():
     if not _hf_cache_has_bge_m3():
         pytest.skip(
             "BGE-M3 weights not downloaded; first run is ~2GB. "
-            "Skip until Phase 2a model pull completes or run the spike first."
+            "Run ingest once (python -m quorum.ingest.run) to pull them."
         )
     return BGEM3Embedder(device="cpu")
 

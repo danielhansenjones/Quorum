@@ -19,7 +19,7 @@ Stack: LangGraph, FastAPI (SSE), Postgres 16, Qdrant (BGE-M3 hybrid), Claude Son
 
 ## Demo
 
-![Quorum demo](assets/demo.gif)
+[![Quorum demo](assets/demo.gif)](https://danielhansenjones.github.io/quorum/)
 
 Rendered from a real recorded run, committed at [`eval/fixtures/demo_replay.jsonl`](eval/fixtures/demo_replay.jsonl). Replay it in your terminal with no API key, no server, no Docker:
 
@@ -39,7 +39,7 @@ uv run uvicorn quorum.api.main:app --port 8000
 uv run python scripts/demo.py "Compare Coca-Cola and PepsiCo on profitability and growth." --step 0.5 --cost
 ```
 
-No live endpoint by design: anonymous traffic burns API credits and an auth wall defeats the point, so the hosted demo is a committed replay. Browse real outputs without cloning in the [report gallery](https://danielhansenjones.github.io/Quorum/) - each page shows the question, final report, critic flags, and judge scores, generated from the committed critic arm by [`scripts/build_gallery.py`](scripts/build_gallery.py).
+No live endpoint by design: anonymous traffic burns API credits and an auth wall defeats the point, so the hosted demo is a committed replay. Browse real outputs without cloning in the [report gallery](https://danielhansenjones.github.io/quorum/) - each page shows the question, final report, critic flags, and judge scores, generated from the committed critic arm by [`scripts/build_gallery.py`](scripts/build_gallery.py).
 
 ## What it produces
 
@@ -149,7 +149,7 @@ Each graph feature is a `build_graph` flag and an eval arm. The four-arm campaig
 | Question                        | Measured                                                                                                                                                                                                                                               | Decision                                                                                                                   |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Does the critic earn its cost?  | Quality +0.067 (CI includes zero) at +\$0.086/case; 56/56 flagged claims acted on by synthesis                                                                                                                                                         | On. It is the verification layer, and its cost is now a known number                                                       |
-| Critic-analyst rebuttal loop?   | The campaign's only significant quality gain (+0.104) but faithfulness statistically down (-0.007)                                                                                                                                                     | Off. It failed the faithfulness-flat-or-up ship rule set before the run                                                             |
+| Critic-analyst rebuttal loop?   | The campaign's only significant quality gain (+0.104) but faithfulness statistically down (-0.007)                                                                                                                                                     | Off. It failed the faithfulness-flat-or-up ship rule set before the run                                                    |
 | Tiered agentic analyst?         | Faithfulness -0.055, quality flat, the most expensive arm (+\$0.138/case)                                                                                                                                                                              | Off                                                                                                                        |
 | Local 7B as the eval judge?     | Base model failed both correlation gates (quality 0.597 vs 0.6, qual faithfulness 0.46 vs 0.7)                                                                                                                                                         | Rejected; fine-tuning lifts every correlation but 7 held-out questions can't certify it, so Sonnet stays canonical (below) |
 | ColBERT reranking?              | Every retrieval arm already hits success@10 = 1.00                                                                                                                                                                                                     | Not built. There is no headroom for it to buy                                                                              |

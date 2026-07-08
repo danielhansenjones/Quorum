@@ -249,15 +249,15 @@ Concurrency sweep, 32 requests per level:
 
 | Concurrency | Classifier tok/s | Classifier p50/p95 | Judge tok/s | Judge p50/p95 |
 |-------------|------------------|--------------------|-------------|---------------|
-| 1           | 144              | 0.27 / 0.31s       | 145         | 0.55 / 0.75s  |
-| 8           | 1034             | 0.29 / 0.33s       | 882         | 0.61 / 0.79s  |
-| 32          | 2605             | 0.39 / 0.43s       | 2096        | 0.94 / 1.16s  |
+| 1           | 142              | 0.27 / 0.31s       | 118         | 0.67 / 0.84s  |
+| 8           | 1025             | 0.29 / 0.33s       | 870         | 0.62 / 0.80s  |
+| 32          | 2635             | 0.39 / 0.43s       | 2054        | 0.96 / 1.18s  |
 
-Throughput scales roughly 18x (classifier) and 14x (judge) from 1 to 32 concurrent while p50 latency grows under 1.8x: continuous batching absorbs the load rather than queueing it. First-token latency runs in the tens of milliseconds once the box is warm.
+Throughput scales roughly 19x (classifier) and 17x (judge) from 1 to 32 concurrent while p50 latency grows under 1.5x: continuous batching absorbs the load rather than queueing it. First-token latency runs in the tens of milliseconds once the box is warm.
 
-Constrained decoding is nearly free. At 8-way concurrency the `response_format` json_schema constraint costs nothing measurable against free decode (1026 vs 1049 tok/s, 0.285s vs 0.276s p50) yet pins schema validity to 1.0 where free decode drops to 0.75 - and an invalid shape is swallowed into a refusal that craters macro-F1 (see [Classification](#classification-and-refusal)). Cheap insurance against a large quality cliff.
+Constrained decoding is nearly free. At 8-way concurrency the `response_format` json_schema constraint costs nothing measurable against free decode (1028 vs 1030 tok/s, 0.288s vs 0.278s p50) yet pins schema validity to 1.0 where free decode drops to 0.75 - and an invalid shape is swallowed into a refusal that craters macro-F1 (see [Classification](#classification-and-refusal)). Cheap insurance against a large quality cliff.
 
-The QLoRA judge adapter has a real serving cost. Served via `--enable-lora` it runs the judge workload at 494 tok/s against the base model's 865 (0.62s to 2.43s p50 latency at 8-way). The adapter is for offline judging, not the request path, so the hit is acceptable, but it is not free.
+The QLoRA judge adapter has a real serving cost. Served via `--enable-lora` it runs the judge workload at 488 tok/s against the base model's 858 (0.63s to 2.46s p50 latency at 8-way). The adapter is for offline judging, not the request path, so the hit is acceptable, but it is not free.
 
 ## Limitations
 
